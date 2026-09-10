@@ -1,0 +1,287 @@
+{
+  "schema_version": "0.1.0",
+  "rule": "These are monitored concepts, not equivalent keyword buckets. Multiple sector tags are allowed; store separate asset_class, strategy and instrument fields. Sector presence never proves a holding.",
+  "sectors": [
+    {
+      "canonical_id": "software",
+      "display_name": "Software",
+      "synonyms": [
+        "enterprise software",
+        "SaaS"
+      ],
+      "related_terminology": [
+        "ARR",
+        "net revenue retention",
+        "seat growth",
+        "churn",
+        "recurring revenue",
+        "EBITDA",
+        "interest coverage"
+      ],
+      "related_instruments": [
+        "unitranche",
+        "recurring-revenue loan",
+        "venture debt",
+        "sponsor-backed term loan"
+      ],
+      "high_signal_event_types": [
+        "credit_stress",
+        "financial_results",
+        "financing",
+        "market_conditions"
+      ],
+      "inclusion_logic": "Require financing, debt-service, valuation or exit consequences for software exposure; technology news alone is insufficient.",
+      "exclusion_logic": "Product releases, app reviews, coding tutorials and broad AI excitement.",
+      "ambiguity_risks": "ARR is not cash flow; revenue growth is not automatically credit improvement.",
+      "investment_relevance": "Software is an industry exposure across private credit, PE and VC; no specific borrower holding inferred."
+    },
+    {
+      "canonical_id": "private_credit",
+      "display_name": "Private Credit / Direct Lending",
+      "synonyms": [
+        "private debt",
+        "direct lending",
+        "non-bank lending"
+      ],
+      "related_terminology": [
+        "sponsor finance",
+        "unitranche",
+        "first lien",
+        "second lien",
+        "PIK",
+        "covenant",
+        "amend-and-extend",
+        "interest coverage"
+      ],
+      "related_instruments": [
+        "senior secured loan",
+        "mezzanine debt",
+        "unitranche",
+        "BDC investment",
+        "private placement debt"
+      ],
+      "high_signal_event_types": [
+        "credit_stress",
+        "financing",
+        "capital_formation",
+        "financial_results",
+        "liquidity_secondaries"
+      ],
+      "inclusion_logic": "Material credit terms, portfolio quality, supply/demand or manager franchise change; identify instrument and borrower/manager role.",
+      "exclusion_logic": "Routine loan marketing, consumer borrowing advice, undifferentiated private-company stories.",
+      "ambiguity_risks": "Private credit is broader than direct lending; private does not always describe the loan market; PIK can be contractual rather than stress.",
+      "investment_relevance": "Core monitoring strategy; default/recovery, net return and deployment conditions."
+    },
+    {
+      "canonical_id": "gp_stakes",
+      "display_name": "GP Stakes",
+      "synonyms": [
+        "GP minority stakes",
+        "manager stakes",
+        "asset-manager stakes"
+      ],
+      "related_terminology": [
+        "fee-related earnings",
+        "management company",
+        "carried interest",
+        "succession",
+        "GP capital"
+      ],
+      "related_instruments": [
+        "manager equity",
+        "preferred equity in GP",
+        "GP financing"
+      ],
+      "high_signal_event_types": [
+        "gp_stakes",
+        "capital_formation",
+        "corporate_transaction",
+        "leadership"
+      ],
+      "inclusion_logic": "Identify an ownership/financing claim on the manager or management-company cash flows and material economics.",
+      "exclusion_logic": "Routine GP-led secondary or LP stake sale labelled GP stakes solely due to wording.",
+      "ambiguity_risks": "GP-led secondaries buy fund assets/interests, not necessarily manager equity; sports minority stakes are not GP stakes.",
+      "investment_relevance": "Manager franchise value, fee streams, governance and fundraising; Blue Owl GP platform is a monitoring link."
+    },
+    {
+      "canonical_id": "aircraft_leasing",
+      "display_name": "Aircraft Leasing",
+      "synonyms": [
+        "aviation leasing",
+        "aircraft finance"
+      ],
+      "related_terminology": [
+        "lease rate factor",
+        "residual value",
+        "utilization",
+        "lessee credit",
+        "engine leasing",
+        "repossession"
+      ],
+      "related_instruments": [
+        "operating lease",
+        "finance lease",
+        "aircraft ABS",
+        "warehouse facility",
+        "sale-and-leaseback"
+      ],
+      "high_signal_event_types": [
+        "financing",
+        "structured_finance",
+        "credit_stress",
+        "market_conditions",
+        "regulatory"
+      ],
+      "inclusion_logic": "Material lease economics, fleet/lessee credit, collateral value or financing supply; airline event needs lessor/asset effect.",
+      "exclusion_logic": "Route announcements, passenger travel advice and routine aircraft photos.",
+      "ambiguity_risks": "An aircraft order is not a lease; OEM issues require delivery/collateral or cash-flow transmission.",
+      "investment_relevance": "Asset-backed cash flows, recovery values and financing conditions; exact lessor holdings unknown."
+    },
+    {
+      "canonical_id": "asset_based_finance",
+      "display_name": "Asset-Backed Lending / Asset-Based Finance",
+      "synonyms": [
+        "asset-backed finance",
+        "asset-based finance",
+        "asset-based lending",
+        "ABF",
+        "ABL"
+      ],
+      "related_terminology": [
+        "borrowing base",
+        "advance rate",
+        "collateral eligibility",
+        "specialty finance",
+        "receivables",
+        "whole-loan sale"
+      ],
+      "related_instruments": [
+        "receivables facility",
+        "warehouse finance",
+        "equipment loan",
+        "consumer-loan pool",
+        "ABS"
+      ],
+      "high_signal_event_types": [
+        "financing",
+        "structured_finance",
+        "credit_stress",
+        "capital_formation",
+        "regulatory"
+      ],
+      "inclusion_logic": "Identify collateral, seniority, loss absorption, financing terms or platform economics; material change needed.",
+      "exclusion_logic": "Generic corporate asset sale, cryptocurrency promotion and unrelated ABL/ABS abbreviations.",
+      "ambiguity_risks": "Working-capital ABL is a subset, not all ABF; ABS is a security structure; anti-lock braking is not ABS credit.",
+      "investment_relevance": "Collateral performance, underwriting, funding and securitisation exits; relevant to BasePoint and broad credit platforms."
+    },
+    {
+      "canonical_id": "real_estate",
+      "display_name": "Real Estate",
+      "synonyms": [
+        "property",
+        "CRE",
+        "commercial real estate"
+      ],
+      "related_terminology": [
+        "LTV",
+        "DSCR",
+        "NOI",
+        "cap rate",
+        "refinancing wall",
+        "occupancy",
+        "rent growth",
+        "construction finance"
+      ],
+      "related_instruments": [
+        "commercial mortgage",
+        "CMBS",
+        "mezzanine property debt",
+        "preferred equity",
+        "real-estate fund interest"
+      ],
+      "high_signal_event_types": [
+        "credit_stress",
+        "financial_results",
+        "financing",
+        "market_conditions",
+        "liquidity_secondaries"
+      ],
+      "inclusion_logic": "Material valuation, rental income, refinancing, fund liquidity or institutional capital flows; allow debt and equity transmission.",
+      "exclusion_logic": "Individual home listings, interior design and routine local sales without portfolio/market consequence.",
+      "ambiguity_risks": "Residential vs commercial, debt vs equity and local vs systemic must stay distinct; REIT price alone is not private NAV.",
+      "investment_relevance": "Property cash flow, valuation and debt coverage across real-estate/private-credit exposures."
+    },
+    {
+      "canonical_id": "mortgage",
+      "display_name": "Mortgage",
+      "synonyms": [
+        "residential mortgage",
+        "mortgage credit",
+        "housing finance"
+      ],
+      "related_terminology": [
+        "non-QM",
+        "delinquency",
+        "prepayment",
+        "MSR",
+        "servicing advances",
+        "reperforming loan",
+        "NPL",
+        "loan-to-value"
+      ],
+      "related_instruments": [
+        "whole mortgage loan",
+        "RMBS",
+        "mortgage servicing right",
+        "non-QM loan",
+        "home-equity loan"
+      ],
+      "high_signal_event_types": [
+        "credit_stress",
+        "structured_finance",
+        "financing",
+        "market_conditions",
+        "regulatory"
+      ],
+      "inclusion_logic": "New collateral/servicing/funding evidence with investment consequences; use Pretium/Bayview links only when resolved.",
+      "exclusion_logic": "Retail mortgage-rate tips, household refinancing advice and routine broker advertising.",
+      "ambiguity_risks": "Agency/non-agency and residential/commercial are distinct; lower rates can help borrowers yet hurt MSR values or increase prepayment.",
+      "investment_relevance": "Credit losses, prepayment, servicing costs and securitisation economics."
+    },
+    {
+      "canonical_id": "clo",
+      "display_name": "CLO",
+      "synonyms": [
+        "collateralized loan obligation",
+        "collateralised loan obligation"
+      ],
+      "related_terminology": [
+        "AAA liability spread",
+        "collateral spread",
+        "OC test",
+        "IC test",
+        "reinvestment period",
+        "reset",
+        "refinancing",
+        "CCC bucket"
+      ],
+      "related_instruments": [
+        "CLO debt tranche",
+        "CLO equity",
+        "loan warehouse",
+        "BSL CLO",
+        "middle-market CLO"
+      ],
+      "high_signal_event_types": [
+        "structured_finance",
+        "ratings",
+        "credit_stress",
+        "market_conditions"
+      ],
+      "inclusion_logic": "Material issuance/terms, collateral quality, tranche risk, financing economics or manager capacity; identify transaction stage.",
+      "exclusion_logic": "Routine tiny spread move without context, generic career news or repeated deal marketing.",
+      "ambiguity_risks": "Chief legal officer is not CLO; liability spread widening differs from asset yield widening; reset differs from refinancing.",
+      "investment_relevance": "Collateral loss/default risk, financing cost, reinvestment and equity distributions; CIFC/structured-credit platforms are relevant."
+    }
+  ]
+}

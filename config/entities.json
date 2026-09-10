@@ -1,0 +1,1364 @@
+{
+  "schema_version": "0.1.0",
+  "as_of": "2026-09-10",
+  "watchlist": [
+    "blue_owl",
+    "otf",
+    "pretium",
+    "kkr",
+    "pag",
+    "bayview",
+    "cifc",
+    "basepoint",
+    "neuberger",
+    "apollo",
+    "bain_capital",
+    "guggenheim",
+    "hsbc_am"
+  ],
+  "exposure_policy": "Analyst-supplied monitoring scope, not asserted legal holdings. Specific mandates/sizes unconfirmed. Related entities and fund examples are not added holdings. Private exposure overlay stays outside Git.",
+  "relationship_policy": "parent is an editorial edge typed by parent_relationship, not uniformly corporate ownership. relevant_subsidiaries includes platforms with explicitly typed edges. Empty official_domains authorizes no child-domain shortcut; parent evidence may support resolution.",
+  "review_policy": "needs_review identifies a scoped limitation, not rejection of every verified match. Decisions dependent on the unresolved point must enter manual review.",
+  "matching_rules": [
+    {
+      "rule_id": "ER01",
+      "title": "Identity is not eligibility",
+      "rule": "Resolve subject and role, then relevance. Match whole tokens/phrases in headline or body, never menus, footers, ads or related-story links. Save match span and article ID."
+    },
+    {
+      "rule_id": "ER02",
+      "title": "Official host is contextual evidence",
+      "rule": "Parse/lowercase hostname; accept exact listed host or dot-delimited subdomain, never deceptive suffix (nb.com.evil.example). Host supports identity only with a relevant body subject. Verify new hosts and redirects."
+    },
+    {
+      "rule_id": "ER03",
+      "title": "Typed relationship propagation",
+      "rule": "Resolve most specific entity first; save direct tag, parents and edge path separately. Parent attribution never proves economic ownership or shared losses. Check validity at event date. No sibling propagation."
+    },
+    {
+      "rule_id": "ER04",
+      "title": "Ticker qualification",
+      "rule": "Require exchange plus symbol, or finance context explicitly linking symbol to issuer. Bare OWL/OTF insufficient. Distinguish OTF II and other Blue Owl vehicles."
+    },
+    {
+      "rule_id": "ER05",
+      "title": "Vehicle specificity",
+      "rule": "Longest full name with explicit vintage/series takes precedence. Family-only reference resolves manager/strategy, vehicle unknown. Do not infer successors or mergers."
+    },
+    {
+      "rule_id": "ER06",
+      "title": "Namesake disambiguation",
+      "rule": "Require qualified name or same-sentence investment-manager/credit context plus corroboration (official host/known parent). Conflicting namesake evidence enters review. Ignore a bare ambiguous token as an entity match; still evaluate article via B/C."
+    },
+    {
+      "rule_id": "ER07",
+      "title": "NB conditional match",
+      "rule": "On nb.com NB needs fund/manager subject context in the body. Else require Neuberger co-mention or a verified full fund name. NB Private Debt/NB Strategic Capital family phrases resolve manager/strategy without invented vintage. NB alone ignored."
+    },
+    {
+      "rule_id": "ER08",
+      "title": "HSBC business boundary",
+      "rule": "HSBC AM needs asset-management context. HSBC alone does not resolve AM. Group news requires explicit AM capital/governance/strategy transmission and review."
+    }
+  ],
+  "entities": [
+    {
+      "legacy_names": [],
+      "ticker": {
+        "symbol": "OWL",
+        "exchange": "NYSE",
+        "match_rule": "ER04"
+      },
+      "relevant_subsidiaries": [
+        "blue_owl_credit",
+        "blue_owl_gp_capital"
+      ],
+      "relevant_funds": [
+        "otf"
+      ],
+      "excluded_contexts": [
+        "bird/wildlife",
+        "routine sports equity",
+        "awards"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "blue_owl",
+      "display_name": "Blue Owl Capital",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "Blue Owl",
+        "Blue Owl Capital",
+        "Blue Owl Capital Inc."
+      ],
+      "official_domains": [
+        "blueowl.com"
+      ],
+      "relevant_business_lines": [
+        "credit",
+        "GP strategic capital",
+        "real assets"
+      ],
+      "evidence_refs": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "notes": "Parent monitoring tag; mention alone never qualifies.",
+      "search_terms": [
+        "\"Blue Owl\" credit",
+        "\"Blue Owl\" earnings",
+        "\"Blue Owl\" fundraising"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [
+        "blue_owl_technology_adviser"
+      ],
+      "relevant_funds": [
+        "otf"
+      ],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "blue_owl_credit",
+      "display_name": "Blue Owl Credit",
+      "entity_type": "business_platform",
+      "parent": "blue_owl",
+      "parent_relationship": "business_platform_of",
+      "aliases": [
+        "Blue Owl Credit"
+      ],
+      "official_domains": [
+        "blueowl.com"
+      ],
+      "relevant_business_lines": [
+        "direct lending",
+        "technology lending",
+        "asset-based finance"
+      ],
+      "evidence_refs": [
+        "S01",
+        "S02"
+      ],
+      "notes": "Business hierarchy, not an inferred separate legal holding company.",
+      "search_terms": [
+        "\"Blue Owl Credit\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [
+        "otf"
+      ],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "blue_owl_technology_adviser",
+      "display_name": "Blue Owl Technology Credit Advisors LLC",
+      "entity_type": "adviser",
+      "parent": "blue_owl_credit",
+      "parent_relationship": "platform_affiliate",
+      "aliases": [
+        "Blue Owl Technology Credit Advisors LLC"
+      ],
+      "official_domains": [
+        "blueowltechnologyfinance.com"
+      ],
+      "relevant_business_lines": [
+        "technology lending"
+      ],
+      "evidence_refs": [
+        "S01"
+      ],
+      "notes": "OTF external adviser; indirect Blue Owl Capital affiliate.",
+      "search_terms": [
+        "\"Blue Owl Technology Credit Advisors LLC\""
+      ]
+    },
+    {
+      "legacy_names": [
+        "Owl Rock Technology Finance Corp."
+      ],
+      "ticker": {
+        "symbol": "OTF",
+        "exchange": "NYSE",
+        "match_rule": "ER04"
+      },
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "OpenType fonts",
+        "on-the-fly abbreviation",
+        "OTF II or technology income vehicle without explicit OTF involvement"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER04",
+        "ER05"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "otf",
+      "display_name": "Blue Owl Technology Finance Corp.",
+      "entity_type": "vehicle",
+      "parent": "blue_owl_credit",
+      "parent_relationship": "managed_vehicle_in_platform",
+      "aliases": [
+        "Blue Owl Technology Finance Corp.",
+        "Blue Owl Technology Finance Corporation"
+      ],
+      "official_domains": [
+        "blueowltechnologyfinance.com"
+      ],
+      "relevant_business_lines": [
+        "technology lending",
+        "software",
+        "private credit"
+      ],
+      "evidence_refs": [
+        "S01",
+        "S04"
+      ],
+      "notes": "Preserve OTF vehicle, adviser and Blue Owl tags. NAV/NII/non-accruals belong to OTF, not consolidated Blue Owl. Parent linkage does not assert BDC ownership.",
+      "search_terms": [
+        "\"Blue Owl Technology Finance\"",
+        "\"NYSE: OTF\" NAV",
+        "\"Owl Rock Technology Finance\""
+      ],
+      "adviser": "blue_owl_technology_adviser"
+    },
+    {
+      "legacy_names": [
+        "Dyal Capital Partners"
+      ],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "blue_owl_gp_capital",
+      "display_name": "Blue Owl GP Strategic Capital",
+      "entity_type": "business_platform",
+      "parent": "blue_owl",
+      "parent_relationship": "business_platform_of",
+      "aliases": [
+        "Blue Owl GP Strategic Capital"
+      ],
+      "official_domains": [
+        "blueowl.com"
+      ],
+      "relevant_business_lines": [
+        "GP minority stakes",
+        "GP financing"
+      ],
+      "evidence_refs": [
+        "S03",
+        "S23"
+      ],
+      "notes": "GP stakes means ownership in managers, not LP interests or sports equity.",
+      "search_terms": [
+        "\"Blue Owl GP Strategic Capital\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [
+        "deephaven_mortgage",
+        "anchor_loans",
+        "selene_finance"
+      ],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "Pretium Resources mining",
+        "generic Latin word"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "pretium",
+      "display_name": "Pretium",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "Pretium"
+      ],
+      "official_domains": [
+        "pretium.com"
+      ],
+      "relevant_business_lines": [
+        "residential credit",
+        "real estate debt",
+        "real estate equity",
+        "corporate and structured credit"
+      ],
+      "evidence_refs": [
+        "S05",
+        "S06"
+      ],
+      "notes": "Resolved operating-platform events propagate a Pretium tag; still assess materiality.",
+      "search_terms": [
+        "\"Pretium\" credit",
+        "\"Pretium\" mortgage",
+        "\"Pretium\" fundraising"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "Deephaven data software",
+        "Deephaven city"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "deephaven_mortgage",
+      "display_name": "Deephaven Mortgage",
+      "entity_type": "operating_platform",
+      "parent": "pretium",
+      "parent_relationship": "operating_platform_of",
+      "aliases": [
+        "Deephaven Mortgage"
+      ],
+      "official_domains": [],
+      "relevant_business_lines": [
+        "non-QM mortgage origination",
+        "residential mortgage lending"
+      ],
+      "evidence_refs": [
+        "S06"
+      ],
+      "notes": "Platform relationship verified; exact ownership percentage not encoded.",
+      "search_terms": [
+        "\"Deephaven Mortgage\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "anchor as generic banking role"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "anchor_loans",
+      "display_name": "Anchor Loans",
+      "entity_type": "operating_platform",
+      "parent": "pretium",
+      "parent_relationship": "operating_platform_of",
+      "aliases": [
+        "Anchor Loans"
+      ],
+      "official_domains": [],
+      "relevant_business_lines": [
+        "residential bridge lending",
+        "construction and homebuilder lending"
+      ],
+      "evidence_refs": [
+        "S06"
+      ],
+      "notes": "Not the generic phrase anchor lender.",
+      "search_terms": [
+        "\"Anchor Loans\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "mythology",
+        "unrelated Selene companies"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "selene_finance",
+      "display_name": "Selene Finance",
+      "entity_type": "operating_platform",
+      "parent": "pretium",
+      "parent_relationship": "operating_platform_of",
+      "aliases": [
+        "Selene Finance",
+        "Selene"
+      ],
+      "official_domains": [],
+      "relevant_business_lines": [
+        "mortgage servicing"
+      ],
+      "evidence_refs": [
+        "S06"
+      ],
+      "notes": "Selene alone requires mortgage-servicing or Pretium context; do not collapse other Selene legal entities.",
+      "search_terms": [
+        "\"Selene Finance\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "Kolkata Knight Riders",
+        "cricket",
+        "routine PE bolt-on without credit/franchise effect"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "kkr",
+      "display_name": "KKR",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "KKR"
+      ],
+      "official_domains": [
+        "kkr.com"
+      ],
+      "relevant_business_lines": [
+        "private credit",
+        "leveraged credit",
+        "asset-based finance",
+        "private equity",
+        "real assets"
+      ],
+      "evidence_refs": [
+        "S07"
+      ],
+      "notes": "Institutional-investment context required. Routine sponsor-backed M&A is not manager-level materiality.",
+      "search_terms": [
+        "\"KKR\" credit",
+        "\"KKR\" earnings",
+        "\"KKR\" fundraising"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [
+        "pag_credit_markets"
+      ],
+      "relevant_funds": [
+        "pag_loan_v"
+      ],
+      "excluded_contexts": [
+        "Penske Automotive ticker PAG",
+        "medical/scientific acronyms",
+        "substring matches"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": true,
+      "review_note": "Platform identity supported by 2022 primary release; current homepage blocked by browser verification. Refresh current organization before adding newer vehicles.",
+      "canonical_id": "pag",
+      "display_name": "PAG",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "PAG"
+      ],
+      "official_domains": [
+        "pag.com"
+      ],
+      "relevant_business_lines": [
+        "credit and markets",
+        "private equity",
+        "real assets"
+      ],
+      "evidence_refs": [
+        "S08"
+      ],
+      "notes": "Short token needs investment-manager context. Material direct events can qualify outside US/Europe.",
+      "search_terms": [
+        "\"PAG\" \"Credit & Markets\"",
+        "\"PAG\" \"direct lending\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [
+        "pag_loan_v"
+      ],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "pag_credit_markets",
+      "display_name": "PAG Credit & Markets",
+      "entity_type": "business_platform",
+      "parent": "pag",
+      "parent_relationship": "business_platform_of",
+      "aliases": [
+        "PAG Credit & Markets",
+        "PAG Credit and Markets"
+      ],
+      "official_domains": [
+        "pag.com"
+      ],
+      "relevant_business_lines": [
+        "private debt",
+        "direct lending"
+      ],
+      "evidence_refs": [
+        "S08"
+      ],
+      "notes": "Historical primary evidence; not complete current strategy coverage.",
+      "search_terms": [
+        "\"PAG Credit & Markets\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER05"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "pag_loan_v",
+      "display_name": "PAG Loan Fund V",
+      "entity_type": "vehicle",
+      "parent": "pag_credit_markets",
+      "parent_relationship": "managed_vehicle_in_platform",
+      "aliases": [
+        "PAG Loan Fund V",
+        "PAG LF V"
+      ],
+      "official_domains": [
+        "pag.com"
+      ],
+      "relevant_business_lines": [
+        "pan-Asia direct lending"
+      ],
+      "evidence_refs": [
+        "S08"
+      ],
+      "notes": "Known 2022 fund example; not an asserted holding or latest vintage.",
+      "search_terms": [
+        "\"PAG Loan Fund V\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "Bayview Asset Management Co. Ltd. Japan",
+        "bayview.co.jp",
+        "property/street names",
+        "unrelated Bayview firms"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": true,
+      "review_note": "US identity verified; analyst shorthand alone does not establish intended mandate. Confirm Bayview/vehicle. Named affiliates require additional evidence.",
+      "canonical_id": "bayview",
+      "display_name": "Bayview Asset Management",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "Bayview Asset Management",
+        "Bayview Asset Management, LLC",
+        "Bayview"
+      ],
+      "official_domains": [
+        "bayview.com"
+      ],
+      "relevant_business_lines": [
+        "residential credit",
+        "consumer credit",
+        "commercial credit",
+        "whole loans",
+        "credit risk transfer",
+        "structured products",
+        "mortgage servicing rights"
+      ],
+      "evidence_refs": [
+        "S09",
+        "S10"
+      ],
+      "notes": "Working mapping is US firm at bayview.com. No generic BAM alias; verify full identity when ambiguous.",
+      "search_terms": [
+        "\"Bayview Asset Management\" credit",
+        "\"Bayview\" mortgage",
+        "site:bayview.com"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "unrelated acronym expansions"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "cifc",
+      "display_name": "CIFC Asset Management",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "CIFC Asset Management",
+        "CIFC"
+      ],
+      "official_domains": [
+        "cifc.com"
+      ],
+      "relevant_business_lines": [
+        "CLO management",
+        "senior secured loans",
+        "direct lending"
+      ],
+      "evidence_refs": [
+        "S11"
+      ],
+      "notes": "Distinctive name still requires financial subject context. No historic CIFC public ticker reused.",
+      "search_terms": [
+        "\"CIFC\" CLO",
+        "\"CIFC\" direct lending",
+        "\"CIFC\" fundraising"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [
+        "basepoint_advisors",
+        "basepoint_capital"
+      ],
+      "relevant_funds": [
+        "basepoint_rated_i"
+      ],
+      "excluded_contexts": [
+        "Basepoint Wealth",
+        "basepointadvisors.com wealth-advice business",
+        "Basepoint business centres",
+        "mathematical base point"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": true,
+      "review_note": "Public structure verified; analyst must confirm intended specialty-finance platform and vehicle. Same-name adviser requires context.",
+      "canonical_id": "basepoint",
+      "display_name": "BasePoint",
+      "entity_type": "manager_platform",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "BasePoint",
+        "BasePoint Group Inc."
+      ],
+      "official_domains": [
+        "basepointgroup.com"
+      ],
+      "relevant_business_lines": [
+        "specialty finance",
+        "asset-based lending",
+        "structured finance"
+      ],
+      "evidence_refs": [
+        "S12",
+        "S13"
+      ],
+      "notes": "Primary site identifies Group Inc. as holding company. Advisors and Capital are separate legal entities.",
+      "search_terms": [
+        "\"BasePoint\" lending",
+        "\"BasePoint Advisors LLC\" fund",
+        "\"BasePoint Capital LLC\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [
+        "basepoint_rated_i"
+      ],
+      "excluded_contexts": [
+        "basepointadvisors.com wealth-advice business"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "basepoint_advisors",
+      "display_name": "BasePoint Advisors LLC",
+      "entity_type": "adviser",
+      "parent": "basepoint",
+      "parent_relationship": "subsidiary_of",
+      "aliases": [
+        "BasePoint Advisors LLC"
+      ],
+      "official_domains": [
+        "basepointgroup.com"
+      ],
+      "relevant_business_lines": [
+        "private credit fund advisory"
+      ],
+      "evidence_refs": [
+        "S12",
+        "S13"
+      ],
+      "notes": "Separate adviser. Require group or asset-based-finance context.",
+      "search_terms": [
+        "\"BasePoint Advisors LLC\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "basepoint_capital",
+      "display_name": "BasePoint Capital LLC",
+      "entity_type": "operating_platform",
+      "parent": "basepoint",
+      "parent_relationship": "subsidiary_of",
+      "aliases": [
+        "BasePoint Capital LLC",
+        "BasePoint Capital"
+      ],
+      "official_domains": [
+        "basepointgroup.com"
+      ],
+      "relevant_business_lines": [
+        "commercial lending",
+        "structured finance"
+      ],
+      "evidence_refs": [
+        "S12",
+        "S13"
+      ],
+      "notes": "Commercial services and lending-subsidiary activity. Individual BP Lender legal entities not inferred.",
+      "search_terms": [
+        "\"BasePoint Capital LLC\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER05"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "basepoint_rated_i",
+      "display_name": "BasePoint Rated Structure Fund I L.P.",
+      "entity_type": "vehicle",
+      "parent": "basepoint_advisors",
+      "parent_relationship": "advised_by",
+      "aliases": [
+        "BasePoint Rated Structure Fund I L.P.",
+        "BasePoint Rated Structure Fund I"
+      ],
+      "official_domains": [
+        "basepointgroup.com"
+      ],
+      "relevant_business_lines": [
+        "private credit",
+        "rated fund structure"
+      ],
+      "evidence_refs": [
+        "S13"
+      ],
+      "notes": "Advised fund, not an alias of commercial lender.",
+      "search_terms": [
+        "\"BasePoint Rated Structure Fund I L.P.\""
+      ],
+      "adviser": "basepoint_advisors"
+    },
+    {
+      "legacy_names": [
+        "Neuberger Berman"
+      ],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [
+        "nb_private_debt_v",
+        "nb_strategic_capital_ii"
+      ],
+      "excluded_contexts": [
+        "New Balance",
+        "New Brunswick",
+        "nota bene",
+        "standalone NB"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER07"
+      ],
+      "needs_review": true,
+      "review_note": "Universal August 4, 2026 rename not verified. S14 establishes certain listed-fund changes only. Private-fund renames need separate evidence.",
+      "canonical_id": "neuberger",
+      "display_name": "Neuberger",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "Neuberger",
+        "Neuberger Berman",
+        "NB"
+      ],
+      "official_domains": [
+        "nb.com"
+      ],
+      "relevant_business_lines": [
+        "private debt",
+        "private equity secondaries",
+        "capital solutions"
+      ],
+      "evidence_refs": [
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "notes": "Display brand Neuberger; Neuberger Berman persists in legal/product names. Do not mechanically replace historic fund prefixes.",
+      "search_terms": [
+        "\"Neuberger\" private debt",
+        "\"Neuberger Berman\" credit",
+        "\"NB Private Debt\"",
+        "\"NB Strategic Capital\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER05"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "nb_private_debt_v",
+      "display_name": "NB Private Debt V",
+      "entity_type": "vehicle",
+      "parent": "neuberger",
+      "parent_relationship": "managed_by",
+      "aliases": [
+        "NB Private Debt V"
+      ],
+      "official_domains": [
+        "nb.com"
+      ],
+      "relevant_business_lines": [
+        "US direct lending",
+        "unitranche",
+        "senior secured debt"
+      ],
+      "evidence_refs": [
+        "S15"
+      ],
+      "notes": "Preserve the announced name. NB Private Debt without vintage resolves manager/strategy, not Fund V.",
+      "search_terms": [
+        "\"NB Private Debt V\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER05"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "nb_strategic_capital_ii",
+      "display_name": "NB Strategic Capital Fund II",
+      "entity_type": "vehicle",
+      "parent": "neuberger",
+      "parent_relationship": "managed_by",
+      "aliases": [
+        "NB Strategic Capital Fund II",
+        "NB Strategic Capital II"
+      ],
+      "official_domains": [
+        "nb.com"
+      ],
+      "relevant_business_lines": [
+        "GP-led secondaries",
+        "continuation vehicles"
+      ],
+      "evidence_refs": [
+        "S16"
+      ],
+      "notes": "Not GP stakes: buying fund interests/assets differs from manager equity.",
+      "search_terms": [
+        "\"NB Strategic Capital Fund II\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [
+        "athene"
+      ],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "space programme",
+        "Apollo Hospitals",
+        "Apollo tyres",
+        "software libraries"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "apollo",
+      "display_name": "Apollo Global Management",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "Apollo Global Management",
+        "Apollo"
+      ],
+      "official_domains": [
+        "apollo.com"
+      ],
+      "relevant_business_lines": [
+        "asset management",
+        "credit",
+        "private equity",
+        "retirement services"
+      ],
+      "evidence_refs": [
+        "S17"
+      ],
+      "notes": "Athene capital/funding events can transmit to credit; insurance product marketing does not suffice.",
+      "search_terms": [
+        "\"Apollo\" credit",
+        "\"Apollo Global Management\" earnings",
+        "\"Apollo\" fundraising"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "routine annuity marketing"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "athene",
+      "display_name": "Athene",
+      "entity_type": "insurance_platform",
+      "parent": "apollo",
+      "parent_relationship": "integrated_platform",
+      "aliases": [
+        "Athene"
+      ],
+      "official_domains": [
+        "apollo.com"
+      ],
+      "relevant_business_lines": [
+        "retirement services",
+        "insurance investment capital"
+      ],
+      "evidence_refs": [
+        "S17"
+      ],
+      "notes": "Integrated Apollo platform per primary source. No automatic fund-level exposure.",
+      "search_terms": [
+        "\"Athene\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [
+        "bain_credit"
+      ],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "Bain & Company consultancy",
+        "routine PE portfolio transactions"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "bain_capital",
+      "display_name": "Bain Capital",
+      "entity_type": "manager",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "Bain Capital",
+        "Bain Capital LP"
+      ],
+      "official_domains": [
+        "baincapital.com"
+      ],
+      "relevant_business_lines": [
+        "private equity",
+        "credit",
+        "venture capital",
+        "real estate",
+        "special situations"
+      ],
+      "evidence_refs": [
+        "S18",
+        "S19"
+      ],
+      "notes": "Credit focus with material firm-wide exception. Consultancy is distinct.",
+      "search_terms": [
+        "\"Bain Capital\" credit",
+        "\"Bain Capital\" fundraising",
+        "\"Bain Capital\" special situations"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "bain_credit",
+      "display_name": "Bain Capital Credit",
+      "entity_type": "business_platform",
+      "parent": "bain_capital",
+      "parent_relationship": "affiliate_of",
+      "aliases": [
+        "Bain Capital Credit",
+        "Bain Capital Credit LP"
+      ],
+      "official_domains": [
+        "baincapitalcredit.com",
+        "baincapital.com"
+      ],
+      "relevant_business_lines": [
+        "direct lending",
+        "liquid and structured credit",
+        "asset-based finance",
+        "CLOs"
+      ],
+      "evidence_refs": [
+        "S18",
+        "S19"
+      ],
+      "notes": "Private Credit Group is within Credit; Special Situations can span debt/equity. Classify actual instrument.",
+      "search_terms": [
+        "\"Bain Capital Credit\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [
+        "guggenheim_investments",
+        "guggenheim_securities"
+      ],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "museum/foundation",
+        "routine sports ownership",
+        "bank merely named as adviser"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER06"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "guggenheim",
+      "display_name": "Guggenheim Partners",
+      "entity_type": "manager_platform",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "Guggenheim Partners",
+        "Guggenheim"
+      ],
+      "official_domains": [
+        "guggenheimpartners.com"
+      ],
+      "relevant_business_lines": [
+        "investment management",
+        "capital markets"
+      ],
+      "evidence_refs": [
+        "S20"
+      ],
+      "notes": "Prefer Investments for asset-management tagging. Shared brand never establishes fund participation.",
+      "search_terms": [
+        "\"Guggenheim Investments\" credit",
+        "\"Guggenheim\" private debt"
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "guggenheim_investments",
+      "display_name": "Guggenheim Investments",
+      "entity_type": "business_platform",
+      "parent": "guggenheim",
+      "parent_relationship": "business_platform_of",
+      "aliases": [
+        "Guggenheim Investments"
+      ],
+      "official_domains": [
+        "guggenheiminvestments.com"
+      ],
+      "relevant_business_lines": [
+        "private debt",
+        "structured credit",
+        "ABS",
+        "RMBS",
+        "CMBS"
+      ],
+      "evidence_refs": [
+        "S20",
+        "S21"
+      ],
+      "notes": "Asset-management brand, not one inferred legal fund or synonym for Securities.",
+      "search_terms": [
+        "\"Guggenheim Investments\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "routine adviser mandates",
+        "routine banking hires"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "guggenheim_securities",
+      "display_name": "Guggenheim Securities",
+      "entity_type": "business_platform",
+      "parent": "guggenheim",
+      "parent_relationship": "business_platform_of",
+      "aliases": [
+        "Guggenheim Securities"
+      ],
+      "official_domains": [
+        "guggenheimpartners.com"
+      ],
+      "relevant_business_lines": [
+        "investment banking",
+        "capital markets"
+      ],
+      "evidence_refs": [
+        "S20"
+      ],
+      "notes": "Resolution-only related business. Adviser/arranger role is not a fund investment; independent B/C or firm-wide materiality can still qualify.",
+      "search_terms": [
+        "\"Guggenheim Securities\""
+      ]
+    },
+    {
+      "legacy_names": [],
+      "ticker": null,
+      "relevant_subsidiaries": [],
+      "relevant_funds": [],
+      "excluded_contexts": [
+        "generic HSBC banking/branch news"
+      ],
+      "ambiguity_rules": [
+        "ER01",
+        "ER02",
+        "ER03",
+        "ER08"
+      ],
+      "needs_review": false,
+      "review_note": null,
+      "canonical_id": "hsbc_am",
+      "display_name": "HSBC Asset Management",
+      "entity_type": "business_platform",
+      "parent": null,
+      "parent_relationship": null,
+      "aliases": [
+        "HSBC Asset Management",
+        "HSBC AM"
+      ],
+      "official_domains": [
+        "assetmanagement.hsbc.co.uk"
+      ],
+      "relevant_business_lines": [
+        "alternative credit",
+        "direct lending",
+        "alternatives"
+      ],
+      "evidence_refs": [
+        "S22"
+      ],
+      "notes": "Watchlist brand is asset management, not HSBC group. Verify other regional domains before allowlisting.",
+      "search_terms": [
+        "\"HSBC Asset Management\" private credit",
+        "\"HSBC Asset Management\" direct lending",
+        "\"HSBC AM\" fund"
+      ]
+    }
+  ]
+}

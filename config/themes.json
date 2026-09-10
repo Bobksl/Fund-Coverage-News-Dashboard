@@ -1,0 +1,202 @@
+{
+  "schema_version": "0.1.0",
+  "rule": "Core means search priority, not automatic inclusion. Mechanisms are editorial hypotheses, not claims that any event occurred. Every candidate needs a new observed trigger, evidence and an event-specific path. Do not count a mechanism twice across overlapping themes.",
+  "themes": [
+    {
+      "canonical_id": "private_credit_stress",
+      "display_name": "Private-credit defaults / restructurings",
+      "priority": "core",
+      "linked_sectors": [
+        "private_credit"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "private_equity"
+      ],
+      "trigger_conditions": "New payment/covenant failure, distressed exchange, restructuring or economically meaningful amendment.",
+      "transmission_mechanism": "Cash-flow shortfall → debt-service stress → revised recovery/loss assumptions → portfolio marks and returns.",
+      "inclusion_threshold": "Specific borrower/fund exposure or credible evidence of a relevant market trend; distinguish allegations and formal status.",
+      "common_false_positives": "Routine refinancing; contractual PIK; amendments without evidence of changed economics."
+    },
+    {
+      "canonical_id": "bdc_quality",
+      "display_name": "BDC NAV / non-accrual / portfolio quality",
+      "priority": "core",
+      "linked_sectors": [
+        "private_credit"
+      ],
+      "linked_asset_classes": [
+        "private_credit"
+      ],
+      "trigger_conditions": "New OTF results or comparable peer data with meaningful NAV, non-accrual, leverage, PIK or coverage change.",
+      "transmission_mechanism": "Borrower deterioration → non-accrual/valuation changes → BDC earnings, loss risk and distributable income.",
+      "inclusion_threshold": "Same period and cost/fair-value basis; direct vehicle result or informative peer trend. Do not infer all private credit from one BDC.",
+      "common_false_positives": "NAV ex-dividend changes treated as impairment; NII mistaken for cash; mixing cost/fair-value percentages."
+    },
+    {
+      "canonical_id": "software_stress",
+      "display_name": "Software borrower stress",
+      "priority": "core",
+      "linked_sectors": [
+        "software",
+        "private_credit"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "private_equity",
+        "venture_capital"
+      ],
+      "trigger_conditions": "Verified deterioration in software cash flow, retention, covenants or financing conditions.",
+      "transmission_mechanism": "Weaker recurring revenue/cash generation → weaker coverage → amendments/recovery risk → lender marks and sponsor value.",
+      "inclusion_threshold": "Identified borrower debt connection or credible sector evidence; no requirement that a watched GP is named.",
+      "common_false_positives": "Stock-price falls alone; generic tech layoffs; equating ARR with debt-service capacity."
+    },
+    {
+      "canonical_id": "clo_conditions",
+      "display_name": "CLO issuance / spreads / resets / refinancing",
+      "priority": "core",
+      "linked_sectors": [
+        "clo"
+      ],
+      "linked_asset_classes": [
+        "private_credit"
+      ],
+      "trigger_conditions": "Material new issuance/terms, reset/refinancing change or comparable spread/volume movement.",
+      "transmission_mechanism": "Collateral yield minus liability funding and costs → issuance/reinvestment economics → tranche/equity cash flows.",
+      "inclusion_threshold": "State tranche, currency, asset versus liability spread, period and comparison; manager-specific materiality or market read-through.",
+      "common_false_positives": "Tiny daily move, syndicated duplication, conflating asset spreads and liability spreads."
+    },
+    {
+      "canonical_id": "rates",
+      "display_name": "Federal Reserve / interest rates",
+      "priority": "conditional",
+      "linked_sectors": [
+        "private_credit",
+        "real_estate",
+        "mortgage"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "real_estate",
+        "private_equity",
+        "venture_capital"
+      ],
+      "trigger_conditions": "New decision, meaningful guidance change or substantiated repricing with relevant exposure sensitivity.",
+      "transmission_mechanism": "Higher floating base rates → higher borrower interest expense → weaker coverage/default risk; lender income may rise initially. Discount rates/refinancing also affect property and exit values.",
+      "inclusion_threshold": "Observed new trigger plus named strategy sensitivity, horizon and at least one consequential channel; weigh floors/hedges if known.",
+      "common_false_positives": "Routine speech, calendar reminder, unsupported predicted policy change or generic macro importance."
+    },
+    {
+      "canonical_id": "bank_credit",
+      "display_name": "Bank regulation / lending standards",
+      "priority": "conditional",
+      "linked_sectors": [
+        "private_credit",
+        "asset_based_finance",
+        "real_estate"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "real_estate",
+        "private_equity"
+      ],
+      "trigger_conditions": "New lending-standard data or scoped rule affecting bank credit capacity/warehouse supply.",
+      "transmission_mechanism": "Reduced bank capacity → non-bank opportunity but potentially tighter warehouse/fund financing → changed deployment, leverage and returns.",
+      "inclusion_threshold": "Specify affected lender/borrower segment, jurisdiction, proposal/final status and relevant channel.",
+      "common_false_positives": "Generic bank earnings, retail branch change or treating all tightening as positive for private credit."
+    },
+    {
+      "canonical_id": "insurance_capital",
+      "display_name": "Insurance capital regulation",
+      "priority": "conditional",
+      "linked_sectors": [
+        "private_credit",
+        "clo",
+        "asset_based_finance"
+      ],
+      "linked_asset_classes": [
+        "private_credit"
+      ],
+      "trigger_conditions": "New adopted/proposed capital treatment or insurer capital constraint affecting relevant assets.",
+      "transmission_mechanism": "Changed capital charges/eligibility → insurer demand and funding capacity → asset pricing, origination and manager capital formation.",
+      "inclusion_threshold": "Identify rule, jurisdiction, affected instrument and status; Apollo/Athene or other manager link only if evidenced.",
+      "common_false_positives": "Annuity marketing; unrelated insurance claims; assuming proposed rule is effective law."
+    },
+    {
+      "canonical_id": "ai_software",
+      "display_name": "AI-related software credit risk",
+      "priority": "conditional",
+      "linked_sectors": [
+        "software",
+        "private_credit"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "private_equity",
+        "venture_capital"
+      ],
+      "trigger_conditions": "Company/sector evidence of AI affecting retention, pricing, margins or financing.",
+      "transmission_mechanism": "AI substitution or efficiency gains → changed recurring revenue/cash flow → borrower debt capacity and enterprise value → lender/sponsor outcomes.",
+      "inclusion_threshold": "Observed evidence beyond an AI narrative; distinguish hypothesis from demonstrated borrower impact.",
+      "common_false_positives": "New model launch, broad job-loss predictions, assumption that all software credit deteriorates."
+    },
+    {
+      "canonical_id": "data_centre_finance",
+      "display_name": "AI / data-centre financing",
+      "priority": "conditional",
+      "linked_sectors": [
+        "asset_based_finance",
+        "real_estate",
+        "private_credit"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "real_estate",
+        "private_equity"
+      ],
+      "trigger_conditions": "Material debt/lease/project financing or stress with identified counterparties and terms.",
+      "transmission_mechanism": "Construction/power/tenant concentration → cash-flow and collateral risk → funding terms, deployment and valuation.",
+      "inclusion_threshold": "Identified financing instrument, capital provider role and risk/return consequence; nameplate project value is not debt deployed.",
+      "common_false_positives": "Chip sales or AI partnership without financing evidence; all infrastructure tagged private credit."
+    },
+    {
+      "canonical_id": "private_liquidity",
+      "display_name": "Private-market liquidity / redemptions / secondaries",
+      "priority": "conditional",
+      "linked_sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "real_estate",
+        "private_equity",
+        "venture_capital"
+      ],
+      "trigger_conditions": "New gate, unusual redemption restriction, extension, LP sale or GP-led continuation transaction.",
+      "transmission_mechanism": "Liquidity mismatch/slow distributions → redemption pressure or secondary discounts → funding, NAV and exit conditions.",
+      "inclusion_threshold": "Identify vehicle, rule/change and source; distinguish ordinary scheduled caps, manager equity and LP/fund asset transactions.",
+      "common_false_positives": "Routine disclosed redemption window; secondary stock trading; GP-led secondary labelled GP stakes."
+    },
+    {
+      "canonical_id": "lbo_exits",
+      "display_name": "M&A / LBO financing and exits",
+      "priority": "conditional",
+      "linked_sectors": [
+        "private_credit",
+        "software",
+        "real_estate"
+      ],
+      "linked_asset_classes": [
+        "private_credit",
+        "private_equity",
+        "venture_capital",
+        "real_estate"
+      ],
+      "trigger_conditions": "Material financing terms/availability or evidenced change in sale/IPO/exit conditions.",
+      "transmission_mechanism": "Debt cost and leverage capacity → acquisition pricing and refinancing feasibility → sponsor realizations/distributions and lender deployment.",
+      "inclusion_threshold": "Specific relevant financing change or strong comparative exit data; routine bolt-on without transmission fails.",
+      "common_false_positives": "Deal count with no scope/baseline; equity M&A automatically treated as credit; speculative IPO timetable."
+    }
+  ]
+}

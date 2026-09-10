@@ -1,0 +1,377 @@
+{
+  "schema_version": "0.1.0",
+  "purpose": "Hypothetical specification examples; not real articles, observed metrics, analyst labels or classifier tests. Scored cases assume the stated evidence is accessible and sufficient. Expected outcomes are pre-override recommendations unless explicitly stated.",
+  "cases": [
+    {
+      "case_id": "H01",
+      "hypothetical": true,
+      "scenario": "KKR-backed company announces a routine small equity bolt-on; no financing or manager-level effect disclosed.",
+      "relevance_level": null,
+      "direct_entity_ids": [
+        "kkr"
+      ],
+      "sector_ids": [],
+      "primary_event_type": "corporate_transaction",
+      "subtype": "acquisition",
+      "expected_recommendation": "suppress",
+      "reason": "ED03: sponsorship/name recognition does not establish relevant material transmission.",
+      "components": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "H02",
+      "hypothetical": true,
+      "scenario": "A KKR credit vehicle is explicitly a lender in the same company's major restructuring; primary evidence confirms materially revised recovery terms.",
+      "relevance_level": "A",
+      "direct_entity_ids": [
+        "kkr"
+      ],
+      "sector_ids": [
+        "private_credit"
+      ],
+      "primary_event_type": "credit_stress",
+      "subtype": "restructuring",
+      "expected_recommendation": "priority_shortlist",
+      "reason": "Direct credit event with material risk and documented terms; vehicle remains unknown unless specifically identified.",
+      "components": {
+        "portfolio_fit": 30,
+        "materiality": 20,
+        "investment_transmission": 20,
+        "actionability": 8,
+        "source_credibility": 10,
+        "novelty": 5
+      },
+      "expected_total": 93
+    },
+    {
+      "case_id": "H03",
+      "hypothetical": true,
+      "scenario": "Fed speaker repeats an already-known view; article provides no new decision or policy information.",
+      "relevance_level": null,
+      "direct_entity_ids": [],
+      "sector_ids": [],
+      "primary_event_type": "macro_policy",
+      "subtype": "policy_guidance",
+      "expected_recommendation": "suppress",
+      "reason": "ED03/ED04: generic mechanism cannot rescue a repeat.",
+      "components": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "H04",
+      "hypothetical": true,
+      "scenario": "New Fed policy guidance and public evidence establish a significant floating-rate coverage channel, with countervailing lender income and hedge effects acknowledged.",
+      "relevance_level": "C",
+      "direct_entity_ids": [],
+      "sector_ids": [
+        "private_credit"
+      ],
+      "primary_event_type": "macro_policy",
+      "subtype": "policy_guidance",
+      "expected_recommendation": "shortlist",
+      "reason": "Specific observed trigger and relevant sensitivity; no numerical portfolio loss inferred. The anchored total is 78, an ordinary shortlist rather than priority band.",
+      "components": {
+        "portfolio_fit": 20,
+        "materiality": 20,
+        "investment_transmission": 15,
+        "actionability": 8,
+        "source_credibility": 10,
+        "novelty": 5
+      },
+      "expected_total": 78
+    },
+    {
+      "case_id": "H05",
+      "hypothetical": true,
+      "scenario": "OTF official quarterly results show a material new non-accrual increase on a comparable basis.",
+      "relevance_level": "A",
+      "direct_entity_ids": [
+        "otf"
+      ],
+      "sector_ids": [
+        "private_credit",
+        "software"
+      ],
+      "primary_event_type": "financial_results",
+      "subtype": "non_accrual",
+      "expected_recommendation": "priority_shortlist",
+      "reason": "Preserve OTF-specific figures; parent tag blue_owl does not share the loss.",
+      "components": {
+        "portfolio_fit": 30,
+        "materiality": 20,
+        "investment_transmission": 20,
+        "actionability": 8,
+        "source_credibility": 10,
+        "novelty": 5
+      },
+      "expected_total": 93,
+      "expected_parent_ids": [
+        "blue_owl_credit",
+        "blue_owl"
+      ]
+    },
+    {
+      "case_id": "H06",
+      "hypothetical": true,
+      "scenario": "A typography article discusses OTF font rendering.",
+      "relevance_level": null,
+      "direct_entity_ids": [],
+      "sector_ids": [],
+      "primary_event_type": "other",
+      "subtype": "other",
+      "expected_recommendation": "suppress",
+      "reason": "ER04: OTF abbreviation does not resolve to the BDC.",
+      "components": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "H07",
+      "hypothetical": true,
+      "scenario": "An official announcement names only Blue Owl Technology Finance Corp. II; no involvement of OTF is stated.",
+      "relevance_level": null,
+      "direct_entity_ids": [],
+      "sector_ids": [],
+      "primary_event_type": "capital_formation",
+      "subtype": "final_close",
+      "expected_recommendation": "review_required",
+      "reason": "ER05: distinct unconfigured vehicle. Do not tag OTF. Resolve vehicle/parent from evidence before deciding A; an unknown entity is not proof of irrelevance.",
+      "components": null,
+      "expected_total": null,
+      "forbidden_entity_ids": [
+        "otf"
+      ]
+    },
+    {
+      "case_id": "H08",
+      "hypothetical": true,
+      "scenario": "A random sportswear article uses NB with no Neuberger context.",
+      "relevance_level": null,
+      "direct_entity_ids": [],
+      "sector_ids": [],
+      "primary_event_type": "other",
+      "subtype": "other",
+      "expected_recommendation": "suppress",
+      "reason": "ER07: standalone NB insufficient.",
+      "components": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "H09",
+      "hypothetical": true,
+      "scenario": "NB Strategic Capital Fund II announces a new material GP-led continuation transaction.",
+      "relevance_level": "A",
+      "direct_entity_ids": [
+        "nb_strategic_capital_ii"
+      ],
+      "sector_ids": [],
+      "primary_event_type": "liquidity_secondaries",
+      "subtype": "gp_led_secondary",
+      "expected_recommendation": "priority_shortlist",
+      "reason": "Fund is a secondaries vehicle, not a manager-equity fund.",
+      "components": {
+        "portfolio_fit": 30,
+        "materiality": 20,
+        "investment_transmission": 15,
+        "actionability": 6,
+        "source_credibility": 7,
+        "novelty": 5
+      },
+      "expected_total": 83,
+      "forbidden_sector_ids": [
+        "gp_stakes"
+      ]
+    },
+    {
+      "case_id": "H10",
+      "hypothetical": true,
+      "scenario": "Guggenheim Securities is only the adviser on a routine unrelated PE acquisition.",
+      "relevance_level": null,
+      "direct_entity_ids": [
+        "guggenheim_securities"
+      ],
+      "sector_ids": [],
+      "primary_event_type": "corporate_transaction",
+      "subtype": "acquisition",
+      "expected_recommendation": "suppress",
+      "reason": "Adviser role is not a Guggenheim Investments lending exposure.",
+      "components": null,
+      "expected_total": null,
+      "forbidden_entity_ids": [
+        "guggenheim_investments"
+      ]
+    },
+    {
+      "case_id": "H11",
+      "hypothetical": true,
+      "scenario": "Public primary evidence confirms a material new Selene Finance servicing covenant breach with collection and servicing-advance implications.",
+      "relevance_level": "A",
+      "direct_entity_ids": [
+        "selene_finance"
+      ],
+      "sector_ids": [
+        "mortgage"
+      ],
+      "primary_event_type": "credit_stress",
+      "subtype": "covenant_breach",
+      "expected_recommendation": "priority_shortlist",
+      "reason": "Hypothetical covenant failure is specifically stated; parent platform connection enables monitoring, not assumed fund losses.",
+      "components": {
+        "portfolio_fit": 30,
+        "materiality": 20,
+        "investment_transmission": 15,
+        "actionability": 8,
+        "source_credibility": 10,
+        "novelty": 5
+      },
+      "expected_total": 88,
+      "expected_parent_ids": [
+        "pretium"
+      ]
+    },
+    {
+      "case_id": "H12",
+      "hypothetical": true,
+      "scenario": "HSBC opens a retail branch; no asset-management consequence is discussed.",
+      "relevance_level": null,
+      "direct_entity_ids": [],
+      "sector_ids": [],
+      "primary_event_type": "strategy_platform",
+      "subtype": "expansion",
+      "expected_recommendation": "suppress",
+      "reason": "ER08: generic bank news is not HSBC AM.",
+      "components": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "H13",
+      "hypothetical": true,
+      "scenario": "An official Blue Owl page announces an industry award.",
+      "relevance_level": null,
+      "direct_entity_ids": [
+        "blue_owl"
+      ],
+      "sector_ids": [],
+      "primary_event_type": "other",
+      "subtype": "other",
+      "expected_recommendation": "suppress",
+      "reason": "ED03/ED05: correct identity and credible origin do not rescue marketing.",
+      "components": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "H14",
+      "hypothetical": true,
+      "scenario": "PAG Loan Fund V announces a material, newly evidenced direct-lending development in Asia.",
+      "relevance_level": "A",
+      "direct_entity_ids": [
+        "pag_loan_v"
+      ],
+      "sector_ids": [
+        "private_credit"
+      ],
+      "primary_event_type": "financing",
+      "subtype": "origination",
+      "expected_recommendation": "priority_shortlist",
+      "reason": "Historical fund identity is verified for this hypothetical; assess actual event-date relationship before use. Geography cannot subtract relevance.",
+      "components": {
+        "portfolio_fit": 30,
+        "materiality": 20,
+        "investment_transmission": 15,
+        "actionability": 6,
+        "source_credibility": 10,
+        "novelty": 5
+      },
+      "expected_total": 86,
+      "primary_region": "APAC"
+    },
+    {
+      "case_id": "H15",
+      "hypothetical": true,
+      "scenario": "The same Apollo financing announcement appears in an issuer release and a syndicated copy with no new facts.",
+      "relevance_level": null,
+      "direct_entity_ids": [
+        "apollo"
+      ],
+      "sector_ids": [
+        "private_credit"
+      ],
+      "primary_event_type": "financing",
+      "subtype": "origination",
+      "expected_recommendation": "suppress",
+      "reason": "ED04: attach copy as source; do not create another card.",
+      "components": null,
+      "expected_total": null,
+      "duplicate_of": "hypothetical_existing_event"
+    },
+    {
+      "case_id": "H16",
+      "hypothetical": true,
+      "scenario": "An accessible reputable report adds a meaningful but incremental software credit update, with a specific monitoring implication.",
+      "relevance_level": "B",
+      "direct_entity_ids": [],
+      "sector_ids": [
+        "software",
+        "private_credit"
+      ],
+      "primary_event_type": "market_conditions",
+      "subtype": "underwriting",
+      "expected_recommendation": "reserve_manual_only",
+      "reason": "Passes ordinary gates; 60–69 reserve needs thin-feed condition and analyst approval.",
+      "components": {
+        "portfolio_fit": 25,
+        "materiality": 15,
+        "investment_transmission": 10,
+        "actionability": 6,
+        "source_credibility": 7,
+        "novelty": 2
+      },
+      "expected_total": 65
+    },
+    {
+      "case_id": "H17",
+      "hypothetical": true,
+      "scenario": "A tracked vehicle is alleged to have gated redemptions, but only an inaccessible headline is available.",
+      "relevance_level": "A",
+      "direct_entity_ids": [
+        "otf"
+      ],
+      "sector_ids": [
+        "private_credit"
+      ],
+      "primary_event_type": "liquidity_secondaries",
+      "subtype": "redemption_gate",
+      "expected_recommendation": "review_required",
+      "reason": "Evidence insufficiency cannot be overridden by alarming wording; urgent evidence review only.",
+      "components": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "H18",
+      "hypothetical": true,
+      "scenario": "A tracked manager has a primary-confirmed severe event, but the model underrates materiality; a private overlay confirms held status and the analyst approves escalation.",
+      "relevance_level": "A",
+      "direct_entity_ids": [
+        "blue_owl"
+      ],
+      "sector_ids": [
+        "private_credit"
+      ],
+      "primary_event_type": "regulatory",
+      "subtype": "enforcement",
+      "expected_recommendation": "suppress",
+      "reason": "Normal score/gates suppress; only the separately approved critical override permits publication. Facts and exposure are assumptions in this hypothetical fixture.",
+      "components": {
+        "portfolio_fit": 25,
+        "materiality": 5,
+        "investment_transmission": 10,
+        "actionability": 3,
+        "source_credibility": 10,
+        "novelty": 5
+      },
+      "expected_total": 58,
+      "held_status": "confirmed_held",
+      "expected_after_documented_override": "approved",
+      "override_reason": "Severe confirmed enforcement affecting held manager; materiality-anchor disagreement adjudicated by analyst."
+    }
+  ]
+}

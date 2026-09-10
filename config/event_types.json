@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.1.0",
+  "rule": "One primary type and valid subtype per event; optional secondary types. Type never guarantees publication. Stress as the main new fact takes precedence over routine results. Each unrelated transaction gets its own event.",
+  "event_types": [
+    {
+      "canonical_id": "capital_formation",
+      "display_name": "Fundraising / capital formation",
+      "subtypes": [
+        "launch",
+        "interim_close",
+        "final_close",
+        "capital_raise"
+      ],
+      "classification_rule": "Separate target, commitments, equity, leverage and investable capacity; material franchise/strategy effect required."
+    },
+    {
+      "canonical_id": "strategy_platform",
+      "display_name": "Strategy / platform change",
+      "subtypes": [
+        "launch",
+        "expansion",
+        "partnership",
+        "wind_down"
+      ],
+      "classification_rule": "New capacity or structural change; an office opening or marketing rebrand alone is insufficient."
+    },
+    {
+      "canonical_id": "financing",
+      "display_name": "Financing / deployment",
+      "subtypes": [
+        "origination",
+        "refinancing",
+        "acquisition_finance",
+        "warehouse",
+        "fund_finance"
+      ],
+      "classification_rule": "Identify lender, borrower, instrument, size basis and terms. Equity sponsor is not lender."
+    },
+    {
+      "canonical_id": "corporate_transaction",
+      "display_name": "Acquisition / disposal / ownership",
+      "subtypes": [
+        "acquisition",
+        "disposal",
+        "merger",
+        "ownership_change"
+      ],
+      "classification_rule": "Distinguish manager transaction from routine portfolio-company bolt-on."
+    },
+    {
+      "canonical_id": "financial_results",
+      "display_name": "Results / portfolio quality",
+      "subtypes": [
+        "earnings",
+        "nav",
+        "non_accrual",
+        "portfolio_marks"
+      ],
+      "classification_rule": "Preserve period, entity, basis, numerator/denominator and comparable prior period."
+    },
+    {
+      "canonical_id": "credit_stress",
+      "display_name": "Default / restructuring",
+      "subtypes": [
+        "payment_default",
+        "covenant_breach",
+        "non_accrual",
+        "restructuring",
+        "distressed_exchange",
+        "amend_extend",
+        "pik_change"
+      ],
+      "classification_rule": "Amendment or PIK is not automatically default; non-accrual is not necessarily realized loss."
+    },
+    {
+      "canonical_id": "regulatory",
+      "display_name": "Regulatory / legal development",
+      "subtypes": [
+        "proposal",
+        "final_rule",
+        "investigation",
+        "enforcement",
+        "judgment"
+      ],
+      "classification_rule": "Distinguish proposal from enacted rule and allegations from findings; record scope/effective date."
+    },
+    {
+      "canonical_id": "ratings",
+      "display_name": "Ratings event",
+      "subtypes": [
+        "upgrade",
+        "downgrade",
+        "watch",
+        "outlook"
+      ],
+      "classification_rule": "Specify agency, rated issuer/tranche and action; rating is agency opinion."
+    },
+    {
+      "canonical_id": "structured_finance",
+      "display_name": "CLO / securitisation",
+      "subtypes": [
+        "clo_issuance",
+        "clo_reset",
+        "clo_refinancing",
+        "abs_issuance",
+        "rmbs_issuance",
+        "cmbs_issuance"
+      ],
+      "classification_rule": "Preserve series/vintage; refinancing and reset are distinct; identify asset and liability spread."
+    },
+    {
+      "canonical_id": "gp_stakes",
+      "display_name": "GP-stakes transaction",
+      "subtypes": [
+        "minority_equity",
+        "control_stake",
+        "gp_financing"
+      ],
+      "classification_rule": "Manager equity/fee-stream financing; GP-led secondaries belong to liquidity_secondaries."
+    },
+    {
+      "canonical_id": "leadership",
+      "display_name": "Leadership / key person",
+      "subtypes": [
+        "departure",
+        "appointment",
+        "succession"
+      ],
+      "classification_rule": "Key-person, governance or material platform effect; routine hires excluded."
+    },
+    {
+      "canonical_id": "macro_policy",
+      "display_name": "Macro / policy decision",
+      "subtypes": [
+        "rates",
+        "balance_sheet",
+        "policy_guidance"
+      ],
+      "classification_rule": "Observed change plus specific alternatives transmission; routine speech/commentary excluded."
+    },
+    {
+      "canonical_id": "market_conditions",
+      "display_name": "Market conditions / technicals",
+      "subtypes": [
+        "spreads",
+        "issuance",
+        "underwriting",
+        "defaults",
+        "valuation",
+        "exits"
+      ],
+      "classification_rule": "Document universe, period, method and material change. Same dataset commentary is one event."
+    },
+    {
+      "canonical_id": "liquidity_secondaries",
+      "display_name": "Liquidity / secondaries",
+      "subtypes": [
+        "redemption_gate",
+        "redemption_limit",
+        "fund_extension",
+        "lp_secondary",
+        "gp_led_secondary",
+        "continuation_vehicle"
+      ],
+      "classification_rule": "Distinguish scheduled redemption limits from unexpected restriction; LP interest from GP ownership."
+    },
+    {
+      "canonical_id": "other",
+      "display_name": "Other material event",
+      "subtypes": [
+        "other"
+      ],
+      "classification_rule": "Manual review required; no catch-all path to automatic publication."
+    }
+  ]
+}

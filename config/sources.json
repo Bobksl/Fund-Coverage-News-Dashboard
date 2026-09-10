@@ -1,0 +1,236 @@
+{
+  "schema_version": "0.1.0",
+  "notes": "Evidence registry for mappings. Null publication date means undated or not established, not today's event. Verification used public page text or indexed primary-source excerpts; not archived full-text snapshots. Recheck historical relationships for the event's date.",
+  "sources": [
+    {
+      "source_id": "S01",
+      "title": "Blue Owl Technology Finance company information",
+      "url": "https://www.blueowltechnologyfinance.com/investors/company-information",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "OTF is Blue Owl Technology Finance Corp.; its external adviser is Blue Owl Technology Credit Advisors LLC, an indirect affiliate of Blue Owl Capital within the Credit platform.",
+      "limits": "Primary company page; current relationship, not ownership of the BDC."
+    },
+    {
+      "source_id": "S02",
+      "title": "Blue Owl Credit platform",
+      "url": "https://wealth.blueowl.com/solutions/platform-credit",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Blue Owl offers direct lending and alternative credit/asset-based finance within its Credit platform.",
+      "limits": "Primary strategy page."
+    },
+    {
+      "source_id": "S03",
+      "title": "Blue Owl GP Strategic Capital",
+      "url": "https://www.blueowl.com/gp-strategic-capital",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Platform supplies minority equity and financing to private capital managers.",
+      "limits": "Do not confuse GP ownership with LP interests or sports equity."
+    },
+    {
+      "source_id": "S04",
+      "title": "OTF 2026 Form 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026003277/otic-20260120.htm",
+      "publisher_role": "primary",
+      "published_date": "2026-01-23",
+      "verified_on": "2026-09-10",
+      "supported_claim": "Current Blue Owl Technology Finance filing refers to its earlier Owl Rock Technology Finance indenture.",
+      "limits": "Supports legacy name; filing URL slug is not an entity identifier."
+    },
+    {
+      "source_id": "S05",
+      "title": "Pretium strategies",
+      "url": "https://pretium.com/strategies/",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Pretium lists real estate equity/debt, residential credit and corporate/structured credit.",
+      "limits": "No AUM figures frozen into ontology."
+    },
+    {
+      "source_id": "S06",
+      "title": "Pretium 2025 Impact Report, published June 2026",
+      "url": "https://pretium.com/wp-content/uploads/2026/06/2025-Pretium-Impact-Report-06.26.pdf",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Residential-credit discussion identifies Anchor Loans, Deephaven Mortgage and Selene Finance with lending, origination and servicing roles.",
+      "limits": "Public report, pp.12-13 printed; establishes operating-platform relationship, not exact ownership percentage."
+    },
+    {
+      "source_id": "S07",
+      "title": "KKR Credit",
+      "url": "https://www.kkr.com/invest/credit",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "KKR distinguishes leveraged credit, private credit and strategic investment capabilities.",
+      "limits": "Primary strategy page."
+    },
+    {
+      "source_id": "S08",
+      "title": "PAG Loan Fund V close",
+      "url": "https://www.pag.com/assets/files/press/PAG%20Announces%20Closing%20of%20USD2.6%20Billion%20Private%20Credit%20Fund.pdf",
+      "publisher_role": "primary",
+      "published_date": "2022-12-13",
+      "verified_on": "2026-09-10",
+      "supported_claim": "PAG identifies Credit & Markets, Private Equity and Real Assets; PAG Loan Fund V is a pan-Asia direct-lending fund.",
+      "limits": "Historical primary evidence. Current homepage browser verification challenge; refresh strategy/vehicle names before expanding mapping."
+    },
+    {
+      "source_id": "S09",
+      "title": "Bayview company overview",
+      "url": "https://bayview.com/",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Bayview focuses on residential, consumer and commercial credit, including whole loans, risk transfer, structured products and servicing rights.",
+      "limits": "Does not establish names of all affiliates."
+    },
+    {
+      "source_id": "S10",
+      "title": "Bayview legal identity",
+      "url": "https://bayview.com/legal/",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "The website identifies Bayview Asset Management, LLC and affiliates.",
+      "limits": "Identity evidence only; distinguish Japanese Bayview Asset Management."
+    },
+    {
+      "source_id": "S11",
+      "title": "CIFC CLO strategy",
+      "url": "https://cifc.com/strategies/clos",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "CIFC Asset Management manages US and European CLOs; site also identifies senior secured loan and direct-lending strategies.",
+      "limits": "Do not reuse historic CIFC public ticker."
+    },
+    {
+      "source_id": "S12",
+      "title": "BasePoint corporate structure",
+      "url": "https://basepointgroup.com/who-we-are/",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "BasePoint Group Inc. identifies itself as holding company for BasePoint Capital LLC and BasePoint Advisors LLC.",
+      "limits": "Holding-company relationship expressly stated by company."
+    },
+    {
+      "source_id": "S13",
+      "title": "BasePoint fund and lending announcements",
+      "url": "https://basepointgroup.com/",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "July 30, 2026 announcement identifies BasePoint Rated Structure Fund I L.P. as advised by BasePoint Advisors. Separate note-transaction announcement distinguishes BasePoint Capital and BP Lender subsidiaries.",
+      "limits": "Do not invent individual BP Lender legal entities or equate adviser with commercial service provider."
+    },
+    {
+      "source_id": "S14",
+      "title": "Neuberger fund-name changes",
+      "url": "https://www.nb.com/who-we-are/newsroom/neuberger-announces-changes-to-certain-funds-names",
+      "publisher_role": "primary",
+      "published_date": "2025-12-03",
+      "verified_on": "2026-09-10",
+      "supported_claim": "Lists fund-specific name changes effective December 18, 2025 or February 28, 2026; site uses Neuberger while legal group remains Neuberger Berman Group LLC.",
+      "limits": "Does NOT establish a universal August 4, 2026 rename or changes to every NB private fund."
+    },
+    {
+      "source_id": "S15",
+      "title": "NB Private Debt V close",
+      "url": "https://www.nb.com/who-we-are/newsroom/neuberger-berman-announces-close-of-7-3-billion-private-debt-v",
+      "publisher_role": "primary",
+      "published_date": "2025-11-11",
+      "verified_on": "2026-09-10",
+      "supported_claim": "NB Private Debt V is Neuberger's direct-lending fund investing in senior secured, first-lien and unitranche US sponsor-owned company loans.",
+      "limits": "Reported raised figure includes leverage; do not label that figure equity commitments."
+    },
+    {
+      "source_id": "S16",
+      "title": "NB Strategic Capital Fund II close",
+      "url": "https://www.nb.com/who-we-are/newsroom/neuberger-berman-raises-4-billion-for-latest-gp-led-secondary-fund",
+      "publisher_role": "primary",
+      "published_date": "2025-06-05",
+      "verified_on": "2026-09-10",
+      "supported_claim": "NB Strategic Capital Fund II focuses on GP-led secondaries and continuation vehicles.",
+      "limits": "A GP-led secondary fund is not a GP-stakes fund merely because its name includes Strategic Capital."
+    },
+    {
+      "source_id": "S17",
+      "title": "Apollo retirement platform",
+      "url": "https://www.apollo.com/strategies/retirement",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Apollo describes its integrated Athene platform and 2022 merger.",
+      "limits": "Insurance relevance still requires a capital, origination or investment transmission mechanism."
+    },
+    {
+      "source_id": "S18",
+      "title": "Bain Capital Credit overview",
+      "url": "https://www.baincapitalcredit.com/about",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Bain Capital Credit covers liquid/structured credit and private credit; Special Situations originated within Credit but evolved more broadly.",
+      "limits": "Do not automatically assign every Special Situations event to private credit."
+    },
+    {
+      "source_id": "S19",
+      "title": "Bain Capital Credit 2025 financing review",
+      "url": "https://www.baincapital.com/news/bain-capital-credit-announces-8-billion-financing-investments-2025",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Release identifies Bain Capital Credit LP as an affiliate of Bain Capital LP and separates certain Special Situations AUM.",
+      "limits": "Confirms relationship without equating all mandates."
+    },
+    {
+      "source_id": "S20",
+      "title": "Guggenheim primary businesses",
+      "url": "https://www.guggenheimpartners.com/services",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Guggenheim Investments is the asset-management business; Guggenheim Securities supplies investment-banking and capital-markets services.",
+      "limits": "Arranging a transaction does not establish a Guggenheim managed-fund investment."
+    },
+    {
+      "source_id": "S21",
+      "title": "Guggenheim structured credit",
+      "url": "https://portal.guggenheiminvestments.com/institutional/strategies/alternatives/opportunistic-structured-credit-strategy",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Structured-credit strategy includes ABS, RMBS and CMBS.",
+      "limits": "Primary strategy page."
+    },
+    {
+      "source_id": "S22",
+      "title": "HSBC Asset Management alternative credit",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/intermediary/capabilities/alternatives/alternative-credit",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "HSBC Asset Management identifies alternative credit and direct lending, drawing on the bank's network.",
+      "limits": "Bank and asset-management roles are distinct."
+    },
+    {
+      "source_id": "S23",
+      "title": "Blue Owl GP platform legacy branding",
+      "url": "https://wealth.blueowl.com/solutions/investment-strategy-gp-strategic-capital-gp-stakes",
+      "publisher_role": "primary",
+      "published_date": null,
+      "verified_on": "2026-09-10",
+      "supported_claim": "Blue Owl GP Strategic Capital describes its platform as formerly Dyal.",
+      "limits": "Map Dyal to this platform, not every Blue Owl strategy."
+    }
+  ]
+}
