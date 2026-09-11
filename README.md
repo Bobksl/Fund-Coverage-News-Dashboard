@@ -6,8 +6,8 @@ Phase 1 specification for a watchlist-first alternatives-news demo. The objectiv
 
 1. Read [architecture review](docs/architecture-review.md) for the simplified local-first approach and the prior-conversation retrieval limitation.
 2. Read [editorial rulebook](docs/editorial-rulebook.md) for what qualifies, what does not, and how scoring/review work.
-3. Review [entity findings and two investment-team questions](docs/entity-research.md).
-4. Use [Phase 2 experiment](docs/phase-2-experiment.md) as the next development brief.
+3. Review [entity findings and confirmed monitoring-only scope](docs/entity-research.md).
+4. Use [Phase 2 experiment](docs/phase-2-experiment.md) and [current status](docs/phase-2-status.md) for the amended protocol and initial analyst packet.
 
 ## Files
 

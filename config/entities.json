@@ -16,7 +16,7 @@
     "guggenheim",
     "hsbc_am"
   ],
-  "exposure_policy": "Analyst-supplied monitoring scope, not asserted legal holdings. Specific mandates/sizes unconfirmed. Related entities and fund examples are not added holdings. Private exposure overlay stays outside Git.",
+  "exposure_policy": "User-confirmed monitoring-only scope for Phase 2 (2026-09-11). Bayview means US bayview.com; BasePoint means specialty-finance basepointgroup.com. Related entities/fund examples remain monitoring mappings, not asserted holdings. No holdings inventory or confirmed-held overrides in Phase 2.",
   "relationship_policy": "parent is an editorial edge typed by parent_relationship, not uniformly corporate ownership. relevant_subsidiaries includes platforms with explicitly typed edges. Empty official_domains authorizes no child-domain shortcut; parent evidence may support resolution.",
   "review_policy": "needs_review identifies a scoped limitation, not rejection of every verified match. Decisions dependent on the unresolved point must enter manual review.",
   "matching_rules": [
@@ -637,8 +637,8 @@
         "ER03",
         "ER06"
       ],
-      "needs_review": true,
-      "review_note": "US identity verified; analyst shorthand alone does not establish intended mandate. Confirm Bayview/vehicle. Named affiliates require additional evidence.",
+      "needs_review": false,
+      "review_note": null,
       "canonical_id": "bayview",
       "display_name": "Bayview Asset Management",
       "entity_type": "manager",
@@ -665,7 +665,7 @@
         "S09",
         "S10"
       ],
-      "notes": "Working mapping is US firm at bayview.com. No generic BAM alias; verify full identity when ambiguous.",
+      "notes": "Working mapping is US firm at bayview.com. No generic BAM alias; verify full identity when ambiguous. User confirmed this intended manager on 2026-09-11. Phase 2 monitoring-only; no specific held vehicle inferred.",
       "search_terms": [
         "\"Bayview Asset Management\" credit",
         "\"Bayview\" mortgage",
@@ -736,8 +736,8 @@
         "ER03",
         "ER06"
       ],
-      "needs_review": true,
-      "review_note": "Public structure verified; analyst must confirm intended specialty-finance platform and vehicle. Same-name adviser requires context.",
+      "needs_review": false,
+      "review_note": null,
       "canonical_id": "basepoint",
       "display_name": "BasePoint",
       "entity_type": "manager_platform",
@@ -759,7 +759,7 @@
         "S12",
         "S13"
       ],
-      "notes": "Primary site identifies Group Inc. as holding company. Advisors and Capital are separate legal entities.",
+      "notes": "Primary site identifies Group Inc. as holding company. Advisors and Capital are separate legal entities. User confirmed this intended manager on 2026-09-11. Phase 2 monitoring-only; no specific held vehicle inferred.",
       "search_terms": [
         "\"BasePoint\" lending",
         "\"BasePoint Advisors LLC\" fund",

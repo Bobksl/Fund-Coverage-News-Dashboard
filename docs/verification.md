@@ -20,3 +20,16 @@ The referenced conversation returned five exchanges but three replies were trunc
 No relevant workspace memory entry was found. The requested I Have ADHD plugin had no available callable tools. The using-agent-skills supplemental definition-of-done reference was absent from its skill directory/search; scope-appropriate verification is reported explicitly here. No unrelated quantitative research session was modified.
 
 See [Phase 2 experiment](phase-2-experiment.md) for the actual empirical readiness bar. Specification readiness does not imply analyst sign-off, accurate story selection or approval for unattended publication.
+
+## Phase 2 packet slice — 2026-09-11
+
+The preceding section is the historical Phase 1 verification record. Bayview/BasePoint intent is now confirmed and the initial Phase 2 packet is created; the benchmark remains unexecuted.
+
+- RED: unittest discovery failed with ModuleNotFoundError before the packet builder existed.
+- GREEN: two focused unittest methods pass, covering metadata allowlisting (including nested gold metadata), blank human labels, unchanged article bytes after hidden-label changes, overwrite refusal, duplicate IDs and unsafe URLs.
+- A subsequent test run encountered Windows temporary-directory access/cleanup errors. Tests now use an isolated temporary directory under ignored workspace work/; rerun passed without changing application checks.
+- The sandbox temporary-directory error recurred later even under work/. The final focused suite passed outside the sandbox with automatic approval, preserving every assertion. This is an execution-environment limitation, not a suppressed test failure.
+- The existing specification validator still reports seven JSON files, 30 entities, 23 sources, eight sectors, 11 themes, 15 event types and 18 hypothetical cases with no errors.
+- The generated local packet has 20 unique article IDs and 20 blank label rows. Input hash is recorded. This hash does not freeze the linked web content.
+- Read-back caught a Windows CRLF/UTF-8 hash mismatch in packet 001. A regression assertion reproduced the failure; byte-exact JSONL writing fixed it. Packet 002 supersedes 001 with unchanged IDs; its on-disk hash is checked. No labels or predictions were present in either version.
+- No model calls, human gold labels, event-group predictions, empirical metrics, automated ingestion or dashboard implementation were produced. The packet builder is not an implemented classifier or evaluation engine.
