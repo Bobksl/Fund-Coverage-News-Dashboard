@@ -18,8 +18,13 @@
 - [x] Phase 2 engineering, part two: shortlist-only bilingual drafting with parity QA, calibration
       stability reruns, provider usage/latency capture and the custodian command line. All experiment
       implementation tickets are now built; still no inference and no empirical result.
-- [ ] Approve or amend docs/natural-feed-policy.md before any collection: confirm newsroom paths, name
-      the independent public outlets, decide PAG scope and HSBC AM regional treatment.
+- [x] Collection decisions recorded in docs/natural-feed-policy.md and the window/roster frozen.
+- [x] Natural-feed collection run 1: 150 records from 12 sources, window 2026-08-12..2026-09-10,
+      cutoff 2026-09-04. Five gaps logged. See docs/phase-2-collection-status.md.
+- [ ] Decide Commercial Observer: spend ~150-250 article retrievals to resolve dates, or amend the
+      roster to drop it this cycle. Its index publishes no dates, so it cannot be windowed as is.
+- [ ] Freeze the SEC CIK and form roster, then collect that tier.
+- [ ] Curate the challenge set, then build one combined blinded analyst packet across both cohorts.
 - [ ] Analyst input required before any inference: resolve the two calibration disagreements, obtain
       second-reviewer labels, and capture the permitted evidence payload for joint label/evidence freeze.
 - [ ] Phase 3 ingestion pilot: blocked at the entry gate on 2026-09-11; see docs/phase-3-entry-gate.md.
