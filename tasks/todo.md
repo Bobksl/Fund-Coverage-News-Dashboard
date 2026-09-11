@@ -12,3 +12,4 @@
 - [x] Verify three analyst corrections; review all 20 source articles and locate supplementary primary evidence; preserve revised labels and update Claude handover.
 - [ ] Resolve remaining calibration taxonomy/rubric disagreements and freeze the actual evidence payload; a source-link review is not a model-input freeze or Phase 2 pass.
 - [ ] Phase 2 remaining: broaden corpus, obtain independent human labels, freeze evidence/labels/split, implement and compare baseline and LLM, apply separate cohort acceptance criteria. No model inference before label freeze.
+- [ ] Phase 3 ingestion pilot: blocked at the entry gate on 2026-09-11; see docs/phase-3-entry-gate.md. Do not start collectors before the Phase 2 disposition exists.

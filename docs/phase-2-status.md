@@ -2,7 +2,7 @@
 
 Started: protocol amendments, confirmed manager scope, and an initial analyst review packet. No model inference or performance evaluation has run.
 
-Latest update: the analyst corrected all three initial consistency items. The revised 20-row sheet passes structural checks; all 20 article sources were reviewed and supplemental primary references recorded. The latest private snapshot/review is `work/phase2/evaluator/label-review-002/`; review-001 is historical. See [batch disposition](phase-2-batch-review.md) for remaining calibration disagreements and empirical prerequisites. Labels/source payloads are not jointly frozen and no inference has run. The [Claude Phase 3 handover](handover-claude-phase-3.md) is updated but conditional on actual evaluation evidence. Phase 2 is not marked complete.
+Latest update: the analyst corrected all three initial consistency items. The revised 20-row sheet passes structural checks; all 20 article sources were reviewed and supplemental primary references recorded. The latest private snapshot/review is `work/phase2/evaluator/label-review-002/`; review-001 is historical. See [batch disposition](phase-2-batch-review.md) for remaining calibration disagreements and empirical prerequisites. Labels/source payloads are not jointly frozen and no inference has run. The [Claude Phase 3 handover](handover-claude-phase-3.md) is updated but conditional on actual evaluation evidence. Phase 2 is not marked complete. An independent Phase 3 entry-gate check on 2026-09-11 re-confirmed this against the checkout and returned the ingestion pilot as blocked; see [entry-gate record](phase-3-entry-gate.md).
 
 ## Completed
 
