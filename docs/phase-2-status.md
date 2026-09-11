@@ -2,7 +2,7 @@
 
 Started: protocol amendments, confirmed manager scope, and an initial analyst review packet. No model inference or performance evaluation has run.
 
-Completion request audited: the current label file still has zero human decisions and zero gold event groups. See [completion audit](phase-2-completion-audit.md) for the unfinished work and [prepared Claude Phase 3 handover](handover-claude-phase-3.md) for the conditional next-phase prompt. Phase 2 is not marked complete.
+Latest update: the user has supplied labels for all 20 starter articles. Their as-received bytes and a provisional formatting-normalized copy are preserved privately at `work/phase2/evaluator/label-review-001/`. A publication-decision/grouping conflict and two manually identified consistency items await analyst adjudication. Labels are not frozen gold and no inference has run. The [earlier completion audit](phase-2-completion-audit.md) describes historical blank-label state; its remaining corpus/pipeline/evaluation work still applies. The [prepared Claude Phase 3 handover](handover-claude-phase-3.md) remains conditional. Phase 2 is not marked complete.
 
 ## Completed
 

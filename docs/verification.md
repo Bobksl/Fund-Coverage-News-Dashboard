@@ -33,3 +33,11 @@ The preceding section is the historical Phase 1 verification record. Bayview/Bas
 - The generated local packet has 20 unique article IDs and 20 blank label rows. Input hash is recorded. This hash does not freeze the linked web content.
 - Read-back caught a Windows CRLF/UTF-8 hash mismatch in packet 001. A regression assertion reproduced the failure; byte-exact JSONL writing fixed it. Packet 002 supersedes 001 with unchanged IDs; its on-disk hash is checked. No labels or predictions were present in either version.
 - No model calls, human gold labels, event-group predictions, empirical metrics, automated ingestion or dashboard implementation were produced. The packet builder is not an implemented classifier or evaluation engine.
+
+## Completed-label intake review — 2026-09-11
+
+- Human labels have now been submitted for all 20 starter articles. Original bytes were copied and hashed privately; the submitted file was not modified. The copy is as-received evidence, not adjudicated gold.
+- Added evaluator-only `tools/audit_labels.py` for required columns/values, article coverage, explicit date formats, enum checks, duplicate IDs and conflicting event publication labels. It produces no inference inputs and cannot declare gold freeze ready.
+- Five synthetic audit tests first failed on the absent module, then passed after implementation. The full seven-test suite passed outside the sandbox under the same approved temporary-directory workaround. Synthetic tests are not classifier-performance evidence.
+- Provisional normalization only trims outer whitespace, omits an entirely blank final row and records an explicit MM/DD/YYYY interpretation. No publication decision or event ID changed. Consistency issues are recorded in the private evaluator review and sent to the analyst; factual grounding was checked for the specific Zurich attribution only, not asserted for every submitted rationale.
+- Phase 2 remains incomplete: adjudication, source-evidence capture, full cohort construction and the actual prototype/evaluation remain required. No inference or Phase 3 promotion occurred.

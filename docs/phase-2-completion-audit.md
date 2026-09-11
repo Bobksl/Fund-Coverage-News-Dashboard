@@ -2,6 +2,8 @@
 
 Disposition: **incomplete; no inference authorized by the existing label-freeze protocol and no Phase 3 promotion evidence**.
 
+Subsequent update: human labels have now been received for the 20 starter articles; the blank-label counts below are historical. See `docs/phase-2-status.md` and the private `work/phase2/evaluator/label-review-001/` review. Adjudication and evidence freeze remain outstanding, as do the larger corpus and empirical experiment.
+
 The request to finish Phase 2 does not supply the independent human judgements required by the previously agreed protocol. Do not substitute Codex, Claude, synthetic fixtures or presumed labels for those judgements.
 
 ## Verified local state

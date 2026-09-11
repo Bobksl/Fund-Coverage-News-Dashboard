@@ -7,4 +7,6 @@
 - [x] Verification: parse all configs, validate IDs and examples, inspect diff and report limitations.
 - [x] Phase 2 start: amend four experiment controls; confirm Bayview/BasePoint and monitoring-only scope; create initial 20-article link packet with blank analyst labels.
 - [x] Verify packet metadata allowlist, blank labels, stable output under gold-label changes, and overwrite protection.
+- [x] Receive 20 completed analyst labels; preserve original bytes and audit formatting, coverage, enums and event-group consistency with synthetic regression tests.
+- [ ] Resolve submitted-label adjudication items and capture source evidence before gold freeze. Do not infer or alter analyst decisions automatically.
 - [ ] Phase 2 remaining: broaden corpus, obtain independent human labels, freeze evidence/labels/split, implement and compare baseline and LLM, apply separate cohort acceptance criteria. No model inference before label freeze.
