@@ -41,3 +41,10 @@ The preceding section is the historical Phase 1 verification record. Bayview/Bas
 - Five synthetic audit tests first failed on the absent module, then passed after implementation. The full seven-test suite passed outside the sandbox under the same approved temporary-directory workaround. Synthetic tests are not classifier-performance evidence.
 - Provisional normalization only trims outer whitespace, omits an entirely blank final row and records an explicit MM/DD/YYYY interpretation. No publication decision or event ID changed. Consistency issues are recorded in the private evaluator review and sent to the analyst; factual grounding was checked for the specific Zurich attribution only, not asserted for every submitted rationale.
 - Phase 2 remains incomplete: adjudication, source-evidence capture, full cohort construction and the actual prototype/evaluation remain required. No inference or Phase 3 promotion occurred.
+
+## Revised full-batch source review — 2026-09-11
+
+- Re-ran the existing evaluator audit on the analyst's revised submission: 20 complete unique article records, 20 distinct event IDs and no structural errors after formatting-only normalization. Revision changes are recorded by article ID in private evaluator review-002. Prior submitted bytes remain untouched.
+- Opened every original article source and checked the relevant core event/role passages. Located supplementary official/SEC evidence for details missing from the original release; per-record references/limitations are in private source-review.json. This is source support review, not a frozen corpus or blind prediction test.
+- Three earlier adjudication corrections verified. Two calibration taxonomy/rubric disagreements remain documented without changing the analyst's labels. All current event groups are singletons, so duplicate-consolidation recall is untestable on this batch.
+- Updated the final handover document and Phase 2 readiness disposition to remove stale blank-label state. No code behavior changed in this review turn; JSON/ID/hash/link checks and the existing spec validator were used. No model-performance metric or Phase 3 promotion is claimed.

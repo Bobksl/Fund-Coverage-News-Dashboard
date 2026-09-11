@@ -2,7 +2,7 @@
 
 Started: protocol amendments, confirmed manager scope, and an initial analyst review packet. No model inference or performance evaluation has run.
 
-Latest update: the user has supplied labels for all 20 starter articles. Their as-received bytes and a provisional formatting-normalized copy are preserved privately at `work/phase2/evaluator/label-review-001/`. A publication-decision/grouping conflict and two manually identified consistency items await analyst adjudication. Labels are not frozen gold and no inference has run. The [earlier completion audit](phase-2-completion-audit.md) describes historical blank-label state; its remaining corpus/pipeline/evaluation work still applies. The [prepared Claude Phase 3 handover](handover-claude-phase-3.md) remains conditional. Phase 2 is not marked complete.
+Latest update: the analyst corrected all three initial consistency items. The revised 20-row sheet passes structural checks; all 20 article sources were reviewed and supplemental primary references recorded. The latest private snapshot/review is `work/phase2/evaluator/label-review-002/`; review-001 is historical. See [batch disposition](phase-2-batch-review.md) for remaining calibration disagreements and empirical prerequisites. Labels/source payloads are not jointly frozen and no inference has run. The [Claude Phase 3 handover](handover-claude-phase-3.md) is updated but conditional on actual evaluation evidence. Phase 2 is not marked complete.
 
 ## Completed
 
@@ -28,4 +28,4 @@ Initial discovery was exploratory and cannot retroactively become a natural-feed
 
 Apollo and Blue Owl archive pages were accessible but pagination was not exhausted. Bain's archive displayed conflicting dates for one unused Vitabiotics item; it was not assigned a guessed date. BasePoint's older rated-note link returned a retrieval error and was not silently described as verified article evidence. The current batch makes no archive-completeness claim.
 
-Next dependency: independent human labels, then label adjudication/evidence freeze. Additional corpus curation and pipeline implementation can proceed independently, but model inference cannot precede the human label freeze. No provider adapter, classifier, event grouper, scoring runner or empirical evaluator is claimed implemented by this packet slice. The architecture remains local Python and files.
+Human labels have now been supplied and revised. Next work is the planned local prototype implementation and corpus expansion, followed by evidence/label/split freeze and actual evaluation. Additional curation and synthetic-tested implementation can proceed independently, but model inference cannot precede the freeze. No provider adapter, classifier, event grouper, scoring runner or empirical evaluator is yet implemented. The architecture remains local Python and files.

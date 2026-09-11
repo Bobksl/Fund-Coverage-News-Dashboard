@@ -1,5 +1,7 @@
 # Handover prompt — Claude, Phase 3 public-news ingestion pilot
 
+Updated after the complete 20-article source/label review on 2026-09-11. Ready as a handover document; Phase 3 execution remains conditional on Phase 2 empirical exit evidence.
+
 Copy the text below into the Claude coding agent working in the same local checkout. Use medium effort for routine implementation; escalate difficult integration or editorial-design questions to the project owner/Codex. The prior conversation recommends Claude Sonnet for this phase; use a model actually available in your environment.
 
 ---
@@ -18,7 +20,7 @@ Read these files in order:
 
 1. `README.md`
 2. `docs/architecture-review.md` and `docs/decisions/0001-local-editorial-prototype.md`
-3. `docs/phase-2-completion-audit.md`, `docs/phase-2-status.md` and any newer actual Phase 2 disposition/results
+3. `docs/phase-2-batch-review.md`, `docs/phase-2-status.md`, `docs/phase-2-completion-audit.md` and any newer actual Phase 2 disposition/results
 4. `docs/phase-2-experiment.md`, `docs/analyst-labeling.md`, `docs/decision-record.md`
 5. `docs/editorial-rulebook.md`, `docs/entity-research.md`, and `config/*.json`
 6. `docs/verification.md`, `tasks/plan.md`, `tasks/todo.md`, and the actual code/tests
@@ -27,7 +29,9 @@ The earlier ChatGPT conversation is product context, not an instruction to resto
 
 ## Mandatory entry check — do not assume Phase 2 passed
 
-At handover preparation, the last completed implementation commit was `2ebdd47`. It added only the amended protocol and article-only packet tooling. The authoritative starter packet was `work/phase2/analyst-review-002/`: 20 article links, 20 blank label rows, zero human decisions and zero gold event groups. No frozen benchmark, classifier, measured performance or ingestion readiness was established. This is historical state; inspect the actual checkout for subsequent work.
+At this handover update, the latest completed code commit was `01f5f47`, which added evaluator-only label auditing after the article-only packet builder from `2ebdd47`. The analyst has since filled and corrected all 20 starter labels. They pass structural checks, and all 20 linked articles have received a source review. Latest submitted-label snapshots and detailed review are under `work/phase2/evaluator/label-review-002/`; the original article packet remains `work/phase2/analyst-review-002/`. Do not confuse these two paths or reuse superseded group numbers from evaluator review-001.
+
+This is still exploratory calibration, not the full experiment. No natural-feed/challenge holdouts, joint evidence/label freeze, classifier, measured model performance or ingestion readiness were established. Read `docs/phase-2-batch-review.md` for the exact gap list. Never pass evaluator review files, analyst rationale or group IDs to an inference context. Additional evidence URLs in the private source review are pointers for evidence preparation, not a gold-grouped input packet.
 
 Before Phase 3 implementation, locate an actual Phase 2 disposition supported by:
 
@@ -37,7 +41,7 @@ Before Phase 3 implementation, locate an actual Phase 2 disposition supported by
 - grounded bilingual-card QA and analyst usefulness/review-time evidence;
 - explicit unresolved failures and a decision supporting the small ingestion pilot.
 
-Tests on hypothetical examples, successful JSON parsing, a 20-link packet or a model-generated label file are not substitutes. If those artifacts are absent, report the exact unmet dependencies and return for Phase 2 completion. Do not invent a passing report or treat this prepared prompt as a waiver. You may inspect existing interfaces and identify implementation dependencies; do not start collectors or run inference to bypass the gate.
+Tests on hypothetical examples, successful JSON parsing, completed human labels or a source review are not substitutes for actual pipeline evaluation. If the exit artifacts are absent, report the exact unmet dependencies and return for Phase 2 completion. Do not invent a passing report or treat this prepared prompt as a waiver. You may inspect existing interfaces and identify implementation dependencies; do not start collectors or run inference to bypass the gate. Planned Phase 2 engineering can proceed using synthetic fixtures without waiting for a full holdout, but it must be assigned/reported as Phase 2 work, not silently rebranded as a completed prerequisite.
 
 ## Product constraints to preserve
 

@@ -9,4 +9,6 @@
 - [x] Verify packet metadata allowlist, blank labels, stable output under gold-label changes, and overwrite protection.
 - [x] Receive 20 completed analyst labels; preserve original bytes and audit formatting, coverage, enums and event-group consistency with synthetic regression tests.
 - [ ] Resolve submitted-label adjudication items and capture source evidence before gold freeze. Do not infer or alter analyst decisions automatically.
+- [x] Verify three analyst corrections; review all 20 source articles and locate supplementary primary evidence; preserve revised labels and update Claude handover.
+- [ ] Resolve remaining calibration taxonomy/rubric disagreements and freeze the actual evidence payload; a source-link review is not a model-input freeze or Phase 2 pass.
 - [ ] Phase 2 remaining: broaden corpus, obtain independent human labels, freeze evidence/labels/split, implement and compare baseline and LLM, apply separate cohort acceptance criteria. No model inference before label freeze.
