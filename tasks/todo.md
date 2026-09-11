@@ -21,8 +21,8 @@
 - [x] Collection decisions recorded in docs/natural-feed-policy.md and the window/roster frozen.
 - [x] Natural-feed collection run 1: 150 records from 12 sources, window 2026-08-12..2026-09-10,
       cutoff 2026-09-04. Five gaps logged. See docs/phase-2-collection-status.md.
-- [ ] Decide Commercial Observer: spend ~150-250 article retrievals to resolve dates, or amend the
-      roster to drop it this cycle. Its index publishes no dates, so it cannot be windowed as is.
+- [x] Commercial Observer resolved by retrieval: 83 in-window records with exact timestamps, via the
+      site's public REST API. Landing page is not an archive; Finance channel enumerated instead.
 - [ ] Freeze the SEC CIK and form roster, then collect that tier.
 - [ ] Curate the challenge set, then build one combined blinded analyst packet across both cohorts.
 - [ ] Analyst input required before any inference: resolve the two calibration disagreements, obtain

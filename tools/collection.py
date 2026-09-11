@@ -103,17 +103,27 @@ def build_manifest(window_start, window_end, holdout_cutoff, sources, policy_pat
     return manifest
 
 
-def in_window(published_date, manifest):
-    if not published_date or not ISO_DATE.match(str(published_date)):
+def calendar_date(published_at):
+    """The publisher's calendar date, for a date-only or a full-precision timestamp alike."""
+    if not published_at:
+        return None
+    candidate = str(published_at)[:10]
+    return candidate if ISO_DATE.match(candidate) else None
+
+
+def in_window(published_at, manifest):
+    day = calendar_date(published_at)
+    if day is None:
         return False
-    return manifest["window_start"] <= published_date <= manifest["window_end"]
+    return manifest["window_start"] <= day <= manifest["window_end"]
 
 
 def partition_for(published_date, manifest):
     """Calibration before the cutoff, holdout from it. Undated entries belong to neither."""
     if not in_window(published_date, manifest):
         return None
-    return "holdout" if published_date >= manifest["holdout_cutoff"] else "calibration"
+    return ("holdout" if calendar_date(published_date) >= manifest["holdout_cutoff"]
+            else "calibration")
 
 
 def to_evidence(observation, source, retrieved_at, first_seen_at=None):

@@ -205,3 +205,16 @@ class MergeTests(unittest.TestCase):
         report = collection.intake_report(record, records, [])
         self.assertEqual(report["sources_observed_zero_in_window"], ["aci_news"])
         self.assertEqual(report["sources_gapped_or_pending"], [])
+
+
+class PrecisionWindowTests(unittest.TestCase):
+    def test_a_full_timestamp_is_windowed_by_its_calendar_date(self):
+        record = manifest()
+        self.assertTrue(collection.in_window("2026-09-10T16:49:58-04:00", record))
+        self.assertEqual(collection.partition_for("2026-09-10T16:49:58-04:00", record), "holdout")
+        self.assertEqual(collection.partition_for("2026-08-20T09:00:00-04:00", record), "calibration")
+
+    def test_a_timestamp_outside_the_window_is_still_excluded(self):
+        record = manifest()
+        self.assertFalse(collection.in_window("2026-09-11T11:00:46-04:00", record))
+        self.assertIsNone(collection.calendar_date("not a date"))
