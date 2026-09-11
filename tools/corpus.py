@@ -5,10 +5,13 @@ The review packet the analyst sees is one combined, opaquely ordered article lis
 cohort, challenge category or selection rationale. The custodian may use gold groups to build a
 leakage-safe split; only article IDs and a partition name leave this module for the pipeline.
 """
+import argparse
 import hashlib
+import json
 from pathlib import Path
 
-from tools.records import dumps_jsonl, leakage_scan, publication_date, write_jsonl
+from tools.records import (dumps_jsonl, leakage_scan, publication_date, read_jsonl,
+                           write_jsonl)
 from tools.review_packet import build_packet
 
 COHORTS = ("natural_feed", "challenge")
@@ -141,3 +144,56 @@ def freeze_record(labels_path, evidence_path, split_manifest_path, predictions_p
 
 def registry_digest(rows):
     return hashlib.sha256(dumps_jsonl(rows).encode("utf-8")).hexdigest()
+
+
+def _write_json(path, payload):
+    path = Path(path)
+    if path.exists():
+        raise FileExistsError(f"Refusing to overwrite {path}")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8"))
+    return path
+
+
+def main(argv=None):
+    """Custodian commands. These read gold groups; their outputs never reach inference."""
+    parser = argparse.ArgumentParser(description=__doc__)
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    packet = sub.add_parser("packet", help="Build one blinded article-only analyst packet")
+    packet.add_argument("evidence", type=Path)
+    packet.add_argument("destination", type=Path)
+
+    split = sub.add_parser("split", help="Write a leakage-safe temporal split manifest")
+    split.add_argument("evidence", type=Path)
+    split.add_argument("cutoff", help="ISO date; earlier is calibration, later is holdout")
+    split.add_argument("output", type=Path)
+    split.add_argument("--gold-groups", type=Path, default=None,
+                       help="Evaluator-only JSON map of article_id to gold event group")
+
+    freeze = sub.add_parser("freeze", help="Record the hashes that must precede inference")
+    freeze.add_argument("labels", type=Path)
+    freeze.add_argument("evidence", type=Path)
+    freeze.add_argument("split_manifest", type=Path)
+    freeze.add_argument("output", type=Path)
+    freeze.add_argument("--predictions", type=Path, default=None)
+    freeze.add_argument("--frozen-at", required=True, help="ISO instant with offset")
+
+    args = parser.parse_args(argv)
+    if args.command == "packet":
+        result = build_review_packet(read_jsonl(args.evidence), args.destination)
+    elif args.command == "split":
+        groups = (json.loads(args.gold_groups.read_text(encoding="utf-8"))
+                  if args.gold_groups else {})
+        result = temporal_split(read_jsonl(args.evidence), groups, args.cutoff)
+        _write_json(args.output, result)
+    else:
+        result = freeze_record(args.labels, args.evidence, args.split_manifest,
+                               args.predictions, args.frozen_at)
+        _write_json(args.output, result)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

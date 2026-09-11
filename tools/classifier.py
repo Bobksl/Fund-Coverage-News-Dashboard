@@ -6,6 +6,7 @@ A parse or enum failure is an operational failure that enters review; it is neve
 """
 import hashlib
 import json
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -91,6 +92,29 @@ def input_hash(prompt, model_id):
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:32]
 
 
+def _normalize_response(response):
+    """Accept a raw string, or a mapping carrying raw text plus provider-reported usage."""
+    if isinstance(response, dict):
+        if "raw" not in response:
+            raise ProviderError("Provider response object has no raw field")
+        return response["raw"], response.get("usage") or {}
+    return response, {}
+
+
+def _elapsed_ms(started, finished):
+    return round((finished - started) * 1000, 3)
+
+
+def _merge_usage(target, usage):
+    for key in ("input_tokens", "output_tokens"):
+        value = usage.get(key)
+        if isinstance(value, int):
+            target[key] = (target[key] or 0) + value
+    if usage.get("cost_basis") is not None:
+        target["cost_basis"] = usage["cost_basis"]
+    return target
+
+
 def _validate_output(parsed, config):
     """Return errors for one raw model output. Enum violations are failures, not corrections."""
     errors = []
@@ -129,6 +153,56 @@ def _validate_output(parsed, config):
     return errors
 
 
+def run_attempts(provider, prompt, digest, store, model_id, prompt_version, validate,
+                 max_attempts, clock, timer):
+    """Bounded retry loop shared by the classifying and drafting stages.
+
+    Returns (parsed or None, attempts, metadata). Every attempt is recorded with its outcome,
+    latency and saved raw reference, so a transport failure is never confused with a bad decision
+    and a failure is never silently dropped.
+    """
+    metadata = {"provider": type(provider).__name__, "model": model_id,
+                "prompt_version": prompt_version, "input_hash": digest,
+                "settings": {"max_attempts": max_attempts},
+                # Usage is whatever the provider actually reported. No price is invented here;
+                # cost_basis stays null until a real rate card is recorded alongside the run.
+                "usage": {"input_tokens": None, "output_tokens": None, "cost_basis": None},
+                "latency_ms_total": 0}
+    attempts = []
+    for attempt in range(1, max_attempts + 1):
+        record = {"attempt": attempt, "at": clock()}
+        started = timer()
+        try:
+            raw, usage = _normalize_response(provider(prompt, digest, attempt))
+        except ProviderError as error:
+            record.update(outcome="transport_failure", detail=str(error), raw_ref=None,
+                          latency_ms=_elapsed_ms(started, timer()))
+            metadata["latency_ms_total"] += record["latency_ms"]
+            attempts.append(record)
+            continue
+        record["latency_ms"] = _elapsed_ms(started, timer())
+        metadata["latency_ms_total"] += record["latency_ms"]
+        _merge_usage(metadata["usage"], usage)
+        store.save(digest, attempt, {"input_hash": digest, "attempt": attempt, "model": model_id,
+                                     "prompt_version": prompt_version, "raw": raw})
+        record["raw_ref"] = str(store.path(digest, attempt))
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError as error:
+            record.update(outcome="unparsable", detail=str(error))
+            attempts.append(record)
+            continue
+        errors = validate(parsed)
+        if errors:
+            record.update(outcome="schema_invalid", detail="; ".join(errors))
+            attempts.append(record)
+            continue
+        record.update(outcome="valid", detail=None)
+        attempts.append(record)
+        return parsed, attempts, metadata
+    return None, attempts, metadata
+
+
 def _review_proposal(article_input, reason, attempts, model_metadata):
     """Operational failure: preserved, surfaced and never a silent rejection."""
     return {
@@ -151,50 +225,28 @@ def _review_proposal(article_input, reason, attempts, model_metadata):
 
 
 class StructuredClassifier:
-    def __init__(self, provider, store, model_id, prompt_version, max_attempts=2, clock=None):
+    def __init__(self, provider, store, model_id, prompt_version, max_attempts=2, clock=None,
+                 timer=None):
         self.provider = provider
         self.store = store
         self.model_id = model_id
         self.prompt_version = prompt_version
         self.max_attempts = max_attempts
         self.clock = clock or (lambda: datetime.now(timezone.utc).isoformat())
+        self.timer = timer or time.perf_counter
 
     def propose(self, article, config, body=None):
         article_input = to_inference_input(article, body=body)
         prompt = build_prompt(article_input, config, self.prompt_version)
         digest = input_hash(prompt, self.model_id)
-        metadata = {"provider": type(self.provider).__name__, "model": self.model_id,
-                    "prompt_version": self.prompt_version, "input_hash": digest,
-                    "settings": {"max_attempts": self.max_attempts}}
-        attempts = []
-        for attempt in range(1, self.max_attempts + 1):
-            record = {"attempt": attempt, "at": self.clock()}
-            try:
-                raw = self.provider(prompt, digest, attempt)
-            except ProviderError as error:
-                record.update(outcome="transport_failure", detail=str(error), raw_ref=None)
-                attempts.append(record)
-                continue
-            self.store.save(digest, attempt, {"input_hash": digest, "attempt": attempt,
-                                              "model": self.model_id,
-                                              "prompt_version": self.prompt_version, "raw": raw})
-            record["raw_ref"] = str(self.store.path(digest, attempt))
-            try:
-                parsed = json.loads(raw)
-            except json.JSONDecodeError as error:
-                record.update(outcome="unparsable", detail=str(error))
-                attempts.append(record)
-                continue
-            errors = _validate_output(parsed, config)
-            if errors:
-                record.update(outcome="schema_invalid", detail="; ".join(errors))
-                attempts.append(record)
-                continue
-            record.update(outcome="valid", detail=None)
-            attempts.append(record)
-            return self._to_proposal(article_input, parsed, metadata, attempts)
-        detail = attempts[-1]["detail"] if attempts else "no attempt recorded"
-        return _review_proposal(article_input, f"classifier failure: {detail}", attempts, metadata)
+        parsed, attempts, metadata = run_attempts(
+            self.provider, prompt, digest, self.store, self.model_id, self.prompt_version,
+            lambda payload: _validate_output(payload, config), self.max_attempts,
+            self.clock, self.timer)
+        if parsed is None:
+            detail = attempts[-1]["detail"] if attempts else "no attempt recorded"
+            return _review_proposal(article_input, f"classifier failure: {detail}", attempts, metadata)
+        return self._to_proposal(article_input, parsed, metadata, attempts)
 
     def _to_proposal(self, article_input, parsed, metadata, attempts):
         identity = parsed.get("event_identity") or {}

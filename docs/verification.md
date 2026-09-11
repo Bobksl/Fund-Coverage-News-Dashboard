@@ -78,3 +78,28 @@ Engineering completion is recorded separately from empirical readiness; no infer
 - Not established: no model call, no real-article benchmark, no cohort, no holdout, no precision,
   recall, clustering, identity, bilingual, usefulness, cost or latency result. Synthetic fixtures
   are wiring evidence, never classifier performance.
+
+## Phase 2 engineering slice, part two — 2026-09-11
+
+Closes the remaining implementation tickets: bilingual drafting, stability reruns, provider
+usage/latency capture and the custodian command line. Still no inference and no empirical result.
+
+- RED then GREEN for each addition; the suite grew from 119 to 148 tests and passes.
+- `python tools/validate_spec.py`: unchanged, zero errors. No config, threshold, ontology or
+  scoring weight was touched.
+- Drafting: shortlist-only, refuses any other recommendation. Checks claim references, unsupported
+  figures, cross-language quantity parity, currency parity, party retention and dropped or added
+  uncertainty. Verified that `$7.3 billion` and `73亿` normalize to the same value, so a correct
+  translation is not reported as a defect and a mistranslated `37亿` is.
+- Stability: refuses any partition not named calibration and refuses a single run. A deterministic
+  engine reports a 1.0 stable share; a deliberately flaky stub is detected and routed to review
+  rather than averaged.
+- Classifier: bounded-retry loop extracted and shared with drafting. Provider-reported token counts
+  and measured latency are recorded; `cost_basis` stays null because no rate card exists.
+- Custodian command line exercised end to end in tests: packet, split, freeze, then evaluate.
+  Appending one byte to a frozen predictions file makes the evaluator refuse, as intended.
+- One test assertion was wrong and was corrected, not the code: a quantity mistranslated in one
+  place surfaces as an added figure rather than a missing one, because the correct figure still
+  appeared in the headline. Both directions are now covered.
+- Not established: still no model call, no cohort, no holdout, no precision, recall, clustering,
+  identity, bilingual-sample, usefulness, cost or latency result on real articles.

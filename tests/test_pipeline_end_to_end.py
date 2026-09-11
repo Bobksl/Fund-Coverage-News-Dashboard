@@ -187,3 +187,89 @@ class ReplayEngineTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CustodianCliTests(unittest.TestCase):
+    """The commands a label custodian runs. They read gold data; the pipeline never does."""
+
+    def _labels(self, path, article_ids):
+        import csv
+
+        from tools.review_packet import LABEL_FIELDS
+        with path.open("w", encoding="utf-8-sig", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=LABEL_FIELDS)
+            writer.writeheader()
+            for number, article_id in enumerate(sorted(article_ids)):
+                writer.writerow({
+                    "article_id": article_id, "analyst_id": "AN01",
+                    "decision": "publish" if number % 2 == 0 else "reject",
+                    "relevance_level": "A", "materiality_tier": "medium",
+                    "event_group_id": f"G{number}", "entity_roles": "Example: monitored manager",
+                    "must_not_miss": "no", "rationale": "Human reason recorded here",
+                    "evidence_access": "full", "reviewed_on": "2026-09-11"})
+
+    def test_packet_split_freeze_and_evaluate_from_the_command_line(self):
+        from tools import corpus as corpus_cli
+        from tools import evaluator as evaluator_cli
+
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            write_jsonl(evidence_path, CORPUS)
+
+            self.assertEqual(corpus_cli.main(
+                ["packet", str(evidence_path), str(workspace / "packet")]), 0)
+            self.assertTrue((workspace / "packet" / "articles.md").exists())
+
+            groups_path = workspace / "gold-groups.json"
+            groups_path.write_text(json.dumps(GOLD_GROUPS), encoding="utf-8")
+            split_path = workspace / "split.json"
+            self.assertEqual(corpus_cli.main(
+                ["split", str(evidence_path), "2026-09-01", str(split_path),
+                 "--gold-groups", str(groups_path)]), 0)
+            split = json.loads(split_path.read_text(encoding="utf-8"))
+
+            manifest = corpus.runner_manifest("run-cli-2", "natural_feed_holdout", split["holdout"])
+            runner.run(manifest, CORPUS, CONFIG, runner.BaselineEngine(), workspace / "out")
+            predictions_path = workspace / "out" / "predictions.jsonl"
+
+            labels_path = workspace / "labels.csv"
+            self._labels(labels_path, split["holdout"])
+            freeze_path = workspace / "freeze.json"
+            self.assertEqual(corpus_cli.main(
+                ["freeze", str(labels_path), str(evidence_path), str(split_path), str(freeze_path),
+                 "--predictions", str(predictions_path),
+                 "--frozen-at", "2026-09-11T00:00:00+00:00"]), 0)
+
+            result_path = workspace / "evaluation.json"
+            self.assertEqual(evaluator_cli.main(
+                [str(predictions_path), str(labels_path), str(freeze_path), str(result_path),
+                 "--cohort", "natural_feed", "--split", "holdout"]), 0)
+            result = json.loads(result_path.read_text(encoding="utf-8"))
+            self.assertEqual(result["cohort"], "natural_feed")
+            self.assertFalse(result["evaluable"])
+            self.assertIn("label_audit", result)
+
+    def test_evaluation_is_refused_when_predictions_changed_after_the_freeze(self):
+        from tools import corpus as corpus_cli
+        from tools import evaluator as evaluator_cli
+
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            write_jsonl(evidence_path, CORPUS)
+            split_path = workspace / "split.json"
+            split_path.write_text(json.dumps({"cutoff": "2026-09-01"}), encoding="utf-8")
+            manifest = corpus.runner_manifest("run-cli-3", "calibration", IDS[:2])
+            runner.run(manifest, CORPUS, CONFIG, runner.BaselineEngine(), workspace / "out")
+            predictions_path = workspace / "out" / "predictions.jsonl"
+            labels_path = workspace / "labels.csv"
+            self._labels(labels_path, IDS[:2])
+            freeze_path = workspace / "freeze.json"
+            corpus_cli.main(["freeze", str(labels_path), str(evidence_path), str(split_path),
+                             str(freeze_path), "--predictions", str(predictions_path),
+                             "--frozen-at", "2026-09-11T00:00:00+00:00"])
+
+            predictions_path.write_bytes(predictions_path.read_bytes() + b"\n")
+            with self.assertRaises(evaluator.FreezeError):
+                evaluator_cli.main([str(predictions_path), str(labels_path), str(freeze_path),
+                                    str(workspace / "evaluation.json"),
+                                    "--cohort", "challenge", "--split", "calibration"])

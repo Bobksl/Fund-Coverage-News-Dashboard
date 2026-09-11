@@ -5,9 +5,14 @@ evidence and prediction hashes are recorded. Cohorts are reported separately and
 Counting is one-to-one on events, so a duplicate card cannot create an extra correct selection
 and a false merge cannot be credited with every gold event it swallowed.
 """
+import argparse
+import csv
 import hashlib
+import json
 from collections import Counter
 from pathlib import Path
+
+from tools.audit_labels import audit_rows
 
 SELECTED_RECOMMENDATIONS = {"priority_shortlist", "shortlist"}
 SURFACED_RECOMMENDATIONS = SELECTED_RECOMMENDATIONS | {"review_required"}
@@ -165,3 +170,50 @@ def report(results):
                              "verdict is issued by a person against the acceptance table, per "
                              "cohort, after reading the counts and unresolved cases above.",
     }
+
+
+def load_gold_rows(labels_path, article_ids, date_format="iso"):
+    """Read and structurally audit the analyst label sheet before any metric is computed."""
+    with Path(labels_path).open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    report, normalized = audit_rows(rows, set(article_ids), date_format)
+    if report["errors"]:
+        raise ValueError(f"Labels are not structurally valid: {report['errors'][:5]}")
+    return normalized, report
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("predictions", type=Path, help="Frozen predictions JSONL")
+    parser.add_argument("labels", type=Path, help="Evaluator-only analyst label CSV")
+    parser.add_argument("freeze", type=Path, help="Freeze record from tools.corpus freeze")
+    parser.add_argument("output", type=Path)
+    parser.add_argument("--cohort", required=True, choices=("natural_feed", "challenge"))
+    parser.add_argument("--split", required=True, choices=("calibration", "holdout"))
+    parser.add_argument("--date-format", default="iso", choices=("iso", "mdy", "dmy"))
+    parser.add_argument("--min-positive-events", type=int, default=MIN_POSITIVE_EVENTS)
+    args = parser.parse_args(argv)
+
+    freeze = json.loads(args.freeze.read_text(encoding="utf-8"))
+    require_freeze(freeze, args.predictions)
+    predictions = [json.loads(line) for line in
+                   args.predictions.read_text(encoding="utf-8").splitlines() if line.strip()]
+    article_ids = {article for prediction in predictions for article in prediction["article_ids"]}
+    gold_rows, audit = load_gold_rows(args.labels, article_ids, args.date_format)
+    result = evaluate(predictions, gold_rows, args.cohort, args.split,
+                      min_positive_events=args.min_positive_events)
+    result["label_audit"] = {key: audit[key] for key in ("label_rows", "decisions", "event_groups")}
+    if args.output.exists():
+        raise FileExistsError(f"Refusing to overwrite {args.output}")
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_bytes(json.dumps(result, ensure_ascii=False, indent=2).encode("utf-8"))
+    print(json.dumps({key: result[key] for key in
+                      ("cohort", "split", "evaluable", "disposition",
+                       "gold_publish_worthy_events", "selected_cards", "selection_precision",
+                       "important_event_recall", "must_not_miss_unresolved")},
+                     ensure_ascii=False, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

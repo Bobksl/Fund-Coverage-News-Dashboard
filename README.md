@@ -26,6 +26,8 @@ Phase 1 specification for a watchlist-first alternatives-news demo. The objectiv
 | [tools/baseline.py](tools/baseline.py), [tools/classifier.py](tools/classifier.py) | Deterministic floor and structured-classifier adapter with replay. |
 | [tools/grouping.py](tools/grouping.py), [tools/scoring.py](tools/scoring.py) | Predicted event clustering; gates, bands, ranking and the ranking ablation. |
 | [tools/runner.py](tools/runner.py), [tools/evaluator.py](tools/evaluator.py), [tools/corpus.py](tools/corpus.py) | Pipeline orchestration, cohort-separated evaluation and corpus/split construction. |
+| [tools/drafting.py](tools/drafting.py), [tools/stability.py](tools/stability.py) | Shortlist-only bilingual cards with parity QA; calibration-only stability reruns. |
+| [docs/natural-feed-policy.md](docs/natural-feed-policy.md) | Predeclared collection roster, window and completeness rule, awaiting analyst approval. |
 | [docs/phase-2-engineering.md](docs/phase-2-engineering.md) | What the pipeline does, how to run it and what it does not establish. |
 | [docs/phase-3-entry-gate.md](docs/phase-3-entry-gate.md) | Why the ingestion pilot is blocked. |
 | [docs/decisions/0001-local-editorial-prototype.md](docs/decisions/0001-local-editorial-prototype.md) | Architecture decision and alternatives considered. |

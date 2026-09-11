@@ -15,6 +15,11 @@
 - [x] Phase 2 engineering: implement the local baseline, classifier adapter, decision validation,
       predicted grouping, scoring/ranking, saved-output replay, evaluator and corpus tooling with
       synthetic tests. Engineering only; establishes no empirical result. See docs/phase-2-engineering.md.
+- [x] Phase 2 engineering, part two: shortlist-only bilingual drafting with parity QA, calibration
+      stability reruns, provider usage/latency capture and the custodian command line. All experiment
+      implementation tickets are now built; still no inference and no empirical result.
+- [ ] Approve or amend docs/natural-feed-policy.md before any collection: confirm newsroom paths, name
+      the independent public outlets, decide PAG scope and HSBC AM regional treatment.
 - [ ] Analyst input required before any inference: resolve the two calibration disagreements, obtain
       second-reviewer labels, and capture the permitted evidence payload for joint label/evidence freeze.
 - [ ] Phase 3 ingestion pilot: blocked at the entry gate on 2026-09-11; see docs/phase-3-entry-gate.md.
