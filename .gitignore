@@ -1,0 +1,13 @@
+# Local evidence, model outputs, analyst annotations and any private exposure overlay
+work/
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm

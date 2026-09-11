@@ -1,0 +1,243 @@
+{
+  "schema_version": "0.1.0",
+  "status": "provisional_baseline_for_phase_2",
+  "components": [
+    {
+      "canonical_id": "portfolio_fit",
+      "max_points": 30,
+      "anchors": [
+        {
+          "points": 0,
+          "definition": "No qualifying connection or incidental name."
+        },
+        {
+          "points": 10,
+          "definition": "Weak/generic proximity; fails relevance unless separately established."
+        },
+        {
+          "points": 20,
+          "definition": "Strong Level C path to a monitored strategy."
+        },
+        {
+          "points": 25,
+          "definition": "Direct Level B sector effect or material firm-wide Level A event outside the monitored strategy."
+        },
+        {
+          "points": 30,
+          "definition": "Resolved tracked vehicle or manager's directly relevant business/transaction."
+        }
+      ]
+    },
+    {
+      "canonical_id": "materiality",
+      "max_points": 25,
+      "anchors": [
+        {
+          "points": 0,
+          "definition": "No new economically meaningful event."
+        },
+        {
+          "points": 5,
+          "definition": "Routine/minor event without meaningful scale or consequence."
+        },
+        {
+          "points": 15,
+          "definition": "Meaningful entity/strategy change with evidenced qualitative or quantitative basis."
+        },
+        {
+          "points": 20,
+          "definition": "Major capital, risk, valuation, liquidity or franchise consequence relative to affected entity."
+        },
+        {
+          "points": 25,
+          "definition": "Transformative/systemic change or severe impairment/control failure."
+        }
+      ]
+    },
+    {
+      "canonical_id": "investment_transmission",
+      "max_points": 20,
+      "anchors": [
+        {
+          "points": 0,
+          "definition": "No defensible mechanism."
+        },
+        {
+          "points": 5,
+          "definition": "Generic possibility without an event-specific path."
+        },
+        {
+          "points": 10,
+          "definition": "Specific plausible channel with observed trigger; direction/horizon or magnitudes remain uncertain."
+        },
+        {
+          "points": 15,
+          "definition": "Clear evidenced trigger and specific mechanism to a relevant investment outcome."
+        },
+        {
+          "points": 20,
+          "definition": "Direct documented economic/credit impact, with limited inferential steps."
+        }
+      ]
+    },
+    {
+      "canonical_id": "actionability",
+      "max_points": 10,
+      "anchors": [
+        {
+          "points": 0,
+          "definition": "No useful monitoring or diligence implication."
+        },
+        {
+          "points": 3,
+          "definition": "Context worth retaining but no specific follow-up."
+        },
+        {
+          "points": 6,
+          "definition": "Identifiable metric or GP question to monitor."
+        },
+        {
+          "points": 8,
+          "definition": "Changes a concrete diligence/monitoring priority."
+        },
+        {
+          "points": 10,
+          "definition": "Urgent material question or risk review justified by evidence."
+        }
+      ]
+    },
+    {
+      "canonical_id": "source_credibility",
+      "max_points": 10,
+      "anchors": [
+        {
+          "points": 0,
+          "definition": "Unattributed, inaccessible-only or unsupported claim."
+        },
+        {
+          "points": 4,
+          "definition": "Weak/general source or incomplete/unresolved evidence; cannot publish."
+        },
+        {
+          "points": 7,
+          "definition": "Accessible reputable independent reporting or issuer release reliable for its own action; limitations attributed."
+        },
+        {
+          "points": 10,
+          "definition": "Accessible filing/regulatory record or direct primary disclosure substantiating the key facts; distinguish claims/opinions from findings."
+        }
+      ]
+    },
+    {
+      "canonical_id": "novelty",
+      "max_points": 5,
+      "anchors": [
+        {
+          "points": 0,
+          "definition": "Same known event, no material new fact."
+        },
+        {
+          "points": 2,
+          "definition": "Material incremental update to existing event."
+        },
+        {
+          "points": 5,
+          "definition": "New event or substantially new factual information."
+        }
+      ]
+    }
+  ],
+  "total_max": 100,
+  "scoring_rule": "Select discrete anchors only and cite reasons/evidence per component. Python sums values; model total is ignored. Unscorable evidence is null and review_required, never imputed.",
+  "eligibility": {
+    "levels": [
+      "A",
+      "B",
+      "C"
+    ],
+    "min_materiality": 15,
+    "min_transmission_A_B": 10,
+    "min_transmission_C": 15,
+    "min_source_credibility": 7,
+    "min_novelty": 2,
+    "unknown_or_conflicting_evidence": "review_required"
+  },
+  "bands": [
+    {
+      "min": 80,
+      "max": 100,
+      "decision": "priority_shortlist"
+    },
+    {
+      "min": 70,
+      "max": 79,
+      "decision": "shortlist"
+    },
+    {
+      "min": 60,
+      "max": 69,
+      "decision": "reserve_manual_only"
+    },
+    {
+      "min": 0,
+      "max": 59,
+      "decision": "suppress"
+    }
+  ],
+  "publication": {
+    "target_min": 6,
+    "target_max": 10,
+    "enforce_min": false,
+    "review_required": true,
+    "reserve_rule": "Only if fewer than six ordinary eligible shortlisted events, with recorded analyst approval; never lower gates.",
+    "overflow_rule": "Verified analyst-approved critical events bypass ten-card target; disclose overflow instead of dropping risk events."
+  },
+  "critical_override": {
+    "eligible_types": [
+      "credit_stress",
+      "regulatory",
+      "financial_results",
+      "liquidity_secondaries",
+      "leadership"
+    ],
+    "conditions": [
+      "direct held manager/vehicle established in private exposure overlay",
+      "material adverse event verified",
+      "analyst approves named override reason"
+    ],
+    "may_bypass": [
+      "score_band",
+      "materiality_anchor_disagreement",
+      "daily_target",
+      "geographic_preference"
+    ],
+    "never_bypass": [
+      "identity",
+      "source_sufficiency",
+      "fact_attribution",
+      "novelty",
+      "analyst_review"
+    ],
+    "unknown_held_status": "Urgent review of tracked risk event; do not claim held exposure or auto-publish."
+  },
+  "geography": {
+    "included_in_score": false,
+    "rolling_calendar_days": 30,
+    "europe_target": 0.2,
+    "us_preference": "dominant",
+    "unit": "unique_published_event",
+    "primary_region_values": [
+      "US",
+      "Europe",
+      "APAC",
+      "Other",
+      "Global",
+      "Unknown"
+    ],
+    "europe_definition": "UK and continental Europe; record countries explicitly. Ambiguous transcontinental attribution requires review.",
+    "denominator": "All unique published events in trailing 30 calendar days, including Global/Other/Unknown; each counted once by primary economic-impact region.",
+    "tie_break": "Within same priority band and within five score points, prefer underrepresented Europe if eligible, then US when Europe is on target; never displace verified critical events.",
+    "missing_supply": "Report opportunity shortfall; never force a quota or dilute gates.",
+    "unclear_region": "Global or Unknown; never infer from publisher domain or manager headquarters."
+  }
+}
