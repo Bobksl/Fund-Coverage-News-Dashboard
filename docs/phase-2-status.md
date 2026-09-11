@@ -2,6 +2,8 @@
 
 Started: protocol amendments, confirmed manager scope, and an initial analyst review packet. No model inference or performance evaluation has run.
 
+Completion request audited: the current label file still has zero human decisions and zero gold event groups. See [completion audit](phase-2-completion-audit.md) for the unfinished work and [prepared Claude Phase 3 handover](handover-claude-phase-3.md) for the conditional next-phase prompt. Phase 2 is not marked complete.
+
 ## Completed
 
 - Natural-feed and challenge-set reports and dispositions are separate.
