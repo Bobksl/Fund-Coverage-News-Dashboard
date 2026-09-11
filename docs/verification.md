@@ -48,3 +48,33 @@ The preceding section is the historical Phase 1 verification record. Bayview/Bas
 - Opened every original article source and checked the relevant core event/role passages. Located supplementary official/SEC evidence for details missing from the original release; per-record references/limitations are in private source-review.json. This is source support review, not a frozen corpus or blind prediction test.
 - Three earlier adjudication corrections verified. Two calibration taxonomy/rubric disagreements remain documented without changing the analyst's labels. All current event groups are singletons, so duplicate-consolidation recall is untestable on this batch.
 - Updated the final handover document and Phase 2 readiness disposition to remove stale blank-label state. No code behavior changed in this review turn; JSON/ID/hash/link checks and the existing spec validator were used. No model-performance metric or Phase 3 promotion is claimed.
+
+## Phase 2 engineering slice — 2026-09-11
+
+Scope: the local pipeline implementation in [phase-2-engineering.md](phase-2-engineering.md).
+Engineering completion is recorded separately from empirical readiness; no inference ran.
+
+- RED: each new module's tests failed on `ModuleNotFoundError` before the module existed; the
+  suite then passed after implementation. Test count grew from 7 to 119.
+- `python -m unittest discover -s tests -v`: 119 tests pass, covering the evidence/decision
+  contract, the inference allowlist and nested-leakage refusal, baseline entity resolution,
+  gates/bands/ranking/ablation, classifier retry and replay, conservative grouping, runner
+  idempotence and overwrite refusal, evaluator counting and freeze enforcement, corpus splits and
+  sufficiency, plus end-to-end wiring.
+- `python tools/validate_spec.py`: unchanged — seven JSON files, 30 entities, 23 sources, eight
+  sectors, 11 themes, 15 event types, 18 hypothetical cases, zero errors. No config, threshold,
+  ontology or scoring weight was changed by this work.
+- `git diff --check`: clean. Tests write only to an ignored directory under `work/`, matching the
+  earlier sandbox temporary-directory workaround, and clean up after themselves.
+- Defects found and fixed during the slice, each with a regression test: `"CLO"` matched inside
+  `"closes"` (event phrases now match whole tokens); a parent brand matched inside a longer vehicle
+  name and was double-counted as a second subject (ER05 precedence, parent kept as propagated);
+  two unresolved articles merged into one invented event through a publisher fallback in the
+  predicted parties; a null total on an ambiguous cluster violated the contract's sum rule; and a
+  tagged sector propagated up to ten themes, which is now reported as unassigned candidates.
+- A synthetic six-article demo ran through the documented command: six articles in, six with an
+  outcome, five predicted events, one duplicate collapsed, one bare-namesake case routed to review,
+  zero invalid decisions, zero silent drops.
+- Not established: no model call, no real-article benchmark, no cohort, no holdout, no precision,
+  recall, clustering, identity, bilingual, usefulness, cost or latency result. Synthetic fixtures
+  are wiring evidence, never classifier performance.

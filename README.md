@@ -22,6 +22,12 @@ Phase 1 specification for a watchlist-first alternatives-news demo. The objectiv
 | [docs/decision-record.md](docs/decision-record.md) | Minimum later article/event/decision audit contract. |
 | [examples/editorial-cases.json](examples/editorial-cases.json) | Eighteen explicitly hypothetical editorial examples; not benchmark results. |
 | [tools/validate_spec.py](tools/validate_spec.py) | Dependency-free static consistency check. |
+| [tools/records.py](tools/records.py) | Evidence/decision contract, inference allowlist and atomic JSONL. |
+| [tools/baseline.py](tools/baseline.py), [tools/classifier.py](tools/classifier.py) | Deterministic floor and structured-classifier adapter with replay. |
+| [tools/grouping.py](tools/grouping.py), [tools/scoring.py](tools/scoring.py) | Predicted event clustering; gates, bands, ranking and the ranking ablation. |
+| [tools/runner.py](tools/runner.py), [tools/evaluator.py](tools/evaluator.py), [tools/corpus.py](tools/corpus.py) | Pipeline orchestration, cohort-separated evaluation and corpus/split construction. |
+| [docs/phase-2-engineering.md](docs/phase-2-engineering.md) | What the pipeline does, how to run it and what it does not establish. |
+| [docs/phase-3-entry-gate.md](docs/phase-3-entry-gate.md) | Why the ingestion pilot is blocked. |
 | [docs/decisions/0001-local-editorial-prototype.md](docs/decisions/0001-local-editorial-prototype.md) | Architecture decision and alternatives considered. |
 | [tasks/plan.md](tasks/plan.md), [tasks/todo.md](tasks/todo.md) | Work order and handover status. |
 | [docs/verification.md](docs/verification.md) | What was checked and what remains untested. |
@@ -34,10 +40,11 @@ From the repository root, with Python 3.13 (the locally verified interpreter):
 
 ```powershell
 python tools/validate_spec.py
+python -m unittest discover -s tests -v
 git diff --check
 ```
 
-The validator checks JSON keys, versions, ID uniqueness/references, parent cycles, required entity fields, score anchors/totals/bands and the scored hypothetical examples. It does not implement entity resolution, classification, a complete JSON Schema validator, an LLM pipeline or analyst evaluation. There is no application build/dev command or runtime test suite yet.
+The validator checks JSON keys, versions, ID uniqueness/references, parent cycles, required entity fields, score anchors/totals/bands and the scored hypothetical examples. The unittest suite covers the Phase 2 pipeline on synthetic fixtures: the evidence/decision contract, the inference allowlist, baseline entity resolution, gates and ranking, classifier retry/replay, grouping, runner idempotence, evaluator counting and freeze enforcement. Neither establishes classifier performance on real articles, and no model call, ingestion job, browser UI or deployment exists.
 
 ## Working boundaries
 
