@@ -41,10 +41,10 @@ Corpus work advanced substantially; the phase cannot complete here. Each exit cr
 | Challenge cohort curated | **Done.** 91 records, every coverage minimum met. 60 are linked natural-feed records and 31 independent, so the cohorts overlap and that must travel with any challenge figure. |
 | Blinded analyst packet | **Built.** 274 articles in one opaquely ordered packet across both cohorts; 2 records excluded and recorded. See [packet 003](phase-2-packet-003.md). |
 | Evidence capture for the freeze | **Not started.** Every record is `metadata_only`; no article text has been captured or hashed, so nothing is yet labelable evidence. |
-| Independent human labels and adjudication | **Now the single blocking input.** The packet is in the analyst's hands; all 274 rows are to be labeled. |
-| Joint label/evidence freeze | Downstream of labels. |
-| Frozen inference run | Downstream of the freeze; no provider is configured. |
-| Per-cohort evaluation and disposition | Downstream of inference. |
+| Independent human labels and adjudication | **Done for labels.** 274 rows returned by one reviewer (AN03), audited clean. No second reviewer or adjudication pass, which is a recorded limit. |
+| Joint label/evidence freeze | **Done.** `work/phase2/freeze-001/`: labels, evidence and split manifest hashed before any run. |
+| Frozen inference run | **Done for the baseline only.** No model provider is configured, so the structured pipeline remains untested. |
+| Per-cohort evaluation and disposition | **Done. FAIL for the baseline.** See [disposition](phase-2-disposition.md). |
 
 ### The blocker, stated plainly
 
@@ -63,3 +63,13 @@ start. No amount of further collection moves this.
 
 Then: labels, adjudication, freeze, one frozen run, per-cohort evaluation, and a written pass,
 fail or inconclusive disposition. Only that disposition opens Phase 3.
+
+## Phase 2 closed — 2026-09-12
+
+Complete, with a **FAIL** disposition for the deterministic baseline and the LLM pipeline
+untested. Natural-feed holdout: 21 publish-worthy events, 75% precision, 14.3% recall, 1 of 2
+must-not-miss. Challenge cohort inconclusive on sample size. Zero false merges throughout.
+
+The cause is a specification gap rather than a tuning one: the analyst publishes on sector
+relevance, the baseline fires on watchlist entity match, and 45 of 78 missed events scored no
+relevance at all. See [the disposition](phase-2-disposition.md) for the full numbers and limits.

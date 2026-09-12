@@ -41,4 +41,9 @@
       not established.
 - [x] Combined blinded packet built: 274 articles, work/phase2/analyst-review-003/. See
       docs/phase-2-packet-003.md.
-- [ ] ANALYST: label all 274 rows in analyst-labels.csv. This is the blocking input.
+- [x] Analyst returned all 274 labels; audited clean (0 errors).
+- [x] Labels, evidence and split frozen in work/phase2/freeze-001/.
+- [x] Baseline run and per-cohort evaluation complete; disposition written (FAIL for the
+      baseline, LLM pipeline untested). See docs/phase-2-disposition.md.
+- [ ] Configure a model provider and rerun the structured classifier on the same frozen
+      split. This is the single highest-value remaining test.
