@@ -69,16 +69,39 @@ class ManifestFidelityRegressionTests(unittest.TestCase):
         self.assertNotIn("manager_level_financing", categorize(record, {"blue owl": "blue_owl"}))
 
     def test_manager_raising_its_own_notes_is_manager_level_financing(self):
+        """The manager itself (entity_type=manager), not a vehicle, closing its own instrument."""
+        record = article(title="Blue Owl Capital Closes $150 Million Private Placement of Senior "
+                               "Unsecured Notes")
+        result = categorize(record, {"blue owl capital": "blue_owl"}, {"blue_owl": "manager"})
+        self.assertIn("manager_level_financing", result)
+
+    def test_a_vehicles_own_financing_is_not_manager_level_financing(self):
+        """Round 2: OTF's own alias ('Blue Owl Technology Finance Corp.') is a longer, more
+        specific match than its manager's shorter alias ('Blue Owl') that happens to be a
+        substring of it -- the vehicle raising its own debt is not the manager doing so."""
         record = article(title="Blue Owl Technology Finance Corp. Closes $150 Million Private "
                                "Placement of Senior Unsecured Notes")
-        self.assertIn("manager_level_financing", categorize(record, {"blue owl": "blue_owl"}))
+        result = categorize(record, {"blue owl": "blue_owl",
+                                     "blue owl technology finance corp.": "otf"},
+                            {"blue_owl": "manager", "otf": "vehicle"})
+        self.assertNotIn("manager_level_financing", result)
 
     def test_an_explicit_8k_filing_is_not_ambiguous_identity(self):
         record = article(title="KKR & Co. Inc. — 8-K filed 2026-08-27")
         self.assertNotIn("ambiguous_or_namesake_identity", categorize(record, {}))
 
-    def test_bare_short_alias_with_no_disambiguation_is_ambiguous_identity(self):
+    def test_an_explicit_equity_divestment_is_wrong_strategy_not_ambiguous_identity(self):
+        """Round 2 bounded search: the PAG/Cordina article is an explicit, unambiguous equity
+        divestment in an unrelated operating industry (poultry) with no credit/debt language --
+        that is tracked_manager_wrong_strategy, not a namesake collision (the prior v2
+        assignment, which Astra's review found "not demonstrably a namesake collision")."""
         record = article(title="PAG Agrees to Sell Majority Stake in Poultry Pioneer Cordina Group")
+        result = categorize(record, {"pag": "pag"}, {"pag": "manager"})
+        self.assertIn("tracked_manager_wrong_strategy", result)
+        self.assertNotIn("ambiguous_or_namesake_identity", result)
+
+    def test_bare_short_alias_with_no_disambiguation_is_ambiguous_identity(self):
+        record = article(title="NB reports a strong quarter")
         self.assertIn("ambiguous_or_namesake_identity", categorize(record, {}))
 
     def test_a_real_investment_mandate_is_not_routine_marketing(self):

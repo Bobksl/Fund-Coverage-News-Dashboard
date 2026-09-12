@@ -16,7 +16,8 @@ def valid_output(**overrides):
         "theme_ids": [],
         "identity_gate": "pass",
         "direct_entity_ids": ["neuberger"],
-        "entity_matches": [{"entity_id": "neuberger", "role": "subject", "evidence_refs": ["a1"]}],
+        "entity_matches": [{"entity_id": "neuberger", "economic_role": "manager",
+                           "involvement": "direct_involvement", "evidence_refs": ["a1"]}],
         "event_identity": {"parties": ["Example Manager"], "action": "final_close",
                            "vehicle": "Example Credit Fund II", "period": None,
                            "event_date": "2026-09-01"},
@@ -29,6 +30,16 @@ def valid_output(**overrides):
     }
     payload.update(overrides)
     return json.dumps(payload)
+
+
+def _b_transmission(**overrides):
+    payload = {"trigger": "a comparable BDC reported rising non-accruals this quarter",
+              "mechanism": "signals broader credit-quality deterioration in the same "
+                          "middle-market lending segment",
+              "outcome": "tighter underwriting standards across comparable direct lenders",
+              "uncertainty": None}
+    payload.update(overrides)
+    return payload
 
 
 def _readthrough(**overrides):
@@ -273,53 +284,101 @@ class RelevanceSemanticsTests(unittest.TestCase):
             self.assertIn("establish the tracked manager/vehicle's role", result["attempts"][0]["detail"])
 
     def test_level_a_named_only_as_adviser_is_not_level_a(self):
-        """Astra review Ticket A 'must fail': a tracked entity appearing only as adviser on an
-        otherwise unrelated deal is not Level A, even though its parent_relationship
-        (business_platform_of) is identical to a genuinely monitored platform's."""
+        """Astra review round 1 'must fail', re-verified round 2 with the corrected vocabulary: a
+        tracked entity that is only an adviser_arranger with incidental_mention involvement on an
+        otherwise unrelated deal is not Level A -- editorial-rulebook.md's own worked example
+        ("Guggenheim Securities advising a borrower does not prove Guggenheim Investments lent
+        money"), even though the entity's parent_relationship (business_platform_of) is identical
+        to a genuinely monitored platform's."""
         with temporary_directory() as workspace:
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(
-                direct_entity_ids=[], propagated_entity_ids=["guggenheim_securities"],
-                entity_matches=[{"entity_id": "guggenheim_securities", "role": "adviser",
-                                 "evidence_refs": ["a1"]}],
+                direct_entity_ids=["guggenheim_securities"], propagated_entity_ids=[],
+                entity_matches=[{"entity_id": "guggenheim_securities",
+                                 "economic_role": "adviser_arranger",
+                                 "involvement": "incidental_mention", "evidence_refs": ["a1"]}],
                 event_identity={"parties": ["Acme Corp", "Guggenheim Securities"],
                                "action": "acquisition", "vehicle": None, "period": None,
                                "event_date": "2026-09-01"})
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
-            self.assertIn("role=subject", result["attempts"][0]["detail"])
+            self.assertIn("involvement=direct_involvement", result["attempts"][0]["detail"])
 
-    def test_level_a_propagated_subject_with_a_stated_basis_passes(self):
-        """Astra review Ticket A 'must pass': a subsidiary/platform independently evidenced as
-        the event's subject, with a stated path to its tracked parent, is legitimate Level A."""
+    def test_level_a_propagated_parent_with_a_valid_edge_and_stated_basis_passes(self):
+        """Astra review round 2 'must pass', using the corrected direct-vs-propagated shape: the
+        directly evidenced business (Deephaven Mortgage) goes in direct_entity_ids with
+        involvement=direct_involvement; its tracked parent (Pretium, per config's actual `parent`
+        edge) goes in propagated_entity_ids with a stated propagation_basis."""
         with temporary_directory() as workspace:
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(
-                direct_entity_ids=[], propagated_entity_ids=["deephaven_mortgage"],
-                entity_matches=[{"entity_id": "deephaven_mortgage", "role": "subject",
-                                 "evidence_refs": ["a1"]}],
+                direct_entity_ids=["deephaven_mortgage"], propagated_entity_ids=["pretium"],
+                entity_matches=[{"entity_id": "deephaven_mortgage", "economic_role": "manager",
+                                 "involvement": "direct_involvement", "evidence_refs": ["a1"]}],
                 propagation_basis="Deephaven Mortgage is Pretium's mortgage servicing platform; "
-                                 "a servicing failure there is a firm-wide operational event.",
+                                 "a servicing failure there is a firm-wide operational event for "
+                                 "Pretium.",
                 event_identity={"parties": ["Deephaven Mortgage"], "action": "servicing_failure",
                                "vehicle": "Deephaven Mortgage", "period": None,
                                "event_date": "2026-09-01"})
             result = build(Recorder(payload), store).propose(article(), CONFIG)
             self.assertEqual(result["relevance_level"], "A")
 
-    def test_level_a_propagated_subject_without_a_stated_basis_fails(self):
+    def test_level_a_propagated_parent_without_a_stated_basis_fails(self):
         with temporary_directory() as workspace:
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(
-                direct_entity_ids=[], propagated_entity_ids=["deephaven_mortgage"],
-                entity_matches=[{"entity_id": "deephaven_mortgage", "role": "subject",
-                                 "evidence_refs": ["a1"]}])
+                direct_entity_ids=["deephaven_mortgage"], propagated_entity_ids=["pretium"],
+                entity_matches=[{"entity_id": "deephaven_mortgage", "economic_role": "manager",
+                                 "involvement": "direct_involvement", "evidence_refs": ["a1"]}])
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertIn("propagation_basis", result["attempts"][0]["detail"])
+
+    def test_level_a_propagated_parent_with_no_real_ontology_edge_fails(self):
+        """Astra review round 2: propagation must follow an actual config parent edge, not an
+        asserted one -- an unrelated/sibling parent with convincing prose must still fail."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(
+                # blue_owl is not deephaven_mortgage's parent (pretium is) -- an invented path.
+                direct_entity_ids=["deephaven_mortgage"], propagated_entity_ids=["blue_owl"],
+                entity_matches=[{"entity_id": "deephaven_mortgage", "economic_role": "manager",
+                                 "involvement": "direct_involvement", "evidence_refs": ["a1"]}],
+                propagation_basis="An unrelated company connects somehow to this parent, "
+                                 "extending firm-wide consequence.",
+                event_identity={"parties": ["Deephaven Mortgage"], "action": "servicing_failure",
+                               "vehicle": "Deephaven Mortgage", "period": None,
+                               "event_date": "2026-09-01"})
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("no config parent edge", result["attempts"][0]["detail"])
+
+    def test_level_a_direct_involvement_without_evidence_refs_fails(self):
+        """Astra review round 2: a direct_involvement claim needs non-empty evidence_refs, not
+        just the assertion."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(
+                entity_matches=[{"entity_id": "neuberger", "economic_role": "manager",
+                                 "involvement": "direct_involvement", "evidence_refs": []}])
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("supplies no evidence_refs", result["attempts"][0]["detail"])
+
+    def test_level_a_a_lender_can_be_directly_involved(self):
+        """Astra review round 2: economic_role never by itself grants or vetoes Level A -- a
+        lender with genuine direct_involvement is legitimate, same as a manager."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(
+                entity_matches=[{"entity_id": "neuberger", "economic_role": "lender",
+                                 "involvement": "direct_involvement", "evidence_refs": ["a1"]}])
+            result = build(Recorder(payload), store).propose(article(), CONFIG)
+            self.assertEqual(result["relevance_level"], "A")
 
     def test_level_b_needs_no_tracked_entity_but_needs_a_sector(self):
         with temporary_directory() as workspace:
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
                                    entity_matches=[], sector_ids=[],
+                                   transmission=_b_transmission(),
                                    sector_readthrough=_readthrough())
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertIn("at least one monitored sector_id", result["attempts"][0]["detail"])
@@ -329,6 +388,7 @@ class RelevanceSemanticsTests(unittest.TestCase):
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
                                    entity_matches=[], sector_ids=["private_credit"],
+                                   transmission=_b_transmission(),
                                    sector_readthrough=_readthrough())
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertEqual(result["relevance_level"], "B")
@@ -340,15 +400,42 @@ class RelevanceSemanticsTests(unittest.TestCase):
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
                                    entity_matches=[], sector_ids=["private_credit"],
+                                   transmission=_b_transmission(),
                                    sector_readthrough=_readthrough(comparability_explanation="x"))
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertIn("too short", result["attempts"][0]["detail"])
+
+    def test_level_b_non_string_comparability_explanation_fails(self):
+        """Astra review round 2: a non-string value (e.g. 123) must not silently bypass the
+        length check -- the prior _text() coercion masked this into an empty, skipped check."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
+                                   entity_matches=[], sector_ids=["private_credit"],
+                                   transmission=_b_transmission(),
+                                   sector_readthrough=_readthrough(comparability_explanation=123))
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("comparability_explanation must be a string", result["attempts"][0]["detail"])
+
+    def test_level_b_missing_transmission_fails(self):
+        """Astra review round 2: B requires the transmission object too, not sector_readthrough
+        alone."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
+                                   entity_matches=[], sector_ids=["private_credit"],
+                                   transmission={"trigger": None, "mechanism": None,
+                                                "outcome": None, "uncertainty": None},
+                                   sector_readthrough=_readthrough())
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("requires substantive transmission", result["attempts"][0]["detail"])
 
     def test_level_b_missing_sector_readthrough_fails(self):
         with temporary_directory() as workspace:
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
-                                   entity_matches=[], sector_ids=["private_credit"])
+                                   entity_matches=[], sector_ids=["private_credit"],
+                                   transmission=_b_transmission())
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertIn("sector_readthrough object", result["attempts"][0]["detail"])
 
@@ -357,6 +444,7 @@ class RelevanceSemanticsTests(unittest.TestCase):
             store = classifier.RawOutputStore(workspace / "raw")
             payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
                                    entity_matches=[], sector_ids=["private_credit"],
+                                   transmission=_b_transmission(),
                                    sector_readthrough=_readthrough(sector_id="real_estate_debt"))
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertIn("must be one of the declared sector_ids", result["attempts"][0]["detail"])
@@ -384,6 +472,28 @@ class RelevanceSemanticsTests(unittest.TestCase):
                                                  "outcome": "affects the market", "uncertainty": None})
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertIn("affected_exposure", result["attempts"][0]["detail"])
+
+    def test_level_c_structurally_complete_but_semantically_generic_is_a_known_residual_limit(self):
+        """Astra review round 2: this documents, rather than hides, a real gap. A response that
+        fills consequence_category and affected_exposure with generic-but-nonempty text (as
+        opposed to omitting the fields, tested above) currently passes structural validation --
+        Astra reproduced this with affected_exposure="all investment markets". Per the round-2
+        adjudication, no further keyword blacklist or length threshold is added to chase this (one
+        was already rejected for being simultaneously too strict and too easy to game); the
+        remaining gap is closed by the strengthened prompt instruction (PROMPT_RULES) and sampled
+        in post-run human/Astra-level review, not by schema validation alone. If this test starts
+        failing, the fields are no longer being treated as structural-only and this comment (and
+        docs/phase-5-review-decisions.md) need updating to match."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(
+                relevance_level="C", identity_gate=None, direct_entity_ids=[], entity_matches=[],
+                sector_ids=[],
+                transmission={"trigger": "rate move", "mechanism": "rates affect markets",
+                             "outcome": "affects the market", "consequence_category": "risk",
+                             "affected_exposure": "all investment markets", "uncertainty": None})
+            result = build(Recorder(payload), store).propose(article(), CONFIG)
+            self.assertEqual(result["relevance_level"], "C")
 
     def test_level_c_with_a_specific_causal_chain_and_no_keywords_is_valid(self):
         """Astra review Ticket C 'must pass': a correct explanation using none of the old

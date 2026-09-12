@@ -129,10 +129,94 @@ been exercised — no live inference has occurred.
 >
 > If unused, record explicitly: `calibration_prompt_repair = not_used`.
 
+## Round 2 — external re-review, same date
+
+The round-1 fixes above were re-reviewed and found improved but not yet closed. Verified
+concretely: `guggenheim_securities`/`otf` and similar entity-graph claims were checked against
+`config/entities.json` and ED02 (`docs/editorial-rulebook.md`) again; `comparability_explanation`
+was confirmed to bypass validation when given a non-string value (`_text()` silently coerced it to
+`""`, which then skipped, rather than failed, the length check).
+
+**Ticket A — role/involvement conflation (accepted, implemented).** `entity_matches.role`
+(`subject`/`adviser`/`counterparty`/`sponsor`) conflated two independent axes ED02 keeps separate:
+what an entity economically IS in an event, and whether it was actually, evidentially involved. A
+lender or sponsor can be directly involved; forcing it to relabel itself "subject" to pass the gate
+was itself a defect. Replaced with two fields: `economic_role` (`borrower, lender, sponsor,
+manager, fund, insurer, adviser_arranger, other` — ED02's actual vocabulary) and `involvement`
+(`direct_involvement, incidental_mention, unresolved`). Level A now gates on `involvement=
+direct_involvement` for an entity in `direct_entity_ids`; `economic_role` is descriptive only.
+
+**Ticket A — propagation path validated against real ontology edges (accepted, implemented).**
+The prior `propagation_basis` length check accepted "An unrelated company connects somehow to
+this parent" — any sufficiently long sentence, regardless of whether the claimed parent
+relationship exists in `config/entities.json`. `direct_entity_ids` now must name the actually
+evidenced business (with a `direct_involvement` entity_matches entry and non-empty
+`evidence_refs` — also newly required); `propagated_entity_ids` must be the real `parent` (per
+config) of a `direct_entity_ids` member, checked structurally, not merely asserted in prose. The
+test fixture was also corrected to match ED02's actual direct-vs-propagated shape: Deephaven
+Mortgage (the evidenced platform) in `direct_entity_ids`, Pretium (its real config parent) in
+`propagated_entity_ids` — the reverse of the round-1 fixture, which had this backwards.
+
+**Ticket B — enforcement gaps (accepted, implemented).** `sector_readthrough`'s
+`comparability_explanation` now has an explicit string-type check (the `_text()` coercion bug
+above); all `SECTOR_READTHROUGH_TEXT_FIELDS` are type-checked. Level B now also requires the
+`transmission` object (trigger/mechanism/outcome), previously enforced only for C, so a response
+with `sector_readthrough` but no transmission no longer passes.
+
+**Ticket C — accepted with a named, undissolved residual limit.** The review reproduced a
+structurally-complete-but-semantically-generic C response (`consequence_category="risk"`,
+`affected_exposure="all investment markets"`) passing validation, and explicitly declined to
+recommend another keyword blacklist or length threshold to chase it (the same failure mode as the
+phrase list removed in round 1: simultaneously too strict and too easy to game). The fix applied
+is a strengthened, explicit prompt instruction (`PROMPT_RULES`) stating the required
+trigger→mechanism→consequence chain and warning against generic `affected_exposure` phrasing —
+not a new mechanical gate. This is recorded as a genuine, accepted residual limitation
+(`tests/test_classifier.py::RelevanceSemanticsTests::
+test_level_c_structurally_complete_but_semantically_generic_is_a_known_residual_limit`), closed by
+post-run human/Astra-level review sampling, not by schema validation.
+
+**Ticket D — response contract completeness (accepted, implemented).** `RESPONSE_CONTRACT` now
+defines `event_identity`'s and `components`' nested fields, and states the direct-vs-propagated
+semantics explicitly (direct = the evidenced business; propagated = a parent reached only via a
+real config edge from it) rather than leaving those definitions to prose elsewhere in the prompt.
+
+**Decision 2 — manifest, round 2 (accepted, implemented).** Ran the reviewer's exact bounded
+search (title/publisher/access-status only, natural evidence-file order): a tracked manager
+explicitly transacting equity ownership of an operating business, no debt/credit-sector language,
+no stated monitored-sector or manager-wide capital/governance consequence. This reassigned the
+PAG/Cordina article from `ambiguous_or_namesake_identity` (which the review correctly found "not
+demonstrably a namesake collision") to `tracked_manager_wrong_strategy`, and separately fixed
+`manager_level_financing` to require the matched entity actually be manager-typed in
+`config/entities.json` (`entity_type: "manager"`) rather than any alias substring match — which
+correctly disqualified "Blue Owl Technology Finance Corp." (OTF, `entity_type: "vehicle"`, whose
+name happens to contain its manager's shorter alias) as *manager*-level financing. Net effect:
+`manager_level_financing` and `ambiguous_or_namesake_identity` are now honest gaps (no credible
+candidate exists in this corpus under the corrected criteria), alongside the pre-existing
+`high_materiality_outside_scope_negative` gap — 9 of 12 categories filled in `manifest.json` (v3,
+`supersedes: "v2"`), with each category's `category_confidence` (`established` vs
+`candidate_shape_only` vs `gap`) now recorded explicitly rather than implying uniform verified
+coverage. `manifest-v1.json` and `manifest-v2.json` are both preserved unmodified.
+
+**Decision 3 — no amendment; one wording correction accepted.** The one-repair policy required no
+changes. The review correctly flagged that this document's prior closing line ("Pre-inference
+gate: still blocked on a credential, not on any of the above") was itself imprecise: at the time it
+was written, the gate was *also* blocked on the round-1 findings being open, not solely on the
+credential. That line is corrected below.
+
+Regression tests for every round-2 finding: `tests/test_classifier.py::RelevanceSemanticsTests`
+(the corrected Deephaven Mortgage/Pretium fixture, a lender with genuine `direct_involvement`, an
+invented/no-edge propagation path, missing `evidence_refs` on a `direct_involvement` claim, the
+non-string `comparability_explanation`, missing B `transmission`) and
+`tests/test_select_calibration_smoke.py::ManifestFidelityRegressionTests` (the vehicle-vs-manager
+shadowing case, the PAG/Cordina reassignment).
+
 ## Status carried forward unchanged
 
 `phase2_deterministic_baseline = FAIL`. `historical_model_comparison = not_run` (no provider
 credential). `reviewed_demo_ready = not_passed`. `automated_selection_readiness =
 inconclusive_pending_fresh_temporal_validation`. Provider/model choice and spending remain
-unapproved. **Pre-inference gate: still blocked on a credential**, not on any of the above —
-Decisions 1–2 are now implemented and tested.
+unapproved. **Pre-inference gate: blocked on a credential.** Both rounds of pre-inference
+correctness review (Decisions 1–2, this document) are now implemented and tested; a credential is
+the only presently identified remaining blocker, but that statement is provisional on whichever
+review is current at the time it is read, not a standing guarantee that no further review round
+will find anything else before a billed call is authorized.

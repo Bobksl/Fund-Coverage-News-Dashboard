@@ -21,21 +21,31 @@ PROMPT_RULES = (
     "Unknown or conflicting evidence must be null with review_required, never an imputed zero.",
     "Never discard a candidate solely because no tracked manager matched; sector-only Level B "
     "and macro/context Level C relevance are legitimate outcomes with no resolved entity.",
-    "A resolved entity name alone does not establish relevance; identify the actual subject, "
-    "role and transmission before selecting a level.",
+    "A resolved entity name alone does not establish relevance; identify what the entity actually "
+    "did (its economic role) and whether it was directly, evidentially involved before selecting "
+    "a level. An adviser or arranger on an otherwise unrelated deal is usually only an incidental "
+    "mention, not direct involvement -- economic_role never by itself grants or vetoes Level A.",
     "Set identity_gate to pass only when the entity role is resolved without ambiguity; use "
     "review_required for an unresolved namesake, conditional match or missing context.",
+    "For Level C, state the full chain explicitly: a new observed trigger, then the specific "
+    "mechanism connecting it to alternatives financing, returns or exits, then the resulting "
+    "consequence for a named exposure. A category label or a restated truism ('rates affect "
+    "markets') does not satisfy this even if it contains a listed consequence-category word; "
+    "affected_exposure must name the actual borrower/instrument/segment affected, not a generic "
+    "phrase like 'financial markets' or 'all investment markets'.",
 )
 REQUIRED_OUTPUT = ("relevance_level", "primary_event_type", "event_identity", "components")
 # ED03 (editorial-rulebook.md "A/B/C eligibility"): a compact statement of each level's required
 # connection, kept in code because config stores canonical IDs/anchors, not this prose table.
 RELEVANCE_LEVELS = {
-    "A": {"required_connection": "An entity_matches entry with role=subject for a resolved "
-          "tracked manager/vehicle (direct or, with a stated propagation_basis, propagated), "
-          "with material strategy or firm-wide consequence.",
-          "common_failure": "A tracked name appearing only as adviser, counterparty or sponsor "
-          "is not Level A -- even when its parent_relationship in the ontology (e.g. "
-          "business_platform_of) is identical to a genuinely monitored platform's."},
+    "A": {"required_connection": "An entity_matches entry with involvement=direct_involvement "
+          "for a resolved tracked business in direct_entity_ids, with material strategy or "
+          "firm-wide consequence. A propagated parent (with a stated propagation_basis and a "
+          "real config relationship to the direct entity) can extend that consequence further.",
+          "common_failure": "A tracked entity appearing only as adviser_arranger/incidental_mention "
+          "is not Level A regardless of its economic_role label -- even when its ontology "
+          "parent_relationship (e.g. business_platform_of) is identical to a genuinely monitored "
+          "platform's."},
     "B": {"required_connection": "A sector_readthrough naming the monitored sector, the observed "
           "change and a comparable basis (one comparable instrument or company is enough).",
           "common_failure": "One irrelevant peer headline generalized to all private credit "
@@ -62,50 +72,90 @@ MIN_TRANSMISSION_TEXT_LENGTH = 15
 MIN_AFFECTED_EXPOSURE_LENGTH = 10
 MIN_PROPAGATION_BASIS_LENGTH = 20
 MIN_SECTOR_READTHROUGH_LENGTH = 15
-# A tracked entity's ontology role in one candidate event. Level A requires "subject" -- being
-# named only as an adviser, counterparty or sponsor is exactly the Guggenheim Securities /
-# Guggenheim Investments ambiguity ED03 warns about (both share parent_relationship
-# "business_platform_of" in config/entities.json; the relationship type alone cannot carry the
-# distinction, only the evidenced role in this specific event can).
-ENTITY_MATCH_ROLES = {"subject", "adviser", "counterparty", "sponsor", "portfolio_company", "other"}
+# ED02 (editorial-rulebook.md): "Record the direct entity and propagated parents separately.
+# Resolve borrower, lender, sponsor, manager, fund, insurer and adviser/arranger roles." These are
+# two independent axes, not one field -- a monitored lender can be both a counterparty and
+# directly affected, so collapsing "economic role" and "was this entity actually, evidentially
+# involved" into a single enum (the prior "subject" role) forced a model to misdescribe an
+# accurate lender/sponsor/borrower role just to pass the gate. `economic_role` records what the
+# entity IS in the event; `involvement` records whether it is actually, evidentially the one the
+# event happened to (external review round 2; see docs/phase-5-review-decisions.md).
+ECONOMIC_ROLES = {"borrower", "lender", "sponsor", "manager", "fund", "insurer",
+                  "adviser_arranger", "other"}
+INVOLVEMENT_LEVELS = {"direct_involvement", "incidental_mention", "unresolved"}
 SECTOR_READTHROUGH_BASES = {"comparable_exposure", "sector_aggregate", "market_terms"}
 SECTOR_READTHROUGH_FIELDS = ("sector_id", "observed_change", "basis", "affected_population",
                              "comparability_explanation", "evidence_refs")
-RESPONSE_CONTRACT_VERSION = "rc2"
+SECTOR_READTHROUGH_TEXT_FIELDS = ("observed_change", "affected_population",
+                                  "comparability_explanation")
+RESPONSE_CONTRACT_VERSION = "rc3"
 # Embedded verbatim in the prompt (build_prompt), not left for the model to infer from prose --
-# Phase 5 handover section 5A Ticket D ("the provider asks for the schema 'implied' by that
-# content; this leaves exact required fields and nested structures undisclosed").
+# Phase 5 handover section 5A Ticket D. Round 2 external review added the nested definitions for
+# event_identity/components/entity lists this omitted, and the direct-vs-propagated distinction
+# ED02 actually specifies: direct_entity_ids names the evidenced business/vehicle itself;
+# propagated_entity_ids names a parent reached only through a real config ontology edge from that
+# business, never asserted independently of one.
 RESPONSE_CONTRACT = {
     "version": RESPONSE_CONTRACT_VERSION,
     "required_top_level_fields": list(REQUIRED_OUTPUT),
     "relevance_level": "One of A, B, C, or null with review_required if genuinely undetermined.",
     "identity_gate": "pass only when the entity role is resolved without ambiguity; otherwise "
                      "review_required. Required for relevance_level A.",
-    "entity_matches": "List of {entity_id, role, evidence_refs}. entity_id must be a known "
-                      "entity canonical_id; role is one of " + ", ".join(sorted(ENTITY_MATCH_ROLES)) +
-                      ". A relevance_level A determination needs at least one entry with "
-                      "role=subject for an entity in direct_entity_ids or propagated_entity_ids "
-                      "-- being named only as adviser/counterparty/sponsor is not Level A, "
-                      "regardless of which entity is named.",
-    "propagation_basis": "Required string when relevance_level A rests only on "
-                         "propagated_entity_ids (no direct_entity_ids subject match): the "
+    "direct_entity_ids": "Known entity canonical_ids for the business/vehicle actually, "
+                         "evidentially involved in this event -- the entity the article is "
+                         "really about, not a parent inferred from it.",
+    "propagated_entity_ids": "Known entity canonical_ids for a tracked PARENT the event's "
+                             "consequence also reaches, reached only via that parent's actual "
+                             "config relationship to a member of direct_entity_ids. Never name a "
+                             "parent here without a directly evidenced business feeding it, and "
+                             "never as a substitute for direct_entity_ids.",
+    "entity_matches": {"description": "List of {entity_id, economic_role, involvement, "
+                                      "evidence_refs}.",
+                       "entity_id": "A known entity canonical_id.",
+                       "economic_role": sorted(ECONOMIC_ROLES),
+                       "involvement": sorted(INVOLVEMENT_LEVELS),
+                       "evidence_refs": "Non-empty when involvement=direct_involvement: at least "
+                                       "one reference into the supplied evidence.",
+                       "note": "relevance_level A requires an entry with "
+                              "involvement=direct_involvement for an entity in "
+                              "direct_entity_ids. economic_role is descriptive, not a gate -- a "
+                              "lender or sponsor can be directly involved; an adviser/arranger on "
+                              "an otherwise unrelated deal is usually only incidental_mention, "
+                              "per editorial-rulebook.md's Guggenheim Securities example."},
+    "propagation_basis": "Required string whenever propagated_entity_ids is non-empty: the "
                          "specific evidenced business/vehicle involvement and its path to the "
-                         "tracked parent. Never leave this to be inferred from parent_relationship "
-                         "alone -- the same relationship type (e.g. business_platform_of) covers "
-                         "both a monitored platform and an unrelated affiliate.",
-    "sector_readthrough": {"description": "Required object when relevance_level is B.",
+                         "tracked parent. The parent relationship itself (e.g. "
+                         "business_platform_of) is checked against config, but this field is "
+                         "still required to state the mechanism in the model's own words.",
+    "sector_readthrough": {"description": "Required object when relevance_level is B, alongside "
+                                          "a required transmission object (below).",
                            "fields": list(SECTOR_READTHROUGH_FIELDS),
                            "basis_enum": sorted(SECTOR_READTHROUGH_BASES),
                            "note": "One comparable instrument/company is sufficient; multiple "
                                    "publishers or companies are not required. An unrelated peer "
                                    "headline generalized to the whole sector is not Level B."},
-    "transmission": {"description": "Required object with trigger, mechanism and outcome for B "
-                                    "and C.",
+    "transmission": {"description": "Required object with non-empty trigger, mechanism and "
+                                    "outcome for both B and C.",
                      "consequence_category": "Required for relevance_level C: one of " +
                                              ", ".join(LEVEL_C_TRANSMISSION_CATEGORIES) + ".",
                      "affected_exposure": "Required for relevance_level C: the specific "
-                                          "alternatives exposure or instrument affected. A "
-                                          "category selection alone is not sufficient."},
+                                          "alternatives exposure or instrument affected -- name "
+                                          "the actual borrower/instrument/segment, not a general "
+                                          "phrase like 'financial markets' or 'all investment "
+                                          "markets'. A category selection alone is not "
+                                          "sufficient, and this specific phrasing requirement is "
+                                          "not fully mechanically checkable -- it is sampled in "
+                                          "post-run human review, not solely by schema validation."},
+    "event_identity": {"parties": "List of the parties named in the event.",
+                       "action": "What happened (a short phrase), or null.",
+                       "vehicle": "The specific fund/vehicle/instrument named, or null.",
+                       "period": "The reporting/event period, or null.",
+                       "event_date": "ISO date the event occurred, or null."},
+    "components": {name: {"points": "One of the configured anchor values for this component, "
+                                    "or null if unscorable.",
+                          "reason": "Non-empty when points is set.",
+                          "evidence_refs": "References into the supplied evidence."}
+                  for name in COMPONENTS},
 }
 
 
@@ -270,13 +320,14 @@ def _entity_lookup(config):
 
 
 def _validate_entity_matches(parsed, known_entities):
-    """Structural check: each entry names a known entity and a role from the fixed vocabulary.
+    """Structural check: each entry names a known entity, a valid economic_role and a valid
+    involvement level, and carries evidence when it claims direct_involvement.
 
-    This is the field Level A's semantics rely on (see _validate_relevance_semantics): a tracked
-    entity appearing only as an adviser or counterparty is not the same fact as it being the
-    event's subject, and the two are not distinguishable from entity ID or parent_relationship
+    This is the field Level A's semantics rely on (see _validate_relevance_semantics): whether a
+    tracked entity is directly, evidentially involved is a separate question from what it IS in
+    the event (its economic_role), and neither is decidable from entity ID or parent_relationship
     alone (Guggenheim Securities and Guggenheim Investments share parent_relationship
-    "business_platform_of" in config/entities.json).
+    "business_platform_of" in config/entities.json, per ED02/editorial-rulebook.md).
     """
     errors = []
     entity_matches = parsed.get("entity_matches")
@@ -291,27 +342,55 @@ def _validate_entity_matches(parsed, known_entities):
         entity_id = match.get("entity_id")
         if entity_id not in known_entities:
             errors.append(f"entity_matches entry references unknown entity_id {entity_id}")
-        if match.get("role") not in ENTITY_MATCH_ROLES:
-            errors.append(f"entity_matches entry for {entity_id} has an invalid role")
+        if match.get("economic_role") not in ECONOMIC_ROLES:
+            errors.append(f"entity_matches entry for {entity_id} has an invalid economic_role")
+        involvement = match.get("involvement")
+        if involvement not in INVOLVEMENT_LEVELS:
+            errors.append(f"entity_matches entry for {entity_id} has an invalid involvement")
+        elif involvement == "direct_involvement" and not (match.get("evidence_refs") or []):
+            errors.append(f"entity_matches entry for {entity_id} claims direct_involvement but "
+                          f"supplies no evidence_refs")
     return errors
 
 
-def _subject_entity_ids(parsed):
-    """entity_ids explicitly evidenced as this event's subject, per entity_matches -- not merely
-    named. An empty result means no entity_matches entry claims subject for anything."""
+def _direct_involvement_entity_ids(parsed):
+    """entity_ids with involvement=direct_involvement, per entity_matches -- not merely named.
+
+    economic_role (borrower/lender/sponsor/manager/fund/insurer/adviser_arranger) is descriptive
+    and never gates this by itself: a lender or sponsor can be directly involved, and an
+    adviser_arranger is usually incidental_mention rather than direct_involvement (editorial-
+    rulebook.md's own worked example: "Guggenheim Securities advising a borrower does not prove
+    Guggenheim Investments lent money").
+    """
     return {match.get("entity_id") for match in (parsed.get("entity_matches") or [])
-           if isinstance(match, dict) and match.get("role") == "subject"}
+           if isinstance(match, dict) and match.get("involvement") == "direct_involvement"}
+
+
+def _validate_propagation_edges(propagated, direct, entities):
+    """Every propagated_entity_ids entry must be the actual config `parent` of some
+    direct_entity_ids member -- ED02's "propagated parents" are reached via a real ontology edge
+    from the directly evidenced business, never asserted as relevant on their own (external review
+    round 2: a synthetic response naming an unrelated parent with no supporting direct business
+    previously passed on propagation_basis length alone)."""
+    errors = []
+    for parent_id in propagated:
+        if not any((entities.get(child_id) or {}).get("parent") == parent_id for child_id in direct):
+            errors.append(f"propagated_entity_ids entry {parent_id} has no config parent edge "
+                          f"from any direct_entity_ids business -- propagation must follow an "
+                          f"actual ontology relationship, not an asserted one")
+    return errors
 
 
 def _validate_relevance_semantics(parsed, config):
     """ED04 cross-field invariants per relevance level (Phase 5 handover section 5A, tightened
-    after external review -- see docs/phase-5-review-decisions.md).
+    twice after external review -- see docs/phase-5-review-decisions.md).
 
     These run only once the basic shape is sound; a missing/invalid field is already reported by
     the caller and would make these checks noisy rather than informative. None of this can prove
-    an evidenced connection is real if a model asserts one dishonestly (role=subject on a
-    fabricated basis) -- that residual judgment call is exactly what Astra-level review samples
-    for after a real run; these checks gate the parts that are actually structural.
+    an evidenced connection is real if a model asserts one dishonestly (involvement=
+    direct_involvement on a fabricated basis) -- that residual judgment call is exactly what
+    post-run human/Astra-level review samples for; these checks gate the parts that are actually
+    structural: the entity graph edge, the required fields, and their types.
     """
     errors = []
     level = parsed.get("relevance_level")
@@ -330,22 +409,29 @@ def _validate_relevance_semantics(parsed, config):
         if not role_established:
             errors.append("relevance_level A requires event_identity to establish the tracked "
                           "manager/vehicle's role (parties plus an action or vehicle)")
-        subjects = _subject_entity_ids(parsed) & (set(direct) | set(propagated))
-        if not subjects:
-            errors.append("relevance_level A requires an entity_matches entry with role=subject "
-                          "for one of direct_entity_ids/propagated_entity_ids -- an entity named "
-                          "only as adviser, counterparty or sponsor is not Level A")
-        elif not (set(direct) & subjects):
-            # The subject is only reachable via propagation: the model must say how, in its own
-            # words, not merely cite an ID whose parent_relationship happens to be permissive.
+        direct_subjects = _direct_involvement_entity_ids(parsed) & set(direct)
+        if not direct_subjects:
+            errors.append("relevance_level A requires an entity_matches entry with "
+                          "involvement=direct_involvement for an entity in direct_entity_ids -- "
+                          "propagated parents are reached separately (see propagated_entity_ids) "
+                          "and are not themselves the directly evidenced subject")
+        if propagated:
+            errors += _validate_propagation_edges(propagated, direct, entities)
             basis = parsed.get("propagation_basis")
             if not isinstance(basis, str) or len(basis.strip()) < MIN_PROPAGATION_BASIS_LENGTH:
-                errors.append("relevance_level A via propagation alone requires a substantive "
-                              "propagation_basis describing the evidenced business/vehicle "
-                              "involvement and its path to the tracked parent")
+                errors.append("relevance_level A with a non-empty propagated_entity_ids requires "
+                              "a substantive propagation_basis stating the mechanism in the "
+                              "model's own words, in addition to the checked ontology edge")
     elif level == "B":
         if not parsed.get("sector_ids"):
             errors.append("relevance_level B requires at least one monitored sector_id")
+        transmission = parsed.get("transmission") or {}
+        if not (_text(transmission.get("trigger")).strip() and
+                _text(transmission.get("mechanism")).strip() and
+                _text(transmission.get("outcome")).strip()):
+            errors.append("relevance_level B requires substantive transmission.trigger, "
+                          "transmission.mechanism and transmission.outcome, alongside "
+                          "sector_readthrough")
         readthrough = parsed.get("sector_readthrough")
         if not isinstance(readthrough, dict):
             errors.append("relevance_level B requires a sector_readthrough object explaining the "
@@ -354,14 +440,18 @@ def _validate_relevance_semantics(parsed, config):
             missing = [f for f in SECTOR_READTHROUGH_FIELDS if not readthrough.get(f)]
             if missing:
                 errors.append(f"sector_readthrough missing or empty fields: {missing}")
+            for field in SECTOR_READTHROUGH_TEXT_FIELDS:
+                value = readthrough.get(field)
+                if value is not None and not isinstance(value, str):
+                    errors.append(f"sector_readthrough.{field} must be a string")
             basis = readthrough.get("basis")
             if basis is not None and basis not in SECTOR_READTHROUGH_BASES:
                 errors.append(f"sector_readthrough.basis must be one of {sorted(SECTOR_READTHROUGH_BASES)}")
             sector_id = readthrough.get("sector_id")
             if sector_id is not None and sector_id not in (parsed.get("sector_ids") or []):
                 errors.append("sector_readthrough.sector_id must be one of the declared sector_ids")
-            explanation = _text(readthrough.get("comparability_explanation")).strip()
-            if explanation and len(explanation) < MIN_SECTOR_READTHROUGH_LENGTH:
+            explanation = readthrough.get("comparability_explanation")
+            if isinstance(explanation, str) and len(explanation.strip()) < MIN_SECTOR_READTHROUGH_LENGTH:
                 errors.append("sector_readthrough.comparability_explanation is too short to "
                               "establish comparability, not just presence of a peer data point")
             refs = readthrough.get("evidence_refs")

@@ -64,18 +64,32 @@ LENDER_OUT_MARKERS = (" for ", " to ", "leads", "provides", "lends")
 # only when nothing in the title already disambiguates it. "KKR & Co. Inc. -- 8-K" and "CIFC at
 # BNY INSITE" are the tracked entity's own full/short legal name in an unambiguous filing or event
 # context, not a namesake collision, so a disambiguating suffix right after the token is excluded.
-SHORT_ALIAS_TOKENS = ("nb", "pag")
+# "PAG" was removed after external review round 2: the one corpus hit (PAG/Cordina) is an
+# explicit, unambiguous PAG divestment, not a namesake collision -- it is now correctly assigned
+# to tracked_manager_wrong_strategy instead (see EQUITY_TRANSACTION_TERMS above). No genuine
+# namesake-collision example was found in this corpus for "nb" either; that category is an
+# honestly recorded gap, not filled with a borderline match.
+SHORT_ALIAS_TOKENS = ("nb",)
 DISAMBIGUATING_SUFFIXES = ("& co", "inc", "capital", "l.p.", "partners", "corp", "8-k", "at bny")
 CAPITAL_FORMATION_TERMS = ("final close", "closes", "closed", "raised", "raises", "commitments",
                            "fund iii", "fund iv", "fund v")
 CRE_TERMS = ("shopping center", "retail center", "office tower", "apartment complex", "multifamily",
             "refi for", "provides", "loan for")
 # "Joint venture" is a corporate-structure term, not evidence of an off-strategy activity, so it
-# is excluded even though it contains "venture" -- Astra review flagged "Enbridge and KKR Announce
-# New Joint Venture" as a false positive under the previous bare "venture" match.
+# is excluded even though it contains "venture" -- Astra review round 1 flagged "Enbridge and KKR
+# Announce New Joint Venture" as a false positive under the previous bare "venture" match.
 WRONG_STRATEGY_TERMS = ("venture capital", "buyback", "ipo", "initial public offering",
                         "share repurchase")
 WRONG_STRATEGY_EXCLUDE = ("joint venture",)
+# Round 2's bounded search (docs/phase-5-review-decisions.md): a tracked manager explicitly
+# transacting equity ownership of an operating business, with no debt/credit-sector language
+# present, is an off-strategy (equity-portfolio, not private-credit) activity -- the shape Astra
+# specified for "tracked_manager_wrong_strategy" after rejecting the v1 "venture" match and the
+# v2 "ambiguous identity" assignment of the same PAG/Cordina article.
+EQUITY_TRANSACTION_TERMS = ("majority stake", "minority stake", "acquires stake", "sells stake",
+                            "stake in", "divests")
+CREDIT_CONTEXT_EXCLUDE = ("credit", "debt", "loan", "lending", "financing", "restructuring",
+                          "facility")
 HIGH_MATERIALITY_TERMS = ("sec charges", "fraud", "bankruptcy", "chapter 11", "indictment",
                           "enforcement action")
 # A sector-only Level B candidate needs a signal shape a read-through could plausibly attach to
@@ -94,10 +108,30 @@ def _entity_aliases(config):
     return aliases
 
 
+def _entity_types(config):
+    return {entity["canonical_id"]: entity["entity_type"] for entity in config["entities"]["entities"]}
+
+
 def _matched_entities(title, aliases):
     lowered = title.lower()
     return sorted({entity_id for alias, entity_id in aliases.items()
                   if re.search(rf"(?<!\w){re.escape(alias)}(?!\w)", lowered)})
+
+
+def _most_specific_entity(title, aliases):
+    """The entity whose matched alias is the longest substring, so "Blue Owl Technology Finance
+    Corp." (the vehicle OTF's own name, which happens to start with its manager's name "Blue Owl")
+    resolves to OTF, not to Blue Owl the manager -- a shorter alias being a substring of a longer,
+    more specific one matched in the same title is not the same fact as the title being about that
+    shorter entity (external review round 2: this shadowing made OTF's own notes issuance
+    miscount as manager-level financing)."""
+    lowered = title.lower()
+    best = None
+    for alias, entity_id in aliases.items():
+        if re.search(rf"(?<!\w){re.escape(alias)}(?!\w)", lowered):
+            if best is None or len(alias) > len(best[0]):
+                best = (alias, entity_id)
+    return best[1] if best else None
 
 
 def _has_any(text, terms):
@@ -105,17 +139,25 @@ def _has_any(text, terms):
     return any(term in lowered for term in terms)
 
 
-def categorize(record, aliases):
+def categorize(record, aliases, entity_types=None):
+    entity_types = entity_types or {}
     title = record["title"]
     lowered = title.lower()
     tracked = _matched_entities(title, aliases)
+    most_specific = _most_specific_entity(title, aliases)
     reasons = []
     if tracked and _has_any(title, CAPITAL_FORMATION_TERMS):
         reasons.append("direct_tracked_vehicle_event")
-    if tracked and _has_any(title, WRONG_STRATEGY_TERMS) and not _has_any(title, WRONG_STRATEGY_EXCLUDE):
+    if (tracked and _has_any(title, EQUITY_TRANSACTION_TERMS)
+            and not _has_any(title, CREDIT_CONTEXT_EXCLUDE)
+            and not _has_any(title, WRONG_STRATEGY_EXCLUDE)):
         reasons.append("tracked_manager_wrong_strategy")
-    if (tracked and _has_any(title, FINANCING_TERMS) and _has_any(title, SELF_RAISE_TERMS)
-            and not _has_any(title, LENDER_OUT_MARKERS)):
+    elif tracked and _has_any(title, WRONG_STRATEGY_TERMS) and not _has_any(title, WRONG_STRATEGY_EXCLUDE):
+        reasons.append("tracked_manager_wrong_strategy")
+    # Only a manager-typed entity (not a fund/vehicle/business_platform sharing an overlapping
+    # alias) raising its own instrument counts as manager-level financing.
+    if (entity_types.get(most_specific) == "manager" and _has_any(title, FINANCING_TERMS)
+            and _has_any(title, SELF_RAISE_TERMS) and not _has_any(title, LENDER_OUT_MARKERS)):
         reasons.append("manager_level_financing")
     if not tracked and _has_any(title, MACRO_TERMS):
         reasons.append("macro_context_level_c_event")
@@ -166,9 +208,10 @@ def select(evidence_records, config, target_min=10, target_max=15):
     """Return {category: article_id} for the first matching record per category, deterministically
     (natural evidence-file order, which is not gold-informed), plus the duplicate-group pick."""
     aliases = _entity_aliases(config)
+    entity_types = _entity_types(config)
     picks = {}
     for record in evidence_records:
-        for category in categorize(record, aliases):
+        for category in categorize(record, aliases, entity_types):
             picks.setdefault(category, record["article_id"])
     duplicates = _duplicate_groups(evidence_records)
     if duplicates:
@@ -182,7 +225,28 @@ def select(evidence_records, config, target_min=10, target_max=15):
     return picks, missing
 
 
-MANIFEST_VERSION = "v2"
+MANIFEST_VERSION = "v3"
+# Per external review round 2: "describe B/C as candidate challenges where metadata cannot
+# establish eligibility" -- title/publisher/access-status metadata can *credibly establish* some
+# category shapes (a duplicate canonical_url really is the same event; a partial access_status
+# really is inaccessible evidence) but can only *present a plausible testing shape* for others (a
+# revenue-growth headline might or might not turn out to be a real B read-through; that is exactly
+# what the calibration run is for). Reporting both as equally "verified positive coverage" would
+# overclaim what metadata alone can show.
+CATEGORY_CONFIDENCE = {
+    "direct_tracked_vehicle_event": "established",
+    "tracked_manager_wrong_strategy": "established",
+    "sector_only_level_b_event": "candidate_shape_only",
+    "macro_context_level_c_event": "candidate_shape_only",
+    "manager_level_financing": "gap",
+    "routine_marketing_or_conference_notice": "established",
+    "ambiguous_or_namesake_identity": "gap",
+    "multi_article_same_event_or_update": "established",
+    "routine_single_asset_cre_transaction": "established",
+    "strong_private_credit_capital_formation": "established",
+    "inaccessible_or_partial_evidence": "established",
+    "high_materiality_outside_scope_negative": "gap",
+}
 
 
 def build_manifest(evidence_path, generated_at, supersedes=None):
@@ -197,22 +261,31 @@ def build_manifest(evidence_path, generated_at, supersedes=None):
     article_ids = sorted({article_id for value in picks.values()
                           for article_id in (value if isinstance(value, list) else [value])
                           if article_id})
+    confidence = {category: ("gap" if category in missing else CATEGORY_CONFIDENCE.get(category))
+                 for category in CATEGORIES}
     manifest = {
         "manifest_version": MANIFEST_VERSION,
         "supersedes": supersedes,
         "generated_at": generated_at,
         "selection_method": ("Categories per Phase 5 handover section 6, matched deterministically "
                              "against title/publisher/access-status metadata only. No gold label, "
-                             "event group or evaluator file was read to build this list. v2 tightens "
-                             "several category heuristics after external review found v1 assignments "
-                             "that were structurally present but not credible fits (a joint-venture "
-                             "title matched as 'wrong strategy' on the bare word 'venture'; a lender "
-                             "providing financing to a third party matched 'manager_level_financing', "
-                             "which should mean the manager raising financing for itself; an explicit, "
-                             "unambiguous 8-K filing matched 'ambiguous_or_namesake_identity'; a real "
-                             "investment mandate matched 'routine_marketing' on the word 'appoints'). "
+                             "event group or evaluator file was read to build this list. v3 acts on "
+                             "an external review round 2 (docs/phase-5-review-decisions.md): "
+                             "distinguishes ESTABLISHED categories (metadata alone credibly "
+                             "supports the assignment, e.g. a duplicate canonical_url or a "
+                             "partial access_status) from CANDIDATE_SHAPE_ONLY ones (a plausible "
+                             "testing shape whose actual eligibility only the calibration run can "
+                             "establish, e.g. a sector-growth headline that may or may not be a "
+                             "real B read-through); reassigned the PAG/Cordina article from "
+                             "ambiguous_identity to wrong_strategy (an explicit equity divestment, "
+                             "not a namesake collision) via a bounded metadata-only search; and "
+                             "fixed manager_level_financing to require the matched entity actually "
+                             "be manager-typed (OTF's own notes issuance is vehicle financing, not "
+                             "manager financing) -- which currently leaves that category, and "
+                             "ambiguous_or_namesake_identity, without a credible candidate. "
                              "See docs/phase-5-review-decisions.md for the full external review."),
         "categories": {category: picks.get(category) for category in CATEGORIES},
+        "category_confidence": confidence,
         "missing_categories": missing,
         "missing_category_disposition": ("No credible candidate was found in the natural-feed "
                                          "corpus under metadata-only criteria for these categories; "
