@@ -218,3 +218,78 @@ class PrecisionWindowTests(unittest.TestCase):
         record = manifest()
         self.assertFalse(collection.in_window("2026-09-11T11:00:46-04:00", record))
         self.assertIsNone(collection.calendar_date("not a date"))
+
+
+def issuer(**overrides):
+    values = {"entity_id": "otf", "legal_name": "Blue Owl Technology Finance Corp.",
+              "cik": "0001747777", "verification_basis": "SEC ticker file",
+              "evidence": "ticker OTF", "scope_note": "Tracked vehicle"}
+    values.update(overrides)
+    return values
+
+
+SCOPE = {"include": ["8-K", "10-Q"],
+         "exclude": [{"form": "13F-HR", "reason": "holdings, not an event"}]}
+QUERY = {"endpoint": "browse-edgar", "date_filter": "filing date in window"}
+
+
+def roster(issuers=None, unresolved=None, scope=None):
+    with temporary_directory() as workspace:
+        policy = workspace / "policy.md"
+        policy.write_text("policy", encoding="utf-8")
+        return collection.build_sec_roster(
+            issuers if issuers is not None else [issuer()],
+            unresolved if unresolved is not None else [],
+            scope or SCOPE, QUERY, manifest(), policy, "2026-09-12T00:00:00+00:00")
+
+
+class CikTests(unittest.TestCase):
+    def test_ciks_are_padded_to_ten_digits(self):
+        self.assertEqual(collection.normalize_cik("1747777"), "0001747777")
+        self.assertEqual(collection.normalize_cik("CIK#: 0001465109"), "0001465109")
+
+    def test_a_name_is_not_a_cik(self):
+        with self.assertRaises(ValueError):
+            collection.normalize_cik("Pacific Alliance Group Ltd")
+
+
+class SecRosterTests(unittest.TestCase):
+    def test_a_valid_roster_records_the_policy_hash_and_window(self):
+        record = roster()
+        self.assertEqual(record["source_id"], "sec_edgar")
+        self.assertEqual(record["window_start"], "2026-08-12")
+        self.assertEqual(len(record["policy_sha256"]), 64)
+
+    def test_every_issuer_needs_a_verification_basis(self):
+        with self.assertRaises(ValueError):
+            roster([issuer(verification_basis="")])
+
+    def test_a_malformed_cik_is_refused(self):
+        with self.assertRaises(ValueError):
+            roster([issuer(cik="1747777")])
+
+    def test_duplicate_ciks_are_refused(self):
+        with self.assertRaises(ValueError):
+            roster([issuer(), issuer(entity_id="duplicate")])
+
+    def test_an_unresolved_entity_may_not_carry_a_cik(self):
+        with self.assertRaises(ValueError):
+            roster(unresolved=[{"entity_id": "pag", "detail": "historical name only",
+                                "cik": "0001684210"}])
+
+    def test_an_unresolved_entity_needs_a_detail(self):
+        with self.assertRaises(ValueError):
+            roster(unresolved=[{"entity_id": "pag"}])
+
+    def test_an_excluded_form_needs_a_reason(self):
+        with self.assertRaises(ValueError):
+            roster(scope={"include": ["8-K"], "exclude": [{"form": "4"}]})
+
+    def test_a_form_cannot_be_included_and_excluded(self):
+        with self.assertRaises(ValueError):
+            roster(scope={"include": ["8-K"],
+                          "exclude": [{"form": "8-K", "reason": "contradiction"}]})
+
+    def test_an_empty_include_scope_is_refused(self):
+        with self.assertRaises(ValueError):
+            roster(scope={"include": [], "exclude": []})

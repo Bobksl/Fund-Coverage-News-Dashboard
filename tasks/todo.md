@@ -29,3 +29,5 @@
       second-reviewer labels, and capture the permitted evidence payload for joint label/evidence freeze.
 - [ ] Phase 3 ingestion pilot: blocked at the entry gate on 2026-09-11; see docs/phase-3-entry-gate.md.
       Do not start collectors before the Phase 2 disposition exists.
+- [x] SEC CIK/form roster frozen: 11 verified issuers, 4 unresolved, 9 forms in scope.
+- [ ] Collect the SEC tier against the frozen roster; it contributes zero records until then.

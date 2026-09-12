@@ -11,6 +11,7 @@ the article's permitted text is actually captured and hashed in a separate step.
 import argparse
 import hashlib
 import json
+import re
 from datetime import date
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -181,6 +182,73 @@ def merge_records(records):
         if existing["access_status"] == "unavailable" and record["access_status"] != "unavailable":
             existing["access_status"] = record["access_status"]
     return [merged[key] for key in sorted(merged)]
+
+
+CIK = re.compile(r"^\d{10}$")
+SEC_ROSTER_FIELDS = ("cohort", "source_id", "frozen_at", "policy_document", "policy_sha256",
+                     "window_start", "window_end", "form_scope", "query", "issuers",
+                     "unresolved", "note")
+
+
+def normalize_cik(value):
+    """EDGAR CIKs are zero-padded to ten digits. Anything else is not a CIK."""
+    found = re.search(r"(\d+)\s*$", str(value).strip())
+    if not found:
+        raise ValueError(f"Not a CIK: {value!r}")
+    return found.group(1).zfill(10)
+
+
+def validate_sec_roster(roster):
+    """Every issuer needs a verified identity. A similar name is not a verification."""
+    errors = [f"roster: missing {f}" for f in SEC_ROSTER_FIELDS if f not in roster]
+    if errors:
+        return errors
+    scope = roster["form_scope"]
+    if not scope.get("include"):
+        errors.append("roster: form scope includes nothing")
+    for excluded in scope.get("exclude") or []:
+        if not excluded.get("form") or not excluded.get("reason"):
+            errors.append("roster: an excluded form needs a recorded reason")
+    overlap = set(scope.get("include") or []) & {e.get("form") for e in scope.get("exclude") or []}
+    errors += [f"roster: {form} is both included and excluded" for form in sorted(overlap)]
+    seen = set()
+    for issuer in roster["issuers"]:
+        for field in ("entity_id", "legal_name", "cik", "verification_basis", "evidence"):
+            if not issuer.get(field):
+                errors.append(f"roster: issuer {issuer.get('entity_id')} missing {field}")
+        cik = str(issuer.get("cik", ""))
+        if not CIK.match(cik):
+            errors.append(f"roster: {issuer.get('entity_id')} cik must be ten digits")
+        if cik in seen:
+            errors.append(f"roster: duplicate cik {cik}")
+        seen.add(cik)
+    for entry in roster["unresolved"]:
+        if not entry.get("entity_id") or not entry.get("detail"):
+            errors.append("roster: an unresolved entity needs an entity_id and a detail")
+        if entry.get("cik"):
+            errors.append(f"roster: unresolved {entry['entity_id']} must not carry a cik")
+    return errors
+
+
+def build_sec_roster(issuers, unresolved, form_scope, query, manifest, policy_path, frozen_at):
+    """Freeze the issuer/vehicle CIK list and form scope before the first SEC retrieval."""
+    roster = {
+        "cohort": manifest["cohort"], "source_id": "sec_edgar", "frozen_at": frozen_at,
+        "policy_document": str(policy_path).replace("\\", "/"),
+        "policy_sha256": file_digest(policy_path),
+        "window_start": manifest["window_start"], "window_end": manifest["window_end"],
+        "form_scope": form_scope, "query": query,
+        "issuers": sorted(issuers, key=lambda item: item["entity_id"]),
+        "unresolved": sorted(unresolved, key=lambda item: item["entity_id"]),
+        "note": ("Identity comes from SEC's own ticker file or an exact registrant legal name. "
+                 "No CIK is inferred from a similar or historical name, and no manager is "
+                 "expanded to its fund entities. Unresolved entities are coverage gaps, never "
+                 "a claim that the manager does not file."),
+    }
+    errors = validate_sec_roster(roster)
+    if errors:
+        raise ValueError(f"SEC roster invalid: {errors}")
+    return roster
 
 
 def gap_record(source_id, reason, observed_at, detail, attempts=1):

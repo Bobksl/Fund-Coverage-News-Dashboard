@@ -38,7 +38,7 @@ Records live in ignored `work/phase2/natural-feed/evidence.jsonl`; nothing enter
 | Source | Reason | Detail |
 |---|---|---|
 | commercial_observer_finance | `pagination_truncated` | **Resolved by retrieval, not dropped.** 83 in-window records with exact timestamps. Recorded limit: the landing page is not a chronological archive, so the Finance channel was enumerated instead — see below. |
-| sec_edgar | `roster_pending` | CIK list and form scope not yet frozen, so no retrieval was made. No CIK inferred from a similar name. |
+| sec_edgar | `roster_pending` | **Roster now frozen** (see below); retrieval has not run, so the tier still contributes zero records. |
 | neuberger_newsroom | `article_links_unavailable` | The pre-collection check said the listing was empty; **that was wrong** — entries render below the media-contacts block. But the index exposes no per-article link and clicking does not navigate. Two in-window items are known by title and date and remain uncollectable. One of them is independently covered by ACI on 08-19, so the event is not wholly lost. |
 | bayview_site | `no_index_published` | No newsroom in public navigation. No route was invented. Bayview items can still arrive through other fixed sources. |
 | aci_news | `article_inaccessible` | Contributed 109 records, but from the public index only; readability per article is unestablished. |
@@ -66,6 +66,43 @@ Window filtering uses the publication local date (site timezone −04:00, verifi
 four-hour offset between `date` and `date_gmt` on every record). Records carry
 `access_status: accessible`; evidence scope stays `metadata_only` until article text is captured
 and hashed.
+
+## SEC roster, frozen 2026-09-12
+
+`work/phase2/natural-feed/sec-roster.json`, hashed alongside the collection policy. Frozen before
+the first SEC retrieval, as the policy requires.
+
+**11 issuers verified.** Five from SEC's own `company_tickers.json` (Blue Owl `0001823945`, OTF
+`0001747777`, KKR `0001404912`, Apollo `0001858681`, Bain Capital Specialty Finance `0001655050`);
+six by exact registrant legal name in EDGAR company search (Neuberger Berman Group `0001465109`,
+Bayview Asset Management `0001767366`, CIFC Asset Management `0001665568`, BasePoint Group
+`0002150855`, Guggenheim Partners Investment Management `0001425852`, HSBC Global Asset Management
+(UK) `0001580862`). OTF's CIK independently matches the archive path in Phase 1 evidence S04.
+
+**4 unresolved, recorded as gaps rather than guessed:**
+
+- **Pretium** — no registrant matches the manager name. Only Pretium *fund* entities file, and the
+  policy forbids expanding a manager to its funds.
+- **PAG** — the only plausible match is Pacific Alliance Group Ltd (Cayman, `0001684210`), reachable
+  only by inferring from PAG's historical name. Refused on that basis.
+- **Bain Capital manager** — the tracked BDC is covered; the manager/credit entity did not resolve
+  to one verified registrant.
+- **Blue Owl credit platform** — files through the parent and the tracked vehicle, both covered.
+
+Namesake traps avoided and recorded: EDGAR also holds BasePoint Analytics LLC (CA) and BasePoint
+Asset Recovery LLC (CT), unrelated to the watchlist platform. Guggenheim Investments is a brand
+spanning several affiliates, so covering GPIM is a stated scope limit, not full coverage.
+
+**Form scope.** Included: 8-K, 10-K, 10-Q, 424B2/B3/B5, N-2, SC 13D and SC 13D/A. Excluded with
+reasons: 13F-HR, SC 13G and 13G/A, Form 4, N-PX (position and insider disclosure, not events) and
+Form D — the last because private-offering notices are filed by the very fund entities this roster
+deliberately excludes, so including it would pull the fund universe in by the back door. Neuberger's
+EDGAR output was checked and is dominated by the excluded forms, so a thin SEC yield for pure
+managers is expected rather than surprising.
+
+Filing date is the public-availability date and is not the event date; a filing disclosing an
+earlier event keeps its own filing date and `event_date` stays null unless the document establishes
+one.
 
 ## Two findings that change the cohort's shape
 
