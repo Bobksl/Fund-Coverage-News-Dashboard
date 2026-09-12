@@ -103,14 +103,61 @@ input 269,347 tokens, output 146,268 tokens. At DeepSeek's published peak, cache
 cheaper on cache-hit input), that is approximately **$0.26 (~¥1.85)** of the ¥6.59 cap, leaving
 ample budget for a v3 rerun.
 
-## Next: run v3 (post-repair, frozen)
+## Stage 2 — calibration smoke, run v3 (post-repair, frozen configuration)
 
-Per the repair policy's execution rule: rerun the entire unchanged 9-article smoke set once under
-a new immutable run ID, at `max_output_tokens=16384` (the infra increase) and `prompt_version=p2`
-(the repair), preserving all v1/v2 outputs untouched. No second repair is permitted regardless of
-v3's outcome — v3's prompt/schema/model/settings become the frozen configuration for the full
-calibration partition and historical-holdout runs afterward (Phase 5 handover section 9 Stages 3–4),
-whether or not this smoke batch itself meets any bar (it is a smoke test, not the evaluated run).
+**Run ID:** `calib-smoke-deepseek-flash-v3`. **Prompt version:** `p2` (post-repair).
+**Settings:** `max_output_tokens=16384` (the infra increase, not part of the one repair).
+v1/v2 outputs preserved untouched under their own run directories.
 
-`calibration_prompt_repair`: **used once**, as documented above. No second repair remains
-available for this experiment.
+**Result:** 9 articles in, 8 predicted events (clustering correctly merged the two duplicate
+Apollo/KKR Atlantic Aviation articles, `269d9ec6…`/`f9324cdd…`, into one cluster — the
+`multi_article_same_event_or_update` case working as intended). 0 provider transport failures.
+Usage: 90,686 input / 65,324 output tokens.
+
+| Article(s) | Calibration category | Recommendation | Level | Total | Reason codes |
+|---|---|---|---|---|---|
+| `edf49c19…` (Blue Owl / OTF senior notes) | direct_tracked_vehicle_event | **shortlist** | A | 76 | shortlisted |
+| `269d9ec6…`+`f9324cdd…` (Apollo/KKR Atlantic Aviation, duplicate) | multi_article_same_event_or_update | review_required | A | 73 | ambiguous_identity, shortlisted |
+| `bb270ed1…` (KKR/Nordic Bioscience stake sale) | tracked_manager_wrong_strategy | review_required | C | 48 | ambiguous_identity, below_materiality |
+| `36367288…` (Apollo/Barclays conference) | routine_marketing_or_conference_notice | **suppress** | — | 12 | below_materiality, no_relevance, weak_transmission |
+| `0170f702…`, `014de653…`, `0076ca6f…` | strong_private_credit_capital_formation, sector_only_level_b_event (x2) | review_required | — | — | conflicting_evidence |
+| `16ec942e…` (rate-outcomes warning) | macro_context_level_c_event | review_required | — | — | no_relevance |
+
+The three `conflicting_evidence` rows initially looked like silent failures but were traced to a
+real bug, not a semantic result: the model's `primary_event_type` was returned as a nested object
+(`{"type": "capital_formation", "subtype": "final_close"}`) in at least one case, which crashed
+`_validate_output`'s enum check with `TypeError: unhashable type: 'dict'` — safely caught by the
+`run_attempts` defensive backstop (added in the prior review round) and converted to
+`schema_invalid`, but not a type-safe check in its own right. Fixed in commit `d0c8553`
+(`_not_in()` helper applied to every enum/membership check in `_validate_output`). This fix does
+not change v3's recorded outcomes (schema_invalid either way) — it only makes the failure mode
+correctly diagnosable and hardens future runs against the same shape of malformed output.
+
+**Qualitative read, stated as observation, not a passed/failed verdict (no gold label crossed the
+inference boundary at any point in this smoke run — it is not evaluated against labels by
+design):** the shortlist and suppress outcomes look directionally sensible for their categories (a
+real capital-raise shortlisted; a conference-appearance notice suppressed for exactly the right
+reasons). The `ambiguous_identity` reason appearing on two of the three non-suppressed A/C results
+suggests `identity_gate`/`entity_matches` role resolution is a real source of remaining friction,
+worth sampling closely once a fuller run with gold comparison exists — but this is exactly the kind
+of finding the smoke stage exists to surface, not something requiring a second repair (each is a
+plausible, case-specific judgment call, not a repeated specification omission).
+
+**Cumulative token/cost across v1+v2+v3:** input 359,321 / output 275,592. At DeepSeek's published
+peak, cache-miss rates (the conservative upper bound), that is approximately **$0.37 (~¥2.6)** of
+the ¥6.59 cap — roughly 40% of budget spent, ~¥4.0 remaining.
+
+`calibration_prompt_repair`: **used once** (evidence_refs format, documented above). No second
+repair is available for this experiment, regardless of anything found in a future run.
+
+## Budget status and the decision point this creates
+
+The full calibration partition (57 natural-feed articles, per `docs/phase-2-disposition.md`) and
+the historical holdout (21 articles) together are roughly **8–9× this smoke batch's size**. Token
+usage does not scale perfectly linearly (evidence length varies), but even at this run's
+per-article average (~40,000 tokens in+out per article, all three runs combined divided by 9), 78
+more articles would cost several times the ¥6.59 cap on its own — **the remaining ~¥4.0 does not
+credibly cover Stage 3 (full calibration) or Stage 4 (historical holdout)**, only another
+smoke-sized batch at most. This is a budget fact, not a code or review finding: proceeding further
+needs either a larger authorized cap or a explicit decision to stop at the smoke stage for this
+session. Reported to the user rather than decided unilaterally.
