@@ -231,6 +231,7 @@ def issuer(**overrides):
 SCOPE = {"include": ["8-K", "10-Q"],
          "exclude": [{"form": "13F-HR", "reason": "holdings, not an event"}]}
 QUERY = {"endpoint": "browse-edgar", "date_filter": "filing date in window"}
+SCOPE_13D = {"include": ["8-K", "SC 13D", "SC 13D/A"], "exclude": []}
 
 
 def roster(issuers=None, unresolved=None, scope=None):
@@ -293,3 +294,18 @@ class SecRosterTests(unittest.TestCase):
     def test_an_empty_include_scope_is_refused(self):
         with self.assertRaises(ValueError):
             roster(scope={"include": [], "exclude": []})
+
+
+class FormScopeTests(unittest.TestCase):
+    def test_edgar_schedule_spelling_matches_the_written_form_code(self):
+        self.assertEqual(collection.normalize_form("SCHEDULE 13D"), "SC 13D")
+        self.assertEqual(collection.normalize_form("SCHEDULE 13D/A"), "SC 13D/A")
+        self.assertEqual(collection.normalize_form("8-K"), "8-K")
+
+    def test_a_schedule_13d_is_in_scope_when_the_scope_says_sc_13d(self):
+        self.assertTrue(collection.in_form_scope("SCHEDULE 13D", SCOPE_13D))
+        self.assertTrue(collection.in_form_scope("SC 13D", SCOPE_13D))
+
+    def test_excluded_ownership_forms_stay_out_of_scope(self):
+        for form in ("SCHEDULE 13G", "13F-HR", "N-PX", "4", "13F-NT"):
+            self.assertFalse(collection.in_form_scope(form, SCOPE_13D), form)

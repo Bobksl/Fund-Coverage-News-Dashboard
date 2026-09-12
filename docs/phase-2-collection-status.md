@@ -11,13 +11,14 @@ contains no HTTP client and only normalizes what was observed. The Phase 3 gate 
 
 ## What was collected
 
-**233 evidence records**, zero duplicate article IDs, 178 calibration / 55 holdout.
+**245 evidence records**, zero duplicate article IDs, 189 calibration / 56 holdout.
 Records live in ignored `work/phase2/natural-feed/evidence.jsonl`; nothing entered Git.
 
 | Source | In-window records | Note |
 |---|---|---|
 | aci_news | 109 | Pages 1–8; page 8 crosses the window start. Gated publication: every record is `access_status: unavailable`, `evidence_scope: metadata_only`. |
 | commercial_observer_finance | 83 | Resolved by retrieval (see below). Exact timestamps, `datetime` precision. |
+| sec_edgar | 12 | Collected against the frozen roster. 43 filings returned across 11 CIKs; 12 in scope. |
 | hsbc_am_news | 13 | Mostly house commentary (Investment Weekly/Monthly), one press release. |
 | kkr_media | 10 | All regions and strategies. No KKR release falls between 09-04 and 09-10. |
 | apollo_press | 4 | |
@@ -38,7 +39,7 @@ Records live in ignored `work/phase2/natural-feed/evidence.jsonl`; nothing enter
 | Source | Reason | Detail |
 |---|---|---|
 | commercial_observer_finance | `pagination_truncated` | **Resolved by retrieval, not dropped.** 83 in-window records with exact timestamps. Recorded limit: the landing page is not a chronological archive, so the Finance channel was enumerated instead — see below. |
-| sec_edgar | `roster_pending` | **Roster now frozen** (see below); retrieval has not run, so the tier still contributes zero records. |
+| sec_edgar | `roster_pending` | Roster frozen and tier collected (12 records). Remaining gap is roster-level: pretium, pag and the Bain Capital manager have no verified CIK, so their filings are outside this cohort by construction. |
 | neuberger_newsroom | `article_links_unavailable` | The pre-collection check said the listing was empty; **that was wrong** — entries render below the media-contacts block. But the index exposes no per-article link and clicking does not navigate. Two in-window items are known by title and date and remain uncollectable. One of them is independently covered by ACI on 08-19, so the event is not wholly lost. |
 | bayview_site | `no_index_published` | No newsroom in public navigation. No route was invented. Bayview items can still arrive through other fixed sources. |
 | aci_news | `article_inaccessible` | Contributed 109 records, but from the public index only; readability per article is unestablished. |
@@ -103,6 +104,27 @@ managers is expected rather than surprising.
 Filing date is the public-availability date and is not the event date; a filing disclosing an
 earlier event keeps its own filing date and `event_date` stays null unless the document establishes
 one.
+
+### SEC tier result, collected 2026-09-12
+
+43 filings across the 11 CIKs, **12 in scope**, all from five issuers: Blue Owl 3, OTF 4, KKR 2,
+Apollo 2, BasePoint 1. Bayview, Neuberger, Guggenheim and HSBC AM returned only N-PX, 13F and 13G
+filings — every one excluded by scope. BCSF and CIFC filed nothing in the window.
+
+That is the prediction recorded at freeze time coming true: for pure asset managers EDGAR yields
+position and proxy disclosure, not events. The tier's value is concentrated in the issuers and
+vehicles, and OTF's 09-04 8-K corroborates the press release already collected from its own
+newsroom.
+
+**One amendment, recorded in `sec-roster-amendments.json`.** The frozen scope was written with
+EDGAR form codes (`SC 13D`), but EDGAR's company-search table renders the same form as
+`SCHEDULE 13D`. Matching the frozen strings literally would have silently dropped BasePoint
+Group's 2026-08-18 SCHEDULE 13D — a control-stake filing squarely inside the intended scope. Form
+matching now normalizes the two spellings, which corrects how the scope was written down without
+widening, narrowing or reinterpreting it. One record affected.
+
+Titles on SEC records are constructed filing descriptors, not headlines: EDGAR filings have no
+headline and none was invented.
 
 ## Two findings that change the cohort's shape
 

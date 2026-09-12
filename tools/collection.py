@@ -198,6 +198,21 @@ def normalize_cik(value):
     return found.group(1).zfill(10)
 
 
+def normalize_form(label):
+    """EDGAR renders 'SCHEDULE 13D' where the form code is 'SC 13D'. Same form, two spellings.
+
+    Matching the written scope literally would silently drop a filing that is squarely inside it,
+    so form labels are normalized before comparison.
+    """
+    text = " ".join(str(label).upper().split())
+    return "SC " + text[len("SCHEDULE "):] if text.startswith("SCHEDULE ") else text
+
+
+def in_form_scope(label, form_scope):
+    included = {normalize_form(form) for form in form_scope.get("include") or ()}
+    return normalize_form(label) in included
+
+
 def validate_sec_roster(roster):
     """Every issuer needs a verified identity. A similar name is not a verification."""
     errors = [f"roster: missing {f}" for f in SEC_ROSTER_FIELDS if f not in roster]
