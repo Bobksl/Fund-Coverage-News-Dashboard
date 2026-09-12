@@ -223,6 +223,21 @@ class ReplayProvider:
         return saved["raw"]
 
 
+def _not_in(value, container):
+    """`value not in container`, but a model returning an unhashable value (a dict or list where
+    a string/enum was expected) reports "not a member" instead of crashing validation with
+    TypeError: unhashable type. Found live: deepseek-flash once returned
+    primary_event_type={"type": "capital_formation", "subtype": "final_close"} instead of a flat
+    string -- caught at runtime by run_attempts' defensive try/except around validate(), but that
+    backstop is a last resort, not a substitute for every enum/membership check being type-safe
+    here where the actual, more informative error message is produced.
+    """
+    try:
+        return value not in container
+    except TypeError:
+        return True
+
+
 def _project(items, fields):
     return [{field: item.get(field) for field in fields} for item in items]
 
@@ -360,12 +375,12 @@ def _validate_entity_matches(parsed, known_entities):
             errors.append("entity_matches entry must be an object")
             continue
         entity_id = match.get("entity_id")
-        if entity_id not in known_entities:
+        if _not_in(entity_id, known_entities):
             errors.append(f"entity_matches entry references unknown entity_id {entity_id}")
-        if match.get("economic_role") not in ECONOMIC_ROLES:
+        if _not_in(match.get("economic_role"), ECONOMIC_ROLES):
             errors.append(f"entity_matches entry for {entity_id} has an invalid economic_role")
         involvement = match.get("involvement")
-        if involvement not in INVOLVEMENT_LEVELS:
+        if _not_in(involvement, INVOLVEMENT_LEVELS):
             errors.append(f"entity_matches entry for {entity_id} has an invalid involvement")
         elif involvement == "direct_involvement" and not (match.get("evidence_refs") or []):
             errors.append(f"entity_matches entry for {entity_id} claims direct_involvement but "
@@ -417,7 +432,7 @@ def _validate_propagation_edges(propagated, rooted, entities):
         allowed |= ancestors(root_id)
     errors = []
     for parent_id in propagated:
-        if parent_id not in allowed:
+        if _not_in(parent_id, allowed):
             errors.append(f"propagated_entity_ids entry {parent_id} is not a config ancestor of "
                           f"any directly evidenced (involvement=direct_involvement) business -- "
                           f"propagation must follow a real, rooted ontology path from the "
@@ -510,10 +525,10 @@ def _validate_relevance_semantics(parsed, config):
                 if value is not None and not isinstance(value, str):
                     errors.append(f"sector_readthrough.{field} must be a string")
             basis = readthrough.get("basis")
-            if basis is not None and basis not in SECTOR_READTHROUGH_BASES:
+            if basis is not None and _not_in(basis, SECTOR_READTHROUGH_BASES):
                 errors.append(f"sector_readthrough.basis must be one of {sorted(SECTOR_READTHROUGH_BASES)}")
             sector_id = readthrough.get("sector_id")
-            if sector_id is not None and sector_id not in (parsed.get("sector_ids") or []):
+            if sector_id is not None and _not_in(sector_id, parsed.get("sector_ids") or []):
                 errors.append("sector_readthrough.sector_id must be one of the declared sector_ids")
             explanation = readthrough.get("comparability_explanation")
             if isinstance(explanation, str) and len(explanation.strip()) < MIN_SECTOR_READTHROUGH_LENGTH:
@@ -531,7 +546,7 @@ def _validate_relevance_semantics(parsed, config):
             errors.append("relevance_level C requires substantive transmission.trigger, "
                           "transmission.mechanism and transmission.outcome")
         consequence_category = transmission.get("consequence_category")
-        if consequence_category not in LEVEL_C_TRANSMISSION_CATEGORIES:
+        if _not_in(consequence_category, LEVEL_C_TRANSMISSION_CATEGORIES):
             errors.append(f"relevance_level C requires transmission.consequence_category to be "
                           f"one of {LEVEL_C_TRANSMISSION_CATEGORIES}")
         affected_exposure = _text(transmission.get("affected_exposure")).strip()
@@ -583,11 +598,11 @@ def _validate_output(parsed, config, article_input=None):
     errors += [f"missing {field}" for field in REQUIRED_OUTPUT if field not in parsed]
     types = {item["canonical_id"]: item["subtypes"] for item in config["event_types"]["event_types"]}
     event_type = parsed.get("primary_event_type")
-    if event_type not in types:
+    if _not_in(event_type, types):
         errors.append("unknown primary_event_type")
     elif parsed.get("subtype") is not None and parsed["subtype"] not in types[event_type]:
         errors.append("subtype invalid for primary_event_type")
-    if parsed.get("relevance_level") not in {"A", "B", "C", None}:
+    if _not_in(parsed.get("relevance_level"), {"A", "B", "C", None}):
         errors.append("invalid relevance_level")
     known_entities = {item["canonical_id"] for item in config["entities"]["entities"]}
     known = {"sector_ids": {item["canonical_id"] for item in config["sectors"]["sectors"]},
@@ -598,9 +613,10 @@ def _validate_output(parsed, config, article_input=None):
         if not isinstance(values, list):
             errors.append(f"{field} must be a list")
             continue
-        errors += [f"unknown {field} value {value}" for value in values if value not in allowed]
+        errors += [f"unknown {field} value {value}" for value in values if _not_in(value, allowed)]
     errors += _validate_identity(parsed.get("event_identity"))
-    if "identity_gate" in parsed and parsed["identity_gate"] is not None and parsed["identity_gate"] not in GATE_OUTCOMES:
+    if ("identity_gate" in parsed and parsed["identity_gate"] is not None
+            and _not_in(parsed["identity_gate"], GATE_OUTCOMES)):
         errors.append("invalid identity_gate")
     allowed_anchors = anchor_values(config["scoring"])
     components = parsed.get("components")
@@ -613,7 +629,7 @@ def _validate_output(parsed, config, article_input=None):
                 errors.append(f"component {name} missing")
                 continue
             points = component["points"]
-            if points is not None and points not in allowed_anchors[name]:
+            if points is not None and _not_in(points, allowed_anchors[name]):
                 errors.append(f"component {name} uses an unconfigured anchor")
             reason = component.get("reason")
             if points is not None and (not isinstance(reason, str) or not reason.strip()):

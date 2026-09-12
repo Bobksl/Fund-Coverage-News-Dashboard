@@ -261,6 +261,29 @@ class ClassifierTests(unittest.TestCase):
             self.assertEqual(result["relevance_level"], None)
             self.assertIn("classifier_failure", result["flags"])
 
+    def test_nested_primary_event_type_is_a_schema_failure_not_an_unhashable_type_crash(self):
+        """Found live (calib-smoke-deepseek-flash-v3, docs/phase-5-live-run-log.md): deepseek-flash
+        once returned primary_event_type as {"type": "capital_formation", "subtype": "final_close"}
+        instead of a flat string. `event_type not in types` (types is a dict) raised
+        TypeError: unhashable type: 'dict' -- caught live by run_attempts' defensive try/except,
+        but _not_in() now makes the check itself type-safe rather than relying only on that
+        backstop."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(primary_event_type={"type": "capital_formation",
+                                                      "subtype": "final_close"})
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["attempts"][0]["outcome"], "schema_invalid")
+            self.assertIn("unknown primary_event_type", result["attempts"][0]["detail"])
+
+    def test_unhashable_enum_values_throughout_are_schema_failures_not_crashes(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(relevance_level=["A"], identity_gate={"value": "pass"},
+                                  direct_entity_ids=[{"id": "neuberger"}])
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["attempts"][0]["outcome"], "schema_invalid")
+
     def test_model_cannot_supply_a_total_or_publication_status(self):
         with temporary_directory() as workspace:
             store = classifier.RawOutputStore(workspace / "raw")
