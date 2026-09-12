@@ -162,7 +162,7 @@ def build_prompt(decision, evidence_inputs, claims, prompt_version):
 
 class Drafter:
     def __init__(self, provider, store, model_id, prompt_version, max_attempts=2, clock=None,
-                 timer=None):
+                 timer=None, inference_settings=None):
         self.provider = provider
         self.store = store
         self.model_id = model_id
@@ -170,6 +170,7 @@ class Drafter:
         self.max_attempts = max_attempts
         self.clock = clock or (lambda: datetime.now(timezone.utc).isoformat())
         self.timer = timer or time.perf_counter
+        self.inference_settings = dict(inference_settings or {})
 
     def draft(self, decision, evidence, claims=None):
         """Draft one shortlisted event. Anything else is refused rather than quietly drafted."""
@@ -180,11 +181,11 @@ class Drafter:
                            for article_id in decision["article_ids"] if article_id in evidence]
         parties = [party for party in (decision["event_identity"].get("parties") or [])]
         prompt = build_prompt(decision, evidence_inputs, claims, self.prompt_version)
-        digest = input_hash(prompt, self.model_id)
+        digest = input_hash(prompt, self.model_id, self.inference_settings)
         parsed, attempts, metadata = run_attempts(
             self.provider, prompt, digest, self.store, self.model_id, self.prompt_version,
             lambda payload: validate_card(payload, claims, parties), self.max_attempts,
-            self.clock, self.timer)
+            self.clock, self.timer, self.inference_settings)
         if parsed is None:
             detail = attempts[-1]["detail"] if attempts else "no attempt recorded"
             return {"event_id": decision["event_id"], "status": "review_required",

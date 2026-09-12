@@ -48,6 +48,16 @@ ENTITY_FIELDS = ("canonical_id", "display_name", "entity_type", "parent", "paren
 SECTOR_FIELDS = ("canonical_id", "display_name", "inclusion_logic", "exclusion_logic")
 THEME_FIELDS = ("canonical_id", "display_name", "trigger_conditions", "transmission_mechanism",
                 "inclusion_threshold")
+# ED04 (docs/phase-4-plan.md finding 1 / Phase 5 handover section 5A): a generic causal-chain
+# statement ("rates affect markets") is not a Level C transmission. At least one of these terms
+# must appear in the combined mechanism/outcome text, tying the trigger to an actual consequence
+# category rather than a restated truism.
+LEVEL_C_TRANSMISSION_CATEGORIES = ("financing", "risk", "return", "valuation", "liquidity",
+                                   "deployment", "fundraising", "exit")
+GENERIC_TRANSMISSION_PHRASES = ("rates affect markets", "affects the market", "impacts the market",
+                                "impacts markets", "affects markets", "markets are affected",
+                                "general market conditions")
+MIN_TRANSMISSION_TEXT_LENGTH = 15
 
 
 class ProviderError(RuntimeError):
@@ -130,8 +140,37 @@ def build_prompt(article_input, config, prompt_version):
     return payload
 
 
-def input_hash(prompt, model_id):
-    canonical = json.dumps({"prompt": prompt, "model": model_id}, ensure_ascii=False, sort_keys=True)
+# Every behaviourally relevant knob a provider might document, per Phase 5 handover section 5B.
+# build_inference_settings keeps only fields the caller actually supplies -- it never invents a
+# parameter a given provider does not support.
+INFERENCE_SETTINGS_FIELDS = ("provider", "model_id", "temperature", "top_p", "seed",
+                             "reasoning_effort", "structured_output_mode", "schema_version",
+                             "max_output_tokens", "retry_policy", "timeout_seconds",
+                             "prompt_version")
+
+
+def build_inference_settings(**values):
+    """Canonical, reproducible record of the behaviourally relevant call parameters actually used.
+
+    Only explicitly supplied, non-null fields are kept. Two runs of the same prompt/model with
+    different settings must hash differently everywhere a run is identified (input_hash, the raw
+    output store, the run manifest) -- see input_hash below.
+    """
+    return {field: values[field] for field in INFERENCE_SETTINGS_FIELDS
+           if values.get(field) is not None}
+
+
+def settings_hash(settings):
+    canonical = json.dumps(settings or {}, ensure_ascii=False, sort_keys=True)
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:32]
+
+
+def input_hash(prompt, model_id, settings=None):
+    """Identify one (prompt, model, settings) combination. Settings default to empty for callers
+    that do not yet track them, but a caller carrying settings must not collide with one that does
+    not, so the field is always present in the canonical form, never omitted when empty."""
+    canonical = json.dumps({"prompt": prompt, "model": model_id, "settings": settings or {}},
+                           ensure_ascii=False, sort_keys=True)
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:32]
 
 
@@ -172,7 +211,86 @@ def _validate_identity(identity):
     return errors
 
 
-def _validate_output(parsed, config):
+def _text(value):
+    return value if isinstance(value, str) else ""
+
+
+def _validate_relevance_semantics(parsed):
+    """ED04 cross-field invariants per relevance level (Phase 5 handover section 5A).
+
+    These run only once the basic shape is sound; a missing/invalid field is already reported by
+    the caller and would make these checks noisy rather than informative.
+    """
+    errors = []
+    level = parsed.get("relevance_level")
+    if level == "A":
+        direct = parsed.get("direct_entity_ids") or []
+        propagated = parsed.get("propagated_entity_ids") or []
+        if not direct and not propagated:
+            errors.append("relevance_level A requires a resolved direct or propagated entity, "
+                          "not a tracked-name mention alone")
+        if (parsed.get("identity_gate") or "review_required") != "pass":
+            errors.append("relevance_level A requires identity_gate pass")
+        identity = parsed.get("event_identity") or {}
+        role_established = bool(identity.get("parties")) and bool(identity.get("action") or
+                                                                   identity.get("vehicle"))
+        if not role_established:
+            errors.append("relevance_level A requires event_identity to establish the tracked "
+                          "manager/vehicle's role (parties plus an action or vehicle)")
+    elif level == "B":
+        if not parsed.get("sector_ids"):
+            errors.append("relevance_level B requires at least one monitored sector_id")
+        transmission = parsed.get("transmission") or {}
+        if not (_text(transmission.get("mechanism")).strip() and
+                _text(transmission.get("trigger")).strip()):
+            errors.append("relevance_level B requires transmission.trigger and transmission.mechanism "
+                          "explaining what new evidence changes the sector/strategy assessment")
+    elif level == "C":
+        transmission = parsed.get("transmission") or {}
+        trigger = _text(transmission.get("trigger")).strip()
+        mechanism = _text(transmission.get("mechanism")).strip()
+        outcome = _text(transmission.get("outcome")).strip()
+        if not (trigger and mechanism and outcome):
+            errors.append("relevance_level C requires substantive transmission.trigger, "
+                          "transmission.mechanism and transmission.outcome")
+        else:
+            combined = f"{mechanism} {outcome}".lower()
+            if len(mechanism) < MIN_TRANSMISSION_TEXT_LENGTH or len(outcome) < MIN_TRANSMISSION_TEXT_LENGTH:
+                errors.append("relevance_level C transmission is too short to carry an event-specific "
+                              "causal chain")
+            elif any(phrase in combined for phrase in GENERIC_TRANSMISSION_PHRASES):
+                errors.append("relevance_level C transmission is a generic statement, not an "
+                              "event-specific causal chain")
+            elif not any(category in combined for category in LEVEL_C_TRANSMISSION_CATEGORIES):
+                errors.append("relevance_level C transmission must name a specific consequence "
+                              "category (financing, risk, return, valuation, liquidity, "
+                              "deployment, fundraising or exits)")
+    return errors
+
+
+def _validate_evidence_refs(parsed, article_input):
+    """An evidence_refs entry must point at evidence actually supplied for this candidate.
+
+    The current inference input carries exactly one article, so the only valid reference is that
+    article's own ID (optionally with a '#span' suffix into its body); an arbitrary string is a
+    schema failure, never silently accepted as a citation.
+    """
+    errors = []
+    article_id = article_input.get("article_id")
+    components = parsed.get("components")
+    if not isinstance(components, dict):
+        return errors
+    for name, component in components.items():
+        if not isinstance(component, dict):
+            continue
+        for ref in component.get("evidence_refs") or []:
+            if not isinstance(ref, str) or not (ref == article_id or ref.startswith(f"{article_id}#")):
+                errors.append(f"component {name} evidence_refs value {ref!r} does not reference "
+                              f"evidence supplied in this input")
+    return errors
+
+
+def _validate_output(parsed, config, article_input=None):
     """Return errors for one raw model output. Enum violations are failures, not corrections."""
     errors = []
     if not isinstance(parsed, dict):
@@ -218,20 +336,28 @@ def _validate_output(parsed, config):
             evidence_refs = component.get("evidence_refs", [])
             if evidence_refs is not None and not isinstance(evidence_refs, list):
                 errors.append(f"component {name} evidence_refs must be a list")
+    if not errors:
+        # Semantic invariants only run once the shape is sound; a malformed component/enum is
+        # already reported above and would just make these checks noisy.
+        errors += _validate_relevance_semantics(parsed)
+    if article_input is not None:
+        errors += _validate_evidence_refs(parsed, article_input)
     return errors
 
 
 def run_attempts(provider, prompt, digest, store, model_id, prompt_version, validate,
-                 max_attempts, clock, timer):
+                 max_attempts, clock, timer, inference_settings=None):
     """Bounded retry loop shared by the classifying and drafting stages.
 
     Returns (parsed or None, attempts, metadata). Every attempt is recorded with its outcome,
     latency and saved raw reference, so a transport failure is never confused with a bad decision
-    and a failure is never silently dropped.
+    and a failure is never silently dropped. `inference_settings` (see build_inference_settings)
+    is recorded verbatim in metadata so a run report can prove exactly which behaviourally
+    relevant parameters produced it.
     """
     metadata = {"provider": type(provider).__name__, "model": model_id,
                 "prompt_version": prompt_version, "input_hash": digest,
-                "settings": {"max_attempts": max_attempts},
+                "settings": dict(inference_settings or {}, max_attempts=max_attempts),
                 # Usage is whatever the provider actually reported. No price is invented here;
                 # cost_basis stays null until a real rate card is recorded alongside the run.
                 "usage": {"input_tokens": None, "output_tokens": None, "cost_basis": None},
@@ -294,7 +420,7 @@ def _review_proposal(article_input, reason, attempts, model_metadata):
 
 class StructuredClassifier:
     def __init__(self, provider, store, model_id, prompt_version, max_attempts=2, clock=None,
-                 timer=None):
+                 timer=None, inference_settings=None):
         self.provider = provider
         self.store = store
         self.model_id = model_id
@@ -302,15 +428,16 @@ class StructuredClassifier:
         self.max_attempts = max_attempts
         self.clock = clock or (lambda: datetime.now(timezone.utc).isoformat())
         self.timer = timer or time.perf_counter
+        self.inference_settings = dict(inference_settings or {})
 
     def propose(self, article, config, body=None):
         article_input = to_inference_input(article, body=body)
         prompt = build_prompt(article_input, config, self.prompt_version)
-        digest = input_hash(prompt, self.model_id)
+        digest = input_hash(prompt, self.model_id, self.inference_settings)
         parsed, attempts, metadata = run_attempts(
             self.provider, prompt, digest, self.store, self.model_id, self.prompt_version,
-            lambda payload: _validate_output(payload, config), self.max_attempts,
-            self.clock, self.timer)
+            lambda payload: _validate_output(payload, config, article_input), self.max_attempts,
+            self.clock, self.timer, self.inference_settings)
         if parsed is None:
             detail = attempts[-1]["detail"] if attempts else "no attempt recorded"
             return _review_proposal(article_input, f"classifier failure: {detail}", attempts, metadata)

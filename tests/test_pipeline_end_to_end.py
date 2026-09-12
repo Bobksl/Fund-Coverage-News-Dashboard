@@ -137,7 +137,7 @@ class ReplayEngineTests(unittest.TestCase):
         payload = json.dumps({
             "relevance_level": "A", "primary_event_type": "capital_formation",
             "subtype": "final_close", "sector_ids": ["private_credit"], "theme_ids": [],
-            "direct_entity_ids": ["neuberger"],
+            "direct_entity_ids": ["neuberger"], "identity_gate": "pass",
             "event_identity": {"parties": ["Neuberger Berman"], "action": "final_close",
                                "vehicle": "Private Debt V", "period": None,
                                "event_date": "2026-08-20"},

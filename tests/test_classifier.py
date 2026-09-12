@@ -14,6 +14,8 @@ def valid_output(**overrides):
         "subtype": "final_close",
         "sector_ids": ["private_credit"],
         "theme_ids": [],
+        "identity_gate": "pass",
+        "direct_entity_ids": ["neuberger"],
         "event_identity": {"parties": ["Example Manager"], "action": "final_close",
                            "vehicle": "Example Credit Fund II", "period": None,
                            "event_date": "2026-09-01"},
@@ -153,7 +155,7 @@ class ClassifierTests(unittest.TestCase):
     def test_missing_identity_gate_defaults_to_review_not_pass(self):
         with temporary_directory() as workspace:
             store = classifier.RawOutputStore(workspace / "raw")
-            result = build(Recorder(valid_output()), store).propose(article(), CONFIG)
+            result = build(Recorder(valid_output(identity_gate=None)), store).propose(article(), CONFIG)
             self.assertEqual(result["gates"]["identity"], "review_required")
 
     def test_explicit_identity_gate_pass_is_preserved(self):
@@ -229,6 +231,171 @@ class ClassifierTests(unittest.TestCase):
                            store).propose(article(), CONFIG)
             self.assertNotIn("total_score", result)
             self.assertNotIn("publication", result)
+
+
+class RelevanceSemanticsTests(unittest.TestCase):
+    """ED04 cross-field invariants (Phase 5 handover section 5A): a name mention, a one-line
+    sector assertion or a generic macro statement must not pass as a real classification."""
+
+    def test_level_a_tracked_name_mention_alone_is_not_enough(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(direct_entity_ids=[], propagated_entity_ids=[])
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("resolved direct or propagated entity", result["attempts"][0]["detail"])
+
+    def test_level_a_requires_identity_gate_pass(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(identity_gate="review_required")
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("requires identity_gate pass", result["attempts"][0]["detail"])
+
+    def test_level_a_requires_event_identity_to_establish_a_role(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(event_identity={"parties": ["Example Manager"], "action": None,
+                                                   "vehicle": None, "period": None, "event_date": None})
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("establish the tracked manager/vehicle's role", result["attempts"][0]["detail"])
+
+    def test_level_b_needs_no_tracked_entity_but_needs_a_sector(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
+                                   sector_ids=[],
+                                   transmission={"trigger": "peer default", "mechanism":
+                                                 "raises deployment risk across private credit funds",
+                                                 "outcome": "tighter underwriting", "uncertainty": None})
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("at least one monitored sector_id", result["attempts"][0]["detail"])
+
+    def test_level_b_without_a_tracked_entity_and_with_transmission_and_sector_is_valid(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
+                                   sector_ids=["private_credit"],
+                                   transmission={"trigger": "peer default", "mechanism":
+                                                 "raises deployment risk across private credit funds",
+                                                 "outcome": "tighter underwriting", "uncertainty": None})
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["relevance_level"], "B")
+
+    def test_level_b_generic_sector_statement_without_transmission_fields_fails(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
+                                   sector_ids=["private_credit"],
+                                   transmission={"trigger": None, "mechanism": None,
+                                                 "outcome": None, "uncertainty": None})
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("transmission.trigger and transmission.mechanism",
+                         result["attempts"][0]["detail"])
+
+    def test_level_c_generic_transmission_statement_fails(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="C", identity_gate=None, direct_entity_ids=[],
+                                   sector_ids=[],
+                                   transmission={"trigger": "rate move", "mechanism":
+                                                 "rates affect markets", "outcome":
+                                                 "affects the market", "uncertainty": None})
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("generic statement", result["attempts"][0]["detail"])
+
+    def test_level_c_with_a_specific_causal_chain_is_valid(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="C", identity_gate=None, direct_entity_ids=[],
+                                   sector_ids=[],
+                                   transmission={"trigger": "base rate cut announced",
+                                                 "mechanism": "lowers financing cost for floating "
+                                                              "rate private credit borrowers",
+                                                 "outcome": "improves debt service coverage and "
+                                                            "supports valuation of levered assets",
+                                                 "uncertainty": "pace of further cuts unclear"})
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["relevance_level"], "C")
+
+    def test_level_c_missing_transmission_fields_fails(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="C", identity_gate=None, direct_entity_ids=[],
+                                   sector_ids=[],
+                                   transmission={"trigger": "rates", "mechanism": None,
+                                                 "outcome": None, "uncertainty": None})
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("substantive transmission", result["attempts"][0]["detail"])
+
+
+class EvidenceRefsTests(unittest.TestCase):
+    def test_evidence_ref_must_point_at_supplied_evidence(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(components={
+                "portfolio_fit": {"points": 30, "reason": "x", "evidence_refs": ["some-other-article"]},
+                "materiality": {"points": 20, "reason": "x"},
+                "investment_transmission": {"points": 15, "reason": "x"},
+                "actionability": {"points": 8, "reason": "x"},
+                "source_credibility": {"points": 7, "reason": "x"},
+                "novelty": {"points": 5, "reason": "x"}})
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("does not reference evidence supplied in this input",
+                         result["attempts"][0]["detail"])
+
+    def test_evidence_ref_matching_the_article_id_is_accepted(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(components={
+                "portfolio_fit": {"points": 30, "reason": "x", "evidence_refs": ["a1#p1"]},
+                "materiality": {"points": 20, "reason": "x"},
+                "investment_transmission": {"points": 15, "reason": "x"},
+                "actionability": {"points": 8, "reason": "x"},
+                "source_credibility": {"points": 7, "reason": "x"},
+                "novelty": {"points": 5, "reason": "x"}})
+            result = build(Recorder(payload), store).propose(article(), CONFIG)
+            self.assertEqual(result["relevance_level"], "A")
+
+
+class InferenceSettingsTests(unittest.TestCase):
+    """Phase 5 handover section 5B: settings must be part of run identity, not just prompt+model."""
+
+    def test_build_inference_settings_keeps_only_supplied_fields(self):
+        settings = classifier.build_inference_settings(
+            provider="anthropic", model_id="claude-sonnet-5", temperature=0.0, seed=None,
+            unsupported_made_up_field="x")
+        self.assertEqual(settings, {"provider": "anthropic", "model_id": "claude-sonnet-5",
+                                    "temperature": 0.0})
+
+    def test_same_prompt_and_model_different_settings_hash_differently(self):
+        prompt = classifier.build_prompt(classifier.to_inference_input(article()), CONFIG, "p1")
+        settings_a = classifier.build_inference_settings(temperature=0.0)
+        settings_b = classifier.build_inference_settings(temperature=0.7)
+        self.assertNotEqual(classifier.input_hash(prompt, "m1", settings_a),
+                            classifier.input_hash(prompt, "m1", settings_b))
+
+    def test_two_runs_with_different_settings_do_not_collide_in_the_raw_store(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            settings_a = classifier.build_inference_settings(temperature=0.0)
+            settings_b = classifier.build_inference_settings(temperature=0.7)
+            classifier_a = build(Recorder(valid_output()), store)
+            classifier_a.inference_settings = settings_a
+            classifier_b = build(Recorder(valid_output(eligibility_reason="different run")), store)
+            classifier_b.inference_settings = settings_b
+            result_a = classifier_a.propose(article(), CONFIG)
+            result_b = classifier_b.propose(article(), CONFIG)
+            self.assertNotEqual(result_a["raw_output_ref"], result_b["raw_output_ref"])
+
+    def test_metadata_settings_carry_the_recorded_inference_settings(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            settings = classifier.build_inference_settings(provider="anthropic", temperature=0.0)
+            engine = build(Recorder(valid_output()), store)
+            engine.inference_settings = settings
+            result = engine.propose(article(), CONFIG)
+            self.assertEqual(result["model_metadata"]["settings"]["provider"], "anthropic")
+            self.assertEqual(result["model_metadata"]["settings"]["temperature"], 0.0)
 
 
 class ReplayTests(unittest.TestCase):
