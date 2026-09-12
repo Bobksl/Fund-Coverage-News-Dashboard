@@ -46,4 +46,19 @@
 - [x] Baseline run and per-cohort evaluation complete; disposition written (FAIL for the
       baseline, LLM pipeline untested). See docs/phase-2-disposition.md.
 - [ ] Configure a model provider and rerun the structured classifier on the same frozen
-      split. This is the single highest-value remaining test.
+      split. This is the single highest-value remaining test. Not run 2026-09-12: no
+      ANTHROPIC_API_KEY/OPENAI_API_KEY and no `anthropic` SDK in this environment; the
+      user declined to supply a key before the deadline. Still the top priority whenever
+      a key is available.
+- [x] Corrected the BasePoint Asset Recovery challenge rationale in
+      work/phase2/challenge/challenge-registry.jsonl (outside the frozen hash set; safe to
+      edit). "Unrelated" replaced with the actual unverified BasePoint Capital LLC / Neuberger
+      connection.
+- [x] Vitabiotics date: left un-applied, recorded as a same-freeze decision rather than a
+      cleanup, since the record lives inside the already-hashed freeze-001 evidence file.
+      See docs/demo-readme.md.
+- [x] Built the demo: tools/build_demo_feed.py (real baseline decisions -> per-date JSON,
+      work/phase2/demo-feed/, ignored by git) and site/index.html + site/app.js (static
+      date-navigable dashboard, EN cards + honestly-labeled missing-Chinese state, empty/stale
+      states for undated/no-candidate days). Verified live via a local HTTP server. See
+      docs/demo-readme.md for what it does and does not show.
