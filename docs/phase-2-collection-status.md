@@ -166,3 +166,41 @@ python -m tools.build_natural_feed
 Rebuilds `evidence.jsonl` and `intake-report.json` from the per-source observation files in
 `work/phase2/natural-feed/observations/`. Deterministic: article IDs are UUID5 of the canonical
 URL, so re-running produces identical bytes.
+
+## Challenge cohort — 2026-09-12
+
+**91 records. Every coverage minimum is met.** Registry in
+`work/phase2/challenge/challenge-registry.jsonl`, coverage in `coverage-report.json`. Categories,
+selection reasons and cohort membership are evaluator-only and never reach the analyst or a model.
+
+| Category | Total | Of which independent | Minimum |
+|---|---|---|---|
+| apac_global_other | 5 | 0 | 5 |
+| critical_risk | 8 | 5 | 8 |
+| hard_negative | 29 | 14 | 25 |
+| identity | 10 | 4 | 10 |
+| manager_independent_bc | 15 | 5 | 15 |
+| material_update | 5 | 1 | 5 |
+| multi_article_group | 10 | 2 | 10 |
+| operational | 1 | 1 | 0 |
+| similar_headline_pair | 9 | 0 | 2 |
+
+**The caveat that matters: 60 of the 91 are linked natural-feed records, and only 31 are
+independently curated.** Linking is what the protocol prescribes when a naturally discovered article
+is also a good probe — it is counted once, never twice — but it means the challenge cohort is
+largely the natural feed doing double duty. Two consequences to carry forward:
+
+- The two cohorts overlap heavily, so their results are not independent. Reporting them separately
+  is necessary but not sufficient; the overlap has to be disclosed with any challenge figure.
+- The challenge cohort's own evaluable supply is 31 records. If the evaluation needs a genuinely
+  independent challenge holdout, that number is the real one, and more standalone curation is
+  required before it can carry a robustness claim.
+
+What the independent records do cover well is identity: two unrelated BasePoint registrants that
+EDGAR actually holds, Pacific Alliance Group as the PAG historical-name trap, parent-versus-vehicle
+at both press-release and filing level, and 'Credit & Markets' as a division name shared by KKR and
+PAG. Those are the probes hardest to construct and least likely to occur naturally.
+
+One record serves two probes: the NVIDIA AI-financing release is both a manager-independent AI
+judgement call and one half of a two-newsroom pair. The protocol's categories overlap rather than
+sum, so the registry now records a list of categories per record.

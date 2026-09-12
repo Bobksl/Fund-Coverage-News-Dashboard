@@ -25,7 +25,7 @@ CATEGORY_MINIMUMS = {
     "similar_headline_pair": 2,
     "operational": 0,
 }
-REQUIRED_FIELDS = ("article_id", "category", "selection_reason")
+REQUIRED_FIELDS = ("article_id", "categories", "selection_reason")
 
 
 def validate_rows(rows, natural_feed_ids=frozenset()):
@@ -34,8 +34,14 @@ def validate_rows(rows, natural_feed_ids=frozenset()):
     for number, row in enumerate(rows, start=1):
         missing = [field for field in REQUIRED_FIELDS if not row.get(field)]
         errors += [f"row {number}: missing {field}" for field in missing]
-        if row.get("category") and row["category"] not in CATEGORY_MINIMUMS:
-            errors.append(f"row {number}: unknown category {row['category']}")
+        categories = row.get("categories")
+        if categories is not None and not isinstance(categories, list):
+            errors.append(f"row {number}: categories must be a list")
+            categories = []
+        # The protocol's coverage requirements overlap rather than sum, so one record may serve
+        # more than one probe. Each named category must still be real.
+        errors += [f"row {number}: unknown category {c}" for c in (categories or [])
+                   if c not in CATEGORY_MINIMUMS]
         article_id = row.get("article_id")
         if article_id in seen:
             errors.append(f"row {number}: duplicate article {article_id}")
@@ -54,8 +60,8 @@ def coverage(rows):
     """Count each category against its minimum. Overlapping categories are counted per row."""
     counts = {}
     for row in rows:
-        category = row.get("category")
-        counts[category] = counts.get(category, 0) + 1
+        for category in row.get("categories") or []:
+            counts[category] = counts.get(category, 0) + 1
     report = {}
     for category, minimum in sorted(CATEGORY_MINIMUMS.items()):
         have = counts.get(category, 0)
@@ -63,6 +69,7 @@ def coverage(rows):
                             "met": have >= minimum}
     return {
         "records": len(rows),
+        "category_assignments": sum(len(row.get("categories") or []) for row in rows),
         "by_category": report,
         "categories_met": sorted(k for k, v in report.items() if v["met"]),
         "categories_short": sorted(k for k, v in report.items() if not v["met"]),

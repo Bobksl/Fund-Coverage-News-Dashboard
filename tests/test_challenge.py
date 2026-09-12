@@ -5,7 +5,7 @@ from tools import challenge
 
 
 def row(article_id="a1", category="hard_negative", **overrides):
-    values = {"article_id": article_id, "category": category,
+    values = {"article_id": article_id, "categories": [category],
               "selection_reason": "routine mega-manager activity"}
     values.update(overrides)
     return values
@@ -17,6 +17,15 @@ class ValidationTests(unittest.TestCase):
 
     def test_an_unknown_category_is_refused(self):
         self.assertTrue(challenge.validate_rows([row(category="interesting")]))
+
+    def test_one_record_may_serve_two_overlapping_probes(self):
+        both = row(categories=["manager_independent_bc", "multi_article_group"])
+        self.assertEqual(challenge.validate_rows([both]), [])
+        report = challenge.coverage([both])
+        self.assertEqual(report["by_category"]["multi_article_group"]["have"], 1)
+        self.assertEqual(report["by_category"]["manager_independent_bc"]["have"], 1)
+        self.assertEqual(report["records"], 1)
+        self.assertEqual(report["category_assignments"], 2)
 
     def test_a_selection_reason_is_required(self):
         self.assertTrue(challenge.validate_rows([row(selection_reason="")]))

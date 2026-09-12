@@ -31,6 +31,7 @@
       Do not start collectors before the Phase 2 disposition exists.
 - [x] SEC CIK/form roster frozen: 11 verified issuers, 4 unresolved, 9 forms in scope.
 - [x] SEC tier collected: 12 in-scope records from 43 filings across 11 CIKs.
-- [ ] Finish challenge curation: 17 of roughly 75 records; every scored category is short.
+- [x] Challenge curation: 91 records, every coverage minimum met. 60 are linked natural-feed
+      records and 31 are independent; the overlap must be disclosed with any challenge figure.
 - [ ] Capture permitted evidence text for both cohorts and hash it for the joint freeze.
 - [ ] Build the combined blinded packet once the challenge cohort is adequate.
