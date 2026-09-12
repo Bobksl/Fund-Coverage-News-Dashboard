@@ -1,9 +1,11 @@
 import csv
 import unittest
+from pathlib import Path
 from uuid import UUID
 
 from tests.fixtures import article, temporary_directory
-from tools import corpus
+from tools import corpus, evaluator
+from tools.records import leakage_scan
 
 IDS = [str(UUID(int=number)) for number in range(1, 7)]
 
@@ -122,6 +124,57 @@ class ManifestTests(unittest.TestCase):
                                           "2026-09-11T00:00:00+00:00")
             self.assertEqual(len(freeze["labels_sha256"]), 64)
             self.assertNotEqual(freeze["labels_sha256"], freeze["evidence_sha256"])
+
+
+class VerifyFreezeTests(unittest.TestCase):
+    def test_matching_files_pass_the_preflight(self):
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            labels_path = workspace / "labels.csv"
+            evidence_path.write_bytes(b"evidence")
+            labels_path.write_bytes(b"labels")
+            freeze = corpus.freeze_record(labels_path, evidence_path, evidence_path, None,
+                                          "2026-09-11T00:00:00+00:00")
+            self.assertTrue(corpus.verify_freeze(freeze, evidence_path, labels_path))
+
+    def test_a_silently_edited_evidence_file_fails_the_preflight(self):
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            labels_path = workspace / "labels.csv"
+            evidence_path.write_bytes(b"evidence")
+            labels_path.write_bytes(b"labels")
+            freeze = corpus.freeze_record(labels_path, evidence_path, evidence_path, None,
+                                          "2026-09-11T00:00:00+00:00")
+            evidence_path.write_bytes(b"evidence-mutated-after-freeze")
+            with self.assertRaises(evaluator.FreezeError):
+                corpus.verify_freeze(freeze, evidence_path, labels_path)
+
+    def test_a_silently_edited_labels_file_fails_the_preflight(self):
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            labels_path = workspace / "labels.csv"
+            evidence_path.write_bytes(b"evidence")
+            labels_path.write_bytes(b"labels")
+            freeze = corpus.freeze_record(labels_path, evidence_path, evidence_path, None,
+                                          "2026-09-11T00:00:00+00:00")
+            labels_path.write_bytes(b"labels-mutated-after-freeze")
+            with self.assertRaises(evaluator.FreezeError):
+                corpus.verify_freeze(freeze, evidence_path, labels_path)
+
+    def test_inference_manifest_carries_provenance_and_no_gold(self):
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            evidence_path.write_bytes(b"evidence")
+            freeze = corpus.freeze_record(evidence_path, evidence_path, evidence_path, None,
+                                          "2026-09-11T00:00:00+00:00")
+            manifest = corpus.inference_manifest(
+                freeze, "run-live-1", "natural_feed_calibration", [IDS[0]],
+                config_root=Path(__file__).resolve().parents[1] / "config",
+                prompt_version="p1", model_id="fixture-model-1", evidence_path=evidence_path)
+            self.assertTrue(manifest["inference_preflight"]["freeze_verified"])
+            self.assertEqual(manifest["inference_preflight"]["model_id"], "fixture-model-1")
+            self.assertIn("scoring.json", manifest["inference_preflight"]["config_hashes"])
+            self.assertEqual(leakage_scan(manifest), [])
 
 
 if __name__ == "__main__":

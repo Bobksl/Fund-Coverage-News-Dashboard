@@ -3,7 +3,8 @@ import json
 import unittest
 
 from tests.fixtures import article, temporary_directory
-from tools import baseline, runner
+from tools import baseline, corpus, evaluator, runner
+from tools.records import write_jsonl
 
 CONFIG = baseline.load_config()
 
@@ -110,6 +111,33 @@ class RunnerTests(unittest.TestCase):
                                 workspace / "out")
             self.assertEqual(report["predicted_events"], 1)
             self.assertEqual(report["duplicate_articles"], ["d2"])
+
+    def test_run_without_a_freeze_records_freeze_verified_false(self):
+        with temporary_directory() as workspace:
+            report = runner.run(manifest(["a1"]), CORPUS, CONFIG, runner.BaselineEngine(),
+                                workspace / "out")
+            self.assertFalse(report["spec_metadata"]["freeze_verified"])
+
+    def test_run_with_a_matching_freeze_passes_the_preflight(self):
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            write_jsonl(evidence_path, CORPUS)
+            freeze = corpus.freeze_record(evidence_path, evidence_path, evidence_path, None,
+                                          "2026-09-11T00:00:00+00:00")
+            report = runner.run(manifest(["a1"]), CORPUS, CONFIG, runner.BaselineEngine(),
+                                workspace / "out", freeze=freeze, evidence_path=evidence_path)
+            self.assertTrue(report["spec_metadata"]["freeze_verified"])
+
+    def test_run_refuses_a_freeze_that_no_longer_matches_the_evidence_file(self):
+        with temporary_directory() as workspace:
+            evidence_path = workspace / "evidence.jsonl"
+            write_jsonl(evidence_path, CORPUS)
+            freeze = corpus.freeze_record(evidence_path, evidence_path, evidence_path, None,
+                                          "2026-09-11T00:00:00+00:00")
+            evidence_path.write_bytes(evidence_path.read_bytes() + b"\n")
+            with self.assertRaises(evaluator.FreezeError):
+                runner.run(manifest(["a1"]), CORPUS, CONFIG, runner.BaselineEngine(),
+                          workspace / "out", freeze=freeze, evidence_path=evidence_path)
 
     def test_run_report_records_config_hashes_for_the_freeze(self):
         with temporary_directory() as workspace:

@@ -10,7 +10,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from tools.records import COMPONENTS, leakage_scan, to_inference_input
+from tools.records import COMPONENTS, GATE_OUTCOMES, leakage_scan, to_inference_input
 from tools.scoring import anchor_values
 
 PROMPT_RULES = (
@@ -19,8 +19,35 @@ PROMPT_RULES = (
     "Select discrete anchor values only; do not sum a total or set a publication status.",
     "Propose your own event identity. No analyst grouping is supplied.",
     "Unknown or conflicting evidence must be null with review_required, never an imputed zero.",
+    "Never discard a candidate solely because no tracked manager matched; sector-only Level B "
+    "and macro/context Level C relevance are legitimate outcomes with no resolved entity.",
+    "A resolved entity name alone does not establish relevance; identify the actual subject, "
+    "role and transmission before selecting a level.",
+    "Set identity_gate to pass only when the entity role is resolved without ambiguity; use "
+    "review_required for an unresolved namesake, conditional match or missing context.",
 )
 REQUIRED_OUTPUT = ("relevance_level", "primary_event_type", "event_identity", "components")
+# ED03 (editorial-rulebook.md "A/B/C eligibility"): a compact statement of each level's required
+# connection, kept in code because config stores canonical IDs/anchors, not this prose table.
+RELEVANCE_LEVELS = {
+    "A": {"required_connection": "Resolved tracked manager/vehicle or its relevant business "
+          "directly involved, with material strategy or firm-wide consequence.",
+          "common_failure": "A tracked name mentioned as a routine, immaterial sponsor or "
+          "counterparty is not Level A."},
+    "B": {"required_connection": "New evidence directly changes assessment of a monitored "
+          "sector/strategy without a tracked GP.",
+          "common_failure": "One irrelevant peer headline generalized to all private credit "
+          "is not Level B."},
+    "C": {"required_connection": "New observed trigger plus a specific causal path to "
+          "alternatives financing, returns or exits.",
+          "common_failure": "A generic 'rates matter to markets' statement without an "
+          "event-specific consequence is not Level C."},
+}
+ENTITY_FIELDS = ("canonical_id", "display_name", "entity_type", "parent", "parent_relationship",
+                 "aliases", "excluded_contexts")
+SECTOR_FIELDS = ("canonical_id", "display_name", "inclusion_logic", "exclusion_logic")
+THEME_FIELDS = ("canonical_id", "display_name", "trigger_conditions", "transmission_mechanism",
+                "inclusion_threshold")
 
 
 class ProviderError(RuntimeError):
@@ -67,17 +94,33 @@ class ReplayProvider:
         return saved["raw"]
 
 
+def _project(items, fields):
+    return [{field: item.get(field) for field in fields} for item in items]
+
+
 def build_prompt(article_input, config, prompt_version):
-    """Assemble the model input from allowlisted evidence and generic monitoring rules."""
+    """Assemble the model input from allowlisted evidence and the substantive editorial context.
+
+    A provider given only enum IDs and numeric anchors cannot reproduce the manager ontology or
+    the scoring rubric's meaning, so this carries the compact entity/parent map, the sector and
+    theme inclusion/exclusion logic, the A/B/C relevance definitions and the full anchor
+    definitions -- everything public-editorial in config plus this module's ED03 table, and
+    nothing evaluator-only (checked below).
+    """
     payload = {
         "prompt_version": prompt_version,
         "rules": list(PROMPT_RULES),
         "ontology": {
-            "event_types": {item["canonical_id"]: item["subtypes"]
+            "relevance_levels": RELEVANCE_LEVELS,
+            "event_types": {item["canonical_id"]: {"subtypes": item["subtypes"],
+                                                    "classification_rule": item.get("classification_rule")}
                             for item in config["event_types"]["event_types"]},
-            "sectors": [item["canonical_id"] for item in config["sectors"]["sectors"]],
-            "themes": [item["canonical_id"] for item in config["themes"]["themes"]],
-            "anchors": {name: sorted(values) for name, values in anchor_values(config["scoring"]).items()},
+            "sectors": _project(config["sectors"]["sectors"], SECTOR_FIELDS),
+            "themes": _project(config["themes"]["themes"], THEME_FIELDS),
+            "entities": _project(config["entities"]["entities"], ENTITY_FIELDS),
+            "anchors": {component["canonical_id"]: component["anchors"]
+                       for component in config["scoring"]["components"]},
+            "eligibility": config["scoring"]["eligibility"],
         },
         "evidence": article_input,
     }
@@ -115,6 +158,20 @@ def _merge_usage(target, usage):
     return target
 
 
+def _validate_identity(identity):
+    errors = []
+    if identity is None:
+        return errors
+    if not isinstance(identity, dict):
+        return ["event_identity must be an object"]
+    if "parties" in identity and identity["parties"] is not None and not isinstance(identity["parties"], list):
+        errors.append("event_identity.parties must be a list")
+    for field in ("action", "vehicle", "period", "event_date"):
+        if field in identity and identity[field] is not None and not isinstance(identity[field], str):
+            errors.append(f"event_identity.{field} must be a string or null")
+    return errors
+
+
 def _validate_output(parsed, config):
     """Return errors for one raw model output. Enum violations are failures, not corrections."""
     errors = []
@@ -129,14 +186,19 @@ def _validate_output(parsed, config):
         errors.append("subtype invalid for primary_event_type")
     if parsed.get("relevance_level") not in {"A", "B", "C", None}:
         errors.append("invalid relevance_level")
+    known_entities = {item["canonical_id"] for item in config["entities"]["entities"]}
     known = {"sector_ids": {item["canonical_id"] for item in config["sectors"]["sectors"]},
-             "theme_ids": {item["canonical_id"] for item in config["themes"]["themes"]}}
+             "theme_ids": {item["canonical_id"] for item in config["themes"]["themes"]},
+             "direct_entity_ids": known_entities, "propagated_entity_ids": known_entities}
     for field, allowed in known.items():
         values = parsed.get(field) or []
         if not isinstance(values, list):
             errors.append(f"{field} must be a list")
             continue
         errors += [f"unknown {field} value {value}" for value in values if value not in allowed]
+    errors += _validate_identity(parsed.get("event_identity"))
+    if "identity_gate" in parsed and parsed["identity_gate"] is not None and parsed["identity_gate"] not in GATE_OUTCOMES:
+        errors.append("invalid identity_gate")
     allowed_anchors = anchor_values(config["scoring"])
     components = parsed.get("components")
     if not isinstance(components, dict):
@@ -150,6 +212,12 @@ def _validate_output(parsed, config):
             points = component["points"]
             if points is not None and points not in allowed_anchors[name]:
                 errors.append(f"component {name} uses an unconfigured anchor")
+            reason = component.get("reason")
+            if points is not None and (not isinstance(reason, str) or not reason.strip()):
+                errors.append(f"component {name} needs a non-empty reason for a scored anchor")
+            evidence_refs = component.get("evidence_refs", [])
+            if evidence_refs is not None and not isinstance(evidence_refs, list):
+                errors.append(f"component {name} evidence_refs must be a list")
     return errors
 
 
@@ -254,7 +322,9 @@ class StructuredClassifier:
                              "reason": parsed["components"][name].get("reason", ""),
                              "evidence_refs": parsed["components"][name].get("evidence_refs", [])}
                       for name in COMPONENTS}
-        gates = {"identity": parsed.get("identity_gate", "pass"),
+        # A model that omits identity_gate has not told us the entity role is resolved, so the
+        # safe default is review, never an assumed pass (the prior default this repairs).
+        gates = {"identity": parsed.get("identity_gate") or "review_required",
                  "relevance": "pass" if parsed.get("relevance_level") else "fail"}
         return {
             "article_id": article_input["article_id"], "engine": "structured_classifier",

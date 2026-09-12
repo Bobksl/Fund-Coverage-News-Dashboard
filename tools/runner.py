@@ -10,7 +10,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from tools import baseline, classifier, grouping, scoring
+from tools import baseline, classifier, corpus, grouping, scoring
 from tools.records import (COMPONENTS, dumps_jsonl, leakage_scan, loads, read_jsonl,
                            to_inference_input, validate_decision, write_jsonl)
 
@@ -135,11 +135,21 @@ def _review_rows(decisions, evidence):
 
 
 def run(manifest, evidence_records, config, engine, output_dir, bodies=None,
-        region_history=None, config_root=baseline.CONFIG_ROOT, allow_overwrite=False):
-    """Execute one partition end to end and write the frozen prediction set."""
+        region_history=None, config_root=baseline.CONFIG_ROOT, allow_overwrite=False,
+        freeze=None, evidence_path=None, labels_path=None, split_manifest_path=None):
+    """Execute one partition end to end and write the frozen prediction set.
+
+    Pass `freeze` (plus whichever of evidence_path/labels_path/split_manifest_path the caller
+    holds) to require a custodian preflight before this run claims to operate against a frozen
+    corpus: the actual file bytes are re-hashed and compared to the freeze record, so a silently
+    edited evidence file cannot pass. Omitting `freeze` keeps prior behaviour for synthetic/local
+    runs that have no freeze yet.
+    """
     leaks = leakage_scan(manifest)
     if leaks:
         raise ValueError(f"Manifest carries evaluator-only fields: {leaks}")
+    if freeze is not None:
+        corpus.verify_freeze(freeze, evidence_path, labels_path, split_manifest_path)
     bodies = bodies or {}
     evidence = {record["article_id"]: record for record in evidence_records}
     missing = [article_id for article_id in manifest["article_ids"] if article_id not in evidence]
@@ -149,7 +159,9 @@ def run(manifest, evidence_records, config, engine, output_dir, bodies=None,
     run_id = manifest["run_id"]
     spec_metadata = {"config_hashes": config_hashes(config_root),
                      "scoring_version": config["scoring"]["schema_version"],
-                     "partition": manifest["partition"]}
+                     "partition": manifest["partition"],
+                     "freeze_verified": freeze is not None,
+                     "frozen_at": (freeze or {}).get("frozen_at")}
     proposals = [engine.propose(evidence[article_id], config, body=bodies.get(article_id))
                  for article_id in sorted(manifest["article_ids"])]
     clusters = grouping.group(proposals, evidence)

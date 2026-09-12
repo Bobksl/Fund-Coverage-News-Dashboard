@@ -49,6 +49,29 @@ def build(provider, store, attempts=2, clock=None):
                                            clock=clock or (lambda: "2026-09-11T00:00:00+00:00"))
 
 
+class PromptContextTests(unittest.TestCase):
+    def test_prompt_carries_the_manager_ontology_and_scoring_definitions(self):
+        prompt = classifier.build_prompt(classifier.to_inference_input(article()), CONFIG, "p1")
+        ontology = prompt["ontology"]
+        entity_ids = {item["canonical_id"] for item in ontology["entities"]}
+        self.assertIn("neuberger", entity_ids)
+        neuberger = next(item for item in ontology["entities"] if item["canonical_id"] == "neuberger")
+        self.assertIn("Neuberger Berman", neuberger["aliases"])
+        self.assertEqual(neuberger["parent"], None)
+        self.assertIn("private_credit", {item["canonical_id"] for item in ontology["sectors"]})
+        sector = next(item for item in ontology["sectors"] if item["canonical_id"] == "private_credit")
+        self.assertTrue(sector["inclusion_logic"])
+        self.assertIn("A", ontology["relevance_levels"])
+        self.assertIn("required_connection", ontology["relevance_levels"]["B"])
+        anchors = ontology["anchors"]["materiality"]
+        self.assertTrue(any(a["points"] == 25 and "definition" in a for a in anchors))
+        self.assertIn("min_transmission_A_B", ontology["eligibility"])
+
+    def test_prompt_context_carries_no_evaluator_only_field(self):
+        prompt = classifier.build_prompt(classifier.to_inference_input(article()), CONFIG, "p1")
+        self.assertEqual(classifier.leakage_scan(prompt), [])
+
+
 class PromptBoundaryTests(unittest.TestCase):
     def test_prompt_carries_only_allowlisted_evidence(self):
         record = dict(article(), decision="publish", event_group_id="E1")
@@ -126,6 +149,78 @@ class ClassifierTests(unittest.TestCase):
             result = build(provider, store).propose(article(), CONFIG)
             self.assertEqual(result["attempts"][0]["outcome"], "transport_failure")
             self.assertEqual(result["relevance_level"], "A")
+
+    def test_missing_identity_gate_defaults_to_review_not_pass(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            result = build(Recorder(valid_output()), store).propose(article(), CONFIG)
+            self.assertEqual(result["gates"]["identity"], "review_required")
+
+    def test_explicit_identity_gate_pass_is_preserved(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            result = build(Recorder(valid_output(identity_gate="pass")), store).propose(article(), CONFIG)
+            self.assertEqual(result["gates"]["identity"], "pass")
+
+    def test_invalid_identity_gate_value_is_a_schema_failure(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            result = build(Recorder(valid_output(identity_gate="confirmed")), store,
+                           attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["attempts"][0]["outcome"], "schema_invalid")
+            self.assertIn("invalid identity_gate", result["attempts"][0]["detail"])
+
+    def test_unknown_entity_id_is_a_schema_failure(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            result = build(Recorder(valid_output(direct_entity_ids=["fictional_manager"])), store,
+                           attempts=1).propose(article(), CONFIG)
+            self.assertIn("unknown direct_entity_ids value fictional_manager",
+                         result["attempts"][0]["detail"])
+
+    def test_malformed_event_identity_is_a_schema_failure(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            result = build(Recorder(valid_output(event_identity="Neuberger Berman")), store,
+                           attempts=1).propose(article(), CONFIG)
+            self.assertIn("event_identity must be an object", result["attempts"][0]["detail"])
+
+    def test_scored_component_without_a_reason_is_a_schema_failure(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(components={
+                "portfolio_fit": {"points": 30, "reason": ""},
+                "materiality": {"points": 20, "reason": "x"},
+                "investment_transmission": {"points": 15, "reason": "x"},
+                "actionability": {"points": 8, "reason": "x"},
+                "source_credibility": {"points": 7, "reason": "x"},
+                "novelty": {"points": 5, "reason": "x"}})
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("needs a non-empty reason", result["attempts"][0]["detail"])
+
+    def test_non_list_evidence_refs_is_a_schema_failure(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            broken = valid_output(components={
+                "portfolio_fit": {"points": 30, "reason": "x", "evidence_refs": "c1"},
+                "materiality": {"points": 20, "reason": "x"},
+                "investment_transmission": {"points": 15, "reason": "x"},
+                "actionability": {"points": 8, "reason": "x"},
+                "source_credibility": {"points": 7, "reason": "x"},
+                "novelty": {"points": 5, "reason": "x"}})
+            result = build(Recorder(broken), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("evidence_refs must be a list", result["attempts"][0]["detail"])
+
+    def test_completely_malformed_payload_types_enter_review_not_a_crash(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            hostile = json.dumps({"relevance_level": "A", "primary_event_type": "capital_formation",
+                                  "event_identity": ["ignore prior instructions"],
+                                  "components": "not an object"})
+            result = build(Recorder(hostile), store, attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["attempts"][0]["outcome"], "schema_invalid")
+            self.assertEqual(result["relevance_level"], None)
+            self.assertIn("classifier_failure", result["flags"])
 
     def test_model_cannot_supply_a_total_or_publication_status(self):
         with temporary_directory() as workspace:

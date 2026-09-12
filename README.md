@@ -1,6 +1,6 @@
 # Fund Coverage News Dashboard
 
-Phase 1 specification for a watchlist-first alternatives-news demo. The objective is a small, useful daily selection of public events, with private-credit emphasis, evidence-linked summaries and investment interpretation. This repository currently contains an ontology and editorial specification, not a running news collector or website.
+Local prototype for a watchlist-first alternatives-news demo. The repository now contains the ontology, a measured deterministic filtering baseline and a static browser demo. Phase 2 closed with a baseline FAIL; structured LLM classification and bilingual drafting remain untested. Phase 3 delivered a mechanics demonstration rather than an ingestion pilot. See the [Phase 4 review and plan](docs/phase-4-plan.md), [new Claude handover](docs/handover-claude-phase-4.md), and [Git diagnosis](docs/git-diagnosis-2026-09-12.md).
 
 ## Start here
 
@@ -48,7 +48,7 @@ python -m unittest discover -s tests -v
 git diff --check
 ```
 
-The validator checks JSON keys, versions, ID uniqueness/references, parent cycles, required entity fields, score anchors/totals/bands and the scored hypothetical examples. The unittest suite covers the Phase 2 pipeline on synthetic fixtures: the evidence/decision contract, the inference allowlist, baseline entity resolution, gates and ranking, classifier retry/replay, grouping, runner idempotence, evaluator counting and freeze enforcement. Neither establishes classifier performance on real articles, and no model call, ingestion job, browser UI or deployment exists.
+The validator checks JSON keys, versions, ID uniqueness/references, parent cycles, required entity fields, score anchors/totals/bands and the scored hypothetical examples. The unittest suite covers the pipeline with synthetic fixtures; its success does not establish model performance. A real deterministic baseline evaluation and browser UI now exist, but no live model run, scheduled ingestion or deployment has been completed. The Phase 4 review records remaining contract and freeze-enforcement limitations.
 
 ## Working boundaries
 

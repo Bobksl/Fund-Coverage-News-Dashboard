@@ -125,5 +125,35 @@ class EditionTests(unittest.TestCase):
         self.assertEqual([d["event_id"] for d in edition["urgent_review"]], ["risk"])
 
 
+class DailyEditionTests(unittest.TestCase):
+    def test_each_day_gets_its_own_capacity_not_a_partition_wide_cap(self):
+        # A busy day (14 eligible events) and a quiet day (2 eligible events); a single
+        # partition-wide select_edition would let the busy day's overflow crowd out nothing
+        # here since capacity is per day, so the quiet day must still get both of its events.
+        busy = [decision(f"busy{n}", 90 - n) for n in range(14)]
+        quiet = [decision(f"quiet{n}", 80 - n) for n in range(2)]
+        dates = {d["event_id"]: "2026-09-05" for d in busy}
+        dates.update({d["event_id"]: "2026-09-06" for d in quiet})
+        editions, undated = scoring.select_editions_by_day(busy + quiet, dates, SCORING)
+        self.assertEqual(len(editions["2026-09-05"]["selected"]), 10)
+        self.assertEqual(len(editions["2026-09-05"]["overflow"]), 4)
+        self.assertEqual(len(editions["2026-09-06"]["selected"]), 2)
+        self.assertTrue(editions["2026-09-06"]["below_target"])
+        self.assertEqual(undated, [])
+
+    def test_undated_decisions_are_returned_separately_not_silently_dropped(self):
+        dated = decision("e1", 90)
+        undated_decision = decision("e2", 85)
+        dates = {"e1": "2026-09-05"}
+        editions, undated = scoring.select_editions_by_day([dated, undated_decision], dates, SCORING)
+        self.assertEqual(list(editions), ["2026-09-05"])
+        self.assertEqual([d["event_id"] for d in undated], ["e2"])
+
+    def test_no_dated_decisions_produces_an_empty_calendar(self):
+        editions, undated = scoring.select_editions_by_day([], {}, SCORING)
+        self.assertEqual(editions, {})
+        self.assertEqual(undated, [])
+
+
 if __name__ == "__main__":
     unittest.main()

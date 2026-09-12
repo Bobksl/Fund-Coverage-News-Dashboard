@@ -10,6 +10,7 @@ import hashlib
 import json
 from pathlib import Path
 
+from tools.evaluator import FreezeError
 from tools.records import (dumps_jsonl, leakage_scan, publication_date, read_jsonl,
                            write_jsonl)
 from tools.review_packet import build_packet
@@ -144,6 +145,60 @@ def freeze_record(labels_path, evidence_path, split_manifest_path, predictions_p
 
 def registry_digest(rows):
     return hashlib.sha256(dumps_jsonl(rows).encode("utf-8")).hexdigest()
+
+
+def verify_freeze(freeze, evidence_path, labels_path=None, split_manifest_path=None):
+    """Recompute hashes of the actual frozen inputs and refuse a silently changed file.
+
+    require_freeze (evaluator.py) only checks that the freeze record's keys are present and,
+    when given a predictions path, that predictions still match; it never re-reads the evidence,
+    labels or split-manifest bytes. This is the custodian preflight that does: it must pass
+    before any inference run that claims to operate on freeze-001, so an edited evidence file
+    cannot silently pass as frozen.
+    """
+    def digest(path):
+        return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    checks = {"evidence_sha256": evidence_path}
+    if labels_path is not None:
+        checks["labels_sha256"] = labels_path
+    if split_manifest_path is not None:
+        checks["split_manifest_sha256"] = split_manifest_path
+    mismatched = [key for key, path in checks.items() if digest(path) != (freeze or {}).get(key)]
+    if mismatched:
+        raise FreezeError(f"Freeze verification failed; these inputs no longer match the "
+                          f"recorded freeze hashes: {mismatched}")
+    return True
+
+
+def inference_manifest(freeze, run_id, partition, article_ids, config_root, prompt_version=None,
+                       model_id=None, evidence_path=None, labels_path=None,
+                       split_manifest_path=None):
+    """Build the manifest an inference run may actually use: verified provenance, zero gold.
+
+    Call verify_freeze first (the caller supplies whichever of evidence/labels/split paths it
+    holds); this only records that the check passed and what was frozen, never a label, event
+    group or rationale. Prompt and model identifiers are captured here so the run report can
+    prove which exact prompt/config/model combination ran against which frozen evidence, per
+    finding 3 ("freeze prompt/config/model parameters as well").
+    """
+    verify_freeze(freeze, evidence_path, labels_path, split_manifest_path) if evidence_path else None
+    manifest = runner_manifest(run_id, partition, article_ids)
+    config_hashes = {path.name: hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+                     for path in sorted(Path(config_root).glob("*.json"))}
+    manifest["inference_preflight"] = {
+        "freeze_verified": bool(evidence_path),
+        "evidence_sha256": (freeze or {}).get("evidence_sha256"),
+        "labels_sha256": (freeze or {}).get("labels_sha256"),
+        "split_manifest_sha256": (freeze or {}).get("split_manifest_sha256"),
+        "frozen_at": (freeze or {}).get("frozen_at"),
+        "config_hashes": config_hashes,
+        "prompt_version": prompt_version,
+        "model_id": model_id,
+    }
+    leaks = leakage_scan(manifest)
+    if leaks:
+        raise ValueError(f"Inference manifest carries evaluator-only fields: {leaks}")
+    return manifest
 
 
 def _write_json(path, payload):

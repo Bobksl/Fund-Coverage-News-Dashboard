@@ -129,6 +129,36 @@ def _is_critical(decision):
     return "critical_review" in (decision.get("disposition_reason_codes") or [])
 
 
+def group_by_date(decisions, dates_by_event_id):
+    """Bucket decisions by their calendar date. An event with no established date buckets to None."""
+    buckets = {}
+    for decision in decisions:
+        key = dates_by_event_id.get(decision["event_id"])
+        buckets.setdefault(key, []).append(decision)
+    return buckets
+
+
+def select_editions_by_day(decisions, dates_by_event_id, scoring, region_history=None):
+    """Apply the daily capacity target once per calendar day, not once across a whole partition.
+
+    A single select_edition() call over a month of decisions lets one busy day consume the whole
+    target_max capacity, starving every other day -- the daily selection is then a run-wide cap in
+    disguise. This re-ranks and re-selects within each dated bucket independently, so the target
+    (6-10, no minimum) is a per-day preference as the rulebook specifies. region_history rolls
+    forward day by day so the Europe/US tie-break reflects an actual trailing calendar window
+    rather than a single partition-wide snapshot. Returns (editions_by_date, undated_decisions).
+    """
+    buckets = group_by_date(decisions, dates_by_event_id)
+    undated = buckets.pop(None, [])
+    editions, history = {}, list(region_history or [])
+    for day in sorted(buckets):
+        ranked_day = rank(buckets[day], scoring, history)
+        edition = select_edition(ranked_day, scoring, history)
+        editions[day] = edition
+        history = history + [d["primary_region"] for d in edition["selected"]]
+    return editions, undated
+
+
 def select_edition(ranked, scoring, region_history=None):
     """Apply the daily target as a capacity preference. No artificial minimum is enforced."""
     publication = scoring["publication"]
