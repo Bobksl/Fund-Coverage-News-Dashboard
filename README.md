@@ -1,13 +1,13 @@
 # Fund Coverage News Dashboard
 
-Phase 1 specification for a watchlist-first alternatives-news demo. The objective is a small, useful daily selection of public events, with private-credit emphasis, evidence-linked summaries and investment interpretation. This repository currently contains an ontology and editorial specification, not a running news collector or website.
+Local prototype for a watchlist-first alternatives-news demo. The repository now contains the ontology, a measured deterministic filtering baseline and a static browser demo. Phase 2 closed with a baseline FAIL; structured LLM classification and bilingual drafting remain untested. Phase 3 delivered a mechanics demonstration rather than an ingestion pilot. See the [Phase 4 review and plan](docs/phase-4-plan.md), [new Claude handover](docs/handover-claude-phase-4.md), and [Git diagnosis](docs/git-diagnosis-2026-09-12.md).
 
 ## Start here
 
 1. Read [architecture review](docs/architecture-review.md) for the simplified local-first approach and the prior-conversation retrieval limitation.
 2. Read [editorial rulebook](docs/editorial-rulebook.md) for what qualifies, what does not, and how scoring/review work.
-3. Review [entity findings and two investment-team questions](docs/entity-research.md).
-4. Use [Phase 2 experiment](docs/phase-2-experiment.md) as the next development brief.
+3. Review [entity findings and confirmed monitoring-only scope](docs/entity-research.md).
+4. Use [Phase 2 experiment](docs/phase-2-experiment.md) and [current status](docs/phase-2-status.md) for the amended protocol and initial analyst packet.
 
 ## Files
 
@@ -22,6 +22,16 @@ Phase 1 specification for a watchlist-first alternatives-news demo. The objectiv
 | [docs/decision-record.md](docs/decision-record.md) | Minimum later article/event/decision audit contract. |
 | [examples/editorial-cases.json](examples/editorial-cases.json) | Eighteen explicitly hypothetical editorial examples; not benchmark results. |
 | [tools/validate_spec.py](tools/validate_spec.py) | Dependency-free static consistency check. |
+| [tools/records.py](tools/records.py) | Evidence/decision contract, inference allowlist and atomic JSONL. |
+| [tools/baseline.py](tools/baseline.py), [tools/classifier.py](tools/classifier.py) | Deterministic floor and structured-classifier adapter with replay. |
+| [tools/grouping.py](tools/grouping.py), [tools/scoring.py](tools/scoring.py) | Predicted event clustering; gates, bands, ranking and the ranking ablation. |
+| [tools/runner.py](tools/runner.py), [tools/evaluator.py](tools/evaluator.py), [tools/corpus.py](tools/corpus.py) | Pipeline orchestration, cohort-separated evaluation and corpus/split construction. |
+| [tools/drafting.py](tools/drafting.py), [tools/stability.py](tools/stability.py) | Shortlist-only bilingual cards with parity QA; calibration-only stability reruns. |
+| [docs/natural-feed-policy.md](docs/natural-feed-policy.md) | Predeclared collection roster, window and completeness rule. |
+| [docs/phase-2-collection-status.md](docs/phase-2-collection-status.md) | Natural-feed run 1: counts per source, logged gaps and open decisions. |
+| [tools/collection.py](tools/collection.py), [tools/build_natural_feed.py](tools/build_natural_feed.py) | Manual-collection bookkeeping and cohort assembly; no HTTP client. |
+| [docs/phase-2-engineering.md](docs/phase-2-engineering.md) | What the pipeline does, how to run it and what it does not establish. |
+| [docs/phase-3-entry-gate.md](docs/phase-3-entry-gate.md) | Why the ingestion pilot is blocked. |
 | [docs/decisions/0001-local-editorial-prototype.md](docs/decisions/0001-local-editorial-prototype.md) | Architecture decision and alternatives considered. |
 | [tasks/plan.md](tasks/plan.md), [tasks/todo.md](tasks/todo.md) | Work order and handover status. |
 | [docs/verification.md](docs/verification.md) | What was checked and what remains untested. |
@@ -34,10 +44,11 @@ From the repository root, with Python 3.13 (the locally verified interpreter):
 
 ```powershell
 python tools/validate_spec.py
+python -m unittest discover -s tests -v
 git diff --check
 ```
 
-The validator checks JSON keys, versions, ID uniqueness/references, parent cycles, required entity fields, score anchors/totals/bands and the scored hypothetical examples. It does not implement entity resolution, classification, a complete JSON Schema validator, an LLM pipeline or analyst evaluation. There is no application build/dev command or runtime test suite yet.
+The validator checks JSON keys, versions, ID uniqueness/references, parent cycles, required entity fields, score anchors/totals/bands and the scored hypothetical examples. The unittest suite covers the pipeline with synthetic fixtures; its success does not establish model performance. A real deterministic baseline evaluation and browser UI now exist, but no live model run, scheduled ingestion or deployment has been completed. The Phase 4 review records remaining contract and freeze-enforcement limitations.
 
 ## Working boundaries
 

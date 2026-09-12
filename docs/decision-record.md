@@ -1,6 +1,10 @@
 # Minimum decision record for Phase 2
 
-This is a data contract for the later prototype, not an implemented database/API. Use UTF-8 JSONL, one immutable decision attempt per line; use stable string IDs and explicit nulls for unknowns. Nested data stays in JSONL; CSV exports flatten selected fields for review. Use UTC ISO timestamps with offsets and ISO dates; amounts keep number, currency, unit and basis separately. Reject duplicate JSON keys, non-finite numbers and unknown enum values in the future validator.
+This is a data contract for the local prototype, not a database/API design. Use UTF-8 JSONL, one immutable decision attempt per line; use stable string IDs and explicit nulls for unknowns. Nested data stays in JSONL; CSV exports flatten selected fields for review. Use UTC ISO timestamps with offsets and ISO dates; amounts keep number, currency, unit and basis separately. Reject duplicate JSON keys, non-finite numbers and unknown enum values. Phase 2 is monitoring-only by user confirmation on 2026-09-11.
+
+## Evaluation boundary
+
+Keep analyst publish labels, gold event-group IDs, must-not-miss flags, rationale, cohort selection reasons and split-quality metadata in evaluator-only files. None may be a baseline, model, grouping, ranking or drafting input. The pipeline proposes its own clusters. Split construction may use gold groups privately, but exports article IDs only. Freeze predictions before evaluation joins them to ground truth. Natural-feed and challenge results are separate; eligible A/B/C records do not necessarily count as publish-worthy positives.
 
 ## Article/evidence record
 
@@ -27,7 +31,7 @@ This is a data contract for the later prototype, not an implemented database/API
 | event_identity | Parties, roles, vehicle/asset/deal identifier, action, subtype, event date and reporting period; unknowns explicit. |
 | direct_entity_ids, propagated_entity_ids | Canonical ontology IDs; preserve direct vehicle and parent tags separately. |
 | entity_matches | Matched text span, article ID, ER rule, candidate entity, resolved/ambiguous status and relationship path. |
-| held_status | `unknown`, `monitored`, `confirmed_held`; confirmed status needs a private evidence reference and never goes to the public repo/model. |
+| held_status | Phase 2: exactly `monitored`. No confirmed-held override or private exposure overlay is used. A future phase would require a separate scope decision. |
 | asset_classes | Any of `venture_capital`, `real_estate`, `private_equity`, `private_credit`; no automatic VC/PE allocation from software tag. |
 | sector_ids, theme_ids, strategy, instruments | Canonical references where configured; preserve instrument specificity and multi-sector tags. |
 | primary_event_type, subtype, secondary_event_types | IDs and subtype must be valid in event_types.json; unknown type enters review. |

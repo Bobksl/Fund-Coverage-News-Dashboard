@@ -2,6 +2,8 @@
 
 Version 0.1.0 — provisional calibration baseline, 2026-09-10.
 
+Phase 2 scope update, 2026-09-11: all entities are monitoring-only by user instruction. Bayview/BasePoint identity is confirmed. The confirmed-held override described below remains a future policy; it is disabled for this experiment. The amended phase-2-experiment.md governs cohort separation, hidden ground truth and temporal holdout construction.
+
 ## Purpose and authority
 
 Select a small set of public events that could change an alternatives investor's assessment of a monitored manager/vehicle, strategy risk or return, deployment, fundraising, liquidity, valuation, financing or exit conditions. Private credit is the strongest focus; VC, PE and real estate remain in scope through explicit portfolio or market transmission.
