@@ -204,3 +204,69 @@ PAG. Those are the probes hardest to construct and least likely to occur natural
 One record serves two probes: the NVIDIA AI-financing release is both a manager-independent AI
 judgement call and one half of a two-newsroom pair. The protocol's categories overlap rather than
 sum, so the registry now records a list of categories per record.
+
+## Evidence capture - 2026-09-12
+
+**231 of 276 records now carry hashed text.** Excerpts live in ignored
+`work/phase2/evidence-store/` (121 KB, one file per article); the report is
+`work/phase2/evidence-capture-report.json`. Records were contract-valid before and after: 276
+validated, zero invalid.
+
+| Outcome | Records |
+|---|---|
+| `primary_excerpt` with a SHA-256 hash | 231 |
+| `metadata_only`, no text | 45 |
+| Access `accessible` | 166 |
+| Access `partial` (gated lede) | 110 |
+
+### Method, and what it deliberately does not do
+
+Captures are bounded primary excerpts of up to 800 characters, taken from what each publisher
+serves an anonymous reader. No subscription was bought, no account created, no access control
+worked around. Excerpts rather than whole articles: enough for a classifier to judge, and a
+smaller footprint of third-party text to retain. Every record is marked `primary_excerpt`, never
+`full_text`, because a bounded capture is not the whole article.
+
+### A correction to an earlier claim
+
+The packet note said roughly 40% of the corpus was paywalled, based on Alternative Credit
+Investor's index advertising subscriptions. Attempting the articles replaced that assumption with
+an observation: **ACI serves a substantive lede of around 300 characters plus a registration
+prompt, and a few articles in full.** The prompt is stripped and the lede kept, so those 109
+records carry real evidence and are marked `partial` rather than unreadable. The analyst will
+still meet the gate on the full text, so `inaccessible` or `partial` remains the right label
+where the source cannot support a decision, but the corpus is in better shape than that note
+implied.
+
+### Capture failures, recorded rather than papered over
+
+| Reason | Records | Meaning |
+|---|---|---|
+| `boilerplate_navigation_only` | 19 | HSBC AM pages are JavaScript-rendered; raw HTML returns the navigation menu for every article. |
+| `empty_body_in_served_html` | 14 | KKR media-centre pages return an empty body in served HTML for the same reason. |
+| `not_attempted_this_pass` | 9 | Six small origins not swept yet: Blue Owl IR, CIFC, Pretium, PAG, Guggenheim, OTF. |
+
+The first two are **capture-method limits, not inaccessible sources**: a person reading those
+pages in a browser sees the article normally. None of these records was given invented text; all
+stay `metadata_only`. A guard rejects any text repeated verbatim across several articles, so
+navigation chrome cannot be stored as an excerpt even if a future pass returns it.
+
+SEC filings needed a second approach: modern filings are Inline XBRL and the served document is a
+viewer stub, so the raw submission file was used instead. All 12 then captured.
+
+### Three findings worth the custodian's attention
+
+**The BasePoint 13D is a 26.8% stake in Katapult Holdings, Inc.** The filing names the issuer and
+the size, which is a substantive control-stake event rather than a routine ownership notice.
+
+**The Vitabiotics article establishes its own date.** Its body reads "London - July 24, 2026",
+which the index card omitted and Phase 1 flagged as conflicting. The record was excluded from the
+packet as undated; the date is now readable from the article itself. This is recorded for the
+custodian rather than silently applied, because changing a packet record after the packet was
+built is a decision, not a cleanup.
+
+**One challenge rationale overclaims.** BasePoint Asset Recovery LLC was curated as an "unrelated
+Connecticut filer". Its Form D names an officer care of **BasePoint Capital, LLC**, which the
+entity research lists as a subsidiary of the watchlist BasePoint Group. The two may be affiliated,
+so "unrelated" is not established. The probe is still valid, since the identity question is
+exactly what it tests, but the stated reason should be corrected before freeze.
