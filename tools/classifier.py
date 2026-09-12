@@ -30,34 +30,83 @@ REQUIRED_OUTPUT = ("relevance_level", "primary_event_type", "event_identity", "c
 # ED03 (editorial-rulebook.md "A/B/C eligibility"): a compact statement of each level's required
 # connection, kept in code because config stores canonical IDs/anchors, not this prose table.
 RELEVANCE_LEVELS = {
-    "A": {"required_connection": "Resolved tracked manager/vehicle or its relevant business "
-          "directly involved, with material strategy or firm-wide consequence.",
-          "common_failure": "A tracked name mentioned as a routine, immaterial sponsor or "
-          "counterparty is not Level A."},
-    "B": {"required_connection": "New evidence directly changes assessment of a monitored "
-          "sector/strategy without a tracked GP.",
+    "A": {"required_connection": "An entity_matches entry with role=subject for a resolved "
+          "tracked manager/vehicle (direct or, with a stated propagation_basis, propagated), "
+          "with material strategy or firm-wide consequence.",
+          "common_failure": "A tracked name appearing only as adviser, counterparty or sponsor "
+          "is not Level A -- even when its parent_relationship in the ontology (e.g. "
+          "business_platform_of) is identical to a genuinely monitored platform's."},
+    "B": {"required_connection": "A sector_readthrough naming the monitored sector, the observed "
+          "change and a comparable basis (one comparable instrument or company is enough).",
           "common_failure": "One irrelevant peer headline generalized to all private credit "
           "is not Level B."},
-    "C": {"required_connection": "New observed trigger plus a specific causal path to "
-          "alternatives financing, returns or exits.",
-          "common_failure": "A generic 'rates matter to markets' statement without an "
-          "event-specific consequence is not Level C."},
+    "C": {"required_connection": "A new observed trigger, a named consequence_category and a "
+          "specific affected_exposure -- not a category selection alone.",
+          "common_failure": "A generic 'rates matter to markets' statement is not Level C even "
+          "if it happens to contain a listed category word."},
 }
 ENTITY_FIELDS = ("canonical_id", "display_name", "entity_type", "parent", "parent_relationship",
                  "aliases", "excluded_contexts")
 SECTOR_FIELDS = ("canonical_id", "display_name", "inclusion_logic", "exclusion_logic")
 THEME_FIELDS = ("canonical_id", "display_name", "trigger_conditions", "transmission_mechanism",
                 "inclusion_threshold")
-# ED04 (docs/phase-4-plan.md finding 1 / Phase 5 handover section 5A): a generic causal-chain
-# statement ("rates affect markets") is not a Level C transmission. At least one of these terms
-# must appear in the combined mechanism/outcome text, tying the trigger to an actual consequence
-# category rather than a restated truism.
+# ED04 cross-field invariants (Phase 5 handover section 5A, tightened after external review:
+# see docs/phase-5-review-decisions.md). Level C requires a structured consequence_category
+# rather than a keyword search over free text -- a keyword denylist/allowlist is exactly as
+# brittle in both directions (a padded "risk"-containing phrase passes; a correct explanation
+# using none of the listed words fails), so the enum is the field the model actually commits to
+# and the free-text trigger/mechanism/outcome stay a structural (non-empty) requirement only.
 LEVEL_C_TRANSMISSION_CATEGORIES = ("financing", "risk", "return", "valuation", "liquidity",
                                    "deployment", "fundraising", "exit")
-GENERIC_TRANSMISSION_PHRASES = ("rates affect markets", "affects the market", "impacts the market",
-                                "impacts markets", "affects markets", "markets are affected",
-                                "general market conditions")
 MIN_TRANSMISSION_TEXT_LENGTH = 15
+MIN_AFFECTED_EXPOSURE_LENGTH = 10
+MIN_PROPAGATION_BASIS_LENGTH = 20
+MIN_SECTOR_READTHROUGH_LENGTH = 15
+# A tracked entity's ontology role in one candidate event. Level A requires "subject" -- being
+# named only as an adviser, counterparty or sponsor is exactly the Guggenheim Securities /
+# Guggenheim Investments ambiguity ED03 warns about (both share parent_relationship
+# "business_platform_of" in config/entities.json; the relationship type alone cannot carry the
+# distinction, only the evidenced role in this specific event can).
+ENTITY_MATCH_ROLES = {"subject", "adviser", "counterparty", "sponsor", "portfolio_company", "other"}
+SECTOR_READTHROUGH_BASES = {"comparable_exposure", "sector_aggregate", "market_terms"}
+SECTOR_READTHROUGH_FIELDS = ("sector_id", "observed_change", "basis", "affected_population",
+                             "comparability_explanation", "evidence_refs")
+RESPONSE_CONTRACT_VERSION = "rc2"
+# Embedded verbatim in the prompt (build_prompt), not left for the model to infer from prose --
+# Phase 5 handover section 5A Ticket D ("the provider asks for the schema 'implied' by that
+# content; this leaves exact required fields and nested structures undisclosed").
+RESPONSE_CONTRACT = {
+    "version": RESPONSE_CONTRACT_VERSION,
+    "required_top_level_fields": list(REQUIRED_OUTPUT),
+    "relevance_level": "One of A, B, C, or null with review_required if genuinely undetermined.",
+    "identity_gate": "pass only when the entity role is resolved without ambiguity; otherwise "
+                     "review_required. Required for relevance_level A.",
+    "entity_matches": "List of {entity_id, role, evidence_refs}. entity_id must be a known "
+                      "entity canonical_id; role is one of " + ", ".join(sorted(ENTITY_MATCH_ROLES)) +
+                      ". A relevance_level A determination needs at least one entry with "
+                      "role=subject for an entity in direct_entity_ids or propagated_entity_ids "
+                      "-- being named only as adviser/counterparty/sponsor is not Level A, "
+                      "regardless of which entity is named.",
+    "propagation_basis": "Required string when relevance_level A rests only on "
+                         "propagated_entity_ids (no direct_entity_ids subject match): the "
+                         "specific evidenced business/vehicle involvement and its path to the "
+                         "tracked parent. Never leave this to be inferred from parent_relationship "
+                         "alone -- the same relationship type (e.g. business_platform_of) covers "
+                         "both a monitored platform and an unrelated affiliate.",
+    "sector_readthrough": {"description": "Required object when relevance_level is B.",
+                           "fields": list(SECTOR_READTHROUGH_FIELDS),
+                           "basis_enum": sorted(SECTOR_READTHROUGH_BASES),
+                           "note": "One comparable instrument/company is sufficient; multiple "
+                                   "publishers or companies are not required. An unrelated peer "
+                                   "headline generalized to the whole sector is not Level B."},
+    "transmission": {"description": "Required object with trigger, mechanism and outcome for B "
+                                    "and C.",
+                     "consequence_category": "Required for relevance_level C: one of " +
+                                             ", ".join(LEVEL_C_TRANSMISSION_CATEGORIES) + ".",
+                     "affected_exposure": "Required for relevance_level C: the specific "
+                                          "alternatives exposure or instrument affected. A "
+                                          "category selection alone is not sufficient."},
+}
 
 
 class ProviderError(RuntimeError):
@@ -120,6 +169,7 @@ def build_prompt(article_input, config, prompt_version):
     payload = {
         "prompt_version": prompt_version,
         "rules": list(PROMPT_RULES),
+        "response_contract": RESPONSE_CONTRACT,
         "ontology": {
             "relevance_levels": RELEVANCE_LEVELS,
             "event_types": {item["canonical_id"]: {"subtypes": item["subtypes"],
@@ -215,14 +265,57 @@ def _text(value):
     return value if isinstance(value, str) else ""
 
 
-def _validate_relevance_semantics(parsed):
-    """ED04 cross-field invariants per relevance level (Phase 5 handover section 5A).
+def _entity_lookup(config):
+    return {item["canonical_id"]: item for item in config["entities"]["entities"]}
+
+
+def _validate_entity_matches(parsed, known_entities):
+    """Structural check: each entry names a known entity and a role from the fixed vocabulary.
+
+    This is the field Level A's semantics rely on (see _validate_relevance_semantics): a tracked
+    entity appearing only as an adviser or counterparty is not the same fact as it being the
+    event's subject, and the two are not distinguishable from entity ID or parent_relationship
+    alone (Guggenheim Securities and Guggenheim Investments share parent_relationship
+    "business_platform_of" in config/entities.json).
+    """
+    errors = []
+    entity_matches = parsed.get("entity_matches")
+    if entity_matches is None:
+        return errors
+    if not isinstance(entity_matches, list):
+        return ["entity_matches must be a list"]
+    for match in entity_matches:
+        if not isinstance(match, dict):
+            errors.append("entity_matches entry must be an object")
+            continue
+        entity_id = match.get("entity_id")
+        if entity_id not in known_entities:
+            errors.append(f"entity_matches entry references unknown entity_id {entity_id}")
+        if match.get("role") not in ENTITY_MATCH_ROLES:
+            errors.append(f"entity_matches entry for {entity_id} has an invalid role")
+    return errors
+
+
+def _subject_entity_ids(parsed):
+    """entity_ids explicitly evidenced as this event's subject, per entity_matches -- not merely
+    named. An empty result means no entity_matches entry claims subject for anything."""
+    return {match.get("entity_id") for match in (parsed.get("entity_matches") or [])
+           if isinstance(match, dict) and match.get("role") == "subject"}
+
+
+def _validate_relevance_semantics(parsed, config):
+    """ED04 cross-field invariants per relevance level (Phase 5 handover section 5A, tightened
+    after external review -- see docs/phase-5-review-decisions.md).
 
     These run only once the basic shape is sound; a missing/invalid field is already reported by
-    the caller and would make these checks noisy rather than informative.
+    the caller and would make these checks noisy rather than informative. None of this can prove
+    an evidenced connection is real if a model asserts one dishonestly (role=subject on a
+    fabricated basis) -- that residual judgment call is exactly what Astra-level review samples
+    for after a real run; these checks gate the parts that are actually structural.
     """
     errors = []
     level = parsed.get("relevance_level")
+    entities = _entity_lookup(config)
     if level == "A":
         direct = parsed.get("direct_entity_ids") or []
         propagated = parsed.get("propagated_entity_ids") or []
@@ -237,14 +330,43 @@ def _validate_relevance_semantics(parsed):
         if not role_established:
             errors.append("relevance_level A requires event_identity to establish the tracked "
                           "manager/vehicle's role (parties plus an action or vehicle)")
+        subjects = _subject_entity_ids(parsed) & (set(direct) | set(propagated))
+        if not subjects:
+            errors.append("relevance_level A requires an entity_matches entry with role=subject "
+                          "for one of direct_entity_ids/propagated_entity_ids -- an entity named "
+                          "only as adviser, counterparty or sponsor is not Level A")
+        elif not (set(direct) & subjects):
+            # The subject is only reachable via propagation: the model must say how, in its own
+            # words, not merely cite an ID whose parent_relationship happens to be permissive.
+            basis = parsed.get("propagation_basis")
+            if not isinstance(basis, str) or len(basis.strip()) < MIN_PROPAGATION_BASIS_LENGTH:
+                errors.append("relevance_level A via propagation alone requires a substantive "
+                              "propagation_basis describing the evidenced business/vehicle "
+                              "involvement and its path to the tracked parent")
     elif level == "B":
         if not parsed.get("sector_ids"):
             errors.append("relevance_level B requires at least one monitored sector_id")
-        transmission = parsed.get("transmission") or {}
-        if not (_text(transmission.get("mechanism")).strip() and
-                _text(transmission.get("trigger")).strip()):
-            errors.append("relevance_level B requires transmission.trigger and transmission.mechanism "
-                          "explaining what new evidence changes the sector/strategy assessment")
+        readthrough = parsed.get("sector_readthrough")
+        if not isinstance(readthrough, dict):
+            errors.append("relevance_level B requires a sector_readthrough object explaining the "
+                          "comparable basis for reading one observation onto the monitored sector")
+        else:
+            missing = [f for f in SECTOR_READTHROUGH_FIELDS if not readthrough.get(f)]
+            if missing:
+                errors.append(f"sector_readthrough missing or empty fields: {missing}")
+            basis = readthrough.get("basis")
+            if basis is not None and basis not in SECTOR_READTHROUGH_BASES:
+                errors.append(f"sector_readthrough.basis must be one of {sorted(SECTOR_READTHROUGH_BASES)}")
+            sector_id = readthrough.get("sector_id")
+            if sector_id is not None and sector_id not in (parsed.get("sector_ids") or []):
+                errors.append("sector_readthrough.sector_id must be one of the declared sector_ids")
+            explanation = _text(readthrough.get("comparability_explanation")).strip()
+            if explanation and len(explanation) < MIN_SECTOR_READTHROUGH_LENGTH:
+                errors.append("sector_readthrough.comparability_explanation is too short to "
+                              "establish comparability, not just presence of a peer data point")
+            refs = readthrough.get("evidence_refs")
+            if refs is not None and not isinstance(refs, list):
+                errors.append("sector_readthrough.evidence_refs must be a list")
     elif level == "C":
         transmission = parsed.get("transmission") or {}
         trigger = _text(transmission.get("trigger")).strip()
@@ -253,18 +375,23 @@ def _validate_relevance_semantics(parsed):
         if not (trigger and mechanism and outcome):
             errors.append("relevance_level C requires substantive transmission.trigger, "
                           "transmission.mechanism and transmission.outcome")
-        else:
-            combined = f"{mechanism} {outcome}".lower()
-            if len(mechanism) < MIN_TRANSMISSION_TEXT_LENGTH or len(outcome) < MIN_TRANSMISSION_TEXT_LENGTH:
-                errors.append("relevance_level C transmission is too short to carry an event-specific "
-                              "causal chain")
-            elif any(phrase in combined for phrase in GENERIC_TRANSMISSION_PHRASES):
-                errors.append("relevance_level C transmission is a generic statement, not an "
-                              "event-specific causal chain")
-            elif not any(category in combined for category in LEVEL_C_TRANSMISSION_CATEGORIES):
-                errors.append("relevance_level C transmission must name a specific consequence "
-                              "category (financing, risk, return, valuation, liquidity, "
-                              "deployment, fundraising or exits)")
+        consequence_category = transmission.get("consequence_category")
+        if consequence_category not in LEVEL_C_TRANSMISSION_CATEGORIES:
+            errors.append(f"relevance_level C requires transmission.consequence_category to be "
+                          f"one of {LEVEL_C_TRANSMISSION_CATEGORIES}")
+        affected_exposure = _text(transmission.get("affected_exposure")).strip()
+        if len(affected_exposure) < MIN_AFFECTED_EXPOSURE_LENGTH:
+            errors.append("relevance_level C requires a specific transmission.affected_exposure; "
+                          "a consequence_category selection alone is not sufficient")
+    return errors
+
+
+def _check_refs(refs, article_id, label):
+    errors = []
+    for ref in refs or []:
+        if not isinstance(ref, str) or not (ref == article_id or ref.startswith(f"{article_id}#")):
+            errors.append(f"{label} evidence_refs value {ref!r} does not reference evidence "
+                          f"supplied in this input")
     return errors
 
 
@@ -273,20 +400,23 @@ def _validate_evidence_refs(parsed, article_input):
 
     The current inference input carries exactly one article, so the only valid reference is that
     article's own ID (optionally with a '#span' suffix into its body); an arbitrary string is a
-    schema failure, never silently accepted as a citation.
+    schema failure, never silently accepted as a citation. Checked wherever the schema carries an
+    evidence_refs list: scoring components, entity_matches and sector_readthrough.
     """
     errors = []
     article_id = article_input.get("article_id")
     components = parsed.get("components")
-    if not isinstance(components, dict):
-        return errors
-    for name, component in components.items():
-        if not isinstance(component, dict):
-            continue
-        for ref in component.get("evidence_refs") or []:
-            if not isinstance(ref, str) or not (ref == article_id or ref.startswith(f"{article_id}#")):
-                errors.append(f"component {name} evidence_refs value {ref!r} does not reference "
-                              f"evidence supplied in this input")
+    if isinstance(components, dict):
+        for name, component in components.items():
+            if isinstance(component, dict):
+                errors += _check_refs(component.get("evidence_refs"), article_id, f"component {name}")
+    for match in parsed.get("entity_matches") or []:
+        if isinstance(match, dict):
+            errors += _check_refs(match.get("evidence_refs"), article_id,
+                                  f"entity_matches[{match.get('entity_id')}]")
+    readthrough = parsed.get("sector_readthrough")
+    if isinstance(readthrough, dict):
+        errors += _check_refs(readthrough.get("evidence_refs"), article_id, "sector_readthrough")
     return errors
 
 
@@ -336,10 +466,11 @@ def _validate_output(parsed, config, article_input=None):
             evidence_refs = component.get("evidence_refs", [])
             if evidence_refs is not None and not isinstance(evidence_refs, list):
                 errors.append(f"component {name} evidence_refs must be a list")
+    errors += _validate_entity_matches(parsed, known_entities)
     if not errors:
-        # Semantic invariants only run once the shape is sound; a malformed component/enum is
-        # already reported above and would just make these checks noisy.
-        errors += _validate_relevance_semantics(parsed)
+        # Semantic invariants only run once the shape is sound; a malformed component/enum/
+        # entity_matches entry is already reported above and would just make these checks noisy.
+        errors += _validate_relevance_semantics(parsed, config)
     if article_input is not None:
         errors += _validate_evidence_refs(parsed, article_input)
     return errors

@@ -55,6 +55,48 @@ class CategorizeTests(unittest.TestCase):
         self.assertIn("inaccessible_or_partial_evidence", categorize(record, {}))
 
 
+class ManifestFidelityRegressionTests(unittest.TestCase):
+    """Regression tests for the specific false-positive/false-negative category assignments an
+    external review found in the v1 manifest (docs/phase-5-review-decisions.md)."""
+
+    def test_joint_venture_wording_is_not_wrong_strategy(self):
+        record = article(title="Enbridge and KKR Announce New Joint Venture to Support Investment")
+        self.assertNotIn("tracked_manager_wrong_strategy", categorize(record, {"kkr": "kkr"}))
+
+    def test_lending_to_a_third_party_is_not_manager_level_financing(self):
+        record = article(title="Blue Owl Managed Funds Lead $2.4 Billion AI Factory Financing "
+                               "For IREN")
+        self.assertNotIn("manager_level_financing", categorize(record, {"blue owl": "blue_owl"}))
+
+    def test_manager_raising_its_own_notes_is_manager_level_financing(self):
+        record = article(title="Blue Owl Technology Finance Corp. Closes $150 Million Private "
+                               "Placement of Senior Unsecured Notes")
+        self.assertIn("manager_level_financing", categorize(record, {"blue owl": "blue_owl"}))
+
+    def test_an_explicit_8k_filing_is_not_ambiguous_identity(self):
+        record = article(title="KKR & Co. Inc. — 8-K filed 2026-08-27")
+        self.assertNotIn("ambiguous_or_namesake_identity", categorize(record, {}))
+
+    def test_bare_short_alias_with_no_disambiguation_is_ambiguous_identity(self):
+        record = article(title="PAG Agrees to Sell Majority Stake in Poultry Pioneer Cordina Group")
+        self.assertIn("ambiguous_or_namesake_identity", categorize(record, {}))
+
+    def test_a_real_investment_mandate_is_not_routine_marketing(self):
+        record = article(title="Utmost appoints Aberdeen to manage RE debt")
+        self.assertNotIn("routine_marketing_or_conference_notice", categorize(record, {}))
+
+    def test_a_filing_date_year_is_not_a_conference_notice(self):
+        record = article(title="KKR & Co. Inc. — 8-K filed 2026-08-27")
+        self.assertNotIn("routine_marketing_or_conference_notice",
+                         categorize(record, {"kkr": "kkr"}))
+
+    def test_named_conference_presentation_is_routine_marketing(self):
+        record = article(title="Apollo to Present at the Barclays 24th Annual Global Financial "
+                               "Services Conference")
+        self.assertIn("routine_marketing_or_conference_notice",
+                      categorize(record, {"apollo": "apollo"}))
+
+
 class SelectTests(unittest.TestCase):
     def test_selection_covers_most_categories_from_a_diverse_synthetic_corpus(self):
         picks, missing = select(synthetic_corpus(), CONFIG)

@@ -38,20 +38,52 @@ CATEGORIES = (
 )
 MACRO_TERMS = ("federal reserve", "fed ", "rate cut", "rate hike", "inflation", "spread widen",
               "treasury yield", "recession", "rate outcomes", "bond yield", "interest rate")
-MARKETING_TERMS = ("conference", "summit", "webinar", "panel", "roundtable", "award", "appoints",
-                  "joins as", "names ")
+# Genuine conference/panel/award wording only. "Appoints"/"joins as"/"names " are removed from
+# this list after external review (docs/phase-5-review-decisions.md Ticket data point on manifest
+# fidelity): those are leadership-appointment or business-mandate wording, not routine marketing,
+# and a real investment mandate ("Utmost appoints Aberdeen to manage RE debt") must not be
+# miscategorized as a marketing notice merely for containing "appoints".
+MARKETING_TERMS = ("conference", "summit", "webinar", "panel", "roundtable", "forum", "symposium")
+# "<Entity> at <Named Event> <year>" (e.g. "CIFC at BNY INSITE 2026") reads as a named industry
+# event even when it uses none of the words in MARKETING_TERMS. Requiring "at" immediately before
+# a capitalized event name and a year excludes an unrelated year appearing elsewhere in a title
+# (a filing date, an address, a fund vintage) -- a plain 4-digit-year match is not enough on its
+# own, per external review flagging a KKR 8-K filing date as a false positive under that looser rule.
+EVENT_YEAR_PATTERN = re.compile(r"\bat\s+[A-Z][\w&.\s]*\b(19|20)\d{2}\b")
+FILING_TERMS = ("8-k", "10-q", "10-k", "form 4", "proxy statement", "sec filing")
 FINANCING_TERMS = ("credit facility", "term loan", "refinanc", "unitranche", "revolver",
-                   "financing", "bridge loan", "debt facility")
-# Short aliases (ED03/entities.json) that also read as ordinary words or acronyms elsewhere,
-# so a bare match needs a human to resolve which entity, if any, the title actually means.
-SHORT_ALIAS_TOKENS = ("nb", "pag", "kkr", "cifc")
+                   "financing", "bridge loan", "debt facility", "senior notes", "private placement")
+# A financing headline where the tracked entity is the one supplying capital to someone else
+# ("Blue Owl ... Financing For IREN") is not the entity raising financing for itself -- the
+# distinguishing signal is whether the title names who the financing is FOR/TO, or who is
+# providing/arranging it, versus the entity itself closing/securing/issuing its own instrument.
+SELF_RAISE_TERMS = ("closes", "secures", "issues", "raises")
+LENDER_OUT_MARKERS = (" for ", " to ", "leads", "provides", "lends")
+# Short aliases (ED03/entities.json) that also read as ordinary words or acronyms elsewhere. A
+# bare match still needs a human to resolve which entity, if any, the title actually means -- but
+# only when nothing in the title already disambiguates it. "KKR & Co. Inc. -- 8-K" and "CIFC at
+# BNY INSITE" are the tracked entity's own full/short legal name in an unambiguous filing or event
+# context, not a namesake collision, so a disambiguating suffix right after the token is excluded.
+SHORT_ALIAS_TOKENS = ("nb", "pag")
+DISAMBIGUATING_SUFFIXES = ("& co", "inc", "capital", "l.p.", "partners", "corp", "8-k", "at bny")
 CAPITAL_FORMATION_TERMS = ("final close", "closes", "closed", "raised", "raises", "commitments",
                            "fund iii", "fund iv", "fund v")
 CRE_TERMS = ("shopping center", "retail center", "office tower", "apartment complex", "multifamily",
             "refi for", "provides", "loan for")
-WRONG_STRATEGY_TERMS = ("venture", "buyback", "ipo", "initial public offering", "share repurchase")
+# "Joint venture" is a corporate-structure term, not evidence of an off-strategy activity, so it
+# is excluded even though it contains "venture" -- Astra review flagged "Enbridge and KKR Announce
+# New Joint Venture" as a false positive under the previous bare "venture" match.
+WRONG_STRATEGY_TERMS = ("venture capital", "buyback", "ipo", "initial public offering",
+                        "share repurchase")
+WRONG_STRATEGY_EXCLUDE = ("joint venture",)
 HIGH_MATERIALITY_TERMS = ("sec charges", "fraud", "bankruptcy", "chapter 11", "indictment",
                           "enforcement action")
+# A sector-only Level B candidate needs a signal shape a read-through could plausibly attach to
+# (a credit-quality, distress or growth metric on an untracked company/segment) -- not simply
+# "the first untracked article with no other match," which the prior fallback amounted to.
+SECTOR_SIGNAL_TERMS = ("distress", "downgrade", "delinquenc", "default", "non-accrual",
+                       "credit quality", "revenue growth", "spread widen", "underwriting",
+                       "write-down", "impairment", "npl")
 
 
 def _entity_aliases(config):
@@ -75,17 +107,23 @@ def _has_any(text, terms):
 
 def categorize(record, aliases):
     title = record["title"]
+    lowered = title.lower()
     tracked = _matched_entities(title, aliases)
     reasons = []
     if tracked and _has_any(title, CAPITAL_FORMATION_TERMS):
         reasons.append("direct_tracked_vehicle_event")
-    if tracked and _has_any(title, WRONG_STRATEGY_TERMS):
+    if tracked and _has_any(title, WRONG_STRATEGY_TERMS) and not _has_any(title, WRONG_STRATEGY_EXCLUDE):
         reasons.append("tracked_manager_wrong_strategy")
-    if tracked and _has_any(title, FINANCING_TERMS):
+    if (tracked and _has_any(title, FINANCING_TERMS) and _has_any(title, SELF_RAISE_TERMS)
+            and not _has_any(title, LENDER_OUT_MARKERS)):
         reasons.append("manager_level_financing")
     if not tracked and _has_any(title, MACRO_TERMS):
         reasons.append("macro_context_level_c_event")
-    if not tracked and _has_any(title, MARKETING_TERMS):
+    if _has_any(title, MARKETING_TERMS) or (tracked and EVENT_YEAR_PATTERN.search(title)
+                                            and not _has_any(title, FILING_TERMS +
+                                                             FINANCING_TERMS +
+                                                             CAPITAL_FORMATION_TERMS +
+                                                             WRONG_STRATEGY_TERMS)):
         reasons.append("routine_marketing_or_conference_notice")
     if not tracked and _has_any(title, HIGH_MATERIALITY_TERMS):
         reasons.append("high_materiality_outside_scope_negative")
@@ -94,12 +132,18 @@ def categorize(record, aliases):
     if not tracked and record["publisher"] == "Alternative Credit Investor" and \
             _has_any(title, CAPITAL_FORMATION_TERMS):
         reasons.append("strong_private_credit_capital_formation")
-    if not tracked and not reasons and record.get("evidence_scope") != "metadata_only":
+    if (not tracked and _has_any(title, SECTOR_SIGNAL_TERMS)
+            and record.get("evidence_scope") != "metadata_only"):
         reasons.append("sector_only_level_b_event")
     if record.get("access_status") == "partial" or record.get("evidence_scope") == "metadata_only":
         reasons.append("inaccessible_or_partial_evidence")
-    if re.search(r"(?<!\w)(" + "|".join(SHORT_ALIAS_TOKENS) + r")(?!\w)", title.lower()):
-        reasons.append("ambiguous_or_namesake_identity")
+    for token in SHORT_ALIAS_TOKENS:
+        for match in re.finditer(rf"(?<!\w){token}(?!\w)", lowered):
+            tail = lowered[match.end():match.end() + 10]
+            if not any(tail.startswith(suffix) or lowered[:match.start()].rstrip().endswith(suffix)
+                      for suffix in DISAMBIGUATING_SUFFIXES):
+                reasons.append("ambiguous_or_namesake_identity")
+                break
     return reasons
 
 
@@ -138,7 +182,15 @@ def select(evidence_records, config, target_min=10, target_max=15):
     return picks, missing
 
 
-def build_manifest(evidence_path, generated_at):
+MANIFEST_VERSION = "v2"
+
+
+def build_manifest(evidence_path, generated_at, supersedes=None):
+    """`supersedes` names a prior manifest version this one replaces (e.g. "v1"), and why -- per
+    external review, category assignments must be fixed with tighter metadata-only criteria, not
+    silently overwritten. The prior manifest is never deleted; freeze() below refuses to overwrite
+    an existing file at all, so a superseding manifest must be written to a new path.
+    """
     records = read_jsonl(evidence_path)
     config = load_config()
     picks, missing = select(records, config)
@@ -146,12 +198,26 @@ def build_manifest(evidence_path, generated_at):
                           for article_id in (value if isinstance(value, list) else [value])
                           if article_id})
     manifest = {
+        "manifest_version": MANIFEST_VERSION,
+        "supersedes": supersedes,
         "generated_at": generated_at,
         "selection_method": ("Categories per Phase 5 handover section 6, matched deterministically "
                              "against title/publisher/access-status metadata only. No gold label, "
-                             "event group or evaluator file was read to build this list."),
+                             "event group or evaluator file was read to build this list. v2 tightens "
+                             "several category heuristics after external review found v1 assignments "
+                             "that were structurally present but not credible fits (a joint-venture "
+                             "title matched as 'wrong strategy' on the bare word 'venture'; a lender "
+                             "providing financing to a third party matched 'manager_level_financing', "
+                             "which should mean the manager raising financing for itself; an explicit, "
+                             "unambiguous 8-K filing matched 'ambiguous_or_namesake_identity'; a real "
+                             "investment mandate matched 'routine_marketing' on the word 'appoints'). "
+                             "See docs/phase-5-review-decisions.md for the full external review."),
         "categories": {category: picks.get(category) for category in CATEGORIES},
         "missing_categories": missing,
+        "missing_category_disposition": ("No credible candidate was found in the natural-feed "
+                                         "corpus under metadata-only criteria for these categories; "
+                                         "the gap is recorded rather than filled with a forced or "
+                                         "borderline match.") if missing else None,
         "article_ids": article_ids,
         "article_count": len(article_ids),
         "article_ids_sha256": hashlib.sha256(
@@ -165,8 +231,10 @@ def main(argv=None):
     parser.add_argument("evidence", type=Path)
     parser.add_argument("output", type=Path)
     parser.add_argument("--generated-at", required=True, help="ISO instant with offset")
+    parser.add_argument("--supersedes", default=None,
+                        help="Prior manifest version this replaces, e.g. v1")
     args = parser.parse_args(argv)
-    manifest = build_manifest(args.evidence, args.generated_at)
+    manifest = build_manifest(args.evidence, args.generated_at, supersedes=args.supersedes)
     if args.output.exists():
         raise FileExistsError(f"Refusing to overwrite an already-frozen calibration manifest "
                               f"at {args.output}")
