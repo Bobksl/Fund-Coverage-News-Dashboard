@@ -33,6 +33,44 @@ class BuildProviderTests(unittest.TestCase):
         self.assertEqual(provider.model_id, "claude-sonnet-5")
 
 
+class ProviderKwargsTests(unittest.TestCase):
+    """A live calibration run against deepseek-flash (a reasoning model whose reasoning_content
+    counts against max_tokens) truncated every response because run_experiment built the provider
+    with build_provider(provider_name, model_id) only -- provider_kwargs like max_output_tokens
+    were computed but never actually passed to the provider constructor."""
+
+    def test_provider_kwargs_reach_the_constructed_provider(self):
+        captured = {}
+
+        class FakeProvider:
+            def __init__(self, model_id, **kwargs):
+                captured["model_id"] = model_id
+                captured["kwargs"] = kwargs
+
+            def __call__(self, prompt, digest, attempt):
+                from tools.classifier import ProviderError
+                # Raising ProviderError (a transport_failure) lets propose() finish gracefully
+                # via the review-proposal path instead of crashing the test; the constructor
+                # kwargs are already captured above by this point.
+                raise ProviderError("not a real call -- only checking constructor kwargs")
+
+        import tools.run_model_experiment as rme
+        original = rme.build_provider
+        rme.build_provider = lambda name, model_id, **kwargs: FakeProvider(model_id, **kwargs)
+        try:
+            with temporary_directory() as workspace:
+                evidence_path = workspace / "evidence.jsonl"
+                write_jsonl(evidence_path, CORPUS)
+                rme.run_experiment(
+                    "run-kwargs", "calibration", [IDS[0]], evidence_path, None, workspace / "out",
+                    raw_store_dir=workspace / "raw", provider_name="deepseek",
+                    model_id="deepseek-flash", provider_kwargs={"max_output_tokens": 8192},
+                    replay=False)
+        finally:
+            rme.build_provider = original
+        self.assertEqual(captured["kwargs"], {"max_output_tokens": 8192})
+
+
 class ReplayModeTests(unittest.TestCase):
     def test_replay_with_no_saved_output_never_calls_a_model_and_enters_review(self):
         with temporary_directory() as workspace:

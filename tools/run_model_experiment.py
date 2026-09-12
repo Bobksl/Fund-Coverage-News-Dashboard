@@ -68,13 +68,16 @@ def build_provider(provider_name, model_id, **provider_kwargs):
 def run_experiment(run_id, partition, manifest_article_ids, evidence_path, freeze_path,
                    output_dir, config_root=baseline.CONFIG_ROOT, evidence_store_dir=None,
                    raw_store_dir=None, prompt_version=DEFAULT_PROMPT_VERSION, provider_name=None,
-                   model_id=None, inference_settings=None, replay=False, max_attempts=2):
+                   model_id=None, provider_kwargs=None, inference_settings=None, replay=False,
+                   max_attempts=2):
     """Run one partition through the structured classifier and write predictions + a run manifest.
 
     With `replay=True`, provider_name/model_id are still required (they identify which saved raw
     outputs to read) but no provider is instantiated and no network call can occur -- a missing
     saved output fails loudly (tools.classifier.ReplayProvider), never silently falling back to a
-    live call.
+    live call. `provider_kwargs` (e.g. {"max_output_tokens": 8192, "temperature": 0}) are passed
+    straight to the provider constructor -- this is how a reasoning model's `reasoning_content`
+    budget (which counts against max_tokens on top of the visible JSON) gets enough headroom.
     """
     evidence_records = read_jsonl(evidence_path)
     freeze = loads(Path(freeze_path).read_text(encoding="utf-8")) if freeze_path else None
@@ -88,7 +91,7 @@ def run_experiment(run_id, partition, manifest_article_ids, evidence_path, freez
     if replay:
         provider = classifier.ReplayProvider(store)
     else:
-        provider = build_provider(provider_name, model_id)
+        provider = build_provider(provider_name, model_id, **(provider_kwargs or {}))
 
     settings = classifier.build_inference_settings(
         provider=provider_name, model_id=model_id, prompt_version=prompt_version,
@@ -175,7 +178,8 @@ def main(argv=None):
         args.run_id, args.partition, article_ids, args.evidence, args.freeze, args.output,
         evidence_store_dir=args.evidence_store, raw_store_dir=args.raw_store,
         prompt_version=args.prompt_version, provider_name=args.provider, model_id=args.model,
-        inference_settings=settings_overrides, replay=args.replay)
+        provider_kwargs=settings_overrides, inference_settings=settings_overrides,
+        replay=args.replay)
     print(json.dumps({"run_manifest": run_manifest, "run_report_summary":
                       {k: report[k] for k in ("recommendations", "selected", "invalid_decisions")}},
                      ensure_ascii=False, indent=2))
