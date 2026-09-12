@@ -180,13 +180,23 @@ defines `event_identity`'s and `components`' nested fields, and states the direc
 semantics explicitly (direct = the evidenced business; propagated = a parent reached only via a
 real config edge from it) rather than leaving those definitions to prose elsewhere in the prompt.
 
-**Decision 2 — manifest, round 2 (accepted, implemented).** Ran the reviewer's exact bounded
-search (title/publisher/access-status only, natural evidence-file order): a tracked manager
-explicitly transacting equity ownership of an operating business, no debt/credit-sector language,
-no stated monitored-sector or manager-wide capital/governance consequence. This reassigned the
-PAG/Cordina article from `ambiguous_or_namesake_identity` (which the review correctly found "not
-demonstrably a namesake collision") to `tracked_manager_wrong_strategy`, and separately fixed
-`manager_level_financing` to require the matched entity actually be manager-typed in
+**Decision 2 — manifest, round 2 (accepted, implemented, one factual correction applied in round
+3).** Ran the reviewer's exact bounded search (title/publisher/access-status only, natural
+evidence-file order): a tracked manager explicitly transacting equity ownership of an operating
+business, no debt/credit-sector language, no stated monitored-sector or manager-wide
+capital/governance consequence. The rule change (adding `EQUITY_TRANSACTION_TERMS`, removing the
+"pag" short-alias token from ambiguity matching) was correctly described here in an earlier draft
+as reassigning "the PAG/Cordina article" -- **that was inaccurate**. `select()` keeps the first
+matching record in evidence-file order, and the actual article the corrected rule selects for
+`tracked_manager_wrong_strategy` is `bb270ed1-50ac-5052-842e-1c1f78716755` ("KKR to sell minority
+stake in Nordic Bioscience to Founder Claus Christiansen"), which appears earlier in the file than
+PAG/Cordina. Both are credible instances of the same equity-transaction shape; the manifest happens
+to contain the KKR one. **"Established" in `category_confidence` means an established, credible
+*selection shape* under the bounded search criteria -- not an established rejection or any other
+classification verdict.** Whether this specific KKR/Nordic Bioscience article is actually A, B, C
+or none is exactly what live inference (once authorized) determines; nothing here prejudges it.
+Separately, the search also fixed `manager_level_financing` to require the matched entity actually
+be manager-typed in
 `config/entities.json` (`entity_type: "manager"`) rather than any alias substring match — which
 correctly disqualified "Blue Owl Technology Finance Corp." (OTF, `entity_type: "vehicle"`, whose
 name happens to contain its manager's shorter alias) as *manager*-level financing. Net effect:
@@ -208,7 +218,62 @@ Regression tests for every round-2 finding: `tests/test_classifier.py::Relevance
 invented/no-edge propagation path, missing `evidence_refs` on a `direct_involvement` claim, the
 non-string `comparability_explanation`, missing B `transmission`) and
 `tests/test_select_calibration_smoke.py::ManifestFidelityRegressionTests` (the vehicle-vs-manager
-shadowing case, the PAG/Cordina reassignment).
+shadowing case, and PAG/Cordina correctly matching wrong_strategy rather than ambiguous identity
+-- though it is not the article this manifest's `select()` actually picks; see the round-3
+correction above).
+
+## Round 3 — external re-review, same date
+
+**Ticket A (propagation) — the round-2 fix was insufficient; now fixed.** The review reproduced
+two remaining defects: (1) an immediate-parent-only check rejected a genuine multi-hop ancestry
+(`otf -> blue_owl_credit -> blue_owl`, all real `parent` edges in `config/entities.json`); (2)
+propagation could be rooted in an entity present in `direct_entity_ids` but with no
+`direct_involvement` match of its own (e.g. `direct_entity_ids=[neuberger, deephaven_mortgage]`
+with only `neuberger` evidenced, incorrectly allowing propagation to `pretium` via the unevidenced
+`deephaven_mortgage`). `_validate_propagation_edges` now walks the full config parent chain
+(cycle-guarded) from each entity that is itself evidenced (`involvement=direct_involvement`) and
+requires every `propagated_entity_ids` entry to be within that ancestor set — not merely an
+immediate parent, and not reachable through an unevidenced entity. Both reproductions are now the
+regression tests (`test_level_a_accepts_a_genuine_multi_level_ancestry`,
+`test_level_a_rejects_propagation_rooted_in_an_unevidenced_direct_entity`).
+
+**Ticket D (object-shape enforcement) — confirmed and fixed.** `transmission="not an object"`
+(a non-dict) previously raised `AttributeError` from `parsed.get("transmission").get(...)` inside
+validation, uncaught by `run_attempts` (which only wraps the provider call and `json.loads`, not
+the `validate()` call itself) — meaning a single malformed field would have crashed the whole
+`propose()`/`draft()` call, not produced a `review_required` outcome for that attempt. Fixed with
+`_transmission_object()` (type-checks before use, in both the B and C branches) plus a defensive
+`try/except` around `validate()` in `run_attempts` itself, so an unanticipated validator crash
+degrades to one `schema_invalid` attempt rather than aborting the batch — directly relevant now
+that a live run with a real budget is imminent: one malformed response must never waste the tokens
+already spent on every other candidate in the same batch. Tests:
+`test_level_b_non_object_transmission_is_a_review_case_not_a_crash`,
+`test_level_c_non_object_transmission_is_a_review_case_not_a_crash`.
+
+**Manifest correction accepted.** An earlier round-2 description of this document incorrectly
+stated the bounded search "reassigned the PAG/Cordina article" to `tracked_manager_wrong_strategy`.
+`select()` picks the first matching record in evidence-file order, and the article the corrected
+rule actually selects is `bb270ed1-50ac-5052-842e-1c1f78716755` ("KKR to sell minority stake in
+Nordic Bioscience to Founder Claus Christiansen"), which appears earlier in the file than
+PAG/Cordina — both are credible instances of the same equity-transaction shape, but only one is in
+the frozen manifest. Corrected throughout this document, `tools/select_calibration_smoke.py`'s
+embedded `selection_method` text (which is written into the frozen manifest itself), and the
+"established" semantics: **established means an established, credible selection shape, never an
+established classification verdict.** `manifest.json` v3's article set and hash are unchanged by
+this correction — only the prose describing it was wrong, not the selection.
+
+**Decision on 9-of-12 coverage: accepted, no further search.** The three gaps
+(`manager_level_financing`, `ambiguous_or_namesake_identity`, `high_materiality_outside_scope_negative`)
+stand as documented limitations of this bounded smoke test.
+
+**Gate status: still blocked, independent of a credential.** The reviewer explicitly declined to
+treat credential availability as sufficient — "Credential availability also does not itself
+constitute provider/model or spending authorization" — and held the gate BLOCKED pending the two
+fixes above. Both are now implemented and tested (333 tests total, up from 329; `validate_spec`
+clean; `git diff --check` clean). A provider (DeepSeek `deepseek-v4.1-flash`) and a spending cap
+(¥6.59 CNY) were separately supplied by the user in the same turn as this review — handled in
+`docs/phase-5-live-run-log.md`, not in this document, since credential handling and code-review
+adjudication are different concerns and must not be mixed in one audit trail.
 
 ## Status carried forward unchanged
 

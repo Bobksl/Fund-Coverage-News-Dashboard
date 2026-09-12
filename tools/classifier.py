@@ -366,19 +366,64 @@ def _direct_involvement_entity_ids(parsed):
            if isinstance(match, dict) and match.get("involvement") == "direct_involvement"}
 
 
-def _validate_propagation_edges(propagated, direct, entities):
-    """Every propagated_entity_ids entry must be the actual config `parent` of some
-    direct_entity_ids member -- ED02's "propagated parents" are reached via a real ontology edge
-    from the directly evidenced business, never asserted as relevant on their own (external review
+def _validate_propagation_edges(propagated, rooted, entities):
+    """Every propagated_entity_ids entry must be a config ancestor reachable from an entity that
+    is itself evidenced (in `rooted`) -- ED02's "propagated parents" are reached via a real
+    ontology path from the directly evidenced business, never asserted as relevant on their own
+    (external review
     round 2: a synthetic response naming an unrelated parent with no supporting direct business
-    previously passed on propagation_basis length alone)."""
+    previously passed on propagation_basis length alone).
+
+    Round 3 (external review): an immediate-parent-only check rejected a genuine multi-level
+    ancestry (otf -> blue_owl_credit -> blue_owl) and, separately, let propagation originate from
+    an entity in direct_entity_ids that had no evidenced direct_involvement match of its own. Both
+    are fixed here: the allowed ancestor set is the full parent chain walked from each entity that
+    is ITSELF evidenced (in `rooted`, i.e. direct_involvement in direct_entity_ids), and only from
+    those -- an unevidenced entity merely listed in direct_entity_ids cannot anchor a propagation
+    path just by happening to be there. The walk is visited-set guarded against a cyclic `parent`
+    chain in config, which should not occur but must not hang validation if it ever did.
+    """
+    def ancestors(entity_id):
+        seen, chain = set(), set()
+        current = (entities.get(entity_id) or {}).get("parent")
+        while current and current not in seen:
+            seen.add(current)
+            chain.add(current)
+            current = (entities.get(current) or {}).get("parent")
+        return chain
+
+    allowed = set()
+    for root_id in rooted:
+        allowed |= ancestors(root_id)
     errors = []
     for parent_id in propagated:
-        if not any((entities.get(child_id) or {}).get("parent") == parent_id for child_id in direct):
-            errors.append(f"propagated_entity_ids entry {parent_id} has no config parent edge "
-                          f"from any direct_entity_ids business -- propagation must follow an "
-                          f"actual ontology relationship, not an asserted one")
+        if parent_id not in allowed:
+            errors.append(f"propagated_entity_ids entry {parent_id} is not a config ancestor of "
+                          f"any directly evidenced (involvement=direct_involvement) business -- "
+                          f"propagation must follow a real, rooted ontology path from the "
+                          f"evidenced entity, not an asserted one or one rooted in an unevidenced "
+                          f"direct_entity_ids member")
     return errors
+
+
+def _transmission_object(parsed, errors):
+    """Return parsed["transmission"] as a dict, or {} with an appended error for any other type.
+
+    External review round 2 found `transmission="not an object"` raised AttributeError from the
+    prior `parsed.get("transmission") or {}` -- a non-empty string is truthy, so it survived the
+    `or {}` fallback and then `.get(...)` crashed instead of failing validation. A crash here would
+    escape run_attempts' per-attempt try/except (it only catches JSONDecodeError around json.loads
+    and ProviderError around the provider call, not the validate() call itself), so a malformed
+    transmission value would previously have crashed the whole propose() call rather than
+    producing a review_required outcome for that one attempt.
+    """
+    transmission = parsed.get("transmission")
+    if transmission is None:
+        return {}
+    if not isinstance(transmission, dict):
+        errors.append("transmission must be an object")
+        return {}
+    return transmission
 
 
 def _validate_relevance_semantics(parsed, config):
@@ -416,7 +461,7 @@ def _validate_relevance_semantics(parsed, config):
                           "propagated parents are reached separately (see propagated_entity_ids) "
                           "and are not themselves the directly evidenced subject")
         if propagated:
-            errors += _validate_propagation_edges(propagated, direct, entities)
+            errors += _validate_propagation_edges(propagated, direct_subjects, entities)
             basis = parsed.get("propagation_basis")
             if not isinstance(basis, str) or len(basis.strip()) < MIN_PROPAGATION_BASIS_LENGTH:
                 errors.append("relevance_level A with a non-empty propagated_entity_ids requires "
@@ -425,7 +470,7 @@ def _validate_relevance_semantics(parsed, config):
     elif level == "B":
         if not parsed.get("sector_ids"):
             errors.append("relevance_level B requires at least one monitored sector_id")
-        transmission = parsed.get("transmission") or {}
+        transmission = _transmission_object(parsed, errors)
         if not (_text(transmission.get("trigger")).strip() and
                 _text(transmission.get("mechanism")).strip() and
                 _text(transmission.get("outcome")).strip()):
@@ -458,7 +503,7 @@ def _validate_relevance_semantics(parsed, config):
             if refs is not None and not isinstance(refs, list):
                 errors.append("sector_readthrough.evidence_refs must be a list")
     elif level == "C":
-        transmission = parsed.get("transmission") or {}
+        transmission = _transmission_object(parsed, errors)
         trigger = _text(transmission.get("trigger")).strip()
         mechanism = _text(transmission.get("mechanism")).strip()
         outcome = _text(transmission.get("outcome")).strip()
@@ -607,7 +652,18 @@ def run_attempts(provider, prompt, digest, store, model_id, prompt_version, vali
             record.update(outcome="unparsable", detail=str(error))
             attempts.append(record)
             continue
-        errors = validate(parsed)
+        try:
+            errors = validate(parsed)
+        except Exception as error:
+            # A defensive backstop, not a substitute for validate() being type-safe: an unexpected
+            # crash inside validation (a malformed nested field of a shape no one anticipated)
+            # must become one review_required attempt outcome, never an uncaught exception that
+            # aborts the whole classify/draft call -- and, in a live run, wastes the tokens
+            # already spent on every other attempt/candidate in the batch.
+            record.update(outcome="schema_invalid",
+                          detail=f"validator raised {type(error).__name__}: {error}")
+            attempts.append(record)
+            continue
         if errors:
             record.update(outcome="schema_invalid", detail="; ".join(errors))
             attempts.append(record)

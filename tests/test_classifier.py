@@ -349,7 +349,41 @@ class RelevanceSemanticsTests(unittest.TestCase):
                                "vehicle": "Deephaven Mortgage", "period": None,
                                "event_date": "2026-09-01"})
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
-            self.assertIn("no config parent edge", result["attempts"][0]["detail"])
+            self.assertIn("is not a config ancestor", result["attempts"][0]["detail"])
+
+    def test_level_a_accepts_a_genuine_multi_level_ancestry(self):
+        """Astra review round 3 'must pass': otf -> blue_owl_credit -> blue_owl is a real,
+        multi-hop config ancestry (config/entities.json). An immediate-parent-only check
+        incorrectly rejected blue_owl (the grandparent) even though the full chain is genuine."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(
+                direct_entity_ids=["otf"], propagated_entity_ids=["blue_owl_credit", "blue_owl"],
+                entity_matches=[{"entity_id": "otf", "economic_role": "fund",
+                                 "involvement": "direct_involvement", "evidence_refs": ["a1"]}],
+                propagation_basis="OTF is a Blue Owl Credit vehicle within the Blue Owl platform; "
+                                 "a material OTF event carries firm-wide consequence.",
+                event_identity={"parties": ["OTF"], "action": "portfolio_quality_change",
+                               "vehicle": "OTF", "period": None, "event_date": "2026-09-01"})
+            result = build(Recorder(payload), store).propose(article(), CONFIG)
+            self.assertEqual(result["relevance_level"], "A")
+
+    def test_level_a_rejects_propagation_rooted_in_an_unevidenced_direct_entity(self):
+        """Astra review round 3 'must fail': direct_entity_ids can list more than one entity, but
+        propagation must originate from one that is ITSELF evidenced (direct_involvement) -- here
+        only neuberger has a direct_involvement match, so pretium (deephaven_mortgage's real
+        parent) must not be reachable through the unevidenced deephaven_mortgage entry."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(
+                direct_entity_ids=["neuberger", "deephaven_mortgage"],
+                propagated_entity_ids=["pretium"],
+                entity_matches=[{"entity_id": "neuberger", "economic_role": "manager",
+                                 "involvement": "direct_involvement", "evidence_refs": ["a1"]}],
+                propagation_basis="Deephaven Mortgage connects to Pretium via its platform "
+                                 "relationship, extending consequence firm-wide.")
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertIn("is not a config ancestor", result["attempts"][0]["detail"])
 
     def test_level_a_direct_involvement_without_evidence_refs_fails(self):
         """Astra review round 2: a direct_involvement claim needs non-empty evidence_refs, not
@@ -429,6 +463,28 @@ class RelevanceSemanticsTests(unittest.TestCase):
                                    sector_readthrough=_readthrough())
             result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
             self.assertIn("requires substantive transmission", result["attempts"][0]["detail"])
+
+    def test_level_b_non_object_transmission_is_a_review_case_not_a_crash(self):
+        """Astra review round 2: transmission="not an object" previously raised AttributeError
+        from parsed.get("transmission").get(...) (a truthy string survives `or {}`), which would
+        have crashed the whole classify call rather than producing a review_required outcome."""
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="B", identity_gate=None, direct_entity_ids=[],
+                                   entity_matches=[], sector_ids=["private_credit"],
+                                   transmission="not an object", sector_readthrough=_readthrough())
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["attempts"][0]["outcome"], "schema_invalid")
+            self.assertIn("transmission must be an object", result["attempts"][0]["detail"])
+
+    def test_level_c_non_object_transmission_is_a_review_case_not_a_crash(self):
+        with temporary_directory() as workspace:
+            store = classifier.RawOutputStore(workspace / "raw")
+            payload = valid_output(relevance_level="C", identity_gate=None, direct_entity_ids=[],
+                                   entity_matches=[], sector_ids=[], transmission=["not", "a dict"])
+            result = build(Recorder(payload), store, attempts=1).propose(article(), CONFIG)
+            self.assertEqual(result["attempts"][0]["outcome"], "schema_invalid")
+            self.assertIn("transmission must be an object", result["attempts"][0]["detail"])
 
     def test_level_b_missing_sector_readthrough_fails(self):
         with temporary_directory() as workspace:

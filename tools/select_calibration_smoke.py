@@ -84,8 +84,11 @@ WRONG_STRATEGY_EXCLUDE = ("joint venture",)
 # Round 2's bounded search (docs/phase-5-review-decisions.md): a tracked manager explicitly
 # transacting equity ownership of an operating business, with no debt/credit-sector language
 # present, is an off-strategy (equity-portfolio, not private-credit) activity -- the shape Astra
-# specified for "tracked_manager_wrong_strategy" after rejecting the v1 "venture" match and the
-# v2 "ambiguous identity" assignment of the same PAG/Cordina article.
+# specified for "tracked_manager_wrong_strategy" after rejecting the v1 "venture" match. This also
+# incidentally stopped PAG/Cordina from matching ambiguous_or_namesake_identity via the "pag"
+# short-alias token (removed below): that article is not a genuine namesake collision, but the
+# manifest's actual wrong_strategy pick under this rule is a different, earlier-appearing article
+# (KKR/Nordic Bioscience) -- do not assume PAG/Cordina is what a given manifest run selects.
 EQUITY_TRANSACTION_TERMS = ("majority stake", "minority stake", "acquires stake", "sells stake",
                             "stake in", "divests")
 CREDIT_CONTEXT_EXCLUDE = ("credit", "debt", "loan", "lending", "financing", "restructuring",
@@ -271,16 +274,22 @@ def build_manifest(evidence_path, generated_at, supersedes=None):
                              "against title/publisher/access-status metadata only. No gold label, "
                              "event group or evaluator file was read to build this list. v3 acts on "
                              "an external review round 2 (docs/phase-5-review-decisions.md): "
-                             "distinguishes ESTABLISHED categories (metadata alone credibly "
+                             "distinguishes ESTABLISHED categories -- meaning an established, "
+                             "credible SELECTION SHAPE under the search criteria, never an "
+                             "established classification verdict -- (metadata alone credibly "
                              "supports the assignment, e.g. a duplicate canonical_url or a "
                              "partial access_status) from CANDIDATE_SHAPE_ONLY ones (a plausible "
                              "testing shape whose actual eligibility only the calibration run can "
                              "establish, e.g. a sector-growth headline that may or may not be a "
-                             "real B read-through); reassigned the PAG/Cordina article from "
-                             "ambiguous_identity to wrong_strategy (an explicit equity divestment, "
-                             "not a namesake collision) via a bounded metadata-only search; and "
-                             "fixed manager_level_financing to require the matched entity actually "
-                             "be manager-typed (OTF's own notes issuance is vehicle financing, not "
+                             "real B read-through); ran a bounded metadata-only search for a "
+                             "tracked manager explicitly transacting equity ownership of an "
+                             "operating business with no credit/debt language, which stopped "
+                             "wrong_strategy matching on the bare word 'venture' (a false positive "
+                             "on joint-venture wording) and removed the 'pag' short-alias token "
+                             "from ambiguity matching (its one corpus hit, PAG/Cordina, was found "
+                             "not to be a genuine namesake collision); and fixed "
+                             "manager_level_financing to require the matched entity actually be "
+                             "manager-typed (OTF's own notes issuance is vehicle financing, not "
                              "manager financing) -- which currently leaves that category, and "
                              "ambiguous_or_namesake_identity, without a credible candidate. "
                              "See docs/phase-5-review-decisions.md for the full external review."),
