@@ -29,3 +29,37 @@ Initial discovery was exploratory and cannot retroactively become a natural-feed
 Apollo and Blue Owl archive pages were accessible but pagination was not exhausted. Bain's archive displayed conflicting dates for one unused Vitabiotics item; it was not assigned a guessed date. BasePoint's older rated-note link returned a retrieval error and was not silently described as verified article evidence. The current batch makes no archive-completeness claim.
 
 Human labels have now been supplied and revised, and the local prototype is now implemented. Next work is corpus expansion, adjudication and evidence capture, followed by evidence/label/split freeze and actual evaluation. Additional curation and synthetic-tested implementation can proceed independently, but model inference cannot precede the freeze. The provider adapter, baseline, event grouper, scoring runner and evaluator now exist and are covered by synthetic tests; no provider is configured and no evaluation has run. The architecture remains local Python and files.
+
+## Where Phase 2 actually stands — 2026-09-12
+
+Corpus work advanced substantially; the phase cannot complete here. Each exit criterion:
+
+| Exit criterion | State |
+|---|---|
+| Natural-feed cohort collected under a predeclared policy | **Done.** 245 records, 189 calibration / 56 holdout, 14 contributing sources, zero duplicate IDs, window and roster frozen before the first entry. |
+| SEC tier | **Done.** Roster of 11 verified CIKs frozen, 4 entities unresolved and recorded; 12 in-scope records from 43 filings. |
+| Challenge cohort curated | **Started, far short.** 17 records. Every scored category is under its minimum: identity 4/10, hard negatives 10/25, manager-independent 2/15, and critical-risk, multi-article, material-update, similar-headline and APAC/Global all at zero. |
+| Blinded analyst packet | **Blocked by the above.** The packet must combine both cohorts so membership stays hidden; building it now would be 93% natural feed and would disclose what blinding exists to prevent. |
+| Evidence capture for the freeze | **Not started.** Every record is `metadata_only`; no article text has been captured or hashed, so nothing is yet labelable evidence. |
+| Independent human labels and adjudication | **Not started, and not mine to do.** |
+| Joint label/evidence freeze | Downstream of labels. |
+| Frozen inference run | Downstream of the freeze; no provider is configured. |
+| Per-cohort evaluation and disposition | Downstream of inference. |
+
+### The blocker, stated plainly
+
+Phase 2 ends in an analyst judgement, not an engineering step. The protocol is explicit that
+Codex, Claude, synthetic fixtures and presumed labels may not substitute for independent human
+labels. Everything upstream of that is either done or mechanical; nothing downstream of it can
+start. No amount of further collection moves this.
+
+### What remains before the analyst can be handed anything
+
+1. Finish challenge curation — roughly 60 more records to clear the minimums, concentrated in
+   critical-risk, multi-article groups, material updates and manager-independent macro.
+2. Capture permitted evidence text for both cohorts and hash it, so labels and evidence can be
+   frozen together.
+3. Build the combined blinded packet across both cohorts.
+
+Then: labels, adjudication, freeze, one frozen run, per-cohort evaluation, and a written pass,
+fail or inconclusive disposition. Only that disposition opens Phase 3.
