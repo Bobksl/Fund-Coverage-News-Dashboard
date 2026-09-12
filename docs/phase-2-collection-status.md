@@ -205,19 +205,18 @@ One record serves two probes: the NVIDIA AI-financing release is both a manager-
 judgement call and one half of a two-newsroom pair. The protocol's categories overlap rather than
 sum, so the registry now records a list of categories per record.
 
-## Evidence capture - 2026-09-12
+## Evidence capture - 2026-09-12, after the sweep
 
-**231 of 276 records now carry hashed text.** Excerpts live in ignored
-`work/phase2/evidence-store/` (121 KB, one file per article); the report is
-`work/phase2/evidence-capture-report.json`. Records were contract-valid before and after: 276
-validated, zero invalid.
+**275 of 276 records carry hashed text.** Excerpts live in ignored `work/phase2/evidence-store/`
+(142 KB, one file per article); the report is `work/phase2/evidence-capture-report.json`. All 276
+records validate against the evidence contract.
 
 | Outcome | Records |
 |---|---|
-| `primary_excerpt` with a SHA-256 hash | 231 |
-| `metadata_only`, no text | 45 |
-| Access `accessible` | 166 |
-| Access `partial` (gated lede) | 110 |
+| `primary_excerpt` with a SHA-256 hash | 275 |
+| `metadata_only`, no text | 1 |
+| Access `accessible` | 159 |
+| Access `partial` (gated lede) | 117 |
 
 ### Method, and what it deliberately does not do
 
@@ -227,32 +226,34 @@ worked around. Excerpts rather than whole articles: enough for a classifier to j
 smaller footprint of third-party text to retain. Every record is marked `primary_excerpt`, never
 `full_text`, because a bounded capture is not the whole article.
 
+Three retrieval methods were needed, and which one applies is a property of the publisher:
+
+- **Served HTML** worked for Apollo, Bain, Blue Owl and the independent publications.
+- **Rendered page** was required for HSBC AM, KKR, Blue Owl IR, CIFC, Pretium, Guggenheim and OTF,
+  whose article bodies are written by JavaScript. A first pass using served HTML returned the
+  navigation menu or nothing; those records were held as failures until the rendered sweep, never
+  filled with the chrome that came back.
+- **Raw submission file** was required for SEC filings, because modern filings serve an Inline
+  XBRL viewer stub rather than the document text.
+
 ### A correction to an earlier claim
 
 The packet note said roughly 40% of the corpus was paywalled, based on Alternative Credit
 Investor's index advertising subscriptions. Attempting the articles replaced that assumption with
 an observation: **ACI serves a substantive lede of around 300 characters plus a registration
-prompt, and a few articles in full.** The prompt is stripped and the lede kept, so those 109
-records carry real evidence and are marked `partial` rather than unreadable. The analyst will
-still meet the gate on the full text, so `inaccessible` or `partial` remains the right label
-where the source cannot support a decision, but the corpus is in better shape than that note
-implied.
+prompt, and a few articles in full.** The prompt is stripped and the lede kept, so those records
+carry real evidence and are marked `partial` rather than unreadable. The analyst will still meet
+the gate on the full text, so `inaccessible` or `partial` remains the right label where a source
+cannot support a decision, but the corpus is in better shape than that note implied.
 
-### Capture failures, recorded rather than papered over
+### The one remaining gap
 
-| Reason | Records | Meaning |
-|---|---|---|
-| `boilerplate_navigation_only` | 19 | HSBC AM pages are JavaScript-rendered; raw HTML returns the navigation menu for every article. |
-| `empty_body_in_served_html` | 14 | KKR media-centre pages return an empty body in served HTML for the same reason. |
-| `not_attempted_this_pass` | 9 | Six small origins not swept yet: Blue Owl IR, CIFC, Pretium, PAG, Guggenheim, OTF. |
+PAG's Cordina article still returns navigation text rather than the release body, even rendered. It
+stays `metadata_only` with no invented text. That is one record out of 276, and the event is
+covered in the index metadata, so it is a disclosure rather than a hole in the cohort.
 
-The first two are **capture-method limits, not inaccessible sources**: a person reading those
-pages in a browser sees the article normally. None of these records was given invented text; all
-stay `metadata_only`. A guard rejects any text repeated verbatim across several articles, so
-navigation chrome cannot be stored as an excerpt even if a future pass returns it.
-
-SEC filings needed a second approach: modern filings are Inline XBRL and the served document is a
-viewer stub, so the raw submission file was used instead. All 12 then captured.
+A guard rejects any text repeated verbatim across several articles, so navigation chrome cannot be
+stored as an excerpt even if a future pass returns it.
 
 ### Three findings worth the custodian's attention
 
@@ -267,6 +268,7 @@ built is a decision, not a cleanup.
 
 **One challenge rationale overclaims.** BasePoint Asset Recovery LLC was curated as an "unrelated
 Connecticut filer". Its Form D names an officer care of **BasePoint Capital, LLC**, which the
-entity research lists as a subsidiary of the watchlist BasePoint Group. The two may be affiliated,
-so "unrelated" is not established. The probe is still valid, since the identity question is
-exactly what it tests, but the stated reason should be corrected before freeze.
+entity research lists as a subsidiary of the watchlist BasePoint Group, and the filing's officer
+surname is Neuberger. The relationship is unverified either way, so "unrelated" is not
+established. The probe is still valid, since the identity question is exactly what it tests, but
+the stated reason should be corrected before freeze.

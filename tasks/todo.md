@@ -35,8 +35,8 @@
       records and 31 are independent; the overlap must be disclosed with any challenge figure.
 - [x] Evidence captured and hashed: 231 of 276 records carry primary excerpts; 45 remain
       metadata_only with recorded reasons. See docs/phase-2-collection-status.md.
-- [ ] Optional: sweep the 42 uncaptured records. HSBC and KKR need a rendering capture; six
-      small origins were not attempted.
+- [x] Sweep completed: 275 of 276 records now carry hashed excerpts. Only PAG's Cordina
+      article remains uncaptured, recorded as a disclosure.
 - [ ] Correct the BasePoint Asset Recovery challenge rationale before freeze; 'unrelated' is
       not established.
 - [x] Combined blinded packet built: 274 articles, work/phase2/analyst-review-003/. See
