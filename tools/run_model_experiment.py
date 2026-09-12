@@ -58,6 +58,9 @@ def build_provider(provider_name, model_id, **provider_kwargs):
     if provider_name == "anthropic":
         from tools.providers.anthropic_provider import AnthropicProvider
         return AnthropicProvider(model_id, **provider_kwargs)
+    if provider_name == "deepseek":
+        from tools.providers.deepseek_provider import DeepSeekProvider
+        return DeepSeekProvider(model_id, **provider_kwargs)
     raise ValueError(f"Unknown or unauthorized provider {provider_name!r}. Exactly one provider "
                      f"must be explicitly named and authorized before a billed run.")
 
