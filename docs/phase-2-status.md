@@ -38,10 +38,10 @@ Corpus work advanced substantially; the phase cannot complete here. Each exit cr
 |---|---|
 | Natural-feed cohort collected under a predeclared policy | **Done.** 245 records, 189 calibration / 56 holdout, 14 contributing sources, zero duplicate IDs, window and roster frozen before the first entry. |
 | SEC tier | **Done.** Roster of 11 verified CIKs frozen, 4 entities unresolved and recorded; 12 in-scope records from 43 filings. |
-| Challenge cohort curated | **Started, far short.** 17 records. Every scored category is under its minimum: identity 4/10, hard negatives 10/25, manager-independent 2/15, and critical-risk, multi-article, material-update, similar-headline and APAC/Global all at zero. |
-| Blinded analyst packet | **Blocked by the above.** The packet must combine both cohorts so membership stays hidden; building it now would be 93% natural feed and would disclose what blinding exists to prevent. |
+| Challenge cohort curated | **Done.** 91 records, every coverage minimum met. 60 are linked natural-feed records and 31 independent, so the cohorts overlap and that must travel with any challenge figure. |
+| Blinded analyst packet | **Built.** 274 articles in one opaquely ordered packet across both cohorts; 2 records excluded and recorded. See [packet 003](phase-2-packet-003.md). |
 | Evidence capture for the freeze | **Not started.** Every record is `metadata_only`; no article text has been captured or hashed, so nothing is yet labelable evidence. |
-| Independent human labels and adjudication | **Not started, and not mine to do.** |
+| Independent human labels and adjudication | **Now the single blocking input.** The packet is in the analyst's hands; all 274 rows are to be labeled. |
 | Joint label/evidence freeze | Downstream of labels. |
 | Frozen inference run | Downstream of the freeze; no provider is configured. |
 | Per-cohort evaluation and disposition | Downstream of inference. |

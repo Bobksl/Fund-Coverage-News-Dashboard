@@ -33,5 +33,7 @@
 - [x] SEC tier collected: 12 in-scope records from 43 filings across 11 CIKs.
 - [x] Challenge curation: 91 records, every coverage minimum met. 60 are linked natural-feed
       records and 31 are independent; the overlap must be disclosed with any challenge figure.
-- [ ] Capture permitted evidence text for both cohorts and hash it for the joint freeze.
-- [ ] Build the combined blinded packet once the challenge cohort is adequate.
+- [ ] Capture permitted evidence text and hash it for the joint freeze, alongside the labels.
+- [x] Combined blinded packet built: 274 articles, work/phase2/analyst-review-003/. See
+      docs/phase-2-packet-003.md.
+- [ ] ANALYST: label all 274 rows in analyst-labels.csv. This is the blocking input.
