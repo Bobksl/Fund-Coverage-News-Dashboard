@@ -97,6 +97,19 @@ class PromptContextTests(unittest.TestCase):
         prompt = classifier.build_prompt(classifier.to_inference_input(article()), CONFIG, "p1")
         self.assertEqual(classifier.leakage_scan(prompt), [])
 
+    def test_prompt_states_the_evidence_refs_format_explicitly(self):
+        """The one calibration-smoke-driven repair (docs/phase-5-review-decisions.md): every
+        non-crashed response in the pre-repair live smoke run used a label ('title'/'body') or a
+        quoted excerpt as evidence_refs, never the required article_id -- an omitted instruction,
+        confirmed across 8 of 9 smoke articles. This pins the fix in both places a model reads it."""
+        prompt = classifier.build_prompt(classifier.to_inference_input(article()), CONFIG, "p2")
+        rules_text = json.dumps(prompt["rules"])
+        self.assertIn("article_id", rules_text)
+        self.assertIn("'title'", rules_text)
+        self.assertIn("'body'", rules_text)
+        contract_text = json.dumps(prompt["response_contract"])
+        self.assertIn("article_id", contract_text)
+
 
 class PromptBoundaryTests(unittest.TestCase):
     def test_prompt_carries_only_allowlisted_evidence(self):

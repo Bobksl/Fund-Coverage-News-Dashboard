@@ -24,7 +24,10 @@ from pathlib import Path
 from tools import baseline, classifier, corpus, runner
 from tools.records import loads, read_jsonl
 
-DEFAULT_PROMPT_VERSION = "p1"
+# p2: the one calibration-smoke-driven repair (docs/phase-5-review-decisions.md) -- an explicit
+# evidence_refs format instruction, added after every non-crashed smoke response across 8 of 9
+# articles used a label ("title"/"body") or a quoted excerpt instead of the required article_id.
+DEFAULT_PROMPT_VERSION = "p2"
 
 
 def _read_bodies(evidence_store_dir, evidence_records):

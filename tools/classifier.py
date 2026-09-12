@@ -33,6 +33,17 @@ PROMPT_RULES = (
     "markets') does not satisfy this even if it contains a listed consequence-category word; "
     "affected_exposure must name the actual borrower/instrument/segment affected, not a generic "
     "phrase like 'financial markets' or 'all investment markets'.",
+    # Calibration-smoke-driven repair (the one allowed under the repair policy in
+    # docs/phase-5-review-decisions.md): every evidence_refs value in the pre-repair smoke run
+    # was a label like "title"/"body" or a quoted excerpt, never the article_id the schema
+    # actually requires -- an omitted instruction, confirmed across 8 of 9 smoke articles, not a
+    # model reasoning failure.
+    "Every evidence_refs value anywhere in the response (in components, entity_matches or "
+    "sector_readthrough) MUST be exactly the evidence's article_id string as given in the "
+    "supplied evidence object -- optionally with a '#' and a short span label appended (e.g. "
+    "'a1b2c3#paragraph-2'). Never use the literal word 'title' or 'body', never quote the cited "
+    "text itself, and never use any other label -- an evidence_refs value that is not the "
+    "article_id (optionally with a '#' suffix) is invalid.",
 )
 REQUIRED_OUTPUT = ("relevance_level", "primary_event_type", "event_identity", "components")
 # ED03 (editorial-rulebook.md "A/B/C eligibility"): a compact statement of each level's required
@@ -88,7 +99,15 @@ SECTOR_READTHROUGH_FIELDS = ("sector_id", "observed_change", "basis", "affected_
                              "comparability_explanation", "evidence_refs")
 SECTOR_READTHROUGH_TEXT_FIELDS = ("observed_change", "affected_population",
                                   "comparability_explanation")
-RESPONSE_CONTRACT_VERSION = "rc3"
+RESPONSE_CONTRACT_VERSION = "rc4"
+# "The evidence's own article_id string, optionally with '#' and a short span label; never
+# 'title', 'body', or a quoted excerpt of the cited text." This exact phrasing is repeated at
+# every evidence_refs field below (calibration-smoke one-repair: see PROMPT_RULES above and
+# docs/phase-5-review-decisions.md) so no single field's description can be skimmed past.
+EVIDENCE_REFS_SPEC = ("A list of evidence references. Each value MUST be the evidence's own "
+                     "article_id string, optionally with '#' and a short span label (e.g. "
+                     "'a1b2c3#paragraph-2') -- never 'title', 'body', or a quoted excerpt of the "
+                     "cited text.")
 # Embedded verbatim in the prompt (build_prompt), not left for the model to infer from prose --
 # Phase 5 handover section 5A Ticket D. Round 2 external review added the nested definitions for
 # event_identity/components/entity lists this omitted, and the direct-vs-propagated distinction
@@ -114,8 +133,8 @@ RESPONSE_CONTRACT = {
                        "entity_id": "A known entity canonical_id.",
                        "economic_role": sorted(ECONOMIC_ROLES),
                        "involvement": sorted(INVOLVEMENT_LEVELS),
-                       "evidence_refs": "Non-empty when involvement=direct_involvement: at least "
-                                       "one reference into the supplied evidence.",
+                       "evidence_refs": EVIDENCE_REFS_SPEC + " Non-empty when involvement="
+                                       "direct_involvement.",
                        "note": "relevance_level A requires an entry with "
                               "involvement=direct_involvement for an entity in "
                               "direct_entity_ids. economic_role is descriptive, not a gate -- a "
@@ -131,6 +150,7 @@ RESPONSE_CONTRACT = {
                                           "a required transmission object (below).",
                            "fields": list(SECTOR_READTHROUGH_FIELDS),
                            "basis_enum": sorted(SECTOR_READTHROUGH_BASES),
+                           "evidence_refs": EVIDENCE_REFS_SPEC,
                            "note": "One comparable instrument/company is sufficient; multiple "
                                    "publishers or companies are not required. An unrelated peer "
                                    "headline generalized to the whole sector is not Level B."},
@@ -154,7 +174,7 @@ RESPONSE_CONTRACT = {
     "components": {name: {"points": "One of the configured anchor values for this component, "
                                     "or null if unscorable.",
                           "reason": "Non-empty when points is set.",
-                          "evidence_refs": "References into the supplied evidence."}
+                          "evidence_refs": EVIDENCE_REFS_SPEC}
                   for name in COMPONENTS},
 }
 
