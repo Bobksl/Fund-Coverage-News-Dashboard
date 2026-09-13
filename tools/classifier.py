@@ -220,7 +220,7 @@ class ReplayProvider:
         if saved is None:
             raise ProviderError(
                 f"No saved output for {input_hash} attempt {attempt}; replay will not call a model")
-        return saved["raw"]
+        return saved
 
 
 def _not_in(value, container):
@@ -281,7 +281,7 @@ def build_prompt(article_input, config, prompt_version):
 INFERENCE_SETTINGS_FIELDS = ("provider", "model_id", "temperature", "top_p", "seed",
                              "reasoning_effort", "structured_output_mode", "schema_version",
                              "max_output_tokens", "retry_policy", "timeout_seconds",
-                             "prompt_version")
+                             "prompt_version", "thinking", "system_prompt_sha256", "base_url")
 
 
 def build_inference_settings(**values):
@@ -669,19 +669,41 @@ def run_attempts(provider, prompt, digest, store, model_id, prompt_version, vali
         record = {"attempt": attempt, "at": clock()}
         started = timer()
         try:
-            raw, usage = _normalize_response(provider(prompt, digest, attempt))
+            saved = store.load(digest, attempt)
+            replayed = saved is not None or isinstance(provider, ReplayProvider)
+            response = saved if saved is not None else provider(prompt, digest, attempt)
+            if isinstance(response, dict) and response.get("transport_error"):
+                raise ProviderError(response["transport_error"])
+            raw, usage = _normalize_response(response)
         except ProviderError as error:
             record.update(outcome="transport_failure", detail=str(error), raw_ref=None,
-                          latency_ms=_elapsed_ms(started, timer()))
+                          latency_ms=_elapsed_ms(started, timer()), replayed=replayed,
+                          usage={"input_tokens": None, "output_tokens": None})
+            if not isinstance(provider, ReplayProvider):
+                store.save(digest, attempt, {"raw": None, "transport_error": str(error),
+                                             "input_hash": digest, "attempt": attempt})
             metadata["latency_ms_total"] += record["latency_ms"]
             attempts.append(record)
             continue
         record["latency_ms"] = _elapsed_ms(started, timer())
+        record["replayed"] = replayed
+        record["usage"] = usage
+        record["finish_reason"] = response.get("finish_reason") if isinstance(response, dict) else None
         metadata["latency_ms_total"] += record["latency_ms"]
         _merge_usage(metadata["usage"], usage)
-        store.save(digest, attempt, {"input_hash": digest, "attempt": attempt, "model": model_id,
-                                     "prompt_version": prompt_version, "raw": raw})
+        payload = dict(response) if isinstance(response, dict) else {"raw": raw}
+        payload.update(input_hash=digest, attempt=attempt, model=model_id,
+                       prompt_version=prompt_version, usage=usage)
+        store.save(digest, attempt, payload)
         record["raw_ref"] = str(store.path(digest, attempt))
+        if not isinstance(raw, str):
+            record.update(outcome="schema_invalid", detail="response content must be a string")
+            attempts.append(record)
+            continue
+        if record["finish_reason"] == "length":
+            record.update(outcome="unparsable", detail="provider finish_reason=length")
+            attempts.append(record)
+            continue
         try:
             parsed = json.loads(raw)
         except json.JSONDecodeError as error:
@@ -747,14 +769,34 @@ class StructuredClassifier:
         article_input = to_inference_input(article, body=body)
         prompt = build_prompt(article_input, config, self.prompt_version)
         digest = input_hash(prompt, self.model_id, self.inference_settings)
+        # The terminal-outcome cache exists to stop a *live* provider from re-billing an input
+        # a prior (possibly interrupted) run of the same store already completed -- it must not
+        # apply when this call is explicitly a ReplayProvider, which has its own well-defined,
+        # separately tested behavior (read the saved per-attempt record, fail loudly if absent)
+        # and whose whole purpose is to prove a replay is never mistaken for a fresh live call.
+        # Short-circuiting here for a ReplayProvider would silently hand back a *live* run's
+        # cached proposal (provenance included) without ever exercising the replay path.
+        completed = None if isinstance(self.provider, ReplayProvider) else self.store.load(digest, "complete")
+        if completed is not None:
+            proposal = completed["proposal"]
+            proposal["model_metadata"]["replayed"] = True
+            for attempt in proposal["attempts"]:
+                attempt["replayed"] = True
+            return proposal
         parsed, attempts, metadata = run_attempts(
             self.provider, prompt, digest, self.store, self.model_id, self.prompt_version,
             lambda payload: _validate_output(payload, config, article_input), self.max_attempts,
             self.clock, self.timer, self.inference_settings)
         if parsed is None:
             detail = attempts[-1]["detail"] if attempts else "no attempt recorded"
-            return _review_proposal(article_input, f"classifier failure: {detail}", attempts, metadata)
-        return self._to_proposal(article_input, parsed, metadata, attempts)
+            proposal = _review_proposal(article_input, f"classifier failure: {detail}", attempts, metadata)
+        else:
+            proposal = self._to_proposal(article_input, parsed, metadata, attempts)
+        # Persist a terminal outcome (including schema exhaustion) so a later cohort cannot
+        # obtain a different answer by silently buying another attempt for the same input.
+        if not isinstance(self.provider, ReplayProvider):
+            self.store.save(digest, "complete", {"proposal": proposal})
+        return proposal
 
     def _to_proposal(self, article_input, parsed, metadata, attempts):
         identity = parsed.get("event_identity") or {}

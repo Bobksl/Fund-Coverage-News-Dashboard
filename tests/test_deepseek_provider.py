@@ -4,10 +4,13 @@ No network call and no real credential are needed: a fake `urlopen` double is in
 """
 import io
 import json
+import os
 import unittest
 import urllib.error
 
+from tests.fixtures import temporary_directory
 from tools.classifier import ProviderError
+from tools.inference_budget import BudgetStop, SpendLedger
 from tools.providers.deepseek_provider import DeepSeekProvider
 
 
@@ -175,6 +178,67 @@ class MalformedResponseTests(unittest.TestCase):
             os.environ.pop("NEWS_DASHBOARD_TEST_KEY", None)
         self.assertEqual(result["usage"], {"input_tokens": None, "output_tokens": None,
                                            "cost_basis": None})
+
+
+class BudgetIntegrationTests(unittest.TestCase):
+    """P7-3: a provider constructed with `budget=` must actually reserve before dispatch and
+    settle to real usage after -- a SpendLedger that exists but is never called enforces nothing."""
+
+    def _provider(self, workspace, opener, cap_usd="10.00", **kwargs):
+        os.environ["NEWS_DASHBOARD_TEST_KEY"] = "x"
+        ledger = SpendLedger(workspace / "budget.jsonl", cap_usd=cap_usd)
+        provider = DeepSeekProvider("deepseek-flash", opener=opener,
+                                    api_key_env="NEWS_DASHBOARD_TEST_KEY", budget=ledger, **kwargs)
+        return provider, ledger
+
+    def tearDown(self):
+        os.environ.pop("NEWS_DASHBOARD_TEST_KEY", None)
+
+    def test_successful_call_settles_to_actual_reported_usage(self):
+        with temporary_directory() as workspace:
+            opener = FakeOpener(response_bytes('{"ok": true}', prompt_tokens=1000,
+                                               completion_tokens=200))
+            provider, ledger = self._provider(workspace, opener)
+            provider('{"prompt": "x"}', "digest1", 1)
+            summary = ledger.summary()
+            # 1000 input * 0.30/M + 200 output * 1.20/M = 0.0003 + 0.00024 = 0.00054
+            self.assertEqual(summary["charged_usd"], "0.00054")
+            self.assertEqual(summary["unsettled_requests"], 0)
+
+    def test_a_call_that_would_exceed_the_cap_never_reaches_the_network(self):
+        with temporary_directory() as workspace:
+            opener = FakeOpener(response_bytes("{}"))
+            provider, ledger = self._provider(workspace, opener, cap_usd="0.00000001")
+            with self.assertRaises(BudgetStop):
+                provider('{"prompt": "x"}', "digest1", 1)
+            self.assertEqual(opener.calls, [])
+
+    def test_a_transport_failure_leaves_the_reservation_charged_at_the_full_ceiling(self):
+        with temporary_directory() as workspace:
+            opener = FakeOpener(response_bytes("{}"), fail_times=5)
+            provider, ledger = self._provider(workspace, opener, transport_max_attempts=1)
+            with self.assertRaises(ProviderError):
+                provider('{"prompt": "x"}', "digest1", 1)
+            summary = ledger.summary()
+            self.assertEqual(summary["unsettled_requests"], 1)
+            self.assertNotEqual(summary["charged_usd"], "0")
+
+    def test_two_attempts_for_the_same_digest_reserve_separately(self):
+        with temporary_directory() as workspace:
+            opener = FakeOpener(response_bytes('{"ok": true}'))
+            provider, ledger = self._provider(workspace, opener)
+            provider('{"prompt": "x"}', "digest1", 1)
+            provider('{"prompt": "x"}', "digest1", 2)
+            self.assertEqual(ledger.summary()["http_attempts"], 2)
+
+    def test_no_budget_supplied_skips_ledger_entirely(self):
+        with temporary_directory() as workspace:
+            opener = FakeOpener(response_bytes('{"ok": true}'))
+            os.environ["NEWS_DASHBOARD_TEST_KEY"] = "x"
+            provider = DeepSeekProvider("deepseek-flash", opener=opener,
+                                        api_key_env="NEWS_DASHBOARD_TEST_KEY")
+            result = provider('{"prompt": "x"}', "digest1", 1)
+            self.assertEqual(result["raw"], '{"ok": true}')
 
 
 if __name__ == "__main__":

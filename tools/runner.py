@@ -136,7 +136,8 @@ def _review_rows(decisions, evidence):
 
 def run(manifest, evidence_records, config, engine, output_dir, bodies=None,
         region_history=None, config_root=baseline.CONFIG_ROOT, allow_overwrite=False,
-        freeze=None, evidence_path=None, labels_path=None, split_manifest_path=None):
+        freeze=None, evidence_path=None, labels_path=None, split_manifest_path=None,
+        proposal_sink=None):
     """Execute one partition end to end and write the frozen prediction set.
 
     Pass `freeze` (plus whichever of evidence_path/labels_path/split_manifest_path the caller
@@ -162,8 +163,12 @@ def run(manifest, evidence_records, config, engine, output_dir, bodies=None,
                      "partition": manifest["partition"],
                      "freeze_verified": freeze is not None,
                      "frozen_at": (freeze or {}).get("frozen_at")}
-    proposals = [engine.propose(evidence[article_id], config, body=bodies.get(article_id))
-                 for article_id in sorted(manifest["article_ids"])]
+    proposals = []
+    for article_id in sorted(manifest["article_ids"]):
+        proposal = engine.propose(evidence[article_id], config, body=bodies.get(article_id))
+        if proposal_sink is not None:
+            proposal_sink(proposal)
+        proposals.append(proposal)
     clusters = grouping.group(proposals, evidence)
     theme_candidates = sorted({theme for proposal in proposals
                                for theme in proposal.get("theme_candidates") or []})

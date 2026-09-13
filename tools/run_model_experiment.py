@@ -18,6 +18,7 @@ text are the only inputs threaded to the classifier, matching tools.records.INFE
 """
 import argparse
 import json
+import os
 import time
 from pathlib import Path
 
@@ -28,6 +29,42 @@ from tools.records import loads, read_jsonl
 # evidence_refs format instruction, added after every non-crashed smoke response across 8 of 9
 # articles used a label ("title"/"body") or a quoted excerpt instead of the required article_id.
 DEFAULT_PROMPT_VERSION = "p2"
+
+
+def _account_articles(rows):
+    totals = {"input_tokens": 0, "output_tokens": 0}
+    incremental = dict(totals)
+    unknown = {key: False for key in totals}
+    incremental_unknown = dict(unknown)
+    failures = schema_invalid = replayed = 0
+    latency = 0.0
+    for row in rows:
+        attempts = row.get("attempts") or []
+        replayed += bool(attempts) and all(a.get("replayed") for a in attempts)
+        for attempt in attempts:
+            # A replayed "transport_failure" is ReplayProvider deliberately refusing to
+            # fabricate a response for a digest/attempt with no saved data -- a local policy
+            # refusal, not evidence the live provider's transport is unreliable. Counting it
+            # alongside a genuine live network failure would misreport provider health.
+            failures += attempt["outcome"] == "transport_failure" and not attempt.get("replayed")
+            schema_invalid += attempt["outcome"] in {"schema_invalid", "unparsable"}
+            latency += attempt.get("latency_ms", 0)
+            for key in totals:
+                value = (attempt.get("usage") or {}).get(key)
+                if type(value) is int and value >= 0:
+                    totals[key] += value
+                    if not attempt.get("replayed"):
+                        incremental[key] += value
+                else:
+                    unknown[key] = True
+                    if not attempt.get("replayed"):
+                        incremental_unknown[key] = True
+    return {"usage_totals": {k: None if unknown[k] else v for k, v in totals.items()},
+            "known_usage_subtotals": totals,
+            "incremental_usage_totals": {k: None if incremental_unknown[k] else v
+                                         for k, v in incremental.items()},
+            "replayed_articles": replayed, "provider_transport_failures": failures,
+            "schema_invalid_attempts": schema_invalid, "latency_ms_total": round(latency, 3)}
 
 
 def _read_bodies(evidence_store_dir, evidence_records):
@@ -91,49 +128,77 @@ def run_experiment(run_id, partition, manifest_article_ids, evidence_path, freez
 
     raw_store_dir = raw_store_dir or (Path(output_dir) / "raw-outputs")
     store = classifier.RawOutputStore(raw_store_dir)
+    kwargs = dict(provider_kwargs or {})
+    declared = dict(inference_settings or {})
+    request_fields = {"max_output_tokens", "temperature", "top_p", "thinking", "reasoning_effort",
+                      "timeout_seconds"}
+    for key in request_fields & declared.keys():
+        if key in kwargs and kwargs[key] != declared[key]:
+            raise ValueError(f"Provider request and declared settings disagree: {key}")
+        kwargs[key] = declared[key]
     if replay:
         provider = classifier.ReplayProvider(store)
+        if provider_name == "deepseek":
+            from tools.providers.deepseek_provider import DeepSeekProvider
+            declared = dict(DeepSeekProvider(model_id, **kwargs).inference_settings(), **declared)
     else:
-        provider = build_provider(provider_name, model_id, **(provider_kwargs or {}))
+        provider = build_provider(provider_name, model_id, **kwargs)
+        if hasattr(provider, "inference_settings"):
+            effective = provider.inference_settings()
+            for key in declared.keys() & effective.keys():
+                if declared[key] != effective[key]:
+                    raise ValueError(f"Effective request and declared settings disagree: {key}")
+            declared = dict(declared, **effective)
 
+    declared.pop("provider", None)
+    declared.pop("model_id", None)
+    declared.pop("prompt_version", None)
+    declared["retry_policy"] = dict(declared.get("retry_policy") or {}, schema_max_attempts=max_attempts)
+    declared["schema_version"] = classifier.RESPONSE_CONTRACT_VERSION
     settings = classifier.build_inference_settings(
         provider=provider_name, model_id=model_id, prompt_version=prompt_version,
-        **(inference_settings or {}))
+        **declared)
     live_classifier = classifier.StructuredClassifier(
         provider, store, model_id, prompt_version, max_attempts=max_attempts,
         inference_settings=settings)
     engine = runner.ClassifierEngine(live_classifier)
 
     bodies = _read_bodies(evidence_store_dir, evidence_records)
-    config = baseline.load_config()
+    config = baseline.load_config(config_root)
+    output_dir = Path(output_dir)
+    if (output_dir / "predictions.jsonl").exists():
+        raise FileExistsError("Completed prediction file already exists; use a new run directory")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    article_ledger = output_dir / "article-attempts.jsonl"
+    existing = {r["article_id"]: r for r in read_jsonl(article_ledger)} if article_ledger.exists() else {}
+
+    def save_article(proposal):
+        if proposal["article_id"] in existing:
+            old = existing[proposal["article_id"]]
+            if old["model_metadata"]["input_hash"] != proposal["model_metadata"]["input_hash"]:
+                raise ValueError("Interrupted run's article ledger belongs to different inputs/settings")
+            return
+        with article_ledger.open("a", encoding="utf-8", newline="\n") as handle:
+            handle.write(json.dumps(proposal, ensure_ascii=False) + "\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+
     started = time.perf_counter()
     report = runner.run({"run_id": run_id, "partition": partition,
                          "article_ids": manifest["article_ids"]},
                         evidence_records, config, engine, output_dir, bodies=bodies,
                         config_root=config_root, freeze=freeze,
-                        evidence_path=evidence_path if freeze else None)
+                        evidence_path=evidence_path if freeze else None, proposal_sink=save_article)
     wall_clock_ms = round((time.perf_counter() - started) * 1000, 3)
 
-    predictions = read_jsonl(Path(output_dir) / "predictions.jsonl")
-    usage_totals = {"input_tokens": 0, "output_tokens": 0}
-    latency_ms_total = 0.0
-    provider_failures = 0
-    for prediction in predictions:
-        metadata = prediction.get("model_metadata") or {}
-        usage = metadata.get("usage") or {}
-        for key in usage_totals:
-            usage_totals[key] += usage.get(key) or 0
-        latency_ms_total += metadata.get("latency_ms_total") or 0
-        provider_failures += sum(1 for attempt in prediction.get("attempts") or []
-                                 if attempt.get("outcome") == "transport_failure")
+    accounting = _account_articles(read_jsonl(article_ledger))
 
     run_manifest = {
         "run_id": run_id, "partition": partition, "mode": "replay" if replay else "live",
         "provider": provider_name, "model_id": model_id, "prompt_version": prompt_version,
         "inference_settings": settings, "inference_settings_hash": classifier.settings_hash(settings),
         "inference_preflight": manifest["inference_preflight"],
-        "usage_totals": usage_totals, "latency_ms_total": round(latency_ms_total, 3),
-        "wall_clock_ms": wall_clock_ms, "provider_transport_failures": provider_failures,
+        **accounting, "wall_clock_ms": wall_clock_ms,
         "cost_basis": None,
         "cost_note": "Cost is reported only from a documented provider rate card. None was "
                      "supplied to this run, so cost stays explicitly unknown rather than invented.",

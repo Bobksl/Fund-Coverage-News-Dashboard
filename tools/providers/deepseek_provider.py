@@ -22,6 +22,7 @@ raise ProviderError, which the classifier records as `transport_failure` and ret
 schema level (a fresh generation, never a resend of the same bytes).
 """
 import json
+import hashlib
 import os
 import time
 import urllib.error
@@ -44,8 +45,9 @@ class DeepSeekProvider:
     """
 
     def __init__(self, model_id, api_key_env="DEEPSEEK_API_KEY", base_url=DEFAULT_BASE_URL,
-                temperature=None, top_p=None, max_output_tokens=2048, timeout_seconds=60.0,
-                transport_max_attempts=3, system_prompt=None, opener=None):
+                temperature=None, top_p=1.0, max_output_tokens=16384, timeout_seconds=60.0,
+                transport_max_attempts=3, system_prompt=None, opener=None,
+                thinking=None, reasoning_effort="high", budget=None):
         self.model_id = model_id
         self.api_key_env = api_key_env
         self.base_url = base_url
@@ -56,6 +58,33 @@ class DeepSeekProvider:
         self.transport_max_attempts = transport_max_attempts
         self.system_prompt = system_prompt or DEFAULT_SYSTEM_PROMPT
         self.opener = opener or urllib.request
+        self.thinking = dict(thinking or {"type": "enabled"})
+        self.reasoning_effort = reasoning_effort
+        self.budget = budget
+        if self.thinking != {"type": "enabled"}:
+            raise ValueError("This adapter configuration requires thinking enabled")
+        if reasoning_effort not in {"low", "high", "max"}:
+            raise ValueError("reasoning_effort must be low, high or max")
+        if temperature is not None:
+            raise ValueError("temperature is inoperative in thinking mode; omit it")
+        if top_p is None or not 0.95 <= top_p <= 1:
+            raise ValueError("Set operative top_p explicitly in [0.95, 1]")
+        if not isinstance(max_output_tokens, int) or not 1 <= max_output_tokens <= 393216:
+            raise ValueError("Invalid max_output_tokens")
+        if not isinstance(transport_max_attempts, int) or not 1 <= transport_max_attempts <= 3:
+            raise ValueError("transport_max_attempts must be 1..3")
+        if not 0 < timeout_seconds <= 600:
+            raise ValueError("timeout_seconds must be positive and at most 600")
+
+    def inference_settings(self):
+        """The actual request knobs, including the system message outside the user payload."""
+        return {"provider": "deepseek", "model_id": self.model_id,
+                "thinking": self.thinking, "reasoning_effort": self.reasoning_effort,
+                "top_p": self.top_p, "max_output_tokens": self.max_output_tokens,
+                "structured_output_mode": "json_object", "timeout_seconds": self.timeout_seconds,
+                "retry_policy": {"transport_max_attempts": self.transport_max_attempts},
+                "base_url": self.base_url,
+                "system_prompt_sha256": hashlib.sha256(self.system_prompt.encode()).hexdigest()}
 
     def _api_key(self):
         api_key = os.environ.get(self.api_key_env)
@@ -70,6 +99,7 @@ class DeepSeekProvider:
                "messages": [{"role": "system", "content": self.system_prompt},
                             {"role": "user", "content": prompt_json}],
                "max_tokens": self.max_output_tokens,
+               "thinking": self.thinking, "reasoning_effort": self.reasoning_effort,
                "response_format": {"type": "json_object"}}
         if self.temperature is not None:
             body["temperature"] = self.temperature
@@ -80,6 +110,16 @@ class DeepSeekProvider:
     def __call__(self, prompt, digest, attempt):
         prompt_json = json.dumps(prompt, ensure_ascii=False)
         api_key = self._api_key()
+        request_id = f"{digest}-{attempt}"
+        if self.budget is not None:
+            # Character count as the input-token ceiling is a deliberately loose, safe
+            # over-estimate (real tokenization is essentially never more tokens than characters
+            # for this JSON/English payload) -- reservation must never underestimate. Settled
+            # below with the provider's actual reported usage; if the call fails before a
+            # response is ever received, the reservation is never settled and so stays charged
+            # at this full ceiling, per P7-3 ("never treat unknown usage as zero").
+            input_ceiling = len(prompt_json) + len(self.system_prompt)
+            self.budget.reserve(request_id, input_ceiling, self.max_output_tokens)
         payload = json.dumps(self._request_body(prompt_json)).encode("utf-8")
         request = urllib.request.Request(
             self.base_url, data=payload, method="POST",
@@ -107,7 +147,10 @@ class DeepSeekProvider:
         except (KeyError, IndexError, TypeError) as error:
             raise ProviderError(f"DeepSeek response has an unexpected shape: {error}") from error
         usage = response_body.get("usage") or {}
-        return {"raw": text,
+        if self.budget is not None:
+            self.budget.settle(request_id, usage)
+        return {"raw": text, "provider_response": response_body,
+                "finish_reason": response_body["choices"][0].get("finish_reason"),
                 "usage": {"input_tokens": usage.get("prompt_tokens"),
                          "output_tokens": usage.get("completion_tokens"),
                          "cost_basis": None}}
