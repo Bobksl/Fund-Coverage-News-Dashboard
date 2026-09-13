@@ -153,6 +153,25 @@ def build_prompt(decision, evidence_inputs, claims, prompt_version):
                   "held_status": decision["held_status"]},
         "claims": claims,
         "evidence": evidence_inputs,
+        # p2-draft2 repair: a live deepseek-flash call returned a nested {"en": {...}, "zh":
+        # {...}} shape with its own field names (factual_summary/investment_interpretation)
+        # instead of the flat contract tools.drafting.validate_card actually checks. DRAFT_RULES
+        # never named the required keys, so the model invented its own -- the same class of gap
+        # Phase 5 found in the classifier's evidence_refs. This is the one corresponding repair
+        # for the drafting path: state the exact flat schema explicitly.
+        "output_schema": {
+            "type": "object",
+            "required": list(TEXT_FIELDS) + ["claim_refs", "canonical_source_url"],
+            "properties": {field: {"type": "string"} for field in TEXT_FIELDS} | {
+                "claim_refs": {"type": "array", "items": {"type": "string"},
+                              "description": "claim_id values from the supplied claims that "
+                                             "this card's substantive statements cite"},
+                "canonical_source_url": {"type": ["string", "null"]},
+            },
+            "note": "Return exactly these six flat top-level string fields plus claim_refs and "
+                    "canonical_source_url -- no nested objects (no top-level \"en\"/\"zh\" "
+                    "groups), no renamed fields, no extra top-level keys.",
+        },
     }
     leaks = leakage_scan(payload)
     if leaks:

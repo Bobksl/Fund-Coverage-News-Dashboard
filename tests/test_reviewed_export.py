@@ -105,6 +105,10 @@ class WriteReviewedFeedTests(unittest.TestCase):
             self.assertEqual(index["total_approved_cards"], 1)
             self.assertTrue((out_dir / "2026-09-01.json").exists())
             self.assertTrue((out_dir / "index.json").exists())
+            # Phase 6 repair: site/app.js's init() reads meta.dates for the navigable range
+            # (separate from meta.dates_with_cards) and crashed on it being undefined the first
+            # time this feed was actually served. This feed only knows dates with a card.
+            self.assertEqual(index["dates"], index["dates_with_cards"])
 
     def test_writes_nothing_when_nothing_is_approved(self):
         with temporary_directory() as workspace:

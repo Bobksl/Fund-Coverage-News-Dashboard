@@ -133,6 +133,15 @@ class DrafterTests(unittest.TestCase):
         self.assertNotIn("event_group_id", json.dumps(prompt))
         self.assertEqual(prompt["event"]["held_status"], "monitored")
 
+    def test_drafting_prompt_names_the_required_flat_output_fields(self):
+        # Phase 6 repair: a live deepseek-flash call nested the card under "en"/"zh" objects
+        # with its own field names because nothing in the prompt ever named the required flat
+        # schema. Pin that the schema block lists every field validate_card actually checks.
+        prompt = drafting.build_prompt(decision(), [{"article_id": "a1"}], CLAIMS, "d1")
+        required = set(prompt["output_schema"]["required"])
+        self.assertTrue(set(drafting.TEXT_FIELDS).issubset(required))
+        self.assertIn("claim_refs", required)
+
     def test_provider_usage_and_latency_are_recorded_without_inventing_a_price(self):
         response = {"raw": json.dumps(card()),
                     "usage": {"input_tokens": 900, "output_tokens": 300}}

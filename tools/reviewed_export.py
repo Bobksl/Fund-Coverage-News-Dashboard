@@ -97,6 +97,11 @@ def write_reviewed_feed(out_dir, decisions_by_event_id, drafted_cards, evidence_
         (out_dir / f"{date}.json").write_text(
             json.dumps(ordered, indent=2, ensure_ascii=False), encoding="utf-8")
     index = {
+        # site/app.js's init() reads meta.dates for the navigable date range (separate from
+        # meta.dates_with_cards, which flags which of those have a card) -- found live when the
+        # reviewed feed crashed the UI on `state.dates.includes` with dates left undefined. This
+        # feed only ever knows about dates that have an approved card, so the two lists coincide.
+        "dates": sorted(by_date),
         "dates_with_cards": sorted(by_date),
         "total_approved_cards": len(cards),
         "generated_from": "tools.reviewed_export (approval-ledger-gated, real drafted cards only)",
