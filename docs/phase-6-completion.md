@@ -91,6 +91,10 @@ the single-card loop (drafting's flat-schema gap, the reviewed-feed's missing `d
 should not be read as pre-clearing changes for the larger Phase 7 run — that run may surface
 different gaps at a different scale and needs its own adjudication.
 
+> **Scope correction (P7-1, 2026-09-13):** "57-article" and "21-article" above are publish-worthy
+> event counts, not article counts. Phase 7's frozen scope is 188/56/30 = 274 article inputs; see
+> `docs/phase-7-scope.md`.
+
 ## Verification
 
 345 pre-existing tests plus 2 new ones (346 total) pass; `tools/validate_spec.py` reports zero

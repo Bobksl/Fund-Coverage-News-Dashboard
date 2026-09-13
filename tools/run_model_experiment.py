@@ -22,7 +22,7 @@ import os
 import time
 from pathlib import Path
 
-from tools import baseline, classifier, corpus, runner
+from tools import baseline, classifier, corpus, phase7_scope, runner
 from tools.records import loads, read_jsonl
 
 # p2: the one calibration-smoke-driven repair (docs/phase-5-review-decisions.md) -- an explicit
@@ -235,7 +235,10 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     manifest_data = loads(args.manifest.read_text(encoding="utf-8"))
-    article_ids = (manifest_data["article_ids"] if isinstance(manifest_data, dict)
+    # P7-1 (docs/phase-7-scope.md): refuse a replay-only, tampered, mislabelled or exclusion-bearing
+    # scope manifest before any provider can be constructed.
+    phase7_scope.check_run_manifest(manifest_data, args.partition, args.replay)
+    article_ids =(manifest_data["article_ids"] if isinstance(manifest_data, dict)
                   else manifest_data)
 
     settings_overrides = {key: value for key, value in {

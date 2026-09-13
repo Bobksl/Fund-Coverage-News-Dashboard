@@ -51,6 +51,12 @@ whether closing them was *sufficient* for the next scale of run, which is a diff
 
 ## What Phase 7 actually is
 
+> **Scope correction (P7-1, 2026-09-13):** the "57 articles" / "21 articles" below are
+> publish-worthy *event* counts from `docs/phase-2-disposition.md`, not article counts. The frozen
+> Phase 7 scope is freeze-001's **188 calibration / 56 holdout / 30 challenge = 274 article
+> inputs**, not 91 challenge probes. `docs/phase-7-scope.md` is canonical; the text below is left
+> as originally written.
+
 The full natural-feed calibration partition (57 articles) and historical holdout (21 articles) —
 Stages 3–4 of the original Phase 5 sequence (`docs/handover-phase-5.md` section 9) — plus challenge
 diagnostics (Stage 5), reported separately from natural-feed results as always. This is the first

@@ -26,6 +26,11 @@ The registry's 60 linked natural probes include that excluded natural article. T
 
 Recommendation: retain 188/56/30 as the frozen historical comparison. If a separate linked diagnostic report is wanted, explicitly freeze its 59 included article IDs as a supplementary replay-only cohort; preserve both exclusions. Do not label a 30-article result as a 91-probe result. The handover's requested Stage D scope must be reconciled in the execution record before Stage A.
 
+> **P7-1 resolution (2026-09-13, added after this review):** reconciled in `docs/phase-7-scope.md`,
+> which is now canonical for Phase 7 membership. 188/56/30 = 274 governs; both exclusions are
+> preserved; the 59 linked IDs are frozen only as a separately named replay-only diagnostic. The
+> numbers in this review are left as written.
+
 Hashes were independently recomputed: frozen evidence JSONL and split match freeze-record.json; all 275 available bodies match their recorded hashes using the repository's `evidence_capture.digest` normalization. No missing hashed body. All three smoke manifests' article-ID hashes verify: preserved v1 has 11 articles, v2 has 9, current v3 has 9. Smoke manifest versions and live-run versions are separate identifiers.
 
 ### Metadata/input-shape audit
@@ -105,6 +110,9 @@ Actual serialized message totals are 6,372,767 calibration characters, 1,898,159
 | Same, 50% planning headroom | — | — | 8.13 | 4.07 |
 
 For the unapproved all-91-registry alternative, 59 would replay and 32 need calls, giving 276 unique inputs and 464 article-config evaluations with a calibration rerun: $3.24 without repair / $5.44 with repair, or $8.17 including 50% headroom. This is a scope illustration, not permission to restore excluded inputs.
+
+> **Pointer (P7-1):** the 274-row scenarios are the frozen scope; the 91/276 figures above are the
+> unapproved alternative only. See `docs/phase-7-scope.md`.
 
 Recommend a **US$25 hard authorization cap**, not an authorization. This includes initial calibration, one possible full repaired calibration, holdout and only missing challenge inputs. As a stress calculation, two schema attempts for every one of the 462 evaluations, each reaching 16,384 output tokens, plus the provisional input baseline, costs about $20.96 at peak/cache-miss rates. $25 gives further limited headroom. It is not a mathematical ceiling on uncontrolled transport retries or unknown billing; P7-3 must stop dispatches conservatively at the cap. If losses/retries exhaust it, stop incomplete and report; never silently top up. No drafting or unlimited tuning included. The old Phase 5 cap is not transferable authorization.
 

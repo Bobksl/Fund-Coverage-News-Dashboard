@@ -96,6 +96,10 @@ tracked manager's own vehicle (OTF), correctly distinguished from the manager it
 
 ## What is explicitly Phase 7's job, not Phase 6's
 
+> **Scope correction (P7-1, 2026-09-13):** "57 articles" / "21 articles" below are publish-worthy
+> event counts, not article counts. Phase 7's frozen scope is 188/56/30 = 274 article inputs; see
+> `docs/phase-7-scope.md`.
+
 - The full calibration partition (57 articles) and historical holdout (21 articles) — Stage 3–4 of
   the original Phase 5 sequence — run against the same frozen prompt (`p2`) and settings this phase
   established, under Codex's own budget authorization. Do not start this under Phase 6.

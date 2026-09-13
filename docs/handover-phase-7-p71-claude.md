@@ -47,6 +47,11 @@ trust this summary blindly):
   undated). **`challenge_category`/`selection_reason` fields in this registry are evaluator-only
   per `tools/records.py:EVALUATOR_ONLY` — an ID projection (article IDs alone) is fine to move
   around; those fields must never cross into anything the classifier reads.**
+- **Correction (found while closing P7-1):** by the registry's own `linked_natural_feed_article_id`
+  projection it is **60 linked / 31 independent**, as the audit says, not 59/32. 59 of the 60
+  linked probes are frozen natural-feed inputs; the 60th is the quarantined `f6400cea…`. 30 of the
+  31 independent probes are the frozen challenge partition; the 31st is the undated `e0f8d0fc…`.
+  See `docs/phase-7-scope.md`.
 - Running "all 91 registered probes" is explicitly **not authorized** — it was a scope
   illustration in the cost estimate, not a decision. Do not build tooling that defaults to it.
 
