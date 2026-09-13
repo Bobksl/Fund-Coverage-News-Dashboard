@@ -55,8 +55,20 @@ Spec: [docs/phase-8-plan.md](../docs/phase-8-plan.md). Second delivery (schedule
   default profile before creating any spend ledger. A live run needs its own declared profile, and
   its stored responses will then replay only under that profile, not beside v3 replays in one queue.
   Decide this together with any budget approval.
-- [ ] T5 Draft (stored/capped only) and ledger review for shortlisted events.
-- [ ] T8 End-to-end replay verification in a real browser; docs.
-- Checkpoint 3: delivery acceptance; new-card check recorded as open.
+- [x] T5 Draft (stored drafts only; no paid drafting path) and ledger review for shortlisted events.
+- [x] T8 End-to-end replay verification in a real browser; docs.
+- [x] Checkpoint 3 (2026-09-13): delivery accepted for the zero-spend replay demo; new-card check
+      recorded as open. See [docs/phase-8-first-delivery.md](../docs/phase-8-first-delivery.md).
+      `draft`, `show-draft`, `review`, `publish` in `tools/manual_update.py` (21 tests; suite
+      425 passed). Real run in `work/phase8/workspace`: stored Phase 6 draft replayed with the same
+      input hash `cda53460…` and content hash `9fbb0cc…`; edition `manual-2026-09-13-replay`
+      published through the Phase 6 ledger gate and picked up by browser reload with source-check
+      and publication timestamps, EN/ZH card and source link. Also added a bounded retry for
+      transient OneDrive file locks after one non-reproducible `PermissionError` (0 of 15 reruns).
+
+## Budget decision (user, 2026-09-13)
+
+Spending approval is disapproved. Paid classification, paid drafting and a genuinely new approved
+card are current limitations of the project demo, not open tasks.
 
 Unchanged: scoring weights, frozen Phase 7 artifacts, `automated_selection_readiness`.

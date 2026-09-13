@@ -10,7 +10,9 @@ import unittest
 
 from tests.fixtures import article, decision, temporary_directory
 from tests.test_classifier import valid_output
-from tools import approval_ledger, baseline, classifier, grouping, manual_update, publication
+from tests.test_drafting import CLAIMS, card as drafted_card
+from tools import (approval_ledger, baseline, classifier, drafting, grouping, manual_update,
+                   publication)
 from tools.inference_budget import BudgetStop
 from tools.records import CREDENTIAL_KEY, leakage_scan, read_jsonl, validate_article
 
@@ -272,6 +274,128 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual(entry["article_dates"], ["2026-09-01"])
         self.assertEqual(len(entry["components"]), 6)
         self.assertTrue(all(c["reason"] for c in entry["components"]))
+
+
+DRAFT_PROFILE = {"model_id": "fixture-draft-1", "prompt_version": "d1", "inference_settings": {},
+                 "max_attempts": 2}
+
+
+class DraftProvider:
+    """Stand-in for an earlier drafting run; a Phase 8 draft step never receives a provider."""
+
+    def __call__(self, prompt, digest, attempt):
+        return json.dumps(drafted_card())
+
+
+def shortlisted_workspace(root):
+    workspace = root / "ws"
+    manual_update.intake(workspace, batch(item()), AT)
+    seed_store(workspace, root / "reuse")
+    queue = manual_update.build_queue(workspace, CONFIG, PROFILE, AT, reuse_stores=[root / "reuse"])
+    return workspace, queue["events"][0]["event_id"]
+
+
+def seed_draft_store(workspace, store_dir):
+    """A prior drafting run's stored responses for exactly these inputs, as a reuse source."""
+    queue, decisions = manual_update.load_decisions(workspace)
+    evidence = {record["article_id"]: record for record in manual_update.load_evidence(workspace)[0]}
+    store = classifier.RawOutputStore(store_dir)
+    drafter = drafting.Drafter(DraftProvider(), store, DRAFT_PROFILE["model_id"],
+                               DRAFT_PROFILE["prompt_version"], max_attempts=2, inference_settings={})
+    for event in queue["events"]:
+        drafter.draft(decisions[event["event_id"]], evidence, CLAIMS)
+
+
+def stored_draft(workspace, event_id):
+    return json.loads((workspace / "drafts" / f"{event_id}.json").read_text(encoding="utf-8"))
+
+
+class DraftReviewPublishTests(unittest.TestCase):
+    def draft(self, root):
+        workspace, event_id = shortlisted_workspace(root)
+        seed_draft_store(workspace, root / "drafts-reuse")
+        report = manual_update.draft_shortlisted(workspace, CONFIG, DRAFT_PROFILE, LATER,
+                                                 claims_by_event={event_id: CLAIMS},
+                                                 reuse_stores=[root / "drafts-reuse"])
+        return workspace, event_id, report
+
+    def test_a_stored_draft_replays_at_zero_spend_and_waits_for_a_person(self):
+        with temporary_directory() as root:
+            workspace, event_id = shortlisted_workspace(root)
+            seed_draft_store(workspace, root / "drafts-reuse")
+            before = sorted(p.name for p in (root / "drafts-reuse").iterdir())
+            report = manual_update.draft_shortlisted(workspace, CONFIG, DRAFT_PROFILE, LATER,
+                                                     claims_by_event={event_id: CLAIMS},
+                                                     reuse_stores=[root / "drafts-reuse"])
+            self.assertEqual(sorted(p.name for p in (root / "drafts-reuse").iterdir()), before)
+            self.assertEqual(report["awaiting_drafting"], [])
+            drafted = report["drafted"][0]
+            self.assertEqual((drafted["event_id"], drafted["status"]),
+                             (event_id, "ready_for_analyst_review"))
+            self.assertEqual(drafted["content_hash"],
+                             approval_ledger.content_hash(stored_draft(workspace, event_id)["content"]))
+            queue = manual_update.build_queue(workspace, CONFIG, PROFILE, LATER)
+            self.assertEqual(queue["events"][0]["draft"],
+                             {"status": "ready_for_analyst_review",
+                              "content_hash": drafted["content_hash"], "approved_exact_in": []})
+
+    def test_without_a_stored_draft_the_event_waits_and_nothing_is_drafted(self):
+        with temporary_directory() as root:
+            workspace, event_id = shortlisted_workspace(root)
+            report = manual_update.draft_shortlisted(workspace, CONFIG, DRAFT_PROFILE, LATER,
+                                                     claims_by_event={event_id: CLAIMS})
+            self.assertEqual(report["drafted"], [])
+            self.assertEqual(report["awaiting_drafting"][0]["event_id"], event_id)
+            self.assertFalse((workspace / "drafts" / f"{event_id}.json").exists())
+            queue = manual_update.build_queue(workspace, CONFIG, PROFILE, LATER)
+            self.assertIsNone(queue["events"][0]["draft"])
+
+    def test_review_binds_the_exact_draft_and_only_that_draft_publishes(self):
+        with temporary_directory() as root:
+            workspace, event_id, _ = self.draft(root)
+            ledger = root / "ledger.csv"
+            row = manual_update.record_review(workspace, event_id, "AN01", "approved", LATER, ledger)
+            self.assertEqual(row["content_hash"],
+                             approval_ledger.content_hash(stored_draft(workspace, event_id)["content"]))
+            queue = manual_update.build_queue(workspace, CONFIG, PROFILE, LATER,
+                                              ledgers={"phase8": ledger})
+            self.assertEqual(queue["events"][0]["draft"]["approved_exact_in"], ["phase8"])
+            pointer = manual_update.publish_workspace(workspace, root / "site", "ed-001",
+                                                      "reviewed_update", ledger, LATER)
+            self.assertEqual(pointer["total_approved_cards"], 1)
+            self.assertEqual(pointer["article_dates"], ["2026-09-12"])
+
+    def test_edited_or_rejected_drafts_cannot_publish_and_the_last_edition_stays(self):
+        with temporary_directory() as root:
+            workspace, event_id, _ = self.draft(root)
+            ledger = root / "ledger.csv"
+            manual_update.record_review(workspace, event_id, "AN01", "approved", LATER, ledger)
+            manual_update.publish_workspace(workspace, root / "site", "ed-001", "reviewed_update",
+                                            ledger, LATER)
+            before = (root / "site" / "publication.json").read_bytes()
+            path = workspace / "drafts" / f"{event_id}.json"
+            original = path.read_bytes()
+            edited = stored_draft(workspace, event_id)
+            edited["content"]["headline_en"] += " (edited after approval)"
+            path.write_text(json.dumps(edited, ensure_ascii=False), encoding="utf-8")
+            with self.assertRaises(publication.PublishError):
+                manual_update.publish_workspace(workspace, root / "site", "ed-002",
+                                                "reviewed_update", ledger, LATER)
+            path.write_bytes(original)
+            manual_update.record_review(workspace, event_id, "AN01", "rejected", LATER, ledger,
+                                        notes="figure needs checking")
+            with self.assertRaises(publication.PublishError):
+                manual_update.publish_workspace(workspace, root / "site", "ed-003",
+                                                "reviewed_update", ledger, LATER)
+            self.assertEqual((root / "site" / "publication.json").read_bytes(), before)
+
+    def test_an_event_without_a_ready_draft_cannot_be_reviewed(self):
+        with temporary_directory() as root:
+            workspace, event_id = shortlisted_workspace(root)
+            with self.assertRaises(ValueError):
+                manual_update.record_review(workspace, event_id, "AN01", "approved", LATER,
+                                            root / "ledger.csv")
+            self.assertFalse((root / "ledger.csv").exists())
 
 
 if __name__ == "__main__":

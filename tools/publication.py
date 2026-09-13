@@ -18,6 +18,7 @@ import json
 import os
 import re
 import shutil
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -32,6 +33,11 @@ EDITION_KINDS = {"historical_sample", "reviewed_update"}
 SOURCE_CHECK_STATUSES = {"succeeded", "failed", "budget_stopped"}
 PUBLICATION_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$")
 STALE_AFTER_HOURS = 24
+# The repository lives in a OneDrive-synced folder, where a sync or antivirus handle can hold a
+# just-written file for a moment and os.replace fails with "Access is denied". Retry briefly; a
+# lock that does not clear still raises.
+REPLACE_ATTEMPTS = 5
+REPLACE_RETRY_SECONDS = 0.2
 FOOTER = ("Published by tools/publication.py from approval-ledger-gated cards "
           "(tools/reviewed_export.py). Updates are manual: an operator processes supplied "
           "evidence, a named reviewer approves an exact card revision, and only then is a new "
@@ -64,12 +70,24 @@ def tree_digest(directory):
     return digest.hexdigest()
 
 
-def _write_json_atomic(path, payload):
+def replace_with_retry(source, target):
+    """os.replace, retried a bounded number of times while a transient lock holds the target."""
+    for attempt in range(1, REPLACE_ATTEMPTS + 1):
+        try:
+            os.replace(source, target)
+            return
+        except PermissionError:
+            if attempt == REPLACE_ATTEMPTS:
+                raise
+            time.sleep(REPLACE_RETRY_SECONDS * attempt)
+
+
+def write_json_atomic(path, payload):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + ".partial")
     temporary.write_bytes(json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8"))
-    os.replace(temporary, path)
+    replace_with_retry(temporary, path)
 
 
 def read_status(site_dir):
@@ -84,7 +102,7 @@ def read_status(site_dir):
 
 def _update_status(site_dir, **changes):
     status = dict(read_status(site_dir), **changes)
-    _write_json_atomic(Path(site_dir) / "status.json", status)
+    write_json_atomic(Path(site_dir) / "status.json", status)
     return status
 
 
@@ -132,13 +150,13 @@ def publish(site_dir, publication_id, published_at, edition_kind, decisions_by_e
         for name in SITE_FILES:
             temporary = site_dir / f"{name}.partial"
             shutil.copyfile(Path(site_source) / name, temporary)
-            os.replace(temporary, site_dir / name)
+            replace_with_retry(temporary, site_dir / name)
         pointer = {"schema": "publication-v1", "publication_id": publication_id,
                    "published_at": published_at, "edition_kind": edition_kind,
                    "update_mode": "manual", "edition_path": f"editions/{publication_id}",
                    "edition_sha256": digest, "total_approved_cards": index["total_approved_cards"],
                    "article_dates": index["dates_with_cards"], "page_text": PAGE_TEXT[edition_kind]}
-        _write_json_atomic(site_dir / "publication.json", pointer)
+        write_json_atomic(site_dir / "publication.json", pointer)
     except Exception as error:
         shutil.rmtree(staging, ignore_errors=True)
         if moved:

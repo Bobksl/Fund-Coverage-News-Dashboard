@@ -7,7 +7,7 @@ const HK_TIME = new Intl.DateTimeFormat("en-GB", {
   hour: "2-digit", minute: "2-digit", hour12: false,
 });
 const SECTIONS = [
-  ["shortlisted", "Shortlisted — needs drafting and ledger approval"],
+  ["shortlisted", "Shortlisted — needs a draft and ledger approval before publishing"],
   ["reserve", "Reserve — manual approval only"],
   ["review", "Sent for review"],
   ["suppressed", "Suppressed"],
@@ -58,14 +58,28 @@ function table(headers, rows) {
   ])]);
 }
 
+function draftText(draft) {
+  if (!draft) {
+    return "No draft. Only an exact input drafted earlier can replay; drafting a new card needs " +
+      "paid model calls, which are not approved for this demo.";
+  }
+  const approval = draft.approved_exact_in.length
+    ? `approved at this exact revision and content in: ${draft.approved_exact_in.join(", ")}`
+    : "not approved at this exact revision and content";
+  return `Draft ${draft.status} · content ${draft.content_hash ? draft.content_hash.slice(0, 12) : "none"} · ` +
+    `${approval}. It appears in an edition only after the operator's publish step.`;
+}
+
 function eventCard(event) {
   const title = (event.sources[0] && event.sources[0].title) || event.event_id;
+  const shortlisted = event.bucket === "shortlisted";
   const pills = el("div", {}, [
     el("span", {className: "pill", text: event.recommendation}),
     el("span", {className: "pill", text: `score ${event.total_score ?? "n/a"}`}),
     event.relevance_level ? el("span", {className: "pill", text: `level ${event.relevance_level}`}) : null,
     event.edition_position ? el("span", {className: "pill", text: `edition: ${event.edition_position}`}) : null,
     el("span", {className: "pill", text: `publication: ${event.publication_status}`}),
+    shortlisted ? el("span", {className: "pill", text: `draft: ${event.draft ? event.draft.status : "none"}`}) : null,
   ]);
   const why = el("ul", {className: "why"}, event.reasons.map((reason) =>
     el("li", {}, [el("strong", {text: `${reason.code}: `}), document.createTextNode(reason.explanation)])));
@@ -87,15 +101,16 @@ function eventCard(event) {
       `${event.provenance.replayed_stored_response ? "replayed stored response (no new model call)" : "live response"} · event ${event.event_id} revision ${event.revision}`}),
   ]);
   const sources = el("div", {className: "sources"}, event.sources.map(sourceNode));
+  const draft = shortlisted ? el("div", {className: "draft", text: draftText(event.draft)}) : null;
   const ledger = event.ledger_decisions.length === 0 ? null : el("div", {className: "ledger"}, [
-    el("div", {text: "Ledger history for this event id (not an approval of any new draft):"}),
+    el("div", {text: "Ledger history for this event id (a row approves only the exact content hash it recorded):"}),
     ...event.ledger_decisions.map((row) => el("div", {
       text: `${row.ledger}: ${row.status} revision ${row.revision} by ${row.reviewer_id} at ${formatInstant(row.reviewed_at)}`})),
   ]);
   return el("div", {className: "card"}, [
     el("h3", {text: title}), pills, why, ...facts, sources,
     el("div", {className: "muted", text: `Article dates: ${event.article_dates.join(", ") || "undated"}`}),
-    ledger, details,
+    draft, ledger, details,
   ]);
 }
 

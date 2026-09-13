@@ -141,6 +141,39 @@ class PublishTests(unittest.TestCase):
                 self.assertIsNone(CREDENTIAL_KEY.search(path.read_text(encoding="utf-8")), path)
 
 
+class LockedFileTests(unittest.TestCase):
+    """This workspace is synced by OneDrive; a sync or antivirus handle can briefly hold a file."""
+
+    def test_a_briefly_locked_replace_is_retried(self):
+        with temporary_directory() as workspace:
+            real_replace = publication.os.replace
+            calls = []
+
+            def flaky_replace(source, target):
+                calls.append(target)
+                if len(calls) == 1:
+                    raise PermissionError("[WinError 5] Access is denied")
+                return real_replace(source, target)
+
+            with mock.patch.object(publication.os, "replace", side_effect=flaky_replace), \
+                    mock.patch.object(publication.time, "sleep"):
+                publication.record_source_check(workspace / "site", "2026-09-13T00:00:00+00:00",
+                                                "succeeded", new_items=0)
+            self.assertEqual(len(calls), 2)
+            self.assertEqual(publication.read_status(workspace / "site")["last_source_check"]["status"],
+                             "succeeded")
+
+    def test_a_lock_that_never_clears_still_fails_after_bounded_attempts(self):
+        with temporary_directory() as workspace:
+            with mock.patch.object(publication.os, "replace",
+                                   side_effect=PermissionError("[WinError 5] Access is denied")) as replace, \
+                    mock.patch.object(publication.time, "sleep"):
+                with self.assertRaises(PermissionError):
+                    publication.record_source_check(workspace / "site", "2026-09-13T00:00:00+00:00",
+                                                    "failed")
+            self.assertEqual(replace.call_count, publication.REPLACE_ATTEMPTS)
+
+
 class SourceCheckStatusTests(unittest.TestCase):
     def test_statuses_are_distinct_and_a_failure_keeps_the_last_successful_check(self):
         with temporary_directory() as workspace:

@@ -1,6 +1,6 @@
-"""Phase 8 manual update: operator intake, a zero-spend review queue and candidate explanations.
+"""Phase 8 manual update: operator intake, a zero-spend review queue, drafts, review and publish.
 
-Three separate operator steps, each writing only under its workspace (git-ignored `work/`):
+Separate operator steps, each writing only under its workspace (git-ignored `work/`):
 
 1. `intake`: explicitly supplied source evidence (observations plus the permitted text an operator
    captured) becomes contract-valid evidence through tools.collection and tools.evidence_capture.
@@ -13,8 +13,13 @@ Three separate operator steps, each writing only under its workspace (git-ignore
    model) through tools.runner grouping and scoring, then writes queue.json with why each
    candidate was shortlisted, suppressed or sent for review. Stored responses from an earlier run
    are reused only for byte-identical inputs; everything else waits as awaiting_classification.
+4. `draft`: replays stored bilingual drafts for shortlisted events only, from grounded claims.
+   There is no paid drafting path; an event without a stored draft for its exact input waits.
+5. `show-draft` / `review`: a named human reviewer reads a draft and records approve/reject in the
+   approval ledger, bound to the exact (event_id, revision, content_hash).
+6. `publish`: builds an edition through tools.publication, which admits only exact approvals.
 
-Nothing here drafts, approves or publishes. The queue is an operator view, never an edition.
+Nothing here approves on its own, and the queue is an operator view, never an edition.
 """
 import argparse
 import hashlib
@@ -25,8 +30,9 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
-from tools import (approval_ledger, baseline, classifier, collection, evidence_capture, publication,
-                   runner)
+from tools import (approval_ledger, baseline, classifier, collection, drafting, evidence_capture,
+                   publication, runner)
+from tools import claims as grounded_claims
 from tools.inference_budget import BudgetStop, SpendLedger
 from tools.records import (COMPONENTS, INFERENCE_ALLOWLIST, publication_date, read_jsonl,
                            to_inference_input, write_jsonl)
@@ -36,12 +42,16 @@ OPERATOR_SITE = ROOT / "site" / "operator"
 OPERATOR_FILES = ("index.html", "queue.js")
 DEFAULT_WORKSPACE = ROOT / "work/phase8/workspace"
 DEFAULT_OPERATOR_DIR = ROOT / "work/phase8/operator"
+DEFAULT_LEDGER = ROOT / "work/phase8/approval-ledger.csv"
 # The exact profile of calib-smoke-deepseek-flash-v3 (frozen prompt p2), so its stored responses
 # replay for byte-identical inputs. A different profile hashes differently and reuses nothing.
 DEFAULT_PROFILE = {"provider": "deepseek", "model_id": "deepseek-flash", "prompt_version": "p2",
                    "inference_settings": {"provider": "deepseek", "model_id": "deepseek-flash",
                                           "max_output_tokens": 16384, "prompt_version": "p2"},
                    "max_attempts": 2}
+# The exact drafting profile of the Phase 6 reviewed card (docs/phase-6-completion.md).
+DRAFT_PROFILE = {"model_id": "deepseek-flash", "prompt_version": "p2-draft3",
+                 "inference_settings": {}, "max_attempts": 2}
 OBSERVATION_FIELDS = ("url", "title", "publisher", "originating_publisher", "source_kind",
                       "published_at", "published_date_precision", "event_date", "access_status",
                       "supersedes_article_id")
@@ -67,6 +77,8 @@ REASON_TEXT = {
 }
 AWAITING_REASON = ("There is no stored model response for this exact input. Classifying it needs a "
                    "paid call under an explicitly approved spending cap (manual_update classify).")
+AWAITING_DRAFT_REASON = ("There is no stored draft for this exact event, evidence and claims. "
+                         "Drafting a new card needs a paid model call, and none is approved.")
 QUEUE_LIMITS = ("Candidates and explanations only. Component reasons are untrusted model output; "
                 "gates, totals and bands are computed deterministically from the anchors. No model "
                 "was called to build this queue, and nothing in it is approved or published.")
@@ -92,11 +104,7 @@ def _locked(workspace):
 
 
 def _write_json(path, payload):
-    path = Path(path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_name(path.name + ".partial")
-    temporary.write_bytes(json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8"))
-    os.replace(temporary, path)
+    publication.write_json_atomic(path, payload)
 
 
 def _append_jsonl(path, row):
@@ -115,6 +123,19 @@ def load_evidence(workspace):
         if ref and (workspace / ref).exists():
             bodies[record["article_id"]] = (workspace / ref).read_text(encoding="utf-8")
     return records, bodies
+
+
+def load_decisions(workspace):
+    """Return (queue.json, decisions by event_id of the run that queue was built from)."""
+    workspace = Path(workspace)
+    path = workspace / "queue.json"
+    if not path.exists():
+        raise FileNotFoundError(f"{path} does not exist; run build-queue first")
+    queue = json.loads(path.read_text(encoding="utf-8"))
+    if queue["run_id"] is None:
+        return queue, {}
+    predictions = read_jsonl(workspace / "runs" / queue["run_id"] / "predictions.jsonl")
+    return queue, {decision["event_id"]: decision for decision in predictions}
 
 
 def _batch_problems(batch, read_error):
@@ -216,20 +237,21 @@ def _classifier(provider, store, profile):
         max_attempts=profile["max_attempts"], inference_settings=profile["inference_settings"])
 
 
-def _import_reused(workspace, store, digests, reuse_stores):
+def _import_reused(workspace, store, digests, reuse_stores, log_name="reused-responses.jsonl",
+                   key="article_id"):
     """Copy stored responses for byte-identical inputs from earlier runs; sources stay untouched."""
-    for article_id, digest in sorted(digests.items()):
+    for identifier, digest in sorted(digests.items()):
         if store.load(digest, 1) is not None:
             continue
         for root in reuse_stores:
-            files = sorted(Path(root).glob(f"{digest}-*.json"))
             if not (Path(root) / f"{digest}-1.json").exists():
                 continue
+            files = sorted(Path(root).glob(f"{digest}-*.json"))
             for path in files:
                 shutil.copyfile(path, store.root / path.name)
-            _append_jsonl(workspace / "reused-responses.jsonl",
-                          {"article_id": article_id, "input_hash": digest, "source_store": str(root),
-                           "files": [path.name for path in files]})
+            _append_jsonl(workspace / log_name, {key: identifier, "input_hash": digest,
+                                                 "source_store": str(root),
+                                                 "files": [path.name for path in files]})
             break
 
 
@@ -345,6 +367,18 @@ def explain_decision(decision, scoring, evidence_by_id, edition_position=None, l
     }
 
 
+def _draft_state(workspace, event_id, revision, approved_by_label):
+    """The current draft file's status, hash and the ledgers approving exactly that revision."""
+    path = workspace / "drafts" / f"{event_id}.json"
+    if not path.exists():
+        return None
+    result = json.loads(path.read_text(encoding="utf-8"))
+    digest = approval_ledger.content_hash(result["content"]) if result.get("content") else None
+    return {"status": result["status"], "content_hash": digest,
+            "approved_exact_in": sorted(label for label, keys in approved_by_label.items()
+                                        if (event_id, str(revision), digest) in keys)}
+
+
 def export_operator(operator_dir, queue):
     """Write the local operator page. It is never part of a published site directory."""
     operator_dir = Path(operator_dir)
@@ -352,7 +386,7 @@ def export_operator(operator_dir, queue):
     for name in OPERATOR_FILES:
         temporary = operator_dir / f"{name}.partial"
         shutil.copyfile(OPERATOR_SITE / name, temporary)
-        os.replace(temporary, operator_dir / name)
+        publication.replace_with_retry(temporary, operator_dir / name)
     _write_json(operator_dir / "queue.json", queue)
 
 
@@ -360,6 +394,7 @@ def build_queue(workspace, config, profile, built_at, reuse_stores=(), ledgers=N
                 operator_dir=None):
     """Replay stored responses into grouped, scored, explained candidates. Calls no model."""
     workspace = Path(workspace)
+    ledgers = ledgers or {}
     with _locked(workspace):
         records, bodies = load_evidence(workspace)
         evidence_by_id = {record["article_id"]: record for record in records}
@@ -372,10 +407,14 @@ def build_queue(workspace, config, profile, built_at, reuse_stores=(), ledgers=N
                                          digests)
         positions = {event_id: position for position in ("selected", "overflow", "urgent_review")
                      for event_id in report.get(position, [])}
-        ledger_rows = _ledger_decisions(ledgers or {})
-        events = sorted((explain_decision(d, config["scoring"], evidence_by_id,
-                                          positions.get(d["event_id"]),
-                                          ledger_rows.get(d["event_id"], []))
+        ledger_rows = _ledger_decisions(ledgers)
+        approved_by_label = {label: approval_ledger.approved_keys(path)
+                             for label, path in ledgers.items()}
+        events = sorted((dict(explain_decision(d, config["scoring"], evidence_by_id,
+                                               positions.get(d["event_id"]),
+                                               ledger_rows.get(d["event_id"], [])),
+                              draft=_draft_state(workspace, d["event_id"], d["revision"],
+                                                 approved_by_label))
                          for d in decisions),
                         key=lambda e: (BUCKET_ORDER.index(e["bucket"]), -(e["total_score"] or 0),
                                        e["event_id"]))
@@ -405,6 +444,102 @@ def build_queue(workspace, config, profile, built_at, reuse_stores=(), ledgers=N
     return queue
 
 
+def _shortlisted(queue):
+    return [event["event_id"] for event in queue["events"] if event["bucket"] == "shortlisted"]
+
+
+def _draft_digest(decision, evidence_by_id, claims, draft_profile):
+    inputs = [to_inference_input(evidence_by_id[article_id])
+              for article_id in decision["article_ids"] if article_id in evidence_by_id]
+    prompt = drafting.build_prompt(decision, inputs, claims, draft_profile["prompt_version"])
+    return classifier.input_hash(prompt, draft_profile["model_id"], draft_profile["inference_settings"])
+
+
+def draft_shortlisted(workspace, config, draft_profile, drafted_at, claims_by_event=None,
+                      reuse_stores=()):
+    """Replay stored drafts for shortlisted events. There is no paid drafting path here.
+
+    Claims come from an operator-supplied, hand-verified file when given, otherwise from the
+    deterministic amount extractor. A draft file whose exact inputs have no stored draft is removed,
+    so an older draft (and any approval of it) can never stand in for changed inputs.
+    """
+    workspace = Path(workspace)
+    claims_by_event = claims_by_event or {}
+    with _locked(workspace):
+        queue, decisions = load_decisions(workspace)
+        records, bodies = load_evidence(workspace)
+        evidence_by_id = {record["article_id"]: record for record in records}
+        store = classifier.RawOutputStore(workspace / "draft-outputs")
+        shortlisted = _shortlisted(queue)
+        claims = {event_id: (claims_by_event[event_id] if event_id in claims_by_event else
+                             grounded_claims.claims_for_decision(decisions[event_id], bodies))
+                  for event_id in shortlisted}
+        digests = {event_id: _draft_digest(decisions[event_id], evidence_by_id, claims[event_id],
+                                           draft_profile)
+                   for event_id in shortlisted}
+        _import_reused(workspace, store, digests, reuse_stores, "reused-drafts.jsonl", "event_id")
+        drafter = drafting.Drafter(classifier.ReplayProvider(store), store, draft_profile["model_id"],
+                                   draft_profile["prompt_version"],
+                                   max_attempts=draft_profile["max_attempts"],
+                                   inference_settings=draft_profile["inference_settings"])
+        report = {"drafted_at": drafted_at,
+                  "draft_profile": {key: draft_profile[key] for key in ("model_id", "prompt_version")},
+                  "drafted": [], "awaiting_drafting": []}
+        for event_id in shortlisted:
+            _write_json(workspace / "claims" / f"{event_id}.json", claims[event_id])
+            draft_path = workspace / "drafts" / f"{event_id}.json"
+            if store.load(digests[event_id], 1) is None:
+                draft_path.unlink(missing_ok=True)
+                report["awaiting_drafting"].append({"event_id": event_id,
+                                                    "input_hash": digests[event_id],
+                                                    "reason": AWAITING_DRAFT_REASON})
+                continue
+            result = drafter.draft(decisions[event_id], evidence_by_id, claims[event_id])
+            _write_json(draft_path, result)
+            report["drafted"].append({
+                "event_id": event_id, "status": result["status"], "input_hash": digests[event_id],
+                "content_hash": (approval_ledger.content_hash(result["content"])
+                                 if result["content"] else None)})
+        _append_jsonl(workspace / "drafting-attempts.jsonl", report)
+    return report
+
+
+def record_review(workspace, event_id, reviewer_id, status, reviewed_at, ledger_path, notes=""):
+    """Append a named reviewer's decision on the exact current draft of one event."""
+    workspace = Path(workspace)
+    with _locked(workspace):
+        path = workspace / "drafts" / f"{event_id}.json"
+        result = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+        if not result or result.get("status") != "ready_for_analyst_review":
+            raise ValueError(f"{event_id} has no draft ready for analyst review")
+        _, decisions = load_decisions(workspace)
+        if event_id not in decisions:
+            raise ValueError(f"{event_id} is not in the current queue run")
+        return approval_ledger.append_review(ledger_path, event_id, decisions[event_id]["revision"],
+                                             result["content"], reviewer_id, reviewed_at, status,
+                                             notes)
+
+
+def publish_workspace(workspace, site_dir, publication_id, edition_kind, ledger_path, published_at):
+    """Publish drafts of currently shortlisted events; tools.publication admits exact approvals only."""
+    workspace = Path(workspace)
+    with _locked(workspace):
+        queue, decisions = load_decisions(workspace)
+        evidence_by_id = {record["article_id"]: record for record in load_evidence(workspace)[0]}
+        shortlisted = set(_shortlisted(queue))
+        drafts = [json.loads(path.read_text(encoding="utf-8"))
+                  for path in sorted((workspace / "drafts").glob("*.json"))]
+        drafts = [draft for draft in drafts if draft["event_id"] in shortlisted]
+        dates = {}
+        for event_id in shortlisted:
+            known = [publication_date(evidence_by_id[a]) for a in decisions[event_id]["article_ids"]
+                     if a in evidence_by_id and publication_date(evidence_by_id[a])]
+            if known:
+                dates[event_id] = min(known)
+    return publication.publish(site_dir, publication_id, published_at, edition_kind, decisions,
+                               drafts, evidence_by_id, ledger_path, dates)
+
+
 def _now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -418,31 +553,48 @@ def _profile(path, max_attempts):
             "inference_settings": manifest["inference_settings"], "max_attempts": max_attempts}
 
 
+def _pairs(values):
+    return dict(value.split("=", 1) for value in values)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     commands = parser.add_subparsers(dest="command", required=True)
-    for name in ("intake", "classify", "build-queue"):
-        command = commands.add_parser(name)
+    names = ("intake", "classify", "build-queue", "draft", "show-draft", "review", "publish")
+    sub = {name: commands.add_parser(name) for name in names}
+    for command in sub.values():
         command.add_argument("--workspace", type=Path, default=DEFAULT_WORKSPACE)
-        if name != "build-queue":
-            command.add_argument("--site", type=Path, default=publication.DEFAULT_SITE,
-                                 help="Published site whose status.json records this check")
-        if name != "intake":
-            command.add_argument("--reuse-store", type=Path, action="append", default=[],
-                                 help="Earlier raw-outputs directory; read and copied, never modified")
-            command.add_argument("--profile-from", type=Path, default=None,
-                                 help="run-manifest.json whose provider/model/prompt/settings to use "
-                                      "(default: the calib-smoke-deepseek-flash-v3 profile)")
-            command.add_argument("--max-attempts", type=int, default=2)
-    commands.choices["intake"].add_argument("batch", type=Path)
-    queue_command = commands.choices["build-queue"]
-    queue_command.add_argument("--ledger", action="append", default=[], metavar="LABEL=PATH")
-    queue_command.add_argument("--operator-dir", type=Path, default=DEFAULT_OPERATOR_DIR)
-    paid = commands.choices["classify"]
-    paid.add_argument("--provider", required=True, choices=["deepseek"])
+    for name in ("intake", "classify", "publish"):
+        sub[name].add_argument("--site", type=Path, default=publication.DEFAULT_SITE,
+                               help="Published site directory (its status.json or editions)")
+    for name in ("classify", "build-queue", "draft"):
+        sub[name].add_argument("--reuse-store", type=Path, action="append", default=[],
+                               help="Earlier raw-outputs directory; read and copied, never modified")
+    for name in ("classify", "build-queue"):
+        sub[name].add_argument("--profile-from", type=Path, default=None,
+                               help="run-manifest.json whose provider/model/prompt/settings to use "
+                                    "(default: the calib-smoke-deepseek-flash-v3 profile)")
+        sub[name].add_argument("--max-attempts", type=int, default=2)
+    sub["intake"].add_argument("batch", type=Path)
+    sub["build-queue"].add_argument("--ledger", action="append", default=[], metavar="LABEL=PATH")
+    sub["build-queue"].add_argument("--operator-dir", type=Path, default=DEFAULT_OPERATOR_DIR)
+    sub["draft"].add_argument("--claims", action="append", default=[], metavar="EVENT_ID=PATH",
+                              help="Hand-verified grounded claims JSON for one event")
+    for name in ("show-draft", "review"):
+        sub[name].add_argument("--event-id", required=True)
+    sub["review"].add_argument("--reviewer-id", required=True,
+                               help="The named human who read show-draft output; never a model")
+    sub["review"].add_argument("--status", required=True, choices=sorted(approval_ledger.STATUSES))
+    sub["review"].add_argument("--notes", default="")
+    sub["review"].add_argument("--ledger", type=Path, default=DEFAULT_LEDGER)
+    sub["publish"].add_argument("--id", required=True, help="New, never reused publication id")
+    sub["publish"].add_argument("--kind", required=True, choices=sorted(publication.EDITION_KINDS))
+    sub["publish"].add_argument("--ledger", type=Path, default=DEFAULT_LEDGER)
+    sub["classify"].add_argument("--provider", required=True, choices=["deepseek"])
     for flag in ("--spend-ledger", "--cap-usd", "--input-per-million", "--output-per-million"):
-        paid.add_argument(flag, required=True, help="Explicit, user-approved spending authorization")
+        sub["classify"].add_argument(flag, required=True,
+                                     help="Explicit, user-approved spending authorization")
     args = parser.parse_args(argv)
     config = baseline.load_config()
 
@@ -454,16 +606,47 @@ def main(argv=None):
         report = intake(args.workspace, batch, _now(), site_dir=args.site, read_error=read_error)
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return 0 if report["status"] == "succeeded" else 2
-
-    profile = _profile(args.profile_from, args.max_attempts)
     if args.command == "build-queue":
-        ledgers = dict(item.split("=", 1) for item in args.ledger)
-        queue = build_queue(args.workspace, config, profile, _now(), args.reuse_store, ledgers,
-                            args.operator_dir)
+        queue = build_queue(args.workspace, config, _profile(args.profile_from, args.max_attempts),
+                            _now(), args.reuse_store, _pairs(args.ledger), args.operator_dir)
         print(json.dumps({"run_id": queue["run_id"], "counts": queue["counts"],
                           "operator_page": str(args.operator_dir / "index.html")}, indent=2))
         return 0
+    if args.command == "draft":
+        claims_by_event = {event_id: json.loads(Path(path).read_text(encoding="utf-8"))
+                           for event_id, path in _pairs(args.claims).items()}
+        report = draft_shortlisted(args.workspace, config, DRAFT_PROFILE, _now(), claims_by_event,
+                                   args.reuse_store)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0
+    if args.command == "show-draft":
+        path = args.workspace / "drafts" / f"{args.event_id}.json"
+        result = json.loads(path.read_text(encoding="utf-8"))
+        claims_path = args.workspace / "claims" / f"{args.event_id}.json"
+        print(json.dumps({"event_id": args.event_id, "status": result["status"],
+                          "defects": result["defects"], "content": result["content"],
+                          "content_hash": (approval_ledger.content_hash(result["content"])
+                                           if result["content"] else None),
+                          "claims": json.loads(claims_path.read_text(encoding="utf-8"))},
+                         ensure_ascii=False, indent=2))
+        return 0
+    if args.command == "review":
+        row = record_review(args.workspace, args.event_id, args.reviewer_id, args.status, _now(),
+                            args.ledger, args.notes)
+        print(json.dumps(row, ensure_ascii=False, indent=2))
+        return 0
+    if args.command == "publish":
+        try:
+            pointer = publish_workspace(args.workspace, args.site, args.id, args.kind, args.ledger,
+                                        _now())
+        except publication.PublishError as error:
+            print(json.dumps({"status": "failed", "detail": str(error),
+                              "served_edition": "unchanged"}, ensure_ascii=False))
+            return 2
+        print(json.dumps(pointer, ensure_ascii=False, indent=2))
+        return 0
 
+    profile = _profile(args.profile_from, args.max_attempts)
     from tools.providers.deepseek_provider import DeepSeekProvider
     declared = profile["inference_settings"]
     request = {"max_output_tokens": declared.get("max_output_tokens")}
