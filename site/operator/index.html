@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fund Coverage News — Operator Review Queue</title>
+<style>
+  :root {
+    --bg: #f4f5f7; --panel: #ffffff; --border: #dfe3e8; --text: #1c2430; --muted: #6b7280;
+    --accent: #1f4fd8; --warn-bg: #eef1f6; --warn-border: #9aa5b5; --warn-text: #1c2430;
+    --pass: #1f9d55; --fail: #9b2c2c; --review: #b7791f;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+  header { padding: 20px 24px 8px; }
+  h1 { margin: 0 0 4px; font-size: 20px; }
+  h2 { font-size: 15px; margin: 22px 0 8px; }
+  .subtitle, .meta, .muted { color: var(--muted); font-size: 12px; }
+  .banner { margin: 10px 24px; padding: 10px 14px; background: var(--warn-bg); border: 1px solid var(--warn-border);
+            border-radius: 8px; font-size: 13px; line-height: 1.5; }
+  .toolbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 0 24px; font-size: 12px; }
+  .toolbar button { padding: 6px 12px; border: 1px solid var(--border); background: var(--panel);
+                    border-radius: 6px; cursor: pointer; font-size: 13px; }
+  main { padding: 0 24px 40px; max-width: 980px; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; }
+  .card h3 { font-size: 14px; margin: 0 0 6px; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600;
+          background: #eef1f6; margin: 0 4px 4px 0; }
+  .pill.pass { background: #e3f5ea; color: var(--pass); }
+  .pill.fail { background: #fbe9e9; color: var(--fail); }
+  .pill.review_required, .pill.not_evaluated { background: #fdf3e1; color: var(--review); }
+  .why { margin: 8px 0; font-size: 13px; }
+  .why li { margin-bottom: 3px; }
+  details { margin-top: 6px; font-size: 12px; }
+  summary { cursor: pointer; color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin-top: 6px; }
+  td, th { text-align: left; vertical-align: top; padding: 4px 6px; border-top: 1px solid var(--border); }
+  .table-wrap { overflow-x: auto; }
+  .sources a { color: var(--accent); }
+  .ledger { margin-top: 8px; font-size: 12px; padding: 6px 8px; background: #fff8e6; border-radius: 6px; }
+  .empty { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Fund Coverage News — Operator Review Queue</h1>
+  <div class="subtitle">Local operator view · not published · not an edition</div>
+</header>
+<div class="banner">
+  Nothing on this page is approved or published. A shortlisted candidate still needs a drafted
+  bilingual card and a named reviewer's approval of that exact revision in the approval ledger
+  before it can be published. This page cannot collect news, call a model or approve anything.
+</div>
+<div class="toolbar">
+  <button id="reloadQueue" aria-describedby="reloadQueueHelp">Reload queue file</button>
+  <span id="reloadQueueHelp" class="muted">Re-reads queue.json as last built by the operator command; it does not rebuild the queue.</span>
+</div>
+<div class="toolbar"><span class="meta" id="queueMeta"></span></div>
+<main id="main"></main>
+<script src="queue.js"></script>
+</body>
+</html>

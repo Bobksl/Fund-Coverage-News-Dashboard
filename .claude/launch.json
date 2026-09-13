@@ -18,6 +18,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8645", "--bind", "127.0.0.1", "--directory", "work/phase8/verify-site"],
       "port": 8645
+    },
+    {
+      "name": "phase8-operator",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8646", "--bind", "127.0.0.1", "--directory", "work/phase8/operator"],
+      "port": 8646
     }
   ]
 }

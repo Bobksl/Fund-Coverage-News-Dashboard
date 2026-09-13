@@ -33,12 +33,28 @@ Spec: [docs/phase-8-plan.md](../docs/phase-8-plan.md). Second delivery (schedule
       `work/phase8/verify-site` showed distinct states for no new items, refused duplicate publish,
       budget stop, failed source check, edition swap on reload, and failed reload keeping the
       prior edition. Candidate explanations (plan item 3) are not yet shown; that is T3/T4.
-- [ ] T2 Operator intake CLI: supplied observations + text → evidence records; exact-input dedup;
+- [x] T2 Operator intake CLI: supplied observations + text → evidence records; exact-input dedup;
       attempt log.
-- [ ] T3 Queue build: stored-response reuse, `awaiting_classification`, grouping/scoring, per-candidate
+- [x] T3 Queue build: stored-response reuse, `awaiting_classification`, grouping/scoring, per-candidate
       explanation; distinct statuses for source failure and budget stop.
-- [ ] T4 Local operator queue page (shortlisted / suppressed / review / awaiting, with reasons).
-- Checkpoint 2: queue mechanics verified.
+- [x] T4 Local operator queue page (shortlisted / suppressed / review / awaiting, with reasons).
+- [x] Checkpoint 2 (2026-09-13): queue mechanics verified. `tools/manual_update.py`
+      (`intake`, `classify`, `build-queue`), `site/operator/`, `tests/test_manual_update.py`
+      (16 tests; suite 418 passed). Replay run in `work/phase8/verify-workspace`: 9 frozen smoke
+      articles + 1 real frozen article with no stored response were supplied as evidence; 9 replayed
+      from calib-smoke-deepseek-flash-v3 at zero spend, 1 `awaiting_classification`. The 8 queue events
+      have identical ids, recommendations, scores, levels and gates to v3. Identical resubmission:
+      10 duplicates, 0 new, same run reused. Operator page (`work/phase8/operator`, port 8646) verified
+      in a browser: sections and counts, reasons, score-only bands, gates/components table, sources,
+      Phase 6 ledger history labelled as not an approval, awaiting reason, queue reload, no console
+      errors. Fixed during verification: a review item's retained `shortlisted` code claimed every
+      gate passed.
+- Known limitation: the paid `classify` path is exercised only with an injected provider in tests.
+  `DeepSeekProvider` reports request settings (thinking, reasoning effort, top_p, system prompt hash,
+  and others) that the v3 replay profile does not declare, so the CLI refuses a live call under the
+  default profile before creating any spend ledger. A live run needs its own declared profile, and
+  its stored responses will then replay only under that profile, not beside v3 replays in one queue.
+  Decide this together with any budget approval.
 - [ ] T5 Draft (stored/capped only) and ledger review for shortlisted events.
 - [ ] T8 End-to-end replay verification in a real browser; docs.
 - Checkpoint 3: delivery acceptance; new-card check recorded as open.
