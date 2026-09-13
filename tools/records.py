@@ -41,7 +41,7 @@ INFERENCE_ALLOWLIST = ("article_id", "title", "original_url", "canonical_url", "
 # Evaluator-only ground truth. Never an inference input, at any nesting depth.
 EVALUATOR_ONLY = {"decision", "analyst_id", "relevance_label", "materiality_tier",
                   "event_group_id", "gold_event_group_id", "must_not_miss", "rationale",
-                  "evidence_access", "reviewed_on", "cohort", "challenge_category",
+                  "evidence_access", "reviewed_on", "cohort", "challenge_category", "categories",
                   "selection_reason", "split", "partition_reason", "gold", "labels"}
 
 DECISION_FIELDS = ("event_id", "revision", "decision_id", "run_id", "attempt", "article_ids",

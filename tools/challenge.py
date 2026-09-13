@@ -51,7 +51,9 @@ def validate_rows(rows, natural_feed_ids=frozenset()):
         if article_id in natural_feed_ids and not linked:
             errors.append(f"row {number}: {article_id} is already a natural-feed record and must "
                           "be linked rather than recounted")
-        forbidden = sorted(set(row) & (EVALUATOR_ONLY - {"selection_reason", "challenge_category"}))
+        # These fields belong in the evaluator-side registry, but never in inference inputs.
+        forbidden = sorted(set(row) & (EVALUATOR_ONLY - {
+            "selection_reason", "challenge_category", "categories"}))
         errors += [f"row {number}: carries analyst field {field}" for field in forbidden]
     return errors
 

@@ -7,6 +7,7 @@ from tests.fixtures import article, temporary_directory
 from tests.test_classifier import valid_output
 from tools import run_model_experiment as rme
 from tools.records import read_jsonl, write_jsonl
+from tools.inference_budget import SpendLedger
 
 
 IDS = [str(UUID(int=n)) for n in (701, 702)]
@@ -41,6 +42,7 @@ class Phase7AccountingTests(unittest.TestCase):
             name, "calibration", ids, evidence, None, workspace / name,
             raw_store_dir=workspace / "raw", provider_name="deepseek",
             model_id="fixture-model", inference_settings=settings,
+            spend_ledger=SpendLedger(workspace / 'synthetic-spend.jsonl', cap_usd='25'),
         )
 
     def test_grouped_events_keep_all_article_usage_and_attempts(self):

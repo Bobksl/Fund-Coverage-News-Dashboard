@@ -110,16 +110,6 @@ class DeepSeekProvider:
     def __call__(self, prompt, digest, attempt):
         prompt_json = json.dumps(prompt, ensure_ascii=False)
         api_key = self._api_key()
-        request_id = f"{digest}-{attempt}"
-        if self.budget is not None:
-            # Character count as the input-token ceiling is a deliberately loose, safe
-            # over-estimate (real tokenization is essentially never more tokens than characters
-            # for this JSON/English payload) -- reservation must never underestimate. Settled
-            # below with the provider's actual reported usage; if the call fails before a
-            # response is ever received, the reservation is never settled and so stays charged
-            # at this full ceiling, per P7-3 ("never treat unknown usage as zero").
-            input_ceiling = len(prompt_json) + len(self.system_prompt)
-            self.budget.reserve(request_id, input_ceiling, self.max_output_tokens)
         payload = json.dumps(self._request_body(prompt_json)).encode("utf-8")
         request = urllib.request.Request(
             self.base_url, data=payload, method="POST",
@@ -128,6 +118,12 @@ class DeepSeekProvider:
         last_error = None
         response_body = None
         for transport_attempt in range(1, self.transport_max_attempts + 1):
+            request_id = f"{digest}-{attempt}-{transport_attempt}"
+            if self.budget is not None:
+                # Reserve every HTTP dispatch, including retries after unknown billing.
+                # UTF-8 request bytes plus framing headroom is a conservative text-input
+                # token bound for this fixed JSON endpoint, including non-ASCII evidence.
+                self.budget.reserve(request_id, len(payload) + 4096, self.max_output_tokens)
             try:
                 with self.opener.urlopen(request, timeout=self.timeout_seconds) as response:
                     response_body = json.loads(response.read().decode("utf-8"))

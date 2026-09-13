@@ -53,6 +53,14 @@ class InferenceBoundaryTests(unittest.TestCase):
         found = records.leakage_scan({"a": [{"must_not_miss": "yes"}], "rationale": "x"})
         self.assertEqual(sorted(found), ["input.a[0].must_not_miss", "input.rationale"])
 
+    def test_registry_categories_are_evaluator_only_at_every_depth(self):
+        self.assertEqual(records.leakage_scan({"nested": [{"categories": ["probe"]}]}),
+                         ["input.nested[0].categories"])
+        self.assertNotIn("categories", records.to_inference_input(
+            dict(article(), categories=["probe"])))
+        with self.assertRaises(ValueError):
+            records.to_inference_input(dict(article(), title={"categories": ["probe"]}))
+
 
 class DecisionContractTests(unittest.TestCase):
     def test_valid_decision_passes(self):

@@ -20,9 +20,11 @@ import argparse
 import json
 import os
 import time
+from decimal import Decimal
 from pathlib import Path
 
 from tools import baseline, classifier, corpus, phase7_scope, runner
+from tools.inference_budget import BudgetStop, SpendLedger
 from tools.records import loads, read_jsonl
 
 # p2: the one calibration-smoke-driven repair (docs/phase-5-review-decisions.md) -- an explicit
@@ -109,7 +111,7 @@ def run_experiment(run_id, partition, manifest_article_ids, evidence_path, freez
                    output_dir, config_root=baseline.CONFIG_ROOT, evidence_store_dir=None,
                    raw_store_dir=None, prompt_version=DEFAULT_PROMPT_VERSION, provider_name=None,
                    model_id=None, provider_kwargs=None, inference_settings=None, replay=False,
-                   max_attempts=2):
+                   max_attempts=2, spend_ledger=None):
     """Run one partition through the structured classifier and write predictions + a run manifest.
 
     With `replay=True`, provider_name/model_id are still required (they identify which saved raw
@@ -119,6 +121,11 @@ def run_experiment(run_id, partition, manifest_article_ids, evidence_path, freez
     straight to the provider constructor -- this is how a reasoning model's `reasoning_content`
     budget (which counts against max_tokens on top of the visible JSON) gets enough headroom.
     """
+    if provider_name == "deepseek" and not replay and not isinstance(spend_ledger, SpendLedger):
+        raise ValueError("Live DeepSeek requires an explicit shared SpendLedger with approved cap/rates")
+    output_dir = Path(output_dir)
+    if (output_dir / "run-manifest.json").exists():
+        raise FileExistsError("Run manifest already exists; preserve it and use a new run directory")
     evidence_records = read_jsonl(evidence_path)
     freeze = loads(Path(freeze_path).read_text(encoding="utf-8")) if freeze_path else None
     manifest = corpus.inference_manifest(
@@ -142,6 +149,10 @@ def run_experiment(run_id, partition, manifest_article_ids, evidence_path, freez
             from tools.providers.deepseek_provider import DeepSeekProvider
             declared = dict(DeepSeekProvider(model_id, **kwargs).inference_settings(), **declared)
     else:
+        if spend_ledger is not None:
+            if "budget" in kwargs:
+                raise ValueError("Supply only spend_ledger, not a second provider budget")
+            kwargs["budget"] = spend_ledger
         provider = build_provider(provider_name, model_id, **kwargs)
         if hasattr(provider, "inference_settings"):
             effective = provider.inference_settings()
@@ -183,29 +194,52 @@ def run_experiment(run_id, partition, manifest_article_ids, evidence_path, freez
             handle.flush()
             os.fsync(handle.fileno())
 
+    budget_before = spend_ledger.summary() if spend_ledger and not replay else None
     started = time.perf_counter()
-    report = runner.run({"run_id": run_id, "partition": partition,
-                         "article_ids": manifest["article_ids"]},
-                        evidence_records, config, engine, output_dir, bodies=bodies,
-                        config_root=config_root, freeze=freeze,
-                        evidence_path=evidence_path if freeze else None, proposal_sink=save_article)
+    stopped = None
+    try:
+        report = runner.run({"run_id": run_id, "partition": partition,
+                             "article_ids": manifest["article_ids"]},
+                            evidence_records, config, engine, output_dir, bodies=bodies,
+                            config_root=config_root, freeze=freeze,
+                            evidence_path=evidence_path if freeze else None, proposal_sink=save_article)
+    except BudgetStop as error:
+        stopped = error
+        report = {"articles_in": len(manifest["article_ids"]), "predicted_events": None,
+                  "recommendations": {}, "selected": [], "invalid_decisions": []}
     wall_clock_ms = round((time.perf_counter() - started) * 1000, 3)
 
-    accounting = _account_articles(read_jsonl(article_ledger))
+    article_rows = read_jsonl(article_ledger) if article_ledger.exists() else []
+    accounting = _account_articles(article_rows)
+    budget_after = spend_ledger.summary() if spend_ledger and not replay else None
+    incremental_cost = (str(Decimal(budget_after["charged_usd"]) -
+                            Decimal(budget_before["charged_usd"])) if budget_after else
+                        "0" if replay else None)
 
     run_manifest = {
         "run_id": run_id, "partition": partition, "mode": "replay" if replay else "live",
+        "status": "incomplete" if stopped else "completed",
+        "stop_reason": "budget_stop" if stopped else None,
+        "stop_detail": str(stopped) if stopped else None,
+        "articles_requested": len(manifest["article_ids"]), "articles_completed": len(article_rows),
         "provider": provider_name, "model_id": model_id, "prompt_version": prompt_version,
         "inference_settings": settings, "inference_settings_hash": classifier.settings_hash(settings),
         "inference_preflight": manifest["inference_preflight"],
         **accounting, "wall_clock_ms": wall_clock_ms,
-        "cost_basis": None,
-        "cost_note": "Cost is reported only from a documented provider rate card. None was "
-                     "supplied to this run, so cost stays explicitly unknown rather than invented.",
+        "cost_basis": dict(spend_ledger.header) if spend_ledger and not replay else None,
+        "spend_ledger": str(spend_ledger.path.resolve()) if spend_ledger and not replay else None,
+        "budget_before": budget_before, "budget_summary": budget_after,
+        "incremental_cost_usd": incremental_cost,
+        "cost_note": ("USD at the ledger's fixed rates; unknown billing retains full reservations. "
+                      "Shared cumulative budget covers all authorized stages, not a per-stage cap."
+                      if budget_after else "Replay adds zero spend; source usage is historical."
+                      if replay else "No documented rate basis; cost is unknown."),
         "articles_in": report["articles_in"], "predicted_events": report["predicted_events"],
     }
     (Path(output_dir) / "run-manifest.json").write_bytes(
         json.dumps(run_manifest, ensure_ascii=False, indent=2).encode("utf-8"))
+    if stopped:
+        raise stopped
     return report, run_manifest
 
 
@@ -230,9 +264,19 @@ def main(argv=None):
     parser.add_argument("--top-p", type=float, default=None)
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--max-output-tokens", type=int, default=None)
+    parser.add_argument("--spend-ledger", type=Path,
+                        help="One shared authorization ledger across all stages and any repair rerun")
+    parser.add_argument("--cap-usd", help="Explicit user-approved total USD cap; never a per-stage cap")
+    parser.add_argument("--input-per-million", help="Explicit USD rate per million input tokens")
+    parser.add_argument("--output-per-million", help="Explicit USD rate per million output tokens")
     parser.add_argument("--replay", action="store_true",
                         help="Read only from --raw-store; no network call is possible")
     args = parser.parse_args(argv)
+    if args.provider == "deepseek" and not args.replay:
+        if any(value is None for value in (args.spend_ledger, args.cap_usd,
+                                          args.input_per_million, args.output_per_million)):
+            parser.error("Live DeepSeek requires --spend-ledger, --cap-usd, "
+                         "--input-per-million and --output-per-million; obtain approval first")
 
     manifest_data = loads(args.manifest.read_text(encoding="utf-8"))
     # P7-1 (docs/phase-7-scope.md): refuse a replay-only, tampered, mislabelled or exclusion-bearing
@@ -245,12 +289,34 @@ def main(argv=None):
         "temperature": args.temperature, "top_p": args.top_p, "seed": args.seed,
         "max_output_tokens": args.max_output_tokens}.items() if value is not None}
 
-    report, run_manifest = run_experiment(
-        args.run_id, args.partition, article_ids, args.evidence, args.freeze, args.output,
-        evidence_store_dir=args.evidence_store, raw_store_dir=args.raw_store,
-        prompt_version=args.prompt_version, provider_name=args.provider, model_id=args.model,
-        provider_kwargs=settings_overrides, inference_settings=settings_overrides,
-        replay=args.replay)
+    if (args.output / "run-manifest.json").exists():
+        raise FileExistsError("Run manifest already exists; use a new run directory")
+    try:
+        ledger = (SpendLedger(args.spend_ledger, args.cap_usd, args.input_per_million,
+                              args.output_per_million)
+                  if args.provider == "deepseek" and not args.replay else None)
+    except BudgetStop as error:
+        # An existing ledger with a different cap/rate or an interrupted lock must not be
+        # bypassed. No provider was constructed, and no predictions exist for this run.
+        args.output.mkdir(parents=True, exist_ok=True)
+        (args.output / "run-manifest.json").write_text(json.dumps({
+            "run_id": args.run_id, "partition": args.partition, "status": "incomplete",
+            "stop_reason": "budget_stop", "stop_detail": str(error), "articles_completed": 0,
+            "articles_requested": len(article_ids), "cost_basis": None,
+            "cost_note": "Budget could not be opened; no provider constructed or spend added."},
+            indent=2), encoding="utf-8")
+        print(json.dumps({"status": "incomplete", "stop_reason": "budget_stop", "detail": str(error)}))
+        return 2
+    try:
+        report, run_manifest = run_experiment(
+            args.run_id, args.partition, article_ids, args.evidence, args.freeze, args.output,
+            evidence_store_dir=args.evidence_store, raw_store_dir=args.raw_store,
+            prompt_version=args.prompt_version, provider_name=args.provider, model_id=args.model,
+            provider_kwargs=settings_overrides, inference_settings=settings_overrides,
+            replay=args.replay, spend_ledger=ledger)
+    except BudgetStop as error:
+        print(json.dumps({"status": "incomplete", "stop_reason": "budget_stop", "detail": str(error)}))
+        return 2
     print(json.dumps({"run_manifest": run_manifest, "run_report_summary":
                       {k: report[k] for k in ("recommendations", "selected", "invalid_decisions")}},
                      ensure_ascii=False, indent=2))

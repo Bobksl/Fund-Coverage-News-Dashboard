@@ -12,6 +12,7 @@ from tests.fixtures import article, temporary_directory
 from tools import corpus, run_model_experiment as rme
 from tools.evaluator import FreezeError
 from tools.records import write_jsonl
+from tools.inference_budget import SpendLedger
 
 IDS = [str(UUID(int=n)) for n in range(20, 23)]
 CORPUS = [
@@ -61,14 +62,15 @@ class ProviderKwargsTests(unittest.TestCase):
             with temporary_directory() as workspace:
                 evidence_path = workspace / "evidence.jsonl"
                 write_jsonl(evidence_path, CORPUS)
+                ledger = SpendLedger(workspace / 'synthetic-spend.jsonl', cap_usd='25')
                 rme.run_experiment(
                     "run-kwargs", "calibration", [IDS[0]], evidence_path, None, workspace / "out",
                     raw_store_dir=workspace / "raw", provider_name="deepseek",
                     model_id="deepseek-flash", provider_kwargs={"max_output_tokens": 8192},
-                    replay=False)
+                    replay=False, spend_ledger=ledger)
         finally:
             rme.build_provider = original
-        self.assertEqual(captured["kwargs"], {"max_output_tokens": 8192})
+        self.assertEqual(captured["kwargs"], {"max_output_tokens": 8192, "budget": ledger})
 
 
 class ReplayModeTests(unittest.TestCase):
