@@ -1,5 +1,13 @@
 # Demo — how to run it, and what it honestly shows
 
+> Current route (2026-09-13): use the [manager demo guide](manager-demo-guide.md)
+> for the existing human-reviewed bilingual card and the explanation of manual
+> updates. [Phase 7 is closed for demo scope](phase-7-closeout.md), and
+> [Phase 8 plans repeatable updates](phase-8-plan.md). The Phase 4 account below
+> is historical and describes a separate baseline demo; its claims that no live
+> model or human review has occurred are superseded by Phase 5/6 completion.
+
+
 Updated 2026-09-12 for Phase 4. No model provider has produced a live classification or drafting
 run yet (see `docs/phase-4-plan.md` for what is authorized and missing), so this demo still shows
 **mechanics, not performance.** Every card on screen is a real deterministic-baseline shortlist

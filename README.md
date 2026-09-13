@@ -1,6 +1,8 @@
 # Fund Coverage News Dashboard
 
-Local prototype for a watchlist-first alternatives-news demo. The repository now contains the ontology, a measured deterministic filtering baseline and a static browser demo. Phase 2 closed with a baseline FAIL; structured LLM classification and bilingual drafting remain untested. Phase 3 delivered a mechanics demonstration rather than an ingestion pilot. See the [Phase 4 review and plan](docs/phase-4-plan.md), [new Claude handover](docs/handover-claude-phase-4.md), and [Git diagnosis](docs/git-diagnosis-2026-09-12.md).
+Local prototype for a watchlist-first alternatives-news dashboard. Phase 7 closed by user direction as a limited manager demo: the full historical model comparison was not run. One real human-reviewed bilingual card is available from Phase 6; broad selection accuracy remains unestablished. Updates currently require manual processing, review and export; browser reload does not collect news.
+
+Start with the [manager demo guide](docs/manager-demo-guide.md), [Phase 7 closeout](docs/phase-7-closeout.md), and [Phase 8 manual-update plan](docs/phase-8-plan.md).
 
 ## Start here
 
