@@ -1,0 +1,265 @@
+"""Scheduled news refresh: fetch feeds, apply the keyword rule, brief with DeepSeek, publish cards.
+
+Runs twice each weekday from .github/workflows/refresh.yml, or by hand:
+
+    python -m tools.fetch_news --dry-run    # fetch and filter only: no model calls, no writes
+    python -m tools.fetch_news              # add new unreviewed cards to public/data
+
+Feeds and the rule live in config/filter_rules.json. Google News is used for discovery only; each
+card links to the article it points at. New cards are marked unreviewed. A failed refresh records
+its status and never removes published cards. Items the model rejects are remembered for two weeks
+in public/data/seen.json so later runs do not pay to brief them again.
+"""
+import argparse
+import email.utils
+import functools
+import html
+import json
+import os
+import re
+import sys
+import time
+import urllib.parse
+import urllib.request
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from xml.etree import ElementTree
+
+from tools import site_data, summarize
+
+USER_AGENT = "Mozilla/5.0 (compatible; FundCoverageNews/1.0; +https://github.com/Bobksl/Fund-Coverage-News-Dashboard)"
+SEEN_FILE = "seen.json"
+SEEN_DAYS = 14
+HTML_TAG = re.compile(r"<[^>]+>")
+STOPWORDS = frozenset(["a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "is", "its", "of",
+                       "on", "or", "the", "to", "with", "after", "amid", "over", "s"])
+SIMILAR_TITLES = 0.5
+
+
+def http_get(url, timeout=20):
+    request = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8"})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read()
+
+
+def feed_urls(rules):
+    """Yield (feed_id, url) for every Google News query and plain RSS feed in the rules."""
+    google = rules["feeds"]["google_news"]
+    for number, query in enumerate(google["queries"], 1):
+        params = {"q": f"{query['q']} {google['lookback']}", **google["editions"][query["edition"]]}
+        yield f"google_news_{number}", f"{google['endpoint']}?{urllib.parse.urlencode(params)}"
+    for feed in rules["feeds"].get("rss", []):
+        yield feed["id"], feed["url"]
+
+
+def clean_html(value):
+    text = HTML_TAG.sub(" ", html.unescape(value or ""))
+    return re.sub(r"\s+", " ", html.unescape(text)).strip()
+
+
+def parse_feed(data):
+    """Parse RSS 2.0 bytes into entries with title, url, publisher, published and description."""
+    channel = ElementTree.fromstring(data).find("channel")
+    if channel is None:
+        raise ValueError("not an RSS 2.0 feed")
+    channel_title = clean_html(channel.findtext("title"))
+    entries = []
+    for node in channel.findall("item"):
+        title = clean_html(node.findtext("title"))
+        url = (node.findtext("link") or "").strip()
+        source = node.find("source")
+        publisher = clean_html(source.text) if source is not None and source.text else channel_title
+        if publisher and title.endswith(f" - {publisher}"):
+            title = title[: -len(f" - {publisher}")].strip()
+        try:
+            published = email.utils.parsedate_to_datetime(node.findtext("pubDate") or "")
+        except (TypeError, ValueError):
+            continue
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+        description = clean_html(node.findtext("description"))
+        if title and description.startswith(title):
+            description = ""  # Google News descriptions only repeat the headline and publisher.
+        if title and url:
+            entries.append({"title": title, "url": url, "publisher": publisher or "Unknown source",
+                            "published": published, "description": description})
+    return entries
+
+
+@functools.cache
+def _pattern(term):
+    # All-caps terms (KKR, PAG, CLO) match case-sensitively so "page" or "close" never count.
+    flags = 0 if re.fullmatch(r"[A-Z0-9]+", term) else re.IGNORECASE
+    return re.compile(rf"(?<!\w){re.escape(term)}(?!\w)", flags)
+
+
+def _matches(text, terms):
+    return [term for term in terms if _pattern(term).search(text)]
+
+
+def rule_match(text, rules):
+    """Apply the rule in config/filter_rules.json to one item's title and description."""
+    credit = bool(_matches(text, rules["credit_context_keywords"]))
+
+    def tagged(group):
+        return [key for key, spec in rules[group].items()
+                if _matches(text, spec["match"]) and (credit or not spec.get("credit_context_required"))]
+
+    gps, sectors = tagged("gps"), tagged("sectors")
+    excluded = _matches(text, rules["exclude_keywords"])
+    if excluded:
+        reason = f"excluded: {excluded[0]}"
+    elif not (gps or sectors):
+        reason = "no tracked manager or sub-sector"
+    elif not _matches(text, rules["material_event_keywords"]):
+        reason = "no material event"
+    else:
+        reason = "matched"
+    return {"keep": reason == "matched", "gps": gps, "sectors": sectors, "reason": reason}
+
+
+def title_words(title):
+    words = [word for word in re.findall(r"[a-z0-9]+", title.lower()) if word not in STOPWORDS]
+    return (words[0] if words else ""), frozenset(words)
+
+
+def same_story(first, second):
+    """Headlines from different outlets about one story: same lead word and half the words shared.
+
+    Requiring the same lead word keeps "KKR raises $2bn credit fund" and "Apollo raises $2bn credit
+    fund" apart even though most of their words match.
+    """
+    (lead_a, words_a), (lead_b, words_b) = first, second
+    return bool(lead_a) and lead_a == lead_b and len(words_a & words_b) / len(words_a | words_b) >= SIMILAR_TITLES
+
+
+def collect(rules, fetch, now, lookback_days, pause):
+    """Fetch every feed; one failing feed is recorded and skipped."""
+    oldest, newest = now - timedelta(days=lookback_days), now + timedelta(hours=1)
+    stats = {"feeds_ok": 0, "feeds_failed": [], "fetched": 0, "fresh": 0}
+    entries = []
+    for number, (feed_id, url) in enumerate(feed_urls(rules)):
+        if number and pause:
+            time.sleep(pause)
+        try:
+            parsed = parse_feed(fetch(url))
+        except Exception as error:  # noqa: BLE001 -- any network or parse failure is per-feed
+            stats["feeds_failed"].append(f"{feed_id}: {type(error).__name__}: {str(error)[:120]}")
+            continue
+        stats["feeds_ok"] += 1
+        stats["fetched"] += len(parsed)
+        entries.extend(dict(entry, feed=feed_id) for entry in parsed if oldest <= entry["published"] <= newest)
+    stats["fresh"] = len(entries)
+    return entries, stats
+
+
+def select(entries, rules, known_ids):
+    """Newest first; drop known links and repeats of the same story; keep items the rule accepts."""
+    seen_ids, kept_titles, candidates, unique = set(known_ids), [], [], 0
+    for entry in sorted(entries, key=lambda item: item["published"], reverse=True):
+        entry_id = site_data.card_id(entry["url"])
+        words = title_words(entry["title"])
+        if entry_id in seen_ids or any(same_story(words, other) for other in kept_titles):
+            continue
+        seen_ids.add(entry_id)
+        kept_titles.append(words)
+        unique += 1
+        match = rule_match(f"{entry['title']} {entry['description']}", rules)
+        if match["keep"]:
+            candidates.append(dict(entry, match=match))
+    return candidates, unique
+
+
+def load_seen(data_dir, now):
+    path = Path(data_dir) / SEEN_FILE
+    seen = json.loads(path.read_text(encoding="utf-8")).get("ids", {}) if path.exists() else {}
+    cutoff = (now - timedelta(days=SEEN_DAYS)).date().isoformat()
+    return {key: day for key, day in seen.items() if day >= cutoff}
+
+
+def to_item(candidate):
+    published = candidate["published"]
+    return {"title": candidate["title"], "publisher": candidate["publisher"], "url": candidate["url"],
+            "date": published.astimezone(site_data.HKT).date().isoformat(),
+            "published_at": published.isoformat(timespec="seconds"),
+            "text": candidate["description"] or candidate["title"]}
+
+
+def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None, max_items=30,
+        max_calls=60, lookback_days=3, dry_run=False, pause=1.0, scheduled=False):
+    """One refresh. Returns (exit_code, stats)."""
+    now = now or datetime.now(timezone.utc)
+    entries, stats = collect(rules, fetch, now, lookback_days, pause)
+    seen = load_seen(data_dir, now)
+    candidates, stats["after_dedupe"] = select(entries, rules, site_data.existing_ids(data_dir) | set(seen))
+    stats["rule_passed"] = len(candidates)
+    candidates = candidates[:max_items]
+    if dry_run:
+        stats["candidates"] = [{"published": item["published"].isoformat(), "publisher": item["publisher"],
+                                "title": item["title"], "gps": item["match"]["gps"],
+                                "sectors": item["match"]["sectors"]} for item in candidates]
+        return 0, stats
+
+    errors, failure = [], None
+    if stats["feeds_ok"] == 0:
+        failure = "every feed failed"
+    elif candidates and post is None:
+        try:
+            summarize.load_api_key()
+        except summarize.SummaryError as error:
+            failure = str(error)
+    summarizer = summarize.Summarizer(rules, post=post, max_calls=max_calls)
+    cards, rejected = [], 0
+    for candidate in [] if failure else candidates:
+        item = to_item(candidate)
+        try:
+            brief = summarizer(item)
+            card = summarize.make_card(item, brief, "unreviewed", "auto_fetch")
+            if not brief["relevant"] or not (card["gps"] or card["sectors"]):
+                rejected += 1
+                seen[card["id"]] = now.date().isoformat()
+                continue
+            site_data.validate_card(card, rules)
+        except (summarize.SummaryError, ValueError) as error:
+            errors.append(f"{item['title'][:60]}: {str(error)[:120]}")
+            if summarizer.calls >= summarizer.max_calls:
+                break
+            continue
+        cards.append(card)
+
+    added = site_data.add_cards(cards, rules, data_dir, now=now)
+    site_data._write_json(Path(data_dir) / SEEN_FILE, {"ids": seen})
+    result = "failed" if failure else ("succeeded" if added else "no_new_items")
+    detail = (f"{stats['feeds_ok']} feeds ok, {len(stats['feeds_failed'])} failed; {len(candidates)} matched "
+              f"the rule; {len(added)} added; {rejected} rejected by the model")
+    site_data.write_status(data_dir, mode="scheduled" if scheduled else "manual", schedule=rules["schedule"],
+                           result=result, new_items=len(added),
+                           detail=f"{failure}; {detail}" if failure else detail, now=now)
+    added_cards = [card for card in cards if card["id"] in set(added)]
+    stats.update(briefed=0 if failure else len(candidates), model_rejected=rejected, added=len(added),
+                 europe_share=(round(sum(card["region"] == "Europe" for card in added_cards) / len(added_cards), 2)
+                               if added_cards else None),
+                 calls=summarizer.calls, usage=summarizer.usage, errors=errors[:5], failure=failure)
+    return (1 if failure else 0), stats
+
+
+def main(argv=None):
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(encoding="utf-8", errors="replace")
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--dry-run", action="store_true", help="fetch and filter only; no model calls or writes")
+    parser.add_argument("--data-dir", type=Path, default=site_data.DATA_DIR)
+    parser.add_argument("--max-items", type=int, default=30)
+    parser.add_argument("--max-calls", type=int, default=60)
+    parser.add_argument("--lookback-days", type=int, default=3)
+    args = parser.parse_args(argv)
+    code, stats = run(site_data.load_rules(), data_dir=args.data_dir, max_items=args.max_items,
+                      max_calls=args.max_calls, lookback_days=args.lookback_days, dry_run=args.dry_run,
+                      scheduled=os.environ.get("GITHUB_ACTIONS") == "true")
+    print(json.dumps(stats, ensure_ascii=False, indent=2, default=str))
+    return code
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

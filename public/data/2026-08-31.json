@@ -1,0 +1,81 @@
+{
+  "date": "2026-08-31",
+  "items": [
+    {
+      "id": "3d59d5574141",
+      "date": "2026-08-31",
+      "published_at": "2026-08-31T06:55:53-04:00",
+      "headline": {
+        "en": "CMBS Distress Approaches Peak as Office Hits Record 8.89%",
+        "zh": "CMBS 困境接近峰值，办公楼困境率创 8.89% 纪录"
+      },
+      "summary": {
+        "en": "CMBS distress has steadily risen for months, with office distress reaching an all-time high of 8.89 percent in July, according to Commercial Observer. Trepp found that of $65 billion in CMBS loans maturing by end-2026, $37 billion are hard maturities with no extension options, and PropertyChecker analysis found 39 percent of the year's hard maturities fall in the fourth quarter.",
+        "zh": "据 Commercial Observer 报道，CMBS 困境率数月来持续上升，7 月办公楼困境率创下 8.89% 的历史新高。Trepp 发现，在 2026 年底前到期的 650 亿美元 CMBS 贷款中，有 370 亿美元为无延期选项的硬到期；PropertyChecker 的分析发现，今年硬到期的 39% 集中在第四季度。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage",
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/08/cmbs-distress-2026/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "c1bbeccadda0",
+      "date": "2026-08-31",
+      "published_at": "2026-08-31",
+      "headline": {
+        "en": "KKR to sell USI to Aon in $17 billion transaction",
+        "zh": "KKR将以170亿美元交易把USI出售给Aon"
+      },
+      "summary": {
+        "en": "KKR announced a definitive agreement for Aon plc to acquire USI Insurance Services in a $17 billion transaction. KKR said the deal represents about 6.0 times the original equity it invested in 2017 and 3.4 times total KKR balance sheet capital invested in USI, and is expected to generate roughly $3.3 billion of after-tax proceeds and about $2.0 billion of Adjusted Net Income for KKR.",
+        "zh": "KKR宣布与Aon plc达成最终协议，Aon将收购USI Insurance Services，交易规模为170亿美元。KKR表示，该交易约为其2017年原始股权投资的6.0倍，也是KKR对USI投资期间投入的资产负债表资本总额的3.4倍，预计将为KKR带来约33亿美元的税后收益和约20亿美元的调整后净收入。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "KKR",
+        "url": "https://media.kkr.com/news-details/?news_id=80379357-ae02-4bb9-b699-927a177e195c"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "d2e6ede4b103",
+      "date": "2026-08-31",
+      "published_at": "2026-08-31",
+      "headline": {
+        "en": "Apollo funds to sell Kelvion to SLB for $4.1 billion",
+        "zh": "Apollo 基金将以41亿美元把 Kelvion 出售给 SLB"
+      },
+      "summary": {
+        "en": "Apollo announced that SLB has entered a definitive agreement to acquire 100% of Kelvion, a global thermal management solutions developer and manufacturer, for approximately $3.4 billion in cash plus assumption of approximately $0.7 billion of debt. Total consideration is about $4.1 billion.",
+        "zh": "Apollo 宣布 SLB 已达成最终协议，将以约34亿美元现金收购全球热管理解决方案开发商和制造商 Kelvion 的100%股权，并承担约7亿美元债务。交易总对价约为41亿美元。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Apollo Global Management",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/08/apollo-funds-agree-to-sell-kelvion-a-global-leader-in-cooling-solutions-for-data-centers-and-diversified-industrials-to-slb-for-4-1-billion-3353148"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

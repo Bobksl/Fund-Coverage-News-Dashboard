@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-10",
+  "items": [
+    {
+      "id": "98be626e5990",
+      "date": "2026-09-10",
+      "published_at": "2026-09-10T15:37:05+00:00",
+      "headline": {
+        "en": "Affinius Capital, Axonic Capital Lend $48M for Suburban Boston Apartments",
+        "zh": "Affinius Capital与Axonic Capital为波士顿郊区公寓项目提供4800万美元贷款"
+      },
+      "summary": {
+        "en": "Affinius Capital and Axonic Capital originated $48 million in construction financing for Dinosaur Capital Partners. The loan funds a 130-unit multifamily project at 7 Hartwell Avenue in Lexington, Mass., outside Boston.",
+        "zh": "Affinius Capital与Axonic Capital为Dinosaur Capital Partners发放了4800万美元建设融资。该贷款用于在马萨诸塞州列克星敦市Hartwell Avenue 7号建设一个拥有130个单元的多户住宅项目，该项目位于波士顿郊区。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/affinius-capital-axonic-capital-lexington-massachusetts-apartments/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "e548f3d2e3e8",
+      "date": "2026-09-10",
+      "published_at": "2026-09-10T11:25:41-04:00",
+      "headline": {
+        "en": "Apollo, BDT & MSD Partners Provide $197M to Build Naples Luxury Condos",
+        "zh": "Apollo与BDT & MSD Partners为那不勒斯豪华公寓项目提供1.97亿美元融资"
+      },
+      "summary": {
+        "en": "Kolter Urban and BH Group secured $197 million in construction financing for Olana Naples Residences, a 12-unit estate-style condominium project in Naples, Fla. Apollo Global Management and BDT & MSD Partners provided the debt. The developers plan to break ground before the end of 2026 and complete construction by 2028.",
+        "zh": "Kolter Urban和BH Group为佛罗里达州那不勒斯的Olana Naples Residences项目获得1.97亿美元建设融资，该项目将建成12套庄园式公寓。Apollo Global Management与BDT & MSD Partners提供了这笔贷款。开发商计划在2026年底前动工，并于2028年完成建设。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/apollo-bdt-msd-partners-197m-naples-luxury-condos/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "5e17d66d9c39",
+      "date": "2026-09-10",
+      "published_at": "2026-09-10",
+      "headline": {
+        "en": "Downing expands credit platform with £500m funding line",
+        "zh": "Downing以5亿英镑融资额度扩展信贷平台"
+      },
+      "summary": {
+        "en": "Downing has expanded its private credit platform with a new £500m institutional funding line and the appointment of a commercial real estate lending head. The £2.6bn investment firm said the funding line is intended to increase its deployment capacity.",
+        "zh": "Downing通过新的5亿英镑机构融资额度以及任命一名商业房地产贷款主管，扩展了其私人信贷平台。这家管理规模26亿英镑的投资公司表示，该融资额度旨在提升其部署能力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/10/downing-expands-credit-platform-with-500m-funding-line/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "705b84901b25",
+      "date": "2026-09-10",
+      "published_at": "2026-09-10",
+      "headline": {
+        "en": "Pretium adds Cascade Financial Services to residential credit platform",
+        "zh": "Pretium将Cascade Financial Services纳入住宅信贷平台"
+      },
+      "summary": {
+        "en": "Pretium, a specialized investment firm managing more than $70 billion in assets, announced that Cascade Financial Services is joining its ecosystem. Cascade is a lender supporting individual borrowers in the purchase of manufactured homes. Pretium said the move expands access to affordable homeownership through manufactured housing lending.",
+        "zh": "管理超过700亿美元资产的专业投资公司Pretium宣布，Cascade Financial Services将加入其生态系统。Cascade是一家为个人借款人购买预制房屋提供支持的贷款机构。Pretium表示，此举通过预制房屋贷款扩大获得可负担住房所有权的渠道。"
+      },
+      "gps": [
+        "pretium"
+      ],
+      "sectors": [
+        "mortgage",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pretium",
+        "url": "https://pretium.com/pretium-to-expand-access-to-affordable-homeownership-through-manufactured-housing-lending/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

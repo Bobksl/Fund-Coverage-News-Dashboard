@@ -1,0 +1,104 @@
+{
+  "date": "2026-08-17",
+  "items": [
+    {
+      "id": "b9177fe8e7f4",
+      "date": "2026-08-17",
+      "published_at": "2026-08-17",
+      "headline": {
+        "en": "Blue Owl Technology Finance Files Prospectus Supplement for 6.500% Notes Due 2029",
+        "zh": "Blue Owl Technology Finance 就 2029 年到期的 6.500% 票据提交招股说明书补充文件"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance Corp. filed a preliminary prospectus supplement dated August 17, 2026 for an offering of 6.500% notes due 2029. The notes mature on October 15, 2029, with interest payable April 15 and October 15 beginning October 15, 2026. The offering is a further issuance of the 6.500% notes due 2029 issued on June 5, 2026.",
+        "zh": "Blue Owl Technology Finance Corp. 于 2026 年 8 月 17 日提交了初步招股说明书补充文件，拟发行 2029 年到期的 6.500% 票据。该票据将于 2029 年 10 月 15 日到期，自 2026 年 10 月 15 日起，每年 4 月 15 日和 10 月 15 日支付利息。此次发行是 2026 年 6 月 5 日发行的 2029 年到期的 6.500% 票据的进一步发行。"
+      },
+      "gps": [
+        "blue_owl",
+        "otf"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Technology Finance Corp.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026057230/0001628280-26-057230-index.htm"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "72c5665a255f",
+      "date": "2026-08-17",
+      "published_at": "2026-08-17",
+      "headline": {
+        "en": "Partners Group closes $1bn private credit mandate with Asia investor",
+        "zh": "Partners Group与亚洲投资者完成10亿美元私募信贷委托"
+      },
+      "summary": {
+        "en": "Partners Group has closed a $1bn private credit mandate with a \"major\" institutional investor in Asia. The mandate includes a discretionary tranche managed by the firm as well as co-investment capital, under an open-ended evergreen structure.",
+        "zh": "Partners Group与一家亚洲的“大型”机构投资者完成了一笔10亿美元的私募信贷委托。该委托包括由该公司管理的全权委托部分以及共同投资资本，并采用开放式常青结构。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/17/partners-group-closes-1bn-private-credit-mandate-with-asia-investor/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "ce32ac8b2cdf",
+      "date": "2026-08-17",
+      "published_at": "2026-08-17",
+      "headline": {
+        "en": "Private credit consolidation continues through 2026, starting with CVC-Marathon deal",
+        "zh": "私募信贷整合在2026年持续，以CVC收购Marathon开局"
+      },
+      "summary": {
+        "en": "Private credit market appetite for mergers and acquisitions continued in 2026 despite negative headlines about the asset class. The year began with CVC buying global credit manager Marathon for $1.2bn.",
+        "zh": "尽管关于该资产类别前景的负面报道不断，私募信贷市场在2026年的并购意愿仍在延续。年初，CVC以12亿美元收购全球信贷管理公司Marathon。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/17/private-credit-consolidation-gathers-pace-in-2026/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "2d3b509a432f",
+      "date": "2026-08-17",
+      "published_at": "2026-08-17",
+      "headline": {
+        "en": "CPP Investments posts strongest quarter in over a decade on real assets and credit",
+        "zh": "CPP Investments 因实物资产和信贷业务录得十多年来最强季度业绩"
+      },
+      "summary": {
+        "en": "Canada Pension Plan Investment Board reported its strongest quarterly investment performance in more than a decade in the first quarter. Real assets, particularly energy, contributed meaningfully, while credit delivered steady gains.",
+        "zh": "Canada Pension Plan Investment Board 在第一季度公布了十多年来最强的季度投资业绩。实物资产，尤其是能源，贡献显著，而信贷则带来稳健收益。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/17/cpp-investments-says-strong-q1-performance-driven-by-real-assets-and-credit/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

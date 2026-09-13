@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-20",
+  "items": [
+    {
+      "id": "6598f3e38c58",
+      "date": "2026-08-20",
+      "published_at": "2026-08-20",
+      "headline": {
+        "en": "Blue Owl Technology Finance Corp. Files Form 8-K With SEC",
+        "zh": "Blue Owl Technology Finance Corp. 向 SEC 提交 8-K 表格"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance Corp. filed a Form 8-K with the SEC dated August 14, 2026. The filing is dated August 20, 2026; the report lists the registrant's address as 399 Park Avenue, New York, NY.",
+        "zh": "Blue Owl Technology Finance Corp. 向 SEC 提交了一份日期为 2026 年 8 月 14 日的 8-K 表格。该申报文件日期为 2026 年 8 月 20 日；报告显示注册人地址为纽约州纽约市公园大道 399 号。"
+      },
+      "gps": [
+        "otf"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Technology Finance Corp.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026058253/0001628280-26-058253-index.htm"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "a04cc4b2a80e",
+      "date": "2026-08-20",
+      "published_at": "2026-08-20",
+      "headline": {
+        "en": "Crestline closes second European fund at $625m",
+        "zh": "Crestline 第二只欧洲基金以 6.25 亿美元完成募集"
+      },
+      "summary": {
+        "en": "US-based Crestline Management raised $625m in the final close of its second European capital solutions fund. The fund exceeded the capital in its inaugural fund by nearly 75 per cent. Crestline European Capital Solutions Fund II focuses on originating, structuring and financing tailored capital.",
+        "zh": "总部位于美国的 Crestline Management 在其第二只欧洲资本解决方案基金的最终募集中共筹集 6.25 亿美元。该基金规模较其首只基金高出近 75%。Crestline European Capital Solutions Fund II 专注于发起、构建和提供定制资本融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/20/crestline-records-strong-demand-for-second-european-fund/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "5f9097b60c5e",
+      "date": "2026-08-20",
+      "published_at": "2026-08-20",
+      "headline": {
+        "en": "Franklin Templeton raises $1.5bn for inaugural CFO",
+        "zh": "Franklin Templeton 为首只 CFO 募集 15 亿美元"
+      },
+      "summary": {
+        "en": "Franklin Templeton has raised $1.5bn from global investors for its first collateralised fund obligation. Franklin Templeton Structured Solutions 2026 will give investors exposure to two of the manager's flagship private markets strategies spanning private credit.",
+        "zh": "Franklin Templeton 已从全球投资者处为其首只抵押基金债务工具（CFO）募集 15 亿美元。Franklin Templeton Structured Solutions 2026 将为投资者提供该管理人两只旗舰私募市场策略的敞口，涵盖私募信贷。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/20/franklin-templeton-raises-1-5bn-for-inaugural-cfo/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

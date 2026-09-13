@@ -1,0 +1,106 @@
+{
+  "date": "2026-08-28",
+  "items": [
+    {
+      "id": "7b8a0774b583",
+      "date": "2026-08-28",
+      "published_at": "2026-08-28",
+      "headline": {
+        "en": "CVC Credit: private credit appetite robust in H1 2026, technology underwriting more cautious",
+        "zh": "CVC Credit：2026年上半年私人信贷需求旺盛，科技资产承销更为谨慎"
+      },
+      "summary": {
+        "en": "CVC Credit said appetite for private credit remained \"robust\" in the first half of 2026, while underwriters have become more cautious towards technology assets. The firm said fundamentals for the asset class remain sound despite headline noise.",
+        "zh": "CVC Credit表示，2026年上半年私人信贷的需求依然“旺盛”，但承销方对科技资产的态度变得更加谨慎。该公司称，尽管存在头条噪音，该资产类别的基本面依然稳健。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/28/private-credit-appetite-stays-strong-despite-cautious-underwriting/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "92dc00f248ce",
+      "date": "2026-08-28",
+      "published_at": "2026-08-28",
+      "headline": {
+        "en": "Blue Owl Managed Funds Lead $2.4 Billion AI Factory Financing for IREN",
+        "zh": "Blue Owl管理的基金牵头为IREN提供24亿美元AI工厂融资"
+      },
+      "summary": {
+        "en": "Funds managed by Blue Owl Capital led a $2.4 billion compute equipment financing for IREN Limited, a vertically integrated AI Cloud platform. The financing consists of a $1.2 billion senior secured term loan and $1.2 billion of senior secured notes, supporting NVIDIA AI infrastructure deployment.",
+        "zh": "Blue Owl Capital管理的基金牵头为IREN Limited提供24亿美元算力设备融资。IREN Limited是一家垂直整合的AI云平台。该融资包括12亿美元高级担保定期贷款和12亿美元高级担保票据，用于支持NVIDIA AI基础设施部署。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "asset_based_finance",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Capital",
+        "url": "https://www.blueowl.com/news/blue-owl-managed-funds-lead-24-billion-ai-factory-financing-iren"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "54e666894614",
+      "date": "2026-08-28",
+      "published_at": "2026-08-28",
+      "headline": {
+        "en": "Crescent lands $232m for second CLO equity fund",
+        "zh": "Crescent 为第二只 CLO 股权基金募集 2.32 亿美元"
+      },
+      "summary": {
+        "en": "Crescent Capital has raised $232m at the final close of its second collateralised loan obligation equity fund. The Crescent CLO Equity Funding II doubled the size of its predecessor, Crescent CLO Equity Funding I, which closed in 2018 with $103m in commitments.",
+        "zh": "Crescent Capital 在其第二只担保贷款凭证（CLO）股权基金的最终关账中募集了 2.32 亿美元。Crescent CLO Equity Funding II 的规模是其前身 Crescent CLO Equity Funding I 的两倍，后者于 2018 年关账，承诺出资额为 1.03 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/28/crescent-lands-232m-for-second-clo-equity-fund/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "108945dbee2d",
+      "date": "2026-08-28",
+      "published_at": "2026-08-28",
+      "headline": {
+        "en": "BridgeInvest raises $612m for US speciality real estate credit fund",
+        "zh": "BridgeInvest 为美国特殊房地产信贷基金募集 6.12 亿美元"
+      },
+      "summary": {
+        "en": "Miami-headquartered BridgeInvest has raised more than $612m for its speciality real estate credit fund, the BridgeInvest Specialty Credit Fund V. It announced the second close of the open-ended vehicle, with limited partner commitments expected to exceed $1bn by 2027.",
+        "zh": "总部位于迈阿密的 BridgeInvest 为其特殊房地产信贷基金 BridgeInvest Specialty Credit Fund V 募集了超过 6.12 亿美元。该公司宣布了这只开放式基金的第二次交割，预计到 2027 年有限合伙人承诺出资将超过 10 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/28/bridgeinvest-raises-612m-for-us-speciality-re-credit-fund/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

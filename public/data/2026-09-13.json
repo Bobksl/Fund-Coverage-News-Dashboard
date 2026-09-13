@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-13",
+  "items": [
+    {
+      "id": "3b1975c239ae",
+      "date": "2026-09-13",
+      "published_at": "2026-09-13T09:45:00+00:00",
+      "headline": {
+        "en": "BlackRock private credit fund redemption requests ease in Q3",
+        "zh": "贝莱德私募信贷基金第三季度赎回请求缓解"
+      },
+      "summary": {
+        "en": "BlackRock's private credit fund saw redemption requests ease in the third quarter, according to The Business Times.",
+        "zh": "据《商业时报》报道，贝莱德私募信贷基金第三季度的赎回请求有所缓解。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Business Times",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM21vMlBjcEdjU2pDWU1OaS1CVTQyRmRyRVFsd2MxTkFGN2hKRTBuMkdwTW1ETTB6VVhkOWdETnc4RXJsQjhGVmtCZ2I4R0o3aWxIbDVBQlYwZVAxbEVTVURHUHNuS2Q1LWRWZ2txWHFvY2oxQWNPdy1nR1pnQ2VWY19qSFFZVVRSMjdLdnkwdkFobEhqUkpvTEt1Q3BGUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "5f9cf9b9ef30",
+      "date": "2026-09-13",
+      "published_at": "2026-09-13T04:18:45+00:00",
+      "headline": {
+        "en": "Apollo Global Management Curbed Redemptions In Its Private Credit Fund",
+        "zh": "Apollo Global Management 限制了其私人信贷基金的赎回"
+      },
+      "summary": {
+        "en": "Apollo Global Management curbed redemptions in its private credit fund, according to a headline report. No further details were provided in the supplied article.",
+        "zh": "据一则标题报道，Apollo Global Management 限制了其私人信贷基金的赎回。所提供文章中未包含更多细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUFJuMlBXR1NLLVZPdlZJZ3duVGZEVGRzUUpSTHBva2pGTmFfRUFwdmo3Z0xJeVJ1RVRHbUJJVXJmdnZRX0E2QlMzOUxNdnI0NnhXdjdHUl9IeDU5SnE5UTdORjZlaGp6ZDBFUl9wOWJSaWN1T3FZUUY3RVVyNDZaNXFRVGFuQTV6a1lqVkp0SGZjZF80dzQ4SjJJVm5nakI3VzF6cUNfc3dNN0ItQUQzRE52RjhnQU9EMGhmTDdSc0hpRGJQZ1YxY0VsV3lINUdXZlJ3M1F5TUtDV3NJb0kzY1ZJVDlZcktFN3fSAe8BQVVfeXFMTUNaNDVhZktVSUtFNFFzc1dRSHRJTkk5ZkpxazVwYUtrQ29nUzBjejNCSkZGcGJYSnIyZklMeTlqSF9kb3pvdTB5MWxGWlJ5RGNJYnU2VkU4YVotUV9kLWxkLTBvcy1lZ1RsZTlNdUZPcnpQR1UwdGFVRW5KS2JGcm9fQTY4ZmxlRTRUWjQwMlFRRWxjaVJ4Szd4ZDNqNUZ4WGxNSVZQMlFyT25QRWtPdXFGQlh3S0N0RkRENXhxdDIxb2dzS3NLb3g5MDhHZUVLM1BXZXJfekt0am5JNXJpYU0zbFdzcWJwMmZTYUNsZjQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-30",
+  "items": [
+    {
+      "id": "7c124389678a",
+      "date": "2026-08-30",
+      "published_at": "2026-08-30",
+      "headline": {
+        "en": "ONEOK to Acquire Brazos Midstream Permian Assets for $4.425 Billion",
+        "zh": "ONEOK将以44.25亿美元收购Brazos Midstream二叠纪资产"
+      },
+      "summary": {
+        "en": "ONEOK has executed a definitive agreement to acquire Brazos Midstream's Permian Midland Basin assets for $4.425 billion. Apollo-managed funds made a $9 billion minority equity investment, and the deal includes $5 billion of debt extinguishment, moving ONEOK to 3.25x debt-to-EBITDA with no common equity issuance.",
+        "zh": "ONEOK已签署最终协议，以44.25亿美元收购Brazos Midstream的二叠纪Midland盆地资产。Apollo管理的基金进行了90亿美元的少数股权 投资，交易包括50亿美元的债务清偿，使ONEOK的债务对EBITDA比率降至3.25倍，且无需发行普通股。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Apollo Global Management",
+        "url": "https://www.apollo.com/insights-news/pressreleases/2026/08/oneok-brazos-midstreams-permian-midland-basin-assets"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

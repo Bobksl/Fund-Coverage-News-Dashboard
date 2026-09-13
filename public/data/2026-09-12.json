@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-12",
+  "items": [
+    {
+      "id": "8cff6027c039",
+      "date": "2026-09-12",
+      "published_at": "2026-09-12T01:08:04+00:00",
+      "headline": {
+        "en": "KKR finalizes $2.1 billion loan to fund Integer acquisition",
+        "zh": "KKR完成21亿美元贷款，为收购Integer提供资金"
+      },
+      "summary": {
+        "en": "KKR finalized a $2.1 billion loan to fund the acquisition of Integer. No further terms or parties were disclosed.",
+        "zh": "KKR完成了一笔21亿美元的贷款，为收购Integer提供资金。未披露更多条款或相关方。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdi1BaDgtN3NidVBGWHFxZ1hvdXV3Ym9kODE3TkpOdGh3THl2aHVSeEFoMzlHWENpeGhVUjZ2MnUxbUhHeUpVbE5WRy02SHRhdWZVTmNsVWpWTUJ5MzVnV25tS2lVRFpSaHlqY3BUcTVPTjg1bUN6cUN4QXhNVmlIZG9iSXg2ZGtPalFCU3l3eXd2eElYR1d0b3Z6Q1BRalF6WklTTTVRb2FGeTlQd2c?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "bca3caecdedb",
+      "date": "2026-09-12",
+      "published_at": "2026-09-11T23:54:46+00:00",
+      "headline": {
+        "en": "Apollo winds down products at Eliant Trade Finance after rough year",
+        "zh": "Apollo在Eliant贸易融资平台经历艰难一年后逐步关停产品"
+      },
+      "summary": {
+        "en": "Apollo is winding down products at its Eliant Trade Finance platform following a difficult year for inventory financing.",
+        "zh": "在库存融资经历艰难一年后，Apollo正逐步关停其Eliant贸易融资平台上的产品。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Crypto Briefing",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRGloYURUM0FDQzlfZlpidC1hOXAzQXpMekpsc2pYM0dYRjh3bm9uelFlTGhmNzFHWVN4amdDOWRoang1Mms2QWVieGdVVllDWldoUzdBdi1lbFhvZXlINnZxM1lyOTVtOEZWSHB6X00yQ21wX1g2NGVVWGhoTGxSLQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "f668391dec0f",
+      "date": "2026-09-12",
+      "published_at": "2026-09-11T21:27:45+00:00",
+      "headline": {
+        "en": "Moody’s outlines fundraising growth, rising structural complexity for real estate private credit",
+        "zh": "穆迪概述房地产私募信贷的募资增长与结构性复杂性的上升"
+      },
+      "summary": {
+        "en": "Moody’s outlined fundraising growth and rising structural complexity for real estate private credit, according to PEI Private Real Estate. The report was published on 12 September 2026.",
+        "zh": "据PEI Private Real Estate报道，穆迪概述了房地产私募信贷的募资增长以及不断上升的结构性复杂性。该报道发布于2026年9月12日。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "pei-privaterealestate.com",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPY282T2FMcllqQW9JTkFkUGZKc0VWb0JsNnlXN3NQZ1l2MENNeFQ1MVVKTkpZSmQtRzROMWRmNFBXNmhFc2I1Mm9fU0k5YlF0NktoTjJEOEd5aGZ6d0hQekJHbHB0M0lkZG9hU1NnV2hlVloxYmJsclY2NTBDOGR5WnBtNExnUjJ3OHJjd3RjZkJqNEwxamF3MjMyS2NCTVV1bmh0UTFlb1FqbERUX1JwNFYzM3d5eGU4M21USW5YN1U5Q1F0QUxVcXh2aHRLVUw4S2lMaXVKNkhZeWs?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "f9cf14d408ff",
+      "date": "2026-09-12",
+      "published_at": "2026-09-11T16:22:48+00:00",
+      "headline": {
+        "en": "Blue Owl Technology Finance Raises $800M in Debt",
+        "zh": "Blue Owl Technology Finance 举债融资 8 亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance raised $800 million in debt, according to connectmoney.com. No further details on the financing were provided.",
+        "zh": "据 connectmoney.com 报道，Blue Owl Technology Finance 通过债务融资筹集了 8 亿美元。报道未提供有关此次融资的更多细节。"
+      },
+      "gps": [
+        "blue_owl",
+        "otf"
+      ],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "connectmoney.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcDFJRlFWT2NDVjFfQXBMRzd2TG5QSmVJZXhfSUg1MVBsTVctTFp2NElqN1JDRm1fU1p4TEVXY0NJYU81cGREcEpjbG9LcDlaSFZTOERZTVNGallYOXp0RWVKMmpHTW5PZ2t6dmY0T2tTc1lhak1FM3ExSzBsZDNtR3B6Sm96cEIxSUJnX3JB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "b574959d7c9b",
+      "date": "2026-09-12",
+      "published_at": "2026-09-11T16:03:35+00:00",
+      "headline": {
+        "en": "Deutsche Bank: CLO portfolio defaults at lowest rate in four years",
+        "zh": "德意志银行：CLO投资组合违约率处于四年来最低水平"
+      },
+      "summary": {
+        "en": "Deutsche Bank said CLO portfolio defaults are at their lowest rate in four years, according to PitchBook.",
+        "zh": "据PitchBook报道，德意志银行表示CLO投资组合违约率处于四年来最低水平。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPa3pLY2RRUXRNeHdjTUVEX2lxUnFrUWRJTU14TEQ4R05WaV8wbDdaMFZjNGZKeUtTSjVpQTZ4YzRSai1ZMzE0V1h1OUFiNnNhMTRMUHVNQWtEc3hJZ1pPRDI1VkdXWGdUaWdsUFBXOXdzSUpBVzBwSFdpOUNKeGNkNjAyLXc3QU5Qc1NIMkVKUHRMa2Q2WjRfX1BaVUhrUDIwenYw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    }
+  ]
+}

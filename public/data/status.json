@@ -1,0 +1,12 @@
+{
+  "mode": "manual",
+  "schedule": {
+    "en": "Refreshes automatically on weekdays at 08:00 and 16:00 Hong Kong time",
+    "zh": "工作日香港时间 08:00 和 16:00 自动更新"
+  },
+  "last_refresh_at": "2026-09-13T10:10:56+00:00",
+  "last_refresh_result": "succeeded",
+  "last_success_at": "2026-09-13T10:10:56+00:00",
+  "new_items": 8,
+  "detail": "28 feeds ok, 0 failed; 20 matched the rule; 8 added; 12 rejected by the model"
+}

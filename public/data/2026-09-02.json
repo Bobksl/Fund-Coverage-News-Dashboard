@@ -1,0 +1,79 @@
+{
+  "date": "2026-09-02",
+  "items": [
+    {
+      "id": "46436234a5fa",
+      "date": "2026-09-02",
+      "published_at": "2026-09-02T09:36:10-04:00",
+      "headline": {
+        "en": "Prospect Ridge closes second real estate credit fund at $800 million",
+        "zh": "Prospect Ridge 第二只房地产信贷基金完成募集，规模 8 亿美元"
+      },
+      "summary": {
+        "en": "Prospect Ridge closed its second commercial real estate credit fund with $800 million in capital commitments, the firm announced. The fund, Prospect Ridge Real Estate Debt Fund II, has roughly $3 billion of total lending capacity and will make first-mortgage loans, mezzanine loans and preferred equity investments across the U.S. It follows the firm's debut $500 million fund focused on transitional and value-add opportunities.",
+        "zh": "Prospect Ridge 宣布其第二只商业房地产信贷基金完成募集，获得 8 亿美元资本承诺。该基金 Prospect Ridge Real Estate Debt Fund II 总放贷能力约 30 亿美元，将在美国各地进行第一抵押贷款、夹层贷款和优先股投资。此前该公司的首只基金规模为 5 亿美元，主要关注过渡性和增值型机会。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/robert-milne-prospect-ridge/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "713c2760fc8e",
+      "date": "2026-09-02",
+      "published_at": "2026-09-02",
+      "headline": {
+        "en": "Pallas Capital secures £200m senior credit line from European debt fund",
+        "zh": "Pallas Capital 从一家欧洲债务基金获得 2 亿英镑高级信贷额度"
+      },
+      "summary": {
+        "en": "UK bridging lender Pallas Capital has secured a £200m senior funding line from a European debt fund. The facility will help Pallas commit financing across its UK product range, spanning residential, mixed-use and commercial lending.",
+        "zh": "英国过桥贷款机构 Pallas Capital 从一家欧洲债务基金获得 2 亿英镑高级融资额度。该额度将帮助 Pallas 在其英国产品范围内继续提供融资，涵盖住宅、混合用途和商业贷款。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/02/bridging-lender-pallas-capital-secures-200m-credit-line/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "e50d7881c73e",
+      "date": "2026-09-02",
+      "published_at": "2026-09-02",
+      "headline": {
+        "en": "LACERA appoints Cheyne Capital to manage $750m credit mandate",
+        "zh": "LACERA委任Cheyne Capital管理7.5亿美元信贷授权"
+      },
+      "summary": {
+        "en": "The Los Angeles County Employees' Retirement Association (LACERA) has appointed Cheyne Capital Management to oversee a multi-asset credit mandate. The pension fund approved an investment of up to $750m in a Cheyne Capital multi-asset credit strategy through a dedicated managed account.",
+        "zh": "洛杉矶县雇员退休协会（LACERA）已委任Cheyne Capital Management管理一项多资产信贷授权。该养老基金批准向Cheyne Capital通过专用管理账户运作的多资产信贷策略投资最多7.5亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/02/lacera-appoints-cheyne-capital-to-manage-750m-credit-mandate/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

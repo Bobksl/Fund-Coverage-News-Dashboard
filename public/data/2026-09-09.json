@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-09",
+  "items": [
+    {
+      "id": "3aac8717bd35",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T13:05:54-04:00",
+      "headline": {
+        "en": "CBRE Investment Management Acquires $1.6B Net-Lease Portfolio",
+        "zh": "CBRE Investment Management 收购 16 亿美元净租赁资产组合"
+      },
+      "summary": {
+        "en": "CBRE Investment Management, the $155 billion global investment arm of CBRE, acquired Tenet Equity's $1.6 billion net-lease platform, comprising 208 assets in 39 states and 12 million square feet. The portfolio is fully leased to middle-market industrial tenants with an average lease term of roughly 17 years, and CBRE IM will partner with Tenet Equity on managing the assets and growing the platform.",
+        "zh": "CBRE 旗下规模 1.55 万亿美元的全球投资部门 CBRE Investment Management 收购了 Tenet Equity 价值 16 亿美元的净租赁平台，包含分布于 39 个州的 208 项资产、共 1,200 万平方英尺。该资产组合全部出租给中型工业企业租户，平均租期约 17 年；CBRE IM 将与 Tenet Equity 合作管理这些资产并拓展该平台。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/cbre-investment-management-acquires-1-6b-net-lease-portfolio/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "f6e820e3975b",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09",
+      "headline": {
+        "en": "Fasanara and Tether launch $400m private credit fund",
+        "zh": "Fasanara与Tether推出4亿美元私募信贷基金"
+      },
+      "summary": {
+        "en": "Fasanara Capital and stablecoin issuer Tether have launched the Tether-Fasanara Lending Fund, a $400m private credit fund. The jointly sponsored evergreen vehicle is targeting up to $3bn in third-party institutional capital.",
+        "zh": "Fasanara Capital与稳定币发行商Tether已推出Tether-Fasanara Lending Fund，一只4亿美元的私募信贷基金。该联合发起的永续型载体目标募集最多30亿美元的第三方机构资金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/09/fasanara-and-tether-roll-out-400m-private-credit-fund/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "74922896b1ea",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09",
+      "headline": {
+        "en": "Hercules Adviser closes two private credit vehicles with $2.3bn",
+        "zh": "Hercules Adviser 关闭两只私人信贷工具，募资 23 亿美元"
+      },
+      "summary": {
+        "en": "Hercules Capital's investment adviser, Hercules Adviser, has raised $2.3bn of investable capital after closing two institutional private credit vehicles. One of the vehicles is the Hercules Evergreen.",
+        "zh": "Hercules Capital 的投资顾问 Hercules Adviser 在关闭两只机构私人信贷工具后，筹集了 23 亿美元可投资资金。其中一只工具是 Hercules Evergreen。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/09/hercules-closes-2-3bn-of-capital-for-private-credit/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "7d2d92953671",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09",
+      "headline": {
+        "en": "Jefferies reaches $4bn in European lending capacity",
+        "zh": "Jefferies欧洲贷款能力达到40亿美元"
+      },
+      "summary": {
+        "en": "Jefferies Credit Partners has reached $4bn of lending capacity for its European institutional direct lending strategy at first close. The private credit manager's flagship fund has been anchored by commitments from Allianz Global Investors, with investments from the South Carolina Reti",
+        "zh": "Jefferies Credit Partners的欧洲机构直接贷款策略在首次关闭时达到40亿美元贷款能力。这家私人信贷管理公司的旗舰基金由Allianz Global Investors的承诺作为锚定投资，投资方还包括South Carolina Reti"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/09/jefferies-reaches-4bn-in-european-lending-capacity/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "60b5fc3bb616",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09",
+      "headline": {
+        "en": "ICG's European corporate fund hits €12bn",
+        "zh": "ICG 的欧洲企业基金募集规模达到 120 亿欧元"
+      },
+      "summary": {
+        "en": "ICG has raised €12bn (£10.3bn) for its flagship European corporate strategy, ICG Europe Fund IX (EF IX), at final close. The global alternative asset manager said the fundraise represents a 50 per cent increase on its predecessor, ICG Europe VIII. The fund was oversubscribed and reached its €",
+        "zh": "ICG 为其旗舰欧洲企业策略 ICG Europe Fund IX（EF IX）在最终关闭时募集了 120 亿欧元（103 亿英镑）。这家全球另类资产管理公司表示，此次募资较其前身 ICG Europe VIII 增长 50%。该基金获得超额认购，并达到其 €"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/09/icgs-european-corporate-fund-hits-e12bn/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

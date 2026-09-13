@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-08",
+  "items": [
+    {
+      "id": "3aab807a0d5a",
+      "date": "2026-09-08",
+      "published_at": "2026-09-08T09:24:00-04:00",
+      "headline": {
+        "en": "CRE CLO Distress Rate Jumps to 28% in August",
+        "zh": "CRE CLO 不良率8月跃升至28%"
+      },
+      "summary": {
+        "en": "The commercial real estate CLO distress rate rose from 19 percent in July to 28 percent in August, the sharpest one-month move of any deal type this year, according to CRED iQ data. Single-asset, single-borrower CMBS distress has held near 22 percent since June, with stress concentrated in a handful of large 2021 and 2022 vintage deals.",
+        "zh": "据 CRED iQ 数据，商业房地产 CLO 不良率从7月的19%升至8月的28%，为今年各类交易中单月最大涨幅。单一资产单一借款人（SASB）CMBS 不良率自6月以来一直维持在22%附近，压力集中在少数几笔2021和2022年份的大额交易中。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/cre-clo-distress-cred-iq/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "f85da15511a0",
+      "date": "2026-09-08",
+      "published_at": "2026-09-08T08:00:59-04:00",
+      "headline": {
+        "en": "New York Office Tower Listings Test Market Recovery",
+        "zh": "纽约办公大楼挂牌潮考验市场复苏"
+      },
+      "summary": {
+        "en": "Commercial Observer reported on three Midtown office towers hitting the market in a two-week period in July. BXP's ground lease at 7 Times Square asked north of $700 million; Empire State Realty Trust's 1359 Broadway sought roughly $225 million; and Property & Building Corporation's 10 Bryant Park returned to market for more than $800 million after an $855 million deal fell through in 2022. The estate of L.H. Charney sold 1441 Broadway for $238 million to a partnership of 60 Guilders and Sentry Realty.",
+        "zh": "Commercial Observer 报道，7 月的两周内有3栋中城办公大楼挂牌入市。BXP 位于 7 Times Square 的地面租赁权要价超过7亿美元；Empire State Realty Trust 的 1359 Broadway 寻求约2.25亿美元；Property & Building Corporation 的 10 Bryant Park 在2022年一笔8.55亿美元的交易告吹后重返市场，现寻求超过8亿美元出售。L.H. Charney 遗产管理方以2.38亿美元将中城的 1441 Broadway 出售给 60 Guilders 与 Sentry Realty 的合资方。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/new-york-office-tower-listings-2026/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "583f3d6c6d0a",
+      "date": "2026-09-08",
+      "published_at": "2026-09-08",
+      "headline": {
+        "en": "Funding Circle posts 50pc revenue growth in H1",
+        "zh": "Funding Circle上半年营收增长50%"
+      },
+      "summary": {
+        "en": "Small business lender Funding Circle reported record first-half 2026 revenue of £138.2m, up more than 50 per cent. Chief executive Lisa Jacobs announced plans to step down from the role.",
+        "zh": "小企业贷款机构Funding Circle公布2026年上半年创纪录营收1.382亿英镑，增幅超过50%。首席执行官Lisa Jacobs宣布计划卸任。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/08/funding-circle-posts-50pc-revenue-growth-in-h1/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "67e4ea6814ca",
+      "date": "2026-09-08",
+      "published_at": "2026-09-08",
+      "headline": {
+        "en": "Pluto Finance flagship lending fund tops £500m, targets Europe",
+        "zh": "Pluto Finance 旗舰贷款基金募资超 5 亿英镑，进军欧洲"
+      },
+      "summary": {
+        "en": "Pluto Finance has surpassed £500m of commitments for its flagship lending fund and is expanding the strategy into continental Europe. Lending Vehicle VIII, an evergreen development and property lending fund focused primarily on the UK, has surpassed £1bn in total financing.",
+        "zh": "Pluto Finance 旗舰贷款基金的承诺出资已超过 5 亿英镑，并将该策略扩展至欧洲大陆。Lending Vehicle VIII 是一只主要聚焦英国的常青开发与房地产贷款基金，其总融资规模已超过 10 亿英镑。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/08/pluto-finance-targets-europe-as-flagship-fund-tops-500m/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "7451d21d8ba2",
+      "date": "2026-09-08",
+      "published_at": "2026-09-08",
+      "headline": {
+        "en": "Bridgepoint moves €1.2bn of loans into Pantheon-led continuation vehicle",
+        "zh": "Bridgepoint将12亿欧元贷款转入Pantheon主导的延续基金"
+      },
+      "summary": {
+        "en": "Bridgepoint Credit has transferred €1.2bn of loans from an older direct lending fund into a continuation vehicle led by secondaries investor Pantheon. The loans come from Bridgepoint Direct Lending II, a 2017-vintage direct lending fund with exposure to European loans.",
+        "zh": "Bridgepoint Credit已将一只较早的直接贷款基金中的12亿欧元贷款转入由二级市场投资者Pantheon主导的延续基金（CV）。这些贷款来自Bridgepoint Direct Lending II（BDL II），这是一只2017年份的直接贷款基金，投资于欧洲贷款。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/08/bridgepoint-transfers-e1-2bn-into-pantheon-led-cv/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "fa0e3aebcc93",
+      "date": "2026-09-08",
+      "published_at": "2026-09-08",
+      "headline": {
+        "en": "GPs turn to NAV loans amid tough fundraising market",
+        "zh": "募资市场艰难，GP转向NAV贷款"
+      },
+      "summary": {
+        "en": "Net asset value (NAV) financing is gaining ground across the private equity industry, with adoption rising on both sides of the Atlantic. Lenders report a broadening set of use cases beyond the sector's early applications, according to Peter Hutton, head of NAV financing at Arcm.",
+        "zh": "资产净值（NAV）融资在私募股权行业中持续升温，大西洋两岸的采用率均在上升。据Arcm的NAV融资主管Peter Hutton称，贷款机构报告称其应用场景正超出该领域早期的用途。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/08/gps-turn-to-nav-loans-amid-tough-fundraising-market/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

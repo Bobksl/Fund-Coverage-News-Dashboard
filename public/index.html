@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junson Capital — Fund Coverage News</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --panel: #ffffff; --ink: #16202e; --muted: #5b6677; --line: #dde2ea;
+    --accent: #1d3a6e; --accent-soft: #e8eef8; --warn: #9a5b00; --warn-soft: #fff3df;
+    --tag: #eef1f5; --tag-ink: #3a4658;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151c; --panel: #1a2029; --ink: #e6ebf2; --muted: #9aa5b5; --line: #2c3440;
+      --accent: #8fb0ea; --accent-soft: #223149; --warn: #f0b35a; --warn-soft: #3a2c16;
+      --tag: #252d38; --tag-ink: #c4ccd8;
+    }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.5;
+         font: 15px/1.5 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+               "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header.top { background: var(--panel); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding-top: 18px; padding-bottom: 14px; }
+  .firm { margin: 0; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1 { margin: 2px 0 4px; font-size: 22px; line-height: 1.25; }
+  .status { margin: 0; font-size: 12px; color: var(--muted); }
+  .status-warn { color: var(--warn); font-weight: 600; }
+  .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; flex: none; }
+  .lang button { border: 0; background: transparent; color: var(--ink); padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  @media (prefers-color-scheme: dark) { .lang button[aria-pressed="true"] { color: #11151c; } }
+  .toolbar { position: sticky; top: 0; z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .toolbar .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding-top: 10px; padding-bottom: 10px; }
+  .group { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .toolbar button, .toolbar select { font: inherit; font-size: 13px; color: var(--ink); background: var(--panel);
+    border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; min-height: 34px; }
+  .toolbar button { cursor: pointer; }
+  .toolbar button:disabled { opacity: .45; cursor: default; }
+  .toolbar select { max-width: 100%; }
+  .filters { margin-left: auto; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  button:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  main { padding-top: 18px; padding-bottom: 32px; }
+  .notice { margin: 0 0 14px; padding: 10px 14px; background: var(--accent-soft); border-radius: 8px; font-size: 13px; }
+  .day-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+  h2 { margin: 0; font-size: 18px; }
+  .count { margin: 0; color: var(--muted); font-size: 13px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; }
+  .badge { display: inline-block; margin-bottom: 6px; padding: 1px 8px; border-radius: 999px; font-size: 11px;
+           background: var(--warn-soft); color: var(--warn); font-weight: 600; }
+  .headline { margin: 0 0 6px; font-size: 16px; line-height: 1.35; }
+  .summary { margin: 0 0 8px; }
+  .source { margin: 0 0 8px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+  .source a { color: var(--accent); font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .source a:hover { text-decoration: underline; }
+  .tags { margin: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag { font-size: 11px; line-height: 1.6; padding: 0 7px; border-radius: 4px; background: var(--tag); color: var(--tag-ink); }
+  .tag-gp { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .state { text-align: center; color: var(--muted); padding: 48px 16px; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+  footer .wrap { padding-top: 14px; padding-bottom: 28px; }
+  @media (max-width: 640px) {
+    .top .wrap { padding-top: 14px; }
+    h1 { font-size: 19px; }
+    .filters { margin-left: 0; width: 100%; }
+    .filters select { flex: 1 1 140px; }
+    .card { padding: 14px; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div>
+      <p class="firm">Junson Capital</p>
+      <h1 data-i18n="title">Fund Coverage News</h1>
+      <p class="status" id="status" role="status"></p>
+    </div>
+    <div class="lang" role="group" aria-label="Language / 语言">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    </div>
+  </div>
+</header>
+<nav class="toolbar" aria-label="Date and filters">
+  <div class="wrap">
+    <div class="group">
+      <button type="button" id="prev" data-i18n="prev">‹ Earlier</button>
+      <label for="dateSelect" class="sr-only" data-i18n="dateLabel">Date</label>
+      <select id="dateSelect"></select>
+      <button type="button" id="next" data-i18n="next">Later ›</button>
+      <button type="button" id="today" data-i18n="today">Today</button>
+    </div>
+    <div class="group filters">
+      <label for="gpSelect" class="sr-only" data-i18n="gpLabel">Manager</label>
+      <select id="gpSelect"></select>
+      <label for="sectorSelect" class="sr-only" data-i18n="sectorLabel">Sub-sector</label>
+      <select id="sectorSelect"></select>
+    </div>
+  </div>
+</nav>
+<main class="wrap" id="main" aria-live="polite"></main>
+<footer><div class="wrap" data-i18n="footer">Summaries are AI-drafted from the linked sources; follow the link for full details.</div></footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-07",
+  "items": [
+    {
+      "id": "9a3525282b69",
+      "date": "2026-09-07",
+      "published_at": "2026-09-07",
+      "headline": {
+        "en": "Claret raises €575m for fourth European growth debt fund",
+        "zh": "Claret为第四只欧洲成长债基金募集5.75亿欧元"
+      },
+      "summary": {
+        "en": "Claret Capital Partners has raised €575m for its fourth European growth debt fund, Claret European Growth Capital Fund IV, at final close. The fund surpassed its €500m target and has already invested 32 per cent of capital across 27 venture and growth companies.",
+        "zh": "Claret Capital Partners为其第四只欧洲成长债基金Claret European Growth Capital Fund IV完成最终募集，规模5.75亿欧元。该基金超出5亿欧元的目标，并已将32%的资金投资于27家风险投资和成长型企业。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/07/claret-inks-e575m-for-european-growth-debt/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "b25cd6b822b1",
+      "date": "2026-09-07",
+      "published_at": "2026-09-07",
+      "headline": {
+        "en": "KBRA reports rising non-accruals as BDC credit stress emerges",
+        "zh": "KBRA报告称BDC信贷压力显现，非应计投资上升"
+      },
+      "summary": {
+        "en": "Ratings agency KBRA said headwinds have become increasingly evident in business development companies, with selective credit issues more prevalent and non-accrual investments increasing. Credit stress became more visible in the second quarter of 2026, particularly among a limited set of borrowers and managers.",
+        "zh": "评级机构KBRA表示，业务发展公司（BDC）面临的阻力已“日益明显”，选择性信贷问题更加普遍，非应计投资有所增加。2026年第二季度信贷压力更加明显，尤其集中在有限的一组借款人和管理人。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/07/non-accruals-rise-as-credit-stress-emerges-across-bdcs/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "version": "1.0.0",
+  "rule": "Keep an auto-fetched item when (a tracked GP matches, with credit context for multi-strategy managers) OR (a sub-sector keyword matches, with credit context where required), AND a material-event keyword matches, AND no exclusion keyword matches. Matching is case-insensitive on title plus feed description, on word boundaries; all-uppercase terms such as KKR, PAG, CIFC or CLO match case-sensitively. DeepSeek then writes the bilingual brief and tags and may drop an item it judges not relevant. Auto-fetched cards are published as unreviewed.",
+  "schedule": {
+    "en": "Refreshes automatically on weekdays at 08:00 and 16:00 Hong Kong time",
+    "zh": "工作日香港时间 08:00 和 16:00 自动更新"
+  },
+  "credit_context_keywords": [
+    "credit", "lending", "lender", "loan", "loans", "debt", "private credit", "direct lending",
+    "BDC", "CLO", "notes", "bond", "bonds", "financing", "asset-based", "asset-backed", "ABF",
+    "mortgage", "securitization", "securitisation", "NAV facility", "fund finance", "insurance",
+    "annuity", "annuities", "GP stake", "GP stakes", "minority stake", "real estate debt",
+    "structured credit", "leveraged loan"
+  ],
+  "material_event_keywords": [
+    "raise", "raises", "raised", "closes", "closed", "final close", "first close", "fundraise",
+    "fundraising", "launch", "launches", "launched", "acquire", "acquires", "acquired",
+    "acquisition", "merger", "merge", "stake", "partnership", "joint venture", "earnings",
+    "results", "quarter", "NAV", "dividend", "default", "defaults", "bankruptcy", "Chapter 11",
+    "restructuring", "non-accrual", "non-accruals", "markdown", "writedown", "write-down",
+    "downgrade", "downgrades", "upgrade", "rating", "ratings", "redemption", "redemptions",
+    "withdrawal", "withdrawals", "gated", "outflows", "inflows", "SEC", "regulator",
+    "investigation", "lawsuit", "settlement", "appoints", "names", "CEO", "steps down",
+    "departs", "refinancing", "refinances", "financing", "notes offering", "priced", "prices",
+    "issuance", "spread", "spreads", "facility", "exit", "IPO", "listing", "secondary",
+    "continuation fund", "private placement", "commitment", "mandate", "allocation", "record",
+    "billion", "million"
+  ],
+  "exclude_keywords": [
+    "award", "awards", "podcast", "webinar", "conference", "panel discussion", "sponsorship",
+    "charity", "philanthropy", "volunteer", "best places to work", "museum", "Pretium Resources",
+    "Guggenheim Securities", "Apollo Hospitals", "Apollo Tyres"
+  ],
+  "gps": {
+    "blue_owl": {
+      "en": "Blue Owl", "zh": "Blue Owl",
+      "scope": "credit platform, BDCs and GP Strategic Capital (GP stakes)",
+      "match": ["Blue Owl"], "credit_context_required": false
+    },
+    "otf": {
+      "en": "OTF (Blue Owl Technology Finance)", "zh": "OTF（Blue Owl 科技金融）",
+      "scope": "public BDC lending to software and technology companies",
+      "match": ["Blue Owl Technology Finance", "Owl Rock Technology Finance", "NYSE: OTF", "(OTF)"],
+      "credit_context_required": false
+    },
+    "pretium": {
+      "en": "Pretium", "zh": "Pretium",
+      "scope": "residential credit, mortgage platforms (Deephaven, Anchor Loans, Selene), real estate and structured credit",
+      "match": ["Pretium", "Deephaven Mortgage", "Anchor Loans", "Selene Finance"],
+      "credit_context_required": false
+    },
+    "kkr": {
+      "en": "KKR", "zh": "KKR",
+      "scope": "KKR Credit: private credit, asset-based finance, leveraged credit, CLOs",
+      "match": ["KKR"], "credit_context_required": true
+    },
+    "pag": {
+      "en": "PAG", "zh": "PAG 太盟投资",
+      "scope": "PAG Credit & Markets, Asia direct lending (PAG Loan Funds)",
+      "match": ["PAG", "Pacific Alliance Group", "PAG Credit & Markets", "PAG Loan Fund"],
+      "credit_context_required": true
+    },
+    "bayview": {
+      "en": "Bayview", "zh": "Bayview",
+      "scope": "residential, consumer and commercial credit, mortgage servicing",
+      "match": ["Bayview Asset Management", "Bayview"], "credit_context_required": true
+    },
+    "cifc": {
+      "en": "CIFC", "zh": "CIFC",
+      "scope": "US and European CLOs, senior secured loans, direct lending",
+      "match": ["CIFC"], "credit_context_required": false
+    },
+    "basepoint": {
+      "en": "BasePoint", "zh": "BasePoint",
+      "scope": "asset-based and specialty lending, BasePoint Advisors funds",
+      "match": ["BasePoint"], "credit_context_required": true
+    },
+    "neuberger": {
+      "en": "NB (Neuberger Berman)", "zh": "路博迈 NB",
+      "scope": "NB Private Debt, NB Strategic Capital (GP stakes), CLOs",
+      "match": ["Neuberger Berman", "Neuberger", "NB Private Debt", "NB Strategic Capital"],
+      "credit_context_required": true
+    },
+    "apollo": {
+      "en": "Apollo", "zh": "阿波罗 Apollo",
+      "scope": "Apollo credit, asset-backed finance, Athene",
+      "match": ["Apollo Global Management", "Apollo Global", "Athene", "Apollo"],
+      "credit_context_required": true
+    },
+    "bain_capital": {
+      "en": "Bain Capital", "zh": "贝恩资本",
+      "scope": "Bain Capital Credit, special situations, private credit BDCs",
+      "match": ["Bain Capital Credit", "Bain Capital"], "credit_context_required": true
+    },
+    "guggenheim": {
+      "en": "Guggenheim", "zh": "古根海姆",
+      "scope": "Guggenheim Investments credit strategies (not Guggenheim Securities advisory)",
+      "match": ["Guggenheim Investments", "Guggenheim Partners", "Guggenheim"],
+      "credit_context_required": true
+    },
+    "hsbc_am": {
+      "en": "HSBC AM", "zh": "汇丰资产管理",
+      "scope": "HSBC Asset Management private credit and alternatives (not HSBC group banking)",
+      "match": ["HSBC Asset Management", "HSBC AM"], "credit_context_required": false
+    }
+  },
+  "sectors": {
+    "software": {
+      "en": "Software", "zh": "软件",
+      "match": ["software", "SaaS", "recurring revenue loan", "technology lending"],
+      "credit_context_required": true
+    },
+    "private_credit": {
+      "en": "Private Credit / Direct Lending", "zh": "私募信贷 / 直接贷款",
+      "match": ["private credit", "direct lending", "private debt", "BDC", "business development company", "unitranche", "middle market lending", "middle-market lending", "non-bank lending"],
+      "credit_context_required": false
+    },
+    "gp_stakes": {
+      "en": "GP Stakes", "zh": "GP 股权",
+      "match": ["GP stake", "GP stakes", "GP Strategic Capital", "GP minority stake", "manager stake", "stake in the manager"],
+      "credit_context_required": false
+    },
+    "aircraft_leasing": {
+      "en": "Aircraft Leasing", "zh": "飞机租赁",
+      "match": ["aircraft leasing", "aircraft lessor", "aircraft lessors", "aviation finance", "aircraft finance", "aircraft ABS"],
+      "credit_context_required": false
+    },
+    "asset_based_finance": {
+      "en": "Asset-Backed Lending", "zh": "资产支持贷款",
+      "match": ["asset-based finance", "asset-backed finance", "asset-based lending", "ABF", "ABL", "specialty finance", "fund finance", "NAV lending", "NAV financing", "receivables financing", "equipment finance"],
+      "credit_context_required": false
+    },
+    "real_estate": {
+      "en": "Real Estate", "zh": "房地产",
+      "match": ["commercial real estate", "CRE", "real estate debt", "real estate credit", "property lending", "mortgage REIT", "office loan", "multifamily", "refinance", "refinancing"],
+      "credit_context_required": true
+    },
+    "mortgage": {
+      "en": "Mortgage", "zh": "抵押贷款",
+      "match": ["mortgage", "mortgages", "non-QM", "residential credit", "RMBS", "MSR", "mortgage servicing", "home loan"],
+      "credit_context_required": false
+    },
+    "clo": {
+      "en": "CLO", "zh": "CLO",
+      "match": ["CLO", "CLOs", "collateralized loan obligation", "collateralised loan obligation", "leveraged loan", "leveraged loans"],
+      "credit_context_required": false
+    }
+  },
+  "regions": {
+    "US": {"en": "US", "zh": "美国"},
+    "Europe": {"en": "Europe", "zh": "欧洲"},
+    "APAC": {"en": "APAC", "zh": "亚太"},
+    "Global": {"en": "Global", "zh": "全球"}
+  },
+  "feeds": {
+    "google_news": {
+      "endpoint": "https://news.google.com/rss/search",
+      "lookback": "when:2d",
+      "editions": {
+        "US": {"hl": "en-US", "gl": "US", "ceid": "US:en"},
+        "Europe": {"hl": "en-GB", "gl": "GB", "ceid": "GB:en"}
+      },
+      "queries": [
+        {"edition": "US", "q": "\"Blue Owl\" (credit OR lending OR BDC OR \"GP stakes\")"},
+        {"edition": "US", "q": "\"Blue Owl Technology Finance\" OR \"NYSE: OTF\""},
+        {"edition": "US", "q": "Pretium (credit OR mortgage OR \"real estate\")"},
+        {"edition": "US", "q": "KKR (credit OR lending OR \"asset-based\" OR CLO)"},
+        {"edition": "US", "q": "PAG (\"private credit\" OR \"direct lending\" OR \"Credit & Markets\")"},
+        {"edition": "US", "q": "\"Bayview Asset Management\""},
+        {"edition": "US", "q": "CIFC (CLO OR credit OR lending)"},
+        {"edition": "US", "q": "BasePoint (lending OR credit OR fund)"},
+        {"edition": "US", "q": "\"Neuberger Berman\" (\"private debt\" OR credit OR \"NB Strategic Capital\")"},
+        {"edition": "US", "q": "\"Apollo Global\" (credit OR Athene OR lending)"},
+        {"edition": "US", "q": "\"Bain Capital\" (credit OR \"private credit\" OR lending)"},
+        {"edition": "US", "q": "\"Guggenheim Investments\""},
+        {"edition": "Europe", "q": "\"HSBC Asset Management\" (\"private credit\" OR \"private markets\" OR lending)"},
+        {"edition": "US", "q": "\"private credit\""},
+        {"edition": "US", "q": "\"direct lending\""},
+        {"edition": "US", "q": "\"business development company\" OR BDC \"non-accrual\""},
+        {"edition": "US", "q": "\"GP stakes\""},
+        {"edition": "US", "q": "\"aircraft leasing\" OR \"aircraft lessor\""},
+        {"edition": "US", "q": "\"asset-based finance\" OR \"asset-backed finance\""},
+        {"edition": "US", "q": "\"commercial real estate\" lending"},
+        {"edition": "US", "q": "\"non-QM\" OR \"mortgage credit\""},
+        {"edition": "US", "q": "CLO \"leveraged loan\""},
+        {"edition": "US", "q": "software \"private credit\""},
+        {"edition": "Europe", "q": "\"private credit\" Europe"},
+        {"edition": "Europe", "q": "\"European CLO\""},
+        {"edition": "Europe", "q": "\"direct lending\" (UK OR Europe)"}
+      ]
+    },
+    "rss": [
+      {"id": "alternative_credit_investor", "url": "https://alternativecreditinvestor.com/feed/", "region_hint": "US", "status": "verify_before_use"},
+      {"id": "commercial_observer_finance", "url": "https://commercialobserver.com/finance/feed/", "region_hint": "US", "status": "verify_before_use"}
+    ]
+  }
+}

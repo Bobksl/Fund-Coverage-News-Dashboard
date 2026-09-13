@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-14",
+  "items": [
+    {
+      "id": "106e6b236bd9",
+      "date": "2026-08-14",
+      "published_at": "2026-08-14",
+      "headline": {
+        "en": "Onex fee-generating AUM hits $43.2bn amid active CLO quarter",
+        "zh": "Onex 收费型 AUM 达 432 亿美元，CLO 业务迎来活跃季度"
+      },
+      "summary": {
+        "en": "Canadian alternative asset manager Onex reported total fee-generating assets under management of approximately $43.2bn at the end of the second quarter, boosted by collateralised loan obligation activity in its credit business. Onex Credit fee-generating AUM reached $30.6bn, with three CLO transactions adding $1.4bn and structured credit delivering record quarterly fee-related earnings.",
+        "zh": "加拿大另类资产管理公司 Onex 公布，第二季度末总收费型资产管理规模（AUM）约为 432 亿美元，受其信贷业务中担保贷款凭证（CLO）活动的推动。Onex Credit 收费型 AUM 达到 306 亿美元，三笔 CLO 交易贡献 14 亿美元，结构化信贷实现创纪录的季度费用相关收益。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/14/onex-fee-generating-aum-hits-43-2bn-amid-active-quarter-for-clos/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "df849d742755",
+      "date": "2026-08-14",
+      "published_at": "2026-08-14",
+      "headline": {
+        "en": "Homestead holds first close of inaugural agriculture private credit fund",
+        "zh": "Homestead 首只农业私募信贷基金完成首次募集"
+      },
+      "summary": {
+        "en": "Farmland investor Homestead Capital announced the first close of its inaugural agriculture private credit fund, anchored by a $150m commitment from the private credit investment team of a large US state pension system. Homestead is targeting a total raise of $350m.",
+        "zh": "农田投资机构 Homestead Capital 宣布其首只农业私募信贷基金完成首次募集，锚定投资来自一家美国大型州养老金体系的私募信贷投资团队，金额为 1.5 亿美元。Homestead 的目标总募集规模为 3.5 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/14/homestead-secures-significant-commitments-at-first-close-of-agri-private-credit-fund/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

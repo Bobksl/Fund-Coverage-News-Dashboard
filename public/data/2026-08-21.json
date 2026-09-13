@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-21",
+  "items": [
+    {
+      "id": "c5ae78f0b305",
+      "date": "2026-08-21",
+      "published_at": "2026-08-21",
+      "headline": {
+        "en": "Domestic funds lead India private credit as H1 deal value slumps",
+        "zh": "印度私人信贷市场本土基金领跑，上半年交易额大幅下滑"
+      },
+      "summary": {
+        "en": "Domestic funds strengthened their position in India's private credit market in the first half of 2026, accounting for 74 per cent of total deal value and approximately 79 per cent of deal volume, according to the report. The article does not name individual managers or specify the total value of deals.",
+        "zh": "据该报道，2026年上半年，本土基金在印度私人信贷市场的地位增强，占交易总值的74%，约占交易量的79%。文章未点名具体管理机构，也未给出交易总额。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/21/domestic-funds-take-lead-in-indias-private-credit-market/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

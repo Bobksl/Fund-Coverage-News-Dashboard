@@ -1,0 +1,79 @@
+{
+  "date": "2026-08-13",
+  "items": [
+    {
+      "id": "1926ae0ca860",
+      "date": "2026-08-13",
+      "published_at": "2026-08-13",
+      "headline": {
+        "en": "Blue Owl Finance prices $750 million 6.750% senior notes due 2036",
+        "zh": "Blue Owl Finance 定价 7.5 亿美元、票面 6.750%、2036 年到期的优先票据"
+      },
+      "summary": {
+        "en": "Blue Owl Finance LLC, an indirect subsidiary of Blue Owl Capital Inc., is offering $750 million of 6.750% senior notes due 2036. The notes are fully and unconditionally guaranteed by Blue Owl Capital Inc. and a list of affiliated entities, with interest payable February 18 and August 18 starting February 18, 2027.",
+        "zh": "Blue Owl Capital Inc. 的间接子公司 Blue Owl Finance LLC 发行 7.5 亿美元、票面利率 6.750%、2036 年到期的优先票据。该票据由 Blue Owl Capital Inc. 及一系列关联实体提供全额无条件担保，利息自 2027 年 2 月 18 日起每年 2 月 18 日和 8 月 18 日支付。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "BLUE OWL CAPITAL INC.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1823945/000119312526347343/0001193125-26-347343-index.htm"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "710cf91fb0dd",
+      "date": "2026-08-13",
+      "published_at": "2026-08-13",
+      "headline": {
+        "en": "Managers Build 401(k) Teams a Year After Alternatives Order",
+        "zh": "另类资产行政令一年后，管理机构组建401(k)团队"
+      },
+      "summary": {
+        "en": "A year after an executive order allowed alternatives into 401(k) retirement accounts, managers have set up defined contribution teams, formed partnerships and launched new funds. Barriers still block the $14tn opportunity, and private credit managers have been among those positioning for it.",
+        "zh": "在允许另类资产进入401(k)退休账户的行政令发布一年后，管理机构已设立固定缴款团队、建立合作并推出新基金。障碍仍阻碍着这一14万亿美元的机会，私募信贷管理机构也在为此布局。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/13/the-14tn-401k-push/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "3782c86e4cfe",
+      "date": "2026-08-13",
+      "published_at": "2026-08-13",
+      "headline": {
+        "en": "Janus Henderson AAA CLO ETF reaches $30bn in assets",
+        "zh": "Janus Henderson AAA CLO ETF 资产规模达 300 亿美元"
+      },
+      "summary": {
+        "en": "Janus Henderson Investors' AAA CLO ETF has reached $30bn in assets under management. The Janus Henderson AAA CLO ETF (JAAA) has also attracted $5.7bn in year-to-date inflows, as investors increasingly look to CLO ETFs amid this year's rate environment.",
+        "zh": "Janus Henderson Investors 的 AAA CLO ETF 资产管理规模已达 300 亿美元。Janus Henderson AAA CLO ETF（JAAA）今年迄今还吸引了 57 亿美元流入，因投资者在今年利率环境下日益关注 CLO ETF。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/13/janus-henderson-inks-30bn-for-clo-etf/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

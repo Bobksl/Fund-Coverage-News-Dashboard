@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-12",
+  "items": [
+    {
+      "id": "7766be2db755",
+      "date": "2026-08-12",
+      "published_at": "2026-08-12T13:35:20-04:00",
+      "headline": {
+        "en": "Vornado, Related's 85 10th Avenue CMBS Loan Sent to Special Servicing",
+        "zh": "Vornado与Related旗下85 10th Avenue的CMBS贷款被移交特殊服务"
+      },
+      "summary": {
+        "en": "A $396 million CMBS loan secured by 85 10th Avenue, a 633,000-square-foot Manhattan office property owned jointly by Vornado Realty Trust and the Related Companies, has been sent to special servicing due to imminent maturity default, per a Morningstar Credit alert. The loan makes up DBWF 2016-85T and is part of the CD 2017-CD3 and BACM 2017-BNK3 conduits; Morningstar said the transfer appears aimed at getting ahead of the loan's December 2026 maturity date.",
+        "zh": "据Morningstar Credit的提示，由Vornado Realty Trust与Related Companies共同拥有的曼哈顿63.3万平方英尺写字楼85 10th Avenue所担保的3.96亿美元CMBS贷款，因即将到期违约而被移交特殊服务。该贷款构成DBWF 2016-85T，并属于规模更大的CD 2017-CD3和BACM 2017-BNK3通道；Morningstar表示，此次移交似乎意在提前应对该贷款2026年12月的到期日。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/08/cmbs-loan-vornado-related-85-10th-avenue-sent-special-servicing/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "55d439246bc8",
+      "date": "2026-08-12",
+      "published_at": "2026-08-12",
+      "headline": {
+        "en": "Aperture expands litigation credit platform beyond $600m",
+        "zh": "Aperture 将诉讼信贷平台扩大至逾 6 亿美元"
+      },
+      "summary": {
+        "en": "Alternative asset manager Aperture Investors has expanded its litigation-focused private credit platform to more than $600m in assets under management. The move gives the Litigation Finance Private Credit platform approximately $1bn in total investment capacity.",
+        "zh": "另类资产管理公司 Aperture Investors 已将其专注诉讼的私募信贷平台扩大至管理资产超过 6 亿美元。此举使该 Litigation Finance Private Credit 平台拥有约 10 亿美元的总投资能力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/12/aperture-expands-litigation-credit-platform-beyond-600m/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

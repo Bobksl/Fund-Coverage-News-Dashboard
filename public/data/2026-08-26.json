@@ -1,0 +1,80 @@
+{
+  "date": "2026-08-26",
+  "items": [
+    {
+      "id": "92fc365ea67b",
+      "date": "2026-08-26",
+      "published_at": "2026-08-26",
+      "headline": {
+        "en": "AI infrastructure outside US attracts private capital in H1 2026",
+        "zh": "2026年上半年，美国以外的AI基础设施吸引私人资本"
+      },
+      "summary": {
+        "en": "Private capital investment in artificial intelligence infrastructure outside the US boomed in the first half of 2026, according to data from the Global Private Capital Association (GPCA). The GPCA represents private capital investors managing around $2tn in assets.",
+        "zh": "根据Global Private Capital Association (GPCA)的数据，2026年上半年，美国以外的人工智能基础设施私人资本投资激增。GPCA代表管理约2万亿美元资产的私人资本投资者。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/26/ai-infrastructure-outside-us-attracts-private-capital/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "cde3adfd5528",
+      "date": "2026-08-26",
+      "published_at": "2026-08-26",
+      "headline": {
+        "en": "Principal opens 401(k) plans to private markets",
+        "zh": "Principal 将 401(k) 计划向私募市场开放"
+      },
+      "summary": {
+        "en": "Principal Financial Group has expanded its US retirement plan business to include private markets, as alternative investments make their way into 401(k) plans. The retirement and insurance provider said it plans to collaborate with asset managers including Blackstone, Ares, KKR and Partners Group.",
+        "zh": "Principal Financial Group 已将其美国退休计划业务扩展至私募市场，另类投资正逐步进入 401(k) 计划。这家退休与保险提供商表示，计划与 Blackstone、Ares、KKR 和 Partners Group 等资产管理公司合作。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/26/principal-opens-401k-plans-to-private-markets/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "ccd600d33c15",
+      "date": "2026-08-26",
+      "published_at": "2026-08-26",
+      "headline": {
+        "en": "Victory Capital acquires First Eagle to bolster alts credit offering",
+        "zh": "Victory Capital收购First Eagle以增强另类信贷业务"
+      },
+      "summary": {
+        "en": "Victory Capital is set to acquire full ownership of First Eagle Investments, which manages $222bn in assets. The acquisition is aimed at scaling Victory's collateralised loan obligation and alternative credit platform.",
+        "zh": "Victory Capital将收购First Eagle Investments的全部所有权，后者管理2,220亿美元资产。此举旨在扩大Victory的贷款抵押债券（CLO）和另类信贷平台。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/26/victory-capital-acquires-first-eagle-to-bolster-alts-credit-offering/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-09-13T10:10:56+00:00",
+  "window_days": 90,
+  "dates": [
+    "2026-09-13",
+    "2026-09-12",
+    "2026-09-10",
+    "2026-09-09",
+    "2026-09-08",
+    "2026-09-07",
+    "2026-09-04",
+    "2026-09-02",
+    "2026-09-01",
+    "2026-08-31",
+    "2026-08-30",
+    "2026-08-28",
+    "2026-08-27",
+    "2026-08-26",
+    "2026-08-25",
+    "2026-08-24",
+    "2026-08-21",
+    "2026-08-20",
+    "2026-08-19",
+    "2026-08-18",
+    "2026-08-17",
+    "2026-08-14",
+    "2026-08-13",
+    "2026-08-12"
+  ],
+  "counts": {
+    "2026-09-13": 2,
+    "2026-09-12": 5,
+    "2026-09-10": 4,
+    "2026-09-09": 5,
+    "2026-09-08": 6,
+    "2026-09-07": 2,
+    "2026-09-04": 3,
+    "2026-09-02": 3,
+    "2026-09-01": 7,
+    "2026-08-31": 3,
+    "2026-08-30": 1,
+    "2026-08-28": 4,
+    "2026-08-27": 4,
+    "2026-08-26": 3,
+    "2026-08-25": 5,
+    "2026-08-24": 1,
+    "2026-08-21": 1,
+    "2026-08-20": 3,
+    "2026-08-19": 3,
+    "2026-08-18": 4,
+    "2026-08-17": 4,
+    "2026-08-14": 2,
+    "2026-08-13": 3,
+    "2026-08-12": 2
+  },
+  "labels": {
+    "gps": {
+      "blue_owl": {
+        "en": "Blue Owl",
+        "zh": "Blue Owl"
+      },
+      "otf": {
+        "en": "OTF (Blue Owl Technology Finance)",
+        "zh": "OTF（Blue Owl 科技金融）"
+      },
+      "pretium": {
+        "en": "Pretium",
+        "zh": "Pretium"
+      },
+      "kkr": {
+        "en": "KKR",
+        "zh": "KKR"
+      },
+      "pag": {
+        "en": "PAG",
+        "zh": "PAG 太盟投资"
+      },
+      "bayview": {
+        "en": "Bayview",
+        "zh": "Bayview"
+      },
+      "cifc": {
+        "en": "CIFC",
+        "zh": "CIFC"
+      },
+      "basepoint": {
+        "en": "BasePoint",
+        "zh": "BasePoint"
+      },
+      "neuberger": {
+        "en": "NB (Neuberger Berman)",
+        "zh": "路博迈 NB"
+      },
+      "apollo": {
+        "en": "Apollo",
+        "zh": "阿波罗 Apollo"
+      },
+      "bain_capital": {
+        "en": "Bain Capital",
+        "zh": "贝恩资本"
+      },
+      "guggenheim": {
+        "en": "Guggenheim",
+        "zh": "古根海姆"
+      },
+      "hsbc_am": {
+        "en": "HSBC AM",
+        "zh": "汇丰资产管理"
+      }
+    },
+    "sectors": {
+      "software": {
+        "en": "Software",
+        "zh": "软件"
+      },
+      "private_credit": {
+        "en": "Private Credit / Direct Lending",
+        "zh": "私募信贷 / 直接贷款"
+      },
+      "gp_stakes": {
+        "en": "GP Stakes",
+        "zh": "GP 股权"
+      },
+      "aircraft_leasing": {
+        "en": "Aircraft Leasing",
+        "zh": "飞机租赁"
+      },
+      "asset_based_finance": {
+        "en": "Asset-Backed Lending",
+        "zh": "资产支持贷款"
+      },
+      "real_estate": {
+        "en": "Real Estate",
+        "zh": "房地产"
+      },
+      "mortgage": {
+        "en": "Mortgage",
+        "zh": "抵押贷款"
+      },
+      "clo": {
+        "en": "CLO",
+        "zh": "CLO"
+      }
+    },
+    "regions": {
+      "US": {
+        "en": "US",
+        "zh": "美国"
+      },
+      "Europe": {
+        "en": "Europe",
+        "zh": "欧洲"
+      },
+      "APAC": {
+        "en": "APAC",
+        "zh": "亚太"
+      },
+      "Global": {
+        "en": "Global",
+        "zh": "全球"
+      }
+    }
+  }
+}

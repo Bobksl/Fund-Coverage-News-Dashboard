@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-25",
+  "items": [
+    {
+      "id": "95a84a791a92",
+      "date": "2026-08-25",
+      "published_at": "2026-08-25",
+      "headline": {
+        "en": "Granite Asia raises $500m for Pan-Asia private credit strategy",
+        "zh": "Granite Asia为泛亚私募信贷策略募集5亿美元"
+      },
+      "summary": {
+        "en": "Granite Asia has raised $500m for its Pan-Asia private credit strategy. Commitments came from DBS Private Bank, a leading insurer and other institutional investors. The strategy, Libra Hybrid, invests in mid-market companies in Asia and has completed eight transactions.",
+        "zh": "Granite Asia为其泛亚私募信贷策略募集了5亿美元。承诺资金来自DBS Private Bank、一家领先保险公司及其他机构投资者。该策略名为Libra Hybrid，投资于亚洲中型市场公司，并已完成八笔交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/25/granite-asia-raises-500m-for-pan-asia-private-credit-strategy/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "56ef6f2ccbe0",
+      "date": "2026-08-25",
+      "published_at": "2026-08-25",
+      "headline": {
+        "en": "BDCs take defensive approach as retail redemptions rise, Morningstar DBRS says",
+        "zh": "Morningstar DBRS称零售赎回增加，BDC采取防御性策略"
+      },
+      "summary": {
+        "en": "Morningstar DBRS said business development companies have adopted a more defensive approach in response to a challenging operating environment. The ratings agency attributed the shift to increased redemptions over the past two quarters, mostly from retail investors.",
+        "zh": "Morningstar DBRS表示，面对充满挑战的经营环境，业务发展公司（BDC）已采取更为防御性的策略。该评级机构将这一转变归因于过去两个季度赎回增加，且主要来自零售投资者。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/25/bdcs-turn-defensive-amid-redemption-pressure/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "5d3d28976637",
+      "date": "2026-08-25",
+      "published_at": "2026-08-25",
+      "headline": {
+        "en": "European direct lending sets half-year record despite Q2 slowdown",
+        "zh": "尽管第二季度放缓，欧洲直接贷款仍创下半年纪录"
+      },
+      "summary": {
+        "en": "European direct lending activity slowed in the second quarter of 2026 after a dip in large transactions, according to new research. Volumes reached €28.4bn across 296 deals in the second quarter, but the region still set a half-year record for volumes.",
+        "zh": "根据最新研究，在大型交易减少后，欧洲直接贷款活动在2026年第二季度放缓。第二季度成交量为284亿欧元，涉及296笔交易，但该地区仍创下半年成交量纪录。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/25/european-direct-lending-hits-record-despite-q2-dip/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "b2f4bc05e554",
+      "date": "2026-08-25",
+      "published_at": "2026-08-25",
+      "headline": {
+        "en": "Nuveen raises over $1bn for fourth climate-focused property lending fund",
+        "zh": "Nuveen 为其第四只气候主题地产贷款基金募资逾 10 亿美元"
+      },
+      "summary": {
+        "en": "Nuveen Green Capital, the sustainable commercial real estate financing arm of the $1.4tn asset manager Nuveen, has raised more than $1bn for the fourth vintage of its climate-focused commercial property lending fund. The firm announced the first close of the fund.",
+        "zh": "Nuveen Green Capital 是规模 1.4 万亿美元资产管理公司 Nuveen 旗下提供可持续商业地产融资解决方案的机构，已为其第四只气候主题商业地产贷款基金募资超过 10 亿美元。该公司宣布了该基金的首次关闭。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/25/nuveen-inks-1bn-for-climate-focused-lending-fund/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "27617742e19d",
+      "date": "2026-08-25",
+      "published_at": "2026-08-25",
+      "headline": {
+        "en": "Arrow Global FUM jumps to over €15bn",
+        "zh": "Arrow Global 管理资产规模跃升至逾150亿欧元"
+      },
+      "summary": {
+        "en": "Arrow Global's funds under management rose to €15.5bn (£13.3bn) at the end of the second quarter of 2026, driven by fundraising for its credit strategy. FUM increased by €4.8bn, equivalent to 44 per cent, year-on-year.",
+        "zh": "截至2026年第二季度末，Arrow Global 的管理资产规模（FUM）升至155亿欧元（133亿英镑），受其信贷策略募资推动。FUM 同比增加48亿欧元，增幅44%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/25/arrow-global-fum-jumps-to-over-e15bn/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-08-27",
+  "items": [
+    {
+      "id": "d2cd5e3b334a",
+      "date": "2026-08-27",
+      "published_at": "2026-08-27",
+      "headline": {
+        "en": "Bridge launches $500m direct lending fund for US retail suppliers",
+        "zh": "Bridge推出5亿美元直接贷款基金，面向美国零售供应商"
+      },
+      "summary": {
+        "en": "Bridge, a Citi-backed AI-powered lending platform, has launched a $500m direct lending fund for US retail suppliers. The fund targets consumer packaged goods brands and retail suppliers in the US.",
+        "zh": "Bridge是一家由花旗支持的AI驱动贷款平台，已推出一只5亿美元的直接贷款基金，面向美国零售供应商。该基金瞄准美国的消费品品牌和零售供应商。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/27/bridge-launches-500m-direct-lending-fund-for-us-retail-suppliers/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "f7c972f393fb",
+      "date": "2026-08-27",
+      "published_at": "2026-08-27",
+      "headline": {
+        "en": "KKR files 8-K after report of $250 million settlement and reimbursement",
+        "zh": "KKR 在据报道达成 2.5 亿美元和解并获补偿后提交 8-K"
+      },
+      "summary": {
+        "en": "KKR & Co. Inc. filed a Form 8-K with the SEC dated August 26, 2026, with the report filed August 27, 2026. The filing contains only cover-page details, including the registrant name, Delaware incorporation, commission file number and principal office at 30 Hudson Yards, New York. No transaction, financial or settlement terms appear in the supplied text.",
+        "zh": "KKR & Co. Inc. 向美国证券交易委员会提交了一份 8-K 表格，最早事件报告日期为 2026 年 8 月 26 日，提交日期为 2026 年 8 月 27 日。该文件仅包含封面信息，包括注册人名称、特拉华州注册地、委员会文件编号以及位于纽约 30 Hudson Yards 的主要办公地址。所提供文本中未出现任何交易、财务或和解条款。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "KKR & Co. Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404912/000114036126034520/0001140361-26-034520-index.htm"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "f206f77d814a",
+      "date": "2026-08-27",
+      "published_at": "2026-08-27",
+      "headline": {
+        "en": "Bain Capital Private Credit Group reports $6 billion of first-half 2026 financing investments",
+        "zh": "Bain Capital 私人信贷集团公布 2026 年上半年 60 亿美元融资投资"
+      },
+      "summary": {
+        "en": "Bain Capital's Private Credit Group invested approximately $6 billion in the first half of 2026 to support middle market and private equity-backed companies. The group made 58 investments backing refinancings, leveraged buyouts and add-on acquisitions, and has invested over $39 billion across 644 portfolio companies since inception.",
+        "zh": "Bain Capital 的 Private Credit Group 在 2026 年上半年投资约 60 亿美元，以支持中间市场及私募股权支持的公司。该集团完成 58 笔投资，支持再融资、杠杆收购和追加收购活动；自成立以来已向 644 家投资组合公司投资超过 390 亿美元。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bain Capital",
+        "url": "https://www.baincapital.com/news/bain-capitals-private-credit-group-announces-6-billion-financing-investments-first-half-2026"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "a9ffd979cf6b",
+      "date": "2026-08-27",
+      "published_at": "2026-08-27",
+      "headline": {
+        "en": "Velocity to manage Toorak's $3bn loan portfolio and acquire its platform",
+        "zh": "Velocity将管理Toorak的30亿美元贷款组合并收购其平台"
+      },
+      "summary": {
+        "en": "Velocity Financial has entered agreements to manage a $3bn business-purpose loan portfolio from Toorak Capital and acquire Toorak's operating platform. Toorak is a business-purpose lending and asset management platform majority owned by funds advised by affiliates of KKR.",
+        "zh": "Velocity Financial已达成协议，将管理来自Toorak Capital的30亿美元商业用途贷款组合，并收购Toorak的运营平台。Toorak是一家商业用途贷款和资产管理平台，由KKR关联方所建议的基金持有多数股权。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "real_estate",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/27/velocity-snaps-up-re-lender-toorak-and-3bn-portfolio/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-04",
+  "items": [
+    {
+      "id": "db3f32a2a078",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T06:43:03-04:00",
+      "headline": {
+        "en": "Mortgage Rates Stay Above 6% as Multifamily Investors See Upside",
+        "zh": "抵押贷款利率维持在6%以上，多户住宅投资者看到利好"
+      },
+      "summary": {
+        "en": "The average U.S. 30-year fixed mortgage rate rose to 6.02% for the week ending Sept. 15, 2022, the first time above 6% since November 2008, according to Freddie Mac data cited by Commercial Observer. Rates later approached 8% in late 2023, dipped just below 6% for the week ending Feb. 26, 2026, and rose again after the war with Iran began in late winter; the latest Freddie Mac survey showed a 6.66% weekly average for 30-year loans.",
+        "zh": "据Commercial Observer援引Freddie Mac数据，截至2022年9月15日当周，美国30年期固定抵押贷款平均利率升至6.02%，为2008年11月以来首次突破6%。此后利率在2023年末一度接近8%，在截至2026年2月26日当周短暂降至6%以下，随后随着冬季末与伊朗的战争爆发而再次上升；Freddie Mac最新调查显示30年期贷款周平均利率为6.66%。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/higher-mortgage-rates-2026-multifamily/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "eb51b25cb448",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04",
+      "headline": {
+        "en": "Blue Owl Technology Finance Corp. files 8-K after September 3 event",
+        "zh": "Blue Owl Technology Finance Corp. 在9月3日事件后提交8-K文件"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance Corp. filed an 8-K with the SEC reporting an event dated September 3, 2026. The filing lists the registrant's Maryland incorporation, commission file number 000-55977 and I.R.S. employer identification number 83-1273258, with its address at 399 Park Avenue, New York, NY 10022.",
+        "zh": "Blue Owl Technology Finance Corp. 向美国证券交易委员会提交了一份8-K文件，报告的事件日期为2026年9月3日。文件列出了注册人的马里兰州注册地、委员会文件编号000-55977和国税局雇主识别号83-1273258，地址为纽约州纽约市公园大道399号，邮编10022。"
+      },
+      "gps": [
+        "otf"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Technology Finance Corp.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526382839/0001193125-26-382839-index.htm"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "ae5f41c3bc26",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04",
+      "headline": {
+        "en": "Australian developer Bathla Group collapses owing A$3.4bn to private lenders",
+        "zh": "澳大利亚开发商Bathla Group倒闭，欠私人贷款机构34亿澳元"
+      },
+      "summary": {
+        "en": "Bathla Group, a Sydney-based property developer, entered administration on 25 August owing around A$3.4bn. Almost all of the debt is owed to lenders outside the traditional banking system, rattling Australia's private credit market.",
+        "zh": "总部位于悉尼的房地产开发商Bathla Group于8月25日进入破产管理程序，欠债约34亿澳元。几乎所有债务都欠传统银行体系之外的贷款机构，此举震动了澳大利亚私人信贷市场。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/04/property-developer-bathla-collapse-rattles-australian-private-credit/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

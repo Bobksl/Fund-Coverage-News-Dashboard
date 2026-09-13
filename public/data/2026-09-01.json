@@ -1,0 +1,177 @@
+{
+  "date": "2026-09-01",
+  "items": [
+    {
+      "id": "c504193b7d21",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01T16:00:08-04:00",
+      "headline": {
+        "en": "Tax-Exempt Commercial Mortgage-Backed Securities Are Having a Moment",
+        "zh": "免税商业抵押贷款支持证券正迎来机遇"
+      },
+      "summary": {
+        "en": "The tax-exempt commercial mortgage-backed securities market is growing as a potential financing tool for affordable housing in the U.S., according to Commercial Observer. New federal rules and greater attention from ratings agencies and top-tier banks are supporting the structure. Ryan Paszczykowski, head of structured investing at Systima Capital Management, said such securitizations have taken flight after years of flying under the radar, with Citigroup and Freddie Mac rolling out programs in the late 2010s.",
+        "zh": "据 Commercial Observer 报道，免税商业抵押贷款支持证券（CMBS）市场正在发展，成为美国可负担住房的一种潜在融资工具。新的联邦规则以及评级机构和顶级银行更多的关注正在支持这一结构。Systima Capital Management 结构化投资主管 Ryan Paszczykowski 表示，此类证券化在多年鲜受关注后近来已起飞，Citigroup 和 Freddie Mac 在 2010 年代末推出了相关计划。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/tax-exempt-cmbs-affordable-housing/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "751a5b048ed0",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01T09:57:56-04:00",
+      "headline": {
+        "en": "CRED iQ Tracks 82 Modified CMBS and CRE CLO Loans Worth $2.36 Billion",
+        "zh": "CRED iQ 追踪 82 笔修改的 CMBS 和 CRE CLO 贷款，总额 23.6 亿美元"
+      },
+      "summary": {
+        "en": "CRED iQ tracked 82 modified CMBS and CRE CLO loans with a combined $2.36 billion outstanding balance from May through July 2026. Maturity extensions were the largest category at 21 loans totaling $802.5 million, while forbearances and combination modifications gained weight and multifamily led property types.",
+        "zh": "CRED iQ 追踪了 2026 年 5 月至 7 月期间 82 笔修改的 CMBS 和 CRE CLO 贷款，未偿余额合计 23.6 亿美元。到期延期是最大类别，共 21 笔贷款、总额 8.025 亿美元，同时宽容和组合修改占比上升，多户住宅在物业类型中居首。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "clo",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/forbearances-modifications-cmbs-cred-iq/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "6fee9c9e3b9e",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01T09:00:10-04:00",
+      "headline": {
+        "en": "CMBS issuance on pace for nearly $140 billion in 2026, Trepp says",
+        "zh": "Trepp：2026年CMBS发行量有望接近1400亿美元"
+      },
+      "summary": {
+        "en": "Trepp said the CMBS market is on track to exceed its initial 2026 forecast, with more than $90 billion of volume scheduled to close through early September and a full-year pace of nearly $140 billion. Issuance reached $126.6 billion in 2025, up from $108 billion in 2024, with single-asset, single-borrower deals driving the reassessment. Trepp's Stephen Buschbom and Andy Boettcher discussed the trends with Commercial Observer on Aug. 20.",
+        "zh": "Trepp表示，CMBS市场有望超过其最初的2026年预测，截至9月初已有逾900亿美元发行量安排完成，全年节奏接近1400亿美元。2025年发行量为1266亿美元，高于2024年的1080亿美元，单资产单借款人（SASB）交易推动了这一重新评估。Trepp的Stephen Buschbom和Andy Boettcher于8月20日与Commercial Observer讨论了这些趋势。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/trepp-stephen-buschbom-andy-boettcher-cmbs/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "ff2ebd4839b4",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01T06:30:02-04:00",
+      "headline": {
+        "en": "Congress Passes 21st Century ROAD to Housing Act Amid Supply Crisis",
+        "zh": "国会通过《21世纪ROAD住房法案》以应对供应危机"
+      },
+      "summary": {
+        "en": "Congress passed the 21st Century ROAD to Housing Act on July 11. J.P. Morgan Chase estimated a US housing shortage of 2.8 million units that could take around 10 years to resolve, while the U.S. Chamber of Commerce put the shortfall at 4.7 million homes. A June 2026 Harvard University study found national home prices have risen 54 percent since 2020, with the average single-family home sales price nearly five times median household income.",
+        "zh": "国会于7月11日通过《21世纪ROAD住房法案》。J.P. Morgan Chase估计美国住房短缺280万套，可能需要约10年才能解决，而美国商会认为缺口为470万套住房。哈佛大学2026年6月的一项研究发现，自2020年以来全国房价上涨54%，单户住宅平均销售价格接近家庭收入中位数的五倍。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/09/21st-century-road-housing-act-financing-breakdown/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "580a117b154f",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01",
+      "headline": {
+        "en": "Institutions weigh evergreen private credit structures as wealth redemptions mount",
+        "zh": "随着财富端赎回增加，机构考虑采用常青型私募信贷结构"
+      },
+      "summary": {
+        "en": "According to industry sources, withdrawals from private credit vehicles are prompting some institutional investors to reconsider investing in funds alongside individuals. They are instead turning to evergreen structures with more limited redemption terms. The report did not specify figures or which managers are involved.",
+        "zh": "据行业消息，私募信贷工具的赎回正促使部分机构投资者重新考虑与个人投资者共同投资于基金。他们转而寻求赎回条款更为有限的常青型结构。报道未提供具体数字，也未指明涉及哪些管理人。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/01/institutions-seek-new-structures-as-wealth-redemptions-mount/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "0891c2c283bf",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01",
+      "headline": {
+        "en": "Australian investors commit A$705m to European direct lending",
+        "zh": "澳大利亚投资者向欧洲直接贷款承诺7.05亿澳元"
+      },
+      "summary": {
+        "en": "Nuveen has raised A$705m (£372.6m) from Australian investors, including superannuation fund Brighter Super, for European direct lending. Brighter Super, Jana Private Credit Trust and two other Australian institutional investors committed the combined capital to a dedicated portfolio.",
+        "zh": "Nuveen已从澳大利亚投资者处筹集7.05亿澳元（3.726亿英镑），用于欧洲直接贷款，投资者包括养老金基金Brighter Super。Brighter Super、Jana Private Credit Trust以及另外两家澳大利亚领先机构投资者将合并资金承诺投入一个专项组合。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/01/australian-investors-commit-a705m-to-european-direct-lending/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "6fb7deb3d317",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01",
+      "headline": {
+        "en": "MUFG in talks with BlackRock and Morgan Stanley on Japanese private credit platform",
+        "zh": "MUFG与BlackRock和Morgan Stanley洽谈日本私募信贷平台"
+      },
+      "summary": {
+        "en": "Mitsubishi UFJ Financial Group is exploring separate collaborations with BlackRock and Morgan Stanley Investment Management to develop an open platform for institutional investment in Japanese private credit. MUFG has entered discussions with both firms, with the platform still under development and no commitments disclosed.",
+        "zh": "三菱日联金融集团（MUFG）正探讨分别与BlackRock和Morgan Stanley Investment Management合作，开发面向机构投资的日本私募信贷开放平台。MUFG已与两家公司展开讨论，平台仍在开发中，未披露任何承诺。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/01/mufg-taps-blackrock-and-morgan-stanley-as-it-eyes-japanese-private-credit/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

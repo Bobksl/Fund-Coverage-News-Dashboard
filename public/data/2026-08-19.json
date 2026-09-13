@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-19",
+  "items": [
+    {
+      "id": "930e98758b21",
+      "date": "2026-08-19",
+      "published_at": "2026-08-19T06:30:13-04:00",
+      "headline": {
+        "en": "Hoya Capital report finds 83% of over 200 U.S. REITs raised full-year FFO guidance",
+        "zh": "Hoya Capital报告：逾200家美国REIT中83%上调全年FFO指引"
+      },
+      "summary": {
+        "en": "A Hoya Capital report on second-quarter 2026 results found that 83 percent of publicly traded U.S. REITs raised full-year funds from operation guidance, while just 4 percent lowered their outlooks. The data covered more than 200 U.S. REITs and homebuilders; hospitality, industrial and office sectors led the results, though high interest rates and weak investor confidence continue to weigh on the industry.",
+        "zh": "Hoya Capital一份关于2026年第二季度业绩的报告发现，83%的美国上市REIT上调了全年营运资金（FFO）指引，仅4%下调了展望。数据覆盖逾200家美国REIT和住宅建筑商；酒店、工业和写字楼板块表现领先，但高利率和投资者信心不足仍拖累整个行业。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Observer",
+        "url": "https://commercialobserver.com/2026/08/reits-q2-hoya-capital-investors-report/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "b32b39b5ccad",
+      "date": "2026-08-19",
+      "published_at": "2026-08-19",
+      "headline": {
+        "en": "Goldman to acquire LCN Capital Partners for about $260m",
+        "zh": "高盛将以约2.6亿美元收购LCN Capital Partners"
+      },
+      "summary": {
+        "en": "Goldman Sachs has announced it will purchase real estate investment manager LCN Capital Partners for approximately $260m. A further $150m is subject to the achievement of specific long-dated performance targets and service commitments.",
+        "zh": "高盛宣布将以约2.6亿美元收购房地产投资管理公司LCN Capital Partners。另有1.5亿美元取决于特定长期业绩目标和服务承诺的达成情况。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/19/goldman-to-acquire-lcn-capital-partners/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    },
+    {
+      "id": "e6fe2e1e38a9",
+      "date": "2026-08-19",
+      "published_at": "2026-08-19",
+      "headline": {
+        "en": "Andalusian Credit Partners deploys $200m in Q2 2026",
+        "zh": "Andalusian Credit Partners 于2026年第二季度部署2亿美元"
+      },
+      "summary": {
+        "en": "US middle market lending platform Andalusian Credit Partners deployed $200m across 22 investments in the second quarter of 2026, its most active quarter to date. Ten of the investments were in new portfolio companies and 12 in existing commitments.",
+        "zh": "美国中间市场贷款平台 Andalusian Credit Partners 在2026年第二季度通过22笔投资部署了2亿美元，为其迄今最活跃的季度。其中10笔投资于新组合公司，12笔为现有承诺。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/19/andalusian-deploys-200m-in-q2-2026/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}

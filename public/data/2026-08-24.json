@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-24",
+  "items": [
+    {
+      "id": "a6fb9c20c3c5",
+      "date": "2026-08-24",
+      "published_at": "2026-08-24",
+      "headline": {
+        "en": "S&P: Credit quality resilient despite AI disruption concerns",
+        "zh": "标普：尽管存在AI颠覆担忧，信贷质量仍保持韧性"
+      },
+      "summary": {
+        "en": "S&P Global Ratings analysts said there has been no corresponding deterioration in default rates despite concerns about private credit's exposure to software and macroeconomic volatility. They noted that persistent inflationary and supply-side shocks over the past year have created an uncertain environment.",
+        "zh": "标普全球评级（S&P Global Ratings）分析师表示，尽管市场担忧私人信贷对软件行业及宏观波动的敞口，违约率并未出现相应恶化。他们指出，过去一年持续的通胀和供给侧冲击造成了不确定的环境。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/08/24/credit-quality-remains-resilient-despite-ai-disruption-concerns/"
+      },
+      "review_status": "reviewed",
+      "origin": "analyst_labeled"
+    }
+  ]
+}
