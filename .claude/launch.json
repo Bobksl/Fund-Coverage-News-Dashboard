@@ -6,6 +6,18 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8642", "--bind", "127.0.0.1", "--directory", "work/demo-export"],
       "port": 8642
+    },
+    {
+      "name": "phase8",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8644", "--bind", "127.0.0.1", "--directory", "work/phase8/site"],
+      "port": 8644
+    },
+    {
+      "name": "phase8-verify",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8645", "--bind", "127.0.0.1", "--directory", "work/phase8/verify-site"],
+      "port": 8645
     }
   ]
 }

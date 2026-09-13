@@ -1,6 +1,7 @@
-// Fund Coverage News demo dashboard. Reads the static feed built by
-// tools/build_demo_feed.py from the isolated demo-export directory this page is served from
-// (see docs/demo-readme.md). No network calls beyond same-origin fetch of local JSON.
+// Fund Coverage News demo dashboard. Reads static JSON from the directory this page is served from:
+// either a Phase 8 published site (publication.json names the served edition; see
+// tools/publication.py) or an older bundle with a ./data feed (tools/export_demo.py). No network
+// calls beyond same-origin fetch of local JSON; nothing here collects news or runs a model.
 //
 // Safety notes:
 // - Every render path below builds DOM nodes and sets .textContent; nothing from the feed (a
@@ -10,11 +11,19 @@
 //   renders as plain text so a "javascript:" or "data:" URL in captured evidence cannot execute.
 // - Fetches carry a monotonic request token so a slow response for a date the user already
 //   navigated away from can never overwrite what is on screen (out-of-order fetch guard).
-const DATA_ROOT = "./data";
+// - Freshness shows recorded source-check and publication times only. The browser clock is used
+//   to judge staleness, never displayed as the age of the news.
+const LEGACY_DATA_ROOT = "./data";
 const HK_OFFSET_MS = 8 * 60 * 60 * 1000;
+const NO_STORE = {cache: "no-store"};
+const HK_TIME = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "Asia/Hong_Kong", year: "numeric", month: "short", day: "2-digit",
+  hour: "2-digit", minute: "2-digit", hour12: false,
+});
 
 const state = {
   dates: [], index: -1, indexMeta: null, lang: "en", requestToken: 0, mode: "calendar",
+  dataRoot: LEGACY_DATA_ROOT, publication: null, status: null, reloadNote: "", reloadFailed: false,
 };
 
 function todayHongKong() {
@@ -23,10 +32,31 @@ function todayHongKong() {
   return hk.toISOString().slice(0, 10);
 }
 
-async function fetchJson(path) {
-  const response = await fetch(path);
+async function fetchJson(path, options) {
+  const response = await fetch(path, options);
   if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
   return response.json();
+}
+
+async function loadPublication() {
+  // A bundle without publication.json (the baseline demo) keeps reading ./data exactly as before.
+  const response = await fetch("./publication.json", NO_STORE);
+  if (response.status === 404) return null;
+  if (!response.ok) throw new Error(`publication.json: HTTP ${response.status}`);
+  return response.json();
+}
+
+async function loadStatus() {
+  try {
+    return await fetchJson("./status.json", NO_STORE);
+  } catch {
+    return null; // Reported as "status unavailable", never as a healthy check.
+  }
+}
+
+function formatInstant(value) {
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? String(value) : `${HK_TIME.format(parsed)} HKT`;
 }
 
 function clearChildren(node) {
@@ -57,6 +87,97 @@ function renderDisclosure(meta) {
   const target = document.getElementById("disclosure");
   clearChildren(target);
   target.appendChild(document.createTextNode(meta.disclosure));
+}
+
+function sourceCheckText(check) {
+  if (!check) return "None recorded";
+  const when = formatInstant(check.checked_at);
+  if (check.status === "succeeded") {
+    const items = check.new_items === 0 ? "no new items"
+      : check.new_items == null ? "new item count not recorded"
+      : `${check.new_items} new item${check.new_items === 1 ? "" : "s"}`;
+    return `${when} — succeeded, ${items}`;
+  }
+  const outcome = check.status === "budget_stopped" ? "stopped at the paid-call cap" : "failed";
+  return `${when} — ${outcome}${check.detail ? ` (${check.detail})` : ""}`;
+}
+
+function freshnessNotices() {
+  const publication = state.publication;
+  const status = state.status || {};
+  const notices = [];
+  if (publication.edition_kind === "historical_sample") {
+    notices.push(["historical", "Historical sample — not today's news"]);
+  }
+  const check = status.last_source_check;
+  const success = status.last_successful_source_check;
+  if (check && check.status === "succeeded" && check.new_items === 0) {
+    notices.push(["nonews", "Latest source check: no new items"]);
+  }
+  if (check && check.status === "failed") notices.push(["failed", "Latest source check failed"]);
+  if (check && check.status === "budget_stopped") {
+    notices.push(["failed", "Latest source check stopped at the paid-call cap"]);
+  }
+  const hours = status.stale_after_hours ?? 24;
+  const successAt = success ? new Date(success.checked_at).getTime() : NaN;
+  if (Number.isNaN(successAt) || Date.now() - successAt > hours * 60 * 60 * 1000) {
+    notices.push(["stale", `Stale: no successful source check in the last ${hours} h`]);
+  }
+  const attempt = status.last_publish_attempt;
+  if (attempt && attempt.status === "failed") {
+    notices.push(["failed", `Publish attempt ${attempt.publication_id} failed; still serving ${publication.publication_id}`]);
+  }
+  if (!state.status) notices.push(["failed", "Status file unavailable"]);
+  if (state.reloadFailed) notices.push(["failed", "Reload failed; showing the previously loaded edition"]);
+  return notices;
+}
+
+function renderFreshness() {
+  const panel = document.getElementById("freshness");
+  panel.hidden = !state.publication;
+  if (!state.publication) return;
+  const publication = state.publication;
+  const status = state.status || {};
+  const entries = [
+    ["Update mode", `${publication.update_mode === "manual" ? "Manual (operator-run)" : publication.update_mode}` +
+      ` · ${status.scheduler === "not_installed" ? "no scheduler installed" : `scheduler: ${status.scheduler ?? "unknown"}`}`],
+    ["Last source check", sourceCheckText(status.last_source_check)],
+  ];
+  const check = status.last_source_check;
+  if (check && check.status !== "succeeded") {
+    entries.push(["Last successful source check", sourceCheckText(status.last_successful_source_check)]);
+  }
+  entries.push(["Last successful publication",
+                `${formatInstant(publication.published_at)} · edition ${publication.publication_id}`]);
+  const attempt = status.last_publish_attempt;
+  if (attempt && attempt.status === "failed") {
+    entries.push(["Last publish attempt", `${formatInstant(attempt.attempted_at)} — failed: ${attempt.detail}`]);
+  }
+  entries.push(["Article dates in this edition", (publication.article_dates || []).join(", ") || "none"]);
+
+  const rows = document.getElementById("freshnessRows");
+  clearChildren(rows);
+  for (const [label, value] of entries) {
+    rows.appendChild(el("dt", {text: label}));
+    rows.appendChild(el("dd", {text: value}));
+  }
+  const notices = document.getElementById("freshnessNotices");
+  clearChildren(notices);
+  // "is-" prefix: a bare "stale" class would inherit the page's .stale error-state layout.
+  for (const [kind, text] of freshnessNotices()) notices.appendChild(el("span", {className: `notice is-${kind}`, text}));
+  document.getElementById("reloadNote").textContent = state.reloadNote;
+}
+
+function applyPageText(publication) {
+  if (!publication || !publication.page_text) return;
+  document.getElementById("subtitle").textContent = publication.page_text.subtitle;
+  document.getElementById("footer").textContent = publication.page_text.footer;
+}
+
+function applyEdition(meta) {
+  state.indexMeta = meta;
+  state.dates = meta.dates;
+  renderDisclosure(meta);
 }
 
 function renderNav() {
@@ -141,7 +262,7 @@ function renderCard(card) {
   children.push(sources);
 
   children.push(el("div", {className: "meta",
-    text: `${card.primary_event_type} / ${card.subtype ?? "—"} · partition: ${card.partition} · status: ${card.status}`}));
+    text: `${card.date ? `article date: ${card.date} · ` : ""}${card.primary_event_type} / ${card.subtype ?? "—"} · partition: ${card.partition} · status: ${card.status}`}));
 
   return el("div", {className: "card"}, children);
 }
@@ -168,7 +289,7 @@ async function renderDay() {
   const token = ++state.requestToken;
   let cards = [];
   try {
-    cards = await fetchJson(`${DATA_ROOT}/${date}.json`);
+    cards = await fetchJson(`${state.dataRoot}/${date}.json`);
   } catch (error) {
     if (token !== state.requestToken) return; // a newer navigation has already superseded this
     clearChildren(main);
@@ -217,11 +338,13 @@ function renderTodayState(today) {
   const message = state.dates.includes(today)
     ? `No edition has been produced yet for today (${today}, Asia/Hong_Kong). This is an honest ` +
       "empty state, not a stale cache."
-    : `Today (${today}, Asia/Hong_Kong) is outside this demo's collected window ` +
+    : `Today (${today}, Asia/Hong_Kong) is outside this edition's dates ` +
       `(${state.dates[0]} to ${state.dates[state.dates.length - 1]}).`;
   const box = emptyState("No edition open for today", message);
   if (hasLatest) {
-    const jump = el("button", {text: "Jump to latest historical edition"});
+    const reviewed = state.publication && state.publication.edition_kind === "reviewed_update";
+    const jump = el("button", {text: reviewed ? "Jump to latest approved card date"
+                                              : "Jump to latest historical edition"});
     jump.addEventListener("click", () => {
       const latest = state.indexMeta.dates_with_cards[state.indexMeta.dates_with_cards.length - 1];
       goToDate(latest);
@@ -232,24 +355,8 @@ function renderTodayState(today) {
   document.getElementById("dayStats").textContent = "";
 }
 
-async function init() {
-  let meta;
-  try {
-    meta = await fetchJson(`${DATA_ROOT}/index.json`);
-  } catch (error) {
-    document.getElementById("disclosure").textContent =
-      `Could not load the demo feed index (${error.message}). Run ` +
-      `"python -m tools.export_demo" from the repo root, then serve the exported directory ` +
-      `over HTTP on 127.0.0.1 (see docs/demo-readme.md) rather than opening index.html directly.`;
-    clearChildren(document.getElementById("main"));
-    return;
-  }
-  state.indexMeta = meta;
-  state.dates = meta.dates;
-  renderDisclosure(meta);
-
-  const today = todayHongKong();
-  if (state.dates.includes(today) && meta.dates_with_cards.includes(today)) {
+function openToday(today) {
+  if (state.dates.includes(today) && state.indexMeta.dates_with_cards.includes(today)) {
     state.index = state.dates.indexOf(today);
   } else {
     state.index = -1; // Honest empty state; never silently substitute an older day as "today".
@@ -260,6 +367,61 @@ async function init() {
   } else {
     renderDay();
   }
+}
+
+async function reloadPublished(today) {
+  // Re-reads the published pointer, status and edition index. It never checks sources, collects
+  // news or calls a model; a failure keeps whatever edition is already on screen.
+  const button = document.getElementById("reloadBtn");
+  button.disabled = true;
+  const previous = state.publication ? state.publication.publication_id : null;
+  const openDate = state.index >= 0 ? state.dates[state.index] : null;
+  try {
+    const publication = await loadPublication();
+    if (!publication) throw new Error("publication.json not found");
+    const [status, meta] = await Promise.all([
+      loadStatus(), fetchJson(`./${publication.edition_path}/index.json`, NO_STORE)]);
+    state.publication = publication;
+    state.status = status;
+    state.dataRoot = `./${publication.edition_path}`;
+    state.reloadFailed = false;
+    state.reloadNote = publication.publication_id === previous
+      ? `Reloaded: still edition ${previous}.`
+      : `Reloaded: now edition ${publication.publication_id} (was ${previous ?? "none"}).`;
+    applyPageText(publication);
+    applyEdition(meta);
+    if (!(openDate && goToDate(openDate))) openToday(today);
+  } catch (error) {
+    state.reloadFailed = true;
+    state.reloadNote = `Reload failed: ${error.message}`;
+  } finally {
+    button.disabled = false;
+    renderFreshness();
+  }
+}
+
+async function init() {
+  const today = todayHongKong();
+  let meta;
+  try {
+    state.publication = await loadPublication();
+    if (state.publication) {
+      state.dataRoot = `./${state.publication.edition_path}`;
+      state.status = await loadStatus();
+    }
+    meta = await fetchJson(`${state.dataRoot}/index.json`, NO_STORE);
+  } catch (error) {
+    document.getElementById("disclosure").textContent =
+      `Could not load the feed index (${error.message}). Serve the exported or published site ` +
+      `directory over HTTP on 127.0.0.1 (see docs/manager-demo-guide.md) rather than opening ` +
+      `index.html directly.`;
+    clearChildren(document.getElementById("main"));
+    return;
+  }
+  applyPageText(state.publication);
+  applyEdition(meta);
+  renderFreshness();
+  openToday(today);
 
   document.getElementById("prevDay").addEventListener("click", () => goTo(-1));
   document.getElementById("nextDay").addEventListener("click", () => goTo(1));
@@ -273,6 +435,7 @@ async function init() {
   });
   document.getElementById("langEn").addEventListener("click", () => setLang("en"));
   document.getElementById("langZh").addEventListener("click", () => setLang("zh"));
+  document.getElementById("reloadBtn").addEventListener("click", () => reloadPublished(today));
 }
 
 init();
