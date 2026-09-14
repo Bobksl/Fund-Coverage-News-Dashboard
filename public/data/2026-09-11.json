@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-11",
+  "items": [
+    {
+      "id": "2cf21a512c1a",
+      "date": "2026-09-11",
+      "published_at": "2026-09-11T14:16:11+00:00",
+      "headline": {
+        "en": "BlackRock private credit fund redemption requests ease in Q3",
+        "zh": "BlackRock 私募信贷基金第三季度赎回请求放缓"
+      },
+      "summary": {
+        "en": "Redemption requests at BlackRock's HPS Corporate Lending Fund fell in the third quarter, with investors tendering around 11.5 per cent of the fund's shares for repurchase, down from 13.3 per cent in Q2, according to a regulatory filing. The fund will repurchase shares, the filing said.",
+        "zh": "据监管文件，BlackRock 的 HPS Corporate Lending Fund 第三季度赎回请求下降，投资者提交回购的基金份额约为 11.5%，低于第二季度的 13.3%。文件称该基金将回购份额。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/11/blackrock-private-credit-fund-redemption-requests-ease-in-q3/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    }
+  ]
+}
