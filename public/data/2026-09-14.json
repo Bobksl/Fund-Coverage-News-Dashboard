@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-14",
+  "items": [
+    {
+      "id": "10207993276a",
+      "date": "2026-09-14",
+      "published_at": "2026-09-14T09:48:55+00:00",
+      "headline": {
+        "en": "Neuberger launches new aerospace financing platform",
+        "zh": "Neuberger 推出新的航空金融平台"
+      },
+      "summary": {
+        "en": "Neuberger has launched a new aerospace financing platform, according to Alternative Credit Investor. No financial terms, partners or leadership were disclosed in the report.",
+        "zh": "据 Alternative Credit Investor 报道，Neuberger 已推出一个新的航空金融平台。报道未披露任何财务条款、合作方或管理层信息。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "aircraft_leasing",
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMEd1NS1ZYU1iREF4Z3ZObEJENXB2bWJNYW9GYWhDV2RTMkpsS3B1OV8xSWY5SnZaczExRDcycVdQZzFneG9hSTQ4QkMzakxJdl9iMTh5d2dfSkl2b0xaSDdETFFxZlNYajRCZEZCdWJXYTlWZUtBejhiNmZtLTZyQ0V1SjV5WGZXSU5VMU5MNTlMSzg1dWZTeEQ1ejBqRFAzanYw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    }
+  ]
+}
