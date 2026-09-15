@@ -2,6 +2,32 @@
   "date": "2026-09-15",
   "items": [
     {
+      "id": "a3cfc33727c0",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T10:30:00+00:00",
+      "headline": {
+        "en": "KKR Private High-Grade Debt Deals Surge to $80 Billion This Year",
+        "zh": "KKR 私人高评级债务交易今年激增至 800 亿美元"
+      },
+      "summary": {
+        "en": "KKR's private high-grade debt deals surged to $80 billion this year, according to Bloomberg. The report covers only the deal volume figure, with no additional details on individual transactions or counterparties.",
+        "zh": "据彭博报道，KKR 的私人高评级债务交易今年激增至 800 亿美元。报道仅涉及交易规模数据，未提供个别交易或交易对手的更多细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRkIwR0diZ1hqTW15LTI0djZKa19pc052LTBFVVdXOTJPcjF3amx5SjdpYkFiaXd4d3VuYzB0UXFETVlpQVFyMXFyaDN1SXRQalRITkZEQ0pKOGktaUN0bTFQWFBoN01OeXlSckdoZnFnZXZFY1ZvX0ViRU9SSE5MeTBubGJ5ZkZ3YUR3X3RMLWlUbEhWWmhvVWFWSlE2M1ktazR2bExFa3VxNDByM0RQNDZKR0k?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "c145a80c43dc",
       "date": "2026-09-15",
       "published_at": "2026-09-14T21:25:13+00:00",
