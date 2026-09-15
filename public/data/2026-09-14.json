@@ -2,6 +2,30 @@
   "date": "2026-09-14",
   "items": [
     {
+      "id": "5a981b62c2d4",
+      "date": "2026-09-14",
+      "published_at": "2026-09-14T15:30:42+00:00",
+      "headline": {
+        "en": "US Private Credit Default Rate Hits Record 6.3%, Fitch Says",
+        "zh": "Fitch称美国私人信贷违约率创下6.3%的纪录"
+      },
+      "summary": {
+        "en": "Fitch reported that the US private credit default rate reached a record 6.3%. The article consisted only of the headline and did not provide further detail.",
+        "zh": "Fitch报告称，美国私人信贷违约率升至创纪录的6.3%。文章仅包含标题，未提供更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUXZsUWVqZENxRHhQc1R3UVFMZ3Bxb3BycVZKWk9qZkpsWjlQSEZwbzhxQjJHcmRoVXl0VTVhaG85MTZ5M2RBTlVJeEFsUklFVzkyTWwzS1drX2VqN2xCMjhlZk92WTlja1p4Mm9CWUNzbURiVktZTmVEU1JfNEROR0V0OEc1NC12MGk1QlVWTjJDLXg1XzBYMEo2QlV6MUZXYnZFQTR5U0taVW92M1FpNnFMOA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "10207993276a",
       "date": "2026-09-14",
       "published_at": "2026-09-14T09:48:55+00:00",
@@ -24,6 +48,33 @@
       "source": {
         "publisher": "Alternative Credit Investor",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMEd1NS1ZYU1iREF4Z3ZObEJENXB2bWJNYW9GYWhDV2RTMkpsS3B1OV8xSWY5SnZaczExRDcycVdQZzFneG9hSTQ4QkMzakxJdl9iMTh5d2dfSkl2b0xaSDdETFFxZlNYajRCZEZCdWJXYTlWZUtBejhiNmZtLTZyQ0V1SjV5WGZXSU5VMU5MNTlMSzg1dWZTeEQ1ejBqRFAzanYw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "3202ae7aa46a",
+      "date": "2026-09-14",
+      "published_at": "2026-09-14T08:42:42+00:00",
+      "headline": {
+        "en": "Neuberger launches New Bridge Aero aerospace financing platform",
+        "zh": "Neuberger 推出 New Bridge Aero 航空融资平台"
+      },
+      "summary": {
+        "en": "Neuberger Specialty Finance has launched a new aerospace financing platform, New Bridge Aero, aiming to build a portfolio in excess of $2bn. The facility will seek to originate and acquire loans and other debt instruments across the aerospace sector offering downside protection and durable cash flows.",
+        "zh": "Neuberger Specialty Finance 推出了新的航空融资平台 New Bridge Aero，目标是构建超过 20 亿美元的资产组合。该融资工具将寻求在航空领域发起和收购贷款及其他债务工具，这些工具提供下行保护和持久现金流。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/14/neuberger-launches-new-aerospace-financing-platform/"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
