@@ -2,6 +2,56 @@
   "date": "2026-09-16",
   "items": [
     {
+      "id": "cef717ef0cd2",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T09:19:46+00:00",
+      "headline": {
+        "en": "Apollo Extends $585 Million Financing to the Executive Centre",
+        "zh": "Apollo向The Executive Centre提供5.85亿美元融资"
+      },
+      "summary": {
+        "en": "Apollo extended $585 million in financing to the Executive Centre. Apollo is a credit investor tracked by the team. No further terms were disclosed.",
+        "zh": "Apollo向The Executive Centre提供5.85亿美元融资。Apollo是团队跟踪的信贷投资者。未披露更多条款。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Retail News Asia",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTVFJWFFGeXdSR3hCeXdrNzMwcnhzbDI4Tjd6eUU2WWxMM2pGb05uVk1aMkQ4U3Y4MXRreXo0eTBnMHNsY3J5aktVSmladjN4bHo1R1NIdm56TGxhRG5qaWpDUVc3RWZtQnE5NG93VjdPcGNCdUFFbXkzOFhNSEF4UWlQUkpxdE1DQ2ZDaw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "03f8e6bdeb1d",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T07:41:53+00:00",
+      "headline": {
+        "en": "U.S. Private Credit Default Rate Hits Historic High of 6.3%",
+        "zh": "美国私人信贷违约率创下6.3%的历史新高"
+      },
+      "summary": {
+        "en": "The U.S. private credit default rate has reached 6.3%, described as a historic high, according to ababnews.com. The report was published on 2026-09-16.",
+        "zh": "据ababnews.com报道，美国私人信贷违约率已达到6.3%，被称为历史新高。该报道发布于2026年9月16日。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "ababnews.com",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Xa0NvMkdpU2JWX19PNWJHaEMwZ1k0TGQwMXlvS2tOX2oxbHMyZ2poa1hoU0NhTDU4aEdOQlZjYlhMWHlxUzZGM1JpVTh4QnFnQ0ZvVXNKTmROckx6S25rUnFGMHMzdEt0TkFwMUdLNFN2NHlT?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "aa9b94332185",
       "date": "2026-09-16",
       "published_at": "2026-09-16T03:44:53+00:00",
@@ -133,6 +183,33 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "7b15e82fcf19",
+      "date": "2026-09-16",
+      "published_at": "2026-09-15T20:16:02+00:00",
+      "headline": {
+        "en": "Blue Owl Technology Finance Corp. expands loan facility for Athena unit",
+        "zh": "Blue Owl Technology Finance Corp.（OTF）为 Athena 部门扩大贷款融资"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance Corp. (OTF) expanded a loan facility for its Athena unit, according to stocktitan.net. No figures or terms of the facility were disclosed in the report.",
+        "zh": "据 stocktitan.net 报道，Blue Owl Technology Finance Corp.（OTF）为其 Athena 部门扩大了贷款融资。报道未披露该融资的金额或条款。"
+      },
+      "gps": [
+        "otf"
+      ],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "stocktitan.net",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUGxpZnVLVXpPQmRGNnJmYTBWTkVKY1pqbmlCZjhtRjBTMFM0eHZySkUzRnppdDFqcTR4SERMMW8xSkZzM3dqc1d5dWdZYTZkSUF2MlNFQVZNVEYybTB3MTF4a3ZyWXF5T05WS1BoUTlWaGJ4NWFRUXBRTTIwbU1BRlQ3emZEN1NlU0JiS2JGN1Q3LXFscHhfQ3lmaVE4STd5UlRkbHBOTGV2emRGUkUwUEtHRVpuSG1hLVV6Qg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "3e7ef26e28ba",
       "date": "2026-09-16",
       "published_at": "2026-09-15T20:09:43+00:00",
@@ -203,6 +280,32 @@
       "source": {
         "publisher": "Traders Union",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSlloSllvQWZmSE1RWko4c0dHQS1adjc1SUhpRlhSZGRpQTlSZ3g5SG1QY2pPamF0Q3pPUk1HMjhwMl83cVhkQndReHBaT2hqMEkzY2dYXzhhSUpsai1fdThhcTJvdzJkclhmTkdlUFJ2X1pxSEc2akN5OHhFVWZqS1g2YldGU3pIWTlZSnVjVVdoYUlO?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "8fbc643f3d19",
+      "date": "2026-09-16",
+      "published_at": "2026-09-15T16:12:22+00:00",
+      "headline": {
+        "en": "KKR Tops $80 Billion in Private Investment-Grade Financing",
+        "zh": "KKR私人投资级融资规模突破800亿美元"
+      },
+      "summary": {
+        "en": "KKR has surpassed $80 billion in private investment-grade financing, according to an update. No further details on the portfolio, timeline or investors were provided.",
+        "zh": "据最新消息，KKR的私人投资级融资规模已突破800亿美元。文中未提供有关投资组合、时间线或投资者的更多细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "moomoo.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ0NRVjRYTDJneFUwd1kwRmFidmJjX2U0VkJ1WlBueWJoUU9XRGxCZm9pOHdldHNjN0NCak5VSGY2Q00zRFRET29zcHdwMDd3Q2xsQl9XdDZjNk9Lakd1dEtXanJlbnRHdnF5WWxWUGRCYWgxN21mdEl1V3JsY0FvZ1F4VTl1d0piblo3eVI2UDNCU01lcnYxX0tXdFc3UktpWURNZmNEWE9rUQ?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
