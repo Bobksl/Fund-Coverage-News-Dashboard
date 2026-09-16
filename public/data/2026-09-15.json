@@ -2,6 +2,55 @@
   "date": "2026-09-15",
   "items": [
     {
+      "id": "c704c89e54cc",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T14:38:22+00:00",
+      "headline": {
+        "en": "GTIS rebrands as Brightshore Capital and launches real estate debt platform",
+        "zh": "GTIS 更名为 Brightshore Capital 并推出房地产债务平台"
+      },
+      "summary": {
+        "en": "GTIS Partners has rebranded as Brightshore Capital following a transition to 100 per cent ownership by the firm's partners. The 21-year-old real estate investment firm also launched Brightshore Credit, a real estate debt platform anchored with $250m, which will focus on originating loans.",
+        "zh": "GTIS Partners 在转为由公司合伙人100%持股后，已更名为 Brightshore Capital。这家拥有21年历史的房地产投资公司还推出了 Brightshore Credit，这是一个以2.5亿美元为锚定资金的房地产债务平台，将专注于贷款发起。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/15/gtis-rebrands-as-brightshore-and-launches-credit-strategy/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "c5adf2f35275",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T14:08:06+00:00",
+      "headline": {
+        "en": "Bravo Property Trust Closes $68 Million Bridge-to-HUD Construction Loan",
+        "zh": "Bravo Property Trust 完成 6800 万美元 Bridge-to-HUD 建设贷款"
+      },
+      "summary": {
+        "en": "Bravo Property Trust closed a $68 million bridge-to-HUD construction loan for a multifamily development on the Bayonne waterfront.",
+        "zh": "Bravo Property Trust 完成了一笔 6800 万美元的 Bridge-to-HUD 建设贷款，用于 Bayonne 滨水区的一个多户住宅开发项目。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Manila Times",
+        "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOemFFUVd0cTNSdmdhdWJPLS1rNzZPSXRSRFY0NUtmS29IUTlNY2ZlQWxQNTlFc3ZYdlBBeWRwcnFoY1hRcnplMXBqOTVtNU1VSmUweTJWMDc2RWJuV2htUTJDTmlQT1NOb1RCRzJTMnNvMXFqVjhJdjlENGZibTlJdmlBb0IyT1pNb0g4aGVpbXRoZUNlUEJnbXJ5NUpQRUpSRnEtQWFkazYxU1Q0TzNpTkdXOHhHNlpuYjhxYXdiYTVlSTNrbUpRNzdwaUdka1lud1lEcDdNX2lhR1ZGd09GSERhVXkwOElweVM4eUw5M1YwLUFIZzBBMndseGNIX2gwRHlXSWd5S1lyOXh2U2F4S204d05wREtaT2o00gGgAkFVX3lxTE1ZY0tjcDlUR0FJOFlpYXE1WXBOMzFISFZBYTZFNm94a3lidXljSFJYQU4yTHRhbXB6ZEFpRjBYcVh5ekRyVThHNjBiWVo1TThId04xZ2ZHUEl4NDczSW1adkpOSXpkQWI0aXNxc2psWTRQRHNjMFB1ZzVPeHVIQm1SV05Xb0U4R0l0QjVsX3NBbEkwUl91MTk5eHQyU3JiWHdPSXFld1FtekV2WWdod3IyZXlaQ3dld0ZFZ3E3ZUZub2M0YnNFZk10ZWdwNVRVV1c4bjczV25SaDYwU25jQ3BfVmFleFEyMGkzejVrQ1Jkd0s4TEdBaUNlNkp0MUdsY0d6c3lCV05XTnM2UUFqN0hZaDFlOGJ5Rmg0NVl3N2wtdQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "a3cfc33727c0",
       "date": "2026-09-15",
       "published_at": "2026-09-15T10:30:00+00:00",
