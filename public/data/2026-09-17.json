@@ -2,6 +2,158 @@
   "date": "2026-09-17",
   "items": [
     {
+      "id": "e188a2df5402",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T13:14:27+00:00",
+      "headline": {
+        "en": "Private credit exposure set to rise in DC pensions",
+        "zh": "DC养老金中的私募信贷敞口预计将上升"
+      },
+      "summary": {
+        "en": "Standard Life predicted that private market allocations in UK defined contribution default funds could rise to as much as 30 per cent by 2035, with private credit playing an increasingly important role. Research from Standard Life and WPI Economics found private market allocations in DC defaults could increase from around current levels.",
+        "zh": "Standard Life预测，到2035年，英国固定缴款（DC）默认基金中的私募市场配置可能升至高达30%，其中私募信贷将发挥越来越重要的作用。Standard Life与WPI Economics的研究发现，DC默认基金中的私募市场配置可能从当前水平上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/17/private-credit-exposure-set-to-rise-in-dc-pensions/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "5a89fd2fec03",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T12:11:26+00:00",
+      "headline": {
+        "en": "Blue Owl Technology Q2FY26 Results: NAV Stable at $16.48, NII Up",
+        "zh": "Blue Owl Technology 2026财年第二季度业绩：NAV稳定于16.48美元，NII上升"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance reported Q2FY26 results. NAV was stable at $16.48 and net investment income rose.",
+        "zh": "Blue Owl Technology Finance公布2026财年第二季度业绩。NAV稳定于16.48美元，净投资收益（NII）上升。"
+      },
+      "gps": [
+        "blue_owl",
+        "otf"
+      ],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZlI4QWwxT2JNNXZYSjZILXlIbi1mRVdGVXo1TUxva3NMaUJVc2Z2RUVlQkNLMkxuZmVYZ1FCNlRpZDdyRzRJT1pEdndla3NtLThwVm9PajVGNVJoWE1kSzNhSk5Vd0VxZFlNbWR1ekZldU1OVTJwLWx5RWtmWEtrY2V5YWwzaUNwdHNQaExnQi1JekFES28ycnJYMXRpUzZpekNvaU54TU42TUhJWnRuVjdMTW9BZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "c5bdabf2be3f",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T11:11:56+00:00",
+      "headline": {
+        "en": "CIFC launches direct lending strategy on iCapital Marketplace",
+        "zh": "CIFC 在 iCapital 平台推出直接贷款策略"
+      },
+      "summary": {
+        "en": "CIFC Asset Management, the $47bn alternative credit specialist, has launched its direct lending strategy on iCapital Marketplace. The strategy focuses on lending to US lower middle market companies. The launch provides an opportunity to explore how managers are expanding private credit access for wealth investors.",
+        "zh": "规模 470 亿美元的另类信贷专业机构 CIFC Asset Management 已在 iCapital Marketplace 上推出其直接贷款策略。该策略专注于向美国低中端市场企业提供贷款。此次上线为探索管理人如何扩大财富投资者对私人信贷的准入提供了机会。"
+      },
+      "gps": [
+        "cifc"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/17/cifc-launches-direct-lending-strategy-on-icapital/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "c5572a0521c8",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T08:57:49+00:00",
+      "headline": {
+        "en": "Aegon adds triple-B exposure as primary CLO spreads sustain relative value",
+        "zh": "Aegon 增加 triple-B 敞口，CLO 一级市场利差维持相对价值"
+      },
+      "summary": {
+        "en": "Aegon added triple-B exposure as primary CLO spreads sustained relative value, according to a headline from Structured Credit Investor dated 17 September 2026. No deal size, manager or further terms were reported.",
+        "zh": "据 Structured Credit Investor 2026 年 9 月 17 日的标题，Aegon 增加了 triple-B 敞口，CLO 一级市场利差维持相对价值。报道未披露交易规模、管理人或其他条款。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Structured Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNX29pOUhKZDEzdEpqNUNYcEVhOGNlNm01MEZTN1BlajFZUHhpR3NWSGdSV1FnVDdiVmNpMmF2RHBTQ1N3MmFvcHBCa3Z2NWVCaGU2SzdOMFpuZTBEN21ORUNXbnN1d3kycV9xU2ZOTlZtUVRFRlR3d2Rhb080M2VXUE10ZnFhQmNheTlfT3ZPUFZpaXNxeUlEWjZFenZsTHVOcE81MkF2SGtZOHNUZVI4S01SNXhxZkhHR2JMMEh0NEtLQ2NqZHYwMDkyVVhiOE85cEJ2QVh4TQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "e1c1f79fff6a",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T07:06:00+00:00",
+      "headline": {
+        "en": "Apollo in Talks to Expand SoftBank Loan to $9 Billion",
+        "zh": "Apollo正谈判将软银贷款扩大至90亿美元"
+      },
+      "summary": {
+        "en": "Apollo is in talks to expand a loan to SoftBank to $9 billion to fuel additional OpenAI investment, according to finance.biggo.com.",
+        "zh": "据finance.biggo.com报道，Apollo正谈判将向软银提供的贷款扩大至90亿美元，以支持对OpenAI的进一步投资。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBWTk1MSExTRnpINVhUcUp1OHhuWW1OdGZLTTQtLTNZQ3V3cXlZc1hteXREZmVHdU42T3hXT1VpZVpGOHoxWEtoY1RrU1A2Nl9VVnBxUWJYWEt6SzJFUHpCdkVGVFJVTEJ4dm91U3A2UnFMaXFhM2c?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "95851197cebd",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T06:39:58+00:00",
+      "headline": {
+        "en": "US CLO Issuance Slips to $43.8B in August",
+        "zh": "8月美国CLO发行量降至438亿美元"
+      },
+      "summary": {
+        "en": "US CLO issuance slipped to $43.8 billion in August, according to CRE Daily. The article provides no further detail beyond the headline figure.",
+        "zh": "据CRE Daily报道，8月美国CLO发行量降至438亿美元。除标题数字外，文章未提供更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "CRE Daily",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwUFgwYjVpcmhjazZrWWN1TzE5dlRSeEk5N0pfZGNNczJQbkRwT0xMeTVTemdPeExvcS1pR3U2Z3lmUi05cWpBVjhFMnptdkQ5bFFHN1FWYU5OdnVpeVRRMjE2bVFKMm55bHk4SFlmUVpMUTUxQTZQb0ZKWm1FZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "aff111288de8",
       "date": "2026-09-17",
       "published_at": "2026-09-16T23:02:10+00:00",

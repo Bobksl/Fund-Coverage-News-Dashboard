@@ -2,6 +2,32 @@
   "date": "2026-09-15",
   "items": [
     {
+      "id": "d796cd9e96a0",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T15:30:22+00:00",
+      "headline": {
+        "en": "Apollo Buys $5.5 Billion of Truist's Near-Prime Car Loans",
+        "zh": "Apollo 收购 Truist 55 亿美元近优质汽车贷款"
+      },
+      "summary": {
+        "en": "Apollo bought $5.5 billion of near-prime car loans from Truist, Bloomberg reported. The transaction moves a large auto loan portfolio from the bank to Apollo.",
+        "zh": "据 Bloomberg 报道，Apollo 从 Truist 手中收购了 55 亿美元近优质汽车贷款。该交易将一大笔汽车贷款组合从该银行转移至 Apollo。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUmNUb3NxM1pXbFNoSnRqTWpJbDByTzlma0YxQkZFUWw3Y3dTQUt4Uks1R2RpM3ZwaE9pdHN6MnZlRlhFclRGV2dfcEV2SHF3c0ZuQ2Zwb2s5VGUwbnBhRFBNRVNwVnVlOHpzSjI3RWpDZXdKMU1lVjQ5ZDVSd1laOTBlbkZTOXNsSloxNjRmZG9SajFaNHlaY2loRzRHNTZhOHNiVVJHdkl6VlFvTXdMZ2hR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "c704c89e54cc",
       "date": "2026-09-15",
       "published_at": "2026-09-15T14:38:22+00:00",
@@ -46,6 +72,31 @@
       "source": {
         "publisher": "The Manila Times",
         "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOemFFUVd0cTNSdmdhdWJPLS1rNzZPSXRSRFY0NUtmS29IUTlNY2ZlQWxQNTlFc3ZYdlBBeWRwcnFoY1hRcnplMXBqOTVtNU1VSmUweTJWMDc2RWJuV2htUTJDTmlQT1NOb1RCRzJTMnNvMXFqVjhJdjlENGZibTlJdmlBb0IyT1pNb0g4aGVpbXRoZUNlUEJnbXJ5NUpQRUpSRnEtQWFkazYxU1Q0TzNpTkdXOHhHNlpuYjhxYXdiYTVlSTNrbUpRNzdwaUdka1lud1lEcDdNX2lhR1ZGd09GSERhVXkwOElweVM4eUw5M1YwLUFIZzBBMndseGNIX2gwRHlXSWd5S1lyOXh2U2F4S204d05wREtaT2o00gGgAkFVX3lxTE1ZY0tjcDlUR0FJOFlpYXE1WXBOMzFISFZBYTZFNm94a3lidXljSFJYQU4yTHRhbXB6ZEFpRjBYcVh5ekRyVThHNjBiWVo1TThId04xZ2ZHUEl4NDczSW1adkpOSXpkQWI0aXNxc2psWTRQRHNjMFB1ZzVPeHVIQm1SV05Xb0U4R0l0QjVsX3NBbEkwUl91MTk5eHQyU3JiWHdPSXFld1FtekV2WWdod3IyZXlaQ3dld0ZFZ3E3ZUZub2M0YnNFZk10ZWdwNVRVV1c4bjczV25SaDYwU25jQ3BfVmFleFEyMGkzejVrQ1Jkd0s4TEdBaUNlNkp0MUdsY0d6c3lCV05XTnM2UUFqN0hZaDFlOGJ5Rmg0NVl3N2wtdQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "6e521167dacd",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T13:23:50+00:00",
+      "headline": {
+        "en": "Neuberger and KKR buy minority stake in health data giant Datavant",
+        "zh": "Neuberger和KKR收购健康数据巨头Datavant的少数股权"
+      },
+      "summary": {
+        "en": "Neuberger and KKR have bought a minority stake in Datavant, a health data company, according to Dealroom.",
+        "zh": "据Dealroom报道，Neuberger和KKR已收购健康数据公司Datavant的少数股权。"
+      },
+      "gps": [
+        "neuberger",
+        "kkr"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "app.dealroom.co",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa0Etc3g1NU9BNUhsejFVV2phWm1rQy00d3FGWmIzMkF3R3JRWXo5UWZoRE1UTldNYVp5Mng2M2RRWGlQYV81Zk9EYVJpc2RqUUphUW9rdGRuLXhuNWlmb3FLWGljLUQ5Ykhic3lPMHVaVW9abW05RjhaeDFaQlZ0T3czLTF0cV81VnY4RFlYcHJLSlh5bUxkVUZnR1FZbnB5M3c?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
