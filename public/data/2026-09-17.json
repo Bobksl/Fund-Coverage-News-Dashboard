@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-17",
+  "items": [
+    {
+      "id": "aff111288de8",
+      "date": "2026-09-17",
+      "published_at": "2026-09-16T23:02:10+00:00",
+      "headline": {
+        "en": "Blue Owl co-CEO says denying retail access to private markets is 'crazy'",
+        "zh": "Blue Owl 联席CEO称拒绝散户进入私募市场是\"疯狂之举\""
+      },
+      "summary": {
+        "en": "A Blue Owl co-CEO said it is a 'crazy thing' to deny retail investors access to private markets, according to Top1000funds.com. No further details or figures were provided in the article.",
+        "zh": "据 Top1000funds.com 报道，Blue Owl 一位联席CEO表示，拒绝散户投资者进入私募市场是\"疯狂之举\"。文章未提供更多细节或数据。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Top1000funds.com",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaEU3el8yTm5waHhRWjV1TmRHVzQ0STJTMldPbF94Rml3NkluWWNlaE5GTkgtSG04aWEyUHM4Q1NzSlA1TXZ0Qi1IbTg1MGtsSTc1RjN3cEJrMFU1VVhwa2d0MHVldFJqdHNVVjdfUDNZeEk3OWIxMmEwbk02OHdwSGxWYmFGamltYzVRNUx3SjRGREsxSWNsUG53X1BQNmVZUVRDWGc0MmFMNTZFaGR5NzUtVU1iUFJlT2xQc2tENWp3Ui1ieEE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "9286b5f69eb9",
+      "date": "2026-09-17",
+      "published_at": "2026-09-16T20:48:51+00:00",
+      "headline": {
+        "en": "KKR Doubles Private Debt Deals to $80 Billion as AI Spending Explodes",
+        "zh": "随着AI支出激增，KKR私人债务交易规模翻倍至800亿美元"
+      },
+      "summary": {
+        "en": "KKR doubled its private debt deals to $80 billion, according to Benzinga, as spending on AI expands.",
+        "zh": "据Benzinga报道，随着人工智能支出扩大，KKR的私人债务交易规模翻倍至800亿美元。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "benzinga.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTW9xYlBNQ20teVRHbzdaUkFnNEhCeTNRZEswYjRYS0M3S2lIck5rdHM2SnFQN3ZHSTRUQ3djd3dQNWVjZTYwaXlCRlNkRHNWRi14SWxSdmxaaHJNWkhscW5ibHp1TG5XNG54QU5mc2lpVDVoUjZOSU91RzJWY3dPY1BrNjZldnY5WU9CNlJraHpreUxoa0pHZ0lrTWh3QTVmSGNobVFranNvTGUydk9KWTFLNHdPZzI5TlBMY29xUC1fbktsWHd0Yk85amI?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "1cd8b4fcdfa6",
+      "date": "2026-09-17",
+      "published_at": "2026-09-16T20:21:55+00:00",
+      "headline": {
+        "en": "Fed Rate Hikes Won't Trigger Private Credit Default Wave: PGIM",
+        "zh": "PGIM：美联储加息不会引发私人信贷违约潮"
+      },
+      "summary": {
+        "en": "PGIM stated that Federal Reserve rate hikes will not trigger a wave of defaults in private credit.",
+        "zh": "PGIM表示，美联储加息不会引发私人信贷违约潮。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "benzinga.com",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMkJ6MEVCOEpTZ2hHME5wOGJxRjRXYTlZRmJZVlJpNGJxWmZXcHRyTUJ5SHlwNWl4Q3RsZC1Ydng1a0c1Nm1fbE5CdmtFeTMzNlZmSmNfR29UTkpHRkwwZUpxbEp4N0c1X2d3ZGgtTXNES2tLT2YzQ05VMDg1TFprZFhIMlZscGl4YmlYaV82S2lTZ1k5eUZ6N0xUV1c5WGdsRUtDak5BdDRkV045Ym5HMFFtcGNDczRoUzhJU29KT1ZuQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "4b18ff57330b",
+      "date": "2026-09-17",
+      "published_at": "2026-09-16T18:09:21+00:00",
+      "headline": {
+        "en": "Apollo Says Hyperscaler Credit Default Swap Widening Not Driven by Dealer Inventory",
+        "zh": "Apollo 称超大规模企业信用违约互换走阔并非由交易商库存驱动"
+      },
+      "summary": {
+        "en": "Apollo said the widening in hyperscaler credit default swaps was not driven by dealer inventory. The article provides no further details on the scale of the moves or the parties involved.",
+        "zh": "Apollo 表示，超大规模企业信用违约互换的走阔并非由交易商库存驱动。文章未提供有关波动幅度或涉及各方的更多细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTFJTQUZKMFBqYzhMdl9qejlzeXFoV2FtcXBmZUVPZkdEZEJHRDJVbjJGRmdiZ3NydUgtM0RmVEVlc0JpbFEtSGduMndfakI4RUZ3dm13R21DLXBXc0VOTUd3ZFdjdElnRW5hX2d5dHRKRElUZ0x0dUJ2bWtWZ0o3Mm5RSTJDbVJMSUZuMl8xYjJpUTYwbEMyMHhCRlZUZDFXMUJhT2tnNWJFV2lnQWI0U2JkZ1NYNGs2TFpDQUNpcUJtMDNGeXhRS3QzRW9uOWNRanRsMFFtZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    }
+  ]
+}

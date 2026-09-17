@@ -2,6 +2,32 @@
   "date": "2026-09-16",
   "items": [
     {
+      "id": "7fde19569bd8",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T13:37:32+00:00",
+      "headline": {
+        "en": "Blue Owl leads $2.4 billion Iren debt deal for Nvidia chip purchases",
+        "zh": "Blue Owl 牵头 24 亿美元 Iren 债务交易，用于购买 Nvidia 芯片"
+      },
+      "summary": {
+        "en": "Blue Owl leads a $2.4 billion debt deal for Iren to fund Nvidia chip purchases. No further figures, terms or participants were provided.",
+        "zh": "Blue Owl 牵头一笔 24 亿美元债务交易，供 Iren 用于购买 Nvidia 芯片。文中未提供更多数据、条款或参与方信息。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZ0s0X3RVZkFnSUYyMVY2S3l3OUJxNHlaNE0wWW1rajdKMU9vdGlFN2FLV1FCVjBURGg0dVJIZWdlRWhuc0VqV1lPYXlHaExwTDJzSmREeENkUl9yR01zcmhxOUIxUzU5OFZnU0JWQWNPWVNoU0NKLU0wUmlQNDBtTFctTW5jX2JXLXJLdkMzbG8zaEJnUzN4NG5jVGN3elR0Mkhoeml2cldZckREQzRwN1hCTDVVRWF3aDBNS3VnYnI?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "cef717ef0cd2",
       "date": "2026-09-16",
       "published_at": "2026-09-16T09:19:46+00:00",
@@ -280,6 +306,30 @@
       "source": {
         "publisher": "Traders Union",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSlloSllvQWZmSE1RWko4c0dHQS1adjc1SUhpRlhSZGRpQTlSZ3g5SG1QY2pPamF0Q3pPUk1HMjhwMl83cVhkQndReHBaT2hqMEkzY2dYXzhhSUpsai1fdThhcTJvdzJkclhmTkdlUFJ2X1pxSEc2akN5OHhFVWZqS1g2YldGU3pIWTlZSnVjVVdoYUlO?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "48b80ce93160",
+      "date": "2026-09-16",
+      "published_at": "2026-09-15T16:15:04+00:00",
+      "headline": {
+        "en": "Private credit default rate rises to 6.3% in 12 months through August",
+        "zh": "截至8月的12个月内私人信贷违约率升至6.3%"
+      },
+      "summary": {
+        "en": "The private credit default rate rose to 6.3% in the 12 months through August, according to the report. No further details were provided.",
+        "zh": "报告显示，截至8月的12个月内，私人信贷违约率升至6.3%。未提供更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "YouTube",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02QjdaYmw2TnBCQzd6VTFqcjluaXhiN3k0cS0tZDRnOHRBVzNKT2JacE1aWVpWWExDT1FiUXliT3BtR3FTQ2cyUF90Zmg4Uk1JRldjT0ZtWm9kNGRJ?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
