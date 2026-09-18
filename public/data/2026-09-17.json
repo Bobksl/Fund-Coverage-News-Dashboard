@@ -256,6 +256,30 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "e0525b7757c6",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T06:39:58+00:00",
+      "headline": {
+        "en": "US CLO Issuance Slips to $43.8B in August",
+        "zh": "美国 CLO 8月发行量下滑至438亿美元"
+      },
+      "summary": {
+        "en": "US CLO issuance slipped to $43.8 billion in August, according to Yahoo Finance.",
+        "zh": "据 Yahoo Finance 报道，美国 CLO 8月发行量下滑至438亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNUpIbU1Fd04wSTMwTVF2TFJHZ1dkeDRpVU5TWWx5alVSRkljWHdZVzZPbUpfNkJuV1RiYjU3M1dlZ3p0V1lRRUZ0WjhiQ2VTTVV0QlNUQlJ6Vl9tcHFQdXlpS01Za2RwemI4ME1jdTBsbzNSMHNKLVNhTlRhN0JKTW43VGNZTElmU3BnZVN6TQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "aff111288de8",
       "date": "2026-09-17",
       "published_at": "2026-09-16T23:02:10+00:00",
@@ -303,6 +327,32 @@
       "source": {
         "publisher": "benzinga.com",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTW9xYlBNQ20teVRHbzdaUkFnNEhCeTNRZEswYjRYS0M3S2lIck5rdHM2SnFQN3ZHSTRUQ3djd3dQNWVjZTYwaXlCRlNkRHNWRi14SWxSdmxaaHJNWkhscW5ibHp1TG5XNG54QU5mc2lpVDVoUjZOSU91RzJWY3dPY1BrNjZldnY5WU9CNlJraHpreUxoa0pHZ0lrTWh3QTVmSGNobVFranNvTGUydk9KWTFLNHdPZzI5TlBMY29xUC1fbktsWHd0Yk85amI?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "222098ffd1b2",
+      "date": "2026-09-17",
+      "published_at": "2026-09-16T20:48:51+00:00",
+      "headline": {
+        "en": "KKR Doubles Private Debt Deals to $80 Billion as AI Spending Explodes",
+        "zh": "KKR私募债务交易翻倍至800亿美元，AI支出激增"
+      },
+      "summary": {
+        "en": "KKR doubled its private debt deals to $80 billion, according to Yahoo Finance. The report links the increase to a surge in AI-related spending.",
+        "zh": "据Yahoo Finance报道，KKR的私募债务交易规模翻倍至800亿美元。报道将这一增长与AI相关支出的激增联系起来。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSC1BWjV3ZXpCVzdTLWdUVkY3QVlOSUd1WjdfLXZib3RqSXhKLVF2U0o0RHNrUWlNZEdOYUhoS0plMjZXbEdWcmNUTVpRS2x5R1FnRldCYUFydkNfdlFXVXFiancwVnVzR3lNa1dJZlFRMk5YeUFkVXF2ZjBaSGlJVTBHMkgtX1BrMWRRMW1LOGN1c0hxZTdfNXVuQQ?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"

@@ -2,6 +2,106 @@
   "date": "2026-09-18",
   "items": [
     {
+      "id": "f30563eee99f",
+      "date": "2026-09-18",
+      "published_at": "2026-09-18T12:49:18+00:00",
+      "headline": {
+        "en": "ICE launches private credit reference data service",
+        "zh": "ICE推出私人信贷参考数据服务"
+      },
+      "summary": {
+        "en": "Intercontinental Exchange (ICE) has launched ICE Private Credit Reference Data, a reference data service for private credit instruments. The service builds on the recent launch of ICE IDs, which ICE describes as the first foundational identifiers for private credit.",
+        "zh": "洲际交易所（ICE）推出了ICE Private Credit Reference Data，一项针对私人信贷工具的参考数据服务。该服务建立在近期推出的ICE IDs基础上，ICE称ICE IDs是首批针对私人信贷的基础标识符。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/18/ice-launches-private-credit-reference-data-service/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "779c1f927421",
+      "date": "2026-09-18",
+      "published_at": "2026-09-18T12:40:58+00:00",
+      "headline": {
+        "en": "Moody's: Insurers set to boost private credit allocations",
+        "zh": "穆迪：保险公司势将提高私人信贷配置"
+      },
+      "summary": {
+        "en": "Moody's found that 42 per cent of US insurers and 36 per cent of UK and European insurers plan to increase their exposure to private credit. The ratings agency said private credit allocations are set to rise further among insurers in the US, UK and Europe.",
+        "zh": "穆迪发现，42%的美国保险公司以及36%的英国和欧洲保险公司计划增加对私人信贷的敞口。该评级机构表示，美国、英国和欧洲保险公司的私人信贷配置将进一步上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/18/moodys-insurers-set-to-boost-private-credit-allocations/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "bce4f32145d7",
+      "date": "2026-09-18",
+      "published_at": "2026-09-18T12:09:24+00:00",
+      "headline": {
+        "en": "Lucid Capital Markets initiates Bain Capital Specialty Finance with neutral rating",
+        "zh": "Lucid Capital Markets 对 Bain Capital Specialty Finance 给予中性评级并启动覆盖"
+      },
+      "summary": {
+        "en": "Lucid Capital Markets initiated coverage of Bain Capital Specialty Finance stock with a neutral rating. No price target or further details were provided.",
+        "zh": "Lucid Capital Markets 对 Bain Capital Specialty Finance 股票启动覆盖，给予中性评级。文章未提供目标价或其他细节。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNV3pMb1otSE5sdTdfRzlYUXFjZ3JQelpCN21kSDgxYlNWUXVaLTJLMk8yVVQxZ3c3LXFoclY3WTFxRVdUWmtidjJLSEQ1alc5RTg3NW1iVkY5QnpidFFOUWdqNlN1REtiamdtRWZEbjJUcldGajM0TXpCMFVTX1o5Yl9YUEdRT0JGa3d6UzJSc3JRWmhHNGNOakNnNEZkM3lLeUo3X2gwbEtuSV9oOHRGSnplMmFkMDJYdWFzVl90bXpYVExrQllpSThGMllQVHdCdmVIZGZMQ0VQcS1TTzZIWEZR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "c14edac88c85",
+      "date": "2026-09-18",
+      "published_at": "2026-09-18T03:45:20+00:00",
+      "headline": {
+        "en": "Apollo Eyes DePuy Synthes and Adds $5.5 Billion in Auto Loans",
+        "zh": "Apollo 关注 DePuy Synthes，同时增加 55 亿美元汽车贷款"
+      },
+      "summary": {
+        "en": "Apollo Global Management is reportedly eyeing DePuy Synthes while adding $5.5 billion in auto loans. No further details on either move were provided.",
+        "zh": "据报道，Apollo Global Management 正在关注 DePuy Synthes，同时增加 55 亿美元汽车贷款。文中未提供这两项举措的更多细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQYUxGbVlhT2dkX24xQXE2OVlNVW0tRFE2cGQ3cHhYcHRkd25zOTBpX29rZzktRzVhVjVqcHBNX2ZuSDZwZFp0R1NsQmFfeFVBbjJmR2V6TXk4SmMtWXB1SURPTmdiNUprakdsUEhQbzFqTUdYM0J1OGxrYk1vQXpJWFIwUm5YNXlUd05IWm93VENINWlWUHNZVG1OaVRtanRLUHZTLWp4Z2Y5WjVZNU53LW1WUFFtTW9Td2lWTUd4UVBOOTNPa2VuN05NY2FDMEhDVUxBSG1TbGhJb1FhNUpYSkl0N2tCOUhmWGl1OUl2Y9IB7wFBVV95cUxQYUxGbVlhT2dkX24xQXE2OVlNVW0tRFE2cGQ3cHhYcHRkd25zOTBpX29rZzktRzVhVjVqcHBNX2ZuSDZwZFp0R1NsQmFfeFVBbjJmR2V6TXk4SmMtWXB1SURPTmdiNUprakdsUEhQbzFqTUdYM0J1OGxrYk1vQXpJWFIwUm5YNXlUd05IWm93VENINWlWUHNZVG1OaVRtanRLUHZTLWp4Z2Y5WjVZNU53LW1WUFFtTW9Td2lWTUd4UVBOOTNPa2VuN05NY2FDMEhDVUxBSG1TbGhJb1FhNUpYSkl0N2tCOUhmWGl1OUl2Yw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "9bd9bc7b561e",
       "date": "2026-09-18",
       "published_at": "2026-09-18T03:45:19+00:00",
@@ -47,6 +147,32 @@
       "source": {
         "publisher": "富途牛牛",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUDhDQXNUa3ZETjVWYW1xUExZdlhHWlR3bDA3Y1N1U09MNERrTkkyY0VSUGxFSnluR2Fxdk5qZVZ4TThsWVktallJZV9MU25OWEw4SExUN1FVZE5xRk51UF9hbkpldlRKLWFlS3FqcHlQcDd5cnVyd0w5R0swX1Z3N2RwSXB5OUJLTmphUDNDM0owbTFE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "d5bc3cf66452",
+      "date": "2026-09-18",
+      "published_at": "2026-09-17T21:43:00+00:00",
+      "headline": {
+        "en": "Apollo Provides $585 Million Financing to The Executive Centre",
+        "zh": "Apollo向The Executive Centre提供5.85亿美元融资"
+      },
+      "summary": {
+        "en": "Apollo provided $585 million of financing to The Executive Centre, according to HedgeCo.Net. No further details of the transaction were given.",
+        "zh": "据HedgeCo.Net报道，Apollo向The Executive Centre提供了5.85亿美元融资。报道未提供该交易的更多细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "HedgeCo.Net",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObzRfVmpodEhPTGszbDVza2x6Z0Q5cm5sZW1Iel9HblllLWRDN29NZS1fbkFPaThrc0treWNPSlY3WGphejBYbHFsb2lxbFRqSjhKcXZhbHRsWUE5RUlHRERId1hoampDRFZfVW84OWtMVmhJd2VnYmZrT1R6c2RCeGgyYU8tTlV5ZUljZW1XYncxRDJzU0U5X2ljZ3FCTk4wT0x3S1RYMA?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
