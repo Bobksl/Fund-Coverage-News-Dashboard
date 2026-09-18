@@ -2,6 +2,30 @@
   "date": "2026-09-17",
   "items": [
     {
+      "id": "06b3269f6fce",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T15:00:13+00:00",
+      "headline": {
+        "en": "Private Credit Defaults Are 1%, 6% or 19%, Depending Who You Ask",
+        "zh": "私人信贷违约率是1%、6%还是19%，取决于你问谁"
+      },
+      "summary": {
+        "en": "Bloomberg reports that private credit default rates vary widely depending on the source, cited at 1%, 6% or 19%. No specific managers, funds or figures beyond those rates are named.",
+        "zh": "彭博报道称，私人信贷违约率因数据来源不同而差异巨大，分别为1%、6%或19%。除这些比率外，文中未提及具体管理人、基金或其他数字。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdGpwa1V6SVY1VWJkVFRJYlJhdXVoVDU0QkwwN2ZjcUZTWGJiS01aOWtSU3hFcXQzMGxteVA2RHJDSWpOOFl3N1h4bGxNbkppR3diN0JlNTQ1UHFocUIxWVFmMEJMaThaZ0VLalQ1VU5vOThhOFM3NFZFX0Y5aXZ1U1hnNWhwZW9Ya3NEbzJsd3o5MTBLRm5rbndEZ1lXYmxZZjY1cEVDcEpTNTZnUmNj?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "e188a2df5402",
       "date": "2026-09-17",
       "published_at": "2026-09-17T13:14:27+00:00",
@@ -21,6 +45,32 @@
       "source": {
         "publisher": "Alternative Credit Investor",
         "url": "https://alternativecreditinvestor.com/2026/09/17/private-credit-exposure-set-to-rise-in-dc-pensions/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "8f8e52b00f67",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T12:19:00+00:00",
+      "headline": {
+        "en": "Apollo mulls raising SoftBank loan to $9 billion for OpenAI bets",
+        "zh": "Apollo 考虑将对 SoftBank 的贷款提高至 90 亿美元，用于押注 OpenAI"
+      },
+      "summary": {
+        "en": "Apollo is considering increasing a loan to SoftBank to $9 billion for OpenAI-related bets, according to The Japan Times. No further terms or participants were disclosed.",
+        "zh": "据《日本时报》报道，Apollo 正考虑将对 SoftBank 的贷款提高至 90 亿美元，用于与 OpenAI 相关的押注。未披露更多条款或参与方。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "The Japan Times",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE84WHVXVnNHZEtKZnd1VERHWHA0ZDA4bk9ManBUdllzQnk2T1c4MzdaV3A3WUdHZFkxd1hLZ1dmdU9yWHZFWE5OUG42a2d4RDZ1SE8tUnktU281ajlleFhxQTU2UE1OeEpsVFE0SGtjOGVIRnRFdjdpNElB?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
@@ -49,6 +99,32 @@
       "source": {
         "publisher": "scanx.trade",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZlI4QWwxT2JNNXZYSjZILXlIbi1mRVdGVXo1TUxva3NMaUJVc2Z2RUVlQkNLMkxuZmVYZ1FCNlRpZDdyRzRJT1pEdndla3NtLThwVm9PajVGNVJoWE1kSzNhSk5Vd0VxZFlNbWR1ekZldU1OVTJwLWx5RWtmWEtrY2V5YWwzaUNwdHNQaExnQi1JekFES28ycnJYMXRpUzZpekNvaU54TU42TUhJWnRuVjdMTW9BZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "460530fb1372",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T11:25:06+00:00",
+      "headline": {
+        "en": "CIFC launches direct lending strategy on iCapital",
+        "zh": "CIFC 在 iCapital 平台上推出直接贷款策略"
+      },
+      "summary": {
+        "en": "CIFC has launched a direct lending strategy on iCapital, according to Alternative Credit Investor. No further details on the strategy or its size were disclosed.",
+        "zh": "据 Alternative Credit Investor 报道，CIFC 已在 iCapital 平台上推出一项直接贷款策略。该策略的具体细节及规模未予披露。"
+      },
+      "gps": [
+        "cifc"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYTVTRGNMdjRBWlhYbEdvQ2Q4T1ppV3lFR3RtaDA0dksyMkdScVJaclR2UDRuQl9JMzlUSWVEclBaWDl2aHRNLVJaTGJJV0ItcW1yU200WjNsYnF6dThWMXk4OV9ZWkI1b1FHUlVSWHVPR1FoSmtHNVZlSFdwVzlfMm9DcVIyNC04ZnFMT1h5NVY3empucDBHUFpyMkRqSzJC?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
@@ -99,6 +175,32 @@
       "source": {
         "publisher": "Structured Credit Investor",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNX29pOUhKZDEzdEpqNUNYcEVhOGNlNm01MEZTN1BlajFZUHhpR3NWSGdSV1FnVDdiVmNpMmF2RHBTQ1N3MmFvcHBCa3Z2NWVCaGU2SzdOMFpuZTBEN21ORUNXbnN1d3kycV9xU2ZOTlZtUVRFRlR3d2Rhb080M2VXUE10ZnFhQmNheTlfT3ZPUFZpaXNxeUlEWjZFenZsTHVOcE81MkF2SGtZOHNUZVI4S01SNXhxZkhHR2JMMEh0NEtLQ2NqZHYwMDkyVVhiOE85cEJ2QVh4TQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "852f9bce3cb9",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T08:00:59+00:00",
+      "headline": {
+        "en": "KBRA assigns BBB rating to Blue Owl Technology Finance Corp. $400m notes",
+        "zh": "KBRA 授予 Blue Owl Technology Finance Corp. 4 亿美元票据 BBB 评级"
+      },
+      "summary": {
+        "en": "KBRA assigned a BBB rating to $400 million of notes issued by Blue Owl Technology Finance Corp.",
+        "zh": "KBRA 授予 Blue Owl Technology Finance Corp. 发行的 4 亿美元票据 BBB 评级。"
+      },
+      "gps": [
+        "otf"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOHFodEd6RzNXYWVXaG9kVkRKNEtFcFdzMzdkQzNuV2ZpOV80MzFILVlHRGg1TkdsbGxSdlJkWVFfaFBDeVdMOVFrdERTb2J5Wjc5T0ZOQTNUWVVjcFc0U1dHTE0wUnVjcFEwWTh2MkRQaFVIMHZFeURTdmZvakhzaFRDWjZlZWZSUGk1VXM1cUFGSUlwWUdTN2NQUGNyS25kczZRc1M3eG11TU5SUV9rWlhITUFnd2NzWVdwV1ZyOGhtYVVvS1E?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
@@ -251,6 +353,32 @@
       "source": {
         "publisher": "marketscreener.com",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTFJTQUZKMFBqYzhMdl9qejlzeXFoV2FtcXBmZUVPZkdEZEJHRDJVbjJGRmdiZ3NydUgtM0RmVEVlc0JpbFEtSGduMndfakI4RUZ3dm13R21DLXBXc0VOTUd3ZFdjdElnRW5hX2d5dHRKRElUZ0x0dUJ2bWtWZ0o3Mm5RSTJDbVJMSUZuMl8xYjJpUTYwbEMyMHhCRlZUZDFXMUJhT2tnNWJFV2lnQWI0U2JkZ1NYNGs2TFpDQUNpcUJtMDNGeXhRS3QzRW9uOWNRanRsMFFtZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "3cb3dac78660",
+      "date": "2026-09-17",
+      "published_at": "2026-09-16T17:03:00+00:00",
+      "headline": {
+        "en": "Blue Owl Technology Income Corp. Lowers Credit Facility to $975M, Extends Revolver and Maturity Dates",
+        "zh": "Blue Owl Technology Income Corp. 将信贷额度降至9.75亿美元，并延长循环贷款和到期日"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Income Corp. lowered its credit facility to $975 million and extended its revolver and maturity dates, according to Kalkine Media.",
+        "zh": "据Kalkine Media报道，Blue Owl Technology Income Corp. 将其信贷额度降至9.75亿美元，并延长了循环贷款和到期日。"
+      },
+      "gps": [
+        "otf"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Kalkine Media",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPYWVhSVlUVFo5SEtHS3lfQWF5ci1lN0VGd2Y5WG9BNXY2V3EtYU9tdFZzTHVQOVJ2WXpxZHIzekdJNTd5SzItaHFSVGozNmp1dXRwdUdkYUZPMkdfTjJ6Q3k4d1YzTTVBdW5wcjVTV2FGVUNjV0txT1FXNWJjOEFaMnd3cjJwV2ZuN3YwZWROQXc3QUxQWXpiajVEdWJJNk5TdnNPZk5GYkRLY2VtOWVzRktDNUFKeUJwUkFTQ3pmbXR2LW5vaHluOGk5dFBENkRfcHRSVllBQUVjd3V6WEE?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"

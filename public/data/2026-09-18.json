@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-18",
+  "items": [
+    {
+      "id": "9bd9bc7b561e",
+      "date": "2026-09-18",
+      "published_at": "2026-09-18T03:45:19+00:00",
+      "headline": {
+        "en": "Apollo Eyes DePuy Synthes, Adds $5.5 Billion in Auto Loans",
+        "zh": "Apollo 关注 DePuy Synthes，同时增加55亿美元汽车贷款"
+      },
+      "summary": {
+        "en": "Apollo Global Management is reportedly eyeing DePuy Synthes. The firm is also adding $5.5 billion in auto loans.",
+        "zh": "据报道，Apollo Global Management 正在关注 DePuy Synthes。该公司同时增加55亿美元汽车贷款。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNUllvRGhzbmVJYUs1Ujh1ZHBlRUlrZHJ6ZmhOWFFtbTBvU3VCM29YMnM4M2V0a2FpZElXQkZlSzRHSWtfRm1DNnNDZG1wOTc2MTlTek5xMzRyN09ZRnJGY2owZ1FoWTVUNk5oNmJKbVNCV1NoZXR1NjhkMnR4c0Rkcl83bzd6OElRZ1ZBTHZ2U1JhTGZsWmUtQlB0UU44Nk5HQ3d2QWJNNWdBNzBISzVfTTU3Rk1HOHJKVHlzbjZzNVNkLXM3ckg2dXV1Yk1tWU9QM2VmcnVpMFhvWkNJSHlFdGx5S3NMMjJzOEHSAe8BQVVfeXFMUGFMRm1ZYU9nZF9uMUFxNjlZTVVtLURRNnBkN3B4WHB0ZHduczkwaV9va2c5LUc1YVY1anBwTV9mbkg2cGRadEdTbEJhX3hVQW4yZkdlek15OEpjLVlwdUlET05nYjVKa2pHbFBIUG8xak1HWDNCdThsa2JNb0F6SVhSMFJuWDV5VHdOSFpvd1RDSDVpVlBzWVRtTmlUbWp0S1B2Uy1qeGdmOVo1WTVOdy1tVlBRbU1vU3dpVk1HeFFQTjkzT2tlbjdOTWNhQzBIQ1VMQUhtU2xoSW9RYTVKWEpJdDdrQjlIZlhpdTlJdmM?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "5d75b577038f",
+      "date": "2026-09-18",
+      "published_at": "2026-09-17T22:12:27+00:00",
+      "headline": {
+        "en": "Private Credit Default Rates Cited at 1%, 6% or 19% Depending on Source",
+        "zh": "私人信贷违约率被引述为1%、6%或19%，因来源而异"
+      },
+      "summary": {
+        "en": "A report notes that private credit default rates are cited at 1%, 6% or 19%, depending on whom you ask. No specific managers, funds or figures beyond the default-rate range are named.",
+        "zh": "一篇报道指出，私人信贷违约率被引述为1%、6%或19%，取决于询问对象。除该违约率区间外，文中未提及具体管理人、基金或其他数据。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "富途牛牛",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUDhDQXNUa3ZETjVWYW1xUExZdlhHWlR3bDA3Y1N1U09MNERrTkkyY0VSUGxFSnluR2Fxdk5qZVZ4TThsWVktallJZV9MU25OWEw4SExUN1FVZE5xRk51UF9hbkpldlRKLWFlS3FqcHlQcDd5cnVyd0w5R0swX1Z3N2RwSXB5OUJLTmphUDNDM0owbTFE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "2bbf85468ef4",
+      "date": "2026-09-18",
+      "published_at": "2026-09-17T19:38:49+00:00",
+      "headline": {
+        "en": "Apollo Plans to Increase SoftBank Loan from $5.4 Billion to $9 Billion to Support OpenAI",
+        "zh": "Apollo 计划将 SoftBank 贷款从 54 亿美元增至 90 亿美元以支持 OpenAI"
+      },
+      "summary": {
+        "en": "Apollo plans to increase a SoftBank loan from $5.4 billion to $9 billion to support OpenAI, according to ababnews.com. No further transaction details were reported.",
+        "zh": "据 ababnews.com 报道，Apollo 计划将一笔 SoftBank 贷款从 54 亿美元增至 90 亿美元，以支持 OpenAI。报道未提供更多交易细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "ababnews.com",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE55cE1kSEVyYkpmS3lxMXpOUFpJaTBBcXktTHJHenhLTXVDZFgtYTFnQlNfS3RoZU0xaE8wTGVPZ3lvU3FoWjJnSkR3NDFKQkFoREFyd3NVdWFxZDIyVnZPT29CTGt2dEduRzktSVNmZWx1YUhY?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "777afd02d6c0",
+      "date": "2026-09-18",
+      "published_at": "2026-09-17T18:28:41+00:00",
+      "headline": {
+        "en": "Truist to Sell $5.5 Billion in Auto Loans to Apollo as New CEO Pushes Bank Overhaul",
+        "zh": "Truist 将在新任 CEO 推动银行改革之际向 Apollo 出售 55 亿美元汽车贷款"
+      },
+      "summary": {
+        "en": "Truist is selling $5.5 billion in auto loans to Apollo, according to a report. The sale comes as Truist's new CEO pushes a bank overhaul.",
+        "zh": "据报道，Truist 正向 Apollo 出售 55 亿美元汽车贷款。此次出售正值 Truist 新任 CEO 推动银行改革之际。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "VINnews",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOVE5V1g5SGRGUnNvWUpVQlpKdDl6eEUzdVRWOVR5RHlZbUNXSkc0OWVwQmQ4cjRDT29wTmxSM2FLdWRUZ0hVdWJvVjFiblJlV0JuZGJfX2x5aHlEc0ZmbXRqTVJpOVB6aEM3TmFCeG92Ym5MUHFlZWxKUHJGNHZMQWJUY19IaHRJYncxQVQyaDFYa016WGpUVXVTa0Myc2p5THd2WThXQ05GVGlaN0Z5UlpLaEYzZVRwR2h3U2NDT0FtWWg3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    }
+  ]
+}
