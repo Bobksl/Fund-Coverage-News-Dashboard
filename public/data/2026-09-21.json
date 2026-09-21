@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-21",
+  "items": [
+    {
+      "id": "257c06057f6a",
+      "date": "2026-09-21",
+      "published_at": "2026-09-21T10:46:27+00:00",
+      "headline": {
+        "en": "Middle Market Debt Weekly: ABL Capacity Holds Firm as Fed Raises Rates, Private Credit Defaults Climb",
+        "zh": "中间市场债务周报：美联储加息、私人信贷违约上升之际，ABL容量保持坚挺"
+      },
+      "summary": {
+        "en": "ABF Journal's Middle Market Debt Weekly reported that asset-based lending capacity held firm while the Federal Reserve raised rates and private credit defaults climbed.",
+        "zh": "ABF Journal的《中间市场债务周报》报道，在美联储加息、私人信贷违约上升之际，资产支持贷款（ABL）容量保持坚挺。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "ABF Journal",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZlRGQlppTWJvbFhMRU10b0FNUmlzT0xGMlIyc09RZ0pqMTdIOVBlclNGaS1HRHoyalh0WjFUMjNaWThWYTR6YjdiX28xUWpob180ZVVxNG1KNGVMaXlRcEFTRkJEYnBxSGM1X3UtT2pkZ201cWRGTGxYQ3lIS0F5SWJDV2dNZFdUMVExOGpJa0dyTGQxLUNGcWlqdWxVdzl1STFVbjVmNkZ2SXdqdTRDR0lQbU5MRXZ6ZkNMMnR2T2w1TTIwcmc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    }
+  ]
+}
