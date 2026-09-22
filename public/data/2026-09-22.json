@@ -2,6 +2,134 @@
   "date": "2026-09-22",
   "items": [
     {
+      "id": "85520242eb65",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T11:45:34+00:00",
+      "headline": {
+        "en": "KKR launches equipment finance firm with $350 million",
+        "zh": "KKR以3.5亿美元成立设备融资公司"
+      },
+      "summary": {
+        "en": "KKR has launched an equipment finance firm with $350 million. No further details were provided in the report.",
+        "zh": "KKR以3.5亿美元成立了一家设备融资公司。报道未提供更多细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeklJX2RnREVmQnc1VE5ITkdYR0pxYmoyejE4MWo2dGk2YmpxWXBVcDhqWTJsbHZSbDJQTngxckJzZVQ1eU9PWjNXLTBoZ1JMZjZIaTJUeHJma2haUThzNHdSN05CdC1GcHVYQW5pMGN2SGpkNUVJWXpmR2p5ZmhzajlDT3VreXd0LUN3ai1WSW80XzFVUms0OWpwV0daY3VnMmxHS0xDQjMzdlFmdnc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "d647e5a595d1",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T11:02:34+00:00",
+      "headline": {
+        "en": "KKR launches a lender for small businesses buying work equipment",
+        "zh": "KKR 推出一家面向购买作业设备的小型企业的贷款机构"
+      },
+      "summary": {
+        "en": "KKR launched a lender for small businesses buying work equipment, according to Stock Titan. The report provided no further details on the size, structure or funding of the business.",
+        "zh": "据 Stock Titan 报道，KKR 推出一家面向购买作业设备的小型企业的贷款机构。该报道未提供有关该业务的规模、结构或资金的进一步细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Stock Titan",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQM1NxR1I3b2xTSDh3ejhiNnkzRHZrNXNucW5kVjV2U29FejloUHFGZzRlMHNvemFxeXlVZmE3cDV6aE1TZVNKSVJnT2RpOWsxaWZwVUxSb0dBSUNQVng0Ti05dnVEdkJaRW9kZzZfOHlMdXBXRzFjRWROYUZZbnUyTWpSUnMzZkhwblpBSkd6elp0TjF3ZkZsMGZGVExTSk55UTBReUlMVHRiZUJCaWJIRGNidHY?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "a128012f7260",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T11:00:00+00:00",
+      "headline": {
+        "en": "KKR launches equipment finance platform Akrapoint Commercial Capital",
+        "zh": "KKR 推出设备融资平台 Akrapoint Commercial Capital"
+      },
+      "summary": {
+        "en": "KKR launched an equipment finance platform called Akrapoint Commercial Capital, according to Business Wire. No financial terms or leadership details were disclosed.",
+        "zh": "据 Business Wire 报道，KKR 推出了名为 Akrapoint Commercial Capital 的设备融资平台。报道未披露财务条款或管理层细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Business Wire",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVG9scW9HZkl4ajJlNHd3OTAyTU44R243dThlLWxLaUQ3UkFJNGVBRmdXWG9FOUpTbE1RcUx1Qkx4S0hJd1FoQzh5Q2o3N3Z6SGZZcDA0Q082SE0zVDItdGdQd3hfcWc0ZS1VZ2tqWV82Z0VpcUdGNjEtelhhQUtudHpZWFRpTUdvckJTZWkwN1I3RmZ1WkY0LTZEQjlSQ0dwWVZTR25sZWpwOFIyUndGcHVDVHlvaW0tVUdSYkFFSnZ2aEE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "b21c1e9f66a0",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T09:42:12+00:00",
+      "headline": {
+        "en": "Australian regulator cracks down on three private credit products",
+        "zh": "澳大利亚监管机构打击三款私人信贷产品"
+      },
+      "summary": {
+        "en": "Australia's regulator has cracked down on three private credit products, according to Alternative Credit Investor. The report gives no further details on the products, the managers involved or the remedies imposed.",
+        "zh": "据Alternative Credit Investor报道，澳大利亚监管机构已对三款私人信贷产品采取打击行动。报道未提供有关这些产品、涉及的资产管理公司或所采取措施的进一步细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSEJQWnpnN1kzUVpPODFDcHBIUUpoOXh0emwzakFSVldpaGZSaW9VRlh1RHdwMV95MjRtYzU5S1NlSWlETXlRbkMyOXlsQ2JEQ29vX2ZkSnNZQWpubk1sdWUtVk1nRjBRVlVLWXMtX3EyOEdDS0gyaWtQbDdDMHJ2MWgtcU5QWVh3Z19tWWJWVkxBeGxKVjdxbEhTQUVUOFZBbkc5RjVqUzNFemFlZUIwZWplZDJDdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "6bbc0e19741a",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T07:34:50+00:00",
+      "headline": {
+        "en": "KKR commits $350m to launch equipment finance platform Akrapoint",
+        "zh": "KKR承诺3.5亿美元推出设备融资平台Akrapoint"
+      },
+      "summary": {
+        "en": "KKR has committed $350m to launch Akrapoint, an equipment finance platform, pehub.com reported.",
+        "zh": "据pehub.com报道，KKR已承诺3.5亿美元推出设备融资平台Akrapoint。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "pehub.com",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdUI5ZENaNWpSRHdSNnE2bV9XVHZxVHdBN2ZSTTBXTHgwNWFnaHpQQmNsS0piYVVKWVRhVVVVRUtqd0hCWHl3UWRLQXlfQjdWZ1JibjhkRDJiYVVoaS1UQUxpVzQwUU5nQTBEM2J0NmlUWXh2NGY2b1RWMHFYU1dCZ2VnSjlfQ0EzaTZQdGNPSQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "8e7307b60990",
       "date": "2026-09-22",
       "published_at": "2026-09-22T03:24:30+00:00",
@@ -21,6 +149,30 @@
       "source": {
         "publisher": "The Edge Malaysia",
         "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVZjFZdlVTSDJDNmVLU0dmbmp4LV9vSkcxY0Z2Tm1wQ2c4Z1dzNWZ3QU13eUdKQTBwVUxVX2NlUlVMdHp3aUxZdk0wTFhkZmdp?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "e1ef992333f2",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T03:24:30+00:00",
+      "headline": {
+        "en": "Australia's corporate regulator calls out 'poor practices' in private credit",
+        "zh": "澳大利亚公司监管机构指出私人信贷领域存在\"不良做法\""
+      },
+      "summary": {
+        "en": "Australia's corporate regulator has called out 'poor practices' in private credit, according to the report headline.",
+        "zh": "据报道标题，澳大利亚公司监管机构指出私人信贷领域存在\"不良做法\"。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "The Edge Malaysia",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5HeEg0NEN5bFJiMUZPb2F3cmQyUnRkXzFjcGN0VGVjOW1STWhneFE5LWdTZmx5T01IWnpsWDFPb2VFOW43VFUtRDhtdFVEa2RHakZn?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
@@ -71,6 +223,30 @@
       "source": {
         "publisher": "businesstimes.com.sg",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNGlHMzZUd3Z0UzN0ZWtEMmJLa3QwMXlUOTQyTGZQN293cFZfRW1jY2FjTzF2VEU0VjItcWxOQ0NwdzJLcjE3VVJzNmNYV1FuZ1BwOWxJdTlYYkhyWFUxRTNJOTgwWTVScXNRMi1LN2NGTTI1SG9PZW92emJTQklqQ2dGSWxJNnRkcnMwdnFBZWZrMUgyeTR5VlNrUXYxb3NjVDVlVG9jUEtGa2dXV3pwMlRtNVFDOW0wTzFjZUtGcnN0RGMwS21TaFV3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "a9303f71d972",
+      "date": "2026-09-22",
+      "published_at": "2026-09-21T18:06:48+00:00",
+      "headline": {
+        "en": "QIA and J.P. Morgan Asset Management form $20 billion partnership across global equities and U.S. private credit",
+        "zh": "QIA与J.P. Morgan Asset Management组建200亿美元合作伙伴关系，覆盖全球股票和美国私人信贷"
+      },
+      "summary": {
+        "en": "QIA and J.P. Morgan Asset Management formed a $20 billion partnership covering global equities and U.S. private credit. The article gives no further details on the structure or terms.",
+        "zh": "QIA与J.P. Morgan Asset Management组建了一项200亿美元的合作伙伴关系，覆盖全球股票和美国私人信贷。文章未提供有关结构或条款的更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbHI0cjRfdmwtODN0MWMzUVltdW1tX2tGNzJhbVc0VFVYd0dCRFZyR25CMkJiNWJpOExmSXBHMnV0OThiYUczajRFUUZfRi1aOE1QZkhfMnQ4ZkJxTUhsUzQ0cjZkN3Fxb2ozU0dGVmhYTVFPZEVvUUJKaXo1UjlMa09fTkRObVpXMXl1T0NSN25Obk5pTlRqQ2RzMXVKeExuZVF3a1F0MkVTN2F3dmI3a2JaVF9HV0ZnZHExLUY2SGMtb1BONXFYeFpnRWFnZ9IBzgFBVV95cUxQbHI0cjRfdmwtODN0MWMzUVltdW1tX2tGNzJhbVc0VFVYd0dCRFZyR25CMkJiNWJpOExmSXBHMnV0OThiYUczajRFUUZfRi1aOE1QZkhfMnQ4ZkJxTUhsUzQ0cjZkN3Fxb2ozU0dGVmhYTVFPZEVvUUJKaXo1UjlMa09fTkRObVpXMXl1T0NSN25Obk5pTlRqQ2RzMXVKeExuZVF3a1F0MkVTN2F3dmI3a2JaVF9HV0ZnZHExLUY2SGMtb1BONXFYeFpnRWFnZw?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
