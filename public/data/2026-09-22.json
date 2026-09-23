@@ -2,6 +2,32 @@
   "date": "2026-09-22",
   "items": [
     {
+      "id": "9bf89ad0481c",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T15:13:23+00:00",
+      "headline": {
+        "en": "KKR launches $350m equipment finance platform",
+        "zh": "KKR推出3.5亿美元设备融资平台"
+      },
+      "summary": {
+        "en": "KKR has launched an equipment finance platform with $350m. No further details were disclosed in the article.",
+        "zh": "KKR已推出一只规模3.5亿美元的设备融资平台。文章未披露更多细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "alternativecreditinvestor.com",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOXzEtQVNhX2E2MVg0REM2bEZ0UXY0NHZIRFVtUkc5ZzJ5QnBJX2kzc0Npa1QtY1ZQWlluMnZlbFlfXzlHdktQYVBpR1MxTFpmejJma0ZPUmQ3WmlWdUVtdGlWckxleEo4c3l2SC1LbFRyMzRyVndraWw5Mm5tdTQtdFZlUzNpdjlrRFA5TldMdG05NHU0QVY2OFNR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "85520242eb65",
       "date": "2026-09-22",
       "published_at": "2026-09-22T11:45:34+00:00",
@@ -197,6 +223,30 @@
       "source": {
         "publisher": "The Edge Malaysia",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5HeEg0NEN5bFJiMUZPb2F3cmQyUnRkXzFjcGN0VGVjOW1STWhneFE5LWdTZmx5T01IWnpsWDFPb2VFOW43VFUtRDhtdFVEa2RHakZn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "25ad3e7e022e",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T03:14:00+00:00",
+      "headline": {
+        "en": "Australia's corporate regulator calls out 'poor practices' in private credit",
+        "zh": "澳大利亚公司监管机构指出私人信贷领域的\"不良做法\""
+      },
+      "summary": {
+        "en": "Australia's corporate regulator called out \"poor practices\" in private credit. No further details were provided in the article beyond the regulator's statement.",
+        "zh": "澳大利亚公司监管机构指出私人信贷领域存在\"不良做法\"。除监管机构的这一声明外，文章未提供更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRmVKaURkSTJVU0E4elhBNmp6SXljV0Y4S1IwRkV6ZG5MMmlVMTNDUVpSUmlFUTRrTTA1bTJjVVZ5dWEwSk9VaE1Ma2k5ci05bG1TNHFZM3E4ZDIwZEVmbDZIdWxBNDNFTVpuRGxxb3ZwR21ZdHpadXdMMWVHV0JhWU5UQmVESlJRejNROUFkSWNLczdaeUNmOUNQeDZybjRtVE42TE44eG50VUlrSW1teENFM0UtZXBTWU1leF9KNGpEREVvenpOSDdqZWtHOG9qT3plOXd5dHl6RklE?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"

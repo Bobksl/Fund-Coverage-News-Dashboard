@@ -2,6 +2,184 @@
   "date": "2026-09-23",
   "items": [
     {
+      "id": "f0ce070894eb",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T12:55:18+00:00",
+      "headline": {
+        "en": "KKR commits $350 million to equipment finance",
+        "zh": "KKR向设备融资投入3.5亿美元"
+      },
+      "summary": {
+        "en": "KKR is putting $350 million into equipment finance, according to the report. No further details on the transaction, counterparties or structure were provided.",
+        "zh": "据报道，KKR正向设备融资投入3.5亿美元。报道未提供有关该交易、交易对手或结构的更多细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONW9QZTlIWnFmU3hUNWFQckxaYXk2cmMxYW9jcFhKMEhtVXppQmtUSnlKdmdTRUViR3J1UHVRV1BsU0Y2aUpSQ2U0S2RmUVFoUDFkTElaSkIxUEJNaFNvLXhFSEZ1d2FBOGtKQTZLUEFGNXBONUFzejRCN2l3ZXd5cXhfQVo1ZGIwVVRzdzFLeXY0bnE3dzRnYWIzWW5EUlZEV19EU3JDUXJJT1FNaWlfVGlzaE9DU0pCNlNxc1VnbHZJOHRURnhGQmJUd05uUdIB0wFBVV95cUxON0VxOUFfS2dCcTZDUUlNeXVPbWgxZ0huelpwQ2JwUW11MFJxdE1iX20yUjNET2NZZXZmRkg5OFpxN0s5WXFoOVgyU3VURWJyNWFiU1V5SjlHQnhKN3lEMGtUVmxza1ExUTRzaEhxSUxLQnBmVTRlRkk1WTk2WW1WMTFHMDF3WXc5QzdmdGx3R1RJT21qQUltLWJrZ0twN0lOQUVCLTMxSU5ocVdwSlV4TGt3MWR4aGpYY0JCQmdYNnJVa1JXR29iSzBMQTNDSm5zLXNZ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "4b913f79deea",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T12:34:38+00:00",
+      "headline": {
+        "en": "Apollo Global at risk as private credit redemptions continue",
+        "zh": "私募信贷赎回持续，Apollo Global面临风险"
+      },
+      "summary": {
+        "en": "Apollo Global is described as at risk as private credit redemptions continue, according to invezz.com. No further figures or details were provided in the article.",
+        "zh": "据invezz.com报道，随着私募信贷赎回持续，Apollo Global被描述为面临风险。文章未提供更多数据或细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "invezz.com",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY3plMEQ2TktBWFNlSmYtUXp3MjFkNlNzSWRvUlZ3SjVmU2VyQ1lWeXpHNS11QXItQXhuTWRsQUQzZTAwUUFhWnVCd0VTN05KUUZxSFBrY2RveEoxdGcwczJSbGZOOUZKWTBnN2FrckpuX2Rvd2h5elFoQ1ZOVWV3b0NGZkJxb2RReVU0SGIySDgxbWFoelNjRjZxSlBub1BB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "c86fc232e852",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T12:19:40+00:00",
+      "headline": {
+        "en": "Apollo Global Management stock falls as credit redemptions stay capped",
+        "zh": "Apollo Global Management 股价下跌，信贷赎回仍受限"
+      },
+      "summary": {
+        "en": "Apollo Global Management's stock fell as credit redemptions remained capped. No further figures or details were provided.",
+        "zh": "Apollo Global Management 股价下跌，因信贷赎回仍受限制。文章未提供更多数据或细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "AD HOC NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUHJVOXhfeFhLUERyTE83N204V052bnBqS1dmdDd3UUw5VUMzeFFFUElya29iRzIzaER5WG5OYkpvREM1RHV2LWpLSG1CS0N0NVN1ZHpTYjFLUDJVY3BKSnJNN0tTemZkNU5QZXVsVmpRZnU1TFlIMXdQSWNRTklhcWI4V1kybXdpd3VFaU9IeHYwSTR2X2t0RXBuaXlEYjlRWUNLY29FWjRWZ1UxVmVqQ2JTQ0N1dHgycFI1WjVxdjZSWEJOaDMwMQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "d87b77beebf2",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T07:48:08+00:00",
+      "headline": {
+        "en": "Apollo's private credit BDC redemption requests ease to 14.7% in Q3",
+        "zh": "Apollo 私人信贷 BDC 第三季度赎回请求降至 14.7%"
+      },
+      "summary": {
+        "en": "Apollo's private credit BDC saw redemption requests ease to 14.7% in the third quarter, according to Citywire. No further figures or details were provided.",
+        "zh": "据 Citywire 报道，Apollo 的私人信贷 BDC 第三季度赎回请求降至 14.7%。报道未提供更多数据或细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "citywire.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZ2ZKcldjTkhadUZmcV81Z0pqREphemYtOERWMklMT0pjWmt5NDllaFNJU0xSZGVDOUNOb3J2T0xiWVVIZlRGbjVZVlRTcDBQWmpOS1pxU3B5YU9lZnNVOGNjXzJnTkdLNmc5WE5zdl91cXFQT1J6ZzdDR1h5NmhMeW1abjRWcmpfSXktVVpnUVplc3dpRWcwS0hlZUM1ZHZaUXFVR01MdGZGYjRiRHRR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "d11b48c51872",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T06:43:02+00:00",
+      "headline": {
+        "en": "Apollo caps private credit fund redemptions for third straight quarter",
+        "zh": "Apollo 连续第三个季度限制其私募信贷基金赎回"
+      },
+      "summary": {
+        "en": "Apollo capped redemptions on a private credit fund for a third consecutive quarter, according to a Seeking Alpha report on the NYSE-listed firm. No further figures or details were provided.",
+        "zh": "据 Seeking Alpha 报道，在纽交所上市的 Apollo 连续第三个季度限制旗下一只私募信贷基金的赎回。报道未提供更多数据或细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNai1SUlhQNTE0TnRZenZHbk9DSmZoX0U5Ty1hUVpLdWdCY3dJVEhaUmxaWFg1YWJYd3hydy1FQnJTMkpESE1TTVJ4SGlmV2ZBN01ncGhRekNSb1FKM2hXUlZYQnZFWFZrRGJ0VGxERzlsZVVham1qNlc3dkExUHRKNW41SUl3TjZnSVVfZjM0a0xFOVl6eVhwZ2VwWnJaTGxnMXgtdkZxbGJUQ3Vs?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "211ba44e3071",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T05:42:08+00:00",
+      "headline": {
+        "en": "FT examines private credit's \"soft\" defaults",
+        "zh": "FT探讨私募信贷的“软性”违约"
+      },
+      "summary": {
+        "en": "The Financial Times published a piece titled \"Private credit's 'soft' defaults.\" No further details were provided in the supplied text.",
+        "zh": "《金融时报》发表了一篇题为“Private credit's 'soft' defaults”的文章。所提供文本中未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUU5fQnFLM0l5LWlZTHNXT1lYejBwWUM5c2xxWnNQWDA4aTBZbEdmYi1jWG9JS3RZdXp1Nm8xdVRpRXVVcUxJSkpzU1VVZkwzaUQ2OTJJQWNSTWRDU2NfbDhGRG1GWVBDUDl4QUlTaDZMaVBnLUxhdVdIWkdWcllGaXQ5amg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "1635ee5b39f8",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T04:05:02+00:00",
+      "headline": {
+        "en": "Goldman Leads Bidding for $37 Billion Palmer Square, a CLO Powerhouse",
+        "zh": "高盛领衔竞购规模370亿美元的CLO巨头Palmer Square"
+      },
+      "summary": {
+        "en": "Goldman leads bidding for Palmer Square, described as a CLO powerhouse with $37 billion in assets, according to The Daily Upside. No other bidders or transaction terms were disclosed.",
+        "zh": "据The Daily Upside报道，高盛正领衔竞购被描述为CLO巨头、管理规模370亿美元的Palmer Square。报道未披露其他竞购方或交易条款。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Daily Upside",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMS1IMDlRcnpLSWlObzEyNTBud25PRlc5S01fczI4RHAtdmJoQ1hxNG9aY3dobklqMl9oYkMtNTl5dndwWUJESENHM1RmQ1ppdkw0MllrQUphNUl2ZEc1b201MnN3NmRnZzAxRWp1X1ZnYjd2anBXVzRDQ1Mycm0tbzV5a2xXS00xdFUyXzdLN3VaLWtJb201blVCU0hRc3J5NWs0SVg1LWN1R1JaMGJ2LWlkazI1bjd4U3c?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "8d1b134a37a1",
       "date": "2026-09-23",
       "published_at": "2026-09-23T02:59:49+00:00",
@@ -75,6 +253,32 @@
       "source": {
         "publisher": "finance.biggo.com",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBYOUtmd19GNmNxMzdnODdoak0wRFM4WEwwZjN1YUlYSHduQmVjNFNkdEIwa3puRHRmRGFPWXNZV291dG82bVUzbk1vY3ZKaTU4WFFVR24wbmxqVno0MHN5Zm5LdG1nTXpqaldSWHVyNXBhd19tY1E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "3489c10aedc3",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T01:00:56+00:00",
+      "headline": {
+        "en": "Apollo Global caps private credit fund again as 14.7% look to exit",
+        "zh": "Apollo Global 再次限制私人信贷基金赎回，14.7% 投资者寻求退出"
+      },
+      "summary": {
+        "en": "Apollo Global capped its private credit fund again, with 14.7% of investors seeking to exit.",
+        "zh": "Apollo Global 再次对其私人信贷基金设置赎回上限，14.7% 的投资者寻求退出。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "CNBC TV18",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVdGREZmX01ONFVWVUs2SEs2OHRvUjF3Z1lhdHV4M3JEc1AtQUFJU3h1OGFYV3I4QU9pc0JHa015SThzNEdmMEdNQzZVT05MUlVUUjM3QUp0aVRVcExlN21UaWxuY2ZZN3BYaUpBUGZVY0g1MnEwOE4xSU5GOGZzaDdjcUtRbGdUZ2F6UTBIYlktZkdZU2QzNDJSOS1aZHVuLVpWUlF2Yk9udHp6WVRj0gG0AUFVX3lxTFAyVDlHSGtpYlJ6RjVMQWNkR2FITlN5MExtM0Z3MDRleENUR3Jmc0c4UkdwZVhoR19QV084eFpHWmlaVHBkblU0VlMwalREWXFhdmFNYWg5Yk5RSnNOeVMtUWFhQkhpa0FPZGNkb1V3TU9TYVhuUU5EaGh2dkx6MktiUGU1Z1NwbDRCMW9lVUpPNDdpRUJLc2xYMnlnY3RWVkdzaHlIb1dTXzZxZzNxb2d4S0hUaw?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
@@ -158,6 +362,32 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "8d1ecbaa14b3",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T22:04:06+00:00",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo私人信贷基金第三季度赎回请求放缓"
+      },
+      "summary": {
+        "en": "Redemption requests at an Apollo private credit fund eased in the third quarter, according to the Sacramento Bee. No figures or other details were provided.",
+        "zh": "据《Sacramento Bee》报道，Apollo旗下一只私人信贷基金的赎回请求在第三季度有所放缓。报道未提供具体数据或其他细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Sacramento Bee",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tRk1YcVRhRnk0cl91TFpOcVA5cUZCMll5elNsVndRU0hsMVlDQV9EOUZsZF9CSm9oZjRBS1RSajNwNG12QWdiQUxqWWl0OUFBM0x0UnlSZFhWTVcwVXVtRW9FRjF6WDZXVHc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "54f7371abb8d",
       "date": "2026-09-23",
       "published_at": "2026-09-22T22:02:56+00:00",
@@ -179,6 +409,32 @@
       "source": {
         "publisher": "Equipment Finance News",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRElkcDcwTlFtN2FrZXJCZU1Kd1hYNHdGc01IQ2xrLU0xU0tQZEdvRnVFYW5LakhkSEtNTXd2VmhNcGFQR2xiS0VmaVowNFhjc2RmSnJyQmNobS1hdDFfRjVDaXFJLUdfS19IUHpBQ092dGhONEtRYmVzQUo0Y0s3Z18tZVBfS3VJTkJzM0dIcmxMck44a2g4LTRnazVVUjA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "c87e8c1c89f1",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T20:41:43+00:00",
+      "headline": {
+        "en": "Blue Owl Credit Income amends credit facility, raises $1.3b",
+        "zh": "Blue Owl Credit Income修订信贷安排，筹集13亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl Credit Income amended its credit facility and raised $1.3 billion. No further details were provided.",
+        "zh": "Blue Owl Credit Income修订了其信贷安排，并筹集了13亿美元。未提供更多细节。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSTRCUEYySTM5VXZKelN4Vk9Kck9sRWNhcE95YXlvQ2VIUlh1Um0wODNkMzljXzJ2RlpXRGNZTEZiODUwR2YzOUtCLXdMTl9KSjJjWUVONEtSWVFQQVlXbDVIVlVVeEpPNFJOWjM1WTU1OE02NjV6VjVaQ1RrS0Z4Tk9BczF4N0tsNnBtTjNsZGtxYWhzbFhGVVZ5RlQwemFEQ3ZhQnNuLThsVnZlZm9velNNMA?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
@@ -331,6 +587,32 @@
       "source": {
         "publisher": "pulse2.com",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSHJrbldPU3p5WGFZOXpNaVhxTGRWeUkzUThQbnFlYjNoQlFQYkdlbEpieHFDMzNXMHhUTFQyd0ZPTWx1cTh1am92dC1tNC0zN1g1WkozVGJDSjJBV1d6aE42ZkRyV2I1VE5wMjBseUl4ZDlnUWdMUzNaNzhSRGhQdTFkWlR6MGFuNHNRbzZTU1B3R0VaNFhfNjNDcF9yb0d1V01HSDlPZlFHV0xWb3fSAbMBQVVfeXFMT2MyVTdnZ0lkblZTRFpPNVJGZnBEVzM1dXZNajlybjJ1S2FBM05NWWZMQ0d0ZVdxejRqWkgxR0NrMnhac2tSTk95clpIV3lyaGNkeXZfM1RwYm50aEJIOVU1UmRIVFpQdEliRzJtd2cyS2doZzMtZUdrMFNXODAwOExCa05hRUhYR0dIZndXR2JtMWpuMElNUHFVUFZ2dDVlZ25mYVFaM0xtZU12N1lROUhhdFE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
+      "id": "6c177e5368f1",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T16:23:52+00:00",
+      "headline": {
+        "en": "KKR Commits $350 Million to Launch Equipment Finance Platform Akrapoint",
+        "zh": "KKR承诺3.5亿美元推出设备融资平台Akrapoint"
+      },
+      "summary": {
+        "en": "KKR has committed $350 million to launch an equipment finance platform named Akrapoint, according to citybiz.",
+        "zh": "据citybiz报道，KKR已承诺投入3.5亿美元推出名为Akrapoint的设备融资平台。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "citybiz",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRjVDWC1EX3hzcU5HdkpqX1E4RVZiSXdkamUxNlM2a0I0eUlTWnNqbkFYWHpndDFpQkpIR2Zpd0RibjdvWHJZZmVjRFgtVlpVa3JkQkdnSHlQN1RMci1PNHZSNXhUSEdkd01vMmxGd1RHN3FfV1FXMGtsUkRMM2RjZ0JUbzhmalk4Wl96bUVYVTRla2ltUzJ1S1NiS2NBUEtqNk9OZkNkX0NpcVFDQlE?oc=5"
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
