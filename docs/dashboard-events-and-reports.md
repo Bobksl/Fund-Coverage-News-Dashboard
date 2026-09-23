@@ -76,7 +76,7 @@ Files: `public/app.js`, `public/index.html`, `public/reports/`, `tests/test_dash
 - Every page footer reads "For internal research use only". Publishing publicly was authorized for this assignment.
 
 ## Chinese version: review packet (not published)
-No approved Chinese PDF exists. The site shows 中文 · 翻译待审核 / Translation pending and keeps the English report available. No machine translation draft was produced, because the handover allows a draft only with approved tools and none was named.
+No approved Chinese PDF exists. The site shows 中文 · 翻译待审核 / Translation pending and keeps the English report available. On 24 September the user approved an AI draft. Draft v0.1 is kept locally in the git-ignored `work/report-zh-draft/`: an editable DOCX with the original layout, a preview PDF and a side-by-side EN/ZH review file. Its `REVIEW_NOTES.md` lists the checks and the terminology decisions. The draft is not committed or published.
 
 For a Chinese PDF, the analyst must decide or review:
 1. **Script:** Simplified Chinese is the default, matching the dashboard. Confirm it, or choose Traditional.
