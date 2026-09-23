@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "event_id": "evt-reviewed-001",
+      "members": [
+        {
+          "id": "8d1b134a37a1",
+          "headline": "Apollo private credit fund redemption requests ease in third quarter",
+          "card_sha256": "d64846015b51de3a30c1416d4b2b6798ce358ae43e61cd89ca161c593604fd09"
+        },
+        {
+          "id": "8d1ecbaa14b3",
+          "headline": "Apollo private credit fund redemption requests ease in third quarter",
+          "card_sha256": "321b6574f37cbe7a954705e650fcef899ffa0083d730a9a7ab0292302165b3d1"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    },
+    {
+      "event_id": "evt-reviewed-002",
+      "members": [
+        {
+          "id": "c87e8c1c89f1",
+          "headline": "Blue Owl Credit Income amends credit facility, raises $1.3b",
+          "card_sha256": "345c910112cc006d142a22507af80d3ca69d7ae09508524259f86ec9fab07de4"
+        },
+        {
+          "id": "1b2ada6a138a",
+          "headline": "Blue Owl Credit Income amends credit facility, raises $1.3b",
+          "card_sha256": "c72f1ca95fd3238114c11bc72f5435f48c02d1c2cd65940aba8dfdec15f6090c"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    },
+    {
+      "event_id": "evt-reviewed-003",
+      "members": [
+        {
+          "id": "e1ef992333f2",
+          "headline": "Australia's corporate regulator calls out 'poor practices' in private credit",
+          "card_sha256": "bea64a084ad1f9317d4bdff7909fa00ce09d7279de781f4102736530e533a11c"
+        },
+        {
+          "id": "25ad3e7e022e",
+          "headline": "Australia's corporate regulator calls out 'poor practices' in private credit",
+          "card_sha256": "28a05c9b0549a6a430cf52bff6f80fbd9d46e004034752a7d508a605daa64c6d"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    },
+    {
+      "event_id": "evt-reviewed-004",
+      "members": [
+        {
+          "id": "d5bc3cf66452",
+          "headline": "Apollo Provides $585 Million Financing to The Executive Centre",
+          "card_sha256": "6ddb2a612a17e1cc8853b1b50790224fdbfb3ac28dc0fa44660f9a2ab2b47ab2"
+        },
+        {
+          "id": "d1ffa08664f4",
+          "headline": "Apollo Provides $585 Million Financing to The Executive Centre",
+          "card_sha256": "2f2bd66bc08c3844fa725348c424010a6791349898bd518ae53e2cdcbab80bb1"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    },
+    {
+      "event_id": "evt-reviewed-005",
+      "members": [
+        {
+          "id": "95851197cebd",
+          "headline": "US CLO Issuance Slips to $43.8B in August",
+          "card_sha256": "f55c83ba2d604f00af526de222024f59badbd693779e6b156ca150e047807f89"
+        },
+        {
+          "id": "e0525b7757c6",
+          "headline": "US CLO Issuance Slips to $43.8B in August",
+          "card_sha256": "aea95bbf8e201ca1734ee4ba47d269ad5ac0e2c6998e4bcfbb5ff8230d067815"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    },
+    {
+      "event_id": "evt-reviewed-006",
+      "members": [
+        {
+          "id": "9286b5f69eb9",
+          "headline": "KKR Doubles Private Debt Deals to $80 Billion as AI Spending Explodes",
+          "card_sha256": "251aaff91d97bf24d4e4f029aaf3b92272519c636c43797c7b042c57747f4b61"
+        },
+        {
+          "id": "222098ffd1b2",
+          "headline": "KKR Doubles Private Debt Deals to $80 Billion as AI Spending Explodes",
+          "card_sha256": "4aab468d3c0735389396198b93c9d650680774200d045c4b6fbc1f131dc3d679"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    },
+    {
+      "event_id": "evt-reviewed-007",
+      "members": [
+        {
+          "id": "48b80ce93160",
+          "headline": "Private credit default rate rises to 6.3% in 12 months through August",
+          "card_sha256": "b3e5fca1fcd9f3faf0d36e09a8721e37389707c6e889a518391dc19587ef4579"
+        },
+        {
+          "id": "abc27e2be1d7",
+          "headline": "Private credit default rate rises to 6.3% in 12 months through August",
+          "card_sha256": "c28b8b11f7b3ad5b43a425b3625997c5ff6524f961e9e87a80e76fe02ad4b224"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    },
+    {
+      "event_id": "evt-reviewed-008",
+      "members": [
+        {
+          "id": "3b1975c239ae",
+          "headline": "BlackRock private credit fund redemption requests ease in Q3",
+          "card_sha256": "88bbc1d4b8848078bd3ff0760d01929bcae32eda19ea2ddf77ad9f75848dff17"
+        },
+        {
+          "id": "2cf21a512c1a",
+          "headline": "BlackRock private credit fund redemption requests ease in Q3",
+          "card_sha256": "beb3657157349691445df296e7ced6845a3c2341930728a1afac2c0f0ac90f09"
+        }
+      ],
+      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    }
+  ]
+}

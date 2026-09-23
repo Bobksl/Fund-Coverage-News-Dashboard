@@ -124,6 +124,8 @@ def add_cards(cards, rules, data_dir=DATA_DIR, today=None, window_days=WINDOW_DA
 
 
 def write_index(rules, data_dir=DATA_DIR, window_days=WINDOW_DAYS, now=None):
+    from tools import news_events
+
     counts = {day: len(load_day(data_dir, day)) for day in _day_files(data_dir)}
     dates = sorted((day for day, count in counts.items() if count), reverse=True)
     index = {
@@ -138,6 +140,7 @@ def write_index(rules, data_dir=DATA_DIR, window_days=WINDOW_DAYS, now=None):
         },
     }
     _write_json(Path(data_dir) / "index.json", index)
+    news_events.write_events(data_dir, now=now)
     return index
 
 

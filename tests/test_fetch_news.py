@@ -74,7 +74,7 @@ class ParseAndRuleTest(unittest.TestCase):
                 match = fetch_news.rule_match(text, RULES)
                 self.assertEqual((match["keep"], match["gps"], match["sectors"]), (keep, gps, sectors))
 
-    def test_select_merges_syndicated_headlines_but_not_different_managers(self):
+    def test_select_preserves_distinct_source_coverage_for_event_grouping(self):
         def entry(title, hour):
             return {"title": title, "url": f"https://news.example/{hour}", "publisher": "X",
                     "published": datetime(2026, 9, 13, hour, tzinfo=timezone.utc), "description": ""}
@@ -85,9 +85,10 @@ class ParseAndRuleTest(unittest.TestCase):
             entry("Apollo raises $2bn for private credit fund", 2),
         ]
         candidates, unique = fetch_news.select(entries, RULES, set())
-        self.assertEqual(unique, 3)
+        self.assertEqual(unique, 4)
         self.assertEqual([item["title"] for item in candidates],
                          ["BlackRock private credit fund redemption requests ease in third quarter",
+                          "BlackRock private credit fund redemptions fall in third quarter",
                           "KKR raises $2bn for private credit fund",
                           "Apollo raises $2bn for private credit fund"])
 
@@ -124,6 +125,40 @@ class RunTest(unittest.TestCase):
         fetch_news.run(RULES, self.data, fetch=fetch, post=post, now=NOW, pause=0)
         self.assertEqual(post.calls, 1)
         self.assertFalse((self.data / "2026-09-13.json").exists())
+
+    def test_changed_source_is_preserved_as_revision_and_projected(self):
+        post = FakePost(BRIEF)
+        fetch_news.run(RULES, self.data, fetch=google_only(rss(KKR_FUND)), post=post, now=NOW, pause=0)
+        changed = list(KKR_FUND)
+        changed[3] = 'KKR raised $3bn, correcting the earlier $2bn announcement.'
+        _, stats = fetch_news.run(RULES, self.data, fetch=google_only(rss(tuple(changed))),
+                                  post=post, now=NOW, pause=0)
+        self.assertEqual(stats['added'], 1)
+        items = site_data.load_day(self.data, '2026-09-13')
+        self.assertEqual(len(items), 2)
+        self.assertTrue(any(item.get('supersedes_card_id') for item in items))
+        events = json.loads((self.data / 'events.json').read_text(encoding='utf-8'))
+        self.assertEqual(events['article_count'], 2)
+        self.assertEqual(events['event_count'], 1)
+
+    def test_evidence_linked_priority_flows_from_brief_to_event(self):
+        evidence = 'Blue Owl Technology Finance suspended withdrawals after a material liquidity failure.'
+        item = ('Blue Owl Technology Finance suspends withdrawals', 'https://news.example/otf',
+                KKR_FUND[2], evidence, 'Example source')
+        brief = dict(BRIEF, gps=['otf'], headline_en=item[0], summary_en=evidence,
+                     headline_zh='Blue Owl Technology Finance 暂停赎回', summary_zh='因流动性问题暂停赎回。',
+                     assessment={'severity': 'critical', 'linkage': 'direct', 'current_adverse': True,
+                                 'resolved': False, 'deadline_at': None,
+                                 'reason_en': 'Withdrawals suspended.', 'reason_zh': '暂停赎回。',
+                                 'quotes': {'severity': 'material liquidity failure',
+                                            'linkage': 'Blue Owl Technology Finance suspended withdrawals',
+                                            'current_adverse': 'suspended withdrawals'}})
+        _, stats = fetch_news.run(RULES, self.data, fetch=google_only(rss(item)),
+                                  post=FakePost(brief), now=NOW, pause=0)
+        self.assertEqual(stats['added'], 1)
+        events = json.loads((self.data / 'events.json').read_text(encoding='utf-8'))
+        self.assertEqual(events['events'][0]['priority']['priority'], 'urgent')
+        self.assertEqual(events['events'][0]['display_gps'], ['otf', 'blue_owl'])
 
     def test_all_feeds_failing_records_failure(self):
         def offline(url):

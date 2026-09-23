@@ -13,6 +13,7 @@ in public/data/seen.json so later runs do not pay to brief them again.
 import argparse
 import email.utils
 import functools
+import hashlib
 import html
 import json
 import os
@@ -154,20 +155,27 @@ def collect(rules, fetch, now, lookback_days, pause):
     return entries, stats
 
 
-def select(entries, rules, known_ids):
-    """Newest first; drop known links and repeats of the same story; keep items the rule accepts."""
-    seen_ids, kept_titles, candidates, unique = set(known_ids), [], [], 0
+def select(entries, rules, known_ids, known_sources=None):
+    """Retain different-source coverage; event grouping happens after validated card creation.
+
+    Fingerprinted same-URL changes may pass as revisions. Legacy cards without fingerprints
+    retain the original skip behavior because no prior source bytes exist for comparison.
+    """
+    known_sources = known_sources or {}
+    seen_versions, candidates, unique = set(), [], 0
     for entry in sorted(entries, key=lambda item: item["published"], reverse=True):
         entry_id = site_data.card_id(entry["url"])
-        words = title_words(entry["title"])
-        if entry_id in seen_ids or any(same_story(words, other) for other in kept_titles):
+        fingerprint = summarize.source_fingerprint(to_item(entry))
+        versions = known_sources.get(entry_id, {})
+        if (entry_id, fingerprint) in seen_versions or fingerprint in versions:
             continue
-        seen_ids.add(entry_id)
-        kept_titles.append(words)
+        if entry_id in known_ids and not versions:
+            continue
+        seen_versions.add((entry_id, fingerprint))
         unique += 1
         match = rule_match(f"{entry['title']} {entry['description']}", rules)
         if match["keep"]:
-            candidates.append(dict(entry, match=match))
+            candidates.append(dict(entry, match=match, revision_of=next(reversed(versions.values()), None)))
     return candidates, unique
 
 
@@ -192,7 +200,12 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
     now = now or datetime.now(timezone.utc)
     entries, stats = collect(rules, fetch, now, lookback_days, pause)
     seen = load_seen(data_dir, now)
-    candidates, stats["after_dedupe"] = select(entries, rules, site_data.existing_ids(data_dir) | set(seen))
+    existing = [card for day in site_data._day_files(data_dir) for card in site_data.load_day(data_dir, day)]
+    known_sources = {}
+    for card in sorted(existing, key=lambda c: c.get('observed_at') or c.get('published_at') or c['date']):
+        if card.get('source_fingerprint'):
+            known_sources.setdefault(site_data.card_id(card['source']['url']), {})[card['source_fingerprint']] = card['id']
+    candidates, stats["after_dedupe"] = select(entries, rules, site_data.existing_ids(data_dir) | set(seen), known_sources)
     stats["rule_passed"] = len(candidates)
     candidates = candidates[:max_items]
     if dry_run:
@@ -216,6 +229,12 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
         try:
             brief = summarizer(item)
             card = summarize.make_card(item, brief, "unreviewed", "auto_fetch")
+            card['observed_at'] = now.isoformat(timespec='seconds')
+            if candidate.get('revision_of'):
+                card['supersedes_card_id'] = candidate['revision_of']
+                card['id'] = hashlib.sha256((card['id'] + card['source_fingerprint']).encode()).hexdigest()[:12]
+                # A correction discovered later belongs to the observation day, never a past edition.
+                card['date'] = now.astimezone(site_data.HKT).date().isoformat()
             if not brief["relevant"] or not (card["gps"] or card["sectors"]):
                 rejected += 1
                 seen[card["id"]] = now.date().isoformat()

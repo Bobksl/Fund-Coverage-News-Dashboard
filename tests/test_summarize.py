@@ -35,6 +35,22 @@ class FakePost:
 
 
 class SummarizerTest(unittest.TestCase):
+    def test_source_fingerprint_and_review_assessment_are_retained(self):
+        brief = summarize.parse_brief(json.dumps(GOOD, ensure_ascii=False), RULES)
+        card = summarize.make_card(ITEM, brief, 'unreviewed', 'auto_fetch')
+        self.assertEqual(len(card['source_fingerprint']), 64)
+        self.assertFalse(card['assessment']['assessable'])
+        self.assertEqual(card['relevance_reason'], GOOD['reason'])
+
+    def test_otic_is_not_tagged_otf_and_otf_propagates_parent(self):
+        rules = dict(RULES, gps=dict(RULES['gps'], blue_owl={'en': 'Blue Owl'}))
+        brief = summarize.parse_brief(json.dumps(GOOD, ensure_ascii=False), rules)
+        item = dict(ITEM, title='Blue Owl Technology Income Corp. closes notes',
+                    text='Blue Owl Technology Income Corp. closes $150 million notes.')
+        card = summarize.make_card(item, brief, 'unreviewed', 'auto_fetch')
+        self.assertNotIn('otf', card['gps'])
+        self.assertIn('blue_owl', card['gps'])
+
     def test_valid_brief_drops_unknown_tags_and_counts_usage(self):
         post = FakePost(GOOD)
         summarizer = summarize.Summarizer(RULES, post=post)
