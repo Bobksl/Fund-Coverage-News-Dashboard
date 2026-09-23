@@ -1,9 +1,15 @@
 // Junson Capital — Fund Coverage News. A static page that reads ./data/index.json,
-// ./data/status.json and ./data/YYYY-MM-DD.json (shapes in docs/site-data-contract.md).
+// ./data/status.json, ./data/YYYY-MM-DD.json (shapes in docs/site-data-contract.md) and the optional
+// event index ./data/events.json (docs/news-events-contract.md).
 //
 // Safety: values from the data files are rendered with textContent, never as HTML, and a source
 // link is only created for an absolute http(s) URL. Day fetches carry a request token so a slow
 // response for a date the reader has already left cannot overwrite the current view.
+//
+// Grouping and priority are consumed from events.json exactly as generated; this page never groups
+// or scores articles itself. If the event index is missing, invalid or does not match the loaded
+// articles, every raw article is shown individually, and an article absent from the index is always
+// shown on its own.
 "use strict";
 
 const I18N = {
@@ -13,15 +19,22 @@ const I18N = {
     prev: "‹ Earlier",
     next: "Later ›",
     today: "Today",
+    allDates: "All dates",
     dateLabel: "Date",
     gpLabel: "Manager",
     sectorLabel: "Sub-sector",
+    sortLabel: "Sort",
+    sortPriority: "Sort: Priority",
+    sortNewest: "Sort: Newest",
     allGps: "All managers",
     allSectors: "All sub-sectors",
     dateOption: "{date} ({n})",
     itemCount: "{n} items",
     itemCountOne: "1 item",
     filteredCount: "{shown} of {n} items",
+    eventCount: "{e} events · {a} articles",
+    eventCountFiltered: "{e} of {E} events · {a} of {A} articles",
+    allScope: "{n} dates",
     readOriginal: "Read original →",
     unknownPublisher: "Unknown source",
     unreviewed: "Auto-selected · not yet reviewed",
@@ -29,12 +42,38 @@ const I18N = {
     noMatch: "No items match these filters.",
     noItems: "No news has been published yet.",
     loading: "Loading…",
+    allLoading: "Loading all dates… {done} of {n}",
+    allFailed: "{k} of {n} dates could not be loaded: {list}. This list is incomplete — it is not the full archive.",
+    retry: "Retry",
     indexError: "The news index could not be loaded. Please reload the page or try again later.",
     dayError: "News for {date} could not be loaded. Try another date or reload the page.",
+    groupingMissing: "Duplicate-coverage grouping is unavailable, so every source article is shown individually.",
+    groupingStale: "Duplicate-coverage grouping does not match these articles, so every source article is shown individually.",
+    sources: "Sources ({n})",
+    sourceMissing: "Article details unavailable — that date did not load.",
+    furtherCoverage: "Further coverage · first reported {date}",
+    sourceUpdated: "Source updated · not verified as a material change",
+    prio_urgent: "Urgent",
+    prio_important: "Important",
+    prio_useful: "Useful",
+    prio_needs_review: "Needs review",
+    potentialUrgent: "Potential urgent item — needs verification",
+    legacyPriority: "No article here has an assessed priority yet. Earlier articles were collected without the source evidence the priority rules need, so they are marked Needs review and Priority order falls back to recency. Newly collected, adequately evidenced items can be marked Urgent, Important or Useful.",
     lastRefreshed: "Last refreshed {time} HKT",
     refreshFailed: "Latest refresh failed; showing the last successful update.",
     statusUnavailable: "Refresh status unavailable",
     footer: "Summaries are AI-drafted from the linked sources; follow the link for full details.",
+    navNews: "News",
+    navReports: "Reports",
+    reportsTitle: "Reports",
+    reportLangLabel: "Report language",
+    reportEn: "English",
+    reportZh: "中文 · Translation pending",
+    reportZhPending: "The Chinese translation is awaiting analyst review and has not been published. The English original is shown below.",
+    reportMeta: "Published {date} · {lang} · PDF",
+    reportOpen: "Open PDF",
+    reportDownload: "Download PDF",
+    reportFallback: "This browser cannot show the PDF here. Use Open PDF or Download PDF.",
     locale: "en-GB",
   },
   zh: {
@@ -43,15 +82,22 @@ const I18N = {
     prev: "‹ 前一天",
     next: "后一天 ›",
     today: "今天",
+    allDates: "全部日期",
     dateLabel: "日期",
     gpLabel: "管理人",
     sectorLabel: "子行业",
+    sortLabel: "排序",
+    sortPriority: "排序：优先级",
+    sortNewest: "排序：最新",
     allGps: "全部管理人",
     allSectors: "全部子行业",
     dateOption: "{date}（{n}）",
     itemCount: "{n} 条新闻",
     itemCountOne: "1 条新闻",
     filteredCount: "{n} 条中的 {shown} 条",
+    eventCount: "{e} 个事件 · {a} 篇文章",
+    eventCountFiltered: "{E} 个事件中的 {e} 个 · {A} 篇文章中的 {a} 篇",
+    allScope: "{n} 个日期",
     readOriginal: "阅读原文 →",
     unknownPublisher: "来源未知",
     unreviewed: "自动筛选 · 未经审核",
@@ -59,21 +105,58 @@ const I18N = {
     noMatch: "没有符合筛选条件的新闻。",
     noItems: "暂未发布任何新闻。",
     loading: "加载中…",
+    allLoading: "正在加载全部日期…{done}/{n}",
+    allFailed: "{n} 个日期中有 {k} 个未能加载：{list}。以下列表不完整，并非全部存档。",
+    retry: "重试",
     indexError: "无法加载新闻索引，请刷新页面或稍后再试。",
     dayError: "无法加载 {date} 的新闻，请选择其他日期或刷新页面。",
+    groupingMissing: "重复报道归并暂不可用，所有来源文章均单独显示。",
+    groupingStale: "重复报道归并与当前文章不一致，所有来源文章均单独显示。",
+    sources: "来源（{n}）",
+    sourceMissing: "文章详情不可用：该日期未能加载。",
+    furtherCoverage: "后续报道 · 首次报道于 {date}",
+    sourceUpdated: "来源已更新 · 未核实为实质性变化",
+    prio_urgent: "紧急",
+    prio_important: "重要",
+    prio_useful: "参考",
+    prio_needs_review: "待复核",
+    potentialUrgent: "潜在紧急事项 — 有待核实",
+    legacyPriority: "此处文章尚无经评估的优先级。早期文章收录时未保存优先级规则所需的来源证据，因此标为“待复核”，按优先级排序时实际按时间先后排列。新收录且证据充分的文章可标为紧急、重要或参考。",
     lastRefreshed: "最近更新：{time}（香港时间）",
     refreshFailed: "最近一次更新失败，当前显示上次成功更新的内容。",
     statusUnavailable: "更新状态不可用",
     footer: "摘要由 AI 根据所链接的来源撰写，详情请点击原文链接。",
+    navNews: "新闻",
+    navReports: "研究报告",
+    reportsTitle: "研究报告",
+    reportLangLabel: "报告语言",
+    reportEn: "English",
+    reportZh: "中文 · 翻译待审核",
+    reportZhPending: "中文译本尚待分析师审核，暂未发布。以下为英文原版。",
+    reportMeta: "发布日期 {date} · {lang} · PDF",
+    reportOpen: "打开 PDF",
+    reportDownload: "下载 PDF",
+    reportFallback: "此浏览器无法在页面内显示 PDF，请使用“打开 PDF”或“下载 PDF”。",
     locale: "zh-CN",
   },
 };
 
+// Published reports. A language without an approved file is listed as pending, never substituted.
+const REPORTS = [{
+  title: {en: "Private Credit Quarterly Report (2026Q3)", zh: "私募信贷季度报告（2026年第三季度）"},
+  date: "2026-08-13",
+  files: {en: "reports/junson-private-credit-report-2026q3-en-v2.pdf", zh: null},
+}];
+
 const LANG_KEY = "fund-coverage-news-lang";
+const DAY_CONCURRENCY = 4;
 const state = {
   lang: "en", index: null, status: null, fatal: false,
   date: null, notice: null, gp: "", sector: "",
-  days: new Map(), dayErrors: new Set(), token: 0,
+  days: new Map(), dayErrors: new Set(), inflight: new Map(), token: 0,
+  mode: "date", sort: "priority", allLoading: false,
+  events: null, // {byCard: Map(card id -> event)} when events.json is present and well formed
+  reportLang: null, // null follows the page language until the reader picks one
 };
 
 function t(key, params) {
@@ -167,6 +250,133 @@ function dates() {
   return (state.index && Array.isArray(state.index.dates)) ? state.index.dates : [];
 }
 
+function isList(value) {
+  return Array.isArray(value) && value.every((id) => typeof id === "string");
+}
+
+// ---- Event index (consumed, never recomputed) -----------------------------------------------
+
+// Structural check only. Membership against the loaded articles is checked per view (groupingFits).
+function validateEvents(data) {
+  if (!data || data.schema_version !== 1 || !Array.isArray(data.events)) return null;
+  const byCard = new Map();
+  for (const event of data.events) {
+    if (!event || typeof event.event_id !== "string" || !isList(event.member_card_ids)) return null;
+    if (!event.member_card_ids.includes(event.representative_card_id)) return null;
+    if (!event.date_views || typeof event.date_views !== "object") return null;
+    for (const view of Object.values(event.date_views)) {
+      if (!view || !isList(view.member_card_ids) || !view.member_card_ids.includes(view.representative_card_id)) return null;
+      if (view.member_card_ids.some((id) => !event.member_card_ids.includes(id))) return null;
+    }
+    for (const id of event.member_card_ids) {
+      if (byCard.has(id)) return null; // Memberships must be disjoint.
+      byCard.set(id, event);
+    }
+  }
+  return {byCard};
+}
+
+// The index fits a set of loaded days when every day's mapped articles and the index's view of
+// that day agree exactly. Articles missing from the index do not break the fit; they are singletons.
+function groupingFits(days) {
+  if (!state.events) return false;
+  for (const day of days) {
+    const ids = new Set(state.days.get(day).map((item) => item && item.id));
+    const checked = new Set();
+    for (const id of ids) {
+      const event = state.events.byCard.get(id);
+      if (!event || checked.has(event)) continue;
+      checked.add(event);
+      const view = event.date_views[day];
+      if (!view || !view.member_card_ids.includes(id) || view.member_card_ids.some((member) => !ids.has(member))) return false;
+    }
+  }
+  return true;
+}
+
+function cardTime(item) {
+  const time = Date.parse(item.published_at || item.observed_at || `${item.date}T00:00:00+08:00`);
+  return Number.isNaN(time) ? 0 : time;
+}
+
+function listOf(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function singleton(item, order) {
+  return {rep: item, members: [{card: item}], gps: listOf(item.gps), sectors: listOf(item.sectors),
+    priority: null, rank: null, time: cardTime(item), order, event: null, firstDay: null};
+}
+
+// One entry per event for a single day, using that day's view (never the global representative).
+function dayEntries(day) {
+  const items = state.days.get(day).filter((item) => item && typeof item === "object");
+  const grouped = groupingFits([day]);
+  const byId = new Map(items.map((item) => [item.id, item]));
+  const seen = new Set();
+  const entries = [];
+  for (const item of items) {
+    const event = grouped ? state.events.byCard.get(item.id) : null;
+    if (!event) {
+      entries.push(singleton(item, entries.length));
+      continue;
+    }
+    if (seen.has(event)) continue;
+    seen.add(event);
+    const view = event.date_views[day];
+    const rep = byId.get(view.representative_card_id);
+    const earlier = Object.keys(event.date_views).sort()[0];
+    entries.push({rep, members: view.member_card_ids.map((id) => ({card: byId.get(id)})),
+      gps: listOf(view.display_gps), sectors: listOf(view.display_sectors),
+      priority: view.priority || null, rank: typeof view.priority_rank === "number" ? view.priority_rank : null,
+      time: cardTime(rep), order: entries.length, event,
+      firstDay: view.further_coverage && earlier < day ? earlier : null});
+  }
+  return {entries, grouped, problem: grouped ? null : (state.events ? "stale" : "missing")};
+}
+
+// One entry per event across every loaded day, using the global representative.
+function allEntries() {
+  const loaded = dates().filter((day) => state.days.has(day));
+  const cards = new Map();
+  for (const day of loaded) for (const item of state.days.get(day)) if (item && typeof item === "object") cards.set(item.id, item);
+  const grouped = groupingFits(loaded);
+  const entries = [];
+  const mapped = new Set();
+  if (grouped) {
+    for (const event of new Set(state.events.byCard.values())) {
+      const present = event.member_card_ids.filter((id) => cards.has(id));
+      if (present.length === 0) continue; // All of its dates failed to load; reported in the notice.
+      for (const id of present) mapped.add(id);
+      const sources = new Map(listOf(event.sources).map((source) => [source && source.card_id, source]));
+      const time = Date.parse(event.last_material_update_at);
+      entries.push({rep: cards.get(event.representative_card_id) || cards.get(present[0]),
+        members: event.member_card_ids.map((id) => ({card: cards.get(id), meta: sources.get(id)})),
+        gps: listOf(event.display_gps), sectors: listOf(event.display_sectors),
+        priority: event.priority || null, rank: typeof event.priority_rank === "number" ? event.priority_rank : null,
+        time: Number.isNaN(time) ? cardTime(cards.get(present[0])) : time, order: entries.length, event, firstDay: null});
+    }
+  }
+  for (const item of cards.values()) if (!mapped.has(item.id)) entries.push(singleton(item, entries.length));
+  return {entries, grouped, problem: grouped ? null : (state.events ? "stale" : "missing")};
+}
+
+// Priority: the pipeline's rank, lower first; articles without a rank follow. Newest: latest first.
+// Neither reads any text, so switching language never changes the order.
+function sortEntries(entries) {
+  const newest = (a, b) => b.time - a.time || a.order - b.order;
+  if (state.sort === "newest") return entries.sort(newest);
+  return entries.sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity) || newest(a, b));
+}
+
+function matches(entry) {
+  return (!state.gp || entry.gps.includes(state.gp)) && (!state.sector || entry.sectors.includes(state.sector));
+}
+
+function articleCount(entries) {
+  return entries.reduce((total, entry) => total + entry.members.filter((member) => member.card).length, 0);
+}
+
 // ---- Static text, status and controls -----------------------------------------------------
 
 function applyStaticText() {
@@ -203,46 +413,137 @@ function fillSelect(select, options, value) {
 function renderControls() {
   const list = dates();
   const counts = (state.index && state.index.counts) || {};
+  const all = state.mode === "all";
   fillSelect(document.getElementById("dateSelect"),
-    list.map((day) => [day, t("dateOption", {date: formatDay(day, "short"), n: counts[day] ?? "?"})]),
-    state.date || "");
+    [["*", t("allDates")], ...list.map((day) => [day, t("dateOption", {date: formatDay(day, "short"), n: counts[day] ?? "?"})])],
+    all ? "*" : (state.date || ""));
   const labels = (state.index && state.index.labels) || {};
   fillSelect(document.getElementById("gpSelect"),
     [["", t("allGps")], ...Object.keys(labels.gps || {}).map((id) => [id, label("gps", id)])], state.gp);
   fillSelect(document.getElementById("sectorSelect"),
     [["", t("allSectors")], ...Object.keys(labels.sectors || {}).map((id) => [id, label("sectors", id)])], state.sector);
+  fillSelect(document.getElementById("sortSelect"),
+    [["priority", t("sortPriority")], ["newest", t("sortNewest")]], state.sort);
 
   const position = list.indexOf(state.date);
   const noData = state.fatal || list.length === 0;
-  document.getElementById("prev").disabled = noData || position < 0 || position >= list.length - 1;
-  document.getElementById("next").disabled = noData || position <= 0;
-  for (const id of ["today", "dateSelect", "gpSelect", "sectorSelect"]) document.getElementById(id).disabled = noData;
+  document.getElementById("prev").disabled = noData || all || position < 0 || position >= list.length - 1;
+  document.getElementById("next").disabled = noData || all || position <= 0;
+  document.getElementById("allDates").setAttribute("aria-pressed", String(all));
+  for (const id of ["today", "allDates", "dateSelect", "gpSelect", "sectorSelect", "sortSelect"]) {
+    document.getElementById(id).disabled = noData;
+  }
 }
 
-// ---- Day view -------------------------------------------------------------------------------
+// ---- Cards ----------------------------------------------------------------------------------
 
-function renderCard(item) {
-  const card = el("article", {className: "card"});
-  if (item.review_status === "unreviewed") card.appendChild(el("span", {className: "badge", text: t("unreviewed")}));
-  card.appendChild(el("h3", {className: "headline", text: bilingual(item.headline)}));
-  card.appendChild(el("p", {className: "summary", text: bilingual(item.summary)}));
-
-  const source = item.source || {};
-  const line = el("p", {className: "source"}, [el("span", {text: source.publisher || t("unknownPublisher")})]);
-  const href = safeHttpUrl(source.url);
+function sourceLine(publisher, url, when) {
+  const line = el("p", {className: "source"}, [el("span", {text: publisher || t("unknownPublisher")})]);
+  if (when) line.appendChild(document.createTextNode(` · ${when}`));
+  const href = safeHttpUrl(url);
   if (href) {
     line.appendChild(document.createTextNode(" · "));
     line.appendChild(el("a", {text: t("readOriginal"), attrs: {href, target: "_blank", rel: "noopener noreferrer"}}));
   }
-  card.appendChild(line);
+  return line;
+}
+
+function articleWhen(item) {
+  return item.published_at ? formatInstant(item.published_at) : formatDay(item.date, "short");
+}
+
+function renderSources(entry) {
+  const list = el("ul", {className: "source-list"});
+  for (const member of entry.members) {
+    const item = member.card;
+    if (item) {
+      const source = item.source || {};
+      list.appendChild(el("li", null, [
+        el("p", {className: "source-head", text: bilingual(item.headline)}),
+        sourceLine(source.publisher, source.url, articleWhen(item)),
+        el("p", {className: "source-summary", text: bilingual(item.summary)}),
+      ]));
+    } else {
+      const meta = member.meta || {};
+      list.appendChild(el("li", null, [
+        sourceLine(meta.publisher, meta.url, meta.published_at ? formatInstant(meta.published_at) : ""),
+        el("p", {className: "source-summary", text: t("sourceMissing")}),
+      ]));
+    }
+  }
+  return el("details", {className: "sources"}, [el("summary", {text: t("sources", {n: entry.members.length})}), list]);
+}
+
+function renderCard(entry) {
+  const item = entry.rep;
+  const card = el("article", {className: "card", attrs: {"data-card": String(item.id)}});
+  const flags = [];
+  if (item.review_status === "unreviewed") flags.push(el("span", {className: "badge", text: t("unreviewed")}));
+  const level = entry.priority && entry.priority.priority;
+  if (level && I18N.en[`prio_${level}`]) flags.push(el("span", {className: `prio prio-${level}`, text: t(`prio_${level}`)}));
+  if (state.mode === "all") flags.push(el("span", {className: "when", text: formatDay(item.date, "short")}));
+  if (flags.length) card.appendChild(el("div", {className: "flags"}, flags));
+  if (entry.priority && entry.priority.potential_urgent === true) {
+    card.appendChild(el("p", {className: "alert", text: t("potentialUrgent")}));
+  }
+  card.appendChild(el("h3", {className: "headline", text: bilingual(item.headline)}));
+  card.appendChild(el("p", {className: "summary", text: bilingual(item.summary)}));
+  if (level) {
+    const reason = bilingual(entry.priority.reason);
+    if (reason) card.appendChild(el("p", {className: "reason", text: `${t(`prio_${level}`)}: ${reason}`}));
+  }
+
+  const source = item.source || {};
+  card.appendChild(sourceLine(source.publisher, source.url));
+
+  const notes = [];
+  if (entry.firstDay) {
+    const jump = el("button", {className: "linkish", text: t("furtherCoverage", {date: formatDay(entry.firstDay, "short")}),
+      attrs: {type: "button"}});
+    jump.addEventListener("click", () => showDate(entry.firstDay));
+    notes.push(jump);
+  }
+  if (entry.event && entry.event.updated === true) notes.push(el("span", {text: t("sourceUpdated")}));
+  if (notes.length) card.appendChild(el("p", {className: "notes"}, notes));
+  if (entry.members.length > 1) card.appendChild(renderSources(entry));
 
   const tags = [
-    ...(Array.isArray(item.gps) ? item.gps : []).map((id) => el("span", {className: "tag tag-gp", text: label("gps", id)})),
-    ...(Array.isArray(item.sectors) ? item.sectors : []).map((id) => el("span", {className: "tag", text: label("sectors", id)})),
+    ...entry.gps.map((id) => el("span", {className: "tag tag-gp", text: label("gps", id)})),
+    ...entry.sectors.map((id) => el("span", {className: "tag", text: label("sectors", id)})),
   ];
   if (item.region) tags.push(el("span", {className: "tag", text: label("regions", item.region)}));
   if (tags.length) card.appendChild(el("p", {className: "tags"}, tags));
   return card;
+}
+
+// Heading count, notices and cards shared by the day and all-dates views.
+function renderList(main, heading, result, scope) {
+  const shown = sortEntries(result.entries.filter(matches));
+  const filtered = Boolean(state.gp || state.sector);
+  const total = articleCount(result.entries);
+  let count;
+  if (result.grouped) {
+    count = filtered
+      ? t("eventCountFiltered", {e: shown.length, E: result.entries.length, a: articleCount(shown), A: total})
+      : t("eventCount", {e: result.entries.length, a: total});
+  } else {
+    count = filtered
+      ? t("filteredCount", {shown: shown.length, n: total})
+      : (total === 1 ? t("itemCountOne") : t("itemCount", {n: total}));
+  }
+  heading.appendChild(el("p", {className: "count", text: scope ? `${count} · ${scope}` : count}));
+  if (result.problem && total > 0) {
+    main.appendChild(el("p", {className: "notice", text: t(result.problem === "stale" ? "groupingStale" : "groupingMissing")}));
+  }
+  const prioritised = shown.filter((entry) => entry.priority);
+  if (state.sort === "priority" && prioritised.length && prioritised.every((entry) => entry.priority.priority === "needs_review")) {
+    main.appendChild(el("p", {className: "notice", text: t("legacyPriority")}));
+  }
+  if (shown.length === 0) {
+    main.appendChild(el("p", {className: "state", text: filtered ? t("noMatch") : t("noItems")}));
+    return;
+  }
+  for (const entry of shown) main.appendChild(renderCard(entry));
 }
 
 function renderMain() {
@@ -250,6 +551,10 @@ function renderMain() {
   clear(main);
   if (state.fatal) {
     main.appendChild(el("p", {className: "state", text: t("indexError")}));
+    return;
+  }
+  if (state.mode === "all") {
+    renderAll(main);
     return;
   }
   if (!state.date) {
@@ -267,45 +572,92 @@ function renderMain() {
     main.appendChild(el("p", {className: "state", text: t("dayError", {date: formatDay(state.date)})}));
     return;
   }
-  const items = state.days.get(state.date);
-  if (!items) {
+  if (!state.days.has(state.date)) {
     main.appendChild(el("p", {className: "state", text: t("loading")}));
     return;
   }
-  const shown = items.filter((item) =>
-    (!state.gp || (Array.isArray(item.gps) && item.gps.includes(state.gp))) &&
-    (!state.sector || (Array.isArray(item.sectors) && item.sectors.includes(state.sector))));
-  const filtered = Boolean(state.gp || state.sector);
-  heading.appendChild(el("p", {className: "count", text: filtered
-    ? t("filteredCount", {shown: shown.length, n: items.length})
-    : (items.length === 1 ? t("itemCountOne") : t("itemCount", {n: items.length}))}));
-  if (shown.length === 0) {
-    main.appendChild(el("p", {className: "state", text: filtered ? t("noMatch") : t("noItems")}));
+  renderList(main, heading, dayEntries(state.date));
+}
+
+function renderAll(main) {
+  const list = dates();
+  const heading = el("div", {className: "day-head"}, [el("h2", {text: t("allDates")})]);
+  main.appendChild(heading);
+  if (list.length === 0) {
+    main.appendChild(el("p", {className: "state", text: t("noItems")}));
     return;
   }
-  for (const item of shown) main.appendChild(renderCard(item));
+  if (state.allLoading) {
+    const done = list.filter((day) => state.days.has(day) || state.dayErrors.has(day)).length;
+    main.appendChild(el("p", {className: "state", text: t("allLoading", {done, n: list.length})}));
+    return;
+  }
+  const failed = list.filter((day) => !state.days.has(day));
+  if (failed.length) {
+    const retry = el("button", {className: "retry", text: t("retry"), attrs: {type: "button"}});
+    retry.addEventListener("click", showAll);
+    main.appendChild(el("div", {className: "notice notice-warn", attrs: {role: "alert"}}, [
+      el("span", {text: t("allFailed", {k: failed.length, n: list.length,
+        list: failed.map((day) => formatDay(day, "short")).join(", ")})}), document.createTextNode(" "), retry]));
+  }
+  renderList(main, heading, allEntries(), t("allScope", {n: list.length - failed.length}));
+}
+
+// ---- Loading and navigation -----------------------------------------------------------------
+
+// One request per day at a time; a finished day stays cached for both views.
+function loadDay(day) {
+  if (state.days.has(day)) return Promise.resolve();
+  if (!state.inflight.has(day)) {
+    state.inflight.set(day, fetchJson(`./data/${day}.json`)
+      .then((data) => {
+        state.days.set(day, Array.isArray(data.items) ? data.items : []);
+        state.dayErrors.delete(day);
+      }, () => {
+        state.dayErrors.add(day);
+      })
+      .finally(() => state.inflight.delete(day)));
+  }
+  return state.inflight.get(day);
 }
 
 async function showDate(day, notice) {
+  state.mode = "date";
   state.date = day;
   state.notice = notice || null;
   renderControls();
   renderMain();
   if (state.days.has(day)) return;
   const token = ++state.token;
-  try {
-    const data = await fetchJson(`./data/${day}.json`);
-    state.days.set(day, Array.isArray(data.items) ? data.items : []);
-    state.dayErrors.delete(day);
-  } catch {
-    state.dayErrors.add(day);
-  }
-  if (token === state.token && state.date === day) renderMain();
+  await loadDay(day);
+  if (token === state.token && state.mode === "date" && state.date === day) renderMain();
+}
+
+async function showAll() {
+  state.mode = "all";
+  state.notice = null;
+  const token = ++state.token;
+  const pending = dates().filter((day) => !state.days.has(day));
+  state.allLoading = pending.length > 0;
+  renderControls();
+  renderMain();
+  let next = 0;
+  const worker = async () => {
+    while (next < pending.length) {
+      await loadDay(pending[next++]);
+      if (token === state.token && state.mode === "all") renderMain();
+    }
+  };
+  await Promise.all(Array.from({length: Math.min(DAY_CONCURRENCY, pending.length)}, worker));
+  if (token !== state.token) return;
+  state.allLoading = false;
+  if (state.mode === "all") renderMain();
 }
 
 function openToday() {
   const list = dates();
   if (list.length === 0) {
+    state.mode = "date";
     state.date = null;
     renderControls();
     renderMain();
@@ -317,6 +669,56 @@ function openToday() {
   else showDate(list[0], {today});
 }
 
+// ---- Reports ----------------------------------------------------------------------------------
+
+function renderReports() {
+  const root = document.getElementById("reports");
+  clear(root);
+  root.appendChild(el("h2", {text: t("reportsTitle")}));
+  const lang = state.reportLang || state.lang;
+  for (const report of REPORTS) {
+    const section = el("section", {className: "report"});
+    section.appendChild(el("h3", {className: "headline", text: bilingual(report.title)}));
+    const picker = el("div", {className: "lang report-lang", attrs: {role: "group", "aria-label": t("reportLangLabel")}});
+    for (const [code, key] of [["en", "reportEn"], ["zh", "reportZh"]]) {
+      const button = el("button", {text: t(key), attrs: {type: "button", "aria-pressed": String(code === lang)}});
+      button.addEventListener("click", () => {
+        state.reportLang = code;
+        renderReports();
+      });
+      picker.appendChild(button);
+    }
+    section.appendChild(picker);
+
+    const shownLang = report.files[lang] ? lang : "en";
+    if (shownLang !== lang) section.appendChild(el("p", {className: "notice", text: t("reportZhPending")}));
+    const href = report.files[shownLang];
+    section.appendChild(el("p", {className: "count", text: t("reportMeta", {
+      date: formatDay(report.date, "short"), lang: shownLang === "zh" ? "中文" : "English"})}));
+    const actions = el("p", {className: "report-actions"}, [
+      el("a", {className: "button", text: t("reportOpen"), attrs: {href, target: "_blank", rel: "noopener"}}),
+      el("a", {className: "button", text: t("reportDownload"), attrs: {href, download: href.split("/").pop()}}),
+    ]);
+    section.appendChild(actions);
+    // <object> shows its children only when the browser cannot display the PDF inline.
+    section.appendChild(el("object", {className: "pdf", attrs: {data: href, type: "application/pdf",
+      "aria-label": bilingual(report.title)}}, [el("p", {className: "state", text: t("reportFallback")})]));
+    root.appendChild(section);
+  }
+}
+
+function applyView() {
+  const reports = location.hash === "#reports";
+  document.getElementById("toolbar").hidden = reports;
+  document.getElementById("main").hidden = reports;
+  document.getElementById("reports").hidden = !reports;
+  for (const link of document.querySelectorAll("[data-view]")) {
+    if ((link.dataset.view === "reports") === reports) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  }
+  if (reports) renderReports();
+}
+
 function setLang(lang) {
   state.lang = lang;
   storeLang(lang);
@@ -324,6 +726,7 @@ function setLang(lang) {
   renderStatus();
   renderControls();
   renderMain();
+  if (location.hash === "#reports") renderReports();
 }
 
 // ---- Start-up -------------------------------------------------------------------------------
@@ -343,7 +746,11 @@ function bindEvents() {
     if (position > 0) showDate(list[position - 1]);
   });
   document.getElementById("today").addEventListener("click", openToday);
-  document.getElementById("dateSelect").addEventListener("change", (event) => showDate(event.target.value));
+  document.getElementById("allDates").addEventListener("click", showAll);
+  document.getElementById("dateSelect").addEventListener("change", (event) => {
+    if (event.target.value === "*") showAll();
+    else showDate(event.target.value);
+  });
   document.getElementById("gpSelect").addEventListener("change", (event) => {
     state.gp = event.target.value;
     renderMain();
@@ -352,6 +759,11 @@ function bindEvents() {
     state.sector = event.target.value;
     renderMain();
   });
+  document.getElementById("sortSelect").addEventListener("change", (event) => {
+    state.sort = event.target.value;
+    renderMain();
+  });
+  window.addEventListener("hashchange", applyView);
 }
 
 async function init() {
@@ -359,16 +771,14 @@ async function init() {
   state.lang = readStoredLang() || (browserZh ? "zh" : "en");
   bindEvents();
   applyStaticText();
-  try {
-    state.index = await fetchJson("./data/index.json");
-  } catch {
-    state.fatal = true;
-  }
-  try {
-    state.status = await fetchJson("./data/status.json");
-  } catch {
-    state.status = null; // Shown as "status unavailable", never as a healthy refresh.
-  }
+  applyView();
+  const [index, status, events] = await Promise.allSettled(
+    ["./data/index.json", "./data/status.json", "./data/events.json"].map(fetchJson));
+  if (index.status === "fulfilled") state.index = index.value;
+  else state.fatal = true;
+  // A missing status is shown as "status unavailable", never as a healthy refresh.
+  state.status = status.status === "fulfilled" ? status.value : null;
+  state.events = events.status === "fulfilled" ? validateEvents(events.value) : null;
   renderStatus();
   if (state.fatal) {
     renderControls();

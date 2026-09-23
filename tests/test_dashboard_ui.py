@@ -1,0 +1,366 @@
+"""Real-browser checks for public/index.html + app.js (event grouping, All dates, sorting, reports).
+
+Serves public/ read-only on a local port and drives headless Chromium with Playwright. Scenarios
+that need other data (missing/stale event index, unmapped cards, failed days, assessed priorities)
+replace responses with request interception; nothing is written to public/data. The assessed
+priority data below is SYNTHETIC test data, not real news. Skipped when Playwright or its Chromium
+build is not installed.
+"""
+import functools
+import http.server
+import json
+import threading
+from datetime import datetime
+from pathlib import Path
+
+import pytest
+
+sync_api = pytest.importorskip("playwright.sync_api")
+
+PUBLIC = Path(__file__).resolve().parents[1] / "public"
+DATA = PUBLIC / "data"
+REPORT = "reports/junson-private-credit-report-2026q3-en-v2.pdf"
+
+
+def load(name):
+    return json.loads((DATA / name).read_text(encoding="utf-8"))
+
+
+INDEX = load("index.json")
+EVENTS = load("events.json")["events"]
+DAYS = {day: load(f"{day}.json")["items"] for day in INDEX["dates"]}
+CARDS = {item["id"]: item for items in DAYS.values() for item in items}
+REVIEWED = [event for event in EVENTS if event["merge_rule"] == "reviewed"]
+
+
+def ts(value):
+    return datetime.fromisoformat(value).timestamp()
+
+
+@pytest.fixture(scope="module")
+def site():
+    handler = functools.partial(QuietHandler, directory=str(PUBLIC))
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    with sync_api.sync_playwright() as playwright:
+        try:
+            browser = playwright.chromium.launch()
+        except sync_api.Error as error:  # Chromium build missing on this machine.
+            pytest.skip(f"Chromium unavailable: {error}")
+        yield browser, f"http://127.0.0.1:{server.server_address[1]}/"
+        browser.close()
+    server.shutdown()
+
+
+class QuietHandler(http.server.SimpleHTTPRequestHandler):
+    def log_message(self, *args):
+        pass
+
+
+@pytest.fixture
+def page(site):
+    browser, base = site
+    context = browser.new_context(locale="en-GB")
+    page = context.new_page()
+    errors = []
+    page.on("pageerror", lambda error: errors.append(str(error)))
+    page.base = base
+    yield page
+    context.close()
+    assert errors == []
+
+
+def open_site(page, hash_=""):
+    page.goto(page.base + hash_)
+    page.wait_for_function("document.querySelector('#main .count, #main .state') !== null || location.hash === '#reports'")
+
+
+def show_all(page):
+    page.click("#allDates")
+    page.wait_for_function("state.mode === 'all' && !state.allLoading")
+
+
+def card_ids(page):
+    return page.eval_on_selector_all("#main .card", "cards => cards.map(card => card.dataset.card)")
+
+
+def reply(**response):
+    return lambda route: route.fulfill(**response)
+
+
+def pick(page, day):
+    page.select_option("#dateSelect", day)
+    page.wait_for_function("day => state.date === day && state.days.has(day)", arg=day)
+
+
+# ---- Real archive: grouping, counts, source preservation --------------------------------------
+
+def test_date_views_use_each_days_representative_and_keep_every_source(page):
+    open_site(page)
+    for day, items in DAYS.items():
+        pick(page, day)
+        views = [event["date_views"][day] for event in EVENTS if day in event["date_views"]]
+        expected = [view["representative_card_id"] for view in sorted(views, key=lambda view: view["priority_rank"])]
+        assert card_ids(page) == expected, day
+        count = page.text_content("#main .count")
+        assert count == f"{len(views)} events · {len(items)} articles", day
+        # Every raw article of the day is reachable: as a card or inside its Sources list.
+        links = set(page.eval_on_selector_all("#main .source a", "links => links.map(link => link.href)"))
+        for item in items:
+            assert item["source"]["url"] in links, (day, item["id"])
+
+
+def test_cross_date_pairs_show_further_coverage_and_link_back(page):
+    open_site(page)
+    for event_id, first, later in [("evt-reviewed-004", "2026-09-16", "2026-09-18"),   # Apollo Executive Centre
+                                   ("evt-reviewed-008", "2026-09-11", "2026-09-13")]:  # BlackRock
+        event = next(event for event in EVENTS if event["event_id"] == event_id)
+        pick(page, later)
+        card = page.locator(f"#main .card[data-card='{event['date_views'][later]['representative_card_id']}']")
+        button = card.locator("button.linkish")
+        assert "first reported" in button.text_content()
+        button.click()
+        page.wait_for_function("day => state.date === day", arg=first)
+        assert event["date_views"][first]["representative_card_id"] in card_ids(page)
+
+
+def test_same_day_pairs_expand_to_both_sources(page):
+    open_site(page)
+    for event in REVIEWED:
+        for day, view in event["date_views"].items():
+            if len(view["member_card_ids"]) < 2:
+                continue
+            pick(page, day)
+            card = page.locator(f"#main .card[data-card='{view['representative_card_id']}']")
+            summary = card.locator("details.sources summary")
+            assert summary.text_content() == "Sources (2)"
+            summary.click()
+            items = card.locator(".source-list li")
+            assert items.count() == 2
+            for index, member in enumerate(view["member_card_ids"]):
+                text = items.nth(index).text_content()
+                assert CARDS[member]["headline"]["en"] in text and CARDS[member]["summary"]["en"] in text
+
+
+def test_all_dates_lists_each_event_once_and_every_article(page):
+    open_site(page)
+    show_all(page)
+    ids = card_ids(page)
+    assert len(ids) == len(EVENTS) == 174 and len(set(ids)) == 174
+    assert ids == [event["representative_card_id"] for event in sorted(EVENTS, key=lambda event: event["priority_rank"])]
+    assert page.text_content("#main .count") == f"174 events · 182 articles · {len(DAYS)} dates"
+    links = page.eval_on_selector_all("#main .source a", "links => links.map(link => link.href)")
+    assert {item["source"]["url"] for item in CARDS.values()} <= set(links)
+    assert page.locator("details.sources summary", has_text="Sources (2)").count() == 8
+    # Earlier/Later are disabled here but still visible, and come back on a date.
+    assert page.is_disabled("#prev") and page.is_disabled("#next") and page.is_visible("#prev")
+    pick(page, INDEX["dates"][5])
+    assert not page.is_disabled("#prev") and not page.is_disabled("#next")
+
+
+def test_all_dates_filters_intersect_and_persist(page):
+    open_site(page)
+    show_all(page)
+    for gp in [""] + list(INDEX["labels"]["gps"]):
+        page.select_option("#gpSelect", gp)
+        for sector in [""] + list(INDEX["labels"]["sectors"]):
+            page.select_option("#sectorSelect", sector)
+            expected = [event for event in EVENTS
+                        if (not gp or gp in event["display_gps"]) and (not sector or sector in event["display_sectors"])]
+            assert len(card_ids(page)) == len(expected), (gp, sector)
+            if gp or sector:
+                articles = sum(len(event["member_card_ids"]) for event in expected)
+                assert page.text_content("#main .count").startswith(f"{len(expected)} of 174 events · {articles} of 182 articles")
+    page.select_option("#gpSelect", "apollo")
+    page.select_option("#sectorSelect", "private_credit")
+    page.click("#today")
+    page.wait_for_function("state.mode === 'date'")
+    assert page.input_value("#gpSelect") == "apollo" and page.input_value("#sectorSelect") == "private_credit"
+    show_all(page)
+    assert page.input_value("#gpSelect") == "apollo"
+
+
+def test_newest_sort_and_language_do_not_change_order_unexpectedly(page):
+    open_site(page)
+    show_all(page)
+    page.select_option("#sortSelect", "newest")
+    order = sorted(range(len(EVENTS)), key=lambda i: (-ts(EVENTS[i]["last_material_update_at"]), i))
+    assert card_ids(page) == [EVENTS[i]["representative_card_id"] for i in order]
+    before = card_ids(page)
+    page.click("[data-lang='zh']")
+    assert card_ids(page) == before
+    assert page.input_value("#sortSelect") == "newest"
+    page.reload()
+    page.wait_for_function("state.index !== null")
+    assert page.get_attribute("html", "lang") == "zh-CN"
+    assert page.get_attribute("[data-lang='zh']", "aria-pressed") == "true"
+
+
+def test_today_from_all_dates_and_legacy_priority_notice(page):
+    open_site(page)
+    show_all(page)
+    assert "Needs review" in page.text_content("#main")
+    assert "No article here has an assessed priority yet" in page.text_content("#main")
+    page.click("#today")
+    page.wait_for_function("state.mode === 'date' && state.date !== null")
+    assert page.input_value("#dateSelect") == page.evaluate("state.date")
+
+
+def test_keyboard_and_mobile(page):
+    page.set_viewport_size({"width": 375, "height": 812})
+    open_site(page)
+    page.focus("#today")
+    page.keyboard.press("Tab")
+    assert page.evaluate("document.activeElement.id") == "allDates"
+    page.keyboard.press("Enter")
+    page.wait_for_function("state.mode === 'all' && !state.allLoading")
+    page.focus("details.sources summary")
+    page.keyboard.press("Enter")
+    assert page.evaluate("document.querySelector('details.sources').open")
+    assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
+
+
+# ---- Mocked failure modes -------------------------------------------------------------------
+
+def test_missing_or_invalid_event_index_shows_every_raw_article(page):
+    for body, status in [("not found", 404), ("{\"schema_version\": 1, \"events\": \"bad\"}", 200)]:
+        page.unroute("**/data/events.json")
+        page.route("**/data/events.json", reply(status=status, body=body))
+        open_site(page)
+        day = page.evaluate("state.date")
+        assert len(card_ids(page)) == len(DAYS[day])
+        assert "grouping is unavailable" in page.text_content("#main")
+        show_all(page)
+        assert len(card_ids(page)) == 182
+
+
+def test_stale_index_and_unmapped_new_card(page):
+    day = "2026-09-23"
+    synthetic = dict(DAYS[day][0], id="synthetic0001", source={"publisher": "Synthetic", "url": "https://example.com/synthetic"})
+    page.route(f"**/data/{day}.json", lambda route: route.fulfill(json={"date": day, "items": [synthetic] + DAYS[day]}))
+    open_site(page)
+    pick(page, day)
+    assert "synthetic0001" in card_ids(page)
+    assert page.text_content("#main .count") == "24 events · 26 articles"
+    # Dropping a grouped member makes the index stale for that day: raw fallback, nothing hidden.
+    member = "8d1b134a37a1"
+    remaining = [item for item in DAYS[day] if item["id"] != member]
+    page.unroute(f"**/data/{day}.json")
+    page.route(f"**/data/{day}.json", lambda route: route.fulfill(json={"date": day, "items": remaining}))
+    open_site(page)
+    pick(page, day)
+    assert sorted(card_ids(page)) == sorted(item["id"] for item in remaining)
+    assert "does not match these articles" in page.text_content("#main")
+
+
+def test_partial_all_dates_load_names_failures_and_retries(page):
+    failing = INDEX["dates"][3]
+    page.route(f"**/data/{failing}.json", lambda route: route.fulfill(status=500, body="error"))
+    open_site(page)
+    show_all(page)
+    notice = page.text_content("#main .notice-warn")
+    assert "1 of 34 dates could not be loaded" in notice and "not the full archive" in notice
+    assert page.text_content("#main .count").endswith("· 33 dates")
+    assert len(card_ids(page)) < 174
+    page.unroute(f"**/data/{failing}.json")
+    page.click("#main .retry")
+    page.wait_for_function("state.mode === 'all' && !state.allLoading")
+    assert page.locator("#main .notice-warn").count() == 0
+    assert len(card_ids(page)) == 174
+
+
+def test_rapid_date_switching_keeps_last_choice(page):
+    slow, fast = INDEX["dates"][10], INDEX["dates"][11]
+
+    # Hold the first day's response in the page so the second choice lands first.
+    page.add_init_script("""const realFetch = window.fetch;
+      window.fetch = (url, options) => String(url).includes(SLOW_DAY)
+        ? new Promise((resolve) => setTimeout(resolve, 800)).then(() => realFetch(url, options))
+        : realFetch(url, options);""".replace("SLOW_DAY", json.dumps(slow)))
+    open_site(page)
+    page.select_option("#dateSelect", slow)
+    page.select_option("#dateSelect", fast)
+    page.wait_for_function("day => state.days.has(day)", arg=slow)
+    page.wait_for_timeout(100)
+    assert page.evaluate("state.date") == fast
+    assert set(card_ids(page)) <= {item["id"] for item in DAYS[fast]}
+
+
+# ---- SYNTHETIC assessed priorities (never written to public/data) ----------------------------
+
+def synthetic_archive():
+    def card(card_id, day, hour):
+        return {"id": card_id, "date": day, "published_at": f"{day}T{hour:02d}:00:00+08:00",
+                "headline": {"en": f"SYNTHETIC {card_id}", "zh": f"合成 {card_id}"},
+                "summary": {"en": "Synthetic fixture.", "zh": "合成测试数据。"}, "gps": ["apollo"], "sectors": ["private_credit"],
+                "region": "US", "source": {"publisher": "Fixture", "url": f"https://example.com/{card_id}"},
+                "review_status": "unreviewed", "origin": "auto_fetch"}
+
+    def priority(level, potential=False):
+        return {"priority": level, "potential_urgent": potential,
+                "reason": {"en": f"Synthetic {level} reason", "zh": f"合成{level}理由"}}
+
+    days = {"2026-09-22": [card("a", "2026-09-22", 9), card("b", "2026-09-22", 10)],
+            "2026-09-23": [card("c", "2026-09-23", 8), card("d", "2026-09-23", 9), card("e", "2026-09-23", 10),
+                           card("f", "2026-09-23", 11)]}
+    # Global ranks: c urgent, a important, e important (same-class tie), b useful, d/f needs_review.
+    spec = [("c", "urgent", 1, 2, True), ("a", "important", 2, 1, False), ("e", "important", 3, 1, False),
+            ("b", "useful", 4, 2, False), ("d", "needs_review", 5, 3, True), ("f", "needs_review", 6, 4, False)]
+    events = []
+    for card_id, level, rank, day_rank, potential in spec:
+        day = next(day for day, items in days.items() if any(item["id"] == card_id for item in items))
+        events.append({"event_id": f"evt-{card_id}", "member_card_ids": [card_id], "representative_card_id": card_id,
+                       "display_gps": ["apollo"], "display_sectors": ["private_credit"],
+                       "last_material_update_at": f"{day}T00:00:00+08:00", "updated": card_id == "e",
+                       "priority": priority(level, potential), "priority_rank": rank, "sources": [],
+                       "date_views": {day: {"representative_card_id": card_id, "member_card_ids": [card_id],
+                                            "display_gps": ["apollo"], "display_sectors": ["private_credit"],
+                                            "further_coverage": False, "priority": priority(level, potential),
+                                            "priority_rank": day_rank}}})
+    index = dict(INDEX, dates=list(days), counts={day: len(items) for day, items in days.items()})
+    return index, days, {"schema_version": 1, "events": events}
+
+
+def test_synthetic_priority_order_labels_and_potential_urgent(page):
+    index, days, events = synthetic_archive()
+    page.route("**/data/index.json", lambda route: route.fulfill(json=index))
+    page.route("**/data/events.json", lambda route: route.fulfill(json=events))
+    for day, items in days.items():
+        page.route(f"**/data/{day}.json", reply(json={"date": day, "items": items}))
+    open_site(page)
+    show_all(page)
+    assert card_ids(page) == ["c", "a", "e", "b", "d", "f"]
+    labels = page.eval_on_selector_all("#main .card .prio", "nodes => nodes.map(node => node.textContent)")
+    assert labels == ["Urgent", "Important", "Important", "Useful", "Needs review", "Needs review"]
+    alerts = page.eval_on_selector_all("#main .card", "cards => cards.map(card => card.querySelector('.alert')?.textContent || '')")
+    assert alerts[0] == alerts[4] == "Potential urgent item — needs verification" and alerts.count("") == 4
+    assert "Source updated" in page.text_content("#main .card[data-card='e']")
+    assert "No article here has an assessed priority yet" not in page.text_content("#main")
+    # Single date uses that day's own ranks, not the global ones.
+    pick(page, "2026-09-23")
+    assert card_ids(page) == ["e", "c", "d", "f"]
+    page.select_option("#sortSelect", "newest")
+    assert card_ids(page) == ["f", "e", "d", "c"]
+    page.click("[data-lang='zh']")
+    assert card_ids(page) == ["f", "e", "d", "c"]
+    assert "潜在紧急事项" in page.text_content("#main")
+
+
+# ---- Reports ----------------------------------------------------------------------------------
+
+def test_reports_view_with_open_download_and_pending_chinese(page):
+    open_site(page, "#reports")
+    page.wait_for_selector("#reports object.pdf")
+    assert page.is_hidden("#toolbar") and page.is_hidden("#main")
+    assert page.get_attribute("#reports object.pdf", "data") == REPORT
+    hrefs = page.eval_on_selector_all("#reports .report-actions a", "links => links.map(link => link.getAttribute('href'))")
+    assert hrefs == [REPORT, REPORT]
+    response = page.request.get(page.base + REPORT)
+    assert response.ok and response.body()[:5] == b"%PDF-"
+    page.click("#reports .report-lang button:nth-child(2)")
+    assert "has not been published" in page.text_content("#reports")
+    assert page.get_attribute("#reports object.pdf", "data") == REPORT
+    page.click("[data-lang='zh']")
+    assert "Translation pending" not in page.text_content("#reports") and "翻译待审核" in page.text_content("#reports")
+    page.click("[data-view='news']")
+    page.wait_for_function("!document.getElementById('main').hidden")

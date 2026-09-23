@@ -10,7 +10,8 @@ A daily, bilingual (English / 中文) news page for Junson Capital's alternative
 
 | Path | Purpose |
 |---|---|
-| [public/](public/) | The static website served by GitHub Pages: `index.html`, `app.js`, `data/` |
+| [public/](public/) | The static website served by GitHub Pages: `index.html`, `app.js`, `data/`, `reports/` (published PDFs) |
+| [docs/dashboard-events-and-reports.md](docs/dashboard-events-and-reports.md) | Event grouping, All dates, priority sort and Reports tab; browser checks; Chinese report review |
 | [config/filter_rules.json](config/filter_rules.json) | Managers, sub-sectors, keywords, feeds and schedule |
 | [tools/fetch_news.py](tools/fetch_news.py) | Scheduled refresh: fetch, filter, summarize, write cards |
 | [tools/summarize.py](tools/summarize.py) | DeepSeek bilingual summary and tagging |

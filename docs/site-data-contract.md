@@ -2,7 +2,8 @@
 
 The public dashboard is a static site in `public/`: `index.html`, `app.js` and JSON under
 `public/data/`. Anything that writes data goes through `tools/site_data.py`, which validates
-every card. The page only reads these files.
+every card. The page only reads these files. It also reads the optional `public/data/events.json` (see
+[news-events-contract.md](news-events-contract.md)) and links PDFs under `public/reports/`.
 
 ## `public/data/YYYY-MM-DD.json`
 
