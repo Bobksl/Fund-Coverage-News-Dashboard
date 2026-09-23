@@ -104,6 +104,30 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "a0f3329b83e8",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T09:36:30+00:00",
+      "headline": {
+        "en": "Australian regulator bans three private credit products from Melbourne Securities",
+        "zh": "澳大利亚监管机构禁止Melbourne Securities的三款私人信贷产品"
+      },
+      "summary": {
+        "en": "Australia's corporate regulator, ASIC, temporarily banned three private credit products offered by Melbourne Securities Corporation, the products being offered under the Remara Cash Management Fund. ASIC said it issued stop orders and put the industry on notice.",
+        "zh": "澳大利亚企业监管机构ASIC暂时禁止了Melbourne Securities Corporation提供的三款私人信贷产品，这些产品在Remara Cash Management Fund下发行。ASIC表示已发出停止令，并向该行业发出警告。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/22/australian-regulator-cracks-down-on-three-private-credit-products/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch"
+    },
+    {
       "id": "6bbc0e19741a",
       "date": "2026-09-22",
       "published_at": "2026-09-22T07:34:50+00:00",
