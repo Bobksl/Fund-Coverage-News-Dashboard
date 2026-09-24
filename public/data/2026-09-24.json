@@ -2,6 +2,187 @@
   "date": "2026-09-24",
   "items": [
     {
+      "id": "7938f0178a78",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T12:17:14+00:00",
+      "headline": {
+        "en": "Apollo limits private credit withdrawals for third consecutive quarter",
+        "zh": "Apollo连续第三个季度限制私人信贷基金赎回"
+      },
+      "summary": {
+        "en": "Apollo limited withdrawals from its private credit fund for a third consecutive quarter. No further detail was provided in the supplied text.",
+        "zh": "Apollo连续第三个季度限制其私人信贷基金的赎回。现有文本未提供更多细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Protos | Informed crypto news",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQckVyLTZndEpocE5IR2dRWjduSzd0RVByU1dXRDdMbS1lUjJzN0lVNVBOVFV5QTdtOS10M2ZDMWpZVzQtRE1FME1xMnpNcXJRLVVGcnF6Y3h3Y1BLeEZKMmpPMnNINWl2dXdURG1OMk1XREsyLTE2OExNSnk2MUxSU0VUbFl3MlNCNGs1Q1FzbllBX05N?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo limits private credit withdrawals for third consecutive quarter",
+      "source_fingerprint": "4c794b585a9597291aa21f1ae7ecc49f8857f68f6a93736e7ecc3216e63a6106",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3ec02ce27725691a07fa26b4d06b84bc79e84b976eee3c641ea67bef83c423a3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo capping private credit fund redemptions for a third straight quarter signals persistent liquidity pressure in a tracked manager's credit vehicle.",
+      "event_identity": {
+        "subject": "apollo",
+        "action": "limits private credit withdrawals",
+        "object": "private credit",
+        "period": "third consecutive quarter",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "observed_at": "2026-09-24T13:24:40+00:00"
+    },
+    {
+      "id": "89fdd706bd80",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T11:38:06+00:00",
+      "headline": {
+        "en": "KKR launches equipment finance platform; Neuberger cuts US$700m forward flow",
+        "zh": "KKR推出设备金融平台，Neuberger削减7亿美元远期流量"
+      },
+      "summary": {
+        "en": "KKR has launched an equipment finance platform, according to a deal digest from Structured Credit Investor. The same digest reports that Neuberger Berman cut a US$700m forward flow arrangement.",
+        "zh": "据Structured Credit Investor的交易摘要，KKR推出了一个设备金融平台。同一摘要报道，Neuberger Berman削减了一项7亿美元的远期流量安排。"
+      },
+      "gps": [
+        "kkr",
+        "neuberger"
+      ],
+      "sectors": [
+        "asset_based_finance",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Structured Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNVzV5cEVyN0twaVBfVnZOSlh2N0k4VnN3Z0dSd1k1U1huajZ4NHNQVk5PRWNpU3dxUEhCVFJkNDlDdXk4RWRSUnVCRVlVQkI3TllHOFU2Mlg3NlN5SGtxeVllRy1KMllzdWU5UTRybkdJWmppRnVVLVpEYUFEb1RiZXJxNmdGejEwZjVFbXRIbU5QTWUwSVdfc1pxLVVCTDlkdjdQNkNvdlA2aThaU3dhZWQyRjhsNVl4U3E1NkZuMFowNVFER2x2X25hU3BUUWRnc3dINDVGakstT2VDVVFvVjNkODVZbkJsd1JmQ1lVWHhoTnA5RkxlcnRFQk9BNzNHYkpSWlgxMXhiRFoyblE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "ABF Deal Digest: KKR launches equipment finance platform, while Neuberger cuts US$700m forward flow",
+      "source_fingerprint": "e71fb1e7809fdf1388eb93060a621fd6fc0c47ede34441a350a82fd0957a58e2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "beeeb4510266c447b00e31badb9c755aa9e56914e2529028e726509847ec4870",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "The story involves tracked managers KKR and Neuberger Berman in asset-based finance, a core private credit strategy.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T13:24:40+00:00"
+    },
+    {
+      "id": "a42ddb1f074c",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T11:31:23+00:00",
+      "headline": {
+        "en": "MSCI: private credit steady in Q2 2026 as private equity rebounds",
+        "zh": "MSCI：2026年第二季度私人信贷保持稳定，私募股权反弹"
+      },
+      "summary": {
+        "en": "Private credit held steady in the second quarter of 2026 according to MSCI research, while private equity rebounded. The MSCI Global Private Credit Closed-End Fund Index gained 1.7 per cent in the second quarter, up from 0.9 per cent in the first quarter. Opportunistic lending led the group.",
+        "zh": "根据MSCI的研究，2026年第二季度私人信贷保持稳定，而私募股权出现反弹。MSCI Global Private Credit Closed-End Fund Index在第二季度上涨1.7%，高于第一季度的0.9%。机会型贷款在该组别中领先。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/24/private-credit-steady-as-private-equity-rebounds/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit steady as private equity rebounds",
+      "source_fingerprint": "1d112a57d2db08685da59ed46621629e45724a8f198e1c48a50393b0aaa7e04e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 15,
+            "end": 60
+          },
+          "linkage": {
+            "start": 144,
+            "end": 238
+          }
+        },
+        "source_sha256": "95dad6f814d669cce732fd67c697c565937e2d900b2f2c041b5a0d62a2be94ad",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "reason": {
+          "en": "Index data shows a modest quarter-on-quarter improvement in private credit returns, an incremental sector datapoint with no entity-specific impact.",
+          "zh": "指数数据显示私人信贷回报环比小幅改善，属于行业层面的增量数据，无特定机构影响。"
+        }
+      },
+      "relevance_reason": "Quarterly MSCI index data on private credit performance informs the return environment for tracked credit strategies.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T13:24:40+00:00"
+    },
+    {
+      "id": "2411ca3faf8a",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T09:02:00+00:00",
+      "headline": {
+        "en": "Cheyne Capital raises £3bn for real estate debt strategy",
+        "zh": "Cheyne Capital为房地产债务策略募集30亿英镑"
+      },
+      "summary": {
+        "en": "Cheyne Capital has raised £3bn for a real estate debt strategy.",
+        "zh": "Cheyne Capital已为其房地产债务策略募集30亿英镑。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternatives Watch",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZ0ZlM3lMREVpREl3dEMxM2JtTWh0a2ZYcDRLY0NZMkJfeGZjZUI5aWJEeUc1Y1V5TGs4d19qYklJbEJ1cTlNS19DVEZ6QXE2QnRKWkJMV3lQSXFMU2tCaUpiWlg0X0ItV29sR0l4NXFnOEhWVDI4c2tsS1ZFeFhoMHlEa3R5ZmEzYUI0ZnpBNFl3OTR4U2NMX2VES0E2bFJEZV9R?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Cheyne Capital raises £3bn for real estate debt strategy",
+      "source_fingerprint": "0bb397a5da9c8676df2f695c93c23c9f7ab1ee6bbee4b39224d351f6e39fa43d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7734ee1ed48cdc625d7820c87c6853e233bf3948629e2d9e58f79b000b305588",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A £3bn raise for a real estate debt strategy signals continued capital formation in private real estate credit, relevant to deployment and fundraising conditions for tracked managers in the sector.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T13:24:40+00:00"
+    },
+    {
       "id": "eb42edf1120d",
       "date": "2026-09-24",
       "published_at": "2026-09-23T20:00:10+00:00",
@@ -39,6 +220,86 @@
       "relevance_reason": "Investor exit pressure at a large Apollo private credit fund can indicate redemption and liquidity conditions for the tracked manager's credit platform.",
       "event_identity": null,
       "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "f6cbe7e0b0e6",
+      "date": "2026-09-24",
+      "published_at": "2026-09-23T20:00:10+00:00",
+      "headline": {
+        "en": "Apollo's $26 Billion Private Credit Fund Faces Another Rush for Exits",
+        "zh": "Apollo 260亿美元私募信贷基金再度面临退出潮"
+      },
+      "summary": {
+        "en": "Apollo's $26 billion private credit fund is facing another rush for exits, according to the report. The article names Apollo Global Management (NYSE:AP) in connection with the fund.",
+        "zh": "据报道，Apollo 旗下规模260亿美元的私募信贷基金再度面临退出潮。文章提及 Apollo Global Management（NYSE:AP）与该基金相关。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT3dvYlJiVHcwX0NCSXlVa2RvbkdZT0NsLXdRVF82WEZnRjctQnZTY0RTSWhITnlXcGhGYldoQ3hxdDRxdlNtazgzeWtMcjI2SlpmNmZPeENuMmZTOWQ2ZlNvTlJoYU1SSUVBTXNTNzlwel9pMVlMbUJHT2Z4Y3FXUmx2b2FQd19lcVk1NGE0UXN2WWJfRDJmTVFCOTRnLTJaMkNFMkNQYmhlYTc0QTZpRHJfV1IwNEZIMkJUVHhfUmdjNE1HUWlwcFczUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo’s $26 Billion Private Credit Fund Faces Another Rush for Exits - Apollo Global Management (NYSE:AP",
+      "source_fingerprint": "3d39655c00eec54506eab7586f4009125c8d836604b704925108245f1fabae0a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2aa57e39b2d9d9fb49d99e086db3de5b4718060917a1ba88652b25cc5fe4c7f4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Reports another wave of redemption requests at Apollo's flagship private credit fund, which could affect the manager's liquidity and private credit fundraising conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T13:24:40+00:00",
+      "supersedes_card_id": "eb42edf1120d"
+    },
+    {
+      "id": "eb59d491ae96",
+      "date": "2026-09-24",
+      "published_at": "2026-09-23T00:19:00+00:00",
+      "headline": {
+        "en": "Apollo Caps Private Credit Fund Again as 14.7% Look to Exit",
+        "zh": "Apollo 再次限制私募信贷基金赎回，14.7% 投资者寻求退出"
+      },
+      "summary": {
+        "en": "Apollo capped its private credit fund again as 14.7% of investors sought to exit.",
+        "zh": "Apollo 再次对其私募信贷基金实施赎回限制，14.7% 的投资者寻求退出。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMGpWTWQyRzJpa2JvYlpyUS11bjJqLVNaNDFPMU1XRDZxWEc3aVpZMFdfdGliZjNOeW1rUS1YY2x2b0duVkJNaHJPTFhWQlJTNUJva21oS1h5UTNJREVEM2tsTGxoYk1Eb3BHNHBHMWc1UUhhUnVlTFdjT0d0cHJWOUpLTkNaYWFBSVdCLWFqY1d2ZHg0SG45eWptT3FNSU95ZEV1bHhvWlVubW0yNlpfRjBn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Caps Private Credit Fund Again as 14.7% Look to Exit",
+      "source_fingerprint": "dee8ea0e8b4acdf7596f4901d091057c1cef9ecb8f215060461cc9b93e093a1f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e02b09fa96f8e1eadba0c91007bbbcf13b99e2dfb456fe9011f025138bf2ce7a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A redemption gate at an Apollo private credit fund signals liquidity pressure on a tracked manager's credit vehicle.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T13:24:40+00:00",
+      "supersedes_card_id": "b7fa5b484e59"
     }
   ]
 }

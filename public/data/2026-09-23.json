@@ -1261,6 +1261,45 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "081382c9fe64",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T20:10:00+00:00",
+      "headline": {
+        "en": "Blue Owl Credit Income Corp. Enhances Capital Structure Through Recent Financing Transactions",
+        "zh": "新闻稿：Blue Owl Credit Income Corp. 通过近期融资交易优化资本结构"
+      },
+      "summary": {
+        "en": "Blue Owl Credit Income Corp. announced it enhanced its capital structure through recent financing transactions.",
+        "zh": "Blue Owl Credit Income Corp. 宣布通过近期融资交易优化其资本结构。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS1pVRngxRDBmMHN2ajdlOXFtOTZKYW5zYnRPcGl3SDZKVWkyZzMzeElzZF9kVG1PZFpuWnJXakhETmlNbGwtTGxkSmlQZlBZREJqTjltQ3RrNkZabm12YlMteUwyNS0taVhTNGtEOTZNTmRIRVJwazl2TVUzZTBBbnNMQm5nTlNvVzJHMmpmbUE4Y2p2X0ZPVEZpMG1ndk5Dby1MM0FXSThwZURCX3hJM1R3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Press Release: Blue Owl Credit Income Corp. Enhances Capital Structure Through Recent Financing Transactions",
+      "source_fingerprint": "9c433b0cf27bc06c62179477a106450c053ef6c6a44e2475b862c6f080696a5f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5d38b27bfc0956aac08b0a99f81bbb4dce6d9adeb071719a380297aa1a303ffb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl Credit Income Corp.'s financing transactions could affect credit investors' view of Blue Owl's capital structure and funding conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T13:24:40+00:00"
+    },
+    {
       "id": "d6632e2fb734",
       "date": "2026-09-23",
       "published_at": "2026-09-22T19:00:00+00:00",
