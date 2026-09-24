@@ -147,9 +147,9 @@ def test_all_dates_lists_each_event_once_and_every_article(page):
     open_site(page)
     show_all(page)
     ids = card_ids(page)
-    assert len(ids) == len(EVENTS) == 174 and len(set(ids)) == 174
+    assert len(ids) == len(EVENTS) and len(set(ids)) == len(EVENTS)
     assert ids == [event["representative_card_id"] for event in sorted(EVENTS, key=lambda event: event["priority_rank"])]
-    assert page.text_content("#main .count") == f"174 events · 182 articles · {len(DAYS)} dates"
+    assert page.text_content("#main .count") == f"{len(EVENTS)} events · {len(CARDS)} articles · {len(DAYS)} dates"
     links = page.eval_on_selector_all("#main .source a", "links => links.map(link => link.href)")
     assert {item["source"]["url"] for item in CARDS.values()} <= set(links)
     assert page.locator("details.sources summary", has_text="Sources (2)").count() == 8
@@ -171,7 +171,8 @@ def test_all_dates_filters_intersect_and_persist(page):
             assert len(card_ids(page)) == len(expected), (gp, sector)
             if gp or sector:
                 articles = sum(len(event["member_card_ids"]) for event in expected)
-                assert page.text_content("#main .count").startswith(f"{len(expected)} of 174 events · {articles} of 182 articles")
+                assert page.text_content("#main .count").startswith(
+                    f"{len(expected)} of {len(EVENTS)} events · {articles} of {len(CARDS)} articles")
     page.select_option("#gpSelect", "apollo")
     page.select_option("#sectorSelect", "private_credit")
     page.click("#today")
@@ -232,7 +233,7 @@ def test_missing_or_invalid_event_index_shows_every_raw_article(page):
         assert len(card_ids(page)) == len(DAYS[day])
         assert "grouping is unavailable" in page.text_content("#main")
         show_all(page)
-        assert len(card_ids(page)) == 182
+        assert len(card_ids(page)) == len(CARDS)
 
 
 def test_stale_index_and_unmapped_new_card(page):
@@ -242,7 +243,8 @@ def test_stale_index_and_unmapped_new_card(page):
     open_site(page)
     pick(page, day)
     assert "synthetic0001" in card_ids(page)
-    assert page.text_content("#main .count") == "24 events · 26 articles"
+    event_count = sum(day in event["date_views"] for event in EVENTS) + 1
+    assert page.text_content("#main .count") == f"{event_count} events · {len(DAYS[day]) + 1} articles"
     # Dropping a grouped member makes the index stale for that day: raw fallback, nothing hidden.
     member = "8d1b134a37a1"
     remaining = [item for item in DAYS[day] if item["id"] != member]
@@ -276,14 +278,14 @@ def test_partial_all_dates_load_names_failures_and_retries(page):
     open_site(page)
     show_all(page)
     notice = page.text_content("#main .notice-warn")
-    assert "1 of 34 dates could not be loaded" in notice and "not the full archive" in notice
-    assert page.text_content("#main .count").endswith("· 33 dates")
-    assert len(card_ids(page)) < 174
+    assert f"1 of {len(DAYS)} dates could not be loaded" in notice and "not the full archive" in notice
+    assert page.text_content("#main .count").endswith(f"· {len(DAYS) - 1} dates")
+    assert len(card_ids(page)) < len(EVENTS)
     page.unroute(f"**/data/{failing}.json")
     page.click("#main .retry")
     page.wait_for_function("state.mode === 'all' && !state.allLoading")
     assert page.locator("#main .notice-warn").count() == 0
-    assert len(card_ids(page)) == 174
+    assert len(card_ids(page)) == len(EVENTS)
 
 
 def test_rapid_date_switching_keeps_last_choice(page):
