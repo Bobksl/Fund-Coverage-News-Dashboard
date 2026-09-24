@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-24",
+  "items": [
+    {
+      "id": "eb42edf1120d",
+      "date": "2026-09-24",
+      "published_at": "2026-09-23T20:00:10+00:00",
+      "headline": {
+        "en": "Apollo's $26 Billion Private Credit Fund Faces Another Rush for Exits",
+        "zh": "Apollo 260 亿美元私募信贷基金再度遭遇退出潮"
+      },
+      "summary": {
+        "en": "Apollo's $26 billion private credit fund is facing another rush for exits, according to the headline. The article provides no further details on the nature or scale of the exit requests.",
+        "zh": "据标题，Apollo 260 亿美元的私募信贷基金再度遭遇退出潮。文章未提供有关退出请求性质或规模的更多细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT3dvYlJiVHcwX0NCSXlVa2RvbkdZT0NsLXdRVF82WEZnRjctQnZTY0RTSWhITnlXcGhGYldoQ3hxdDRxdlNtazgzeWtMcjI2SlpmNmZPeENuMmZTOWQ2ZlNvTlJoYU1SSUVBTXNTNzlwel9pMVlMbUJHT2Z4Y3FXUmx2b2FQd19lcVk1NGE0UXN2WWJfRDJmTVFCOTRnLTJaMkNFMkNQYmhlYTc0QTZpRHJfV1IwNEZIMkJUVHhfUmdjNE1HUWlwcFczUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo’s $26 Billion Private Credit Fund Faces Another Rush for Exits",
+      "source_fingerprint": "9c07af7de14fe83e28694e22c464e8c14b71178a455d611b9b82e633f53621c2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "28ea2cfa6e39a1a73c48b676d041ad13396719e00481b17802d13556c705eeb9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Investor exit pressure at a large Apollo private credit fund can indicate redemption and liquidity conditions for the tracked manager's credit platform.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    }
+  ]
+}

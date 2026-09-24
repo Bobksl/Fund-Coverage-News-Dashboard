@@ -2,6 +2,82 @@
   "date": "2026-09-23",
   "items": [
     {
+      "id": "266d9d2f4aad",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T15:44:30+00:00",
+      "headline": {
+        "en": "Cheyne raises £3bn for ninth real estate debt fund",
+        "zh": "Cheyne 为第九只房地产债务基金募集 30 亿英镑"
+      },
+      "summary": {
+        "en": "Cheyne Capital has raised £3bn for its real estate lending strategy at the final close of its ninth vintage, the Cheyne Real Estate Credit Holdings (CRECH) IX – Capital Solutions fund. The firm said the fund has already deployed more than 50 per cent of its committed capital into loans in the sector.",
+        "zh": "Cheyne Capital 在其第九期基金最终关闭时为房地产贷款策略募集了 30 亿英镑，即 Cheyne Real Estate Credit Holdings (CRECH) IX – Capital Solutions 基金。该公司表示，该基金已将该策略中超过 50% 的承诺资本投放到贷款中。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/23/cheyne-inks-3bn-for-re-debt-fund/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Cheyne inks £3bn for RE debt fund",
+      "source_fingerprint": "576d6d6c9ef24d9093a1a8ff4a3c9deb584d2ecc6c87b868497a4275949cbac5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "93459bc9a930e93846061e995f0feca8675780d29b3df13cdc90520c645ba972",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Fundraising and deployment pace in real estate credit signals capital availability and competitive conditions for tracked private credit strategies.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "0bb392627045",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T13:00:00+00:00",
+      "headline": {
+        "en": "MCO Secures Strategic Growth Financing from Accel-KKR Credit Partners",
+        "zh": "MCO 获 Accel-KKR Credit Partners 战略增长融资"
+      },
+      "summary": {
+        "en": "MCO (MyComplianceOffice) announced strategic growth financing from Accel-KKR Credit Partners. No financing amount or terms were disclosed.",
+        "zh": "MCO（MyComplianceOffice）宣布获得 Accel-KKR Credit Partners 提供的战略增长融资。融资金额与条款未披露。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdk9xYjJQc0pwTlFhdnNGNFNESnk4YnlFWkFzVzF1TkRCOUtmUXNMc3JIZEdFT3g4cHQ5aTBMVU8yMGVmUkFrdXZPR2E4blZLUmVwQ2FkQVVJTGNwM1I0RW9FVnJQNUhzUldsbXYzaVpkLVBMV0J1VzZ6RHVyRERNUVhwSF9DNUJiUTBnV3ZiSnNKVFdBRjFqOGVZZmxUalV4S25GUUZCRlNGVzF6VkxxZC1SUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "MCO (MyComplianceOffice) Announces Strategic Growth Financing from Accel-KKR Credit Partners",
+      "source_fingerprint": "3b1ee29d62803155c6f2538d7d102da94b44f83786ef9f7f52230ad31d48a7fd",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f996b39f46499ded60cec4e10f0d44d334ddf3c7201cac4e3d188be80bc5516a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Accel-KKR Credit Partners is a private credit lender; the deal reflects financing conditions for compliance software, though no tracked manager is involved.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
       "id": "f0ce070894eb",
       "date": "2026-09-23",
       "published_at": "2026-09-23T12:55:18+00:00",
@@ -80,6 +156,84 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "e5480fcc7ee7",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T12:13:16+00:00",
+      "headline": {
+        "en": "Apollo Global at risk as private credit redemptions continue",
+        "zh": "随着私募信贷赎回持续，Apollo Global 面临风险"
+      },
+      "summary": {
+        "en": "Apollo Global is reported to be at risk as private credit redemptions continue.",
+        "zh": "随着私募信贷赎回持续，据报道 Apollo Global 面临风险。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Invezz",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaFRYX21NVVZ5TVJsdEZWU2lyc0FjanB6MWdwX05wSEVhNTAxRHMwcXFZWXdaTGFLNWNzdWJYazJmY25qVlM0Y0NEM2R4bFh3QTRwRVBQWGl6aHVVbExiejBmVmR1eEdiRUE4ZDRPNnFxN1Q2SDBOb0l4c2M1QTVoRVZxNUtRS0paQ1lSWU5jT2duVGs1em1POWFCeWFwY0l0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Global at risk as private credit redemptions continue",
+      "source_fingerprint": "effbbe637b03a48e4ef9ea8e3c0f26cb213d25856a257159b36b012cab70226c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "60d2946555697f72a6f6ca6779d4e7a474fdbd0747bec4e6d5369db57c9fe987",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure on a tracked manager's private credit platform could affect its deployment and liquidity conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "eebf558661aa",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T10:36:00+00:00",
+      "headline": {
+        "en": "Apollo Stock Drops 2.9%; Private-Credit Exit Requests Still Triple the Cap",
+        "zh": "Apollo股价下跌2.9%；私人信贷赎回申请仍为上限的三倍"
+      },
+      "summary": {
+        "en": "Apollo shares fell 2.9%. Exit requests at its private-credit vehicle remained three times the applicable cap, according to the report.",
+        "zh": "Apollo股价下跌2.9%。据报道，其私人信贷产品的赎回申请仍达到适用上限的三倍。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TechStock²",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTkEtbWIwcUYxM0xoS000ZDFHNWlZNHBLS2swaGFsMmJyRnBicUhyRVN1SVNwVUthTXVLWDZHSldjUDlWbWZvWEVFTDR1N19Kbm5NbVMyNzJsTDdYVW9jMmFWNV94ZlU0bWY0UmduUzMzQmZ1RDRjNmNsVkk3b2ZrbElld01xeUlCRWRCU2NrU1Ftc015MlEyZA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Stock Drops 2.9%; Private-Credit Exit Requests Still Triple the Cap",
+      "source_fingerprint": "8ee4a752e2830148e520fbd15c4c1f651ebd0e35be59facefe1a429f2811e76b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "854b2b906e726dbc2d24f091bb1a57c2b735e0cb8904b566fbde25ae123d828d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo is a tracked credit manager and persistent redemption demand above the cap affects its private-credit vehicle liquidity and franchise.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
       "id": "d87b77beebf2",
       "date": "2026-09-23",
       "published_at": "2026-09-23T07:48:08+00:00",
@@ -106,6 +260,43 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "faf5e8ec1ea6",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T07:41:31+00:00",
+      "headline": {
+        "en": "U.S. private credit defaults rise as softer restructurings mask pressure",
+        "zh": "美国私人信贷违约上升，较温和的重组掩盖压力"
+      },
+      "summary": {
+        "en": "U.S. private credit defaults have risen, with softer restructurings masking underlying pressure, according to Traders Union. The report does not name specific managers, funds or figures.",
+        "zh": "据 Traders Union 报道，美国私人信贷违约有所上升，较温和的重组掩盖了潜在压力。该报道未提及具体管理人、基金或数据。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZmhqZGFGQnNDQkg0aW5MdGN4M2h1aXNtU1RXYzQzVXh5T2dtMXg1eGh3U1BpYTYyWWVBWF9fM0s4ZnctYkR2M3BpdkczMXNYQllPRUJCZmNtRFdlcGJNb2dIZ3UweEZCQUNsSjNkVVphLXlMN1N0bHNURi1DWjNTMy1FWEhhQkZ4cWI0eFBtWDZRN0c1?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "U.S. private credit defaults rise as softer restructurings mask pressure",
+      "source_fingerprint": "69de11868651f253b89ab3c8410b4d43311f124f8601c1b31ddf630b98a2717c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3e93b848d56228b8730e8c6a8f967fab8d6d987d375086b194d0ba18201c25cc",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising U.S. private credit defaults affect credit investors' view of private credit sub-sector risk and returns.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
       "id": "d11b48c51872",
       "date": "2026-09-23",
       "published_at": "2026-09-23T06:43:02+00:00",
@@ -130,6 +321,52 @@
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
+    },
+    {
+      "id": "0d8c9517beca",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T06:43:00+00:00",
+      "headline": {
+        "en": "Apollo caps private credit fund redemptions for third straight quarter",
+        "zh": "Apollo 连续第三个季度限制私人信贷基金赎回"
+      },
+      "summary": {
+        "en": "Apollo capped redemptions on a private credit fund for the third consecutive quarter.",
+        "zh": "Apollo 连续第三个季度限制其私人信贷基金的赎回。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMnJlY2NBWjZaR1JsMVJXMUdDckY4Z1BWY0pOUWNrdjVETjdhelBIMWtwemY0MDF6ZUktXzBHT1FNUFBPUVRoWU9Od0xyZTllQkpyeW9DZUFFc2lkbkJ0amFjSWVOd1pwd3Z1QzRwZkN6cmxOSWxoRVhqU0d0ZlU0NGFiX1ZTT2lMWEk1SjRwSkpQQ3J0V0Z3WUsyTElweGpqVkpWT0JCQ2xDMWtHc0lGSHpKa3pkX0ZuVFRIb0QxN0J6V0Fvd3dqNjdzcGFoZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo caps private credit fund redemptions for third straight quarter",
+      "source_fingerprint": "5cc874d18857ff7143c214065dd80bda7967b8507a3b5aaa7f7f5084a38470c2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "24b702b7647c562bf27f7a690b798d25592f4182581dabfd98f4376e2d3ce560",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's private credit fund capping redemptions for a third consecutive quarter signals persistent liquidity pressure for a tracked manager's retail credit vehicle.",
+      "event_identity": {
+        "subject": "apollo",
+        "action": "caps",
+        "object": "private credit fund redemptions",
+        "period": "third straight quarter",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "observed_at": "2026-09-24T04:12:17+00:00"
     },
     {
       "id": "211ba44e3071",
@@ -362,6 +599,45 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "35d9a8d4776d",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T23:27:42+00:00",
+      "headline": {
+        "en": "Apollo Global Management Limits Private Credit Fund Withdrawals for Third Quarter",
+        "zh": "Apollo Global Management 在第三季度限制私募信贷基金赎回"
+      },
+      "summary": {
+        "en": "Market chatter indicates Apollo Global Management limited withdrawals from a private credit fund for the third quarter.",
+        "zh": "市场消息显示，Apollo Global Management 在第三季度限制了旗下一只私募信贷基金的赎回。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPa0l0MklzbUwwU2sxNmdtMVhWMXN5TVNEOFhPaVgwRm5DQzQ0ZXFHSzNUazdrZ2c4SmNua2JVZ0dENVhlaTFMWkZWTk00dVdxWGZ4Z0RTcHJuWmRhbFp6eUhWSkpnYWZ6WHcyd1VUeU13WlhPSnpHVWVlRVFUUkRhel94MW5tYmRVUHJ3cXlrcGNKclNaNWoxU2lna05oMkJHenR2OU5KMA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Market Chatter: Apollo Global Management Limits Private Credit Fund Withdrawals for Third Quarter",
+      "source_fingerprint": "57f1fce205853da862b40cb4c005e3cf593322c1dd06c1b8e4c93fa83d0ae325",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7ead0290bb9ff9f7233cab73b8f9ad19476af7fd3f98692a82507545ddd794f6",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo is a tracked credit manager and the story concerns limits on withdrawals from one of its private credit funds, which bears on liquidity conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
       "id": "8d1ecbaa14b3",
       "date": "2026-09-23",
       "published_at": "2026-09-22T22:04:06+00:00",
@@ -414,6 +690,371 @@
       "origin": "auto_fetch"
     },
     {
+      "id": "195d497662ca",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T22:01:06+00:00",
+      "headline": {
+        "en": "Apollo's private credit BDC redemption requests ease to 14.7% in Q3",
+        "zh": "Apollo私人信贷BDC第三季度赎回请求降至14.7%"
+      },
+      "summary": {
+        "en": "Apollo's private credit BDC saw redemption requests ease to 14.7% in the third quarter, according to Citywire. The report covers the level of redemption requests at the vehicle for that period.",
+        "zh": "据Citywire报道，Apollo的私人信贷BDC第三季度赎回请求降至14.7%。该报道涉及该工具在该期间的赎回请求水平。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Citywire",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd1RGb2RwMFlnLS1qUmNBaloxeVc1SkFXRDBOVlAyVENUeUNyVE1mY3gyQWYwZTVfS2Y5Yk9wZGVLdmZUZmUtci1kZFh1REZXaUF3YVR0UHZSR1J6UFJSOGlHUlFCZUNXY05lbEs5WDFETmlOdkhwQkw4WmhYTDJIVzhPbGl2NHkwTUlfQlNZZkc4U3hpLWJJcUw5RTQ1YW9oN0NhRGYzRllEUDZqVUN1Yg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo’s private credit BDC redemption requests ease to 14.7% in Q3",
+      "source_fingerprint": "44ddbcd73c39cc401e9e70e6d20b8cc6a1a5ea2f9225cc87bc9ef635eb1a0da6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b09bf51f80d036dc0ac593b7f2176fa05ff8b6c159da2bce965e5e0dc8169c9d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption request level at a tracked manager's private credit BDC bears on liquidity and capital-access conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "cbc9ebc8d177",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T21:53:14+00:00",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo私人信贷基金第三季度赎回请求有所缓和"
+      },
+      "summary": {
+        "en": "Apollo's private credit fund saw redemption requests ease in the third quarter, according to Reuters. No figures were given in the headline.",
+        "zh": "据路透社报道，Apollo旗下一只私人信贷基金第三季度赎回请求有所缓和。标题中未提供具体数据。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbmU0dk9mX090N2hYdDhuWFh2OWVWUWRJUjg5YnlMeXN6TVpYbmhQeG90ekNUaVpJMF9fdE0zT2lKTzFfdkpTd3R6Zjd3RkhaWWpIZHZSX3NIZEh0Y1dCbmpUNDI2NzRsUS1NNkYwQ1A5RFlVN2tabEVVWG1PcjlQNEt1bFBYNXpqUlJZaTBqRXktc0pYNnlwYmdPcXdPbHhpMGYzU2NhTkZSVlI3SmVr?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo private credit fund redemption requests ease in third quarter",
+      "source_fingerprint": "0d2eceedad7c44c7541025cb96b08a28bec0a5d7a1c7968b6bdf7a782306413b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "84823662f240c5de7d2303637c273a678d9f7d33715d2ce9053e27544eb0839c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure at an Apollo private credit fund is directly relevant to a tracked manager's credit vehicle and liquidity conditions.",
+      "event_identity": {
+        "subject": "apollo private credit fund",
+        "action": "redemption requests ease",
+        "object": "redemption requests",
+        "period": "third quarter",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "906f8c12189f",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T21:52:42+00:00",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo私人信贷基金第三季度赎回请求有所缓解"
+      },
+      "summary": {
+        "en": "Redemption requests at an Apollo private credit fund eased in the third quarter, according to The Lufkin Daily News.",
+        "zh": "据《The Lufkin Daily News》报道，Apollo旗下一只私人信贷基金第三季度的赎回请求有所缓解。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Lufkin Daily News",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOS1lkd1lPU3lORVJSLWdOSTd0VFNMbUl0QjU3dXgzVzM0cmxrTjNCQlVpb2Qtdm5OaXoyOWlzWmNoWmRwSmFZMWdMMWhIekJNbDBYaWVUOXRPWEZZRDZjY29tb2JWMFZaZkxJSE5TM0dKT2pFRnI4R3paS2JCRDQ4TnFFS1VJcDhGWWw0MThWVzRnOV9oY3ZZX3JiT2JUS2pvWUp1Y1BVTVBEQlowUVg3OThRaVk1cFo2RnZJd3FVSE9pNWs5S3puZnp2eUhkYUxlV2JkMldkWXUtb1hkVzg5REluTjF0c1FqSGozNmZSSktTSzI4MlJKVlROam0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo private credit fund redemption requests ease in third quarter",
+      "source_fingerprint": "0d2eceedad7c44c7541025cb96b08a28bec0a5d7a1c7968b6bdf7a782306413b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "84823662f240c5de7d2303637c273a678d9f7d33715d2ce9053e27544eb0839c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo is a tracked manager, and changing redemption requests on its private credit fund bear on liquidity conditions for its credit strategy.",
+      "event_identity": {
+        "subject": "apollo private credit fund",
+        "action": "redemption requests ease",
+        "object": "third quarter",
+        "period": "third quarter",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "e7da646471c4",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T21:30:10+00:00",
+      "headline": {
+        "en": "Apollo's Private Credit Fund Sees Redemption Requests Cool",
+        "zh": "Apollo 私人信贷基金赎回请求降温"
+      },
+      "summary": {
+        "en": "Apollo's private credit fund saw redemption requests cool, according to Finimize.",
+        "zh": "据 Finimize 报道，Apollo 私人信贷基金的赎回请求有所降温。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMlBDQXdrNnVIOGw5dHNWTTNGWUZNQkFWdmpia2FMU1VHMUdPQ3k2OVI4UlhiVlRBTDNqMEkyNTBVamh5cGhaRnZSQkpOZm1UMHJQME96QWdVVXhmRlNCaE1Ob21rc25HdWJ3QTcxbUZ4T2ctd1RXS1FsVlJhRGxQdWlGb3ZGcHlMYlJZ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo’s Private Credit Fund Sees Redemption Requests Cool",
+      "source_fingerprint": "b799c49302908ebbf28f9e9aa3023f747c69d1010a1ec72bbde31393df6cbc6e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "70311da0040247e866823bae045b417624c435e16f70f7ad547947fe982531fb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure easing at a tracked manager's private credit fund affects liquidity and fundraising conditions for the strategy.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "36bca42befb3",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T21:24:34+00:00",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo私人信贷基金第三季度赎回请求有所缓解"
+      },
+      "summary": {
+        "en": "Redemption requests at an Apollo private credit fund eased in the third quarter, according to the report. No figures on the level of requests were provided.",
+        "zh": "据报道，Apollo旗下一只私人信贷基金第三季度的赎回请求有所缓解。报道未提供赎回请求规模的具体数据。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOd0k5ck9xWE9sWjFtNmt0WTNRZjhlUXBxRmdPWjBUNWlraUY3TExrRmtYZVNSbm1oUEhSTk0wbFZib2U3T19CQi1zYkM3Wjg0YWk1MkwwbU13cXpKVjVId2Q4ZktLTENuUmdaamM2dy1mWVJwR1pkWUs3WE1BVVQ4ZU9YYXJHdm5TbHFaMnpCblF6WU9BY0RRWkVLQ2k3T29QT2c?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo private credit fund redemption requests ease in third quarter",
+      "source_fingerprint": "0d2eceedad7c44c7541025cb96b08a28bec0a5d7a1c7968b6bdf7a782306413b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "84823662f240c5de7d2303637c273a678d9f7d33715d2ce9053e27544eb0839c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure at an Apollo private credit fund bears on liquidity and fundraising conditions for a tracked manager.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "b7fa5b484e59",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T21:00:42+00:00",
+      "headline": {
+        "en": "Apollo Caps Private Credit Fund Again After 14.7% Look to Exit",
+        "zh": "Apollo私人信贷基金在14.7%投资者寻求退出后再次设置赎回上限"
+      },
+      "summary": {
+        "en": "Apollo capped a private credit fund again after 14.7% of investors sought to exit.",
+        "zh": "在14.7%的投资者寻求退出后，Apollo再次对旗下一只私人信贷基金设置赎回上限。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMGpWTWQyRzJpa2JvYlpyUS11bjJqLVNaNDFPMU1XRDZxWEc3aVpZMFdfdGliZjNOeW1rUS1YY2x2b0duVkJNaHJPTFhWQlJTNUJva21oS1h5UTNJREVEM2tsTGxoYk1Eb3BHNHBHMWc1UUhhUnVlTFdjT0d0cHJWOUpLTkNaYWFBSVdCLWFqY1d2ZHg0SG45eWptT3FNSU95ZEV1bHhvWlVubW0yNlpfRjBn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Caps Private Credit Fund Again After 14.7% Look to Exit",
+      "source_fingerprint": "5a367a6cfef13d493f226da1ac43557378d5395cd57d741f455d083bcb70093c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2340424cd211d8f94539532309d991df84b96cb2039b4039e5960b3e5368e371",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure and renewed caps at an Apollo private credit vehicle bear on Apollo's credit franchise liquidity and fundraising conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "434e33cfb7cc",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T21:00:42+00:00",
+      "headline": {
+        "en": "Apollo Caps Private Credit Fund Again After 14.7% Look to Exit",
+        "zh": "投资者寻求赎回14.7%后 Apollo再次限制私人信贷基金赎回"
+      },
+      "summary": {
+        "en": "Apollo capped its private credit fund again after investors sought to exit 14.7% of the fund.",
+        "zh": "在投资者寻求赎回该基金14.7%的份额后，Apollo再次对旗下私人信贷基金实施赎回上限。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQemNUUkY4UzNKUDJoX1FEcXJaNXpWTDRqR1RGT1puRTBBWTVYTm1sbUtQRHlVQ0JsTGN5MXpNaXJtdnYxRW9zVllEb0xyUnZjMWZxc2pUQlltZVo2TWFJV0d0MzlUVVZ6Yzd4Si00SUIzZXVIRi1Gd2l0WEJYbWRIYjlRRVVRdWJRSVlLRzE2S0VfaGFpSHpHY3pHU1cySjJJa0RZemJvc1RaVjZ5SFR0SlhuR2xBZERobmVySjVtT2FZbzFiY3lXZmZqR0ZVTzVh?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Caps Private Credit Fund Again After 14.7% Look to Exit",
+      "source_fingerprint": "5a367a6cfef13d493f226da1ac43557378d5395cd57d741f455d083bcb70093c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2340424cd211d8f94539532309d991df84b96cb2039b4039e5960b3e5368e371",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's repeated redemption cap on its private credit fund signals liquidity pressure at a tracked manager, relevant to credit investors' view.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "2534f52ba751",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T20:51:00+00:00",
+      "headline": {
+        "en": "Apollo Private Credit Fund Redemption Requests Ease in Third Quarter",
+        "zh": "Apollo Private Credit Fund 第三季度赎回请求放缓"
+      },
+      "summary": {
+        "en": "Redemption requests at the Apollo Private Credit Fund eased in the third quarter, according to a U.S. News - Money report dated September 23, 2026.",
+        "zh": "据 U.S. News - Money 2026年9月23日报道，Apollo Private Credit Fund 第三季度赎回请求有所放缓。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "U.S. News - Money",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUk93amdpcEllTWYwZ3FDWmxqQmRSd3NOSkczdXpGZjh3dF9nVUp0MnBCR3F4TTdLS3FtSkRucVp1RlpfX0pnMVJHT2FIQXB6cjg5RTJYMVNrczFROFhvRGVMRWNZcVBvTGJ6WG5NODhfd2FHZUZ2bU1LY2RUOUtiXzAwVUVHNHR6X3dpak5CeXNNa1pXUXJIYy1TeU9uNDc5OEdOeENOVjg3MjVsUzZQNEE5NXhuWHRScmYtUW4ybGR6b3lrbUZN?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Private Credit Fund Redemption Requests Ease in Third Quarter",
+      "source_fingerprint": "eafea879b46f0dd7db84ebb40aa5b28ee33a2aadf8364581c13f4c7610d154f4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b9fe7f629388d625ffb38dba9c200da033aa22121a1d1d82d0299468d2fd74e6",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure at Apollo's private credit fund is directly relevant to a tracked credit manager's vehicle liquidity conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "7659a1216ef9",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T20:44:22+00:00",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo私人信贷基金第三季度赎回请求缓解"
+      },
+      "summary": {
+        "en": "Apollo's private credit fund saw redemption requests ease in the third quarter, according to a TradingView report. No figures were given.",
+        "zh": "据TradingView报道，Apollo的私人信贷基金第三季度赎回请求有所缓解。报道未给出具体数字。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbFotbkN3MTdHeVJPOW1aSmNqSEZ4MUtybnlnMXRVVFNmdFZ3Mk5iXzRHTXNBR2JpTVU1VkMxU3hpUkxzVmpBdDZNVUJCU25TRHdSMHYyZW0tZ2pYNUlDYXI4ek5rSTAtWU1qVlFGUE5lNU9qTlZsY3I1Q1FPR1FCRWxtemtDOFNwX2xtY3RCRHZ1SnNLa0hJdUNPR0t5MGEyalQ2TFpRdk1jMFB1Ul80X3VYRF9nS0JORi0tN3NYNEZmOURmRjhQV09rRGxsUEJIN3l3Sg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo private credit fund redemption requests ease in third quarter",
+      "source_fingerprint": "0d2eceedad7c44c7541025cb96b08a28bec0a5d7a1c7968b6bdf7a782306413b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "84823662f240c5de7d2303637c273a678d9f7d33715d2ce9053e27544eb0839c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's private credit fund redemption trend is a direct capital-access signal for a tracked credit manager.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
       "id": "c87e8c1c89f1",
       "date": "2026-09-23",
       "published_at": "2026-09-22T20:41:43+00:00",
@@ -438,6 +1079,84 @@
       },
       "review_status": "unreviewed",
       "origin": "auto_fetch"
+    },
+    {
+      "id": "35e2bba06c2c",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T20:39:45+00:00",
+      "headline": {
+        "en": "Blue Owl Credit Income Corp extends scheduled maturity to September 2031",
+        "zh": "Blue Owl Credit Income Corp 将预定到期日延长至 2031 年 9 月"
+      },
+      "summary": {
+        "en": "Blue Owl Credit Income Corp extended its scheduled maturity date to September 2031, according to an SEC filing.",
+        "zh": "根据一份 SEC 文件，Blue Owl Credit Income Corp 将其预定到期日延长至 2031 年 9 月。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNVhjOVRKOUlxTHNOTXVnXzNoZUtmTS1MaFYwN1lpME1MQ0ZNYnltY3ctN2J6OExoWmc1cTdPal9XOEdySnNNRVQ0a2lRNEJjTTU0SlY1UTVsejFoakt6WTZoblRWbUlCMW1BQ3pjbk1TY0l3RUsxVGE3YUMwQ3lqTDdQN0lIWXRhQ2hBa01DRkNKc2tjUW5mazVYZHZLcFZtdWkwZWJ0aFloQVE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "BLUE OWL CREDIT INCOME CORP - EXTENDS SCHEDULED MATURITY DATE TO SEPTEMBER 2031 - SEC FILING",
+      "source_fingerprint": "bb43139fcc544855ae12accc7cd7b8b09d135b3b112db04c5b36dddd049a94df",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "cfa02479dcd9ab2a33058c737ce870dec45c583547ea15bf52ddcb796c821f20",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A maturity extension for a Blue Owl credit vehicle changes duration and refinancing conditions for a tracked manager's debt platform.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
+    },
+    {
+      "id": "fada07d0316a",
+      "date": "2026-09-23",
+      "published_at": "2026-09-22T20:36:56+00:00",
+      "headline": {
+        "en": "Blue Owl Credit Income amends credit facility, raises $1.3b",
+        "zh": "Blue Owl Credit Income 修订信贷安排，筹集 13 亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl Credit Income amended its credit facility and raised $1.3 billion. No further details were provided in the supplied excerpt.",
+        "zh": "Blue Owl Credit Income 修订了其信贷安排，并筹集了 13 亿美元。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com Nigeria",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNUJNU2dINGltMVFTWElXa05FamVzUlVSaHRNbV96TXl2bE5rSFhuN3U4MUt2MVU5eC1qT1VmY1l3RGZtYXlPZTE5dlNIOW5aZHRsSWxEcTIzRkk2TVZmR1BXOTJLU09pSXZpOFhXSjRNWDBTcVNJTlEwV0N1ZWJTNjZHQU5aMWFfODA3aWFFREV6eU1RWGtBajF0dWVnNHpFWWNNU1dqT0x1anZMMG1ZeUR2NXpOM1Bo?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Credit Income amends credit facility, raises $1.3b By Investing.com",
+      "source_fingerprint": "0e235f20153c43d6e98a64ec27528b304f776e0cf0409634da861ae7f51e28a6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e20c9bb96cc473d24ae194200bedcbb58c690aac310c466e698e6d287d7e2666",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "The tracked manager's credit vehicle raised capacity under a credit facility, which bears on its financing and liquidity conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-24T04:12:17+00:00"
     },
     {
       "id": "320feac29e99",
