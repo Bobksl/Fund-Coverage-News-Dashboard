@@ -20,6 +20,7 @@ sync_api = pytest.importorskip("playwright.sync_api")
 PUBLIC = Path(__file__).resolve().parents[1] / "public"
 DATA = PUBLIC / "data"
 REPORT = "reports/junson-private-credit-report-2026q3-en-v2.pdf"
+REPORT_ZH = "reports/junson-private-credit-report-2026q3-zh-v1.pdf"
 
 
 def load(name):
@@ -348,19 +349,33 @@ def test_synthetic_priority_order_labels_and_potential_urgent(page):
 
 # ---- Reports ----------------------------------------------------------------------------------
 
-def test_reports_view_with_open_download_and_pending_chinese(page):
+def test_reports_view_open_download_and_language(page):
     open_site(page, "#reports")
     page.wait_for_selector("#reports object.pdf")
     assert page.is_hidden("#toolbar") and page.is_hidden("#main")
     assert page.get_attribute("#reports object.pdf", "data") == REPORT
     hrefs = page.eval_on_selector_all("#reports .report-actions a", "links => links.map(link => link.getAttribute('href'))")
     assert hrefs == [REPORT, REPORT]
-    response = page.request.get(page.base + REPORT)
-    assert response.ok and response.body()[:5] == b"%PDF-"
+    for path in (REPORT, REPORT_ZH):
+        response = page.request.get(page.base + path)
+        assert response.ok and response.body()[:5] == b"%PDF-"
+    # Explicit Chinese choice shows the approved Chinese PDF.
     page.click("#reports .report-lang button:nth-child(2)")
-    assert "has not been published" in page.text_content("#reports")
+    assert page.get_attribute("#reports object.pdf", "data") == REPORT_ZH
+    assert page.text_content("#reports .report-lang button:nth-child(2)") == "中文"
+    assert "has not been published" not in page.text_content("#reports")
+    page.click("#reports .report-lang button:nth-child(1)")
     assert page.get_attribute("#reports object.pdf", "data") == REPORT
-    page.click("[data-lang='zh']")
-    assert "Translation pending" not in page.text_content("#reports") and "翻译待审核" in page.text_content("#reports")
     page.click("[data-view='news']")
     page.wait_for_function("!document.getElementById('main').hidden")
+
+
+def test_reports_default_to_page_language_and_pending_fallback(page):
+    open_site(page, "#reports")
+    page.click("[data-lang='zh']")
+    page.wait_for_selector("#reports object.pdf")
+    assert page.get_attribute("#reports object.pdf", "data") == REPORT_ZH
+    # Without an approved Chinese file the option says so and English stays available.
+    page.evaluate("REPORTS[0].files.zh = null; renderReports()")
+    assert "翻译待审核" in page.text_content("#reports") and "暂未发布" in page.text_content("#reports")
+    assert page.get_attribute("#reports object.pdf", "data") == REPORT

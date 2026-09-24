@@ -27,11 +27,11 @@ Files: `public/app.js`, `public/index.html`, `public/reports/`, `tests/test_dash
 - **Reports tab (`#reports`).**
   - The report shows inline in an `<object>` PDF viewer. **Open PDF** and **Download PDF** are always visible, and browsers without a PDF viewer show a fallback message.
   - The report language follows the page language until the reader picks one.
-  - Chinese is labelled "Translation pending". Choosing it shows a notice and the English original.
+  - English and Chinese PDFs are both published. If a report has no approved file for a language, that option reads "Translation pending" and the English original is shown with a notice.
 - **Unchanged:** Today, Earlier/Later, the date menu, language persistence, status line, fallback-to-latest notice, loading/error/empty states, textContent-only rendering and the http(s) link check.
 
 ## Verification (24 September, local server)
-`python -m pytest -q tests/test_dashboard_ui.py` runs real headless Chromium through Playwright against a local server for `public/`. Failure cases use request interception, and nothing is written to `public/data/`. Result: **14 passed**.
+`python -m pytest -q tests/test_dashboard_ui.py` runs real headless Chromium through Playwright against a local server for `public/`. Failure cases use request interception, and nothing is written to `public/data/`. Result: **15 passed**.
 
 **Real archive:**
 - **Every date (34):** the cards match the date-view representatives in rank order, and the count matches. Every raw article's link is reachable from a card or its Sources list.
@@ -54,7 +54,7 @@ Files: `public/app.js`, `public/index.html`, `public/reports/`, `tests/test_dash
 - Potential-urgent notices appear on the Urgent card and on one Needs review card, and Needs review is never labelled Useful.
 - A single date uses its own ranks, which differ from the global order. Newest and a language switch keep the expected order.
 
-**Full suite:** `python -m pytest -q` gives 395 passed and 14 subtests passed (Codex's 381 plus these 14). Lint and whitespace: `python -m ruff check tests/test_dashboard_ui.py` and `git diff --check` pass.
+**Full suite:** `python -m pytest -q` gives 396 passed and 14 subtests passed (Codex's 381 plus these 15). Lint and whitespace: `python -m ruff check tests/test_dashboard_ui.py` and `git diff --check` pass.
 
 ## English report PDF
 `public/reports/junson-private-credit-report-2026q3-en-v2.pdf`, SHA-256 `84e9a89bb7f27dc6f1cb316b810dcecb46d6ab89f7799e71bc9b725e15a0ab0c`.
@@ -75,17 +75,25 @@ Files: `public/app.js`, `public/index.html`, `public/reports/`, `tests/test_dash
 - Page breaks separate some captions from their charts: Exhibit 9 (pp. 3→4), Exhibits 14/15 (5→6), 34/35 (12→13) and 58 (20→21).
 - Every page footer reads "For internal research use only". Publishing publicly was authorized for this assignment.
 
-## Chinese version: review packet (not published)
-No approved Chinese PDF exists. The site shows 中文 · 翻译待审核 / Translation pending and keeps the English report available. On 24 September the user approved an AI draft. Draft v0.1 is kept locally in the git-ignored `work/report-zh-draft/`: an editable DOCX with the original layout, a preview PDF and a side-by-side EN/ZH review file. Its `REVIEW_NOTES.md` lists the checks and the terminology decisions. The draft is not committed or published.
+## Chinese report PDF (approved)
+`public/reports/junson-private-credit-report-2026q3-zh-v1.pdf` (Simplified Chinese).
 
-For a Chinese PDF, the analyst must decide or review:
-1. **Script:** Simplified Chinese is the default, matching the dashboard. Confirm it, or choose Traditional.
-2. **Narrative and captions:** the running text, 58 exhibit captions and their notes, and the tables' headers and cells.
-   - Keep official names in English or in their official Chinese form: fund names (PAG BRS Fund III, Guggenheim PDF IV, HSBC RCF), data vendors, and index names (Morningstar LSTA, ICE BofA).
-   - Keep every number, unit (US$bn, bps, x, pp) and date unchanged.
-3. **Caveats:** keep every approximation caveat ("digitised approximations", "approximate readings", "as labelled in the source") and the †/* basis markers with their meaning.
-4. **Numeric check:** confirm that every number in the Chinese PDF matches the English source. The check used here for the English PDF can be re-run.
-5. **Chart labels:** choose one of the options below.
+**How it was made:**
+- An AI draft was translated from the English source and rebuilt in the original layout.
+- It passed per-segment number checks: every number in each English segment appears in its Chinese segment.
+- On 24 September the analyst reviewed it and approved it, including the terminology. The analyst exported this PDF and added `files.zh` in `public/app.js`.
+
+**Checks on the published file:**
+- 22 A4 pages, with all 58 exhibits and all 46 images.
+- Every numeric token in the English source appears in the PDF text.
+- No personal document metadata.
+- The file is byte-identical to the reviewed draft preview.
+
+**Kept as in the English, by analyst decision:**
+- The chart images keep their English labels (option A below; redrawing is deferred).
+- The Exhibit 9 draft note and the "internal research use only" footer are also left unchanged.
+
+**Pending:** the analyst's full review on the afternoon of 24 September may produce corrections. Those should be applied to the draft source in `work/report-zh-draft/` (`zh_*.json`, then `build_zh.py`), exported again, and published under a new version number (`…-zh-v2.pdf`), not by overwriting v1.
 
 ### Chart labels inside images
 All 46 images contain English text: titles, legends, axis labels, category names and data callouts. They are images, so the text cannot be translated in the DOCX. 45 are charts for Exhibits 1–7, 9–15, 17–29, 32–35, 39–40, 43–44 and 49–58; the 46th is the Exhibit 31 maturity-wall chart inside a layout table. Exhibits 8, 16, 30, 36–38, 41–42 and 45–48 are Word tables and are translated with the text.
@@ -105,6 +113,7 @@ All 46 images contain English text: titles, legends, axis labels, category names
 - **B — Full label translation.** Redraw all 46 charts with Chinese labels. This needs the original chart data or scripts, because the DOCX holds only PNGs. The plan estimates about 6–12 extra hours; add analyst review of every redrawn chart. Without the original chart sources, the charts must be rebuilt from the digitised values, and the estimate should be redone before starting.
 
 ## Remaining work
-- The analyst reviews or supplies the Chinese translation. Publishing it means adding `files.zh` to `REPORTS` in `public/app.js` and a versioned `public/reports/…-zh-….pdf`.
+- **Analyst's full Chinese review (24 September afternoon):** any corrections become `…-zh-v2.pdf` plus an update to `REPORTS` in `public/app.js`.
+- **Chart labels:** redrawing them in Chinese is deferred by analyst decision.
 - **Historical priority and source backfill (Codex's lane):** all legacy events stay Needs review until evidence is recovered.
 - **Before release:** after deployment, check the PDF inline in a desktop browser with a PDF viewer. Headless Chromium has no viewer, so only the Open/Download fallback was verified.

@@ -69,6 +69,7 @@ const I18N = {
     reportLangLabel: "Report language",
     reportEn: "English",
     reportZh: "中文 · Translation pending",
+    reportZhReady: "中文",
     reportZhPending: "The Chinese translation is awaiting analyst review and has not been published. The English original is shown below.",
     reportMeta: "Published {date} · {lang} · PDF",
     reportOpen: "Open PDF",
@@ -132,6 +133,7 @@ const I18N = {
     reportLangLabel: "报告语言",
     reportEn: "English",
     reportZh: "中文 · 翻译待审核",
+    reportZhReady: "中文",
     reportZhPending: "中文译本尚待分析师审核，暂未发布。以下为英文原版。",
     reportMeta: "发布日期 {date} · {lang} · PDF",
     reportOpen: "打开 PDF",
@@ -145,7 +147,7 @@ const I18N = {
 const REPORTS = [{
   title: {en: "Private Credit Quarterly Report (2026Q3)", zh: "私募信贷季度报告（2026年第三季度）"},
   date: "2026-08-13",
-  files: {en: "reports/junson-private-credit-report-2026q3-en-v2.pdf", zh: null},
+  files: {en: "reports/junson-private-credit-report-2026q3-en-v2.pdf", zh: "reports/junson-private-credit-report-2026q3-zh-v1.pdf"},
 }];
 
 const LANG_KEY = "fund-coverage-news-lang";
@@ -680,7 +682,7 @@ function renderReports() {
     const section = el("section", {className: "report"});
     section.appendChild(el("h3", {className: "headline", text: bilingual(report.title)}));
     const picker = el("div", {className: "lang report-lang", attrs: {role: "group", "aria-label": t("reportLangLabel")}});
-    for (const [code, key] of [["en", "reportEn"], ["zh", "reportZh"]]) {
+    for (const [code, key] of [["en", "reportEn"], ["zh", report.files.zh ? "reportZhReady" : "reportZh"]]) {
       const button = el("button", {text: t(key), attrs: {type: "button", "aria-pressed": String(code === lang)}});
       button.addEventListener("click", () => {
         state.reportLang = code;
