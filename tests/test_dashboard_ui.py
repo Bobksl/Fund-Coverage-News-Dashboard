@@ -20,7 +20,7 @@ sync_api = pytest.importorskip("playwright.sync_api")
 PUBLIC = Path(__file__).resolve().parents[1] / "public"
 DATA = PUBLIC / "data"
 REPORT = "reports/junson-private-credit-report-2026q3-en-v2.pdf"
-REPORT_ZH = "reports/junson-private-credit-report-2026q3-zh-v1.pdf"
+REPORT_ZH = "reports/junson-private-credit-report-2026q3-zh-v2.pdf"
 
 
 def load(name):
@@ -363,19 +363,20 @@ def test_reports_view_open_download_and_language(page):
     page.click("#reports .report-lang button:nth-child(2)")
     assert page.get_attribute("#reports object.pdf", "data") == REPORT_ZH
     assert page.text_content("#reports .report-lang button:nth-child(2)") == "中文"
-    assert "has not been published" not in page.text_content("#reports")
+    assert "pending" not in page.text_content("#reports").lower()
     page.click("#reports .report-lang button:nth-child(1)")
     assert page.get_attribute("#reports object.pdf", "data") == REPORT
     page.click("[data-view='news']")
     page.wait_for_function("!document.getElementById('main').hidden")
 
 
-def test_reports_default_to_page_language_and_pending_fallback(page):
+def test_reports_default_to_page_language_and_english_fallback(page):
     open_site(page, "#reports")
     page.click("[data-lang='zh']")
     page.wait_for_selector("#reports object.pdf")
     assert page.get_attribute("#reports object.pdf", "data") == REPORT_ZH
-    # Without an approved Chinese file the option says so and English stays available.
+    # Without an approved Chinese file only English is offered, with no pending wording.
     page.evaluate("REPORTS[0].files.zh = null; renderReports()")
-    assert "翻译待审核" in page.text_content("#reports") and "暂未发布" in page.text_content("#reports")
+    buttons = page.eval_on_selector_all("#reports .report-lang button", "nodes => nodes.map(node => node.textContent)")
+    assert buttons == ["English"] and "待审核" not in page.text_content("#reports")
     assert page.get_attribute("#reports object.pdf", "data") == REPORT

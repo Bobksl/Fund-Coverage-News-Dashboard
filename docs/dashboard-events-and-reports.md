@@ -27,7 +27,7 @@ Files: `public/app.js`, `public/index.html`, `public/reports/`, `tests/test_dash
 - **Reports tab (`#reports`).**
   - The report shows inline in an `<object>` PDF viewer. **Open PDF** and **Download PDF** are always visible, and browsers without a PDF viewer show a fallback message.
   - The report language follows the page language until the reader picks one.
-  - English and Chinese PDFs are both published. If a report has no approved file for a language, that option reads "Translation pending" and the English original is shown with a notice.
+  - English and Chinese PDFs are both published, and the picker reads English | 中文. Only languages with an approved file are offered; if one is missing, the English report is shown, with no placeholder wording.
 - **Unchanged:** Today, Earlier/Later, the date menu, language persistence, status line, fallback-to-latest notice, loading/error/empty states, textContent-only rendering and the http(s) link check.
 
 ## Verification (24 September, local server)
@@ -76,24 +76,24 @@ Files: `public/app.js`, `public/index.html`, `public/reports/`, `tests/test_dash
 - Every page footer reads "For internal research use only". Publishing publicly was authorized for this assignment.
 
 ## Chinese report PDF (approved)
-`public/reports/junson-private-credit-report-2026q3-zh-v1.pdf` (Simplified Chinese).
+`public/reports/junson-private-credit-report-2026q3-zh-v2.pdf` (Simplified Chinese, 21 A4 pages).
 
 **How it was made:**
 - An AI draft was translated from the English source and rebuilt in the original layout.
 - It passed per-segment number checks: every number in each English segment appears in its Chinese segment.
-- On 24 September the analyst reviewed it and approved it, including the terminology. The analyst exported this PDF and added `files.zh` in `public/app.js`.
+- On 24 September the analyst reviewed it and approved it, including the terminology.
 
-**Checks on the published file:**
-- 22 A4 pages, with all 58 exhibits and all 46 images.
-- Every numeric token in the English source appears in the PDF text.
-- No personal document metadata.
-- The file is byte-identical to the reviewed draft preview.
+**v2 (current):** v1 had one blank page (page 17). A manual page break in its own paragraph before "Competitor Analysis" spilled onto a new page once the Chinese text filled page 16 exactly.
+- **Fix:** the build now removes that paragraph and marks the heading "page break before", so the section still starts on a new page. It lives in `build_zh.py` and applies to the Chinese document only.
+- **Result:** every page's text is identical to v1 with the blank page removed. There are no near-empty pages, all 58 exhibits and 46 images are present, and every numeric token from the English source appears.
+- **v1 file:** removed from `public/reports/` and kept in git history (commit `9581f1b`).
+- **English PDF:** has no blank page and is unchanged.
 
 **Kept as in the English, by analyst decision:**
 - The chart images keep their English labels (option A below; redrawing is deferred).
 - The Exhibit 9 draft note and the "internal research use only" footer are also left unchanged.
 
-**Pending:** the analyst's full review on the afternoon of 24 September may produce corrections. Those should be applied to the draft source in `work/report-zh-draft/` (`zh_*.json`, then `build_zh.py`), exported again, and published under a new version number (`…-zh-v2.pdf`), not by overwriting v1.
+**Corrections:** the analyst's full review may produce corrections. Apply them in `work/report-zh-draft/` (`zh_*.json`, then `python build_zh.py`), export the output with Word, and publish it as `…-zh-v3.pdf`. Then update `REPORTS` in `public/app.js`.
 
 ### Chart labels inside images
 All 46 images contain English text: titles, legends, axis labels, category names and data callouts. They are images, so the text cannot be translated in the DOCX. 45 are charts for Exhibits 1–7, 9–15, 17–29, 32–35, 39–40, 43–44 and 49–58; the 46th is the Exhibit 31 maturity-wall chart inside a layout table. Exhibits 8, 16, 30, 36–38, 41–42 and 45–48 are Word tables and are translated with the text.
@@ -113,7 +113,7 @@ All 46 images contain English text: titles, legends, axis labels, category names
 - **B — Full label translation.** Redraw all 46 charts with Chinese labels. This needs the original chart data or scripts, because the DOCX holds only PNGs. The plan estimates about 6–12 extra hours; add analyst review of every redrawn chart. Without the original chart sources, the charts must be rebuilt from the digitised values, and the estimate should be redone before starting.
 
 ## Remaining work
-- **Analyst's full Chinese review (24 September afternoon):** any corrections become `…-zh-v2.pdf` plus an update to `REPORTS` in `public/app.js`.
+- **Analyst's full Chinese review (24 September afternoon):** any corrections become `…-zh-v3.pdf` plus an update to `REPORTS` in `public/app.js`.
 - **Chart labels:** redrawing them in Chinese is deferred by analyst decision.
 - **Historical priority and source backfill (Codex's lane):** all legacy events stay Needs review until evidence is recovered.
 - **Before release:** after deployment, check the PDF inline in a desktop browser with a PDF viewer. Headless Chromium has no viewer, so only the Open/Download fallback was verified.

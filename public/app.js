@@ -67,10 +67,6 @@ const I18N = {
     navReports: "Reports",
     reportsTitle: "Reports",
     reportLangLabel: "Report language",
-    reportEn: "English",
-    reportZh: "中文 · Translation pending",
-    reportZhReady: "中文",
-    reportZhPending: "The Chinese translation is awaiting analyst review and has not been published. The English original is shown below.",
     reportMeta: "Published {date} · {lang} · PDF",
     reportOpen: "Open PDF",
     reportDownload: "Download PDF",
@@ -131,10 +127,6 @@ const I18N = {
     navReports: "研究报告",
     reportsTitle: "研究报告",
     reportLangLabel: "报告语言",
-    reportEn: "English",
-    reportZh: "中文 · 翻译待审核",
-    reportZhReady: "中文",
-    reportZhPending: "中文译本尚待分析师审核，暂未发布。以下为英文原版。",
     reportMeta: "发布日期 {date} · {lang} · PDF",
     reportOpen: "打开 PDF",
     reportDownload: "下载 PDF",
@@ -143,13 +135,14 @@ const I18N = {
   },
 };
 
-// Published reports. A language without an approved file is listed as pending, never substituted.
+// Published reports. Only languages with an approved file are offered; otherwise English is shown.
 const REPORTS = [{
   title: {en: "Private Credit Quarterly Report (2026Q3)", zh: "私募信贷季度报告（2026年第三季度）"},
   date: "2026-08-13",
-  files: {en: "reports/junson-private-credit-report-2026q3-en-v2.pdf", zh: "reports/junson-private-credit-report-2026q3-zh-v1.pdf"},
+  files: {en: "reports/junson-private-credit-report-2026q3-en-v2.pdf", zh: "reports/junson-private-credit-report-2026q3-zh-v2.pdf"},
 }];
 
+const REPORT_LANGS = {en: "English", zh: "中文"};
 const LANG_KEY = "fund-coverage-news-lang";
 const DAY_CONCURRENCY = 4;
 const state = {
@@ -681,9 +674,10 @@ function renderReports() {
   for (const report of REPORTS) {
     const section = el("section", {className: "report"});
     section.appendChild(el("h3", {className: "headline", text: bilingual(report.title)}));
+    const shownLang = report.files[lang] ? lang : "en";
     const picker = el("div", {className: "lang report-lang", attrs: {role: "group", "aria-label": t("reportLangLabel")}});
-    for (const [code, key] of [["en", "reportEn"], ["zh", report.files.zh ? "reportZhReady" : "reportZh"]]) {
-      const button = el("button", {text: t(key), attrs: {type: "button", "aria-pressed": String(code === lang)}});
+    for (const code of Object.keys(REPORT_LANGS).filter((code) => report.files[code])) {
+      const button = el("button", {text: REPORT_LANGS[code], attrs: {type: "button", "aria-pressed": String(code === shownLang)}});
       button.addEventListener("click", () => {
         state.reportLang = code;
         renderReports();
@@ -692,11 +686,9 @@ function renderReports() {
     }
     section.appendChild(picker);
 
-    const shownLang = report.files[lang] ? lang : "en";
-    if (shownLang !== lang) section.appendChild(el("p", {className: "notice", text: t("reportZhPending")}));
     const href = report.files[shownLang];
     section.appendChild(el("p", {className: "count", text: t("reportMeta", {
-      date: formatDay(report.date, "short"), lang: shownLang === "zh" ? "中文" : "English"})}));
+      date: formatDay(report.date, "short"), lang: REPORT_LANGS[shownLang]})}));
     const actions = el("p", {className: "report-actions"}, [
       el("a", {className: "button", text: t("reportOpen"), attrs: {href, target: "_blank", rel: "noopener"}}),
       el("a", {className: "button", text: t("reportDownload"), attrs: {href, download: href.split("/").pop()}}),
