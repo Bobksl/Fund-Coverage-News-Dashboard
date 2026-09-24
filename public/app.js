@@ -280,10 +280,12 @@ function groupingFits(days) {
     const checked = new Set();
     for (const id of ids) {
       const event = state.events.byCard.get(id);
-      if (!event || checked.has(event)) continue;
-      checked.add(event);
+      if (!event) continue;
       const view = event.date_views[day];
-      if (!view || !view.member_card_ids.includes(id) || view.member_card_ids.some((member) => !ids.has(member))) return false;
+      if (!view || !view.member_card_ids.includes(id)) return false;
+      if (checked.has(event)) continue;
+      checked.add(event);
+      if (view.member_card_ids.some((member) => !ids.has(member))) return false;
     }
   }
   return true;

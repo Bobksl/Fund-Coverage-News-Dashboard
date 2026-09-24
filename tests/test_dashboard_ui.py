@@ -254,6 +254,22 @@ def test_stale_index_and_unmapped_new_card(page):
     assert "does not match these articles" in page.text_content("#main")
 
 
+def test_stale_date_view_cannot_omit_a_loaded_group_member(page):
+    data = load("events.json")
+    day = "2026-09-23"
+    event = next(event for event in data["events"]
+                 if len(event["date_views"].get(day, {}).get("member_card_ids", [])) == 2)
+    view = event["date_views"][day]
+    first = next(item["id"] for item in DAYS[day] if item["id"] in view["member_card_ids"])
+    view["member_card_ids"] = [first]
+    view["representative_card_id"] = first
+    page.route("**/data/events.json", lambda route: route.fulfill(json=data))
+    open_site(page)
+    pick(page, day)
+    assert sorted(card_ids(page)) == sorted(item["id"] for item in DAYS[day])
+    assert "does not match these articles" in page.text_content("#main")
+
+
 def test_partial_all_dates_load_names_failures_and_retries(page):
     failing = INDEX["dates"][3]
     page.route(f"**/data/{failing}.json", lambda route: route.fulfill(status=500, body="error"))
