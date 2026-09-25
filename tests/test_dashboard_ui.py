@@ -134,10 +134,10 @@ def test_same_day_pairs_expand_to_both_sources(page):
             pick(page, day)
             card = page.locator(f"#main .card[data-card='{view['representative_card_id']}']")
             summary = card.locator("details.sources summary")
-            assert summary.text_content() == "Sources (2)"
+            assert summary.text_content() == f"Sources ({len(view['member_card_ids'])})"
             summary.click()
             items = card.locator(".source-list li")
-            assert items.count() == 2
+            assert items.count() == len(view["member_card_ids"])
             for index, member in enumerate(view["member_card_ids"]):
                 text = items.nth(index).text_content()
                 assert CARDS[member]["headline"]["en"] in text and CARDS[member]["summary"]["en"] in text
@@ -152,7 +152,9 @@ def test_all_dates_lists_each_event_once_and_every_article(page):
     assert page.text_content("#main .count") == f"{len(EVENTS)} events · {len(CARDS)} articles · {len(DAYS)} dates"
     links = page.eval_on_selector_all("#main .source a", "links => links.map(link => link.href)")
     assert {item["source"]["url"] for item in CARDS.values()} <= set(links)
-    assert page.locator("details.sources summary", has_text="Sources (2)").count() == 8
+    for size in {len(event["member_card_ids"]) for event in EVENTS} - {1}:
+        expected = sum(len(event["member_card_ids"]) == size for event in EVENTS)
+        assert page.locator("details.sources summary", has_text=f"Sources ({size})").count() == expected
     # Earlier/Later are disabled here but still visible, and come back on a date.
     assert page.is_disabled("#prev") and page.is_disabled("#next") and page.is_visible("#prev")
     pick(page, INDEX["dates"][5])
@@ -202,7 +204,9 @@ def test_today_from_all_dates_and_legacy_priority_notice(page):
     open_site(page)
     show_all(page)
     assert "Needs review" in page.text_content("#main")
-    assert "No article here has an assessed priority yet" in page.text_content("#main")
+    # The notice is shown only while nothing in the archive has an assessed priority.
+    assessed = any(event["priority"]["priority"] != "needs_review" for event in EVENTS)
+    assert ("No article here has an assessed priority yet" in page.text_content("#main")) is not assessed
     page.click("#today")
     page.wait_for_function("state.mode === 'date' && state.date !== null")
     assert page.input_value("#dateSelect") == page.evaluate("state.date")

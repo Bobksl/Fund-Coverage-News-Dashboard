@@ -8,11 +8,18 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-from tools import news_priority
+from tools import news_priority, summarize
 
 ROOT = Path(__file__).resolve().parents[1]
 GROUPS_PATH = ROOT / 'config' / 'news_event_groups.json'
-VERSION = 'events-v1'
+VERSION = 'events-v2'
+# Reviewed member roles: coverage/reaction never advance material time; a reviewed update does.
+ROLES = ('coverage', 'reaction', 'update')
+NOVELTY_WINDOW_S = 7 * 86400
+# An exact repeated headline is evidence of one story only with a discriminating anchor
+# (figure, quarter or month); "Apollo announces quarterly results" alone proves nothing.
+ANCHOR = re.compile(r'\d|\b(?:first|second|third|fourth) quarter\b|\bq[1-4]\b|\b(?:january|february|march|april|'
+                    r'may|june|july|august|september|october|november|december)\b', re.IGNORECASE)
 
 
 def normalize_title(value):
@@ -48,9 +55,11 @@ def epoch(stamp):
 
 def representative(members):
     # Human approval is attached to this exact card, not transferred to other summaries.
+    # Informative length ignores "no further details" filler, which otherwise wins on length.
     return min(members, key=lambda c: (c.get('review_status') != 'reviewed',
                                       not (c.get('assessment') or {}).get('assessable', False),
-                                      -len(c['summary']['en']), epoch(card_stamp(c)), c['id']))
+                                      -len(summarize.strip_absence_claims(c['summary']['en'])),
+                                      epoch(card_stamp(c)), c['id']))
 
 
 def card_assessment(card):
@@ -72,17 +81,45 @@ def display_gps(card):
     return gps
 
 
-def _approved_keys(cards, groups):
+def load_overlay(path=GROUPS_PATH):
+    return json.loads(Path(path).read_text(encoding='utf-8'))
+
+
+def _approved(cards, groups):
+    """Card ID -> reviewed group, for groups whose present members all still match their hashes."""
+    seen = {}
+    for group in groups:
+        for member in group['members']:
+            if member['id'] in seen:
+                raise ValueError(f"card {member['id']} is in two reviewed groups: {seen[member['id']]}, {group['event_id']}")
+            seen[member['id']] = group['event_id']
     by_id = {c['id']: c for c in cards}
-    keys = {}
+    approved = {}
     for group in groups:
         present = [m for m in group['members'] if m['id'] in by_id]
-        # Any changed headline invalidates the whole decision, not just one member.
+        # Any changed card invalidates the whole decision, not just one member.
         if all(by_id[m['id']]['headline']['en'] == m['headline'] and
                (not m.get('card_sha256') or card_hash(by_id[m['id']]) == m['card_sha256']) for m in present):
             for member in present:
-                keys[member['id']] = group['event_id']
-    return keys
+                approved[member['id']] = group
+    return approved
+
+
+def _corrections(cards, overlay):
+    """Hash-checked publication-date corrections; the raw card keeps its original value."""
+    by_id = {c['id']: c for c in cards}
+    valid = {}
+    for fix in overlay.get('corrections', []):
+        card = by_id.get(fix.get('card_id'))
+        if (card and fix.get('field') == 'published_at' and card.get('published_at') == fix.get('original')
+                and card_hash(card) == fix.get('card_sha256')):
+            valid[card['id']] = fix
+    return valid
+
+
+def headline_key(card):
+    title = card.get('source_headline')
+    return normalize_title(title) if title and ANCHOR.search(title) else None
 
 
 def card_hash(card):
@@ -111,20 +148,53 @@ def same_revision_event(card, parent):
     return bool(card.get('source_headline')) and normalize_title(card['source_headline']) == normalize_title(parent.get('source_headline', ''))
 
 
-def build_events(cards, *, groups=None, previous=None, as_of=None):
-    if groups is None:
-        groups = json.loads(GROUPS_PATH.read_text(encoding='utf-8'))['groups']
+def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None):
+    if overlay is None:
+        overlay = load_overlay() if groups is None else {'groups': groups}
     if len({c['id'] for c in cards}) != len(cards):
         raise ValueError('duplicate source card IDs')
     as_of = as_of or datetime.now(timezone.utc).isoformat(timespec='seconds')
-    approved = _approved_keys(cards, groups)
-    prior = {cid: event['event_id'] for event in (previous or {}).get('events', [])
-             for cid in event['member_card_ids']}
-    buckets = {}
-    card_keys = {}
+    approved = _approved(cards, overlay.get('groups', []))
+    fixes = _corrections(cards, overlay)
+
+    def stamp(card):
+        fix = fixes.get(card['id'])
+        if fix:
+            value = fix['corrected']
+            return value if 'T' in value else value + 'T00:00:00+08:00'
+        return card_stamp(card)
+
+    def when(card):
+        return (epoch(stamp(card)), card['id'])
+
+    prior, prior_aliases = {}, {}
+    for event in (previous or {}).get('events', []):
+        prior_aliases[event['event_id']] = event.get('aliases', [])
+        for cid in event['member_card_ids']:
+            prior[cid] = event['event_id']
+    buckets, card_keys, heads = {}, {}, {}
     by_id = {c['id']: c for c in cards}
-    for card in sorted(cards, key=lambda c: (epoch(card_stamp(c)), c['id'])):
-        key = ('reviewed', approved[card['id']]) if card['id'] in approved else _auto_key(card)
+    ordered = sorted(cards, key=when)
+    # Reviewed decisions first, so later repeats of a reviewed story can find it archive-wide.
+    for card in ordered:
+        if card['id'] in approved:
+            key = ('reviewed', approved[card['id']]['event_id'])
+            card_keys[card['id']] = key
+            buckets.setdefault(key, []).append(card)
+            if headline_key(card):
+                heads.setdefault(headline_key(card), []).append((key, epoch(stamp(card))))
+    for card in ordered:
+        if card['id'] in approved:
+            continue
+        head = headline_key(card)
+        if head:
+            moment = epoch(stamp(card))
+            key = next((k for k, start in heads.get(head, []) if abs(moment - start) <= NOVELTY_WINDOW_S), None)
+            if key is None:
+                key = ('headline', head, card['id'])
+                heads.setdefault(head, []).append((key, moment))
+        else:
+            key = _auto_key(card)
         card_keys[card['id']] = key
         buckets.setdefault(key, []).append(card)
     # Same-source revisions are explicitly linked by the ingestion code, not headline similarity.
@@ -138,23 +208,32 @@ def build_events(cards, *, groups=None, previous=None, as_of=None):
                 for member in moving:
                     card_keys[member['id']] = target
     events, used_ids = [], set()
-    for key, members in buckets.items():
-        candidate_ids = sorted({prior[c['id']] for c in members if c['id'] in prior})
-        event_id = key[1] if key[0] == 'reviewed' else next(
-            (value for value in candidate_ids if value not in used_ids), 'evt-' + members[0]['id'])
+    for key, members in sorted(buckets.items(), key=lambda kv: (kv[0][0] != 'reviewed', min(map(when, kv[1])))):
+        members.sort(key=when)
+        group = approved[members[0]['id']] if key[0] == 'reviewed' else {}
+        # Survivor: reviewed ID, else the prior event of the earliest member; never an ID already taken.
+        event_id = key[1] if group else next((prior[c['id']] for c in members if c['id'] in prior
+                                              and prior[c['id']] not in used_ids), 'evt-' + members[0]['id'])
         if event_id in used_ids:
             event_id = 'evt-' + members[0]['id']
         used_ids.add(event_id)
-        members.sort(key=lambda c: (epoch(card_stamp(c)), c['id']))
+        roles = {m['id']: m['role'] for m in group.get('members', [])
+                 if m['id'] in by_id and m.get('role', 'coverage') != 'coverage'}
+        pinned = next((c for c in members if c['id'] == group.get('representative_card_id')), None)
         revisions = [c for c in members if c.get('supersedes_card_id')]
-        latest_revision = max(revisions, key=lambda c: (epoch(c.get('observed_at') or card_stamp(c)), c['id'])) if revisions else None
-        chosen = latest_revision or representative(members)
-        first = min(members, key=lambda c: (epoch(card_stamp(c)), c['id']))
+        latest_revision = max(revisions, key=lambda c: (epoch(c.get('observed_at') or stamp(c)), c['id'])) if revisions else None
+        chosen = pinned or latest_revision or representative(members)
+        first = members[0]
         views = {}
         for day in sorted({c['date'] for c in members}):
             on_day = [c for c in members if c['date'] == day]
             day_revisions = [c for c in on_day if c.get('supersedes_card_id')]
-            day_chosen = max(day_revisions, key=lambda c: (epoch(c.get('observed_at') or card_stamp(c)), c['id'])) if day_revisions else representative(on_day)
+            if pinned in on_day:
+                day_chosen = pinned
+            elif day_revisions:
+                day_chosen = max(day_revisions, key=lambda c: (epoch(c.get('observed_at') or stamp(c)), c['id']))
+            else:
+                day_chosen = representative(on_day)
             views[day] = {'representative_card_id': day_chosen['id'],
                           'display_gps': display_gps(day_chosen), 'display_sectors': day_chosen['sectors'],
                           'member_card_ids': sorted(c['id'] for c in on_day),
@@ -162,19 +241,41 @@ def build_events(cards, *, groups=None, previous=None, as_of=None):
             views[day]['priority'] = news_priority.classify(card_assessment(day_chosen),
                                                            as_of=day + 'T23:59:59+08:00')
         priority = news_priority.classify(card_assessment(chosen), as_of=as_of)
+        # Novelty: repeats never move material time; reviewed updates and confirmed revisions can.
+        material = [stamp(first)] + [stamp(c) for c in members if roles.get(c['id']) == 'update']
         if latest_revision and latest_revision.get('material_update_confirmed') is True:
-            material_stamp = latest_revision.get('observed_at') or card_stamp(latest_revision)
-        else:
-            material_stamp = card_stamp(first)
+            material.append(latest_revision.get('observed_at') or stamp(latest_revision))
+        sources = []
+        for c in members:
+            source = dict(c['source'], card_id=c['id'], published_at=stamp(c))
+            if c['id'] in fixes:
+                source['date_correction'] = {k: fixes[c['id']][k] for k in (
+                    'original', 'corrected', 'basis', 'evidence_url', 'event_date', 'decision') if k in fixes[c['id']]}
+            sources.append(source)
+        rule = key[0] if not (key[0] == 'headline' and len(members) == 1) else _auto_key(first)[0]
+        absorbed = {a for c in members if c['id'] in prior for a in [prior[c['id']], *prior_aliases.get(prior[c['id']], [])]}
         events.append({'event_id': event_id, 'member_card_ids': sorted(c['id'] for c in members),
                        'representative_card_id': chosen['id'], 'date_views': views,
                        'display_gps': display_gps(chosen), 'display_sectors': chosen['sectors'],
-                       'first_seen_at': card_stamp(first), 'last_material_update_at': material_stamp,
-                       'timestamp_basis': 'published_at' if first.get('published_at') == card_stamp(first) else 'date_only',
+                       'first_seen_at': stamp(first), 'last_material_update_at': max(material, key=epoch),
+                       'timestamp_basis': ('corrected' if first['id'] in fixes else
+                                           'published_at' if first.get('published_at') == card_stamp(first) else 'date_only'),
                        'updated': bool(revisions), 'priority': priority,
                        'last_source_revision_at': latest_revision.get('observed_at') if latest_revision else None,
-                       'merge_rule': key[0], 'sources': [dict(c['source'], card_id=c['id'],
-                                                           published_at=card_stamp(c)) for c in members]})
+                       'merge_rule': rule, 'member_roles': roles, 'sources': sources,
+                       'aliases': set(group.get('aliases', [])) | absorbed})
+    resolve = {}
+    for event in events:
+        event['aliases'] = sorted(event['aliases'] - used_ids)
+        for name in [event['event_id'], *event['aliases']]:
+            resolve[name] = event['event_id']
+    related = {}
+    for relation in overlay.get('relations', []):
+        linked = {resolve[name] for name in relation['event_ids'] if name in resolve}
+        for name in linked:
+            related.setdefault(name, set()).update(linked - {name})
+    for event in events:
+        event['related_event_ids'] = sorted(related.get(event['event_id'], ()))
     ranked = sorted(events, key=news_priority.rank_key)
     for rank, event in enumerate(ranked, 1):
         event['priority_rank'] = rank
@@ -183,7 +284,7 @@ def build_events(cards, *, groups=None, previous=None, as_of=None):
         for rank, event in enumerate(sorted(on_day, key=news_priority.rank_key), 1):
             event['date_views'][day]['priority_rank'] = rank
     return {'schema_version': 1, 'grouping_version': VERSION, 'ranking_version': news_priority.VERSION, 'as_of': as_of,
-            'article_count': len(cards), 'event_count': len(events),
+            'overlay_version': overlay.get('version'), 'article_count': len(cards), 'event_count': len(events),
             'events': sorted(events, key=lambda e: e['event_id']),
             'cards_sha256': hashlib.sha256(json.dumps(sorted(cards, key=lambda c: c['id']),
                                                      sort_keys=True, ensure_ascii=False).encode()).hexdigest()}

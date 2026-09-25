@@ -241,6 +241,25 @@ def make_card(item, brief, review_status, origin):
     }
 
 
+# Claims about what an unread full article lacks. Only an excerpt ever reaches the model, so such a
+# sentence is never supportable; dropping it omits filler rather than asserting anything new.
+ABSENCE_EN = re.compile(
+    r"\b(no (?:further|other|additional|more|specific)\b.{0,60}\b(?:details?|figures?|information|data|terms)\b"
+    r"|no (?:specific )?(?:managers?|funds?|figures)\b.{0,40}\b(?:named|disclosed|provided|given)\b"
+    r"|(?:was|were) not (?:provided|disclosed|given)"
+    r"|(?:did|does|do) not (?:provide|disclose|give|name) (?:any )?(?:further|more|additional|other)?"
+    r"|provides? no (?:further|additional|other) detail|consisted only of the headline|beyond the headline)",
+    re.IGNORECASE)
+ABSENCE_ZH = re.compile(r"(未|没有)(?:进一步)?(提供|披露|给出|说明|点名|提及)|仅(有|包含)标题")
+
+
+def strip_absence_claims(text, lang="en"):
+    """Drop sentences asserting that the (unread) article gives no details; never return empty."""
+    splitter, pattern = (r"(?<=[.!?])\s+", ABSENCE_EN) if lang == "en" else (r"(?<=[。！？])", ABSENCE_ZH)
+    kept = [s for s in re.split(splitter, text or "") if s.strip() and not pattern.search(s)]
+    return ("" if lang == "zh" else " ").join(kept).strip() or (text or "").strip()
+
+
 def source_fingerprint(item):
     payload = [clean_text(item['title']), clean_text(item.get('text'))]
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False).encode()).hexdigest()
