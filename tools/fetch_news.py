@@ -155,11 +155,12 @@ def collect(rules, fetch, now, lookback_days, pause):
     return entries, stats
 
 
-def select(entries, rules, known_ids, known_sources=None):
+def select(entries, rules, known_ids, known_sources=None, rejected=None):
     """Retain different-source coverage; event grouping happens after validated card creation.
 
     Fingerprinted same-URL changes may pass as revisions. Legacy cards without fingerprints
     retain the original skip behavior because no prior source bytes exist for comparison.
+    Items failing the keyword rule are appended to `rejected` when a list is given.
     """
     known_sources = known_sources or {}
     seen_versions, candidates, unique = set(), [], 0
@@ -176,6 +177,9 @@ def select(entries, rules, known_ids, known_sources=None):
         match = rule_match(f"{entry['title']} {entry['description']}", rules)
         if match["keep"]:
             candidates.append(dict(entry, match=match, revision_of=next(reversed(versions.values()), None)))
+        elif rejected is not None:
+            rejected.append({"published": entry["published"].isoformat(), "publisher": entry["publisher"],
+                             "title": entry["title"], "url": entry["url"], "reason": match["reason"]})
     return candidates, unique
 
 
@@ -231,13 +235,17 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
     for card in sorted(existing, key=lambda c: c.get('observed_at') or c.get('published_at') or c['date']):
         if card.get('source_fingerprint'):
             known_sources.setdefault(site_data.card_id(card['source']['url']), {})[card['source_fingerprint']] = card['id']
-    candidates, stats["after_dedupe"] = select(entries, rules, site_data.existing_ids(data_dir) | set(seen), known_sources)
+    rule_rejected = [] if dry_run else None
+    candidates, stats["after_dedupe"] = select(entries, rules, site_data.existing_ids(data_dir) | set(seen),
+                                               known_sources, rule_rejected)
     stats["rule_passed"] = len(candidates)
     candidates = candidates[:max_items]
     if dry_run:
         stats["candidates"] = [{"published": item["published"].isoformat(), "publisher": item["publisher"],
                                 "title": item["title"], "gps": item["match"]["gps"],
                                 "sectors": item["match"]["sectors"]} for item in candidates]
+        # Rule rejections for prospective recall audits; model rejections need paid calls and are not here.
+        stats["rule_rejected"] = rule_rejected
         return 0, stats
 
     errors, failure = [], None

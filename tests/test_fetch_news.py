@@ -175,6 +175,14 @@ class RunTest(unittest.TestCase):
         self.assertEqual((code, post.calls, len(stats["candidates"])), (0, 0, 1))
         self.assertEqual(list(self.data.iterdir()), [])
 
+    def test_dry_run_lists_rule_rejected_items_for_recall_audits(self):
+        _, stats = fetch_news.run(RULES, self.data, fetch=google_only(rss(KKR_FUND, PAGE_ITEM)),
+                                     post=FakePost(BRIEF), now=NOW, dry_run=True, pause=0)
+        [rejected] = stats["rule_rejected"]
+        self.assertEqual((rejected["title"], rejected["reason"]), ("Page Industries names new CEO",
+                                                                   "no tracked manager or sub-sector"))
+        self.assertEqual(list(self.data.iterdir()), [])
+
 
 if __name__ == "__main__":
     unittest.main()
