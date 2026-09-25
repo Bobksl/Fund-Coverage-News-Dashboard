@@ -114,11 +114,36 @@ def parse_edgar(data, registrant):
     return entries
 
 
+def parse_sitemap(data, feed):
+    """Official sitemap -> release entries under include_prefix. lastmod is a modification time, so
+    entries are labelled sitemap_lastmod until the page's own created date replaces it."""
+    ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    entries = []
+    for node in ElementTree.fromstring(data).iter(ns + "url"):
+        url, lastmod = (node.findtext(ns + "loc") or "").strip(), (node.findtext(ns + "lastmod") or "").strip()
+        if not url.startswith(feed["include_prefix"]) or not lastmod:
+            continue
+        try:
+            published = datetime.fromisoformat(lastmod.replace("Z", "+00:00")).astimezone(timezone.utc)
+        except ValueError:
+            continue
+        slug = url.rstrip("/").rsplit("/", 1)[-1]
+        release = re.match(r"(\d+-\d+mr)-(.+)", slug)  # e.g. 26-225mr-asic-halts-offers-...
+        number, words = (release.group(1).upper() + ":", release.group(2)) if release else (":", slug)
+        title = f"{feed['publisher']} {number} {words.replace('-', ' ')}".replace(" :", ":")
+        entries.append({"title": title, "url": url, "publisher": feed["publisher"], "published": published,
+                        "description": "", "published_basis": "sitemap_lastmod"})
+    return entries
+
+
 def primary_feeds(primary, environ):
     """Yield (feed_id, url, parse, extra fields) for the primary tier; SEC needs a declared contact."""
     skipped = []
     for feed in primary.get("regulator_feeds", []):
         yield feed["id"], feed["url"], parse_feed, {"origin": "regulator", "domains": feed["domains"]}
+    for feed in primary.get("regulator_sitemaps", []):
+        yield (feed["id"], feed["url"], functools.partial(parse_sitemap, feed=feed),
+               {"origin": "regulator", "domains": feed["domains"]})
     # Wire releases are issuer-origin: what the company said, not independent or primary confirmation.
     for feed in primary.get("wire_feeds", []):
         yield feed["id"], feed["url"], parse_feed, {"origin": "wire", "domains": feed["domains"]}
@@ -172,7 +197,7 @@ def parse_gdelt(data):
         if article.get("url", "").startswith(("https://", "http://")) and article.get("title"):
             entries.append({"title": clean_gdelt_title(article["title"]), "url": article["url"],
                             "publisher": article.get("domain") or "Unknown source", "published": seen,
-                            "description": "", "discovery": "gdelt"})
+                            "description": "", "discovery": "gdelt", "published_basis": "gdelt_seen"})
     return entries
 
 
@@ -305,6 +330,10 @@ def select(entries, rules, known_ids, known_sources=None, rejected=None):
             match = {"keep": True, "gps": entry["gps"], "sectors": [], "reason": "primary filing"}
         else:
             match = rule_match(f"{entry['title']} {entry['description']}", rules)
+            if entry.get("origin") == "regulator" and match["reason"] == "no material event":
+                # A regulator's own release is itself a regulatory action or statement; the sector
+                # or manager match is still required.
+                match = dict(match, keep=True, reason="regulator release")
         if match["keep"]:
             candidates.append(dict(entry, match=match, revision_of=next(reversed(versions.values()), None)))
         elif rejected is not None:
@@ -332,7 +361,7 @@ def to_item(candidate):
                if candidate.get("origin") else {}),
             **({"context": f"Primary source: SEC {candidate['form']} filed by {candidate['publisher']}."}
                if candidate.get("origin") == "issuer_filing" else {}),
-            **({"published_basis": "gdelt_seen"} if candidate.get("discovery") == "gdelt" else {})}
+            **({"published_basis": candidate["published_basis"]} if candidate.get("published_basis") else {})}
 
 
 def gather_evidence(item, retrieve):
@@ -405,7 +434,7 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
         except summarize.SummaryError as error:
             failure = str(error)
     summarizer = summarize.Summarizer(rules, post=post, max_calls=max_calls)
-    cards, rejected, evidence = [], 0, {}
+    cards, rejected, evidence, stale = [], 0, {}, 0
     for candidate in [] if failure else candidates:
         item = to_item(candidate)
         if retrieve is not None:
@@ -416,6 +445,14 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
                 item["feed_text"], item["evidence_level"] = item["text"], "headline_only"
                 item["evidence"] = {"status": status, "level": "headline_only"}
             evidence[status] = evidence.get(status, 0) + 1
+        if item.get("published_basis") == "sitemap_lastmod" and item.get("source_published_at"):
+            created = item["source_published_at"][:10]
+            if created < (now - timedelta(days=lookback_days)).date().isoformat():
+                # An old release that was merely edited: not news, and not worth a brief.
+                stale += 1
+                seen[site_data.card_id(item["url"])] = now.date().isoformat()
+                continue
+            item.update(published_at=created, date=created, published_basis="page_created_date")
         try:
             brief = summarizer(item)
             card = summarize.make_card(item, brief, "unreviewed", "auto_fetch")
@@ -452,7 +489,7 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
                  europe_share=(round(sum(card["region"] == "Europe" for card in added_cards) / len(added_cards), 2)
                                if added_cards else None),
                  calls=summarizer.calls, usage=summarizer.usage, errors=errors[:5], failure=failure,
-                 evidence=evidence)
+                 evidence=evidence, stale_skipped=stale)
     return (1 if failure else 0), stats
 
 

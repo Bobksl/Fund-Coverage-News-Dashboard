@@ -7,7 +7,7 @@ Branch `claude/primary-sources` (on top of `claude/sunday-accuracy`). Config: `c
 | Tier (editorial rulebook) | Implemented | Not yet |
 |---|---|---|
 | Primary: SEC EDGAR / public BDC filings | 13 registrants' own EDGAR feeds (OCIC, OTIC, OBDC, OTF, OWL, ADS, MFIC, APO, K-FIT, FSK, KKR, BCSF, Lincoln Bain TCF). Forms: 8-K, 8-K/A, SC TO-I(/A), 424B2, 424B5, 13D(/A). | 10-Q/10-K (main documents exceed the 1 MB cap); 424B3 sticker supplements excluded as noise. |
-| Primary: regulators | Fed, SEC press releases, ECB, Bank of England, ESMA official RSS; still subject to the keyword rule. | FCA (403 to automated clients), ASIC and NAIC (no official feed found). |
+| Primary: regulators | Fed, SEC press releases, ECB, Bank of England, ESMA official RSS; ASIC media releases from its official sitemap. A regulator release needs a manager or sector match but not an event keyword (the release is itself the action). | FCA (403 to automated clients), NAIC (no official feed found). |
 | Primary: GP / borrower IR, rating agencies | — | No open feeds; KBRA/Fitch releases arrive through Business Wire and news. |
 | Secondary: wires, reputable press | Alternative Credit Investor and Commercial Observer RSS; GlobeNewswire keyword feeds ("private credit", "business development company"); PR Newswire financial-services feed (latest 20 only); bounded page retrieval. Wire items carry `source_origin: wire` (issuer-origin, never marked primary) and still need the keyword rule. | Business Wire (opaque feed codes, 403 to automated clients). |
 | Discovery | 26 Google News queries (headline-only: links are not decoded); GDELT DOC API, 2 queries (tracked managers + credit terms, and sector terms), which return real publisher URLs. | Search APIs. |
@@ -19,6 +19,10 @@ Branch `claude/primary-sources` (on top of `claude/sunday-accuracy`). Config: `c
 - Evidence for a filing: the index page, then the EX-99 press release if present, else the form itself; SEC cover-page boilerplate is trimmed before the 2,500-character cap.
 - Primary candidates are ordered before news so the 30-item cap never drops a filing for its syndicated copies.
 - SEC fair-access: requests to sec.gov declare `FundCoverageNews/1.0 <contact>`; the contact comes from `SEC_CONTACT_EMAIL` (a GitHub Actions secret, or `.env`/shell locally) and is never committed. Unset: SEC feeds are skipped and listed in `feeds_skipped`; the refresh does not fail.
+
+## ASIC sitemap
+
+`lastmod` is a modification time, not publication: ASIC re-touches old releases. Candidates are labelled `published_basis: sitemap_lastmod`; the page's `dcterms.date.created` replaces it (`page_created_date`). A release created before the lookback window is skipped before any model call, counted in `stale_skipped` and remembered in seen.json. If the page cannot be read, the lastmod label stays on the card.
 
 ## GDELT
 

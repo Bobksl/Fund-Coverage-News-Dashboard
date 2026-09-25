@@ -189,11 +189,11 @@
   ],
   "gaps": {
     "FCA": "RSS returns HTTP 403 to automated clients; not bypassed.",
-    "ASIC, NAIC": "No official RSS feed found on 25 Sep 2026; coverage still arrives through news discovery.",
     "Rating agencies": "KBRA, Fitch, Moody's and S&P publish no open feed; public releases reach Business Wire and news discovery.",
     "Managers without event filings": "Bayview, CIFC, Neuberger, Guggenheim, HSBC AM, PAG, Pretium, BasePoint: EDGAR output is holdings/ownership forms or none; covered by news discovery.",
     "Business Wire": "Feed codes are opaque and its pages return 403 to automated clients; its releases (KBRA, Apollo, KKR) still arrive through news discovery.",
-    "PR Newswire depth": "The finance feed holds the latest 20 items (about 11 hours on 25 Sep 2026); a twice-daily refresh sees part of it."
+    "PR Newswire depth": "The finance feed holds the latest 20 items (about 11 hours on 25 Sep 2026); a twice-daily refresh sees part of it.",
+    "NAIC": "No official feed found on 25 Sep 2026; coverage arrives through news discovery."
   },
   "gdelt": {
     "tier": "discovery (not primary): finds real publisher URLs; evidence still comes from the page or a primary record",
@@ -234,6 +234,18 @@
       "domains": [
         "prnewswire.com"
       ]
+    }
+  ],
+  "regulator_sitemaps": [
+    {
+      "id": "asic_media",
+      "url": "https://www.asic.gov.au/sitemap.xml",
+      "publisher": "ASIC",
+      "include_prefix": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/",
+      "domains": [
+        "asic.gov.au"
+      ],
+      "note": "No official RSS; robots.txt allows all and advertises this sitemap. lastmod is modification time; the page dcterms.date.created is used as publication."
     }
   ]
 }

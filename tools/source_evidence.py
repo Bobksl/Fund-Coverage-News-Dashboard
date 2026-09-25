@@ -30,7 +30,7 @@ MIN_EXCERPT = 200
 AGGREGATORS = {'news.google.com'}
 TEXT_TYPES = ('text/html', 'application/xhtml+xml', 'text/plain')
 USER_AGENT = 'Mozilla/5.0 (compatible; FundCoverageNews/1.0; +https://github.com/Bobksl/Fund-Coverage-News-Dashboard)'
-PUBLISHED_META = ('article:published_time', 'datePublished', 'pubdate', 'publish-date', 'date')
+PUBLISHED_META = ('article:published_time', 'dcterms.date.created', 'datePublished', 'pubdate', 'publish-date', 'date')
 # SEC fair-access policy requires a declared contact; the address comes from the environment, never the repo.
 SEC_CONTACT_ENV = 'SEC_CONTACT_EMAIL'
 # End of the standard SEC form cover page; everything before it is boilerplate.
