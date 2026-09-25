@@ -264,7 +264,7 @@ def test_stale_date_view_cannot_omit_a_loaded_group_member(page):
     data = load("events.json")
     day = "2026-09-23"
     event = next(event for event in data["events"]
-                 if len(event["date_views"].get(day, {}).get("member_card_ids", [])) == 2)
+                 if len(event["date_views"].get(day, {}).get("member_card_ids", [])) >= 2)
     view = event["date_views"][day]
     first = next(item["id"] for item in DAYS[day] if item["id"] in view["member_card_ids"])
     view["member_card_ids"] = [first]
