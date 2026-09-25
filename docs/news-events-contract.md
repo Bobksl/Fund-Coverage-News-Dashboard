@@ -53,7 +53,7 @@ Important limitation: matching evidence spans verifies provenance/syntax, not se
 Day priorities use day end HKT; global priorities use export as_of. No automatic age-based demotion or inferred cure/default resolution.
 
 ## New-card metadata
-source_headline, source_fingerprint (hash of cleaned source title/text), observed_at, relevance_reason, assessment, event_identity, evidence, source_published_at, source_origin (issuer_filing | regulator; absent = news; see primary-sources.md); revisions also supersedes_card_id and a deterministic revision ID.
+source_headline, source_fingerprint (hash of cleaned source title/text), observed_at, relevance_reason, assessment, event_identity, evidence, source_published_at, source_origin (issuer_filing | regulator; absent = news), published_basis (gdelt_seen when published_at is GDELT's first sighting; see source-tiers.md); revisions also supersedes_card_id and a deterministic revision ID.
 assessment stores validation outcome, source SHA-256, source-text span offsets and ordinal claims/reasons. It does not publish a complete publisher article.
 event_identity is accepted only when the four identity fields occur verbatim in supplied source text/headline. Different numeric signatures stay separate. This deliberately misses some paraphrases/rounded figures.
 A source URL with changed text is retained as a new revision record. Same-URL revisions group only with compatible extracted identity or unchanged source headline. Unrelated reused URLs remain separate. Revision date is observation date so historical editions are not rewritten.

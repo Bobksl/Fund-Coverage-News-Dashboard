@@ -20,17 +20,18 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from xml.etree import ElementTree
 
-from tools import site_data, source_evidence, summarize
+from tools import news_events, site_data, source_evidence, summarize
 
 USER_AGENT = "Mozilla/5.0 (compatible; FundCoverageNews/1.0; +https://github.com/Bobksl/Fund-Coverage-News-Dashboard)"
 SEEN_FILE = "seen.json"
-PRIMARY_PATH = site_data.ROOT / "config" / "primary_sources.json"
+TIERS_PATH = site_data.ROOT / "config" / "source_tiers.json"
 PRIMARY_ORIGINS = ("issuer_filing", "regulator")
 ATOM = "{http://www.w3.org/2005/Atom}"
 SEEN_DAYS = 14
@@ -127,7 +128,54 @@ def primary_feeds(primary, environ):
                    functools.partial(parse_edgar, registrant=registrant),
                    {"origin": "issuer_filing", "domains": sec["domains"], "gps": registrant["gps"],
                     "forms": sec["forms"]})
+    gdelt = primary.get("gdelt")
+    for query in gdelt["queries"] if gdelt else []:
+        yield (f"gdelt_{query['id']}", gdelt_url(gdelt, query, primary.get("_lookback_days", 3)), parse_gdelt,
+               {"pace": gdelt["min_interval_s"], "retry": gdelt["retry_after_s"]})
     yield from (("skipped", reason, None, None) for reason in skipped)
+
+
+class RateLimited(RuntimeError):
+    """A discovery API asked us to slow down; retried once, then recorded as a feed failure."""
+
+
+def gdelt_url(gdelt, query, lookback_days):
+    params = {"query": query["q"], "mode": "artlist", "format": "json", "maxrecords": gdelt["maxrecords"],
+              "timespan": f"{lookback_days}d"}
+    return f"{gdelt['endpoint']}?{urllib.parse.urlencode(params)}"
+
+
+def clean_gdelt_title(title):
+    # GDELT tokenises titles ("$2 . 5 billion , says"); undo only that spacing.
+    title = re.sub(r"(\d) \. (\d)", r"\1.\2", title)
+    title = re.sub(r"\s+([.,%:;!?)\]])", r"\1", title)
+    return " ".join(re.sub(r"([(\[$])\s+", r"\1", title).split())
+
+
+def parse_gdelt(data):
+    """GDELT DOC artlist JSON -> entries with real publisher URLs. seendate is GDELT's first sighting."""
+    body = data.lstrip()
+    if body.startswith(b"Please limit requests"):
+        raise RateLimited("GDELT rate limit")
+    if not body.startswith(b"{"):
+        # GDELT reports query problems as plain text; keep its words in the failure log.
+        raise ValueError("GDELT: " + body[:120].decode("utf-8", "replace"))
+    entries = []
+    for article in json.loads(data).get("articles", []):
+        try:
+            seen = datetime.strptime(article["seendate"], "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+        except (KeyError, ValueError):
+            continue
+        if article.get("url", "").startswith(("https://", "http://")) and article.get("title"):
+            entries.append({"title": clean_gdelt_title(article["title"]), "url": article["url"],
+                            "publisher": article.get("domain") or "Unknown source", "published": seen,
+                            "description": "", "discovery": "gdelt"})
+    return entries
+
+
+def title_key(title):
+    """Headline identity across aggregators: normalised, without a trailing ' - Publisher' / ' | Publisher'."""
+    return news_events.normalize_title(re.sub(r"\s[-|\u2013]\s[^-|\u2013]{1,40}$", "", title))
 
 
 def primary_host(url, domains):
@@ -182,21 +230,38 @@ def same_story(first, second):
     return bool(lead_a) and lead_a == lead_b and len(words_a & words_b) / len(words_a | words_b) >= SIMILAR_TITLES
 
 
-def collect(rules, fetch, now, lookback_days, pause, primary=None, environ=None):
-    """Fetch every feed; one failing feed is recorded and skipped."""
+def collect(rules, fetch, now, lookback_days, pause, primary=None, environ=None, sleep=time.sleep):
+    """Fetch every feed; one failing feed is recorded and skipped. Paced feeds (GDELT) keep their own
+    minimum interval and get one retry after a rate limit; pause=0 (tests) disables all sleeping."""
     oldest, newest = now - timedelta(days=lookback_days), now + timedelta(hours=1)
     stats = {"feeds_ok": 0, "feeds_failed": [], "feeds_skipped": [], "fetched": 0, "fresh": 0}
     entries = []
     feeds = [(feed_id, url, parse_feed, {}) for feed_id, url in feed_urls(rules)]
-    feeds += list(primary_feeds(primary or {}, os.environ if environ is None else environ))
+    feeds += list(primary_feeds(dict(primary or {}, _lookback_days=lookback_days),
+                                os.environ if environ is None else environ))
+    last_paced = None
     for number, (feed_id, url, parse, extra) in enumerate(feeds):
         if feed_id == "skipped":
             stats["feeds_skipped"].append(url)
             continue
+        extra = dict(extra)
+        interval, retry = extra.pop("pace", None), extra.pop("retry", None)
         if number and pause:
-            time.sleep(pause)
+            sleep(max(interval - (time.monotonic() - last_paced), 0) if interval and last_paced else pause)
         try:
-            parsed = parse(fetch(url))
+            for attempt in (1, 2):
+                try:
+                    parsed = parse(fetch(url))
+                    break
+                except (RateLimited, urllib.error.HTTPError) as error:
+                    limited = isinstance(error, RateLimited) or error.code == 429
+                    if not (interval and limited and attempt == 1):
+                        raise
+                    if pause:
+                        sleep(retry)
+                finally:
+                    if interval:
+                        last_paced = time.monotonic()
         except Exception as error:  # noqa: BLE001 -- any network or parse failure is per-feed
             stats["feeds_failed"].append(f"{feed_id}: {type(error).__name__}: {str(error)[:120]}")
             continue
@@ -218,6 +283,10 @@ def select(entries, rules, known_ids, known_sources=None, rejected=None):
     """
     known_sources = known_sources or {}
     seen_versions, candidates, unique = set(), [], 0
+    # An opaque Google News link loses to the same headline found with its real URL by GDELT.
+    real_urls = {title_key(entry["title"]) for entry in entries if entry.get("discovery") == "gdelt"}
+    entries = [entry for entry in entries
+               if not (entry.get("feed", "").startswith("google_news") and title_key(entry["title"]) in real_urls)]
     for entry in sorted(entries, key=lambda item: item["published"], reverse=True):
         entry_id = site_data.card_id(entry["url"])
         fingerprint = summarize.source_fingerprint(to_item(entry))
@@ -258,7 +327,8 @@ def to_item(candidate):
                 "verified_primary_source": primary_host(candidate["url"], candidate.get("domains", []))}
                if candidate.get("origin") in PRIMARY_ORIGINS else {}),
             **({"context": f"Primary source: SEC {candidate['form']} filed by {candidate['publisher']}."}
-               if candidate.get("origin") == "issuer_filing" else {})}
+               if candidate.get("origin") == "issuer_filing" else {}),
+            **({"published_basis": "gdelt_seen"} if candidate.get("discovery") == "gdelt" else {})}
 
 
 def gather_evidence(item, retrieve):
@@ -290,15 +360,16 @@ def gather_evidence(item, retrieve):
 
 def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None, max_items=30,
         max_calls=60, lookback_days=3, dry_run=False, pause=1.0, scheduled=False, retrieve=None,
-        max_fetches=30, primary=None, environ=None):
+        max_fetches=30, tiers=None, environ=None, sleep=None):
     """One refresh. Returns (exit_code, stats).
 
     `retrieve` (url -> evidence record) is off unless given; main() passes the bounded
-    source_evidence retriever. At most `max_fetches` pages are requested per run. `primary` is the
-    config/primary_sources.json tier (off unless given); SEC feeds need SEC_CONTACT_EMAIL.
+    source_evidence retriever. At most `max_fetches` pages are requested per run. `tiers` is
+    config/source_tiers.json (primary filings, regulators, GDELT; off unless given); SEC feeds need
+    SEC_CONTACT_EMAIL.
     """
     now = now or datetime.now(timezone.utc)
-    entries, stats = collect(rules, fetch, now, lookback_days, pause, primary, environ)
+    entries, stats = collect(rules, fetch, now, lookback_days, pause, tiers, environ, sleep or time.sleep)
     seen = load_seen(data_dir, now)
     existing = [card for day in site_data._day_files(data_dir) for card in site_data.load_day(data_dir, day)]
     known_sources = {}
@@ -395,7 +466,7 @@ def main(argv=None):
                       max_calls=args.max_calls, lookback_days=args.lookback_days, dry_run=args.dry_run,
                       scheduled=os.environ.get("GITHUB_ACTIONS") == "true",
                       retrieve=functools.partial(source_evidence.retrieve, cache_dir=source_evidence.CACHE_DIR),
-                      primary=json.loads(PRIMARY_PATH.read_text(encoding="utf-8")))
+                      tiers=json.loads(TIERS_PATH.read_text(encoding="utf-8")))
     print(json.dumps(stats, ensure_ascii=False, indent=2, default=str))
     return code
 

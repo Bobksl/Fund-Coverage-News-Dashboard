@@ -1,6 +1,6 @@
-# Primary-source tier — 25 September 2026
+# Source tiers — 25 September 2026
 
-Branch `claude/primary-sources` (on top of `claude/sunday-accuracy`). Config: `config/primary_sources.json`. Code: `tools/fetch_news.py` (feeds, EDGAR parsing, ordering), `tools/source_evidence.py` (SEC contact header, filing document choice, cover-page trimming).
+Branch `claude/primary-sources` (on top of `claude/sunday-accuracy`). Config: `config/source_tiers.json`. Code: `tools/fetch_news.py` (feeds, EDGAR and GDELT parsing, pacing, ordering), `tools/source_evidence.py` (SEC contact header, filing document choice, cover-page trimming).
 
 ## What the refresh reads now
 
@@ -10,7 +10,7 @@ Branch `claude/primary-sources` (on top of `claude/sunday-accuracy`). Config: `c
 | Primary: regulators | Fed, SEC press releases, ECB, Bank of England, ESMA official RSS; still subject to the keyword rule. | FCA (403 to automated clients), ASIC and NAIC (no official feed found). |
 | Primary: GP / borrower IR, rating agencies | — | No open feeds; KBRA/Fitch releases arrive through Business Wire and news. |
 | Secondary: wires, reputable press | Alternative Credit Investor and Commercial Observer RSS; bounded page retrieval. | Business Wire / PR Newswire / GlobeNewswire feeds. |
-| Discovery | 26 Google News queries (headline-only: links are not decoded). | GDELT (returns real publisher URLs). |
+| Discovery | 26 Google News queries (headline-only: links are not decoded); GDELT DOC API, 2 queries (tracked managers + credit terms, and sector terms), which return real publisher URLs. | Search APIs. |
 
 ## Rules
 
@@ -20,8 +20,14 @@ Branch `claude/primary-sources` (on top of `claude/sunday-accuracy`). Config: `c
 - Primary candidates are ordered before news so the 30-item cap never drops a filing for its syndicated copies.
 - SEC fair-access: requests to sec.gov declare `FundCoverageNews/1.0 <contact>`; the contact comes from `SEC_CONTACT_EMAIL` (a GitHub Actions secret, or `.env`/shell locally) and is never committed. Unset: SEC feeds are skipped and listed in `feeds_skipped`; the refresh does not fail.
 
+## GDELT
+
+- Discovery only: a GDELT hit is a real URL to retrieve, not evidence in itself. `published_at` on such cards is GDELT's first-sighting time and is labelled `published_basis: gdelt_seen`; the page's own date, when readable, is `source_published_at`.
+- When GDELT and Google News carry the same headline, the Google News item (opaque link) is dropped before briefing, so no duplicate is paid for.
+- GDELT tolerates little traffic: at least 10 s between its calls, one retry after 15 s on a rate limit, then the query is recorded in `feeds_failed` and the refresh continues. On 25 Sep, repeated manual test calls triggered penalty windows lasting minutes; GitHub-hosted runners share addresses, so some scheduled runs may see GDELT fail. Verification on 25 Sep: one dry run returned GDELT articles with real URLs (e.g. AFR, investinglive); other attempts, including after a 150 s cool-down, returned HTTP 429, and one managers-query reply was non-JSON (its text is now logged). Treat GDELT as best-effort until scheduled-run logs show its success rate. Its titles are de-tokenised (`$2 . 5` -> `$2.5`).
+
 ## Setup and rollback
 
 Add repository secret `SEC_CONTACT_EMAIL` (Settings → Secrets and variables → Actions). The workflow passes it to the refresh step.
 
-Rollback: revert the primary-source commit; no stored data depends on it. Cards already created from filings remain valid ordinary cards.
+Rollback: revert the source-tier commits; no stored data depends on it. Cards already created from filings remain valid ordinary cards.

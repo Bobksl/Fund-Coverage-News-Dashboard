@@ -70,7 +70,7 @@ def fake_retrieve(log):
 def refresh(data, env, retrieve=None, **kw):
     post = FakePost(BRIEF)
     code, stats = fetch_news.run(RULES, data, fetch=feeds(kw.pop('seen', None)), post=post, now=NOW, pause=0,
-                                 retrieve=retrieve, primary=SOURCES, environ=env, **kw)
+                                 retrieve=retrieve, tiers=SOURCES, environ=env, **kw)
     cards = [c for f in Path(data).glob('2026-*.json') for c in json.loads(f.read_text(encoding='utf-8'))['items']]
     return code, stats, post, cards
 
