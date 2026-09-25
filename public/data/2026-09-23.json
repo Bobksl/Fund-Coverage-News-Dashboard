@@ -2,6 +2,91 @@
   "date": "2026-09-23",
   "items": [
     {
+      "id": "bee6f703bd46",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T15:58:00+00:00",
+      "headline": {
+        "en": "Blue Owl Could See Junior Loan to Loparex Wiped Out in Monarch Restructuring",
+        "zh": "Blue Owl 对 Loparex 的次级贷款或在与 Monarch 的重组交易中被清零"
+      },
+      "summary": {
+        "en": "Blue Owl could see its junior loan to Loparex wiped out under a restructuring deal with Monarch, according to a headline report. No deal terms or figures were provided.",
+        "zh": "据一则标题报道，在与 Monarch 的重组交易中，Blue Owl 对 Loparex 的次级贷款可能被清零。报道未提供交易条款或具体数据。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWm9fRUU1X0wwNUl0S0hwQ0Jla0JjRzhDanpZRjF1Ym1fTE9kLVRlNVBmRjdjX1VJb2MtRHVpX1ZoZXROVExFd0lDcjY4M1lnQzJGQjBaRmJlX1ZwdUFDN01yYlQ1NFJGZnJLekwwN0VMSVVFMUZtaVNabjZiQmlHalBPNEdyVktOOW5XQTdoQWY1M3ZUcV9MVnl0Z29DVGkyZ1FmQWhzREhyTkkxYXFIVEJfR1M3ckY2ME0ydHFVMmNLNFlxdVFFVWR1RWtOclVQRG1vc1FB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Could See Junior Loan to Loparex Wiped Out in Restructuring Deal With Monarch",
+      "source_fingerprint": "92ec1445299fef09cc24531d5c6efa8cb8a3bb05fa6a7a4b274c0d8e67267606",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "24fb861487ed593849602aab427f653d8039558802fad953de66d14a216a2db2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Reported potential wipeout of a Blue Owl junior loan positions it in a restructuring outcome for a tracked manager's credit business.",
+      "event_identity": null,
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "2c8e8a403730",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T15:50:53+00:00",
+      "headline": {
+        "en": "Blue Owl Could See Junior Loan to Loparex Wiped Out in Monarch Restructuring",
+        "zh": "市场传言：Blue Owl 对 Loparex 的次级贷款或在与 Monarch 的重组交易中被清零"
+      },
+      "summary": {
+        "en": "Market chatter indicates Blue Owl could see its junior loan to Loparex wiped out under a restructuring deal with Monarch.",
+        "zh": "市场传言显示，在与 Monarch 的重组交易中，Blue Owl 对 Loparex 的次级贷款可能被清零。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQU5ma1kwQkNsbk10VXdEX2QwTUdXbHNPZXNkdWNLbXZUQ2VmUGllZE5TVG4yNVJuN21jYXdhWWh1WXdrMW4wQW1waHBHLWNpa214WHBvUmhvcEJwTW9ReFZYdXoyQVNxTVppcmx5SGY0MjFvSjNLMnZZbXFVVTI2d0lmRTh3UnBMWUNtc29ld2xmc2JxdloxVW9R?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Market Chatter: Blue Owl Could See Junior Loan to Loparex Wiped Out in Restructuring Deal With Monarch",
+      "source_fingerprint": "446925365b9b3eb0affe1b987920c479f12651d73ea9a2c0cc9a8987211ead0f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a64cb9c9fef91c0607f431631b3c908ae96ed2297337287b68269373e2f06cb7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Potential loss on a Blue Owl junior loan position in a restructuring is directly relevant to its credit franchise.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "could see junior loan to loparex wiped out",
+        "object": "loparex",
+        "period": "in restructuring deal with monarch",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
       "id": "266d9d2f4aad",
       "date": "2026-09-23",
       "published_at": "2026-09-23T15:44:30+00:00",

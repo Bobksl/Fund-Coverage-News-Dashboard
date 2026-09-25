@@ -2,9 +2,9 @@
   "schema_version": 1,
   "grouping_version": "events-v1",
   "ranking_version": "priority-v1",
-  "as_of": "2026-09-24T13:24:40+00:00",
-  "article_count": 208,
-  "event_count": 200,
+  "as_of": "2026-09-25T04:24:44+00:00",
+  "article_count": 222,
+  "event_count": 214,
   "events": [
     {
       "event_id": "evt-0314de11e4c8",
@@ -52,7 +52,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -74,7 +74,7 @@
           "published_at": "2026-08-18T06:30:38-04:00"
         }
       ],
-      "priority_rank": 186
+      "priority_rank": 200
     },
     {
       "event_id": "evt-03f8e6bdeb1d",
@@ -120,7 +120,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -142,7 +142,79 @@
           "published_at": "2026-09-16T07:41:53+00:00"
         }
       ],
-      "priority_rank": 95
+      "priority_rank": 109
+    },
+    {
+      "event_id": "evt-03f8f3173fa6",
+      "member_card_ids": [
+        "03f8f3173fa6"
+      ],
+      "representative_card_id": "03f8f3173fa6",
+      "date_views": {
+        "2026-09-25": {
+          "representative_card_id": "03f8f3173fa6",
+          "display_gps": [
+            "apollo"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "03f8f3173fa6"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-25T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 5
+        }
+      },
+      "display_gps": [
+        "apollo"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-24T16:18:00+00:00",
+      "last_material_update_at": "2026-09-24T16:18:00+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Quiver Quantitative",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOVBCWmlLSjM0d3V6bmFlejctR1lhSzE5WThkTjFvNWFtU2psZl93cXNLREFYdTh3SXdhOG9xZGF2VXJIeF9YdWlWUEJuLTBfOHJtVUE4Ti1tVWRrOVpwRDJKbmdfaU9IRGVRZ3NCMzZCTmo0NmpLS0dZQzdQRDBXVENPcmxzZVNremdHZHl0M25SUW5EajZ3UU1fMVZTVlBrdjFrSWZhSVIxaTREZnBJeHY4eTBTZXJvWlhsRHUyOHVzU0w3?oc=5",
+          "card_id": "03f8f3173fa6",
+          "published_at": "2026-09-24T16:18:00+00:00"
+        }
+      ],
+      "priority_rank": 6
     },
     {
       "event_id": "evt-06b3269f6fce",
@@ -188,7 +260,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -210,7 +282,7 @@
           "published_at": "2026-09-17T15:00:13+00:00"
         }
       ],
-      "priority_rank": 78
+      "priority_rank": 92
     },
     {
       "event_id": "evt-081382c9fe64",
@@ -245,7 +317,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 37
+          "priority_rank": 39
         }
       },
       "display_gps": [
@@ -260,7 +332,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -282,7 +354,7 @@
           "published_at": "2026-09-22T20:10:00+00:00"
         }
       ],
-      "priority_rank": 44
+      "priority_rank": 58
     },
     {
       "event_id": "evt-0891c2c283bf",
@@ -328,7 +400,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -350,7 +422,7 @@
           "published_at": "2026-09-01T00:00:00+08:00"
         }
       ],
-      "priority_rank": 155
+      "priority_rank": 169
     },
     {
       "event_id": "evt-0bb392627045",
@@ -384,7 +456,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 2
+          "priority_rank": 4
         }
       },
       "display_gps": [],
@@ -398,7 +470,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -420,7 +492,7 @@
           "published_at": "2026-09-23T13:00:00+00:00"
         }
       ],
-      "priority_rank": 8
+      "priority_rank": 22
     },
     {
       "event_id": "evt-0d8c9517beca",
@@ -455,7 +527,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 11
+          "priority_rank": 13
         }
       },
       "display_gps": [
@@ -470,7 +542,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -492,7 +564,7 @@
           "published_at": "2026-09-23T06:43:00+00:00"
         }
       ],
-      "priority_rank": 17
+      "priority_rank": 31
     },
     {
       "event_id": "evt-10207993276a",
@@ -544,7 +616,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -566,7 +638,7 @@
           "published_at": "2026-09-14T09:48:55+00:00"
         }
       ],
-      "priority_rank": 119
+      "priority_rank": 133
     },
     {
       "event_id": "evt-102d513164b3",
@@ -616,7 +688,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -638,7 +710,7 @@
           "published_at": "2026-08-18T00:00:00+08:00"
         }
       ],
-      "priority_rank": 187
+      "priority_rank": 201
     },
     {
       "event_id": "evt-106e6b236bd9",
@@ -686,7 +758,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -708,7 +780,7 @@
           "published_at": "2026-08-14T00:00:00+08:00"
         }
       ],
-      "priority_rank": 194
+      "priority_rank": 208
     },
     {
       "event_id": "evt-108945dbee2d",
@@ -756,7 +828,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -778,7 +850,7 @@
           "published_at": "2026-08-28T00:00:00+08:00"
         }
       ],
-      "priority_rank": 162
+      "priority_rank": 176
     },
     {
       "event_id": "evt-1280cafe61a1",
@@ -828,7 +900,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -850,7 +922,7 @@
           "published_at": "2026-09-16T01:59:58+00:00"
         }
       ],
-      "priority_rank": 97
+      "priority_rank": 111
     },
     {
       "event_id": "evt-13e9ceb621b7",
@@ -896,7 +968,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -918,7 +990,7 @@
           "published_at": "2026-09-15T18:02:42+00:00"
         }
       ],
-      "priority_rank": 103
+      "priority_rank": 117
     },
     {
       "event_id": "evt-1635ee5b39f8",
@@ -951,7 +1023,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 13
+          "priority_rank": 15
         }
       },
       "display_gps": [],
@@ -964,7 +1036,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -986,7 +1058,7 @@
           "published_at": "2026-09-23T04:05:02+00:00"
         }
       ],
-      "priority_rank": 19
+      "priority_rank": 33
     },
     {
       "event_id": "evt-187d42a223f7",
@@ -1021,7 +1093,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 14
+          "priority_rank": 16
         }
       },
       "display_gps": [
@@ -1036,7 +1108,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1058,7 +1130,7 @@
           "published_at": "2026-09-23T02:18:00+00:00"
         }
       ],
-      "priority_rank": 20
+      "priority_rank": 34
     },
     {
       "event_id": "evt-1926ae0ca860",
@@ -1108,7 +1180,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1130,7 +1202,7 @@
           "published_at": "2026-08-13T00:00:00+08:00"
         }
       ],
-      "priority_rank": 197
+      "priority_rank": 211
     },
     {
       "event_id": "evt-195d497662ca",
@@ -1165,7 +1237,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 23
+          "priority_rank": 25
         }
       },
       "display_gps": [
@@ -1180,7 +1252,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1202,7 +1274,7 @@
           "published_at": "2026-09-22T22:01:06+00:00"
         }
       ],
-      "priority_rank": 30
+      "priority_rank": 44
     },
     {
       "event_id": "evt-1cd8b4fcdfa6",
@@ -1248,7 +1320,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1270,7 +1342,7 @@
           "published_at": "2026-09-16T20:21:55+00:00"
         }
       ],
-      "priority_rank": 90
+      "priority_rank": 104
     },
     {
       "event_id": "evt-1d349b99540e",
@@ -1322,7 +1394,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1344,7 +1416,79 @@
           "published_at": "2026-09-15T21:35:28+00:00"
         }
       ],
-      "priority_rank": 99
+      "priority_rank": 113
+    },
+    {
+      "event_id": "evt-1f80f65f5807",
+      "member_card_ids": [
+        "1f80f65f5807"
+      ],
+      "representative_card_id": "1f80f65f5807",
+      "date_views": {
+        "2026-09-25": {
+          "representative_card_id": "1f80f65f5807",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "1f80f65f5807"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-25T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 1
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-24T23:04:39+00:00",
+      "last_material_update_at": "2026-09-24T23:04:39+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUzRvVXhuY0VUdWZ5OXNtMVYyWGlfT3hVRHMxdEo0b1ZFTmJISWRXei04cDJQa1NvN3Z0T0F2SFdFREczT0VpVHJrNF91QnZjWmU4QlVDWUFCcHdBODI0WWV5X3ZaWGUweHI5aUprbjh2cVU3TW5lbFdfRW9VMjAzQmx6WjJacVpfOHMyY3lLX0hyUHhoMUt2eFRIWl9BVXB4SEJkblI0Um1GQnZ6WVNGUmx4Q2JlMDk0UjlUb0F4bU9NT0p4d0I1Tmsya3RqMUF2WVV5R19iSQ?oc=5",
+          "card_id": "1f80f65f5807",
+          "published_at": "2026-09-24T23:04:39+00:00"
+        }
+      ],
+      "priority_rank": 2
     },
     {
       "event_id": "evt-1fa4f9cef6be",
@@ -1377,7 +1521,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 42
+          "priority_rank": 44
         }
       },
       "display_gps": [],
@@ -1390,7 +1534,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1412,7 +1556,7 @@
           "published_at": "2026-09-22T16:22:00+00:00"
         }
       ],
-      "priority_rank": 49
+      "priority_rank": 63
     },
     {
       "event_id": "evt-20eb0accd658",
@@ -1464,7 +1608,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1486,7 +1630,7 @@
           "published_at": "2026-09-19T05:02:12+00:00"
         }
       ],
-      "priority_rank": 68
+      "priority_rank": 82
     },
     {
       "event_id": "evt-211ba44e3071",
@@ -1519,7 +1663,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 12
+          "priority_rank": 14
         }
       },
       "display_gps": [],
@@ -1532,7 +1676,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1554,7 +1698,7 @@
           "published_at": "2026-09-23T05:42:08+00:00"
         }
       ],
-      "priority_rank": 18
+      "priority_rank": 32
     },
     {
       "event_id": "evt-2411ca3faf8a",
@@ -1588,7 +1732,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 4
+          "priority_rank": 7
         }
       },
       "display_gps": [],
@@ -1602,7 +1746,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1624,7 +1768,7 @@
           "published_at": "2026-09-24T09:02:00+00:00"
         }
       ],
-      "priority_rank": 4
+      "priority_rank": 13
     },
     {
       "event_id": "evt-2534f52ba751",
@@ -1659,7 +1803,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 30
+          "priority_rank": 32
         }
       },
       "display_gps": [
@@ -1674,7 +1818,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1696,7 +1840,7 @@
           "published_at": "2026-09-22T20:51:00+00:00"
         }
       ],
-      "priority_rank": 37
+      "priority_rank": 51
     },
     {
       "event_id": "evt-257c06057f6a",
@@ -1744,7 +1888,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1766,7 +1910,7 @@
           "published_at": "2026-09-21T10:46:27+00:00"
         }
       ],
-      "priority_rank": 65
+      "priority_rank": 79
     },
     {
       "event_id": "evt-266d9d2f4aad",
@@ -1800,7 +1944,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 1
+          "priority_rank": 3
         }
       },
       "display_gps": [],
@@ -1814,7 +1958,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1836,7 +1980,7 @@
           "published_at": "2026-09-23T15:44:30+00:00"
         }
       ],
-      "priority_rank": 7
+      "priority_rank": 21
     },
     {
       "event_id": "evt-27617742e19d",
@@ -1882,7 +2026,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1904,7 +2048,7 @@
           "published_at": "2026-08-25T00:00:00+08:00"
         }
       ],
-      "priority_rank": 173
+      "priority_rank": 187
     },
     {
       "event_id": "evt-2bbf85468ef4",
@@ -1954,7 +2098,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1976,7 +2120,79 @@
           "published_at": "2026-09-17T19:38:49+00:00"
         }
       ],
-      "priority_rank": 76
+      "priority_rank": 90
+    },
+    {
+      "event_id": "evt-2c8e8a403730",
+      "member_card_ids": [
+        "2c8e8a403730"
+      ],
+      "representative_card_id": "2c8e8a403730",
+      "date_views": {
+        "2026-09-23": {
+          "representative_card_id": "2c8e8a403730",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "2c8e8a403730"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-23T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 2
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-23T15:50:53+00:00",
+      "last_material_update_at": "2026-09-23T15:50:53+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "identity",
+      "sources": [
+        {
+          "publisher": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQU5ma1kwQkNsbk10VXdEX2QwTUdXbHNPZXNkdWNLbXZUQ2VmUGllZE5TVG4yNVJuN21jYXdhWWh1WXdrMW4wQW1waHBHLWNpa214WHBvUmhvcEJwTW9ReFZYdXoyQVNxTVppcmx5SGY0MjFvSjNLMnZZbXFVVTI2d0lmRTh3UnBMWUNtc29ld2xmc2JxdloxVW9R?oc=5",
+          "card_id": "2c8e8a403730",
+          "published_at": "2026-09-23T15:50:53+00:00"
+        }
+      ],
+      "priority_rank": 20
     },
     {
       "event_id": "evt-2cc262f913fb",
@@ -2011,7 +2227,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 19
+          "priority_rank": 21
         }
       },
       "display_gps": [
@@ -2026,7 +2242,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2048,7 +2264,7 @@
           "published_at": "2026-09-22T23:28:15+00:00"
         }
       ],
-      "priority_rank": 26
+      "priority_rank": 40
     },
     {
       "event_id": "evt-2d3b509a432f",
@@ -2094,7 +2310,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2116,7 +2332,7 @@
           "published_at": "2026-08-17T00:00:00+08:00"
         }
       ],
-      "priority_rank": 190
+      "priority_rank": 204
     },
     {
       "event_id": "evt-3202ae7aa46a",
@@ -2168,7 +2384,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2190,7 +2406,7 @@
           "published_at": "2026-09-14T08:42:42+00:00"
         }
       ],
-      "priority_rank": 120
+      "priority_rank": 134
     },
     {
       "event_id": "evt-320feac29e99",
@@ -2223,7 +2439,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 34
+          "priority_rank": 36
         }
       },
       "display_gps": [
@@ -2236,7 +2452,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2258,7 +2474,7 @@
           "published_at": "2026-09-22T20:32:39+00:00"
         }
       ],
-      "priority_rank": 41
+      "priority_rank": 55
     },
     {
       "event_id": "evt-333fda18454b",
@@ -2304,7 +2520,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2326,7 +2542,7 @@
           "published_at": "2026-09-21T16:22:00+00:00"
         }
       ],
-      "priority_rank": 63
+      "priority_rank": 77
     },
     {
       "event_id": "evt-3489c10aedc3",
@@ -2361,7 +2577,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 16
+          "priority_rank": 18
         }
       },
       "display_gps": [
@@ -2376,7 +2592,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2398,7 +2614,7 @@
           "published_at": "2026-09-23T01:00:56+00:00"
         }
       ],
-      "priority_rank": 22
+      "priority_rank": 36
     },
     {
       "event_id": "evt-35d9a8d4776d",
@@ -2433,7 +2649,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 20
+          "priority_rank": 22
         }
       },
       "display_gps": [
@@ -2448,7 +2664,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2470,7 +2686,7 @@
           "published_at": "2026-09-22T23:27:42+00:00"
         }
       ],
-      "priority_rank": 27
+      "priority_rank": 41
     },
     {
       "event_id": "evt-35e2bba06c2c",
@@ -2505,7 +2721,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 32
+          "priority_rank": 34
         }
       },
       "display_gps": [
@@ -2520,7 +2736,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2542,7 +2758,7 @@
           "published_at": "2026-09-22T20:39:45+00:00"
         }
       ],
-      "priority_rank": 39
+      "priority_rank": 53
     },
     {
       "event_id": "evt-36bca42befb3",
@@ -2577,7 +2793,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 27
+          "priority_rank": 29
         }
       },
       "display_gps": [
@@ -2592,7 +2808,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2614,7 +2830,7 @@
           "published_at": "2026-09-22T21:24:34+00:00"
         }
       ],
-      "priority_rank": 34
+      "priority_rank": 48
     },
     {
       "event_id": "evt-3782c86e4cfe",
@@ -2660,7 +2876,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2682,7 +2898,75 @@
           "published_at": "2026-08-13T00:00:00+08:00"
         }
       ],
-      "priority_rank": 198
+      "priority_rank": 212
+    },
+    {
+      "event_id": "evt-387aca84e957",
+      "member_card_ids": [
+        "387aca84e957"
+      ],
+      "representative_card_id": "387aca84e957",
+      "date_views": {
+        "2026-09-25": {
+          "representative_card_id": "387aca84e957",
+          "display_gps": [],
+          "display_sectors": [
+            "real_estate"
+          ],
+          "member_card_ids": [
+            "387aca84e957"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-25T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 2
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "real_estate"
+      ],
+      "first_seen_at": "2026-09-24T21:33:45+00:00",
+      "last_material_update_at": "2026-09-24T21:33:45+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "HedgeCo.Net",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOanVDbjhBdmVOVm5aR1RDeFlFMk9jcUVBakZVZVNESzhUQzBmVVZDOUgxcUFnNVV6Ry1QUEU3UFJqb1VuNlJWQzFWWGs5bzBfbmdJa2txVG1fOFdSUFVYa3RWUGZYWnhJN3NSTnhSUjdmYjY4Vmk1OER2Y2EyanU1OXpaOGNTUmtvZl9sN2xzNDJVNmFqRlgydlRpVHVUbk9WaXJ5T2hPeHVuSVFMUVVTNzVB?oc=5",
+          "card_id": "387aca84e957",
+          "published_at": "2026-09-24T21:33:45+00:00"
+        }
+      ],
+      "priority_rank": 3
     },
     {
       "event_id": "evt-390e4dd7c0a0",
@@ -2728,7 +3012,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2750,7 +3034,7 @@
           "published_at": "2026-08-18T00:00:00+08:00"
         }
       ],
-      "priority_rank": 188
+      "priority_rank": 202
     },
     {
       "event_id": "evt-3a6a9323a215",
@@ -2785,7 +3069,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 36
+          "priority_rank": 38
         }
       },
       "display_gps": [
@@ -2800,7 +3084,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2822,7 +3106,7 @@
           "published_at": "2026-09-22T20:11:09+00:00"
         }
       ],
-      "priority_rank": 43
+      "priority_rank": 57
     },
     {
       "event_id": "evt-3aab807a0d5a",
@@ -2870,7 +3154,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2892,7 +3176,7 @@
           "published_at": "2026-09-08T09:24:00-04:00"
         }
       ],
-      "priority_rank": 137
+      "priority_rank": 151
     },
     {
       "event_id": "evt-3aac8717bd35",
@@ -2938,7 +3222,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2960,7 +3244,7 @@
           "published_at": "2026-09-09T13:05:54-04:00"
         }
       ],
-      "priority_rank": 130
+      "priority_rank": 144
     },
     {
       "event_id": "evt-3bc4c5d6c840",
@@ -3010,7 +3294,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3032,7 +3316,7 @@
           "published_at": "2026-09-21T17:42:00+00:00"
         }
       ],
-      "priority_rank": 62
+      "priority_rank": 76
     },
     {
       "event_id": "evt-3cb3dac78660",
@@ -3082,7 +3366,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3104,7 +3388,7 @@
           "published_at": "2026-09-16T17:03:00+00:00"
         }
       ],
-      "priority_rank": 92
+      "priority_rank": 106
     },
     {
       "event_id": "evt-3cffb59855a4",
@@ -3158,7 +3442,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3180,7 +3464,7 @@
           "published_at": "2026-09-19T13:42:23+00:00"
         }
       ],
-      "priority_rank": 66
+      "priority_rank": 80
     },
     {
       "event_id": "evt-3d59d5574141",
@@ -3230,7 +3514,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3252,7 +3536,7 @@
           "published_at": "2026-08-31T06:55:53-04:00"
         }
       ],
-      "priority_rank": 158
+      "priority_rank": 172
     },
     {
       "event_id": "evt-3da7f824eda8",
@@ -3287,7 +3571,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 38
+          "priority_rank": 40
         }
       },
       "display_gps": [
@@ -3302,7 +3586,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3324,7 +3608,7 @@
           "published_at": "2026-09-22T20:10:00+00:00"
         }
       ],
-      "priority_rank": 45
+      "priority_rank": 59
     },
     {
       "event_id": "evt-3e7ef26e28ba",
@@ -3372,7 +3656,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3394,7 +3678,7 @@
           "published_at": "2026-09-15T20:09:43+00:00"
         }
       ],
-      "priority_rank": 102
+      "priority_rank": 116
     },
     {
       "event_id": "evt-434e33cfb7cc",
@@ -3429,7 +3713,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 28
+          "priority_rank": 30
         }
       },
       "display_gps": [
@@ -3444,7 +3728,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3466,7 +3750,75 @@
           "published_at": "2026-09-22T21:00:42+00:00"
         }
       ],
-      "priority_rank": 35
+      "priority_rank": 49
+    },
+    {
+      "event_id": "evt-45466877ac21",
+      "member_card_ids": [
+        "45466877ac21"
+      ],
+      "representative_card_id": "45466877ac21",
+      "date_views": {
+        "2026-09-25": {
+          "representative_card_id": "45466877ac21",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "45466877ac21"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-25T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Unsupported assessment claim: severity",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 6
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-24T16:07:22+00:00",
+      "last_material_update_at": "2026-09-24T16:07:22+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Unsupported assessment claim: severity",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Alternative Credit Investor",
+          "url": "https://alternativecreditinvestor.com/2026/09/24/goldman-sachs-inks-10bn-for-european-evergreen-credit-fund/",
+          "card_id": "45466877ac21",
+          "published_at": "2026-09-24T16:07:22+00:00"
+        }
+      ],
+      "priority_rank": 7
     },
     {
       "event_id": "evt-460530fb1372",
@@ -3516,7 +3868,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3538,7 +3890,7 @@
           "published_at": "2026-09-17T11:25:06+00:00"
         }
       ],
-      "priority_rank": 82
+      "priority_rank": 96
     },
     {
       "event_id": "evt-46436234a5fa",
@@ -3588,7 +3940,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3610,7 +3962,7 @@
           "published_at": "2026-09-02T09:36:10-04:00"
         }
       ],
-      "priority_rank": 148
+      "priority_rank": 162
     },
     {
       "event_id": "evt-4b18ff57330b",
@@ -3660,7 +4012,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3682,7 +4034,7 @@
           "published_at": "2026-09-16T18:09:21+00:00"
         }
       ],
-      "priority_rank": 91
+      "priority_rank": 105
     },
     {
       "event_id": "evt-4b913f79deea",
@@ -3717,7 +4069,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 4
+          "priority_rank": 6
         }
       },
       "display_gps": [
@@ -3732,7 +4084,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3754,7 +4106,7 @@
           "published_at": "2026-09-23T12:34:38+00:00"
         }
       ],
-      "priority_rank": 10
+      "priority_rank": 24
     },
     {
       "event_id": "evt-4d8f7829205b",
@@ -3800,7 +4152,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3822,7 +4174,7 @@
           "published_at": "2026-09-21T16:04:13+00:00"
         }
       ],
-      "priority_rank": 64
+      "priority_rank": 78
     },
     {
       "event_id": "evt-534accad5e52",
@@ -3868,7 +4220,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3890,7 +4242,7 @@
           "published_at": "2026-09-14T17:23:45+00:00"
         }
       ],
-      "priority_rank": 117
+      "priority_rank": 131
     },
     {
       "event_id": "evt-54436093da1a",
@@ -3925,7 +4277,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 40
+          "priority_rank": 42
         }
       },
       "display_gps": [
@@ -3940,7 +4292,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3962,7 +4314,7 @@
           "published_at": "2026-09-22T18:58:51+00:00"
         }
       ],
-      "priority_rank": 47
+      "priority_rank": 61
     },
     {
       "event_id": "evt-54e666894614",
@@ -4008,7 +4360,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4030,7 +4382,7 @@
           "published_at": "2026-08-28T00:00:00+08:00"
         }
       ],
-      "priority_rank": 163
+      "priority_rank": 177
     },
     {
       "event_id": "evt-54f7371abb8d",
@@ -4065,7 +4417,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 22
+          "priority_rank": 24
         }
       },
       "display_gps": [
@@ -4080,7 +4432,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4102,7 +4454,7 @@
           "published_at": "2026-09-22T22:02:56+00:00"
         }
       ],
-      "priority_rank": 29
+      "priority_rank": 43
     },
     {
       "event_id": "evt-55d439246bc8",
@@ -4150,7 +4502,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4172,7 +4524,7 @@
           "published_at": "2026-08-12T00:00:00+08:00"
         }
       ],
-      "priority_rank": 200
+      "priority_rank": 214
     },
     {
       "event_id": "evt-56ef6f2ccbe0",
@@ -4218,7 +4570,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4240,7 +4592,7 @@
           "published_at": "2026-08-25T00:00:00+08:00"
         }
       ],
-      "priority_rank": 174
+      "priority_rank": 188
     },
     {
       "event_id": "evt-580a117b154f",
@@ -4286,7 +4638,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4308,7 +4660,7 @@
           "published_at": "2026-09-01T00:00:00+08:00"
         }
       ],
-      "priority_rank": 156
+      "priority_rank": 170
     },
     {
       "event_id": "evt-583f3d6c6d0a",
@@ -4354,7 +4706,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4376,7 +4728,7 @@
           "published_at": "2026-09-08T00:00:00+08:00"
         }
       ],
-      "priority_rank": 139
+      "priority_rank": 153
     },
     {
       "event_id": "evt-5a89fd2fec03",
@@ -4430,7 +4782,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4452,7 +4804,7 @@
           "published_at": "2026-09-17T12:11:26+00:00"
         }
       ],
-      "priority_rank": 81
+      "priority_rank": 95
     },
     {
       "event_id": "evt-5a981b62c2d4",
@@ -4498,7 +4850,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4520,7 +4872,7 @@
           "published_at": "2026-09-14T15:30:42+00:00"
         }
       ],
-      "priority_rank": 118
+      "priority_rank": 132
     },
     {
       "event_id": "evt-5d3d28976637",
@@ -4566,7 +4918,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4588,7 +4940,7 @@
           "published_at": "2026-08-25T00:00:00+08:00"
         }
       ],
-      "priority_rank": 175
+      "priority_rank": 189
     },
     {
       "event_id": "evt-5d75b577038f",
@@ -4634,7 +4986,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4656,7 +5008,7 @@
           "published_at": "2026-09-17T22:12:27+00:00"
         }
       ],
-      "priority_rank": 75
+      "priority_rank": 89
     },
     {
       "event_id": "evt-5e17d66d9c39",
@@ -4704,7 +5056,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4726,7 +5078,7 @@
           "published_at": "2026-09-10T00:00:00+08:00"
         }
       ],
-      "priority_rank": 131
+      "priority_rank": 145
     },
     {
       "event_id": "evt-5f9097b60c5e",
@@ -4772,7 +5124,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4794,7 +5146,7 @@
           "published_at": "2026-08-20T00:00:00+08:00"
         }
       ],
-      "priority_rank": 180
+      "priority_rank": 194
     },
     {
       "event_id": "evt-5f9cf9b9ef30",
@@ -4844,7 +5196,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4866,7 +5218,7 @@
           "published_at": "2026-09-13T04:18:45+00:00"
         }
       ],
-      "priority_rank": 121
+      "priority_rank": 135
     },
     {
       "event_id": "evt-60b5fc3bb616",
@@ -4912,7 +5264,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4934,7 +5286,7 @@
           "published_at": "2026-09-09T00:00:00+08:00"
         }
       ],
-      "priority_rank": 133
+      "priority_rank": 147
     },
     {
       "event_id": "evt-6598f3e38c58",
@@ -4982,7 +5334,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5004,7 +5356,7 @@
           "published_at": "2026-08-20T00:00:00+08:00"
         }
       ],
-      "priority_rank": 181
+      "priority_rank": 195
     },
     {
       "event_id": "evt-67e4ea6814ca",
@@ -5050,7 +5402,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5072,7 +5424,7 @@
           "published_at": "2026-09-08T00:00:00+08:00"
         }
       ],
-      "priority_rank": 140
+      "priority_rank": 154
     },
     {
       "event_id": "evt-67fe54c1917d",
@@ -5118,7 +5470,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5140,7 +5492,7 @@
           "published_at": "2026-08-18T00:00:00+08:00"
         }
       ],
-      "priority_rank": 189
+      "priority_rank": 203
     },
     {
       "event_id": "evt-6ab1f6aca955",
@@ -5188,7 +5540,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5210,7 +5562,7 @@
           "published_at": "2026-09-14T21:25:00+00:00"
         }
       ],
-      "priority_rank": 113
+      "priority_rank": 127
     },
     {
       "event_id": "evt-6bbc0e19741a",
@@ -5260,7 +5612,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5282,7 +5634,7 @@
           "published_at": "2026-09-22T07:34:50+00:00"
         }
       ],
-      "priority_rank": 56
+      "priority_rank": 70
     },
     {
       "event_id": "evt-6c177e5368f1",
@@ -5317,7 +5669,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 41
+          "priority_rank": 43
         }
       },
       "display_gps": [
@@ -5332,7 +5684,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5354,7 +5706,7 @@
           "published_at": "2026-09-22T16:23:52+00:00"
         }
       ],
-      "priority_rank": 48
+      "priority_rank": 62
     },
     {
       "event_id": "evt-6e521167dacd",
@@ -5402,7 +5754,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5424,7 +5776,7 @@
           "published_at": "2026-09-15T13:23:50+00:00"
         }
       ],
-      "priority_rank": 110
+      "priority_rank": 124
     },
     {
       "event_id": "evt-6fb7deb3d317",
@@ -5470,7 +5822,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5492,7 +5844,7 @@
           "published_at": "2026-09-01T00:00:00+08:00"
         }
       ],
-      "priority_rank": 157
+      "priority_rank": 171
     },
     {
       "event_id": "evt-6fee9c9e3b9e",
@@ -5540,7 +5892,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5562,7 +5914,7 @@
           "published_at": "2026-09-01T09:00:10-04:00"
         }
       ],
-      "priority_rank": 153
+      "priority_rank": 167
     },
     {
       "event_id": "evt-705b84901b25",
@@ -5614,7 +5966,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5636,7 +5988,7 @@
           "published_at": "2026-09-10T00:00:00+08:00"
         }
       ],
-      "priority_rank": 132
+      "priority_rank": 146
     },
     {
       "event_id": "evt-710cf91fb0dd",
@@ -5682,7 +6034,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5704,7 +6056,7 @@
           "published_at": "2026-08-13T00:00:00+08:00"
         }
       ],
-      "priority_rank": 199
+      "priority_rank": 213
     },
     {
       "event_id": "evt-713c2760fc8e",
@@ -5750,7 +6102,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5772,7 +6124,7 @@
           "published_at": "2026-09-02T00:00:00+08:00"
         }
       ],
-      "priority_rank": 150
+      "priority_rank": 164
     },
     {
       "event_id": "evt-72c5665a255f",
@@ -5818,7 +6170,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5840,7 +6192,7 @@
           "published_at": "2026-08-17T00:00:00+08:00"
         }
       ],
-      "priority_rank": 191
+      "priority_rank": 205
     },
     {
       "event_id": "evt-7451d21d8ba2",
@@ -5886,7 +6238,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5908,7 +6260,7 @@
           "published_at": "2026-09-08T00:00:00+08:00"
         }
       ],
-      "priority_rank": 141
+      "priority_rank": 155
     },
     {
       "event_id": "evt-74922896b1ea",
@@ -5954,7 +6306,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5976,7 +6328,7 @@
           "published_at": "2026-09-09T00:00:00+08:00"
         }
       ],
-      "priority_rank": 134
+      "priority_rank": 148
     },
     {
       "event_id": "evt-751a5b048ed0",
@@ -6026,7 +6378,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6048,7 +6400,7 @@
           "published_at": "2026-09-01T09:57:56-04:00"
         }
       ],
-      "priority_rank": 152
+      "priority_rank": 166
     },
     {
       "event_id": "evt-7659a1216ef9",
@@ -6083,7 +6435,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 31
+          "priority_rank": 33
         }
       },
       "display_gps": [
@@ -6098,7 +6450,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6120,7 +6472,7 @@
           "published_at": "2026-09-22T20:44:22+00:00"
         }
       ],
-      "priority_rank": 38
+      "priority_rank": 52
     },
     {
       "event_id": "evt-7766be2db755",
@@ -6166,7 +6518,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6188,7 +6540,7 @@
           "published_at": "2026-08-12T13:35:20-04:00"
         }
       ],
-      "priority_rank": 196
+      "priority_rank": 210
     },
     {
       "event_id": "evt-777afd02d6c0",
@@ -6238,7 +6590,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6260,7 +6612,7 @@
           "published_at": "2026-09-17T18:28:41+00:00"
         }
       ],
-      "priority_rank": 77
+      "priority_rank": 91
     },
     {
       "event_id": "evt-779c1f927421",
@@ -6306,7 +6658,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6328,7 +6680,7 @@
           "published_at": "2026-09-18T12:40:58+00:00"
         }
       ],
-      "priority_rank": 71
+      "priority_rank": 85
     },
     {
       "event_id": "evt-7938f0178a78",
@@ -6363,7 +6715,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 2
+          "priority_rank": 4
         }
       },
       "display_gps": [
@@ -6378,7 +6730,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6400,7 +6752,7 @@
           "published_at": "2026-09-24T12:17:14+00:00"
         }
       ],
-      "priority_rank": 2
+      "priority_rank": 10
     },
     {
       "event_id": "evt-7b15e82fcf19",
@@ -6454,7 +6806,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6476,7 +6828,7 @@
           "published_at": "2026-09-15T20:16:02+00:00"
         }
       ],
-      "priority_rank": 101
+      "priority_rank": 115
     },
     {
       "event_id": "evt-7b8a0774b583",
@@ -6524,7 +6876,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6546,7 +6898,7 @@
           "published_at": "2026-08-28T00:00:00+08:00"
         }
       ],
-      "priority_rank": 164
+      "priority_rank": 178
     },
     {
       "event_id": "evt-7c124389678a",
@@ -6596,7 +6948,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6618,7 +6970,7 @@
           "published_at": "2026-08-30T00:00:00+08:00"
         }
       ],
-      "priority_rank": 161
+      "priority_rank": 175
     },
     {
       "event_id": "evt-7d2d92953671",
@@ -6664,7 +7016,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6686,7 +7038,7 @@
           "published_at": "2026-09-09T00:00:00+08:00"
         }
       ],
-      "priority_rank": 135
+      "priority_rank": 149
     },
     {
       "event_id": "evt-7fde19569bd8",
@@ -6736,7 +7088,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6758,7 +7110,7 @@
           "published_at": "2026-09-16T13:37:32+00:00"
         }
       ],
-      "priority_rank": 93
+      "priority_rank": 107
     },
     {
       "event_id": "evt-80bc0a674b20",
@@ -6806,7 +7158,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6828,7 +7180,7 @@
           "published_at": "2026-09-14T20:49:54+00:00"
         }
       ],
-      "priority_rank": 114
+      "priority_rank": 128
     },
     {
       "event_id": "evt-83d71e93e109",
@@ -6863,7 +7215,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 18
+          "priority_rank": 20
         }
       },
       "display_gps": [
@@ -6878,7 +7230,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6900,7 +7252,7 @@
           "published_at": "2026-09-23T00:26:54+00:00"
         }
       ],
-      "priority_rank": 24
+      "priority_rank": 38
     },
     {
       "event_id": "evt-852f9bce3cb9",
@@ -6952,7 +7304,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6974,7 +7326,7 @@
           "published_at": "2026-09-17T08:00:59+00:00"
         }
       ],
-      "priority_rank": 85
+      "priority_rank": 99
     },
     {
       "event_id": "evt-85520242eb65",
@@ -7024,7 +7376,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7046,7 +7398,7 @@
           "published_at": "2026-09-22T11:45:34+00:00"
         }
       ],
-      "priority_rank": 51
+      "priority_rank": 65
     },
     {
       "event_id": "evt-89fdd706bd80",
@@ -7083,7 +7435,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 3
+          "priority_rank": 5
         }
       },
       "display_gps": [
@@ -7100,7 +7452,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7122,7 +7474,7 @@
           "published_at": "2026-09-24T11:38:06+00:00"
         }
       ],
-      "priority_rank": 3
+      "priority_rank": 11
     },
     {
       "event_id": "evt-8cff6027c039",
@@ -7172,7 +7524,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7194,7 +7546,7 @@
           "published_at": "2026-09-12T01:08:04+00:00"
         }
       ],
-      "priority_rank": 122
+      "priority_rank": 136
     },
     {
       "event_id": "evt-8e7307b60990",
@@ -7240,7 +7592,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7262,7 +7614,7 @@
           "published_at": "2026-09-22T03:24:30+00:00"
         }
       ],
-      "priority_rank": 57
+      "priority_rank": 71
     },
     {
       "event_id": "evt-8f8e52b00f67",
@@ -7312,7 +7664,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7334,7 +7686,7 @@
           "published_at": "2026-09-17T12:19:00+00:00"
         }
       ],
-      "priority_rank": 80
+      "priority_rank": 94
     },
     {
       "event_id": "evt-8fbc643f3d19",
@@ -7384,7 +7736,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7406,7 +7758,7 @@
           "published_at": "2026-09-15T16:12:22+00:00"
         }
       ],
-      "priority_rank": 105
+      "priority_rank": 119
     },
     {
       "event_id": "evt-906f8c12189f",
@@ -7441,7 +7793,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 25
+          "priority_rank": 27
         }
       },
       "display_gps": [
@@ -7456,7 +7808,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7478,7 +7830,7 @@
           "published_at": "2026-09-22T21:52:42+00:00"
         }
       ],
-      "priority_rank": 32
+      "priority_rank": 46
     },
     {
       "event_id": "evt-92dc00f248ce",
@@ -7530,7 +7882,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7552,7 +7904,7 @@
           "published_at": "2026-08-28T00:00:00+08:00"
         }
       ],
-      "priority_rank": 165
+      "priority_rank": 179
     },
     {
       "event_id": "evt-92fc365ea67b",
@@ -7598,7 +7950,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7620,7 +7972,7 @@
           "published_at": "2026-08-26T00:00:00+08:00"
         }
       ],
-      "priority_rank": 170
+      "priority_rank": 184
     },
     {
       "event_id": "evt-930e98758b21",
@@ -7666,7 +8018,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7688,7 +8040,7 @@
           "published_at": "2026-08-19T06:30:13-04:00"
         }
       ],
-      "priority_rank": 183
+      "priority_rank": 197
     },
     {
       "event_id": "evt-95a84a791a92",
@@ -7734,7 +8086,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7756,7 +8108,7 @@
           "published_at": "2026-08-25T00:00:00+08:00"
         }
       ],
-      "priority_rank": 176
+      "priority_rank": 190
     },
     {
       "event_id": "evt-98be626e5990",
@@ -7802,7 +8154,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7824,7 +8176,7 @@
           "published_at": "2026-09-10T15:37:05+00:00"
         }
       ],
-      "priority_rank": 128
+      "priority_rank": 142
     },
     {
       "event_id": "evt-9a3525282b69",
@@ -7870,7 +8222,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7892,7 +8244,7 @@
           "published_at": "2026-09-07T00:00:00+08:00"
         }
       ],
-      "priority_rank": 143
+      "priority_rank": 157
     },
     {
       "event_id": "evt-9bd9bc7b561e",
@@ -7942,7 +8294,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7964,7 +8316,7 @@
           "published_at": "2026-09-18T03:45:19+00:00"
         }
       ],
-      "priority_rank": 74
+      "priority_rank": 88
     },
     {
       "event_id": "evt-9bf89ad0481c",
@@ -8014,7 +8366,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8036,7 +8388,75 @@
           "published_at": "2026-09-22T15:13:23+00:00"
         }
       ],
-      "priority_rank": 50
+      "priority_rank": 64
+    },
+    {
+      "event_id": "evt-9e61981ea5b4",
+      "member_card_ids": [
+        "9e61981ea5b4"
+      ],
+      "representative_card_id": "9e61981ea5b4",
+      "date_views": {
+        "2026-09-25": {
+          "representative_card_id": "9e61981ea5b4",
+          "display_gps": [],
+          "display_sectors": [
+            "clo"
+          ],
+          "member_card_ids": [
+            "9e61981ea5b4"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-25T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 4
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "clo"
+      ],
+      "first_seen_at": "2026-09-24T16:24:51+00:00",
+      "last_material_update_at": "2026-09-24T16:24:51+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Alternative Credit Investor",
+          "url": "https://alternativecreditinvestor.com/2026/09/24/sculptor-resets-and-upsizes-us-clo/",
+          "card_id": "9e61981ea5b4",
+          "published_at": "2026-09-24T16:24:51+00:00"
+        }
+      ],
+      "priority_rank": 5
     },
     {
       "event_id": "evt-a04cc4b2a80e",
@@ -8082,7 +8502,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8104,7 +8524,7 @@
           "published_at": "2026-08-20T00:00:00+08:00"
         }
       ],
-      "priority_rank": 182
+      "priority_rank": 196
     },
     {
       "event_id": "evt-a0f3329b83e8",
@@ -8150,7 +8570,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8172,7 +8592,7 @@
           "published_at": "2026-09-22T09:36:30+00:00"
         }
       ],
-      "priority_rank": 55
+      "priority_rank": 69
     },
     {
       "event_id": "evt-a128012f7260",
@@ -8222,7 +8642,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8244,7 +8664,75 @@
           "published_at": "2026-09-22T11:00:00+00:00"
         }
       ],
-      "priority_rank": 53
+      "priority_rank": 67
+    },
+    {
+      "event_id": "evt-a2dc87403c95",
+      "member_card_ids": [
+        "a2dc87403c95"
+      ],
+      "representative_card_id": "a2dc87403c95",
+      "date_views": {
+        "2026-09-24": {
+          "representative_card_id": "a2dc87403c95",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "a2dc87403c95"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-24T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 3
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-24T12:27:26+00:00",
+      "last_material_update_at": "2026-09-24T12:27:26+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "marketscreener.com",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMmNBNm1aTHVlN3VyVXkydEdtMktzSDZ5UzJmejhWUmM4Sm5rNUpMY0E2RDZZZFJ2XzNaanA1SjlyVVRVTzhCTE1QdUh4VHBqeUI1QWlkMWZYUUpBRU82S1NlSzZ6LW81VkxxMEdiMnFzNHVkVmh1bHkwcnVMOGxoTUNqZGFSdXQwNmlQd2FzSmdQU2VDa1VtYXJSVUI1VFpnSGZNcVdVZzJiM3RlT3h4ZE5oOWE1YmFhQWFUV2Q4X281cUpJZEVJ?oc=5",
+          "card_id": "a2dc87403c95",
+          "published_at": "2026-09-24T12:27:26+00:00"
+        }
+      ],
+      "priority_rank": 9
     },
     {
       "event_id": "evt-a3cfc33727c0",
@@ -8294,7 +8782,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8316,7 +8804,7 @@
           "published_at": "2026-09-15T10:30:00+00:00"
         }
       ],
-      "priority_rank": 111
+      "priority_rank": 125
     },
     {
       "event_id": "evt-a42ddb1f074c",
@@ -8362,7 +8850,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8432,7 +8920,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8454,7 +8942,7 @@
           "published_at": "2026-08-24T00:00:00+08:00"
         }
       ],
-      "priority_rank": 178
+      "priority_rank": 192
     },
     {
       "event_id": "evt-a7ef6426ba8a",
@@ -8489,7 +8977,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 15
+          "priority_rank": 17
         }
       },
       "display_gps": [
@@ -8504,7 +8992,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8526,7 +9014,7 @@
           "published_at": "2026-09-23T01:26:00+00:00"
         }
       ],
-      "priority_rank": 21
+      "priority_rank": 35
     },
     {
       "event_id": "evt-a85f2c246e31",
@@ -8574,7 +9062,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8596,7 +9084,7 @@
           "published_at": "2026-09-14T19:09:55+00:00"
         }
       ],
-      "priority_rank": 115
+      "priority_rank": 129
     },
     {
       "event_id": "evt-a9303f71d972",
@@ -8642,7 +9130,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8664,7 +9152,7 @@
           "published_at": "2026-09-21T18:06:48+00:00"
         }
       ],
-      "priority_rank": 61
+      "priority_rank": 75
     },
     {
       "event_id": "evt-a9ffd979cf6b",
@@ -8716,7 +9204,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8738,7 +9226,7 @@
           "published_at": "2026-08-27T00:00:00+08:00"
         }
       ],
-      "priority_rank": 166
+      "priority_rank": 180
     },
     {
       "event_id": "evt-aa9b94332185",
@@ -8788,7 +9276,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8810,7 +9298,7 @@
           "published_at": "2026-09-16T03:44:53+00:00"
         }
       ],
-      "priority_rank": 96
+      "priority_rank": 110
     },
     {
       "event_id": "evt-ae5f41c3bc26",
@@ -8858,7 +9346,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8880,7 +9368,7 @@
           "published_at": "2026-09-04T00:00:00+08:00"
         }
       ],
-      "priority_rank": 146
+      "priority_rank": 160
     },
     {
       "event_id": "evt-af30680489de",
@@ -8926,7 +9414,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8948,7 +9436,7 @@
           "published_at": "2026-09-14T18:24:33+00:00"
         }
       ],
-      "priority_rank": 116
+      "priority_rank": 130
     },
     {
       "event_id": "evt-aff111288de8",
@@ -8998,7 +9486,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9020,7 +9508,7 @@
           "published_at": "2026-09-16T23:02:10+00:00"
         }
       ],
-      "priority_rank": 88
+      "priority_rank": 102
     },
     {
       "event_id": "evt-b03eb400467f",
@@ -9070,7 +9558,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9092,7 +9580,7 @@
           "published_at": "2026-09-22T02:09:11+00:00"
         }
       ],
-      "priority_rank": 59
+      "priority_rank": 73
     },
     {
       "event_id": "evt-b21c1e9f66a0",
@@ -9138,7 +9626,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9160,7 +9648,7 @@
           "published_at": "2026-09-22T09:42:12+00:00"
         }
       ],
-      "priority_rank": 54
+      "priority_rank": 68
     },
     {
       "event_id": "evt-b25cd6b822b1",
@@ -9206,7 +9694,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9228,7 +9716,7 @@
           "published_at": "2026-09-07T00:00:00+08:00"
         }
       ],
-      "priority_rank": 144
+      "priority_rank": 158
     },
     {
       "event_id": "evt-b2f4bc05e554",
@@ -9274,7 +9762,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9296,7 +9784,7 @@
           "published_at": "2026-08-25T00:00:00+08:00"
         }
       ],
-      "priority_rank": 177
+      "priority_rank": 191
     },
     {
       "event_id": "evt-b32b39b5ccad",
@@ -9342,7 +9830,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9364,7 +9852,7 @@
           "published_at": "2026-08-19T00:00:00+08:00"
         }
       ],
-      "priority_rank": 184
+      "priority_rank": 198
     },
     {
       "event_id": "evt-b574959d7c9b",
@@ -9410,7 +9898,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9432,7 +9920,7 @@
           "published_at": "2026-09-11T16:03:35+00:00"
         }
       ],
-      "priority_rank": 126
+      "priority_rank": 140
     },
     {
       "event_id": "evt-b7fa5b484e59",
@@ -9467,7 +9955,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 29
+          "priority_rank": 31
         }
       },
       "display_gps": [
@@ -9482,7 +9970,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9504,7 +9992,7 @@
           "published_at": "2026-09-22T21:00:42+00:00"
         }
       ],
-      "priority_rank": 36
+      "priority_rank": 50
     },
     {
       "event_id": "evt-b9177fe8e7f4",
@@ -9556,7 +10044,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9578,7 +10066,7 @@
           "published_at": "2026-08-17T00:00:00+08:00"
         }
       ],
-      "priority_rank": 192
+      "priority_rank": 206
     },
     {
       "event_id": "evt-bca3caecdedb",
@@ -9628,7 +10116,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9650,7 +10138,7 @@
           "published_at": "2026-09-11T23:54:46+00:00"
         }
       ],
-      "priority_rank": 123
+      "priority_rank": 137
     },
     {
       "event_id": "evt-bce4f32145d7",
@@ -9700,7 +10188,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9722,7 +10210,7 @@
           "published_at": "2026-09-18T12:09:24+00:00"
         }
       ],
-      "priority_rank": 72
+      "priority_rank": 86
     },
     {
       "event_id": "evt-bd0c177ab82a",
@@ -9768,7 +10256,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9790,7 +10278,79 @@
           "published_at": "2026-09-19T10:47:11+00:00"
         }
       ],
-      "priority_rank": 67
+      "priority_rank": 81
+    },
+    {
+      "event_id": "evt-bee6f703bd46",
+      "member_card_ids": [
+        "bee6f703bd46"
+      ],
+      "representative_card_id": "bee6f703bd46",
+      "date_views": {
+        "2026-09-23": {
+          "representative_card_id": "bee6f703bd46",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "bee6f703bd46"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-23T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 1
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-23T15:58:00+00:00",
+      "last_material_update_at": "2026-09-23T15:58:00+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "marketscreener.com",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWm9fRUU1X0wwNUl0S0hwQ0Jla0JjRzhDanpZRjF1Ym1fTE9kLVRlNVBmRjdjX1VJb2MtRHVpX1ZoZXROVExFd0lDcjY4M1lnQzJGQjBaRmJlX1ZwdUFDN01yYlQ1NFJGZnJLekwwN0VMSVVFMUZtaVNabjZiQmlHalBPNEdyVktOOW5XQTdoQWY1M3ZUcV9MVnl0Z29DVGkyZ1FmQWhzREhyTkkxYXFIVEJfR1M3ckY2ME0ydHFVMmNLNFlxdVFFVWR1RWtOclVQRG1vc1FB?oc=5",
+          "card_id": "bee6f703bd46",
+          "published_at": "2026-09-23T15:58:00+00:00"
+        }
+      ],
+      "priority_rank": 19
     },
     {
       "event_id": "evt-c145a80c43dc",
@@ -9836,7 +10396,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9858,7 +10418,7 @@
           "published_at": "2026-09-14T21:25:13+00:00"
         }
       ],
-      "priority_rank": 112
+      "priority_rank": 126
     },
     {
       "event_id": "evt-c14edac88c85",
@@ -9908,7 +10468,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9930,7 +10490,7 @@
           "published_at": "2026-09-18T03:45:20+00:00"
         }
       ],
-      "priority_rank": 73
+      "priority_rank": 87
     },
     {
       "event_id": "evt-c1bbeccadda0",
@@ -9976,7 +10536,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9998,7 +10558,75 @@
           "published_at": "2026-08-31T00:00:00+08:00"
         }
       ],
-      "priority_rank": 159
+      "priority_rank": 173
+    },
+    {
+      "event_id": "evt-c406b3a14e7b",
+      "member_card_ids": [
+        "c406b3a14e7b"
+      ],
+      "representative_card_id": "c406b3a14e7b",
+      "date_views": {
+        "2026-09-25": {
+          "representative_card_id": "c406b3a14e7b",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [],
+          "member_card_ids": [
+            "c406b3a14e7b"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-25T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 3
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [],
+      "first_seen_at": "2026-09-24T20:26:03+00:00",
+      "last_material_update_at": "2026-09-24T20:26:03+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "identity",
+      "sources": [
+        {
+          "publisher": "KuCoin",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9oek43WGl4RDBIRXFxWFZGZ3hCVmN5UnhiRUlYd1F4cUJBV3kxdTZYZFlCLV9OcFFHSG5nX19RRHdFR2drMHFBbFMtWTlrQ0tVWWxuMEVSUUhpazBDZ3VPR0QzN21XUl9uMTRVTmtMcUtpSzQ?oc=5",
+          "card_id": "c406b3a14e7b",
+          "published_at": "2026-09-24T20:26:03+00:00"
+        }
+      ],
+      "priority_rank": 4
     },
     {
       "event_id": "evt-c504193b7d21",
@@ -10044,7 +10672,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10066,7 +10694,7 @@
           "published_at": "2026-09-01T16:00:08-04:00"
         }
       ],
-      "priority_rank": 149
+      "priority_rank": 163
     },
     {
       "event_id": "evt-c5572a0521c8",
@@ -10112,7 +10740,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10134,7 +10762,7 @@
           "published_at": "2026-09-17T08:57:49+00:00"
         }
       ],
-      "priority_rank": 84
+      "priority_rank": 98
     },
     {
       "event_id": "evt-c5adf2f35275",
@@ -10182,7 +10810,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10204,7 +10832,7 @@
           "published_at": "2026-09-15T14:08:06+00:00"
         }
       ],
-      "priority_rank": 109
+      "priority_rank": 123
     },
     {
       "event_id": "evt-c5ae78f0b305",
@@ -10250,7 +10878,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10272,7 +10900,7 @@
           "published_at": "2026-08-21T00:00:00+08:00"
         }
       ],
-      "priority_rank": 179
+      "priority_rank": 193
     },
     {
       "event_id": "evt-c5bdabf2be3f",
@@ -10322,7 +10950,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10344,7 +10972,7 @@
           "published_at": "2026-09-17T11:11:56+00:00"
         }
       ],
-      "priority_rank": 83
+      "priority_rank": 97
     },
     {
       "event_id": "evt-c704c89e54cc",
@@ -10390,7 +11018,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10412,7 +11040,7 @@
           "published_at": "2026-09-15T14:38:22+00:00"
         }
       ],
-      "priority_rank": 108
+      "priority_rank": 122
     },
     {
       "event_id": "evt-c86fc232e852",
@@ -10447,7 +11075,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 5
+          "priority_rank": 7
         }
       },
       "display_gps": [
@@ -10462,7 +11090,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10484,7 +11112,79 @@
           "published_at": "2026-09-23T12:19:40+00:00"
         }
       ],
-      "priority_rank": 11
+      "priority_rank": 25
+    },
+    {
+      "event_id": "evt-c969ea61c5e8",
+      "member_card_ids": [
+        "c969ea61c5e8"
+      ],
+      "representative_card_id": "c969ea61c5e8",
+      "date_views": {
+        "2026-09-24": {
+          "representative_card_id": "c969ea61c5e8",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "real_estate"
+          ],
+          "member_card_ids": [
+            "c969ea61c5e8"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-24T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 6
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "real_estate"
+      ],
+      "first_seen_at": "2026-09-24T09:52:39+00:00",
+      "last_material_update_at": "2026-09-24T09:52:39+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Investing.com India",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPN0pHcENuTXZZUkdncXYxal9DbjJXV1FFX1o5bUN5NWdpUGFCcVRESk9DT2V1R3lhbW1QdXQ3MmtjOWNIc18tUkg1ZmRDNXB4cFZlc3ZQZHNOVnZDeDJBellkanItSUVvYnFTbWFhOHN2UUZLYlVQcWh2RG1vVEVMTFhNN3hFb3MzV1lQSWZZMVJmdU1iRmxvMXNaTEVkb01mT0RwczVocVJDZWczTGtOMGIyVUdIQ2dQTEhJTUpHVktxUXptU25n?oc=5",
+          "card_id": "c969ea61c5e8",
+          "published_at": "2026-09-24T09:52:39+00:00"
+        }
+      ],
+      "priority_rank": 12
     },
     {
       "event_id": "evt-ca2ccf9f530d",
@@ -10530,7 +11230,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10552,7 +11252,7 @@
           "published_at": "2026-09-22T00:39:00+00:00"
         }
       ],
-      "priority_rank": 60
+      "priority_rank": 74
     },
     {
       "event_id": "evt-cbc9ebc8d177",
@@ -10587,7 +11287,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 24
+          "priority_rank": 26
         }
       },
       "display_gps": [
@@ -10602,7 +11302,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10624,7 +11324,7 @@
           "published_at": "2026-09-22T21:53:14+00:00"
         }
       ],
-      "priority_rank": 31
+      "priority_rank": 45
     },
     {
       "event_id": "evt-ccd600d33c15",
@@ -10672,7 +11372,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10694,7 +11394,7 @@
           "published_at": "2026-08-26T00:00:00+08:00"
         }
       ],
-      "priority_rank": 171
+      "priority_rank": 185
     },
     {
       "event_id": "evt-cde3adfd5528",
@@ -10744,7 +11444,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10766,7 +11466,7 @@
           "published_at": "2026-08-26T00:00:00+08:00"
         }
       ],
-      "priority_rank": 172
+      "priority_rank": 186
     },
     {
       "event_id": "evt-ce32ac8b2cdf",
@@ -10812,7 +11512,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10834,7 +11534,7 @@
           "published_at": "2026-08-17T00:00:00+08:00"
         }
       ],
-      "priority_rank": 193
+      "priority_rank": 207
     },
     {
       "event_id": "evt-cef717ef0cd2",
@@ -10884,7 +11584,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10906,7 +11606,7 @@
           "published_at": "2026-09-16T09:19:46+00:00"
         }
       ],
-      "priority_rank": 94
+      "priority_rank": 108
     },
     {
       "event_id": "evt-d11b48c51872",
@@ -10941,7 +11641,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 10
+          "priority_rank": 12
         }
       },
       "display_gps": [
@@ -10956,7 +11656,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10978,7 +11678,7 @@
           "published_at": "2026-09-23T06:43:02+00:00"
         }
       ],
-      "priority_rank": 16
+      "priority_rank": 30
     },
     {
       "event_id": "evt-d2cd5e3b334a",
@@ -11026,7 +11726,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11048,7 +11748,7 @@
           "published_at": "2026-08-27T00:00:00+08:00"
         }
       ],
-      "priority_rank": 167
+      "priority_rank": 181
     },
     {
       "event_id": "evt-d2e6ede4b103",
@@ -11098,7 +11798,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11120,7 +11820,81 @@
           "published_at": "2026-08-31T00:00:00+08:00"
         }
       ],
-      "priority_rank": 160
+      "priority_rank": 174
+    },
+    {
+      "event_id": "evt-d55d8b4782bb",
+      "member_card_ids": [
+        "d55d8b4782bb"
+      ],
+      "representative_card_id": "d55d8b4782bb",
+      "date_views": {
+        "2026-09-24": {
+          "representative_card_id": "d55d8b4782bb",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit",
+            "asset_based_finance"
+          ],
+          "member_card_ids": [
+            "d55d8b4782bb"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-24T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 9
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "first_seen_at": "2026-09-23T23:44:09+00:00",
+      "last_material_update_at": "2026-09-23T23:44:09+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Briefs Finance",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORDNlc0IxNmdXeWdlVmktWGZzQnZJYkFzV1U0dFJjSlM3S1RZWkVBek9VMzFyTTNGWnpOMTQ0RG1rWW9zSUZPUEpsaFdPWEdYRG5uMzFXZWJzeE90TGdqQXdJUm50bHJUbnNxMEp4TUo5ZUt2eEdnTmJPX0ZqS2pLeElQVkNoTHdtZTUxdTMyMDA?oc=5",
+          "card_id": "d55d8b4782bb",
+          "published_at": "2026-09-23T23:44:09+00:00"
+        }
+      ],
+      "priority_rank": 15
     },
     {
       "event_id": "evt-d647e5a595d1",
@@ -11170,7 +11944,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11192,7 +11966,7 @@
           "published_at": "2026-09-22T11:02:34+00:00"
         }
       ],
-      "priority_rank": 52
+      "priority_rank": 66
     },
     {
       "event_id": "evt-d6632e2fb734",
@@ -11225,7 +11999,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 39
+          "priority_rank": 41
         }
       },
       "display_gps": [],
@@ -11238,7 +12012,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11260,7 +12034,7 @@
           "published_at": "2026-09-22T19:00:00+00:00"
         }
       ],
-      "priority_rank": 46
+      "priority_rank": 60
     },
     {
       "event_id": "evt-d796cd9e96a0",
@@ -11310,7 +12084,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11332,7 +12106,7 @@
           "published_at": "2026-09-15T15:30:22+00:00"
         }
       ],
-      "priority_rank": 107
+      "priority_rank": 121
     },
     {
       "event_id": "evt-d87b77beebf2",
@@ -11367,7 +12141,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 8
+          "priority_rank": 10
         }
       },
       "display_gps": [
@@ -11382,7 +12156,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11404,7 +12178,7 @@
           "published_at": "2026-09-23T07:48:08+00:00"
         }
       ],
-      "priority_rank": 14
+      "priority_rank": 28
     },
     {
       "event_id": "evt-db3f32a2a078",
@@ -11452,7 +12226,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11474,7 +12248,7 @@
           "published_at": "2026-09-04T06:43:03-04:00"
         }
       ],
-      "priority_rank": 145
+      "priority_rank": 159
     },
     {
       "event_id": "evt-dc741bd5af7f",
@@ -11520,7 +12294,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11542,7 +12316,7 @@
           "published_at": "2026-09-19T04:35:00+00:00"
         }
       ],
-      "priority_rank": 69
+      "priority_rank": 83
     },
     {
       "event_id": "evt-df849d742755",
@@ -11588,7 +12362,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11610,7 +12384,7 @@
           "published_at": "2026-08-14T00:00:00+08:00"
         }
       ],
-      "priority_rank": 195
+      "priority_rank": 209
     },
     {
       "event_id": "evt-e188a2df5402",
@@ -11656,7 +12430,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11678,7 +12452,7 @@
           "published_at": "2026-09-17T13:14:27+00:00"
         }
       ],
-      "priority_rank": 79
+      "priority_rank": 93
     },
     {
       "event_id": "evt-e1c1f79fff6a",
@@ -11728,7 +12502,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11750,7 +12524,7 @@
           "published_at": "2026-09-17T07:06:00+00:00"
         }
       ],
-      "priority_rank": 86
+      "priority_rank": 100
     },
     {
       "event_id": "evt-e50d7881c73e",
@@ -11796,7 +12570,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11818,7 +12592,7 @@
           "published_at": "2026-09-02T00:00:00+08:00"
         }
       ],
-      "priority_rank": 151
+      "priority_rank": 165
     },
     {
       "event_id": "evt-e5480fcc7ee7",
@@ -11853,7 +12627,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 6
+          "priority_rank": 8
         }
       },
       "display_gps": [
@@ -11868,7 +12642,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11890,7 +12664,7 @@
           "published_at": "2026-09-23T12:13:16+00:00"
         }
       ],
-      "priority_rank": 12
+      "priority_rank": 26
     },
     {
       "event_id": "evt-e548f3d2e3e8",
@@ -11940,7 +12714,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11962,7 +12736,7 @@
           "published_at": "2026-09-10T11:25:41-04:00"
         }
       ],
-      "priority_rank": 129
+      "priority_rank": 143
     },
     {
       "event_id": "evt-e6fe2e1e38a9",
@@ -12008,7 +12782,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12030,7 +12804,7 @@
           "published_at": "2026-08-19T00:00:00+08:00"
         }
       ],
-      "priority_rank": 185
+      "priority_rank": 199
     },
     {
       "event_id": "evt-e7da646471c4",
@@ -12065,7 +12839,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 26
+          "priority_rank": 28
         }
       },
       "display_gps": [
@@ -12080,7 +12854,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12102,7 +12876,7 @@
           "published_at": "2026-09-22T21:30:10+00:00"
         }
       ],
-      "priority_rank": 33
+      "priority_rank": 47
     },
     {
       "event_id": "evt-eb42edf1120d",
@@ -12137,7 +12911,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 5
+          "priority_rank": 10
         }
       },
       "display_gps": [
@@ -12152,7 +12926,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12174,7 +12948,7 @@
           "published_at": "2026-09-23T20:00:10+00:00"
         }
       ],
-      "priority_rank": 5
+      "priority_rank": 16
     },
     {
       "event_id": "evt-eb51b25cb448",
@@ -12226,7 +13000,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12248,7 +13022,7 @@
           "published_at": "2026-09-04T00:00:00+08:00"
         }
       ],
-      "priority_rank": 147
+      "priority_rank": 161
     },
     {
       "event_id": "evt-eb59d491ae96",
@@ -12283,7 +13057,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 7
+          "priority_rank": 13
         }
       },
       "display_gps": [
@@ -12298,7 +13072,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12320,7 +13094,7 @@
           "published_at": "2026-09-23T00:19:00+00:00"
         }
       ],
-      "priority_rank": 25
+      "priority_rank": 39
     },
     {
       "event_id": "evt-ed1f1f0fc2a6",
@@ -12372,7 +13146,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12394,7 +13168,7 @@
           "published_at": "2026-09-15T21:00:19+00:00"
         }
       ],
-      "priority_rank": 100
+      "priority_rank": 114
     },
     {
       "event_id": "evt-eebf558661aa",
@@ -12429,7 +13203,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 7
+          "priority_rank": 9
         }
       },
       "display_gps": [
@@ -12444,7 +13218,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12466,7 +13240,75 @@
           "published_at": "2026-09-23T10:36:00+00:00"
         }
       ],
-      "priority_rank": 13
+      "priority_rank": 27
+    },
+    {
+      "event_id": "evt-eee3b265a977",
+      "member_card_ids": [
+        "eee3b265a977"
+      ],
+      "representative_card_id": "eee3b265a977",
+      "date_views": {
+        "2026-09-24": {
+          "representative_card_id": "eee3b265a977",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "eee3b265a977"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-24T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 2
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-24T14:20:44+00:00",
+      "last_material_update_at": "2026-09-24T14:20:44+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Pulse 2.0",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZ0g3bjNZaE5LT2d2NkhacW9DLXJ2MWFEREp6eGhyLVR0dlVGaWNjRDctUHh1YWVfSEVIcUtsMFNMeWlOZ0piVVVZY1ozX09fSlpvMWdYOHlzSXRhTXBSNF9tS0VTTm5kVl91N0dIY1dCellvb29nRHhvbU5RNzJ0LUdCY2dpNElfNTI1bnNmdGF4LXdWSFhpZFJhM2tOcmh3ZGlWcUNXNTVmdGJQS1Q0ZTBJS1REd9IBuwFBVV95cUxPMUlmVm9ZZHEzSTFvd2czNzV6TjV1SWJzclpENHFTZFlLbTVwZWlDX1JzVzNPRmFnM1A3OGE5dkZVMUNqeDJVYndKT2hxaU9YaXBmbERFSWtoekNYaHBsS1dlMmczU0FFMWl2ZExmMmpIcDlVQVduN096eDFkTTRfY2hFQzRVc2JGeVFRRWxDaU9vN3pYTF91R1JTNnRKaEp2RHVBcjVIaUFsZHY1eXZqcGY1OXNlVnJJektj?oc=5",
+          "card_id": "eee3b265a977",
+          "published_at": "2026-09-24T14:20:44+00:00"
+        }
+      ],
+      "priority_rank": 8
     },
     {
       "event_id": "evt-f0ce070894eb",
@@ -12501,7 +13343,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 3
+          "priority_rank": 5
         }
       },
       "display_gps": [
@@ -12516,7 +13358,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12538,7 +13380,7 @@
           "published_at": "2026-09-23T12:55:18+00:00"
         }
       ],
-      "priority_rank": 9
+      "priority_rank": 23
     },
     {
       "event_id": "evt-f206f77d814a",
@@ -12588,7 +13430,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12610,7 +13452,7 @@
           "published_at": "2026-08-27T00:00:00+08:00"
         }
       ],
-      "priority_rank": 168
+      "priority_rank": 182
     },
     {
       "event_id": "evt-f30563eee99f",
@@ -12656,7 +13498,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12678,7 +13520,7 @@
           "published_at": "2026-09-18T12:49:18+00:00"
         }
       ],
-      "priority_rank": 70
+      "priority_rank": 84
     },
     {
       "event_id": "evt-f668391dec0f",
@@ -12726,7 +13568,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12748,7 +13590,7 @@
           "published_at": "2026-09-11T21:27:45+00:00"
         }
       ],
-      "priority_rank": 124
+      "priority_rank": 138
     },
     {
       "event_id": "evt-f6cbe7e0b0e6",
@@ -12783,7 +13625,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 6
+          "priority_rank": 11
         }
       },
       "display_gps": [
@@ -12798,7 +13640,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12820,7 +13662,7 @@
           "published_at": "2026-09-23T20:00:10+00:00"
         }
       ],
-      "priority_rank": 6
+      "priority_rank": 17
     },
     {
       "event_id": "evt-f6e820e3975b",
@@ -12868,7 +13710,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12890,7 +13732,7 @@
           "published_at": "2026-09-09T00:00:00+08:00"
         }
       ],
-      "priority_rank": 136
+      "priority_rank": 150
     },
     {
       "event_id": "evt-f7c972f393fb",
@@ -12940,7 +13782,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12962,7 +13804,7 @@
           "published_at": "2026-08-27T00:00:00+08:00"
         }
       ],
-      "priority_rank": 169
+      "priority_rank": 183
     },
     {
       "event_id": "evt-f85da15511a0",
@@ -13008,7 +13850,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13030,7 +13872,7 @@
           "published_at": "2026-09-08T08:00:59-04:00"
         }
       ],
-      "priority_rank": 138
+      "priority_rank": 152
     },
     {
       "event_id": "evt-f9cf14d408ff",
@@ -13084,7 +13926,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13106,7 +13948,7 @@
           "published_at": "2026-09-11T16:22:48+00:00"
         }
       ],
-      "priority_rank": 125
+      "priority_rank": 139
     },
     {
       "event_id": "evt-fa0e3aebcc93",
@@ -13152,7 +13994,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13174,7 +14016,7 @@
           "published_at": "2026-09-08T00:00:00+08:00"
         }
       ],
-      "priority_rank": 142
+      "priority_rank": 156
     },
     {
       "event_id": "evt-fada07d0316a",
@@ -13209,7 +14051,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 33
+          "priority_rank": 35
         }
       },
       "display_gps": [
@@ -13224,7 +14066,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13246,7 +14088,7 @@
           "published_at": "2026-09-22T20:36:56+00:00"
         }
       ],
-      "priority_rank": 40
+      "priority_rank": 54
     },
     {
       "event_id": "evt-faf5e8ec1ea6",
@@ -13279,7 +14121,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 9
+          "priority_rank": 11
         }
       },
       "display_gps": [],
@@ -13292,7 +14134,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13314,7 +14156,7 @@
           "published_at": "2026-09-23T07:41:31+00:00"
         }
       ],
-      "priority_rank": 15
+      "priority_rank": 29
     },
     {
       "event_id": "evt-fb5c98994c34",
@@ -13364,7 +14206,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13386,7 +14228,7 @@
           "published_at": "2026-09-15T16:23:18+00:00"
         }
       ],
-      "priority_rank": 104
+      "priority_rank": 118
     },
     {
       "event_id": "evt-fd48ddfbbf4d",
@@ -13421,7 +14263,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 17
+          "priority_rank": 19
         }
       },
       "display_gps": [
@@ -13436,7 +14278,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13458,7 +14300,7 @@
           "published_at": "2026-09-23T00:46:18+00:00"
         }
       ],
-      "priority_rank": 23
+      "priority_rank": 37
     },
     {
       "event_id": "evt-ff2ebd4839b4",
@@ -13506,7 +14348,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13528,7 +14370,151 @@
           "published_at": "2026-09-01T06:30:02-04:00"
         }
       ],
-      "priority_rank": 154
+      "priority_rank": 168
+    },
+    {
+      "event_id": "evt-ff88cf0f7f79",
+      "member_card_ids": [
+        "ff88cf0f7f79"
+      ],
+      "representative_card_id": "ff88cf0f7f79",
+      "date_views": {
+        "2026-09-24": {
+          "representative_card_id": "ff88cf0f7f79",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "ff88cf0f7f79"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-24T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 12
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-23T16:40:51+00:00",
+      "last_material_update_at": "2026-09-23T16:40:51+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUC1yOThLQVZ6MXBzaV9NckdWT2xyMXJEblZMMnhlRDhhaXEwZzhGcHNaYk56RWk2emJaQXUwbk1EbDVFak0wbWNPRG84ZF9LQWFOOElhQVBBUHpSbFBjZ2NwR1JqSkh6b2x2LXFGODAtZklaTXRXYmJ2RVd3M3ZUZUZBXzFSM2lEVnppYlViRnlhYXROYS1ZOHV3?oc=5",
+          "card_id": "ff88cf0f7f79",
+          "published_at": "2026-09-23T16:40:51+00:00"
+        }
+      ],
+      "priority_rank": 18
+    },
+    {
+      "event_id": "evt-ff992dfd6991",
+      "member_card_ids": [
+        "ff992dfd6991"
+      ],
+      "representative_card_id": "ff992dfd6991",
+      "date_views": {
+        "2026-09-24": {
+          "representative_card_id": "ff992dfd6991",
+          "display_gps": [
+            "kkr"
+          ],
+          "display_sectors": [
+            "asset_based_finance"
+          ],
+          "member_card_ids": [
+            "ff992dfd6991"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-24T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 8
+        }
+      },
+      "display_gps": [
+        "kkr"
+      ],
+      "display_sectors": [
+        "asset_based_finance"
+      ],
+      "first_seen_at": "2026-09-24T02:11:37+00:00",
+      "last_material_update_at": "2026-09-24T02:11:37+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-25T04:24:44+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "sources": [
+        {
+          "publisher": "Private Equity Professional",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNejBKYWtPakRDT1MtVmpJVUVzS0NBV21ZLXJTY2xqQ3dQY2pmUnJUQ2V0Q2c4Zk16VDdKbTY1ZWhVSS0yaFp0WnN2S1gwMy15eDBkVUNfSE9nYmh3d05ubFJ3THNRMzFCQ19TWDBWVXJ4SlVvRXpqV0tJWU5NaHI4SlR5N3JvNzFzZkhucDdQYTBORERMS1BTbWhubmxlZ0NTektKc1Rjaw?oc=5",
+          "card_id": "ff992dfd6991",
+          "published_at": "2026-09-24T02:11:37+00:00"
+        }
+      ],
+      "priority_rank": 14
     },
     {
       "event_id": "evt-reviewed-001",
@@ -13565,7 +14551,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 21
+          "priority_rank": 23
         }
       },
       "display_gps": [
@@ -13580,7 +14566,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13608,7 +14594,7 @@
           "published_at": "2026-09-23T02:59:49+00:00"
         }
       ],
-      "priority_rank": 28
+      "priority_rank": 42
     },
     {
       "event_id": "evt-reviewed-002",
@@ -13645,7 +14631,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 35
+          "priority_rank": 37
         }
       },
       "display_gps": [
@@ -13660,7 +14646,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13688,7 +14674,7 @@
           "published_at": "2026-09-22T20:41:43+00:00"
         }
       ],
-      "priority_rank": 42
+      "priority_rank": 56
     },
     {
       "event_id": "evt-reviewed-003",
@@ -13736,7 +14722,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13764,7 +14750,7 @@
           "published_at": "2026-09-22T03:24:30+00:00"
         }
       ],
-      "priority_rank": 58
+      "priority_rank": 72
     },
     {
       "event_id": "evt-reviewed-004",
@@ -13843,7 +14829,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13871,7 +14857,7 @@
           "published_at": "2026-09-17T21:43:00+00:00"
         }
       ],
-      "priority_rank": 98
+      "priority_rank": 112
     },
     {
       "event_id": "evt-reviewed-005",
@@ -13919,7 +14905,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13947,7 +14933,7 @@
           "published_at": "2026-09-17T06:39:58+00:00"
         }
       ],
-      "priority_rank": 87
+      "priority_rank": 101
     },
     {
       "event_id": "evt-reviewed-006",
@@ -13999,7 +14985,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14027,7 +15013,7 @@
           "published_at": "2026-09-16T20:48:51+00:00"
         }
       ],
-      "priority_rank": 89
+      "priority_rank": 103
     },
     {
       "event_id": "evt-reviewed-007",
@@ -14075,7 +15061,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14103,7 +15089,7 @@
           "published_at": "2026-09-15T16:15:04+00:00"
         }
       ],
-      "priority_rank": 106
+      "priority_rank": 120
     },
     {
       "event_id": "evt-reviewed-008",
@@ -14176,7 +15162,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-24T13:24:40+00:00",
+        "as_of": "2026-09-25T04:24:44+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14204,8 +15190,8 @@
           "published_at": "2026-09-13T09:45:00+00:00"
         }
       ],
-      "priority_rank": 127
+      "priority_rank": 141
     }
   ],
-  "cards_sha256": "9fd85224a085088ab4898f7e73a02b29f192027039438a164b029abd05c54928"
+  "cards_sha256": "876b7c5e5acff0dda090cd2b2e33687d272fd2827040b4a7545be88ce236e957"
 }

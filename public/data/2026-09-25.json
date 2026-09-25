@@ -1,0 +1,240 @@
+{
+  "date": "2026-09-25",
+  "items": [
+    {
+      "id": "1f80f65f5807",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T23:04:39+00:00",
+      "headline": {
+        "en": "Oracle, Blue Owl Project Delay Sends Ripples Through AI Financing, Sources Say",
+        "zh": "消息称 Oracle、Blue Owl 项目延期，在 AI 融资领域引发连锁反应"
+      },
+      "summary": {
+        "en": "An Oracle and Blue Owl project has been delayed, sending ripples through AI financing, according to sources cited by Reuters. The report is an analysis of the situation.",
+        "zh": "据路透社援引消息人士报道，Oracle 与 Blue Owl 的一个项目已延期，并在 AI 融资领域引发连锁反应。该报道为一篇分析文章。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUzRvVXhuY0VUdWZ5OXNtMVYyWGlfT3hVRHMxdEo0b1ZFTmJISWRXei04cDJQa1NvN3Z0T0F2SFdFREczT0VpVHJrNF91QnZjWmU4QlVDWUFCcHdBODI0WWV5X3ZaWGUweHI5aUprbjh2cVU3TW5lbFdfRW9VMjAzQmx6WjJacVpfOHMyY3lLX0hyUHhoMUt2eFRIWl9BVXB4SEJkblI0Um1GQnZ6WVNGUmx4Q2JlMDk0UjlUb0F4bU9NT0p4d0I1Tmsya3RqMUF2WVV5R19iSQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Analysis-Oracle, Blue Owl project delay sends ripples through AI financing, sources say By Reuters",
+      "source_fingerprint": "edf3227c029569ccec132b0dbfe598c78db97fecbd7ce548386b376c574e3199",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "30935985db5bab735db694f51df9af39b48b7476045956d3cf8c44158e1cbf7a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "The reported delay of an Oracle and Blue Owl AI-related project directly involves Blue Owl's credit platform and could affect AI infrastructure financing conditions.",
+      "event_identity": null,
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "387aca84e957",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T21:33:45+00:00",
+      "headline": {
+        "en": "Cheyne Capital raises £3 billion for ninth real estate credit programme",
+        "zh": "Cheyne Capital 为其第九期房地产信贷计划募集30亿英镑"
+      },
+      "summary": {
+        "en": "Cheyne Capital raised £3 billion for its ninth real estate credit programme. The programme is focused on real estate credit.",
+        "zh": "Cheyne Capital 为其第九期房地产信贷计划募集了30亿英镑。该计划专注于房地产信贷。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "HedgeCo.Net",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOanVDbjhBdmVOVm5aR1RDeFlFMk9jcUVBakZVZVNESzhUQzBmVVZDOUgxcUFnNVV6Ry1QUEU3UFJqb1VuNlJWQzFWWGs5bzBfbmdJa2txVG1fOFdSUFVYa3RWUGZYWnhJN3NSTnhSUjdmYjY4Vmk1OER2Y2EyanU1OXpaOGNTUmtvZl9sN2xzNDJVNmFqRlgydlRpVHVUbk9WaXJ5T2hPeHVuSVFMUVVTNzVB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Cheyne Capital Raised £3 Billion for Its Ninth Real Estate Credit Programme:",
+      "source_fingerprint": "a06d819f1d80e265e9d3198c6421b248c3bee6f5d9f7f653cae5b0fa761aaac6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9ce4e256acea7b86bd70ad966e40fbbb62b762a19553f69f1a3588ea36b9d0d1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large real estate credit raise signals continued fundraising capacity in the sector, informing the competitive and deployment environment for tracked managers.",
+      "event_identity": null,
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "c406b3a14e7b",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T20:26:03+00:00",
+      "headline": {
+        "en": "Blue Owl raises $1.1B in junk bond offering",
+        "zh": "Blue Owl 通过垃圾债券发行筹集 11 亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl raised $1.1 billion in a junk bond offering.",
+        "zh": "Blue Owl 通过垃圾债券发行筹集了 11 亿美元。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "KuCoin",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9oek43WGl4RDBIRXFxWFZGZ3hCVmN5UnhiRUlYd1F4cUJBV3kxdTZYZFlCLV9OcFFHSG5nX19RRHdFR2drMHFBbFMtWTlrQ0tVWWxuMEVSUUhpazBDZ3VPR0QzN21XUl9uMTRVTmtMcUtpSzQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Yesterday Blue Owl raised $1.1 B in a junk bond offering for",
+      "source_fingerprint": "25e3223788aeb11f0ca95e76ec0e37725430a30fbd8ccfdafe47b1bd54066785",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f9414053dcbe60a1dbf508f296adfdf5b696aa63aa683d31169e7885ad4fb4b5",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl raised $1.1B in a junk bond offering, which could affect a credit investor's view of its capital access and liquidity.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "raised",
+        "object": "junk bond offering",
+        "period": "yesterday",
+        "numbers": [
+          "$1.1"
+        ],
+        "version": "identity-v1"
+      },
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "9e61981ea5b4",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T16:24:51+00:00",
+      "headline": {
+        "en": "Sculptor resets and upsizes US CLO by $45m",
+        "zh": "Sculptor 重置并扩大美国 CLO 规模 4500 万美元"
+      },
+      "summary": {
+        "en": "Sculptor Capital Management has reset and upsized its US CLO, Sculptor CLO XXXIII, by $45m from its original closing. The manager said the reset establishes a new five-year reinvestment period and a two-year non-call period.",
+        "zh": "Sculptor Capital Management 已重置并扩大其美国 CLO——Sculptor CLO XXXIII，规模较首次关闭增加 4500 万美元。该管理人表示，此次重置确立了新的五年再投资期和两年不可赎回期。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/24/sculptor-resets-and-upsizes-us-clo/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Sculptor resets and upsizes US CLO",
+      "source_fingerprint": "74b7a01895c8fa2d1b4f9695631f18afd31a58baa56e816ea16d7e23b8511d59",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "16a540197ca331c4dcfed45d0dcb1f5448daa3c6b59797f1cfb6fb19e9cfcf09",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "CLO reset and upsize is a direct credit-market transaction, but Sculptor is not a tracked manager.",
+      "event_identity": null,
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "03f8f3173fa6",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T16:18:00+00:00",
+      "headline": {
+        "en": "Apollo Global Management Slides as Higher Yields and Private-Credit Redemption Concerns Weigh",
+        "zh": "Apollo Global Management 下跌，收益率上升与私人信贷赎回担忧构成压力"
+      },
+      "summary": {
+        "en": "Apollo Global Management shares slid as higher yields and private-credit redemption concerns weighed on the stock.",
+        "zh": "受收益率上升及私人信贷赎回担忧拖累，Apollo Global Management 股价下跌。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Quiver Quantitative",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOVBCWmlLSjM0d3V6bmFlejctR1lhSzE5WThkTjFvNWFtU2psZl93cXNLREFYdTh3SXdhOG9xZGF2VXJIeF9YdWlWUEJuLTBfOHJtVUE4Ti1tVWRrOVpwRDJKbmdfaU9IRGVRZ3NCMzZCTmo0NmpLS0dZQzdQRDBXVENPcmxzZVNremdHZHl0M25SUW5EajZ3UU1fMVZTVlBrdjFrSWZhSVIxaTREZnBJeHY4eTBTZXJvWlhsRHUyOHVzU0w3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Global Management Slides as Higher Yields and Private-Credit Redemption Concerns Weigh",
+      "source_fingerprint": "02be61df3536d6f59a709929169af6e151375febbd90cab1522f8f320d64a0e4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "8c0ffd44604e1e34dc4bf875f7e41090b96090f85f75b9060041d8088d98fe20",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising yields and private-credit redemption concerns bear on Apollo's credit franchise and the private-credit environment tracked by the team.",
+      "event_identity": null,
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "45466877ac21",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T16:07:22+00:00",
+      "headline": {
+        "en": "Goldman Sachs European evergreen private credit strategy passes $10bn",
+        "zh": "高盛欧洲常青私募信贷策略资产突破100亿美元"
+      },
+      "summary": {
+        "en": "Goldman Sachs Alternatives has surpassed $10bn in assets for its evergreen European private credit strategy. The fund was launched in October 2023 as part of its European senior direct lending platform and allocates alongside the firm's flagship closed-ended senior direct lending funds.",
+        "zh": "Goldman Sachs Alternatives的欧洲常青私募信贷策略资产已突破100亿美元。该基金于2023年10月推出，隶属于其欧洲优先直接贷款平台，并与公司旗舰封闭式优先直接贷款系列基金共同投资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/24/goldman-sachs-inks-10bn-for-european-evergreen-credit-fund/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman Sachs inks $10bn for European evergreen credit fund",
+      "source_fingerprint": "24c58f71529c6ab992b098167e81caa8605802887805d1dff16c3ca86a8ae1c1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9da04fdf1bede4fcad7180d0a0bce1cfe634120c30033881e1cd8e8fcd4059b4",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "Goldman Sachs's European evergreen private credit strategy surpassing $10bn shows continued capital formation in European direct lending, relevant to competitive and fundraising conditions for tracked private credit managers.",
+      "event_identity": null,
+      "observed_at": "2026-09-25T04:24:44+00:00"
+    }
+  ]
+}
