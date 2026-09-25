@@ -371,34 +371,102 @@ def test_synthetic_priority_order_labels_and_potential_urgent(page):
 
 # ---- Reports ----------------------------------------------------------------------------------
 
-def test_reports_view_open_download_and_language(page):
+REPORT_SHA256 = {REPORT: "84e9a89bb7f27dc6f1cb316b810dcecb46d6ab89f7799e71bc9b725e15a0ab0c",
+                 REPORT_ZH: "4f8e456ab7dd821a0cc7283bd38aceb3b334dfacd1936d3f6edae96cccf5d106"}
+# A page counts as shown only when its canvas has real ink: many distinct colours, not a blank pane.
+PAINTED = """canvas => {
+  const data = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data;
+  const colours = new Set();
+  for (let i = 0; i < data.length; i += 4 * 97) colours.add(data[i] << 16 | data[i + 1] << 8 | data[i + 2]);
+  return canvas.width > 100 && colours.size > 20;
+}"""
+
+
+def viewer_ready(page, src):
+    page.wait_for_selector(f"#reports .pdf-viewer[data-src='{src}'][data-state='ready']", timeout=30000)
+    assert page.eval_on_selector("#reports .pdf-page canvas", PAINTED)
+    assert page.locator("#reports .pdf-viewer [role='status']").count() == 0
+
+
+def test_reports_render_both_approved_pdfs_inline(page):
     open_site(page, "#reports")
-    page.wait_for_selector("#reports object.pdf")
     assert page.is_hidden("#toolbar") and page.is_hidden("#main")
-    assert page.get_attribute("#reports object.pdf", "data") == REPORT
+    viewer_ready(page, REPORT)
+    assert page.locator("#reports .pdf-page").count() == 21
+    assert "21" in page.text_content("#reports .pdf-count")
     hrefs = page.eval_on_selector_all("#reports .report-actions a", "links => links.map(link => link.getAttribute('href'))")
     assert hrefs == [REPORT, REPORT]
-    for path in (REPORT, REPORT_ZH):
-        response = page.request.get(page.base + path)
-        assert response.ok and response.body()[:5] == b"%PDF-"
-    # Explicit Chinese choice shows the approved Chinese PDF.
+    # Explicit Chinese choice renders the approved Chinese PDF inside the page.
     page.click("#reports .report-lang button:nth-child(2)")
-    assert page.get_attribute("#reports object.pdf", "data") == REPORT_ZH
+    viewer_ready(page, REPORT_ZH)
     assert page.text_content("#reports .report-lang button:nth-child(2)") == "中文"
     assert "pending" not in page.text_content("#reports").lower()
     page.click("#reports .report-lang button:nth-child(1)")
-    assert page.get_attribute("#reports object.pdf", "data") == REPORT
+    viewer_ready(page, REPORT)
     page.click("[data-view='news']")
     page.wait_for_function("!document.getElementById('main').hidden")
+
+
+def test_report_bytes_are_the_approved_versions(page):
+    import hashlib
+    for path, digest in REPORT_SHA256.items():
+        body = page.request.get(page.base + path).body()
+        assert body[:5] == b"%PDF-" and hashlib.sha256(body).hexdigest() == digest
+
+
+def test_report_zoom_and_scrolling_render_later_pages(page):
+    open_site(page, "#reports")
+    viewer_ready(page, REPORT)
+    first = "#reports .pdf-page:first-child"
+    width = page.eval_on_selector(first, "node => node.getBoundingClientRect().width")
+    assert page.text_content("#reports .pdf-zoom") == "100%"
+    page.click("#reports button.pdf-zoom-in")
+    page.wait_for_function("w => document.querySelector('#reports .pdf-page').getBoundingClientRect().width > w * 1.2", arg=width)
+    assert page.text_content("#reports .pdf-zoom") == "125%"
+    page.wait_for_function("() => document.querySelector('#reports .pdf-page canvas') && document.querySelector('#reports .pdf-page').dataset.rendered === '125'")
+    page.click("#reports button.pdf-fit")
+    assert page.text_content("#reports .pdf-zoom") == "100%"
+    # The last page is drawn only once it is scrolled into view.
+    last = "#reports .pdf-page:last-child"
+    assert page.eval_on_selector(last, "node => !node.querySelector('canvas')")
+    page.eval_on_selector("#reports .pdf-scroll", "node => { node.scrollTop = node.scrollHeight; }")
+    page.wait_for_selector(last + " canvas")
+    page.wait_for_function("() => document.querySelector('#reports .pdf-page:last-child').dataset.rendered")
+    assert page.eval_on_selector(last + " canvas", PAINTED)
+
+
+def test_report_failure_is_an_explicit_error_with_retry(page):
+    page.route("**/" + REPORT, lambda route: route.fulfill(status=404, body="missing"))
+    open_site(page, "#reports")
+    page.wait_for_selector("#reports .pdf-viewer[data-state='error']", timeout=30000)
+    text = page.text_content("#reports .pdf-viewer")
+    assert "could not be displayed" in text and page.locator("#reports .pdf-page").count() == 0
+    assert page.is_visible("#reports .report-actions a")  # Open/Download remain the way out.
+    page.unroute("**/" + REPORT)
+    page.click("#reports .pdf-viewer .retry")
+    viewer_ready(page, REPORT)
+
+
+def test_report_viewer_fits_a_phone_and_is_keyboard_reachable(page):
+    page.set_viewport_size({"width": 375, "height": 812})
+    open_site(page, "#reports")
+    viewer_ready(page, REPORT)
+    box = page.eval_on_selector("#reports .pdf-scroll", "node => node.getBoundingClientRect().width")
+    assert page.eval_on_selector("#reports .pdf-page", "node => node.getBoundingClientRect().width") <= box
+    assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
+    for selector in ("button.pdf-zoom-out", "button.pdf-zoom-in", "button.pdf-fit"):
+        assert page.get_attribute("#reports " + selector, "aria-label")
+    assert page.get_attribute("#reports .pdf-scroll", "tabindex") == "0"
+    assert page.get_attribute("#reports .pdf-page canvas", "aria-label") == "Page 1 of 21"
 
 
 def test_reports_default_to_page_language_and_english_fallback(page):
     open_site(page, "#reports")
     page.click("[data-lang='zh']")
-    page.wait_for_selector("#reports object.pdf")
-    assert page.get_attribute("#reports object.pdf", "data") == REPORT_ZH
+    viewer_ready(page, REPORT_ZH)
+    assert page.get_attribute("#reports .pdf-zoom-in", "aria-label") == "放大"
     # Without an approved Chinese file only English is offered, with no pending wording.
     page.evaluate("REPORTS[0].files.zh = null; renderReports()")
     buttons = page.eval_on_selector_all("#reports .report-lang button", "nodes => nodes.map(node => node.textContent)")
     assert buttons == ["English"] and "待审核" not in page.text_content("#reports")
-    assert page.get_attribute("#reports object.pdf", "data") == REPORT
+    viewer_ready(page, REPORT)

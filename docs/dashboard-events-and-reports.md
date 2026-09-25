@@ -25,7 +25,8 @@ Files: `public/app.js`, `public/index.html`, `public/reports/`, `tests/test_dash
 - **Legacy archive note.** When every listed event is Needs review, a note explains that the older archive has no assessed priorities. This is the case for all 174 current events.
 - **Counts.** With grouping on, the count reads "E events · A articles", or "e of E events · a of A articles" when filtered. Without grouping, the original item counts are kept.
 - **Reports tab (`#reports`).**
-  - The report shows inline in an `<object>` PDF viewer. **Open PDF** and **Download PDF** are always visible, and browsers without a PDF viewer show a fallback message.
+  - The report renders inline with **PDF.js 6.3.289** (Mozilla, Apache-2.0), hosted in `public/vendor/pdfjs/` (`pdf.min.mjs`, `pdf.worker.min.mjs`, `LICENSE`; byte sizes and SHA-256 match jsDelivr's published hashes). This is an inline renderer, not the browser's own PDF plugin: phones, headless Chromium and some embedded browsers have no plugin. Both PDFs embed all fonts, so no cMap or font packs are shipped.
+  - Pages are drawn to canvases one at a time as they scroll into view; zoom 50–300% (−, +, Fit width); the scroll area is keyboard-focusable; each page canvas is labelled "Page n of 21". A "Loading report…" status stays until page 1 is actually painted (`data-state="ready"`); failures show an error with **Try again**. `isEvalSupported` is off. Text is not selectable in the viewer; **Open PDF** and **Download PDF** remain for that.
   - The report language follows the page language until the reader picks one.
   - English and Chinese PDFs are both published, and the picker reads English | 中文. Only languages with an approved file are offered; if one is missing, the English report is shown, with no placeholder wording.
 - **Unchanged:** Today, Earlier/Later, the date menu, language persistence, status line, fallback-to-latest notice, loading/error/empty states, textContent-only rendering and the http(s) link check.
@@ -116,4 +117,4 @@ All 46 images contain English text: titles, legends, axis labels, category names
 - **Analyst's full Chinese review (24 September afternoon):** any corrections become `…-zh-v3.pdf` plus an update to `REPORTS` in `public/app.js`.
 - **Chart labels:** redrawing them in Chinese is deferred by analyst decision.
 - **Historical priority and source backfill (Codex's lane):** all legacy events stay Needs review until evidence is recovered.
-- **Before release:** after deployment, check the PDF inline in a desktop browser with a PDF viewer. Headless Chromium has no viewer, so only the Open/Download fallback was verified.
+- **Inline reading (25 September):** verified by pixel checks on rendered canvases in headless Chromium 149 (both languages, zoom, lazy last page, 404 error and retry, 375 px width) and visually in the desktop Chromium 152 app pane (both languages, zoom 150%, scrolling, phone layout). Not yet checked on a physical phone or in Firefox/Safari.
