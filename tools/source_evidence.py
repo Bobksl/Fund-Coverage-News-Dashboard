@@ -11,6 +11,7 @@ import html.parser
 import http.client
 import ipaddress
 import json
+import os
 import re
 import socket
 import ssl
@@ -30,6 +31,17 @@ AGGREGATORS = {'news.google.com'}
 TEXT_TYPES = ('text/html', 'application/xhtml+xml', 'text/plain')
 USER_AGENT = 'Mozilla/5.0 (compatible; FundCoverageNews/1.0; +https://github.com/Bobksl/Fund-Coverage-News-Dashboard)'
 PUBLISHED_META = ('article:published_time', 'datePublished', 'pubdate', 'publish-date', 'date')
+# SEC fair-access policy requires a declared contact; the address comes from the environment, never the repo.
+SEC_CONTACT_ENV = 'SEC_CONTACT_EMAIL'
+# End of the standard SEC form cover page; everything before it is boilerplate.
+SEC_COVER_END = re.compile(r'Section 13\(a\) of the Exchange Act\.\s*\S?')
+
+
+def user_agent(host, environ=os.environ):
+    contact = environ.get(SEC_CONTACT_ENV, '').strip()
+    if contact and (host == 'sec.gov' or host.endswith('.sec.gov')):
+        return f'FundCoverageNews/1.0 {contact}'
+    return USER_AGENT
 
 
 def _resolve(host):
@@ -59,7 +71,7 @@ def _send(scheme, host, ip, port, target, deadline):
     timeout = max(0.5, min(TIMEOUT, deadline - time.monotonic()))
     conn = _Pinned(host, ip, port, timeout, scheme == 'https')
     try:
-        conn.request('GET', target, headers={'Host': host, 'User-Agent': USER_AGENT,
+        conn.request('GET', target, headers={'Host': host, 'User-Agent': user_agent(host),
                                              'Accept': 'text/html,application/xhtml+xml;q=0.9,text/plain;q=0.5'})
         response = conn.getresponse()
         body = b''
@@ -131,8 +143,12 @@ def extract(raw, content_type):
     parser.feed(text)
     description = parser.meta.get('og:description') or parser.meta.get('description') or ''
     parts = [description] + [p for p in parser.paragraphs if p not in description]
+    body = ' '.join(' '.join(parts).split())
+    cover = SEC_COVER_END.search(body[:8000])
+    if cover:
+        body = body[cover.end():].strip()
     return {'title': ' '.join((parser.meta.get('og:title') or parser.title).split()),
-            'excerpt': ' '.join(' '.join(parts).split())[:MAX_EXCERPT],
+            'excerpt': body[:MAX_EXCERPT],
             'source_published_at': _published(parser.meta, raw)}
 
 
@@ -144,10 +160,14 @@ def _result(url, status, started, **extra):
     return record
 
 
-def retrieve(url, *, resolve=_resolve, send=_send, cache_dir=None):
-    """Return an evidence record. `excerpt` is present only when text was retrieved."""
+def retrieve(url, *, resolve=_resolve, send=_send, cache_dir=None, keep_html=False):
+    """Return an evidence record. `excerpt` is present only when text was retrieved.
+
+    keep_html adds the decoded page as `html` (for link discovery such as EDGAR indexes); such
+    records are not cached and must never be published.
+    """
     cache = Path(cache_dir) / (hashlib.sha256(url.encode()).hexdigest()[:24] + '.json') if cache_dir else None
-    if cache and cache.exists():
+    if cache and cache.exists() and not keep_html:
         return json.loads(cache.read_text(encoding='utf-8'))
     started = time.monotonic()
     deadline = started + 3 * TIMEOUT
@@ -193,7 +213,9 @@ def retrieve(url, *, resolve=_resolve, send=_send, cache_dir=None):
                          source_published_at=page['source_published_at'], excerpt=page['excerpt'],
                          sha256=hashlib.sha256(page['excerpt'].encode()).hexdigest(),
                          level='excerpt' if len(page['excerpt']) >= MIN_EXCERPT else 'headline_only')
-        if cache:
+        if keep_html:
+            record['html'] = body.decode('utf-8', 'replace')
+        elif cache:
             cache.parent.mkdir(parents=True, exist_ok=True)
             cache.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding='utf-8')
         return record
@@ -204,3 +226,15 @@ def provenance(record):
     """The subset safe to publish on a card: no publisher text."""
     return {key: record[key] for key in ('status', 'level', 'retrieved_at', 'sha256', 'source_published_at',
                                          'final_url') if record.get(key) is not None}
+
+
+def edgar_document(index_html, index_url):
+    """The document to read from an EDGAR filing index: a press-release exhibit, else the main form."""
+    rows = []
+    for row in re.findall(r'<tr[^>]*>(.*?)</tr>', index_html, re.DOTALL | re.IGNORECASE):
+        cells = [re.sub(r'<[^>]+>', '', c).strip() for c in re.findall(r'<td[^>]*>(.*?)</td>', row, re.DOTALL | re.IGNORECASE)]
+        link = re.search(r'href="([^"]+\.htm)"', row, re.IGNORECASE)
+        if link and len(cells) >= 4:
+            rows.append((cells[3].upper(), link.group(1).replace('/ix?doc=', '')))
+    chosen = next((href for kind, href in rows if kind.startswith('EX-99')), rows[0][1] if rows else None)
+    return urljoin(index_url, chosen) if chosen else None

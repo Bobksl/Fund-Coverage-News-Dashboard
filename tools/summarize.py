@@ -245,6 +245,7 @@ def make_card(item, brief, review_status, origin):
         "relevance_reason": brief.get('reason', ''),
         "event_identity": validate_event_identity(brief.get('event_identity_raw'), item),
         **({"evidence": item["evidence"]} if item.get("evidence") else {}),
+        **({"source_origin": item["origin"]} if item.get("origin") else {}),
         **({"source_published_at": item["source_published_at"]} if item.get("source_published_at") else {}),
     }
 

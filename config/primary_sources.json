@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "note": "Primary-source tier for the scheduled refresh. Issuer filings come from each registrant's own EDGAR feed; regulator items come from official RSS. Items from these feeds are primary evidence only when the final URL is on the listed domain. CIKs verified 25 Sep 2026 from SEC company_tickers.json or the registrant's own EDGAR company feed (exact conformed name). No CIK is inferred from a similar name.",
+  "sec_edgar": {
+    "contact_env": "SEC_CONTACT_EMAIL",
+    "feed": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}&type=&dateb=&owner=include&count=40&output=atom",
+    "domains": ["sec.gov"],
+    "forms": ["8-K", "8-K/A", "SC TO-I", "SC TO-I/A", "424B2", "424B5", "SC 13D", "SC 13D/A", "SCHEDULE 13D", "SCHEDULE 13D/A"],
+    "forms_excluded": {
+      "424B3": "Non-traded BDC sticker supplements (monthly price and distribution updates); high volume, rarely an event.",
+      "10-Q, 10-K": "Main documents exceed the 1 MB retrieval cap; results reach the tier through earnings 8-Ks instead.",
+      "13F-HR, SC 13G, SC 13G/A, 4, N-PX, N-23C3A, D": "Holdings, passive ownership, insider, proxy-vote, routine repurchase-notice or private-offering forms, not events."
+    },
+    "registrants": [
+      {"id": "ocic", "cik": "0001812554", "name": "Blue Owl Credit Income Corp.", "gps": ["blue_owl"], "basis": "EDGAR company feed"},
+      {"id": "otic", "cik": "0001869453", "name": "Blue Owl Technology Income Corp.", "gps": ["blue_owl"], "basis": "EDGAR company feed"},
+      {"id": "obdc", "cik": "0001655888", "name": "Blue Owl Capital Corp", "gps": ["blue_owl"], "basis": "company_tickers.json (OBDC)"},
+      {"id": "otf", "cik": "0001747777", "name": "Blue Owl Technology Finance Corp.", "gps": ["otf", "blue_owl"], "basis": "company_tickers.json (OTF)"},
+      {"id": "owl", "cik": "0001823945", "name": "BLUE OWL CAPITAL INC.", "gps": ["blue_owl"], "basis": "company_tickers.json (OWL)"},
+      {"id": "ads", "cik": "0001837532", "name": "Apollo Debt Solutions BDC", "gps": ["apollo"], "basis": "EDGAR company feed"},
+      {"id": "mfic", "cik": "0001278752", "name": "MidCap Financial Investment Corp", "gps": ["apollo"], "basis": "company_tickers.json (MFIC)"},
+      {"id": "apo", "cik": "0001858681", "name": "Apollo Global Management, Inc.", "gps": ["apollo"], "basis": "company_tickers.json (APO)"},
+      {"id": "kfit", "cik": "0001930679", "name": "KKR FS Income Trust", "gps": ["kkr"], "basis": "EDGAR company feed"},
+      {"id": "fsk", "cik": "0001422183", "name": "FS KKR Capital Corp", "gps": ["kkr"], "basis": "company_tickers.json (FSK)"},
+      {"id": "kkr", "cik": "0001404912", "name": "KKR & Co. Inc.", "gps": ["kkr"], "basis": "company_tickers.json (KKR)"},
+      {"id": "bcsf", "cik": "0001655050", "name": "Bain Capital Specialty Finance, Inc.", "gps": ["bain_capital"], "basis": "company_tickers.json (BCSF)"},
+      {"id": "lbctcf", "cik": "0002054992", "name": "Lincoln Bain Capital Total Credit Fund", "gps": ["bain_capital"], "basis": "EDGAR company feed"}
+    ]
+  },
+  "regulator_feeds": [
+    {"id": "fed_press", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "publisher": "Federal Reserve Board", "domains": ["federalreserve.gov"]},
+    {"id": "sec_press", "url": "https://www.sec.gov/news/pressreleases.rss", "publisher": "U.S. Securities and Exchange Commission", "domains": ["sec.gov"]},
+    {"id": "ecb_press", "url": "https://www.ecb.europa.eu/rss/press.html", "publisher": "European Central Bank", "domains": ["ecb.europa.eu"]},
+    {"id": "boe_news", "url": "https://www.bankofengland.co.uk/rss/news", "publisher": "Bank of England", "domains": ["bankofengland.co.uk"]},
+    {"id": "esma_news", "url": "https://www.esma.europa.eu/rss.xml", "publisher": "ESMA", "domains": ["esma.europa.eu"]}
+  ],
+  "gaps": {
+    "FCA": "RSS returns HTTP 403 to automated clients; not bypassed.",
+    "ASIC, NAIC": "No official RSS feed found on 25 Sep 2026; coverage still arrives through news discovery.",
+    "Rating agencies": "KBRA, Fitch, Moody's and S&P publish no open feed; public releases reach Business Wire and news discovery.",
+    "Managers without event filings": "Bayview, CIFC, Neuberger, Guggenheim, HSBC AM, PAG, Pretium, BasePoint: EDGAR output is holdings/ownership forms or none; covered by news discovery."
+  }
+}

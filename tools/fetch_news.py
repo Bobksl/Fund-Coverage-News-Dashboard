@@ -30,6 +30,9 @@ from tools import site_data, source_evidence, summarize
 
 USER_AGENT = "Mozilla/5.0 (compatible; FundCoverageNews/1.0; +https://github.com/Bobksl/Fund-Coverage-News-Dashboard)"
 SEEN_FILE = "seen.json"
+PRIMARY_PATH = site_data.ROOT / "config" / "primary_sources.json"
+PRIMARY_ORIGINS = ("issuer_filing", "regulator")
+ATOM = "{http://www.w3.org/2005/Atom}"
 SEEN_DAYS = 14
 HTML_TAG = re.compile(r"<[^>]+>")
 STOPWORDS = frozenset(["a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "is", "its", "of",
@@ -38,8 +41,9 @@ SIMILAR_TITLES = 0.5
 
 
 def http_get(url, timeout=20):
+    agent = source_evidence.user_agent(urllib.parse.urlsplit(url).hostname or "")
     request = urllib.request.Request(url, headers={
-        "User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8"})
+        "User-Agent": agent, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.8"})
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read()
 
@@ -86,6 +90,49 @@ def parse_feed(data):
             entries.append({"title": title, "url": url, "publisher": publisher or "Unknown source",
                             "published": published, "description": description})
     return entries
+
+
+def parse_edgar(data, registrant):
+    """Parse one registrant's EDGAR company Atom feed into filing entries (index page as the URL)."""
+    root = ElementTree.fromstring(data)
+    entries = []
+    for node in root.iter(ATOM + "entry"):
+        category = node.find(ATOM + "category")
+        link = node.find(ATOM + "link")
+        content = node.find(ATOM + "content")
+        form = category.get("term") if category is not None else ""
+        items = (content.findtext(ATOM + "items-desc") if content is not None else "") or ""
+        try:
+            published = datetime.fromisoformat(node.findtext(ATOM + "updated") or "").astimezone(timezone.utc)
+        except ValueError:
+            continue
+        if form and link is not None and link.get("href"):
+            title = f"{registrant['name']} files {form}" + (f": {items}" if items else "")
+            entries.append({"title": title, "url": link.get("href"), "publisher": registrant["name"],
+                            "published": published, "description": "", "form": form})
+    return entries
+
+
+def primary_feeds(primary, environ):
+    """Yield (feed_id, url, parse, extra fields) for the primary tier; SEC needs a declared contact."""
+    skipped = []
+    for feed in primary.get("regulator_feeds", []):
+        yield feed["id"], feed["url"], parse_feed, {"origin": "regulator", "domains": feed["domains"]}
+    sec = primary.get("sec_edgar")
+    if sec and not environ.get(sec["contact_env"], "").strip():
+        skipped.append(f"sec_edgar: {sec['contact_env']} not set")
+    elif sec:
+        for registrant in sec["registrants"]:
+            yield (f"sec_{registrant['id']}", sec["feed"].format(cik=registrant["cik"]),
+                   functools.partial(parse_edgar, registrant=registrant),
+                   {"origin": "issuer_filing", "domains": sec["domains"], "gps": registrant["gps"],
+                    "forms": sec["forms"]})
+    yield from (("skipped", reason, None, None) for reason in skipped)
+
+
+def primary_host(url, domains):
+    host = (urllib.parse.urlsplit(url).hostname or "").lower()
+    return any(host == domain or host.endswith("." + domain) for domain in domains)
 
 
 @functools.cache
@@ -135,22 +182,29 @@ def same_story(first, second):
     return bool(lead_a) and lead_a == lead_b and len(words_a & words_b) / len(words_a | words_b) >= SIMILAR_TITLES
 
 
-def collect(rules, fetch, now, lookback_days, pause):
+def collect(rules, fetch, now, lookback_days, pause, primary=None, environ=None):
     """Fetch every feed; one failing feed is recorded and skipped."""
     oldest, newest = now - timedelta(days=lookback_days), now + timedelta(hours=1)
-    stats = {"feeds_ok": 0, "feeds_failed": [], "fetched": 0, "fresh": 0}
+    stats = {"feeds_ok": 0, "feeds_failed": [], "feeds_skipped": [], "fetched": 0, "fresh": 0}
     entries = []
-    for number, (feed_id, url) in enumerate(feed_urls(rules)):
+    feeds = [(feed_id, url, parse_feed, {}) for feed_id, url in feed_urls(rules)]
+    feeds += list(primary_feeds(primary or {}, os.environ if environ is None else environ))
+    for number, (feed_id, url, parse, extra) in enumerate(feeds):
+        if feed_id == "skipped":
+            stats["feeds_skipped"].append(url)
+            continue
         if number and pause:
             time.sleep(pause)
         try:
-            parsed = parse_feed(fetch(url))
+            parsed = parse(fetch(url))
         except Exception as error:  # noqa: BLE001 -- any network or parse failure is per-feed
             stats["feeds_failed"].append(f"{feed_id}: {type(error).__name__}: {str(error)[:120]}")
             continue
         stats["feeds_ok"] += 1
         stats["fetched"] += len(parsed)
-        entries.extend(dict(entry, feed=feed_id) for entry in parsed if oldest <= entry["published"] <= newest)
+        forms = extra.pop("forms", None) if extra else None
+        entries.extend(dict(entry, feed=feed_id, **extra) for entry in parsed
+                       if oldest <= entry["published"] <= newest and (forms is None or entry.get("form") in forms))
     stats["fresh"] = len(entries)
     return entries, stats
 
@@ -174,7 +228,11 @@ def select(entries, rules, known_ids, known_sources=None, rejected=None):
             continue
         seen_versions.add((entry_id, fingerprint))
         unique += 1
-        match = rule_match(f"{entry['title']} {entry['description']}", rules)
+        if entry.get("origin") == "issuer_filing":
+            # The registrant is a tracked vehicle and the form is in scope; the brief judges materiality.
+            match = {"keep": True, "gps": entry["gps"], "sectors": [], "reason": "primary filing"}
+        else:
+            match = rule_match(f"{entry['title']} {entry['description']}", rules)
         if match["keep"]:
             candidates.append(dict(entry, match=match, revision_of=next(reversed(versions.values()), None)))
         elif rejected is not None:
@@ -195,7 +253,12 @@ def to_item(candidate):
     return {"title": candidate["title"], "publisher": candidate["publisher"], "url": candidate["url"],
             "date": published.astimezone(site_data.HKT).date().isoformat(),
             "published_at": published.isoformat(timespec="seconds"),
-            "text": candidate["description"] or candidate["title"]}
+            "text": candidate["description"] or candidate["title"],
+            **({"origin": candidate["origin"],
+                "verified_primary_source": primary_host(candidate["url"], candidate.get("domains", []))}
+               if candidate.get("origin") in PRIMARY_ORIGINS else {}),
+            **({"context": f"Primary source: SEC {candidate['form']} filed by {candidate['publisher']}."}
+               if candidate.get("origin") == "issuer_filing" else {})}
 
 
 def gather_evidence(item, retrieve):
@@ -205,7 +268,13 @@ def gather_evidence(item, retrieve):
     and its priority unassessed, rather than the refresh failing.
     """
     try:
-        record = retrieve(item["url"])
+        if item.get("origin") == "issuer_filing":
+            # The feed links the filing index; read the press-release exhibit or the form itself.
+            index = retrieve(item["url"], keep_html=True)
+            document = source_evidence.edgar_document(index.get("html", ""), index.get("final_url") or item["url"])
+            record = retrieve(document) if document else index
+        else:
+            record = retrieve(item["url"])
     except Exception as error:  # noqa: BLE001 -- evidence is optional; never fail a refresh on it
         record = {"status": "error", "level": "headline_only", "detail": type(error).__name__,
                   "retrieved_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
@@ -221,14 +290,15 @@ def gather_evidence(item, retrieve):
 
 def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None, max_items=30,
         max_calls=60, lookback_days=3, dry_run=False, pause=1.0, scheduled=False, retrieve=None,
-        max_fetches=30):
+        max_fetches=30, primary=None, environ=None):
     """One refresh. Returns (exit_code, stats).
 
     `retrieve` (url -> evidence record) is off unless given; main() passes the bounded
-    source_evidence retriever. At most `max_fetches` pages are requested per run.
+    source_evidence retriever. At most `max_fetches` pages are requested per run. `primary` is the
+    config/primary_sources.json tier (off unless given); SEC feeds need SEC_CONTACT_EMAIL.
     """
     now = now or datetime.now(timezone.utc)
-    entries, stats = collect(rules, fetch, now, lookback_days, pause)
+    entries, stats = collect(rules, fetch, now, lookback_days, pause, primary, environ)
     seen = load_seen(data_dir, now)
     existing = [card for day in site_data._day_files(data_dir) for card in site_data.load_day(data_dir, day)]
     known_sources = {}
@@ -239,11 +309,14 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
     candidates, stats["after_dedupe"] = select(entries, rules, site_data.existing_ids(data_dir) | set(seen),
                                                known_sources, rule_rejected)
     stats["rule_passed"] = len(candidates)
+    # Primary records first: the item cap must never drop a filing in favour of its syndicated copies.
+    candidates.sort(key=lambda item: item.get("origin") not in PRIMARY_ORIGINS)
     candidates = candidates[:max_items]
     if dry_run:
         stats["candidates"] = [{"published": item["published"].isoformat(), "publisher": item["publisher"],
                                 "title": item["title"], "gps": item["match"]["gps"],
-                                "sectors": item["match"]["sectors"]} for item in candidates]
+                                "sectors": item["match"]["sectors"], "origin": item.get("origin", "news")}
+                               for item in candidates]
         # Rule rejections for prospective recall audits; model rejections need paid calls and are not here.
         stats["rule_rejected"] = rule_rejected
         return 0, stats
@@ -272,6 +345,8 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
             brief = summarizer(item)
             card = summarize.make_card(item, brief, "unreviewed", "auto_fetch")
             card['observed_at'] = now.isoformat(timespec='seconds')
+            if candidate.get('origin') == 'issuer_filing':
+                card['gps'] = list(dict.fromkeys(card['gps'] + candidate['gps']))
             if candidate.get('revision_of'):
                 card['supersedes_card_id'] = candidate['revision_of']
                 card['id'] = hashlib.sha256((card['id'] + card['source_fingerprint']).encode()).hexdigest()[:12]
@@ -319,7 +394,8 @@ def main(argv=None):
     code, stats = run(site_data.load_rules(), data_dir=args.data_dir, max_items=args.max_items,
                       max_calls=args.max_calls, lookback_days=args.lookback_days, dry_run=args.dry_run,
                       scheduled=os.environ.get("GITHUB_ACTIONS") == "true",
-                      retrieve=functools.partial(source_evidence.retrieve, cache_dir=source_evidence.CACHE_DIR))
+                      retrieve=functools.partial(source_evidence.retrieve, cache_dir=source_evidence.CACHE_DIR),
+                      primary=json.loads(PRIMARY_PATH.read_text(encoding="utf-8")))
     print(json.dumps(stats, ensure_ascii=False, indent=2, default=str))
     return code
 
