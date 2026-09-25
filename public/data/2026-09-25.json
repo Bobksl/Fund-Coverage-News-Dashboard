@@ -2,6 +2,269 @@
   "date": "2026-09-25",
   "items": [
     {
+      "id": "01023df58888",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T11:54:39+00:00",
+      "headline": {
+        "en": "US insurance regulators defend oversight of insurers' growing private credit ties",
+        "zh": "美国保险监管机构为对保险公司日益增长的私人信贷关联的监管辩护"
+      },
+      "summary": {
+        "en": "The National Association of Insurance Commissioners responded to Senator Elizabeth Warren's concerns about insurers' ties to private investment firms and private credit exposure. The NAIC said it has strengthened asset-adequacy testing, reinsurance oversight, introduced a 45 per cent risk-based capital charge for residual interests in structured securities, and created a process to assess credit rating providers' methodologies. Insurers' private credit exposure rose from $386bn in 2014 to $849bn in 2024, according to the article.",
+        "zh": "美国全国保险监督官协会（NAIC）回应了参议员Elizabeth Warren对保险公司与私人投资公司关联及私人信贷敞口的担忧。NAIC表示已加强资产充足性测试、再保险监管，对结构性证券剩余权益引入45%的风险基础资本计提，并建立了评估信用评级机构方法和映射是否适当的正式流程。文章称，保险公司的私人信贷敞口从2014年的3860亿美元增至2024年的8490亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/25/us-insurance-regulators-defend-oversight-of-insurers-growing-private-credit-ties/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "US insurance regulators defend oversight of insurers’ growing private credit ties",
+      "source_fingerprint": "bb020baa93d20bedb3c8b7e21831e3eeccddcec9dc6887086bb5f5fbb1300f37",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 370,
+            "end": 410
+          },
+          "linkage": {
+            "start": 456,
+            "end": 543
+          }
+        },
+        "source_sha256": "5389cc5f9d0b33771363905d6fa08f0d251a73ce025207365eff4071ba8baf81",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "reason": {
+          "en": "Regulators defended existing oversight and described enhanced tools; no tracked manager is named, and no adverse action or capital-access change is reported.",
+          "zh": "监管机构为现有监管辩护并描述了强化工具；未点名任何被跟踪管理人，也未报告不利行动或资本获取变化。"
+        }
+      },
+      "relevance_reason": "US insurance regulators defending their oversight of insurers' private credit ties signals potential regulatory scrutiny that could affect capital supply and demand for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-25T13:30:35+00:00",
+        "sha256": "5389cc5f9d0b33771363905d6fa08f0d251a73ce025207365eff4071ba8baf81",
+        "source_published_at": "2026-09-25T11:54:39+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/25/us-insurance-regulators-defend-oversight-of-insurers-growing-private-credit-ties/"
+      },
+      "source_published_at": "2026-09-25T11:54:39+00:00",
+      "observed_at": "2026-09-25T13:27:02+00:00"
+    },
+    {
+      "id": "bc2157a000e1",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T10:13:16+00:00",
+      "headline": {
+        "en": "Polus raises €400m for latest CLO",
+        "zh": "Polus 为其最新 CLO 募集 4 亿欧元"
+      },
+      "summary": {
+        "en": "Polus has raised €400m for its latest CLO, according to the headline.",
+        "zh": "据标题报道，Polus 为其最新 CLO 募集了 4 亿欧元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQXp5S0VnN1MtWHBkNll1eExTeXBVTEpNVFl5bzQtU2dVaTdJMXFyWUxBODFlUzdGNG1WYjZBVVNra05MRm5MV1dwU1l2RF9rMVpySy1ZR3NkRy1ZVXpPV0FKdUh0TXFELUNyOVZIM1ZCNHFXVHowZDFyWk1RQjktcTFzX3BYUmw1ZkhZ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Polus raises €400m for latest CLO",
+      "source_fingerprint": "d4513eee5a8e3c5be38cc0bfd4cc52b6218884953263d5b1ff52918e65db358c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "dd53d34e09505b3923365e260d090afb80966b3aac314b27ab5a47b040af41e4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new €400m CLO from Polus signals continued European CLO issuance and capital deployment into the structured credit sub-sector, which is relevant to tracked CLO and private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-25T13:30:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQXp5S0VnN1MtWHBkNll1eExTeXBVTEpNVFl5bzQtU2dVaTdJMXFyWUxBODFlUzdGNG1WYjZBVVNra05MRm5MV1dwU1l2RF9rMVpySy1ZR3NkRy1ZVXpPV0FKdUh0TXFELUNyOVZIM1ZCNHFXVHowZDFyWk1RQjktcTFzX3BYUmw1ZkhZ?oc=5"
+      },
+      "observed_at": "2026-09-25T13:27:02+00:00"
+    },
+    {
+      "id": "a45c9b349bcc",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T10:00:06+00:00",
+      "headline": {
+        "en": "Polus closes European CLO XXII at €400m",
+        "zh": "Polus 旗下欧洲 CLO XXII 完成 4 亿欧元募集"
+      },
+      "summary": {
+        "en": "Polus Capital Management has closed its latest European collateralised loan obligation, Polus EU CLO XXII, at €400m. The London-headquartered manager announced the deal on LinkedIn and runs $14bn in assets under management across alternative credit. It follows the close of Cairn CLO XX at €450m in September 2025.",
+        "zh": "Polus Capital Management 已完成其最新欧洲 collateralised loan obligation（CLO）Polus EU CLO XXII 的募集，规模为 4 亿欧元。这家总部位于伦敦的管理机构在 LinkedIn 上宣布了该交易，其管理资产规模为 140 亿美元，涵盖另类信贷策略。此前该公司于 2025 年 9 月完成了规模 4.5 亿欧元的 Cairn CLO XX。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/25/polus-raises-e400m-for-latest-clo/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Polus raises €400m for latest CLO",
+      "source_fingerprint": "6464f7333ee0c2c5d019c302afe39022e59289cf421d7f2d871793d425e649df",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 29,
+            "end": 85
+          },
+          "linkage": {
+            "start": 206,
+            "end": 292
+          }
+        },
+        "source_sha256": "a427dd38a4f3facd1b7e95a6084a9166503ad480be05f4e795a60b7875f35a9a",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "reason": {
+          "en": "A routine CLO close of €400m for a manager not on the tracked list; incremental sector signal rather than a franchise-changing event.",
+          "zh": "一家未被跟踪的管理机构完成 4 亿欧元的常规 CLO 募集；属于增量性的板块信号，而非改变自身业务格局的事件。"
+        }
+      },
+      "relevance_reason": "A new European CLO close of €400m signals continued CLO issuance and credit deployment in the leveraged loan market, a sub-sector tracked by the credit team.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-25T13:30:47+00:00",
+        "sha256": "a427dd38a4f3facd1b7e95a6084a9166503ad480be05f4e795a60b7875f35a9a",
+        "source_published_at": "2026-09-25T10:00:06+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/25/polus-raises-e400m-for-latest-clo/"
+      },
+      "source_published_at": "2026-09-25T10:00:06+00:00",
+      "observed_at": "2026-09-25T13:27:02+00:00"
+    },
+    {
+      "id": "34278ab36e93",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T08:45:53+00:00",
+      "headline": {
+        "en": "Private credit CLO spreads converge",
+        "zh": "私募信贷CLO利差趋同"
+      },
+      "summary": {
+        "en": "Private credit CLO spreads have converged, according to a report from Structured Credit Investor.",
+        "zh": "据Structured Credit Investor报道，私募信贷CLO利差已趋同。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Structured Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS2JxS0htZDFYLVcyeGsxT3hwUFlVYTNCX2hnODRMczFxWHdlcGQ0VGx0NU9SNjZUMUpBS1VrRWNVV1Z0cjJXZDVpVnNtdEd2MFAxVHAwZ215MFZiSlhwRWxuQkE3MktBemVvRHA4cFlncVJtUkNVZklfYXJtRWpjNEhudEY3OC11dlBUNXdHeTdSMDJmOGJmX0VQVkVEcnpJUHRV?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit CLO spreads converge",
+      "source_fingerprint": "caf0b67d25bfb6672d72b0f21283f7c5e2618e6fa3b895717ff30656338de6eb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c85af3c726abc4b2e90dcc8799596ef0abc060038e3a8053ca969e818d34a3fe",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Spreads in private credit CLOs, the securitisation funding channel for direct lending strategies, are converging, which speaks to valuation and funding conditions for tracked credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-25T13:30:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS2JxS0htZDFYLVcyeGsxT3hwUFlVYTNCX2hnODRMczFxWHdlcGQ0VGx0NU9SNjZUMUpBS1VrRWNVV1Z0cjJXZDVpVnNtdEd2MFAxVHAwZ215MFZiSlhwRWxuQkE3MktBemVvRHA4cFlncVJtUkNVZklfYXJtRWpjNEhudEY3OC11dlBUNXdHeTdSMDJmOGJmX0VQVkVEcnpJUHRV?oc=5"
+      },
+      "observed_at": "2026-09-25T13:27:02+00:00"
+    },
+    {
+      "id": "e38d67cdf34e",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T03:05:26+00:00",
+      "headline": {
+        "en": "Apollo and Blackstone Said to Complete $35 Billion Private Credit Deal for Anthropic Chip Financing",
+        "zh": "阿波罗与黑石据称完成350亿美元私人信贷交易，为Anthropic芯片融资"
+      },
+      "summary": {
+        "en": "Apollo and Blackstone are said to have completed a $35 billion private credit deal to provide chip financing for Anthropic's computing power expansion.",
+        "zh": "据称，阿波罗与黑石已完成一笔350亿美元的私人信贷交易，为Anthropic的算力扩张提供芯片融资。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT3F0QktZYWpLQnhaN1Z4MVBrMnVUZTZBblhSbmVQVmc5V05ydy01VHZ2NzlUbVM0VDRRbFZLS1M2SWpOZWN4b2pZc0dmQ0E0cFRNdVFXby1xSWJBZjJmUC1VQnRqUGhBVGM3S3ktNzVjWEJWNlNzUDJhNXpudDlld1hoMEJzVTEwVUJiTUtRZW93dWhwUW5pMjlJX05XSlA5UWZiSDZvV0w2LU5FeWQ5RktLNTdzNlBrU3pR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo and Blackstone Said to Complete $35 Billion Private Credit Deal to Provide ‘Chip Financing’ for Anthropic’s Computing Power Expansion",
+      "source_fingerprint": "c92e8ff5aaaa0f267bff1eefb1ef8637653f66fd61a496b919ef5450497b392d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7d35c65cb902f3c34778ed01694404930a1f609efe6c74d91495036df2651128",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $35bn private credit chip-financing deal involving a tracked manager signals continued hyperscale AI infrastructure deployment capacity for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-25T13:30:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT3F0QktZYWpLQnhaN1Z4MVBrMnVUZTZBblhSbmVQVmc5V05ydy01VHZ2NzlUbVM0VDRRbFZLS1M2SWpOZWN4b2pZc0dmQ0E0cFRNdVFXby1xSWJBZjJmUC1VQnRqUGhBVGM3S3ktNzVjWEJWNlNzUDJhNXpudDlld1hoMEJzVTEwVUJiTUtRZW93dWhwUW5pMjlJX05XSlA5UWZiSDZvV0w2LU5FeWQ5RktLNTdzNlBrU3pR?oc=5"
+      },
+      "observed_at": "2026-09-25T13:27:02+00:00"
+    },
+    {
       "id": "1f80f65f5807",
       "date": "2026-09-25",
       "published_at": "2026-09-24T23:04:39+00:00",
