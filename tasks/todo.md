@@ -1,6 +1,15 @@
-# Friday extension checklist
+# Sunday extension and accuracy checklist
 
 Plan: [plan.md](plan.md). Detailed design: [deduplication and ranking](../docs/deduplication-ranking-design.md). Status: pipeline, UI and approved EN/ZH reports deployed on 24 September; [release evidence](../docs/release-2026-09-24.md). Preserve all existing features and UI controls.
+
+Deadline extended by user to Sunday 27 September 2026 (Hong Kong time). Extra time prioritizes evidence quality and filtering precision/recall checks; no claim of guaranteed accuracy. Pilot validation: all 15 forms structurally complete; all CASE 01–15 human-endorsed after pass 2. Details and frozen input hashes: work/analyst-review/priority-pilot-2026-09-24/PASS2_DISPOSITION.md. Review text and public data unchanged.
+
+- [x] Validate pilot IDs, field completion, ranks and source references; compare ordering with implemented tie-breakers and record discrepancies.
+- [x] Complete human review of CASE 06–15 and adjudicate reported PAG linkage. All pilot judgments endorsed; source-level implementation verification remains separate.
+- [x] Implement pass-2 grouping/novelty and source corrections using docs/handover-claude-sunday-accuracy.md. Done on branch claude/sunday-accuracy (not yet integrated): 214 -> 172 events, 12 reviewed groups, 42 aliases, 1 date correction; 03 > 05 > 02 and C08 preferences recorded unresolved. C14 repayment quoted from the 8-K but not published (no source card). Handback: ../docs/accuracy-handback-2026-09-25.md.
+- [x] Fix evidence/date/summary issues and bounded relevance failure modes in the pipeline (bounded retrieval, brief-v3-evidence prompt, absence-claim stripping, role-tagged managers). Candidate frozen at 0dff5a1.
+- [ ] Label the separate acceptance packet (work/analyst-review/acceptance-2026-09-25/: 20 events, 25 filtering candidates, independent discovery), then report results against the frozen candidate. Historical recall remains unavailable; original failed calibration stays recorded.
+- [ ] Integrator: merge claude/sunday-accuracy after independent review; follow the reconciliation steps in the handback if scheduled data lands first.
 
 - [ ] 1. Public GitHub PDF publication is authorized. Establish Chinese locale, chart translation scope and remaining paid-call budget; analyst orders 12–15 distinct examples. Freeze ranking contract. (1.5–2 technical hours)
 - [x] 2a. Codex: lossless eight-pair event projection, conservative validated-identity grouping, revision retention, evidence-linked priority rules and regression tests implemented. 182 source cards -> 174 events; source daily files unchanged.
@@ -8,5 +17,6 @@ Plan: [plan.md](plan.md). Detailed design: [deduplication and ranking](../docs/d
 - [x] 3. All-dates global list, intersecting filters, Priority/Newest and partial-load states implemented and browser-tested. Release review also covers omitted-member stale-index fallback.
 - [x] 4. Public EN/ZH PDF viewing/open/download implemented; English v2 and analyst-approved Simplified Chinese v2 published. Chinese afternoon review may produce v3; v2 remains approved meanwhile. Publication evidence: ../docs/release-2026-09-24.md.
 - [ ] 5. Integration and release complete: 397 tests and 14 subtests passed; live assets and archive verified, rollback documented. Still open: native desktop PDF embedding check (only in-app browser connected), analyst separate 20-event acceptance, and live evidence-backed ranking validation.
+- [ ] 6. After the user's ranking review: make direct in-page reading of both approved PDFs the primary Reports experience. Verify actual rendered pages in desktop Chrome/Edge, language switching, scrolling, zoom and mobile behavior; a blank object pane or working download link is not acceptance. Diagnose the existing native object embed first. If native support cannot provide reliable inline reading, use an embedded PDF renderer with local assets. Keep Open/Download as secondary controls to preserve existing features. Estimated 2–4 technical hours including browser verification; Claude implementation handover: docs/handover-claude-inline-pdf.md.
 
 Checkpoints: contract before ranking; data/UI review before integration; PDF content/layout and all existing UI features verified before release. Existing baseline FAIL remains recorded. No full recalibration or authentication platform within Friday base scope. No source records deleted during grouping.

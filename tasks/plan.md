@@ -1,7 +1,37 @@
-# Friday dashboard extension plan — 23 September 2026
+# Dashboard extension and accuracy plan — updated 25 September 2026
 
-Status: design accepted. Codex implemented the offline event/priority pipeline and generated the 182-card/174-event projection; Claude UI/report handover is docs/handover-claude-dashboard-extension.md. No paid inference, historical priority backfill, deployment or report publication performed. Implemented contract and limitations: docs/news-events-contract.md and docs/news-pipeline-verification.md.
-Target: Friday 25 September 2026, Hong Kong time. Estimates are focused human-plus-agent working hours, not guarantees.
+Status: event grouping, All dates, sorting and approved EN/ZH reports deployed; release evidence is docs/release-2026-09-24.md. Pilot pass 2 structurally validated; all 15 cases endorsed by the user. Current disposition: work/analyst-review/priority-pilot-2026-09-24/PASS2_DISPOSITION.md; pass-1 findings remain historical. No review labels imported into production. Historical priority backfill and editorial acceptance remain open.
+Target: **Sunday 27 September 2026, Hong Kong time**, extended by the user. Estimates are focused working hours, not a promise of perfect accuracy. The dated Friday schedule below is historical; the following revision supersedes it.
+
+## 25 September execution update — usage-conscious handover
+
+All 15 pilot cases are now endorsed. Pass 2 has 2 Important, 10 Useful and 3 excluded cases. Preferred order: 13, 11, 14, 08, 03, 10, 07, 05, 15, 09, 02, 06. CASE 11 PAG linkage is accepted only as attributed reported indirect context; ASIC action remains sector-level. Full grouping and evidence adjudication is in the local PASS2_DISPOSITION.md; not every proposed cluster is an approved identical-event merge.
+
+Recommended allocation, pending the user's choice: Claude Code owns implementation and PDF work; GPT-6 Sol at medium reasoning handles one bounded independent review and repair verification. GPT-5.6 Sol is an alternative for a reproducible regression, not assumed cheaper. Reserve the current higher-capability session for genuine policy conflicts. Do not run duplicate full-codebase reviews across models. No model switch or agent dispatch has occurred.
+
+| Day | Work / owner | Estimated focused time |
+|---|---|---:|
+| Friday 25 | Source manifest, correction provenance and conservative grouping/novelty migration — Claude | 3–4 h |
+| Friday–Saturday | Evidence retrieval, date/summary/relevance fixes and regression tests — Claude | 4–6 h |
+| Saturday | Real inline EN/ZH PDF rendering, separate frontend commit — Claude | 2–4 h |
+| Saturday | Freeze candidate; separate ranking/summary and filtering audits — Claude prepares, user labels, Sol reviews | 2–3 h technical + 1–2 h user |
+| Sunday 27 | Independent diff/evidence review, bounded fixes, browser checks and one-integrator deployment | 2–3 h |
+
+Total 13–20 technical hours; these replace rather than add to earlier estimates. If capacity is lower, timebox broad source acquisition and full-history backfill. Minimum release: validated known corrections/groups, no recency bumps from repeats, safe unknown-evidence states, actual inline reports, and explicit acceptance results. Do not tune on held-out labels or promise perfect filtering accuracy.
+
+Claude accuracy lane (25 September): delivered on branch claude/sunday-accuracy, candidate frozen at 0dff5a1, awaiting independent review and integration; evidence in docs/accuracy-handback-2026-09-25.md. Acceptance labels pending. PDF lane not started in that session.
+
+Ready-to-copy handover: docs/handover-claude-sunday-accuracy.md. Existing Reports prompt: docs/handover-claude-inline-pdf.md. Grouping/novelty must precede timing tie-breaks; correcting novelty alone does not resolve every endorsed within-Useful preference. Preserve Important status of underlying events when repeated coverage arrives.
+
+## Sunday revision: prioritize evidence and filtering accuracy (24 September baseline)
+
+- Thursday: finish draft validation and obtain human endorsement/corrections for CASE 06–15. Separate factual evidence checks from subjective relevance/order. Completed structural checks and source spot checks are documented in the local report. User time: roughly 30–60 minutes for the remaining cases if sources are accessible.
+- Friday: Codex addresses source-evidence acquisition and date provenance, then targeted relevance/summary failure modes. Estimate 5–7 technical hours, contingent on accessible sources. Preserve unknowns and blocked sources. Pilot cases are development data. Do not tune severity labels merely to fit ranks. Keep the legacy failed calibration recorded.
+- Saturday: freeze the candidate policy before examining new labels. Prepare a separate 20-event ranking/summary acceptance packet with no overlapping underlying stories, plus a 20–30-candidate filtering audit spanning accepted and rejected items and independent source-discovery checks. Estimate 3–5 technical hours plus 1–2 analyst hours. These are bounded audits, not population accuracy guarantees. Record sampling method and stratification; do not report a combined precision percentage from an artificially balanced sample. If historical rejected evidence is missing, disclose the gap and use prospective evidence rather than claim historical recall.
+- PDF lane after the remaining review: Claude receives docs/handover-claude-inline-pdf.md; implement/verify actual inline English and Chinese report rendering, preserving secondary Open/Download controls and existing UI. Estimate 2–4 technical hours. Codex integrates; no parallel ownership of pipeline files.
+- Sunday: resolve documented disagreements, run regression and browser checks, and deliver exact included/excluded/uncertain/missed counts with limitations and rollback. Estimate 2–3 technical hours. Acceptance must separately cover relevance, summary facts, deduplication, priority ordering and evidence completeness. No unsupported urgent labels; no known critical miss left unreported. If a check fails, retain its failure rather than lower the criterion after seeing results.
+
+Immediate sequencing: evidence recovery and source fidelity before historical priority publication. No extra paid historical rerun is authorized by a deadline extension alone; retain existing spend caps and establish the remaining budget before additional model runs. The current request is validation/comparison and schedule revision; no production filtering change is made by this review.
 
 ## Recommendation
 Ship an all-dates view, explainable editorial priority sorting with urgent event deduplication, and English/Chinese PDFs hosted in the existing public GitHub repository. The user explicitly authorized public PDF publication on 23 September; no authentication or private-host dependency remains. Keep the current static site and single structured model call. Preserve every existing feature and UI control except explicitly requested changes. Do not make full historical classifier recalibration the Friday dependency.
