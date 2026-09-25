@@ -26,7 +26,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from xml.etree import ElementTree
 
-from tools import site_data, summarize
+from tools import site_data, source_evidence, summarize
 
 USER_AGENT = "Mozilla/5.0 (compatible; FundCoverageNews/1.0; +https://github.com/Bobksl/Fund-Coverage-News-Dashboard)"
 SEEN_FILE = "seen.json"
@@ -194,9 +194,35 @@ def to_item(candidate):
             "text": candidate["description"] or candidate["title"]}
 
 
+def gather_evidence(item, retrieve):
+    """Swap the feed line for a retrieved excerpt when one exists; always record provenance.
+
+    Any retrieval failure leaves the feed text in place: the brief then stays headline-level
+    and its priority unassessed, rather than the refresh failing.
+    """
+    try:
+        record = retrieve(item["url"])
+    except Exception as error:  # noqa: BLE001 -- evidence is optional; never fail a refresh on it
+        record = {"status": "error", "level": "headline_only", "detail": type(error).__name__,
+                  "retrieved_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    item["feed_text"] = item["text"]
+    if record.get("level") == "excerpt" and len(record.get("excerpt") or "") > len(item["text"]):
+        item["text"] = record["excerpt"]
+    item["evidence_level"] = "excerpt" if item["text"] != item["feed_text"] else "headline_only"
+    if record.get("source_published_at"):
+        item["source_published_at"] = record["source_published_at"]
+    item["evidence"] = dict(source_evidence.provenance(record), level=item["evidence_level"])
+    return record["status"]
+
+
 def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None, max_items=30,
-        max_calls=60, lookback_days=3, dry_run=False, pause=1.0, scheduled=False):
-    """One refresh. Returns (exit_code, stats)."""
+        max_calls=60, lookback_days=3, dry_run=False, pause=1.0, scheduled=False, retrieve=None,
+        max_fetches=30):
+    """One refresh. Returns (exit_code, stats).
+
+    `retrieve` (url -> evidence record) is off unless given; main() passes the bounded
+    source_evidence retriever. At most `max_fetches` pages are requested per run.
+    """
     now = now or datetime.now(timezone.utc)
     entries, stats = collect(rules, fetch, now, lookback_days, pause)
     seen = load_seen(data_dir, now)
@@ -223,9 +249,17 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
         except summarize.SummaryError as error:
             failure = str(error)
     summarizer = summarize.Summarizer(rules, post=post, max_calls=max_calls)
-    cards, rejected = [], 0
+    cards, rejected, evidence = [], 0, {}
     for candidate in [] if failure else candidates:
         item = to_item(candidate)
+        if retrieve is not None:
+            if sum(evidence.values()) < max_fetches:
+                status = gather_evidence(item, retrieve)
+            else:
+                status = "skipped_cap"
+                item["feed_text"], item["evidence_level"] = item["text"], "headline_only"
+                item["evidence"] = {"status": status, "level": "headline_only"}
+            evidence[status] = evidence.get(status, 0) + 1
         try:
             brief = summarizer(item)
             card = summarize.make_card(item, brief, "unreviewed", "auto_fetch")
@@ -259,7 +293,8 @@ def run(rules, data_dir=site_data.DATA_DIR, fetch=http_get, post=None, now=None,
     stats.update(briefed=0 if failure else len(candidates), model_rejected=rejected, added=len(added),
                  europe_share=(round(sum(card["region"] == "Europe" for card in added_cards) / len(added_cards), 2)
                                if added_cards else None),
-                 calls=summarizer.calls, usage=summarizer.usage, errors=errors[:5], failure=failure)
+                 calls=summarizer.calls, usage=summarizer.usage, errors=errors[:5], failure=failure,
+                 evidence=evidence)
     return (1 if failure else 0), stats
 
 
@@ -275,7 +310,8 @@ def main(argv=None):
     args = parser.parse_args(argv)
     code, stats = run(site_data.load_rules(), data_dir=args.data_dir, max_items=args.max_items,
                       max_calls=args.max_calls, lookback_days=args.lookback_days, dry_run=args.dry_run,
-                      scheduled=os.environ.get("GITHUB_ACTIONS") == "true")
+                      scheduled=os.environ.get("GITHUB_ACTIONS") == "true",
+                      retrieve=functools.partial(source_evidence.retrieve, cache_dir=source_evidence.CACHE_DIR))
     print(json.dumps(stats, ensure_ascii=False, indent=2, default=str))
     return code
 
