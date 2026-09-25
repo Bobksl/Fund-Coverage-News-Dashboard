@@ -119,6 +119,9 @@ def primary_feeds(primary, environ):
     skipped = []
     for feed in primary.get("regulator_feeds", []):
         yield feed["id"], feed["url"], parse_feed, {"origin": "regulator", "domains": feed["domains"]}
+    # Wire releases are issuer-origin: what the company said, not independent or primary confirmation.
+    for feed in primary.get("wire_feeds", []):
+        yield feed["id"], feed["url"], parse_feed, {"origin": "wire", "domains": feed["domains"]}
     sec = primary.get("sec_edgar")
     if sec and not environ.get(sec["contact_env"], "").strip():
         skipped.append(f"sec_edgar: {sec['contact_env']} not set")
@@ -324,8 +327,9 @@ def to_item(candidate):
             "published_at": published.isoformat(timespec="seconds"),
             "text": candidate["description"] or candidate["title"],
             **({"origin": candidate["origin"],
-                "verified_primary_source": primary_host(candidate["url"], candidate.get("domains", []))}
-               if candidate.get("origin") in PRIMARY_ORIGINS else {}),
+                "verified_primary_source": candidate["origin"] in PRIMARY_ORIGINS
+                and primary_host(candidate["url"], candidate.get("domains", []))}
+               if candidate.get("origin") else {}),
             **({"context": f"Primary source: SEC {candidate['form']} filed by {candidate['publisher']}."}
                if candidate.get("origin") == "issuer_filing" else {}),
             **({"published_basis": "gdelt_seen"} if candidate.get("discovery") == "gdelt" else {})}

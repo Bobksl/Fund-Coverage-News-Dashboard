@@ -112,6 +112,24 @@ def test_regulator_items_still_need_the_keyword_rule_and_are_marked_primary():
     assert fed[0]['source_origin'] == 'regulator'
 
 
+def test_wire_releases_are_issuer_origin_not_primary_and_need_the_rule():
+    wire = rss(("KKR closes $3 billion private credit fund", "https://www.globenewswire.com/news-release/2026/09/22/1/0/en/kkr.html",
+                "Tue, 22 Sep 2026 12:00:00 GMT", "", "KKR"),
+               ("Acme opens new office", "https://www.globenewswire.com/news-release/2026/09/22/2/0/en/acme.html",
+                "Tue, 22 Sep 2026 12:00:00 GMT", "", "Acme"), channel="GlobeNewswire")
+    tiers = {'wire_feeds': [{'id': 'gnw_private_credit', 'url': 'https://www.globenewswire.com/RssFeed/keyword/private%20credit',
+                             'domains': ['globenewswire.com']}]}
+    with tempfile.TemporaryDirectory() as data:
+        fetch_news.run(RULES, data, fetch=lambda url: wire if 'globenewswire' in url else (_ for _ in ()).throw(OSError('x')),
+                       post=FakePost(BRIEF), now=NOW, pause=0, tiers=tiers, environ={})
+        cards = [c for f in Path(data).glob('2026-*.json') for c in json.loads(f.read_text(encoding='utf-8'))['items']]
+    assert [c['source']['url'].rsplit('/', 1)[1] for c in cards] == ['kkr.html']
+    assert cards[0]['source_origin'] == 'wire' and cards[0]['assessment'].get('evidence_strength') != 'primary'
+    item = fetch_news.to_item({'title': 't', 'url': 'https://www.globenewswire.com/x', 'publisher': 'p', 'description': '',
+                               'published': NOW, 'origin': 'wire', 'domains': ['globenewswire.com']})
+    assert item['origin'] == 'wire' and item['verified_primary_source'] is False
+
+
 def test_primary_flag_requires_the_listed_domain():
     item = fetch_news.to_item(dict(fetch_news.parse_edgar(EDGAR, SOURCES['sec_edgar']['registrants'][0])[0],
                                    origin='issuer_filing', domains=['sec.gov']))

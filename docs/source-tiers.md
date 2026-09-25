@@ -9,7 +9,7 @@ Branch `claude/primary-sources` (on top of `claude/sunday-accuracy`). Config: `c
 | Primary: SEC EDGAR / public BDC filings | 13 registrants' own EDGAR feeds (OCIC, OTIC, OBDC, OTF, OWL, ADS, MFIC, APO, K-FIT, FSK, KKR, BCSF, Lincoln Bain TCF). Forms: 8-K, 8-K/A, SC TO-I(/A), 424B2, 424B5, 13D(/A). | 10-Q/10-K (main documents exceed the 1 MB cap); 424B3 sticker supplements excluded as noise. |
 | Primary: regulators | Fed, SEC press releases, ECB, Bank of England, ESMA official RSS; still subject to the keyword rule. | FCA (403 to automated clients), ASIC and NAIC (no official feed found). |
 | Primary: GP / borrower IR, rating agencies | — | No open feeds; KBRA/Fitch releases arrive through Business Wire and news. |
-| Secondary: wires, reputable press | Alternative Credit Investor and Commercial Observer RSS; bounded page retrieval. | Business Wire / PR Newswire / GlobeNewswire feeds. |
+| Secondary: wires, reputable press | Alternative Credit Investor and Commercial Observer RSS; GlobeNewswire keyword feeds ("private credit", "business development company"); PR Newswire financial-services feed (latest 20 only); bounded page retrieval. Wire items carry `source_origin: wire` (issuer-origin, never marked primary) and still need the keyword rule. | Business Wire (opaque feed codes, 403 to automated clients). |
 | Discovery | 26 Google News queries (headline-only: links are not decoded); GDELT DOC API, 2 queries (tracked managers + credit terms, and sector terms), which return real publisher URLs. | Search APIs. |
 
 ## Rules
