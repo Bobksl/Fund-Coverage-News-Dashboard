@@ -1,6 +1,102 @@
 {
-  "version": 1,
+  "version": 2,
+  "note": "Reviewed event overlay. Raw cards are never rewritten; changed cards invalidate their decisions.",
   "groups": [
+    {
+      "event_id": "evt-06b3269f6fce",
+      "members": [
+        {
+          "id": "06b3269f6fce",
+          "headline": "Private Credit Defaults Are 1%, 6% or 19%, Depending Who You Ask",
+          "card_sha256": "f55a76838b931327294d615f571c9dc973f6f18fc989d5f5ad365a895b211689"
+        },
+        {
+          "id": "5d75b577038f",
+          "headline": "Private Credit Default Rates Cited at 1%, 6% or 19% Depending on Source",
+          "card_sha256": "acf4ad7af35268846e4634b9605c5c80e12d7b3b428269ebe9be8c80532ec8e1"
+        }
+      ],
+      "reason": "Bloomberg 17 Sep 2026 explainer comparing private-credit default measures (about 1%, 6% and 19%); the Futu item is a repost of the same story. A methods explainer related to, not identical with, the Fitch release.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "representative_card_id": "06b3269f6fce",
+      "aliases": [
+        "evt-5d75b577038f"
+      ]
+    },
+    {
+      "event_id": "evt-a0f3329b83e8",
+      "members": [
+        {
+          "id": "a0f3329b83e8",
+          "headline": "Australian regulator bans three private credit products from Melbourne Securities",
+          "card_sha256": "45ef4e7bc57817fc8200a498ebcd539472e36a1c76a9cac74b46ea688db56355"
+        },
+        {
+          "id": "b21c1e9f66a0",
+          "headline": "Australian regulator cracks down on three private credit products",
+          "card_sha256": "c65013317aa26ba9d58302020ae29bee356831e99d73a60bfaf4c52a6d0f790a"
+        }
+      ],
+      "reason": "ASIC interim DDO stop orders on three Remara Cash Management Fund products (Melbourne Securities), 22 Sep 2026. Direct and Google-News links to the same ACI article: direct URL slug equals the syndicated headline and both carry 09:36:30 UTC publication.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "representative_card_id": "a0f3329b83e8",
+      "aliases": [
+        "evt-b21c1e9f66a0"
+      ],
+      "evidence_urls": [
+        "https://alternativecreditinvestor.com/2026/09/22/australian-regulator-cracks-down-on-three-private-credit-products/",
+        "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-225mr-asic-halts-offers-of-private-credit-products-offered-under-remara-cash-management-fund"
+      ]
+    },
+    {
+      "event_id": "evt-b9177fe8e7f4",
+      "members": [
+        {
+          "id": "b9177fe8e7f4",
+          "headline": "Blue Owl Technology Finance Files Prospectus Supplement for 6.500% Notes Due 2029",
+          "card_sha256": "0e9b5ed0e80071383dd97442b3452a465c28720e5c5f81c97ccb787ff181eca6"
+        },
+        {
+          "id": "852f9bce3cb9",
+          "headline": "KBRA assigns BBB rating to Blue Owl Technology Finance Corp. $400m notes",
+          "card_sha256": "c567a11ce2b79774283f57be035a365491e2df611ca6019afe899adfc045a47e",
+          "role": "update"
+        }
+      ],
+      "reason": "OTF $400m 6.500% notes due 15 Oct 2029 (further issuance). The KBRA BBB rating of these notes is a distinct dated fact within the same issuance and is attached as an update, not as duplicate coverage.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "representative_card_id": "b9177fe8e7f4",
+      "aliases": [
+        "evt-852f9bce3cb9"
+      ],
+      "evidence_urls": [
+        "https://www.kbra.com/publications/yTtCyjsh/kbra-assigns-rating-to-blue-owl-technology-finance-corp-s-400-million-senior-unsecured-notes-due-2029"
+      ]
+    },
+    {
+      "event_id": "evt-f6e820e3975b",
+      "members": [
+        {
+          "id": "f6e820e3975b",
+          "headline": "Fasanara and Tether launch $400m private credit fund",
+          "card_sha256": "140e4677396661d830bb7d1606a9c3ec0192ecd75789e5695d71c56f33bb8fc7"
+        },
+        {
+          "id": "4d8f7829205b",
+          "headline": "Tether and Fasanara Capital launch $3B stablecoin-powered private credit fund",
+          "card_sha256": "d2fcd577fa18ee90b98b66263811f45607b91886aaee508baa578af0aa657ff7"
+        }
+      ],
+      "reason": "Tether/Fasanara launch of StableFund, the Tether-Fasanara Lending Fund, 9 Sep 2026: $400m sponsor co-investment, targeting up to $3bn. The issuer release uses both names for one vehicle; the 21 Sep item is later coverage.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "representative_card_id": "f6e820e3975b",
+      "aliases": [
+        "evt-4d8f7829205b"
+      ],
+      "evidence_urls": [
+        "https://tether.io/news/tether-and-fasanara-capital-launch-400-million-private-credit-fund-to-expand-stablecoin-enabled-real-economy-lending/"
+      ]
+    },
     {
       "event_id": "evt-reviewed-001",
       "members": [
@@ -13,9 +109,181 @@
           "id": "8d1ecbaa14b3",
           "headline": "Apollo private credit fund redemption requests ease in third quarter",
           "card_sha256": "321b6574f37cbe7a954705e650fcef899ffa0083d730a9a7ab0292302165b3d1"
+        },
+        {
+          "id": "cbc9ebc8d177",
+          "headline": "Apollo private credit fund redemption requests ease in third quarter",
+          "card_sha256": "75f4a94f5736efb73742a5cdf470a5daf6867b6ce391eda4e25d305670218b72"
+        },
+        {
+          "id": "7659a1216ef9",
+          "headline": "Apollo private credit fund redemption requests ease in third quarter",
+          "card_sha256": "1972407ce0537a8fd9f9862aed9d1b3481e515177d48b0a28a4ba023d40ba03e"
+        },
+        {
+          "id": "36bca42befb3",
+          "headline": "Apollo private credit fund redemption requests ease in third quarter",
+          "card_sha256": "4484d09c931a62c247ba7805a5b402aa23a4e69c99843c1f872b54b764c0442f"
+        },
+        {
+          "id": "906f8c12189f",
+          "headline": "Apollo private credit fund redemption requests ease in third quarter",
+          "card_sha256": "aad01550bc88b7e6829a9d7efe3a133e0e2a31ef160e3223768d09e077492b16"
+        },
+        {
+          "id": "2534f52ba751",
+          "headline": "Apollo Private Credit Fund Redemption Requests Ease in Third Quarter",
+          "card_sha256": "1fe11669176e4e9dd7bb5a487852529b964d81a669ee248f77b668b2e8d955b3"
+        },
+        {
+          "id": "e7da646471c4",
+          "headline": "Apollo's Private Credit Fund Sees Redemption Requests Cool",
+          "card_sha256": "79ae7a289d0d51d8f537fca4ed14f2d6513b98c1b13571ebbde17a935b60d1a1"
+        },
+        {
+          "id": "d87b77beebf2",
+          "headline": "Apollo's private credit BDC redemption requests ease to 14.7% in Q3",
+          "card_sha256": "d90347cf1593f6d316afd4058d354002703c32568832ab8e2ba344a1da5841c8"
+        },
+        {
+          "id": "195d497662ca",
+          "headline": "Apollo's private credit BDC redemption requests ease to 14.7% in Q3",
+          "card_sha256": "e626ee2bcd4a2440833a0802634deb46536024b80d7b0a929028ddf9c9454947"
+        },
+        {
+          "id": "a7ef6426ba8a",
+          "headline": "Apollo Extends Private Credit Redemption Caps as Requests Ease to 14.7%",
+          "card_sha256": "5e7c5b8efb41aaba9d06f12c5dbd4c5e3e7b32205b78870a227ecda37c05c61e"
+        },
+        {
+          "id": "d11b48c51872",
+          "headline": "Apollo caps private credit fund redemptions for third straight quarter",
+          "card_sha256": "5d93844c7b512f42abe28a636b7a4243ef6f4ce4ce3fe5c76824eb7c1f51a881"
+        },
+        {
+          "id": "0d8c9517beca",
+          "headline": "Apollo caps private credit fund redemptions for third straight quarter",
+          "card_sha256": "8b40d59140d703fcb4ead660b287afd35fcce395b1ed0cfd5b7f53f7eba17180"
+        },
+        {
+          "id": "2cc262f913fb",
+          "headline": "Apollo Global Management Limits Private Credit Fund Withdrawals for Third Quarter",
+          "card_sha256": "c1bc3f98905363e9c8bd1cd3a648f9282321dd18810b5f9e8797ea74a395f2a7"
+        },
+        {
+          "id": "35d9a8d4776d",
+          "headline": "Apollo Global Management Limits Private Credit Fund Withdrawals for Third Quarter",
+          "card_sha256": "2d29745d0da703e2a648b975b16e944a3e7e916bd32b9cb9d00429c9e4017253"
+        },
+        {
+          "id": "7938f0178a78",
+          "headline": "Apollo limits private credit withdrawals for third consecutive quarter",
+          "card_sha256": "c1bfba3f00d8b46891a1f14e372d3bd39b2b1d673714aa9fa82cb7d563b0749a"
+        },
+        {
+          "id": "b7fa5b484e59",
+          "headline": "Apollo Caps Private Credit Fund Again After 14.7% Look to Exit",
+          "card_sha256": "0e171ca172c694411d9b526a7d7ec9b5c66d50ce90bce2d919af8fb0eeef125f"
+        },
+        {
+          "id": "434e33cfb7cc",
+          "headline": "Apollo Caps Private Credit Fund Again After 14.7% Look to Exit",
+          "card_sha256": "4b1821184e9a5eaa60ccf8d8f42f5a37f9cfad8b64b8636e657839ecac43845b"
+        },
+        {
+          "id": "eb59d491ae96",
+          "headline": "Apollo Caps Private Credit Fund Again as 14.7% Look to Exit",
+          "card_sha256": "6a33cd9244761279bb78af62e879302f98257cfb5197b67cc309a7ab97940769"
+        },
+        {
+          "id": "3489c10aedc3",
+          "headline": "Apollo Global caps private credit fund again as 14.7% look to exit",
+          "card_sha256": "6a604921048ace1c5c99bd2b73e89ff4ebe163c8bd56dc90b78bc5c4170056e5"
+        },
+        {
+          "id": "187d42a223f7",
+          "headline": "Apollo caps private credit fund again as 14.7% look to exit",
+          "card_sha256": "6ab2cdc5343b864476c1bfbbe44372a0babf89da05ac89e51ac87783db794a03"
+        },
+        {
+          "id": "eb42edf1120d",
+          "headline": "Apollo's $26 Billion Private Credit Fund Faces Another Rush for Exits",
+          "card_sha256": "93b85a4d2429549d6ab29e50ee03a55969288028c9e995570840de04613e6d33"
+        },
+        {
+          "id": "f6cbe7e0b0e6",
+          "headline": "Apollo's $26 Billion Private Credit Fund Faces Another Rush for Exits",
+          "card_sha256": "2e441cb00d2beb2d79e66cadfeca08f4dfe30d3603fcb5d1daa7f45795aa9b1b"
+        },
+        {
+          "id": "c86fc232e852",
+          "headline": "Apollo Global Management stock falls as credit redemptions stay capped",
+          "card_sha256": "040c4dea01c6e9e2464ab35a03bfe2f476155a0d1a5215e5a9b301ce874eebcc",
+          "role": "reaction"
+        },
+        {
+          "id": "4b913f79deea",
+          "headline": "Apollo Global at risk as private credit redemptions continue",
+          "card_sha256": "bcac736ea9a299179074d2bf36face74699db7a55ed36c35f90f82d478abe06f",
+          "role": "reaction"
+        },
+        {
+          "id": "e5480fcc7ee7",
+          "headline": "Apollo Global at risk as private credit redemptions continue",
+          "card_sha256": "0b31adc1c3be277aa8ec156d25df21ee3cea2b8a4fc46f34b3122a55c272f99d",
+          "role": "reaction"
+        },
+        {
+          "id": "eebf558661aa",
+          "headline": "Apollo Stock Drops 2.9%; Private-Credit Exit Requests Still Triple the Cap",
+          "card_sha256": "e1835e1cda13a289890c7cd2e0f59af8ebfd55bdce5b8ee772dacc9eb13cce84",
+          "role": "reaction"
         }
       ],
-      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+      "reason": "Apollo Debt Solutions Q3 2026 tender: requests eased to about 14.7% while the repurchase cap stayed in force. Reuters syndication, Citywire, Seeking Alpha/TradingView, MarketScreener/Yahoo and later same-quarter rewrites; stock-reaction and commentary items are attached as reactions and never move material time.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "history": [
+        {
+          "decision": "September 23 archive audit",
+          "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved.",
+          "members": [
+            "8d1b134a37a1",
+            "8d1ecbaa14b3"
+          ]
+        }
+      ],
+      "representative_card_id": "195d497662ca",
+      "aliases": [
+        "evt-0d8c9517beca",
+        "evt-187d42a223f7",
+        "evt-195d497662ca",
+        "evt-2534f52ba751",
+        "evt-2cc262f913fb",
+        "evt-3489c10aedc3",
+        "evt-35d9a8d4776d",
+        "evt-36bca42befb3",
+        "evt-434e33cfb7cc",
+        "evt-4b913f79deea",
+        "evt-7659a1216ef9",
+        "evt-7938f0178a78",
+        "evt-906f8c12189f",
+        "evt-a7ef6426ba8a",
+        "evt-b7fa5b484e59",
+        "evt-c86fc232e852",
+        "evt-cbc9ebc8d177",
+        "evt-d11b48c51872",
+        "evt-d87b77beebf2",
+        "evt-e5480fcc7ee7",
+        "evt-e7da646471c4",
+        "evt-eb42edf1120d",
+        "evt-eb59d491ae96",
+        "evt-eebf558661aa",
+        "evt-f6cbe7e0b0e6"
+      ],
+      "evidence_urls": [
+        "https://www.investing.com/news/stock-market-news/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter-4911691",
+        "https://www.sacbee.com/news/business/article317343210.html"
+      ]
     },
     {
       "event_id": "evt-reviewed-002",
@@ -29,9 +297,62 @@
           "id": "1b2ada6a138a",
           "headline": "Blue Owl Credit Income amends credit facility, raises $1.3b",
           "card_sha256": "c72f1ca95fd3238114c11bc72f5435f48c02d1c2cd65940aba8dfdec15f6090c"
+        },
+        {
+          "id": "fada07d0316a",
+          "headline": "Blue Owl Credit Income amends credit facility, raises $1.3b",
+          "card_sha256": "9725131c52be7b16288bbf74cfda171b811678865853ed6597fa30ef9bbf645a"
+        },
+        {
+          "id": "35e2bba06c2c",
+          "headline": "Blue Owl Credit Income Corp extends scheduled maturity to September 2031",
+          "card_sha256": "81ee34d644853b83ef56f65b51037712c9ba02698b96280a9b76ed8b5497cd1c"
+        },
+        {
+          "id": "3a6a9323a215",
+          "headline": "Blue Owl Credit Income Corp. Enhances Capital Structure Through Financing Transactions",
+          "card_sha256": "0207aa4a4b17630e4594b21e0a3641750c4e8989c6e02b9447d3fcc717067cb0"
+        },
+        {
+          "id": "081382c9fe64",
+          "headline": "Blue Owl Credit Income Corp. Enhances Capital Structure Through Recent Financing Transactions",
+          "card_sha256": "42f509f6f9fc5faaab34415e30cfde71b4100031311ab7509b2e684b9963ee18"
+        },
+        {
+          "id": "3da7f824eda8",
+          "headline": "Blue Owl Credit Income Corp. Upsizes Revolver, Prices $1.0B Notes",
+          "card_sha256": "ff97573f26fd4f05959a3ccf6f28fca3609fc51528129d3e0944b27c76c25215"
+        },
+        {
+          "id": "320feac29e99",
+          "headline": "Blue Owl's OCIC raises $1B in notes, upsizes credit line to $4.2B",
+          "card_sha256": "e85ec6948f77d0fe5c219943179ce03a4b80497f6fa83c8fe575db89d1611bb3"
         }
       ],
-      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+      "reason": "Blue Owl Credit Income Corp 22 Sep 2026 financing disclosure: revolver amended/upsized to $4.2bn with maturity to Sep 2031 and $1.0bn notes; \"$1.3b\" in some headlines is cumulative debt raised since 30 Jun, not a separate raise.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "history": [
+        {
+          "decision": "September 23 archive audit",
+          "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved.",
+          "members": [
+            "c87e8c1c89f1",
+            "1b2ada6a138a"
+          ]
+        }
+      ],
+      "representative_card_id": "320feac29e99",
+      "aliases": [
+        "evt-081382c9fe64",
+        "evt-320feac29e99",
+        "evt-35e2bba06c2c",
+        "evt-3a6a9323a215",
+        "evt-3da7f824eda8",
+        "evt-fada07d0316a"
+      ],
+      "evidence_urls": [
+        "https://www.sec.gov/Archives/edgar/data/0001812554/000119312526397893/d43319dex991.htm"
+      ]
     },
     {
       "event_id": "evt-reviewed-003",
@@ -45,9 +366,28 @@
           "id": "25ad3e7e022e",
           "headline": "Australia's corporate regulator calls out 'poor practices' in private credit",
           "card_sha256": "28a05c9b0549a6a430cf52bff6f80fbd9d46e004034752a7d508a605daa64c6d"
+        },
+        {
+          "id": "8e7307b60990",
+          "headline": "Australia's ASIC flags poor practices in private credit",
+          "card_sha256": "c4adc0028d0bc4a951cba599e0a0e3b00e8fe0ca59c66ed67ac70187c24138fb"
         }
       ],
-      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+      "reason": "ASIC's 22 Sep 2026 sector statement on poor private-credit practices (same Edge Malaysia article under two headlines plus TradingView). Kept separate from the Remara stop orders, which are a distinct action.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "history": [
+        {
+          "decision": "September 23 archive audit",
+          "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved.",
+          "members": [
+            "e1ef992333f2",
+            "25ad3e7e022e"
+          ]
+        }
+      ],
+      "aliases": [
+        "evt-8e7307b60990"
+      ]
     },
     {
       "event_id": "evt-reviewed-004",
@@ -101,6 +441,36 @@
       "event_id": "evt-reviewed-007",
       "members": [
         {
+          "id": "5a981b62c2d4",
+          "headline": "US Private Credit Default Rate Hits Record 6.3%, Fitch Says",
+          "card_sha256": "56868c6dbaad95f4bb30f4396b05dc4db5b31c2bf2d0329656500ec1ada2f995"
+        },
+        {
+          "id": "c145a80c43dc",
+          "headline": "Private credit defaults climb to 6.3% in August, Fitch says",
+          "card_sha256": "1f1ee3f41d2acc5b0f14b55908627c707b3f1cd4ed2c52188cf19acf32951073"
+        },
+        {
+          "id": "6ab1f6aca955",
+          "headline": "U.S. Private Credit Default Rate Climbs to Record 6.3%; Software Sector Defies Trend, Falling to 0.6%",
+          "card_sha256": "bab40964817b46c1eb2337940970aeef4e3a9188865ed275b3dfa87d869b894d"
+        },
+        {
+          "id": "af30680489de",
+          "headline": "US private debt default rate hits record high in August: Fitch Ratings",
+          "card_sha256": "4a00290f92028aef91ff3c3f266841ce0860f4eeafba6a592086fc23b6b95f60"
+        },
+        {
+          "id": "534accad5e52",
+          "headline": "U.S. private credit defaults rise: Fitch",
+          "card_sha256": "6dffaa1d7c54c1a2d859372c535d55848bf9c570515fd38672ad316aa3f42d50"
+        },
+        {
+          "id": "03f8e6bdeb1d",
+          "headline": "U.S. Private Credit Default Rate Hits Historic High of 6.3%",
+          "card_sha256": "55138effeca05f89b03c84f42a839ce9581326e09349df6bae1411b7919aedb7"
+        },
+        {
           "id": "48b80ce93160",
           "headline": "Private credit default rate rises to 6.3% in 12 months through August",
           "card_sha256": "b3e5fca1fcd9f3faf0d36e09a8721e37389707c6e889a518391dc19587ef4579"
@@ -111,7 +481,27 @@
           "card_sha256": "c28b8b11f7b3ad5b43a425b3625997c5ff6524f961e9e87a80e76fe02ad4b224"
         }
       ],
-      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+      "reason": "Fitch: US private credit default rate 6.3% for the 12 months through August 2026 (record). All syndicated reports of the same Fitch release, 14-16 Sep 2026.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "history": [
+        {
+          "decision": "September 23 archive audit",
+          "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved.",
+          "members": [
+            "48b80ce93160",
+            "abc27e2be1d7"
+          ]
+        }
+      ],
+      "representative_card_id": "6ab1f6aca955",
+      "aliases": [
+        "evt-03f8e6bdeb1d",
+        "evt-534accad5e52",
+        "evt-5a981b62c2d4",
+        "evt-6ab1f6aca955",
+        "evt-af30680489de",
+        "evt-c145a80c43dc"
+      ]
     },
     {
       "event_id": "evt-reviewed-008",
@@ -128,6 +518,48 @@
         }
       ],
       "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+    }
+  ],
+  "relations": [
+    {
+      "event_ids": [
+        "evt-a0f3329b83e8",
+        "evt-reviewed-003",
+        "evt-ca2ccf9f530d",
+        "evt-ae5f41c3bc26"
+      ],
+      "reason": "Same regulator and day or background (Bathla), but distinct actions: Remara stop orders, sector statement, enforcement warning coverage not verified as the same statement, and the earlier Bathla collapse.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check"
+    },
+    {
+      "event_ids": [
+        "evt-reviewed-007",
+        "evt-06b3269f6fce"
+      ],
+      "reason": "Methods explainer built on the Fitch default-rate release.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check"
+    },
+    {
+      "event_ids": [
+        "evt-reviewed-001",
+        "evt-03f8f3173fa6",
+        "evt-5f9cf9b9ef30"
+      ],
+      "reason": "Apollo redemption context on other dates: 24 Sep multi-cause share move and an unanchored 13 Sep rehash; not the Q3 tender itself.",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check"
+    }
+  ],
+  "corrections": [
+    {
+      "card_id": "852f9bce3cb9",
+      "field": "published_at",
+      "original": "2026-09-17T08:00:59+00:00",
+      "corrected": "2026-08-18",
+      "event_date": "2026-08-17",
+      "basis": "Original value is the Google News feed timestamp (September observation). Publisher dateline 18 Aug 2026 was read in the endorsed pilot review; automated re-check on 25 Sep returned HTTP 403. The underlying KBRA release is dated 17 Aug 2026 (retrieved 25 Sep).",
+      "evidence_url": "https://scanx.trade/stock-market-news/debt-markets/kbra-assigns-bbb-rating-blue-owl-technology-finance-corp-400m-notes/48552910",
+      "card_sha256": "c567a11ce2b79774283f57be035a365491e2df611ca6019afe899adfc045a47e",
+      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check"
     }
   ]
 }

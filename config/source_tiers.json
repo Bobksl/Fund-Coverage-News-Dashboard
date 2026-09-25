@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "note": "Source tiers for the scheduled refresh beyond the Google News and trade RSS feeds in filter_rules.json. Issuer filings come from each registrant's own EDGAR feed; regulator items come from official RSS. Items from these feeds are primary evidence only when the final URL is on the listed domain. CIKs verified 25 Sep 2026 from SEC company_tickers.json or the registrant's own EDGAR company feed (exact conformed name). No CIK is inferred from a similar name.",
+  "sec_edgar": {
+    "contact_env": "SEC_CONTACT_EMAIL",
+    "feed": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}&type=&dateb=&owner=include&count=40&output=atom",
+    "domains": [
+      "sec.gov"
+    ],
+    "forms": [
+      "8-K",
+      "8-K/A",
+      "SC TO-I",
+      "SC TO-I/A",
+      "424B2",
+      "424B5",
+      "SC 13D",
+      "SC 13D/A",
+      "SCHEDULE 13D",
+      "SCHEDULE 13D/A"
+    ],
+    "forms_excluded": {
+      "424B3": "Non-traded BDC sticker supplements (monthly price and distribution updates); high volume, rarely an event.",
+      "10-Q, 10-K": "Main documents exceed the 1 MB retrieval cap; results reach the tier through earnings 8-Ks instead.",
+      "13F-HR, SC 13G, SC 13G/A, 4, N-PX, N-23C3A, D": "Holdings, passive ownership, insider, proxy-vote, routine repurchase-notice or private-offering forms, not events."
+    },
+    "registrants": [
+      {
+        "id": "ocic",
+        "cik": "0001812554",
+        "name": "Blue Owl Credit Income Corp.",
+        "gps": [
+          "blue_owl"
+        ],
+        "basis": "EDGAR company feed"
+      },
+      {
+        "id": "otic",
+        "cik": "0001869453",
+        "name": "Blue Owl Technology Income Corp.",
+        "gps": [
+          "blue_owl"
+        ],
+        "basis": "EDGAR company feed"
+      },
+      {
+        "id": "obdc",
+        "cik": "0001655888",
+        "name": "Blue Owl Capital Corp",
+        "gps": [
+          "blue_owl"
+        ],
+        "basis": "company_tickers.json (OBDC)"
+      },
+      {
+        "id": "otf",
+        "cik": "0001747777",
+        "name": "Blue Owl Technology Finance Corp.",
+        "gps": [
+          "otf",
+          "blue_owl"
+        ],
+        "basis": "company_tickers.json (OTF)"
+      },
+      {
+        "id": "owl",
+        "cik": "0001823945",
+        "name": "BLUE OWL CAPITAL INC.",
+        "gps": [
+          "blue_owl"
+        ],
+        "basis": "company_tickers.json (OWL)"
+      },
+      {
+        "id": "ads",
+        "cik": "0001837532",
+        "name": "Apollo Debt Solutions BDC",
+        "gps": [
+          "apollo"
+        ],
+        "basis": "EDGAR company feed"
+      },
+      {
+        "id": "mfic",
+        "cik": "0001278752",
+        "name": "MidCap Financial Investment Corp",
+        "gps": [
+          "apollo"
+        ],
+        "basis": "company_tickers.json (MFIC)"
+      },
+      {
+        "id": "apo",
+        "cik": "0001858681",
+        "name": "Apollo Global Management, Inc.",
+        "gps": [
+          "apollo"
+        ],
+        "basis": "company_tickers.json (APO)"
+      },
+      {
+        "id": "kfit",
+        "cik": "0001930679",
+        "name": "KKR FS Income Trust",
+        "gps": [
+          "kkr"
+        ],
+        "basis": "EDGAR company feed"
+      },
+      {
+        "id": "fsk",
+        "cik": "0001422183",
+        "name": "FS KKR Capital Corp",
+        "gps": [
+          "kkr"
+        ],
+        "basis": "company_tickers.json (FSK)"
+      },
+      {
+        "id": "kkr",
+        "cik": "0001404912",
+        "name": "KKR & Co. Inc.",
+        "gps": [
+          "kkr"
+        ],
+        "basis": "company_tickers.json (KKR)"
+      },
+      {
+        "id": "bcsf",
+        "cik": "0001655050",
+        "name": "Bain Capital Specialty Finance, Inc.",
+        "gps": [
+          "bain_capital"
+        ],
+        "basis": "company_tickers.json (BCSF)"
+      },
+      {
+        "id": "lbctcf",
+        "cik": "0002054992",
+        "name": "Lincoln Bain Capital Total Credit Fund",
+        "gps": [
+          "bain_capital"
+        ],
+        "basis": "EDGAR company feed"
+      }
+    ]
+  },
+  "regulator_feeds": [
+    {
+      "id": "fed_press",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "publisher": "Federal Reserve Board",
+      "domains": [
+        "federalreserve.gov"
+      ]
+    },
+    {
+      "id": "sec_press",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "domains": [
+        "sec.gov"
+      ]
+    },
+    {
+      "id": "ecb_press",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "publisher": "European Central Bank",
+      "domains": [
+        "ecb.europa.eu"
+      ]
+    },
+    {
+      "id": "boe_news",
+      "url": "https://www.bankofengland.co.uk/rss/news",
+      "publisher": "Bank of England",
+      "domains": [
+        "bankofengland.co.uk"
+      ]
+    },
+    {
+      "id": "esma_news",
+      "url": "https://www.esma.europa.eu/rss.xml",
+      "publisher": "ESMA",
+      "domains": [
+        "esma.europa.eu"
+      ]
+    }
+  ],
+  "gaps": {
+    "FCA": "RSS returns HTTP 403 to automated clients; not bypassed.",
+    "Rating agencies": "KBRA, Fitch, Moody's and S&P publish no open feed; public releases reach Business Wire and news discovery.",
+    "Managers without event filings": "Bayview, CIFC, Neuberger, Guggenheim, HSBC AM, PAG, Pretium, BasePoint: EDGAR output is holdings/ownership forms or none; covered by news discovery.",
+    "Business Wire": "Feed codes are opaque and its pages return 403 to automated clients; its releases (KBRA, Apollo, KKR) still arrive through news discovery.",
+    "PR Newswire depth": "The finance feed holds the latest 20 items (about 11 hours on 25 Sep 2026); a twice-daily refresh sees part of it.",
+    "NAIC": "No official feed found on 25 Sep 2026; coverage arrives through news discovery."
+  },
+  "gdelt": {
+    "tier": "discovery (not primary): finds real publisher URLs; evidence still comes from the page or a primary record",
+    "endpoint": "https://api.gdeltproject.org/api/v2/doc/doc",
+    "min_interval_s": 10,
+    "retry_after_s": 15,
+    "maxrecords": 250,
+    "rate_note": "GDELT asks for at most one request per 5 seconds and imposes a penalty window after bursts; a limited query is retried once, then recorded as a failed feed.",
+    "queries": [
+      {
+        "id": "managers",
+        "q": "(\"Blue Owl\" OR \"Apollo Global\" OR KKR OR \"Bain Capital\" OR \"Neuberger Berman\" OR CIFC OR Pretium OR \"Bayview Asset\" OR BasePoint OR \"Guggenheim Investments\" OR \"HSBC Asset Management\") (\"private credit\" OR lending OR loan OR BDC OR CLO OR debt) sourcelang:english"
+      },
+      {
+        "id": "sector",
+        "q": "(\"private credit\" OR \"direct lending\" OR \"business development company\" OR \"asset-based finance\" OR \"asset-backed finance\" OR \"leveraged loan\" OR CLO) sourcelang:english"
+      }
+    ]
+  },
+  "wire_feeds": [
+    {
+      "id": "gnw_private_credit",
+      "url": "https://www.globenewswire.com/RssFeed/keyword/private%20credit",
+      "domains": [
+        "globenewswire.com"
+      ]
+    },
+    {
+      "id": "gnw_bdc",
+      "url": "https://www.globenewswire.com/RssFeed/keyword/business%20development%20company",
+      "domains": [
+        "globenewswire.com"
+      ]
+    },
+    {
+      "id": "prn_financial_services",
+      "url": "https://www.prnewswire.com/rss/financial-services-latest-news/financial-services-latest-news-list.rss",
+      "domains": [
+        "prnewswire.com"
+      ]
+    }
+  ],
+  "regulator_sitemaps": [
+    {
+      "id": "asic_media",
+      "url": "https://www.asic.gov.au/sitemap.xml",
+      "publisher": "ASIC",
+      "include_prefix": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/",
+      "domains": [
+        "asic.gov.au"
+      ],
+      "note": "No official RSS; robots.txt allows all and advertises this sitemap. lastmod is modification time; the page dcterms.date.created is used as publication."
+    }
+  ]
+}

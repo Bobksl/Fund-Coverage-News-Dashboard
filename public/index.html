@@ -82,7 +82,7 @@
   .source-list .source { margin-bottom: 2px; }
   .source-summary { margin: 0; color: var(--muted); }
   .notice-warn { background: var(--warn-soft); color: var(--warn); }
-  .retry { font: inherit; font-size: 13px; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+  .retry, .pdf-toolbar button { font: inherit; font-size: 13px; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
   .views { display: flex; gap: 4px; margin-top: 8px; }
   .views a { font-size: 13px; padding: 4px 10px; border-radius: 6px; color: var(--accent); text-decoration: none; font-weight: 600; }
   .views a[aria-current="page"] { background: var(--accent-soft); }
@@ -91,7 +91,13 @@
   .report-lang { margin: 4px 0 10px; }
   .report-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
   .button { font-size: 13px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 6px; color: var(--accent); background: var(--panel); text-decoration: none; font-weight: 600; }
-  .pdf { display: block; width: 100%; height: 80vh; min-height: 420px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+  .pdf-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 4px 0 8px; }
+  .pdf-toolbar button:disabled { opacity: .45; cursor: default; }
+  .pdf-zoom { min-width: 3.5em; text-align: center; font-size: 13px; }
+  .pdf-count, .pdf-toolbar .state { color: var(--muted); font-size: 13px; margin-left: auto; padding: 0; }
+  .pdf-scroll { height: 80vh; min-height: 420px; overflow: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); padding: 12px; }
+  .pdf-page { margin: 0 auto 12px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.35); }
+  .pdf-page canvas { display: block; width: 100%; height: 100%; }
   footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
   footer .wrap { padding-top: 14px; padding-bottom: 28px; }
   @media (max-width: 640px) {

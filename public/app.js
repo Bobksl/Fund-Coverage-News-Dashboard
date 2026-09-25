@@ -70,7 +70,14 @@ const I18N = {
     reportMeta: "Published {date} · {lang} · PDF",
     reportOpen: "Open PDF",
     reportDownload: "Download PDF",
-    reportFallback: "This browser cannot show the PDF here. Use Open PDF or Download PDF.",
+    reportLoading: "Loading report… {pct}",
+    reportError: "The report could not be displayed here. Use Open PDF or Download PDF, or try again.",
+    reportRetry: "Try again",
+    reportPages: "{n} pages",
+    reportPage: "Page {n} of {total}",
+    zoomIn: "Zoom in",
+    zoomOut: "Zoom out",
+    zoomFit: "Fit width",
     locale: "en-GB",
   },
   zh: {
@@ -130,7 +137,14 @@ const I18N = {
     reportMeta: "发布日期 {date} · {lang} · PDF",
     reportOpen: "打开 PDF",
     reportDownload: "下载 PDF",
-    reportFallback: "此浏览器无法在页面内显示 PDF，请使用“打开 PDF”或“下载 PDF”。",
+    reportLoading: "正在加载报告… {pct}",
+    reportError: "报告无法在此显示。请使用“打开 PDF”或“下载 PDF”，或重试。",
+    reportRetry: "重试",
+    reportPages: "共 {n} 页",
+    reportPage: "第 {n} 页，共 {total} 页",
+    zoomIn: "放大",
+    zoomOut: "缩小",
+    zoomFit: "适应宽度",
     locale: "zh-CN",
   },
 };
@@ -696,11 +710,135 @@ function renderReports() {
       el("a", {className: "button", text: t("reportDownload"), attrs: {href, download: href.split("/").pop()}}),
     ]);
     section.appendChild(actions);
-    // <object> shows its children only when the browser cannot display the PDF inline.
-    section.appendChild(el("object", {className: "pdf", attrs: {data: href, type: "application/pdf",
-      "aria-label": bilingual(report.title)}}, [el("p", {className: "state", text: t("reportFallback")})]));
+    section.appendChild(pdfViewer(href, bilingual(report.title)));
     root.appendChild(section);
   }
+}
+
+// Inline report reading uses PDF.js 6.3.289 hosted in vendor/pdfjs, not the browser's own PDF
+// plugin: phones and some embedded browsers have no plugin and showed a blank pane. Pages are drawn
+// to canvases only as they scroll into view. "ready" is set only after page 1 has been painted.
+const reportDocs = new Map(); // href -> Promise<PDFDocumentProxy>, shared across re-renders
+const reportProgress = new Map(); // href -> fraction loaded
+const ZOOMS = [0.5, 0.75, 1, 1.25, 1.5, 2, 3];
+
+function loadReport(href) {
+  if (!reportDocs.has(href)) {
+    const promise = import("./vendor/pdfjs/pdf.min.mjs").then((pdfjs) => {
+      pdfjs.GlobalWorkerOptions.workerSrc = "vendor/pdfjs/pdf.worker.min.mjs";
+      const task = pdfjs.getDocument({url: href, isEvalSupported: false, enableXfa: false});
+      task.onProgress = ({loaded, total}) => reportProgress.set(href, total ? loaded / total : 0);
+      return task.promise;
+    });
+    promise.catch(() => reportDocs.delete(href)); // a later attempt starts afresh
+    reportDocs.set(href, promise);
+  }
+  return reportDocs.get(href);
+}
+
+function pdfViewer(href, title) {
+  const viewer = el("div", {className: "pdf-viewer", attrs: {"data-src": href, "data-state": "loading"}});
+  const tool = (cls, text, key) => el("button", {className: cls, text, attrs: {type: "button", "aria-label": t(key)}});
+  const zoomOut = tool("pdf-zoom-out", "−", "zoomOut");
+  const zoomIn = tool("pdf-zoom-in", "+", "zoomIn");
+  const fit = tool("pdf-fit", t("zoomFit"), "zoomFit");
+  const zoomLabel = el("output", {className: "pdf-zoom", text: "100%"});
+  const count = el("span", {className: "pdf-count"});
+  const scroll = el("div", {className: "pdf-scroll", attrs: {tabindex: "0", role: "region", "aria-label": title}});
+  const status = el("p", {className: "state", attrs: {role: "status"}, text: t("reportLoading", {pct: ""})});
+  scroll.appendChild(status);
+  viewer.append(el("div", {className: "pdf-toolbar", attrs: {role: "toolbar", "aria-label": title}},
+    [zoomOut, zoomLabel, zoomIn, fit, count]), scroll);
+  const timer = setInterval(() => {
+    const done = reportProgress.get(href);
+    if (done) status.textContent = t("reportLoading", {pct: Math.round(done * 100) + "%"});
+  }, 250);
+  let zoom = 1;
+  let pages = [];
+
+  const fail = () => {
+    clearInterval(timer);
+    viewer.dataset.state = "error";
+    const retry = el("button", {className: "retry", text: t("reportRetry"), attrs: {type: "button"}});
+    retry.addEventListener("click", () => viewer.replaceWith(pdfViewer(href, title)));
+    scroll.replaceChildren(el("div", {className: "state", attrs: {role: "alert"}}, [el("p", {text: t("reportError")}), retry]));
+  };
+
+  // Pages paint one at a time in scroll order (a chart-heavy page can take ~2 s), so page 1 is never
+  // slowed by its neighbours. Fit width is the scroll area's width; zoom multiplies it.
+  let queue = Promise.resolve();
+  const paint = async (entry) => {
+    const key = String(Math.round(zoom * 100));
+    if (!entry.visible || entry.node.dataset.rendered === key) return;
+    const width = parseFloat(entry.node.style.width);
+    const ratio = Math.min(window.devicePixelRatio || 1, 2, 4096 / width); // >2x costs time, not legibility
+    const viewport = entry.page.getViewport({scale: (width / entry.page.getViewport({scale: 1}).width) * ratio});
+    const canvas = el("canvas", {attrs: {role: "img", "aria-label": entry.label}});
+    canvas.width = Math.floor(viewport.width);
+    canvas.height = Math.floor(viewport.height);
+    await entry.page.render({canvas, canvasContext: canvas.getContext("2d"), viewport}).promise;
+    entry.node.replaceChildren(canvas);
+    entry.node.dataset.rendered = key;
+    if (entry.number === 1 && viewer.dataset.state === "loading") {
+      viewer.dataset.state = "ready";
+      status.remove();
+    }
+  };
+  const draw = (entry) => {
+    if (entry.queued) return;
+    entry.queued = true;
+    queue = queue.then(() => { entry.queued = false; return paint(entry); }).catch(fail);
+  };
+
+  const layout = () => {
+    const width = Math.max(200, scroll.clientWidth - 24) * zoom;
+    for (const entry of pages) {
+      entry.node.style.width = width + "px";
+      entry.node.style.height = width * entry.ratio + "px";
+    }
+    zoomLabel.textContent = Math.round(zoom * 100) + "%";
+    zoomOut.disabled = zoom === ZOOMS[0];
+    zoomIn.disabled = zoom === ZOOMS[ZOOMS.length - 1];
+    for (const entry of pages) if (entry.visible) draw(entry);
+  };
+
+  loadReport(href).then(async (doc) => {
+    const loaded = await Promise.all(Array.from({length: doc.numPages}, (_, i) => doc.getPage(i + 1)));
+    clearInterval(timer);
+    pages = loaded.map((page, i) => {
+      const base = page.getViewport({scale: 1});
+      return {page, number: i + 1, ratio: base.height / base.width, visible: false,
+        label: t("reportPage", {n: i + 1, total: doc.numPages}),
+        node: el("div", {className: "pdf-page", attrs: {"data-page": String(i + 1)}})};
+    });
+    count.textContent = t("reportPages", {n: doc.numPages});
+    scroll.replaceChildren(...pages.map((entry) => entry.node));
+    status.textContent = t("reportLoading", {pct: ""}); // stays in the toolbar until page 1 is painted
+    count.before(status);
+    const observer = new IntersectionObserver((changes) => {
+      for (const change of changes) {
+        const entry = pages[Number(change.target.dataset.page) - 1];
+        entry.visible = change.isIntersecting;
+        if (entry.visible) draw(entry);
+      }
+    }, {root: scroll, rootMargin: "600px 0px"});
+    for (const entry of pages) observer.observe(entry.node);
+    new ResizeObserver(layout).observe(scroll);
+    layout();
+  }).catch(fail);
+
+  const step = (direction) => {
+    const next = ZOOMS[ZOOMS.indexOf(zoom) + direction];
+    if (!next) return;
+    const position = scroll.scrollTop / Math.max(1, scroll.scrollHeight);
+    zoom = next;
+    layout();
+    scroll.scrollTop = position * scroll.scrollHeight;
+  };
+  zoomOut.addEventListener("click", () => step(-1));
+  zoomIn.addEventListener("click", () => step(1));
+  fit.addEventListener("click", () => { zoom = 1; layout(); });
+  return viewer;
 }
 
 function applyView() {
