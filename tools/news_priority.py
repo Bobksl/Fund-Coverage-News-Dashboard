@@ -1,6 +1,7 @@
 """Evidence-linked ordinal news priority; never a weighted composite score."""
 import hashlib
 import re
+import unicodedata
 from datetime import datetime, timezone
 
 VERSION = 'priority-v1'
@@ -20,6 +21,14 @@ def instant(value):
     if parsed.tzinfo is None:
         raise ValueError('timezone required')
     return parsed
+
+
+TYPOGRAPHY = str.maketrans({'‘': "'", '’': "'", '“': '"', '”': '"', '–': '-', '—': '-'})
+
+
+def _plain(value):
+    # Quote matching ignores typography and spacing only; wording must still be the source's own.
+    return re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', value).translate(TYPOGRAPHY)).strip()
 
 
 def source_text(item):
@@ -57,16 +66,19 @@ def validate_assessment(raw, item):
         except (TypeError, ValueError, AttributeError):
             return result
         needed.append('deadline_at')
+    plain = _plain(text)
     for name in needed:
         quote = quotes.get(name)
-        if not isinstance(quote, str) or len(quote.strip()) < 8 or quote not in text:
+        if isinstance(quote, list) and len(quote) == 1:
+            quote = quote[0]  # a one-item list is a formatting slip, not a different claim
+        if not isinstance(quote, str) or len(quote.strip()) < 8 or _plain(quote) not in plain:
             result['failure'] = 'Unsupported assessment claim: ' + name
             return result
         # Absolute deadline must be present literally; do not let the model invent date math.
         if name == 'deadline_at' and deadline not in quote:
             return result
-        start = text.index(quote)
-        result['evidence_refs'][name] = {'start': start, 'end': start + len(quote)}
+        start = plain.index(_plain(quote))  # offsets refer to the whitespace/typography-normalised text
+        result['evidence_refs'][name] = {'start': start, 'end': start + len(_plain(quote))}
     if not all(isinstance(raw.get('reason_' + lang), str) and raw['reason_' + lang].strip()
                for lang in ('en', 'zh')) or not re.search(r'[\u4e00-\u9fff]', raw['reason_zh']):
         return result

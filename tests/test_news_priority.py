@@ -60,3 +60,15 @@ def test_known_headline_risk_is_visible_but_not_confirmed_urgent():
     p = news_priority.classify(a, as_of=NOW)
     assert p['priority'] == 'needs_review'
     assert p['potential_urgent']
+
+
+def test_quotes_tolerate_typography_and_single_item_lists_but_not_paraphrase():
+    text = 'The regulator said the fund’s  "stop orders" apply to three products until revoked.'
+    item = {'title': 'Regulator halts products', 'text': text}
+    base = {'severity': 'substantial', 'linkage': 'sector', 'current_adverse': False, 'resolved': False,
+            'deadline_at': None, 'reason_en': 'Orders issued.', 'reason_zh': '已发布命令。'}
+    ok = dict(base, quotes={'severity': ["the fund's \"stop orders\" apply to three products"],
+                            'linkage': 'The regulator said the fund’s'})
+    assert news_priority.validate_assessment(ok, item)['assessable']
+    paraphrase = dict(base, quotes={'severity': 'orders apply to three funds', 'linkage': 'The regulator said'})
+    assert not news_priority.validate_assessment(paraphrase, item)['assessable']

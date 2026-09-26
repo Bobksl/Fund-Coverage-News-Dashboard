@@ -95,3 +95,23 @@ def test_write_events_reads_the_sidecar(tmp_path):
     backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(BRIEF), max_cards=5)
     result = json.loads((data / 'events.json').read_text(encoding='utf-8'))
     assert c['id'] in result['card_updates']
+
+
+def test_retry_unassessed_rebriefs_only_failed_entries_and_caches_raw_answers(tmp_path):
+    good = card('0000000000e1', 'https://alternativecreditinvestor.com/e1/')
+    bad = card('0000000000e2', 'https://alternativecreditinvestor.com/e2/',
+               headline={'en': 'CIFC adds iCapital access for its direct lending strategy', 'zh': '标题二'})
+    data = archive(tmp_path, [good, bad])
+    weak = dict(BRIEF, assessment=dict(BRIEF['assessment'], quotes={'severity': 'not in the source at all'}))
+    backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(weak), max_cards=5)
+    side = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))
+    assert not side['cards'][bad['id']]['assessment']['assessable']
+    post = FakePost(BRIEF)
+    stats = backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5, retry_unassessed=True,
+                         cache_path=tmp_path / 'cache.json')
+    side = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))
+    assert post.calls == 2 and stats['updated'] == 2  # both failed first time; both retried
+    assert all(v['assessment']['assessable'] for v in side['cards'].values())
+    assert json.loads((tmp_path / 'cache.json').read_text(encoding='utf-8'))
+    again = backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5, retry_unassessed=True)
+    assert post.calls == 2 and again['updated'] == 0  # assessed entries are settled
