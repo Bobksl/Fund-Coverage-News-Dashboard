@@ -66,6 +66,8 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
                     break
                 continue
             new = summarize.make_card(item, brief, card['review_status'], card['origin'])
+            if not new['assessment'].get('assessable'):
+                summarizer.forget(item)  # an unverified answer is not reused by a later retry
             entry.update(headline=new['headline'], summary=new['summary'], assessment=new['assessment'],
                          relevant=brief['relevant'], relevance_reason=brief['reason'],
                          prompt_version=summarize.PROMPT_VERSION, model=summarize.MODEL_ID)

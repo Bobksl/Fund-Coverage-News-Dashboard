@@ -142,3 +142,16 @@ def test_a_rebrief_never_replaces_a_verified_assessment_with_an_unverified_one(t
     stats = backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(weak), max_cards=5, rebrief_older_prompt=True)
     kept = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))['cards'][c['id']]
     assert stats['kept_previous'] == 1 and kept['assessment']['assessable'] and kept['summary']['en'].startswith('CIFC, a $47bn')
+
+
+def test_failed_answers_are_not_cached_so_a_retry_draws_a_fresh_one(tmp_path):
+    c = card('0000000000h1', 'https://alternativecreditinvestor.com/h1/')
+    data = archive(tmp_path, [c])
+    weak = dict(BRIEF, assessment=dict(BRIEF['assessment'], severity='unknown'))
+    cache = tmp_path / 'cache.json'
+    backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(weak), max_cards=5, cache_path=cache)
+    assert json.loads(cache.read_text(encoding='utf-8')) == {}
+    post = FakePost(BRIEF)
+    stats = backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5, retry_unassessed=True, cache_path=cache)
+    assert post.calls == 1 and stats['updated'] == 1
+    assert len(json.loads(cache.read_text(encoding='utf-8'))) == 1

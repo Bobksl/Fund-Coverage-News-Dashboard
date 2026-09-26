@@ -188,9 +188,18 @@ class Summarizer:
             self.post = lambda payload: deepseek_post(payload, api_key)
         return self.post(body)
 
-    def __call__(self, item):
+    def _key(self, item):
         messages = build_messages(item, self.rules)
-        key = hashlib.sha256(f"{PROMPT_VERSION}|{MODEL_ID}|{messages[1]['content']}".encode()).hexdigest()
+        return messages, hashlib.sha256(f"{PROMPT_VERSION}|{MODEL_ID}|{messages[1]['content']}".encode()).hexdigest()
+
+    def forget(self, item):
+        """Drop a cached answer (e.g. one that failed evidence validation) so a retry asks again."""
+        _, key = self._key(item)
+        if self.cache.pop(key, None) is not None and self.cache_path:
+            site_data._write_json(self.cache_path, self.cache)
+
+    def __call__(self, item):
+        messages, key = self._key(item)
         if key in self.cache:
             return parse_brief(self.cache[key], self.rules)
         last_error = None
