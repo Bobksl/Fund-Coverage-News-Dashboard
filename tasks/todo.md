@@ -12,6 +12,7 @@ Deadline extended by user to Sunday 27 September 2026 (Hong Kong time). Extra ti
 - [x] Integrator: merged via PR #3 (cc22423) with the PDF and source-tier work; live site verified on events-v2 (172 events) and the PDF.js viewer.
 - [ ] Monday 28 September 08:00 HKT: check the first scheduled refresh with the new source tiers (status.json feed failures, GDELT success, SEC/regulator/wire items, calls and tokens).
 - [x] Budget: about 0.05 CNY per day of refreshes on deepseek-flash; the 26 Sep backfill of 86 older cards used 134 calls (about 0.7 CNY at peak prices, upper bound). deepseek-flash kept after a side-by-side with deepseek-v4-pro on the 15 pilot cases (flash followed the evidence contract; pro returned labels instead of quotes).
+- [x] 26 Sep: routine filings rank below launches (user decision); backfill final state 74/86 cards verified, events Needs review 150 -> 76 (73 Useful, 4 Important).
 - [ ] Backfill the 64 Google-News-only events: find real URLs (GDELT title search, best-effort) and re-run tools.backfill.
 - [ ] Open source gaps (docs/source-tiers.md): NAIC and FCA (no usable feed), Business Wire, 10-Q/10-K via SEC structured data (needs a NAV-move threshold), paid press (decide after two weeks of counts).
 

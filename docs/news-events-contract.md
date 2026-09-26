@@ -51,7 +51,8 @@ time_sensitivity: 48h | 7d | monitor.
 linkage: direct | sector | indirect | unknown.
 evidence_strength: primary | reported | unknown.
 reason: {en, zh}. potential_urgent: boolean (unverified triage hint, NOT an Urgent assessment). version and as_of identify rules/assessment time.
-The engine sorts these categories lexicographically in the orders above, then newer last_material_update_at, then event_id. No six-component score. Scope filters and language changes must not recalculate importance.
+routine: boolean (26 Sep user decision): a scheduled or administrative disclosure (regular share issuance, distribution notice, standard periodic filing). Honoured only for verified primary sources (filings, regulator releases); on press items the model flag was unreliable in testing.
+The engine sorts lexicographically: priority, severity, routine (non-routine first), time_sensitivity, linkage, evidence_strength, then newer last_material_update_at, then event_id. No six-component score. Scope filters and language changes must not recalculate importance.
 Primary evidence requires separately verified input metadata; an AI declaration alone never grants it. Production feed inputs currently default to reported if assessable.
 Important limitation: matching evidence spans verifies provenance/syntax, not semantic truth. No live brief-v2-priority call or analyst ranking validation has run.
 Day priorities use day end HKT; global priorities use export as_of. No automatic age-based demotion or inferred cure/default resolution.
