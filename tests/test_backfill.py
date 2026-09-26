@@ -155,3 +155,71 @@ def test_failed_answers_are_not_cached_so_a_retry_draws_a_fresh_one(tmp_path):
     stats = backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5, retry_unassessed=True, cache_path=cache)
     assert post.calls == 1 and stats['updated'] == 1
     assert len(json.loads(cache.read_text(encoding='utf-8'))) == 1
+
+
+# ---- GDELT resolution of Google News links -------------------------------------------------------
+
+GN = 'https://news.google.com/rss/articles/CBMiXYZ?oc=5'
+
+
+def gdelt_reply(*articles):
+    return json.dumps({'articles': [dict({'url_mobile': '', 'language': 'English', 'sourcecountry': 'US'}, **a)
+                                    for a in articles]}).encode()
+
+
+def test_gdelt_finds_a_matching_readable_copy_and_the_card_is_rebriefed(tmp_path):
+    c = card('0000000000i1', GN, headline={'en': 'CIFC launches direct lending strategy on iCapital Marketplace', 'zh': '标题'})
+    data = archive(tmp_path, [c])
+    reply = gdelt_reply(
+        {'url': 'https://www.bloomberg.com/x', 'title': 'CIFC launches direct lending strategy on iCapital Marketplace',
+         'seendate': '20260917T120000Z', 'domain': 'bloomberg.com'},  # paywalled: skipped
+        {'url': 'https://example.com/cifc', 'title': 'CIFC Launches Direct Lending Strategy on iCapital Marketplace',
+         'seendate': '20260917T121500Z', 'domain': 'example.com'},
+        {'url': 'https://example.com/other', 'title': 'Apollo raises new fund', 'seendate': '20260917T120000Z',
+         'domain': 'example.com'})
+    queries, log, post = [], [], FakePost(BRIEF)
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=post, max_cards=5,
+                         gdelt=lambda url: queries.append(url) or reply, sleep=lambda s: None)
+    entry = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))['cards'][c['id']]
+    assert log == ['https://example.com/cifc'] and entry['resolved_url'] == 'https://example.com/cifc'
+    assert entry['assessment']['assessable'] and stats['resolved'] == 1
+    assert 'startdatetime=20260914' in queries[0] and 'enddatetime=20260920' in queries[0]
+
+
+def test_gdelt_rejects_weak_title_matches(tmp_path):
+    c = card('0000000000i2', GN, headline={'en': 'Apollo private credit fund redemption requests ease in third quarter', 'zh': 'x'})
+    data = archive(tmp_path, [c])
+    reply = gdelt_reply({'url': 'https://example.com/a', 'title': 'Apollo raises third private credit fund',
+                         'seendate': '20260917T120000Z', 'domain': 'example.com'})
+    log, post = [], FakePost(BRIEF)
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=post, max_cards=5, gdelt=lambda url: reply,
+                         sleep=lambda s: None)
+    assert log == [] and post.calls == 0 and stats['unresolved'] == 1
+    assert c['id'] not in json.loads((data / 'backfill.json').read_text(encoding='utf-8'))['cards']  # retried later
+
+
+def test_gdelt_rate_limit_stops_resolution_for_the_run(tmp_path):
+    cards = [card(f'0000000000j{i}', GN + str(i), headline={'en': f'Story number {i} about private credit', 'zh': 'x'})
+             for i in range(3)]
+    data = archive(tmp_path, cards)
+    calls = []
+
+    def limited(url):
+        calls.append(url)
+        return b'Please limit requests to one every 5 seconds'
+    sleeps = []
+    stats = backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(BRIEF), max_cards=5, gdelt=limited,
+                         sleep=sleeps.append)
+    assert len(calls) == 2 and stats['gdelt_stopped'] is True  # one try + one retry, then stop
+    assert sleeps and max(sleeps) >= 15
+
+
+def test_http_429_from_gdelt_counts_as_a_rate_limit(tmp_path):
+    import urllib.error
+    data = archive(tmp_path, [card('0000000000k1', GN, headline={'en': 'Story about private credit', 'zh': 'x'})])
+
+    def refuse(url):
+        raise urllib.error.HTTPError(url, 429, 'Too Many Requests', {}, None)
+    stats = backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(BRIEF), max_cards=5, gdelt=refuse,
+                         sleep=lambda s: None)
+    assert stats['gdelt_stopped'] is True and stats['errors'] == []

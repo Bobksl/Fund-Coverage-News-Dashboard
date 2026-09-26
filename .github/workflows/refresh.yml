@@ -5,6 +5,11 @@ on:
     - cron: "0 0 * * 1-5"   # 08:00 Hong Kong time, Monday-Friday
     - cron: "0 8 * * 1-5"   # 16:00 Hong Kong time, Monday-Friday
   workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Also re-brief older cards from their sources, looking up Google News links in GDELT (paid, about 0.3 CNY)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -36,6 +41,13 @@ jobs:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
         # A failed refresh is recorded in public/data/status.json; the site still deploys.
         run: python -m tools.fetch_news || echo "Refresh reported a failure; see public/data/status.json"
+      - name: Backfill older cards (manual runs with the box ticked only)
+        if: github.event_name == 'workflow_dispatch' && inputs.backfill
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        # Best effort: GDELT may refuse shared addresses; the step never blocks the commit or deploy.
+        run: python -m tools.backfill --gdelt --max-cards 70 || echo "Backfill reported a problem"
       - name: Commit new data
         run: |
           git config user.name "github-actions[bot]"
