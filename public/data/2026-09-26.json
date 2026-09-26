@@ -1,0 +1,577 @@
+{
+  "date": "2026-09-26",
+  "items": [
+    {
+      "id": "4c989b5deeb9",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T22:59:48+00:00",
+      "headline": {
+        "en": "Apollo Reportedly Caps Private Credit Fund Withdrawals; Stock Dives",
+        "zh": "Apollo据报限制私人信贷基金赎回；股价大跌"
+      },
+      "summary": {
+        "en": "Apollo reportedly capped withdrawals from a private credit fund, according to a headline. The report was accompanied by a sharp fall in the company's stock.",
+        "zh": "据一则标题报道，Apollo限制了一只私人信贷基金的赎回。该报道同时伴随公司股价大幅下跌。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWNfeXRRMGJFcmVNRU44MHY3STR6dWFWOHV2clpWSUpSZndBRl90UDczY0s4dWRLTVd1Q0p3ZWQwWGVvLUpqRlpqcTBBVEF5UElWX1JmX3FDcjRyMkgtTlB3a2N0TDV4UkhqNExTeVI4Q21IMm8zZnhKQzdoOGktSUpVXy1QeUxPdERFWEo2VFl6dm12WVhORGtMR1VLdnFzWlFwOVZnaFBheVFYVWNUUFhqVHJoMWZWMkE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Reportedly Caps Private Credit Fund Withdrawals; Stock Dives",
+      "source_fingerprint": "fd5a065e7ef6eb73298a3bf3f5cdd09c89aea5f453d1d0eeb44004591b676c11",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "615dc7caf5dc18f710f77ca6446c6634bfd31bf7aa7e92586b2ddca0a838bce0",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A reported withdrawal cap at a tracked manager's private credit fund is a direct liquidity event for Apollo credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:01+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWNfeXRRMGJFcmVNRU44MHY3STR6dWFWOHV2clpWSUpSZndBRl90UDczY0s4dWRLTVd1Q0p3ZWQwWGVvLUpqRlpqcTBBVEF5UElWX1JmX3FDcjRyMkgtTlB3a2N0TDV4UkhqNExTeVI4Q21IMm8zZnhKQzdoOGktSUpVXy1QeUxPdERFWEo2VFl6dm12WVhORGtMR1VLdnFzWlFwOVZnaFBheVFYVWNUUFhqVHJoMWZWMkE?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "869d02bd1303",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T20:29:36+00:00",
+      "headline": {
+        "en": "Flatiron CLO 29 secures Fitch ratings for $450 million leveraged loan deal",
+        "zh": "Flatiron CLO 29 的 4.5 亿美元杠杆贷款交易获得惠誉评级"
+      },
+      "summary": {
+        "en": "Fitch assigned ratings to Flatiron CLO 29, a $450 million leveraged loan transaction.",
+        "zh": "惠誉对 Flatiron CLO 29 一笔 4.5 亿美元的杠杆贷款交易授予评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdkJsZno1Qnd5ZktSTlkxRWFoVVd3WU80Z2xDTFBteGFiQk9VOGgwVEhFUzRjWHpjbTlQSGQ3VmpSdmpuTl9HeWl4Mmg5U2RVLVVlSFFOeUZKSGpGSkV1YUVTM3hrN1BpUEtSb0liZkdiNGtSSkxvNnJ1N1hpVWR2bTVoN2N6b2FjeFpLLWVGMzJBbVJJVEwyVg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Flatiron CLO 29 secures Fitch ratings for $450 million leveraged loan deal",
+      "source_fingerprint": "b71f06062a251890cb5a5ee9c3f11145cb169928e37d7ec03680f0cb68b719f9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a1c56b3d64d5bc06da6d4a7aded67a50c8c79075d7e18cada45dcf4da67e3a36",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $450m CLO issuance signals continued CLO formation activity in the leveraged loan market, a channel affecting tracked credit managers with CLO platforms.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdkJsZno1Qnd5ZktSTlkxRWFoVVd3WU80Z2xDTFBteGFiQk9VOGgwVEhFUzRjWHpjbTlQSGQ3VmpSdmpuTl9HeWl4Mmg5U2RVLVVlSFFOeUZKSGpGSkV1YUVTM3hrN1BpUEtSb0liZkdiNGtSSkxvNnJ1N1hpVWR2bTVoN2N6b2FjeFpLLWVGMzJBbVJJVEwyVg?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "c9a7e5910906",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T20:27:34+00:00",
+      "headline": {
+        "en": "Neuberger Berman CLO 57 reset transaction draws expected Fitch ratings",
+        "zh": "Neuberger Berman CLO 57重置交易获得Fitch预期评级"
+      },
+      "summary": {
+        "en": "Neuberger Berman CLO 57 completed a reset transaction. Fitch Ratings assigned expected ratings to the reset vehicle.",
+        "zh": "Neuberger Berman CLO 57完成了一项重置交易。Fitch Ratings对重置后的工具授予了预期评级。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOFVyRUJDaWItT2tCTGtlekltX25NMXFzLUlYY21Lb3FFdGRCVTNFbzJNYmkzV1F2UXZmNlpWNkoyLU9IQ2Z5MG11NDZKSC1FWjJQbGo5QzlidF9WRVNnMUotM2hVRS1jTm9rZDlEM3lWS28zcGFadFFnLU5WR2hDa1JlVXRBcllWdTVHQ29rWnVNY1dFWnFva01R?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Neuberger Berman CLO 57 reset transaction draws expected Fitch ratings",
+      "source_fingerprint": "313b73cea542310615c8078167682e4718787b389c1414d49fa90b1122284733",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c6a0952c4bce4bbcfc5038e46360fc02b1fd6129e2cd64d181d11e12efbf14e8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A Neuberger Berman CLO reset that keeps Fitch ratings expected is a routine capital-structure action for a tracked manager's CLO platform, with no new credit event.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:11+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOFVyRUJDaWItT2tCTGtlekltX25NMXFzLUlYY21Lb3FFdGRCVTNFbzJNYmkzV1F2UXZmNlpWNkoyLU9IQ2Z5MG11NDZKSC1FWjJQbGo5QzlidF9WRVNnMUotM2hVRS1jTm9rZDlEM3lWS28zcGFadFFnLU5WR2hDa1JlVXRBcllWdTVHQ29rWnVNY1dFWnFva01R?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "b9f80db2c0fa",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T20:27:31+00:00",
+      "headline": {
+        "en": "Flatiron CLO 19 gets Fitch ratings for refinanced $232 million loan portfolio",
+        "zh": "Flatiron CLO 19 为再融资的2.32亿美元贷款组合获得惠誉新评级"
+      },
+      "summary": {
+        "en": "Flatiron CLO 19 obtained new Fitch ratings for a refinanced $232 million loan portfolio.",
+        "zh": "Flatiron CLO 19 为其再融资的2.32亿美元贷款组合获得了惠誉的新评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPODNjWmVoZTlxLVU4VVJ2VG9zNjhybVF4MUlXOFFXaHFXeWNxNzdwNElfR19QWGJQUERXa2JjQWxIMUdjaEJsd1c0bjlRSjItNXpnMmtMT0dBZXhqWjVpai1sc0FyQVBEd1QwVE9WVGs0ck9LV21UZ1ItdXRHM05wekJGYXdEMWpnVTNGSGpoQ2l2bE1UejdSSUNfRDVDQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Flatiron CLO 19 secures new Fitch ratings for refinanced $232 million loan portfolio",
+      "source_fingerprint": "40d576ed6c858221aa7ee6ea7a65d1d928fb5e2ddbc8a4b49abc60e80a372e15",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "af786124519345787785bdd7c38f92ee6e9561500b3799f76a7922ea0e9df780",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A refinanced $232m CLO portfolio with new Fitch ratings is a material CLO-sector credit event, though no tracked CIFC manager is named.",
+      "event_identity": {
+        "subject": "flatiron clo 19",
+        "action": "secures new fitch ratings",
+        "object": "$232 million loan portfolio",
+        "period": "refinanced",
+        "numbers": [
+          "$232 million",
+          "19"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:13+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPODNjWmVoZTlxLVU4VVJ2VG9zNjhybVF4MUlXOFFXaHFXeWNxNzdwNElfR19QWGJQUERXa2JjQWxIMUdjaEJsd1c0bjlRSjItNXpnMmtMT0dBZXhqWjVpai1sc0FyQVBEd1QwVE9WVGs0ck9LV21UZ1ItdXRHM05wekJGYXdEMWpnVTNGSGpoQ2l2bE1UejdSSUNfRDVDQQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "19d305f3a22a",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T20:26:32+00:00",
+      "headline": {
+        "en": "Fitch upgrades 39 classes, affirms 343 across 59 U.S. BSL CLOs",
+        "zh": "惠誉在59只美国BSL CLO中上调39个档级、确认343个档级"
+      },
+      "summary": {
+        "en": "Fitch Ratings upgraded 39 classes and affirmed 343 classes across 59 U.S. broadly syndicated loan CLOs.",
+        "zh": "惠誉评级（Fitch Ratings）在59只美国广义银团贷款（BSL）CLO中上调39个档级，并确认343个档级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMVlyUkNPb1BTUUpWYTBtbjRWUmxxTjhwb05DNG0xVzRITHdQeHJDRy12cEFYTTRDU0xFMnlVUDZDUzZ4c1YwbTZzSE1qcVR5bWhmQmJNeUh3a0Y4LUR2U01Kd3BITi1oa19STzZWX0pOcjRJS2h3dWVLSVN4OE5hZ28yOVQ2VVAxSjVBcW14eTlHQjQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fitch Ratings upgrades 39 classes, affirms 343 across 59 U.S. BSL CLOs",
+      "source_fingerprint": "3bc6554fa3046d3c333d35f7204b4c55d4ef6dc68243f8ea29db824d9998e601",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d6b73bb8cc166a13e57e0f8a77d3f5ee1abdd54f31ea6ede79ae542cdec26662",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Fitch rating actions across 59 US broadly syndicated loan CLOs affect CLO credit conditions, a tracked sub-sector, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:15+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMVlyUkNPb1BTUUpWYTBtbjRWUmxxTjhwb05DNG0xVzRITHdQeHJDRy12cEFYTTRDU0xFMnlVUDZDUzZ4c1YwbTZzSE1qcVR5bWhmQmJNeUh3a0Y4LUR2U01Kd3BITi1oa19STzZWX0pOcjRJS2h3dWVLSVN4OE5hZ28yOVQ2VVAxSjVBcW14eTlHQjQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "ed49eab633f1",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T20:24:02+00:00",
+      "headline": {
+        "en": "Private Credit Fund Investors Get A New Exit, At A Discount",
+        "zh": "私募信贷基金投资者获得新的退出渠道，但需折价"
+      },
+      "summary": {
+        "en": "Private credit fund investors are being offered a new exit route at a discount, according to a Finimize headline.",
+        "zh": "据Finimize一则标题，私募信贷基金投资者获得了新的退出渠道，但需折价。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNalMtMm9wYmx2bUtEWWtsdFVPeXpjLWNuOXJBVmlYel9yZlpha2ZkRUVKemE1Vk8xY0ZTQTZwX3JOZ09ZbUFENTlkMVBWeFhJd3V2WW9iY2ZkaDhnOU1yVDdJUzdmRkxnSFp2TU80NVoxcG96OU91VzRUQnJqb1ZGZ3J6Y2FYZEtZbFg4RlRORkM?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private Credit Fund Investors Get A New Exit, At A Discount",
+      "source_fingerprint": "6be6a5c90e369e42ef6d9b32c54f1af9f530e7bb0775f401a5cbb8256eef755f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d2a62a8ad519fb6796e85cec5b13e289ba2759f6321308ed947974b14c25802a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline indicates a new secondary exit channel for private credit fund investors at a discount, a potential change to liquidity and valuation conditions for private credit strategies, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNalMtMm9wYmx2bUtEWWtsdFVPeXpjLWNuOXJBVmlYel9yZlpha2ZkRUVKemE1Vk8xY0ZTQTZwX3JOZ09ZbUFENTlkMVBWeFhJd3V2WW9iY2ZkaDhnOU1yVDdJUzdmRkxnSFp2TU80NVoxcG96OU91VzRUQnJqb1ZGZ3J6Y2FYZEtZbFg4RlRORkM?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "cb2687e35fea",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T18:21:00+00:00",
+      "headline": {
+        "en": "Jefferies Warns Private Credit Losses, Slow Trading May Hit Q3 Results",
+        "zh": "Jefferies警告私人信贷亏损与交易放缓或拖累第三季度业绩"
+      },
+      "summary": {
+        "en": "Jefferies flagged that private credit losses and slow trading may weigh on its third-quarter results.",
+        "zh": "Jefferies指出私人信贷亏损与交易放缓可能拖累其第三季度业绩。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNExzMHEtUlhGb1pNY1p6TmpqcTAzVDE5OXpxaENuWWhCTUtsMnp4S0RFS2RPeDlzcjVLWjRReUhPYmdJNjZndExIUllTMWRPTEdCUlI1ZUF1SUVmRkxabkJmeWJ6WGJrNVhxMzVRS2xlZ2dSYWEwdGpMdFpmU2N4ZXo4em5jVHNDQzk0c25sSlQ5NXdMeDBRc21ZbmNUdTE2NFVzTmJqZExjSG10?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Jefferies: Private Credit Losses And Slow Trading May Hit Q3 Results (NYSE:JEF)",
+      "source_fingerprint": "47f71c1e08912864265ec5226f5d936443b456161e890271f13a1100e92a5d72",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "662d89a67386f49dc9199cf417252bff90dcc6fda84c6c738802584c03d9948c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Private credit loss concerns at a lender could shift credit investors' view of private credit risk conditions, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:26+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNExzMHEtUlhGb1pNY1p6TmpqcTAzVDE5OXpxaENuWWhCTUtsMnp4S0RFS2RPeDlzcjVLWjRReUhPYmdJNjZndExIUllTMWRPTEdCUlI1ZUF1SUVmRkxabkJmeWJ6WGJrNVhxMzVRS2xlZ2dSYWEwdGpMdFpmU2N4ZXo4em5jVHNDQzk0c25sSlQ5NXdMeDBRc21ZbmNUdTE2NFVzTmJqZExjSG10?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "d1529675de2a",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T17:48:46+00:00",
+      "headline": {
+        "en": "Leveraged loan market poaches record $12B of direct-lending deals in Q3",
+        "zh": "杠杆贷款市场在第三季度抢走创纪录的120亿美元直接贷款交易"
+      },
+      "summary": {
+        "en": "The leveraged loan market took a record $12 billion of deals from direct lenders in the third quarter, according to a headline from Yahoo Finance.",
+        "zh": "据Yahoo Finance的一则标题，杠杆贷款市场在第三季度从直接贷款机构手中抢走了创纪录的120亿美元交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT09SMUxMcVdYYzRkZ2hqMVRfdkxIM3AzYXpyVVRQUUhYWjFMcUx4bV9BY205YkZVSmtLYXotZU1idkNhbzRFSVFZUWxkZkdqcE9pN01LU0ZjelBXakwzeHU2OE5vVHJkdHZ6ZzA4dTNxUnBEalNsdzV1bXB5bnJSUVhBM3pGQ3laWWt2N0pOWTc5elg5OEYwWVRMUzYwN2REdXM1YQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Leveraged loan market poaches record $12B of direct-lending deals in Q3",
+      "source_fingerprint": "92500ec820e3c354d2bfb49c5f68e7cd130b2e496c9ad29d6b0e5d2563bf7070",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "144500b1c20dc9bef1bde52b76e7c4196debd7473714ac4fddde71ed5e97d318",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Record leveraged loan market share of direct-lending deals signals competitive pressure on private credit deployment and pricing.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:30+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT09SMUxMcVdYYzRkZ2hqMVRfdkxIM3AzYXpyVVRQUUhYWjFMcUx4bV9BY205YkZVSmtLYXotZU1idkNhbzRFSVFZUWxkZkdqcE9pN01LU0ZjelBXakwzeHU2OE5vVHJkdHZ6ZzA4dTNxUnBEalNsdzV1bXB5bnJSUVhBM3pGQ3laWWt2N0pOWTc5elg5OEYwWVRMUzYwN2REdXM1YQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "e0bddb1d00db",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T17:48:46+00:00",
+      "headline": {
+        "en": "Leveraged loan market poaches record $12B of direct-lending deals in Q3",
+        "zh": "杠杆贷款市场在第三季度挖走创纪录的120亿美元直接贷款交易"
+      },
+      "summary": {
+        "en": "The leveraged loan market took a record $12 billion of deals away from direct lending in the third quarter, according to PitchBook.",
+        "zh": "据PitchBook，杠杆贷款市场在第三季度从直接贷款手中抢走了创纪录的120亿美元交易。所提供材料中没有更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOUp0T2RXZGNFWUN2UXpBTDV4Rl9QN1ZTX05McWZSenQ5UVFvNi1IVHE3NkFFUzIzMmtCSjE5eXJicHRnMUVERGl6ekZZRlJoQnJHV2ljTUlVVHR3M3B6dmJYV3VaeW1lU295cVV4SW9IanlkYmJWa01uQXhNdjVtVHludVhWZEYwV25fVFFyWGE3V1VBWVlZMjM4Mzl0VjN6eWo1QU4wTHdvQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Leveraged loan market poaches record $12B of direct-lending deals in Q3",
+      "source_fingerprint": "92500ec820e3c354d2bfb49c5f68e7cd130b2e496c9ad29d6b0e5d2563bf7070",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "144500b1c20dc9bef1bde52b76e7c4196debd7473714ac4fddde71ed5e97d318",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A record shift of direct-lending deals into the leveraged loan market signals a competitive and deployment threat to the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:32+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOUp0T2RXZGNFWUN2UXpBTDV4Rl9QN1ZTX05McWZSenQ5UVFvNi1IVHE3NkFFUzIzMmtCSjE5eXJicHRnMUVERGl6ekZZRlJoQnJHV2ljTUlVVHR3M3B6dmJYV3VaeW1lU295cVV4SW9IanlkYmJWa01uQXhNdjVtVHludVhWZEYwV25fVFFyWGE3V1VBWVlZMjM4Mzl0VjN6eWo1QU4wTHdvQQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "7d740a19639c",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T16:14:28+00:00",
+      "headline": {
+        "en": "Private credit roundup: Secondary buyers offer fund investors liquidity at steep discounts",
+        "zh": "私募信贷综述：二级市场买家以大幅折价为基金投资者提供流动性"
+      },
+      "summary": {
+        "en": "Secondary buyers are offering private credit fund investors liquidity at steep discounts, according to a roundup headline.",
+        "zh": "据一篇综述报道，二级市场买家正以大幅折价为私募信贷基金投资者提供流动性。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNN3VGUU1XMEpraVJOUmFXUldlR2VEdnQzajBwNVNrZDZ5WXh3Y1lfZVoyclBzVUZFR3pXakExR0RQNDBScDRNMjFhTlRYSk1RbXNUTlFmQS1fR1VXUDJ1MF9LR2RPZzlpN0NFZTlSWVZyMVowU0ZJWklHU0xkV3JfZnJsbHdhOXdNWmF6YjNQTlZ2UTFfVkFMUl83a0ZrQThDNlJjTkFUM1dROFNpU1pWYWF6akdCZEszckM1QmJ6cHJMZDQwbV9ySEI5UHdYY05lRzBSMS1wcjRqUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit roundup: Secondary buyers offer fund investors liquidity at steep discounts",
+      "source_fingerprint": "2d8f72c4725eeecc2ac121b3e1ed5ceeefc2572c9f2c16cb13546aad33eef0ae",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a3f06354d4fb77472c8887dfe025d750cf8f0eaa81e31d34f74da4cd8ebf8c59",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Secondary pricing for private credit fund stakes signals liquidity and valuation conditions for the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:35+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNN3VGUU1XMEpraVJOUmFXUldlR2VEdnQzajBwNVNrZDZ5WXh3Y1lfZVoyclBzVUZFR3pXakExR0RQNDBScDRNMjFhTlRYSk1RbXNUTlFmQS1fR1VXUDJ1MF9LR2RPZzlpN0NFZTlSWVZyMVowU0ZJWklHU0xkV3JfZnJsbHdhOXdNWmF6YjNQTlZ2UTFfVkFMUl83a0ZrQThDNlJjTkFUM1dROFNpU1pWYWF6akdCZEszckM1QmJ6cHJMZDQwbV9ySEI5UHdYY05lRzBSMS1wcjRqUQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "36c4898b98a1",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T16:13:32+00:00",
+      "headline": {
+        "en": "Private credit roundup: Secondary buyers offer fund investors liquidity at steep discounts",
+        "zh": "私募信贷综述：二级市场买家以大幅折价为基金投资者提供流动性"
+      },
+      "summary": {
+        "en": "A roundup reports that secondary buyers are offering private credit fund investors liquidity at steep discounts.",
+        "zh": "一篇综述报道称，二级市场买家正以大幅折价为私募信贷基金投资者提供流动性。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNS3FpNjVfS2NQdlNJTGVDMWRVNk9URFhTX3V3M3BnN2Z4eVRoUTk2alh3bjRjVkphZE5VVWF3em52VnJBMG9hem15emxIMHg4TVJncnlrZl81MEotV3hNbWpqeWxzcWxHNFkwcExFb2dkMmxvUU1TeVVYYU9qVklOeVZiVDNVSlBUZHJRVzVrNk1KQllneFVjeWdqOXMtMzFGTGltWjBLMDVfaldzRk1aRlVmTkQ0eVF6dGh3Y2V1WVBseVJUUk9xbHNkZ1JZS3NMZVA4LWNJeWRZQnVRZUhtY2dCNUpfZEExcnM2ajJMaS0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit roundup: Secondary buyers offer fund investors liquidity at steep discounts",
+      "source_fingerprint": "2d8f72c4725eeecc2ac121b3e1ed5ceeefc2572c9f2c16cb13546aad33eef0ae",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a3f06354d4fb77472c8887dfe025d750cf8f0eaa81e31d34f74da4cd8ebf8c59",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Secondary pricing at steep discounts signals liquidity and valuation pressure for private credit funds, a transmission channel to tracked managers' credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:37+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNS3FpNjVfS2NQdlNJTGVDMWRVNk9URFhTX3V3M3BnN2Z4eVRoUTk2alh3bjRjVkphZE5VVWF3em52VnJBMG9hem15emxIMHg4TVJncnlrZl81MEotV3hNbWpqeWxzcWxHNFkwcExFb2dkMmxvUU1TeVVYYU9qVklOeVZiVDNVSlBUZHJRVzVrNk1KQllneFVjeWdqOXMtMzFGTGltWjBLMDVfaldzRk1aRlVmTkQ0eVF6dGh3Y2V1WVBseVJUUk9xbHNkZ1JZS3NMZVA4LWNJeWRZQnVRZUhtY2dCNUpfZEExcnM2ajJMaS0?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "b489e0c0aa7a",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T11:54:39+00:00",
+      "headline": {
+        "en": "NAIC defends insurance oversight as Warren presses on private credit ties",
+        "zh": "NAIC为保险业监管辩护，沃伦就私募信贷关联施压"
+      },
+      "summary": {
+        "en": "The National Association of Insurance Commissioners defended US state insurance regulation in a response to Senator Elizabeth Warren, who raised concerns about insurers' growing ties to private investment firms and private credit exposure. The NAIC said it has strengthened asset-adequacy testing, introduced a 45 per cent risk-based capital charge for residual interests in structured securities, and added a process to assess credit rating providers' methodologies. Insurer exposure to private credit more than doubled over the past decade, from $386bn in 2014 to $849bn in 2024.",
+        "zh": "美国全国保险监督官协会（NAIC）在回应参议员伊丽莎白·沃伦时，为美国州级保险监管作出辩护；沃伦对保险公司与私人投资公司日益紧密的关联及私募信贷敞口提出担忧。NAIC表示已加强资产充足性测试，对结构性证券的剩余权益引入45%的风险资本计提，并新增程序以评估信用评级机构的方法论与评级映射是否仍适用于监管目的。过去十年，保险公司对私募信贷的敞口增加逾一倍，从2014年的3860亿美元升至2024年的8490亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/25/us-insurance-regulators-defend-oversight-of-insurers-growing-private-credit-ties/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "US insurance regulators defend oversight of insurers’ growing private credit ties",
+      "source_fingerprint": "4d0c1999857e3efd5df4fd3a7bf51ed268ae36b4408c09a9bafeb318887bcd52",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 370,
+            "end": 404
+          },
+          "linkage": {
+            "start": 450,
+            "end": 537
+          }
+        },
+        "source_sha256": "f4be1d501ae0f04f75e765c94042cc16ee91769c75908421940b8f5948a6db69",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "NAIC defends its state-based solvency framework against Senator Warren's concerns and cites existing capital and rating-methodology measures; no tracked manager is named.",
+          "zh": "NAIC针对沃伦参议员的担忧为其州级偿付能力框架辩护，并列举已有的资本与评级方法论措施；文中未提及任何被跟踪的管理人。"
+        }
+      },
+      "relevance_reason": "Regulatory scrutiny of insurer-private credit ties affects a key capital source for private credit strategies.",
+      "event_identity": {
+        "subject": "national association of insurance commissioners (naic)",
+        "action": "defended oversight of the industry",
+        "object": "us senator elizabeth warren",
+        "period": "10 september",
+        "numbers": [
+          "$386bn",
+          "$849bn",
+          "10",
+          "2014",
+          "2024",
+          "3",
+          "45",
+          "£291.2bn"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T09:13:50+00:00",
+        "sha256": "f4be1d501ae0f04f75e765c94042cc16ee91769c75908421940b8f5948a6db69",
+        "source_published_at": "2026-09-25T11:54:39+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/25/us-insurance-regulators-defend-oversight-of-insurers-growing-private-credit-ties/"
+      },
+      "source_published_at": "2026-09-25T11:54:39+00:00",
+      "observed_at": "2026-09-26T09:10:31+00:00",
+      "supersedes_card_id": "01023df58888"
+    }
+  ]
+}

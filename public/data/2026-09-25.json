@@ -2,6 +2,145 @@
   "date": "2026-09-25",
   "items": [
     {
+      "id": "58026075f239",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T15:03:40+00:00",
+      "headline": {
+        "en": "Kotak Alts raises Rs 5,000 crore for private credit, real assets fund",
+        "zh": "Kotak Alts 为私人信贷及实物资产基金募资500亿卢比"
+      },
+      "summary": {
+        "en": "Kotak Alts raised Rs 5,000 crore for a private credit and real assets fund.",
+        "zh": "Kotak Alts 为一只私人信贷及实物资产基金募集了500亿卢比。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Prop News Time",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXh1ZC1aVFoyRENVMGpFUi1fUXJWVUZhYzVjVlJNaERTcUs2UDRNa1JaRkNOSXlMeFNkemVwYXdYSVRxcmZteFZVMU5Cdy1jT1A4UjlOLVVVZFZEM01hVGNfaUYxWG9rNGxRbk9vdXUyQldDTkIzaEpzUmRScWxqWldhR3F5aTdLMDFCSTIwMEtGWU4zV19rNnYyT3d0dUZfaHZkWlpBQjlJQmF3M1NMZmhKc1ZGaFdLaGIzYQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Kotak Alts raises Rs 5,000 crore for private credit, real assets fund",
+      "source_fingerprint": "061c0bf1dec51c5c7f37f230e4060a1a1ac6623e3318c11973682d1ae126496b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1acbfb5311c6337609d753adda9e60a32204fd79c7cf690941ca07f36321acbc",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new, sizeable private credit and real assets fundraise signals continued capital formation and competitive deployment capacity for the asset class in APAC.",
+      "event_identity": {
+        "subject": "kotak alts",
+        "action": "raises",
+        "object": "private credit, real assets fund",
+        "period": "rs 5,000 crore",
+        "numbers": [
+          "5,000"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXh1ZC1aVFoyRENVMGpFUi1fUXJWVUZhYzVjVlJNaERTcUs2UDRNa1JaRkNOSXlMeFNkemVwYXdYSVRxcmZteFZVMU5Cdy1jT1A4UjlOLVVVZFZEM01hVGNfaUYxWG9rNGxRbk9vdXUyQldDTkIzaEpzUmRScWxqWldhR3F5aTdLMDFCSTIwMEtGWU4zV19rNnYyT3d0dUZfaHZkWlpBQjlJQmF3M1NMZmhKc1ZGaFdLaGIzYQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "a7b9323caaae",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T14:41:36+00:00",
+      "headline": {
+        "en": "NAIC targets $1.2 trillion insurer private credit with tighter solvency rules",
+        "zh": "NAIC 针对保险业 1.2 万亿美元私人信贷收紧偿付能力规则"
+      },
+      "summary": {
+        "en": "The NAIC is targeting $1.2 trillion in insurer private credit with tighter solvency rules, according to a headline report.",
+        "zh": "据一则标题报道，NAIC 正针对保险业 1.2 万亿美元的私人信贷收紧偿付能力规则。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Insurance Business",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVE1rOEdRM0pnYlU2ZzZETHBfQXlrcG1hTDNReHpDNUwtM3hKSkFoRFdKcmdJMVlmeUtlNllwVWs2NTVHT3EydEVrd2lZSU9iR3JKd2dFVV9DbTY5R2FXUXNUU1R5akNDUWFWM1h3MTNjYTdGbXBLdzRrdmVfcmlxWnQwSjVxVUNIdGNldVJDV1dJR1hjc3BrTVF2SXFUQU9IMWxhWGc1X01yUkpoczU5TnlBMFpnWk1kS08zUGxwS19iWndkS01TZTYzTWRSb1phOWl4cnhWY1NlN052OUhHS1dBems?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "NAIC targets $1.2 trillion in insurer private credit with tighter solvency rules",
+      "source_fingerprint": "9bb20b47c99f1a701b52fa5fd5fe8a6c99754b6a932528bbb96bb6c8ecd8e18c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f1a55d6e4615a94de00d411be20e5dcfa6ec1d76d4bcac3eee239e01652f45f6",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Regulatory tightening of insurer solvency rules for private credit could alter capital access and demand conditions for tracked private-credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVE1rOEdRM0pnYlU2ZzZETHBfQXlrcG1hTDNReHpDNUwtM3hKSkFoRFdKcmdJMVlmeUtlNllwVWs2NTVHT3EydEVrd2lZSU9iR3JKd2dFVV9DbTY5R2FXUXNUU1R5akNDUWFWM1h3MTNjYTdGbXBLdzRrdmVfcmlxWnQwSjVxVUNIdGNldVJDV1dJR1hjc3BrTVF2SXFUQU9IMWxhWGc1X01yUkpoczU5TnlBMFpnWk1kS08zUGxwS19iWndkS01TZTYzTWRSb1phOWl4cnhWY1NlN052OUhHS1dBems?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
+      "id": "2ff8ced375ce",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T14:23:40+00:00",
+      "headline": {
+        "en": "Aqueduct European CLO 18 DAC secures Fitch final ratings for €400 million note issuance",
+        "zh": "Aqueduct European CLO 18 DAC 获得 Fitch 对 4 亿欧元票据发行的最终评级"
+      },
+      "summary": {
+        "en": "Aqueduct European CLO 18 DAC secured final ratings from Fitch for a €400 million note issuance.",
+        "zh": "Aqueduct European CLO 18 DAC 获得 Fitch 对 4 亿欧元票据发行的最终评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcExKYXI2Z0dub1ZaZnZGOGgtUTlPUzNMQnZHTWZMWVZ4RFNYUkl3cU52RmJ3TllkYmE5cFJQTmQyX1RTQllPbHgxQ01XMVlBcmVkSlFKLVRZZWVJWXZtaFZGR1pqV3NERFI5QkszWmlSZzZQZmMxWFRkZUhkV3hBcjBxSU1yUE5lU3VFSHBWR2JSR2JTZllFcy1yLWEtUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Aqueduct European CLO 18 DAC secures Fitch final ratings for €400 million note issuance",
+      "source_fingerprint": "5689a8031d83fc5fcec1a8fe60a8e56fd3dac96cbd3d72231c6369dd4f0a3dfa",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a8c4e2b05752bbc70641fe366307acdad28f137d2b9938b27803437e263607bf",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New European CLO issuance with final ratings expands the CLO sector's supply and financing environment, relevant to tracked managers active in CLOs.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:46+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcExKYXI2Z0dub1ZaZnZGOGgtUTlPUzNMQnZHTWZMWVZ4RFNYUkl3cU52RmJ3TllkYmE5cFJQTmQyX1RTQllPbHgxQ01XMVlBcmVkSlFKLVRZZWVJWXZtaFZGR1pqV3NERFI5QkszWmlSZzZQZmMxWFRkZUhkV3hBcjBxSU1yUE5lU3VFSHBWR2JSR2JTZllFcy1yLWEtUQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
       "id": "01023df58888",
       "date": "2026-09-25",
       "published_at": "2026-09-25T11:54:39+00:00",
@@ -176,6 +315,49 @@
       "observed_at": "2026-09-25T13:27:02+00:00"
     },
     {
+      "id": "d88e57713879",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T09:09:09+00:00",
+      "headline": {
+        "en": "Ares private credit fund sees redemptions ease as withdrawal pressure moderates",
+        "zh": "Ares私人信贷基金赎回放缓，撤资压力缓解"
+      },
+      "summary": {
+        "en": "Ares private credit fund saw redemptions ease as withdrawal pressure moderated, according to a headline report.",
+        "zh": "据一则标题报道，Ares私人信贷基金的赎回情况有所缓和，撤资压力趋于缓解。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Private Equity Wire",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLUZOcktRaGtZNlp4UWd5Z1RrcW1VamNrdGRscUtyMzlEYzZYelpfQVM4TkpVcTZjeFVpc3BoZkRUUnFtbkEtQ280YlMtak5uUktwOVJSYldxTEEtME1waVdvWmpXQUpzVHhGNk9rQ2FXaE1FeHAyT0Vvdzlrc1NzUDhrVHByUFZVX2U3OTZXZUpublRYazY3anduUXpaNzEwS3pQSTBfSXNwWWtPZWZMT29jcGNFdVk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares private credit fund sees redemptions ease as withdrawal pressure moderates",
+      "source_fingerprint": "fbbf9ddd1c0ac01cd7c02123a498a57a8286dc03895e5649b91b5d1618647b64",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "167895a6f4f468bf4da7a4bbee5cb237f9491957fba1cf96c5820f438bac0b3f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure trends at a private credit fund are a liquidity signal for the tracked direct-lending sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:53+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLUZOcktRaGtZNlp4UWd5Z1RrcW1VamNrdGRscUtyMzlEYzZYelpfQVM4TkpVcTZjeFVpc3BoZkRUUnFtbkEtQ280YlMtak5uUktwOVJSYldxTEEtME1waVdvWmpXQUpzVHhGNk9rQ2FXaE1FeHAyT0Vvdzlrc1NzUDhrVHByUFZVX2U3OTZXZUpublRYazY3anduUXpaNzEwS3pQSTBfSXNwWWtPZWZMT29jcGNFdVk?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
       "id": "34278ab36e93",
       "date": "2026-09-25",
       "published_at": "2026-09-25T08:45:53+00:00",
@@ -218,6 +400,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS2JxS0htZDFYLVcyeGsxT3hwUFlVYTNCX2hnODRMczFxWHdlcGQ0VGx0NU9SNjZUMUpBS1VrRWNVV1Z0cjJXZDVpVnNtdEd2MFAxVHAwZ215MFZiSlhwRWxuQkE3MktBemVvRHA4cFlncVJtUkNVZklfYXJtRWpjNEhudEY3OC11dlBUNXdHeTdSMDJmOGJmX0VQVkVEcnpJUHRV?oc=5"
       },
       "observed_at": "2026-09-25T13:27:02+00:00"
+    },
+    {
+      "id": "a835cc3b1da6",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T05:43:31+00:00",
+      "headline": {
+        "en": "Oracle-Blue Owl project delay puts spotlight on AI financing - report",
+        "zh": "Oracle-Blue Owl 项目延期，AI 融资受到关注——报道"
+      },
+      "summary": {
+        "en": "A report indicates a delay to an Oracle-Blue Owl project, drawing attention to AI-related financing. Oracle trades on the NYSE under ORCL.",
+        "zh": "有报道称 Oracle 与 Blue Owl 的一个项目出现延期，使 AI 相关融资受到关注。Oracle 在纽约证券交易所以 ORCL 交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ3NKUDUySHotUHZMaXhvcXc5Q1B2Qmd5aHkyeFdtM2Y5WEdsemNHald1SGdIOWlheEhJbXR5aExNS2dTdEF5Q1prUzZCRDR6THQ1ejVBZF9iWEt4Q1ZLLVF0RUFtWDBBWkpXR3owcHpTdlJRRHI5MXlJeEtGNXFGYUo3NzlTSWRlWVZaWXc0aHE4bndFNEFib1F5RXA2aVJsVWFNRUhTSzU1MU0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oracle-Blue Owl project delay puts spotlight on AI financing - report (ORCL:NYSE)",
+      "source_fingerprint": "49dc8e0c4ffb45507f07dbcf1fb127a7eaba458f2460dd9e6a93407fac5dd2a7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2382cf431b6ddbd8da3210a1c3770e5f1f45498fd2054de842af34d424b8ee7f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A delay in an Oracle-Blue Owl project raises questions about AI-related financing exposure for a tracked credit manager, though the article provides only a headline.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ3NKUDUySHotUHZMaXhvcXc5Q1B2Qmd5aHkyeFdtM2Y5WEdsemNHald1SGdIOWlheEhJbXR5aExNS2dTdEF5Q1prUzZCRDR6THQ1ejVBZF9iWEt4Q1ZLLVF0RUFtWDBBWkpXR3owcHpTdlJRRHI5MXlJeEtGNXFGYUo3NzlTSWRlWVZaWXc0aHE4bndFNEFib1F5RXA2aVJsVWFNRUhTSzU1MU0?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
     },
     {
       "id": "e38d67cdf34e",
@@ -265,6 +490,49 @@
       "observed_at": "2026-09-25T13:27:02+00:00"
     },
     {
+      "id": "d15d91b0dc44",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T23:06:39+00:00",
+      "headline": {
+        "en": "Ares fund withdrawal requests decline as private credit redemptions ease",
+        "zh": "Ares 基金赎回请求下降，私人信贷赎回压力缓解"
+      },
+      "summary": {
+        "en": "Ares fund withdrawal requests declined as private credit redemptions eased, according to a headline report.",
+        "zh": "据一则标题报道，随着私人信贷赎回压力缓解，Ares 基金的赎回请求有所下降。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "95.7 KELO-FM",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcmFVNlA1OVg2TnhmQThaOUlnT1o1b25tWFZHZUdHTWhma3JWcmc3ZHZ0amIyb2JqRElkMHhucTV1OXk2WUEwOWxFOUxrbEZERlNfel8wbFVfcnE3MlRpMDJsUFhhMWpPOWQxeHEtc3JZYkgtd1BMOXRaaS1ibkpBb3N1aE9zNXNibWVWLWk3OXZqdUxfWmE0ai1ZVkVqMjJ4bTNab3BR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares fund withdrawal requests decline as private credit redemptions ease",
+      "source_fingerprint": "832f320346f24f70096006793e77e271967e56ad5aac9384220d104c90d560a8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "77822c6ebbb7fa5b337a58550698f75da6168f62b04fc9fa8c25202298b282c5",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure easing at a large private credit fund signals liquidity and valuation conditions for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:57+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcmFVNlA1OVg2TnhmQThaOUlnT1o1b25tWFZHZUdHTWhma3JWcmc3ZHZ0amIyb2JqRElkMHhucTV1OXk2WUEwOWxFOUxrbEZERlNfel8wbFVfcnE3MlRpMDJsUFhhMWpPOWQxeHEtc3JZYkgtd1BMOXRaaS1ibkpBb3N1aE9zNXNibWVWLWk3OXZqdUxfWmE0ai1ZVkVqMjJ4bTNab3BR?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
+    },
+    {
       "id": "1f80f65f5807",
       "date": "2026-09-25",
       "published_at": "2026-09-24T23:04:39+00:00",
@@ -302,6 +570,49 @@
       "relevance_reason": "The reported delay of an Oracle and Blue Owl AI-related project directly involves Blue Owl's credit platform and could affect AI infrastructure financing conditions.",
       "event_identity": null,
       "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "3c569a47bfba",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T22:59:24+00:00",
+      "headline": {
+        "en": "Oracle, Blue Owl project delay sends ripples through AI financing",
+        "zh": "Oracle与Blue Owl项目延期，AI融资领域受到波及"
+      },
+      "summary": {
+        "en": "A project involving Oracle and Blue Owl has been delayed, according to sources, sending ripples through AI financing.",
+        "zh": "据知情人士称，Oracle与Blue Owl参与的一个项目出现延期，AI融资领域因此受到波及。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaWc1d1lyXzhLbDlMbkxfTDN3N2dOOWdIZnVsQi1BTE1nNmRONy0xRU55R2RmOFUwM0NNSWFiQXNmUVJWRHNHQmFFcU1EY1JlU3JnMFQwenBfM1pRQ0ktNlhLVXJ3Nl9ZQm1JaEZENHp5UWxvbEE1NWJLQUotNlZ1WVJuNnR1dGxydG1XZmJWcERjUDRiQXhBa2N2N04?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Analysis-Oracle, Blue Owl project delay sends ripples through AI financing, sources say",
+      "source_fingerprint": "98094d94cda032160ebcb348ec2647d6f5d601a31e7ac97a99e938a45756fc03",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "0f5fc39e46234570e6e3123e019ade243307710a265d0525dda5c3f751c1cac0",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A delay in an Oracle-Blue Owl AI infrastructure financing project could affect credit deployment conditions for a tracked manager's digital infrastructure lending.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:13:58+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaWc1d1lyXzhLbDlMbkxfTDN3N2dOOWdIZnVsQi1BTE1nNmRONy0xRU55R2RmOFUwM0NNSWFiQXNmUVJWRHNHQmFFcU1EY1JlU3JnMFQwenBfM1pRQ0ktNlhLVXJ3Nl9ZQm1JaEZENHp5UWxvbEE1NWJLQUotNlZ1WVJuNnR1dGxydG1XZmJWcERjUDRiQXhBa2N2N04?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
     },
     {
       "id": "387aca84e957",
@@ -385,6 +696,50 @@
         "version": "identity-v1"
       },
       "observed_at": "2026-09-25T04:24:44+00:00"
+    },
+    {
+      "id": "6f584577b856",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T19:48:00+00:00",
+      "headline": {
+        "en": "Software Slump Leading New Issuance to Three-Year Low in Private Credit",
+        "zh": "软件业低迷导致私人信贷新发行量降至三年低点"
+      },
+      "summary": {
+        "en": "KBRA reports that a software slump is driving new private credit issuance to a three-year low.",
+        "zh": "KBRA 报告称，软件业低迷正推动私人信贷新发行量降至三年低点。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "KBRA",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbGJIdXRoek9aZWp6ekk4aTJ4NHhQMFhReUJTNWdjNzh5X3lkWEQ4V0FRY3R5cndoV0ItbENPZTVucDI0aUNyQ3l2dmdmc0R2YWhwNUw4SlpiVjZfdWx5TEJtZWVMU1RkV2RUZzhCdmNha0x5bGhzcWxuUEc5U01WaThwNWpOeTRLOG0xMEhBakFLVHM0bzd3RVY5Y1AxMzFPRFZjQ0duaHF2YmlLaFVveGFHSVh4R2F1SzhsYVA5UU85QQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Software Slump Leading New Issuance to Three-Year Low in Private Credit",
+      "source_fingerprint": "e2e0dac8494b6c9a94c948d6c68baec63989ab1edde3a67159a5698aaf6d847e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "90a707d998c251fc44dd4abdca666721ddad3e7d269041d2c713c29dd4e0fa5e",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A software-linked slowdown in private credit new issuance signals weaker deployment and deal-flow conditions for direct lending strategies, a transmission channel to tracked managers with software-heavy credit books such as Blue Owl's OTF.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-26T09:14:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbGJIdXRoek9aZWp6ekk4aTJ4NHhQMFhReUJTNWdjNzh5X3lkWEQ4V0FRY3R5cndoV0ItbENPZTVucDI0aUNyQ3l2dmdmc0R2YWhwNUw4SlpiVjZfdWx5TEJtZWVMU1RkV2RUZzhCdmNha0x5bGhzcWxuUEc5U01WaThwNWpOeTRLOG0xMEhBakFLVHM0bzd3RVY5Y1AxMzFPRFZjQ0duaHF2YmlLaFVveGFHSVh4R2F1SzhsYVA5UU85QQ?oc=5"
+      },
+      "observed_at": "2026-09-26T09:10:31+00:00"
     },
     {
       "id": "9e61981ea5b4",
