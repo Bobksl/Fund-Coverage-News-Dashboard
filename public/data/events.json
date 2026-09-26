@@ -2,10 +2,10 @@
   "schema_version": 1,
   "grouping_version": "events-v2",
   "ranking_version": "priority-v1",
-  "as_of": "2026-09-26T09:10:31+00:00",
+  "as_of": "2026-09-26T09:27:39+00:00",
   "overlay_version": 2,
-  "article_count": 248,
-  "event_count": 171,
+  "article_count": 249,
+  "event_count": 172,
   "events": [
     {
       "event_id": "evt-01023df58888",
@@ -80,7 +80,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -161,7 +161,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -187,7 +187,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 167
+      "priority_rank": 168
     },
     {
       "event_id": "evt-03f8f3173fa6",
@@ -238,7 +238,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -342,7 +342,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -378,7 +378,7 @@
       "related_event_ids": [
         "evt-reviewed-007"
       ],
-      "priority_rank": 131
+      "priority_rank": 132
     },
     {
       "event_id": "evt-0891c2c283bf",
@@ -425,7 +425,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -500,7 +500,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -526,7 +526,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 107
+      "priority_rank": 108
     },
     {
       "event_id": "evt-10207993276a",
@@ -579,7 +579,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -605,7 +605,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 153
+      "priority_rank": 154
     },
     {
       "event_id": "evt-102d513164b3",
@@ -656,7 +656,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -682,7 +682,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 168
+      "priority_rank": 169
     },
     {
       "event_id": "evt-106e6b236bd9",
@@ -731,7 +731,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -806,7 +806,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -883,7 +883,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -909,7 +909,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 141
+      "priority_rank": 142
     },
     {
       "event_id": "evt-13e9ceb621b7",
@@ -956,7 +956,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -982,7 +982,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 145
+      "priority_rank": 146
     },
     {
       "event_id": "evt-1635ee5b39f8",
@@ -1029,7 +1029,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1055,7 +1055,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 110
+      "priority_rank": 111
     },
     {
       "event_id": "evt-1926ae0ca860",
@@ -1106,7 +1106,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1179,7 +1179,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1252,7 +1252,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1278,7 +1278,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 137
+      "priority_rank": 138
     },
     {
       "event_id": "evt-1f80f65f5807",
@@ -1329,7 +1329,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1402,7 +1402,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1428,7 +1428,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 116
+      "priority_rank": 117
     },
     {
       "event_id": "evt-20eb0accd658",
@@ -1481,7 +1481,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1507,7 +1507,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 127
+      "priority_rank": 128
     },
     {
       "event_id": "evt-211ba44e3071",
@@ -1554,7 +1554,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1580,7 +1580,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 109
+      "priority_rank": 110
     },
     {
       "event_id": "evt-257c06057f6a",
@@ -1629,7 +1629,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1655,7 +1655,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 124
+      "priority_rank": 125
     },
     {
       "event_id": "evt-266d9d2f4aad",
@@ -1720,7 +1720,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 9
+          "priority_rank": 10
         },
         "2026-09-25": {
           "representative_card_id": "387aca84e957",
@@ -1761,7 +1761,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1849,7 +1849,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1943,7 +1943,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 8
+          "priority_rank": 9
         }
       },
       "display_gps": [
@@ -1958,7 +1958,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1999,7 +1999,7 @@
         "evt-ff88cf0f7f79"
       ],
       "related_event_ids": [],
-      "priority_rank": 106
+      "priority_rank": 107
     },
     {
       "event_id": "evt-2d3b509a432f",
@@ -2046,7 +2046,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2119,7 +2119,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2228,7 +2228,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2309,7 +2309,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2335,7 +2335,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 123
+      "priority_rank": 124
     },
     {
       "event_id": "evt-34278ab36e93",
@@ -2384,7 +2384,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2457,7 +2457,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2530,7 +2530,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2603,7 +2603,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2678,7 +2678,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -2751,7 +2751,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2777,7 +2777,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 160
+      "priority_rank": 161
     },
     {
       "event_id": "evt-3bc4c5d6c840",
@@ -2828,7 +2828,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2854,7 +2854,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 122
+      "priority_rank": 123
     },
     {
       "event_id": "evt-3c569a47bfba",
@@ -2901,7 +2901,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2978,7 +2978,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3004,7 +3004,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 139
+      "priority_rank": 140
     },
     {
       "event_id": "evt-3cffb59855a4",
@@ -3059,7 +3059,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3085,7 +3085,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 125
+      "priority_rank": 126
     },
     {
       "event_id": "evt-3d59d5574141",
@@ -3136,7 +3136,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -3211,7 +3211,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3237,7 +3237,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 144
+      "priority_rank": 145
     },
     {
       "event_id": "evt-45466877ac21",
@@ -3284,7 +3284,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3361,7 +3361,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3438,7 +3438,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3464,7 +3464,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 138
+      "priority_rank": 139
     },
     {
       "event_id": "evt-4c989b5deeb9",
@@ -3515,7 +3515,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3588,7 +3588,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3663,7 +3663,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3736,7 +3736,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3811,7 +3811,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3884,7 +3884,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3957,7 +3957,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4038,7 +4038,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4064,7 +4064,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 132
+      "priority_rank": 133
     },
     {
       "event_id": "evt-5d3d28976637",
@@ -4111,7 +4111,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4186,7 +4186,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4259,7 +4259,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4336,7 +4336,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4365,7 +4365,7 @@
         "evt-03f8f3173fa6",
         "evt-reviewed-001"
       ],
-      "priority_rank": 154
+      "priority_rank": 155
     },
     {
       "event_id": "evt-60b5fc3bb616",
@@ -4412,7 +4412,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4487,7 +4487,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4560,7 +4560,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4633,7 +4633,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4767,7 +4767,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 11
+          "priority_rank": 12
         }
       },
       "display_gps": [
@@ -4782,7 +4782,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4868,7 +4868,7 @@
         "evt-89fdd706bd80",
         "evt-fd48ddfbbf4d"
       ],
-      "priority_rank": 118
+      "priority_rank": 119
     },
     {
       "event_id": "evt-6e521167dacd",
@@ -4917,7 +4917,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4943,7 +4943,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 149
+      "priority_rank": 150
     },
     {
       "event_id": "evt-6f584577b856",
@@ -4992,7 +4992,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5065,7 +5065,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5140,7 +5140,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5219,7 +5219,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5292,7 +5292,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5318,7 +5318,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 171
+      "priority_rank": 172
     },
     {
       "event_id": "evt-713c2760fc8e",
@@ -5365,7 +5365,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5438,7 +5438,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5511,7 +5511,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5584,7 +5584,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5661,7 +5661,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5734,7 +5734,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5760,7 +5760,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 170
+      "priority_rank": 171
     },
     {
       "event_id": "evt-779c1f927421",
@@ -5807,7 +5807,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5890,7 +5890,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5931,7 +5931,7 @@
         "evt-ed1f1f0fc2a6"
       ],
       "related_event_ids": [],
-      "priority_rank": 143
+      "priority_rank": 144
     },
     {
       "event_id": "evt-7b8a0774b583",
@@ -5980,7 +5980,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6057,7 +6057,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6130,7 +6130,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6203,7 +6203,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6280,7 +6280,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6306,7 +6306,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 140
+      "priority_rank": 141
     },
     {
       "event_id": "evt-80bc0a674b20",
@@ -6355,7 +6355,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6432,7 +6432,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6458,7 +6458,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 112
+      "priority_rank": 113
     },
     {
       "event_id": "evt-869d02bd1303",
@@ -6507,7 +6507,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6588,7 +6588,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6668,7 +6668,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6694,7 +6694,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 155
+      "priority_rank": 156
     },
     {
       "event_id": "evt-92dc00f248ce",
@@ -6747,7 +6747,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6820,7 +6820,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6893,7 +6893,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6966,7 +6966,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7039,7 +7039,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7112,7 +7112,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7139,6 +7139,79 @@
       "aliases": [],
       "related_event_ids": [],
       "priority_rank": 38
+    },
+    {
+      "event_id": "evt-9befc79860cd",
+      "member_card_ids": [
+        "9befc79860cd"
+      ],
+      "representative_card_id": "9befc79860cd",
+      "date_views": {
+        "2026-09-24": {
+          "representative_card_id": "9befc79860cd",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "9befc79860cd"
+          ],
+          "further_coverage": false,
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-09-24T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 6
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-09-24T10:50:32+00:00",
+      "last_material_update_at": "2026-09-24T10:50:32+00:00",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-09-26T09:27:39+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Traders Union",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVTJBUEh4RFBEbUM3cFRpM1VYU1Q1M3hnM19kNEpsaTNNTVFpdEQxVGl2Mlp6VzBIX21UTm9CbEJPWmZDV1FmdFZMa1R1d2Rnd2dkRXdSV3JoNkJ2Q0xUd3hKX3R0MG9Zd2d3amxDQXltYTQtMFRRNFdzNGpXaHZ0YnJVMThhdzlIUUs4T1ZrMEhPY09hbHdqS3dOUU1zRlp2U21tS3hKYWNoS29GeHBWV0RWVUI?oc=5",
+          "card_id": "9befc79860cd",
+          "published_at": "2026-09-24T10:50:32+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 104
     },
     {
       "event_id": "evt-9e61981ea5b4",
@@ -7185,7 +7258,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7258,7 +7331,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7284,7 +7357,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 165
+      "priority_rank": 166
     },
     {
       "event_id": "evt-a0f3329b83e8",
@@ -7333,7 +7406,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7418,7 +7491,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7491,7 +7564,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7568,7 +7641,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7649,7 +7722,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7722,7 +7795,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7795,7 +7868,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7870,7 +7943,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7896,7 +7969,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 151
+      "priority_rank": 152
     },
     {
       "event_id": "evt-a9303f71d972",
@@ -7943,7 +8016,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7969,7 +8042,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 121
+      "priority_rank": 122
     },
     {
       "event_id": "evt-a9ffd979cf6b",
@@ -8022,7 +8095,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8097,7 +8170,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -8178,7 +8251,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8204,7 +8277,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 136
+      "priority_rank": 137
     },
     {
       "event_id": "evt-b25cd6b822b1",
@@ -8251,7 +8324,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -8324,7 +8397,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8397,7 +8470,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8423,7 +8496,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 166
+      "priority_rank": 167
     },
     {
       "event_id": "evt-b574959d7c9b",
@@ -8470,7 +8543,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8496,7 +8569,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 159
+      "priority_rank": 160
     },
     {
       "event_id": "evt-b5d4feae0128",
@@ -8549,7 +8622,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8659,7 +8732,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8703,7 +8776,7 @@
         "evt-852f9bce3cb9"
       ],
       "related_event_ids": [],
-      "priority_rank": 169
+      "priority_rank": 170
     },
     {
       "event_id": "evt-b9f80db2c0fa",
@@ -8750,7 +8823,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8827,7 +8900,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8853,7 +8926,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 156
+      "priority_rank": 157
     },
     {
       "event_id": "evt-bce4f32145d7",
@@ -8904,7 +8977,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8930,7 +9003,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 129
+      "priority_rank": 130
     },
     {
       "event_id": "evt-bd0c177ab82a",
@@ -8977,7 +9050,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9003,7 +9076,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 126
+      "priority_rank": 127
     },
     {
       "event_id": "evt-c14edac88c85",
@@ -9056,7 +9129,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9092,7 +9165,7 @@
       "related_event_ids": [
         "evt-d796cd9e96a0"
       ],
-      "priority_rank": 130
+      "priority_rank": 131
     },
     {
       "event_id": "evt-c1bbeccadda0",
@@ -9139,7 +9212,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9165,7 +9238,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 164
+      "priority_rank": 165
     },
     {
       "event_id": "evt-c406b3a14e7b",
@@ -9212,7 +9285,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9285,7 +9358,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9311,7 +9384,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 163
+      "priority_rank": 164
     },
     {
       "event_id": "evt-c5572a0521c8",
@@ -9358,7 +9431,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9384,7 +9457,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 133
+      "priority_rank": 134
     },
     {
       "event_id": "evt-c5adf2f35275",
@@ -9433,7 +9506,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9459,7 +9532,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 148
+      "priority_rank": 149
     },
     {
       "event_id": "evt-c5ae78f0b305",
@@ -9506,7 +9579,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9585,7 +9658,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9666,7 +9739,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9728,7 +9801,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 6
+          "priority_rank": 7
         }
       },
       "display_gps": [
@@ -9743,7 +9816,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9769,7 +9842,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 104
+      "priority_rank": 105
     },
     {
       "event_id": "evt-c9a7e5910906",
@@ -9820,7 +9893,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9893,7 +9966,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9923,7 +9996,7 @@
         "evt-ae5f41c3bc26",
         "evt-reviewed-003"
       ],
-      "priority_rank": 120
+      "priority_rank": 121
     },
     {
       "event_id": "evt-cb2687e35fea",
@@ -9970,7 +10043,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10045,7 +10118,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10122,7 +10195,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10195,7 +10268,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10272,7 +10345,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10351,7 +10424,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10426,7 +10499,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10503,7 +10576,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10566,7 +10639,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 7
+          "priority_rank": 8
         }
       },
       "display_gps": [
@@ -10582,7 +10655,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10608,7 +10681,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 105
+      "priority_rank": 106
     },
     {
       "event_id": "evt-d647e5a595d1",
@@ -10659,7 +10732,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10685,7 +10758,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 117
+      "priority_rank": 118
     },
     {
       "event_id": "evt-d6632e2fb734",
@@ -10732,7 +10805,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10758,7 +10831,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 115
+      "priority_rank": 116
     },
     {
       "event_id": "evt-d796cd9e96a0",
@@ -10839,7 +10912,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10875,7 +10948,7 @@
       "related_event_ids": [
         "evt-c14edac88c85"
       ],
-      "priority_rank": 147
+      "priority_rank": 148
     },
     {
       "event_id": "evt-d88e57713879",
@@ -10922,7 +10995,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10997,7 +11070,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11023,7 +11096,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 162
+      "priority_rank": 163
     },
     {
       "event_id": "evt-dc741bd5af7f",
@@ -11070,7 +11143,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11096,7 +11169,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 128
+      "priority_rank": 129
     },
     {
       "event_id": "evt-df849d742755",
@@ -11143,7 +11216,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11216,7 +11289,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11325,7 +11398,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11366,7 +11439,7 @@
         "evt-8f8e52b00f67"
       ],
       "related_event_ids": [],
-      "priority_rank": 134
+      "priority_rank": 135
     },
     {
       "event_id": "evt-e38d67cdf34e",
@@ -11417,7 +11490,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11490,7 +11563,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11567,7 +11640,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11640,7 +11713,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11719,7 +11792,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11792,7 +11865,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11865,7 +11938,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11942,7 +12015,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12015,7 +12088,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12090,7 +12163,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12116,7 +12189,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 157
+      "priority_rank": 158
     },
     {
       "event_id": "evt-f6e820e3975b",
@@ -12193,7 +12266,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12278,7 +12351,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12351,7 +12424,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12377,7 +12450,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 161
+      "priority_rank": 162
     },
     {
       "event_id": "evt-f9cf14d408ff",
@@ -12432,7 +12505,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12458,7 +12531,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 158
+      "priority_rank": 159
     },
     {
       "event_id": "evt-fa0e3aebcc93",
@@ -12505,7 +12578,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12578,7 +12651,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12604,7 +12677,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 108
+      "priority_rank": 109
     },
     {
       "event_id": "evt-fb5c98994c34",
@@ -12655,7 +12728,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12681,7 +12754,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 146
+      "priority_rank": 147
     },
     {
       "event_id": "evt-fd48ddfbbf4d",
@@ -12732,7 +12805,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12761,7 +12834,7 @@
         "evt-6bbc0e19741a",
         "evt-89fdd706bd80"
       ],
-      "priority_rank": 111
+      "priority_rank": 112
     },
     {
       "event_id": "evt-ff2ebd4839b4",
@@ -12810,7 +12883,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12952,7 +13025,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 10
+          "priority_rank": 11
         }
       },
       "display_gps": [
@@ -12967,7 +13040,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13183,7 +13256,7 @@
         "evt-03f8f3173fa6",
         "evt-5f9cf9b9ef30"
       ],
-      "priority_rank": 113
+      "priority_rank": 114
     },
     {
       "event_id": "evt-reviewed-002",
@@ -13244,7 +13317,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13319,7 +13392,7 @@
         "evt-fada07d0316a"
       ],
       "related_event_ids": [],
-      "priority_rank": 114
+      "priority_rank": 115
     },
     {
       "event_id": "evt-reviewed-003",
@@ -13370,7 +13443,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13414,7 +13487,7 @@
         "evt-ae5f41c3bc26",
         "evt-ca2ccf9f530d"
       ],
-      "priority_rank": 119
+      "priority_rank": 120
     },
     {
       "event_id": "evt-reviewed-004",
@@ -13499,7 +13572,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13546,7 +13619,7 @@
         "evt-cef717ef0cd2"
       ],
       "related_event_ids": [],
-      "priority_rank": 142
+      "priority_rank": 143
     },
     {
       "event_id": "evt-reviewed-005",
@@ -13595,7 +13668,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13627,7 +13700,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 135
+      "priority_rank": 136
     },
     {
       "event_id": "evt-reviewed-006",
@@ -13740,7 +13813,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13787,7 +13860,7 @@
         "evt-a3cfc33727c0"
       ],
       "related_event_ids": [],
-      "priority_rank": 150
+      "priority_rank": 151
     },
     {
       "event_id": "evt-reviewed-007",
@@ -13902,7 +13975,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13979,7 +14052,7 @@
       "related_event_ids": [
         "evt-06b3269f6fce"
       ],
-      "priority_rank": 152
+      "priority_rank": 153
     },
     {
       "event_id": "evt-reviewed-008",
@@ -14054,7 +14127,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-09-26T09:10:31+00:00",
+        "as_of": "2026-09-26T09:27:39+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15267,5 +15340,5 @@
       "model": "deepseek-flash"
     }
   },
-  "cards_sha256": "45fcae4d24a62a31ecb75b087f47db03dfafe920c6cf76abb969015c0170ccc4"
+  "cards_sha256": "b4be1902d09e289a03cbc57bcc16e8ac505d38e384b866abd97de03cc547b5bc"
 }
