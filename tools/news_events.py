@@ -148,7 +148,7 @@ def same_revision_event(card, parent):
     return bool(card.get('source_headline')) and normalize_title(card['source_headline']) == normalize_title(parent.get('source_headline', ''))
 
 
-def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None):
+def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None, backfill=None):
     if overlay is None:
         overlay = load_overlay() if groups is None else {'groups': groups}
     if len({c['id'] for c in cards}) != len(cards):
@@ -156,6 +156,15 @@ def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None)
     as_of = as_of or datetime.now(timezone.utc).isoformat(timespec='seconds')
     approved = _approved(cards, overlay.get('groups', []))
     fixes = _corrections(cards, overlay)
+    raw_cards = cards
+    # Evidence backfill (public/data/backfill.json) replaces a card's assessment and summary only while
+    # the card still matches the hash it was re-briefed from; day files are never rewritten.
+    entries = (backfill or {}).get('cards') or {}
+    updates = {c['id']: entries[c['id']] for c in cards
+               if isinstance(entries.get(c['id']), dict) and entries[c['id']].get('assessment')
+               and entries[c['id']].get('card_sha256') == card_hash(c)}
+    cards = [dict(c, assessment=updates[c['id']]['assessment'], summary=updates[c['id']]['summary'])
+             if c['id'] in updates else c for c in cards]
 
     def stamp(card):
         fix = fixes.get(card['id'])
@@ -286,7 +295,11 @@ def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None)
     return {'schema_version': 1, 'grouping_version': VERSION, 'ranking_version': news_priority.VERSION, 'as_of': as_of,
             'overlay_version': overlay.get('version'), 'article_count': len(cards), 'event_count': len(events),
             'events': sorted(events, key=lambda e: e['event_id']),
-            'cards_sha256': hashlib.sha256(json.dumps(sorted(cards, key=lambda c: c['id']),
+            'card_updates': {cid: {'headline': e['headline'], 'summary': e['summary'],
+                                   'evidence_level': (e.get('evidence') or {}).get('level'),
+                                   'updated_at': e.get('checked_at'), 'prompt_version': e.get('prompt_version'),
+                                   'model': e.get('model')} for cid, e in sorted(updates.items())},
+            'cards_sha256': hashlib.sha256(json.dumps(sorted(raw_cards, key=lambda c: c['id']),
                                                      sort_keys=True, ensure_ascii=False).encode()).hexdigest()}
 
 
@@ -310,7 +323,14 @@ def write_events(data_dir, *, now=None):
         except (ValueError, TypeError, UnicodeError):
             previous = None
             warnings.append('Previous event index was invalid; rebuilt from preserved source cards.')
-    result = build_events(cards, previous=previous,
+    backfill = None
+    try:
+        backfill = json.loads((data_dir / 'backfill.json').read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        pass
+    except (ValueError, UnicodeError):
+        warnings.append('Evidence backfill file was invalid; original card text used.')
+    result = build_events(cards, previous=previous, backfill=backfill if isinstance(backfill, dict) else None,
                           as_of=(now or datetime.now(timezone.utc)).isoformat(timespec='seconds'))
     if warnings:
         result['warnings'] = warnings

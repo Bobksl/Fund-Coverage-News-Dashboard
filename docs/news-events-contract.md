@@ -30,6 +30,10 @@ Event fields:
 - priority: fields below. priority_rank: lower is earlier in globally sorted Priority.
 - date_views: YYYY-MM-DD -> representative_card_id, member_card_ids, display_gps, display_sectors, further_coverage, priority, priority_rank. Use this exact representative for historical views, not the global representative. All dates retain their original coverage.
 
+## Evidence backfill (public/data/backfill.json)
+`python -m tools.backfill --data-dir public/data [--max-cards N] [--retry-unassessed]` re-briefs archived cards whose source page can be read, with the refresh's prompt, model (deepseek-flash, chosen over deepseek-v4-pro in a 26 Sep side-by-side on the pilot cases), evidence validation and call caps. Entries: {card_sha256, status, checked_at, evidence, headline, summary, assessment, relevant, relevance_reason, prompt_version, model}. An entry applies only while its card hash matches; day files are never rewritten. Google News links are skipped. No publisher text is stored; raw model answers stay in work/evidence-cache/briefs.json.
+events.json then uses the backfilled assessment for priority and exposes top-level card_updates: {card_id: {headline, summary, evidence_level, updated_at, prompt_version, model}}. The dashboard shows those with an "Updated from source" note, only while the event index is valid.
+
 ## Reviewed overlay (config/news_event_groups.json, version 2)
 Processing order: evidence/date correction -> identity/relatedness -> novelty/material update -> relevance/priority -> recency tie-break.
 groups[]: survivor event_id, members[{id, headline, card_sha256, role?}], optional representative_card_id, aliases, reason, decision, evidence_urls, history (earlier decisions). A group applies only while every present member still matches its headline and hash; one changed card invalidates the whole decision and its cards fall back to automatic rules. A card may appear in at most one group.
@@ -47,7 +51,8 @@ time_sensitivity: 48h | 7d | monitor.
 linkage: direct | sector | indirect | unknown.
 evidence_strength: primary | reported | unknown.
 reason: {en, zh}. potential_urgent: boolean (unverified triage hint, NOT an Urgent assessment). version and as_of identify rules/assessment time.
-The engine sorts these categories lexicographically in the orders above, then newer last_material_update_at, then event_id. No six-component score. Scope filters and language changes must not recalculate importance.
+routine: boolean (26 Sep user decision): a scheduled or administrative disclosure (regular share issuance, distribution notice, standard periodic filing). Honoured only for verified primary sources (filings, regulator releases); on press items the model flag was unreliable in testing.
+The engine sorts lexicographically: priority, severity, routine (non-routine first), time_sensitivity, linkage, evidence_strength, then newer last_material_update_at, then event_id. No six-component score. Scope filters and language changes must not recalculate importance.
 Primary evidence requires separately verified input metadata; an AI declaration alone never grants it. Production feed inputs currently default to reported if assessable.
 Important limitation: matching evidence spans verifies provenance/syntax, not semantic truth. No live brief-v2-priority call or analyst ranking validation has run.
 Day priorities use day end HKT; global priorities use export as_of. No automatic age-based demotion or inferred cure/default resolution.

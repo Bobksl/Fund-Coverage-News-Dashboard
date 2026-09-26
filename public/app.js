@@ -78,6 +78,7 @@ const I18N = {
     zoomIn: "Zoom in",
     zoomOut: "Zoom out",
     zoomFit: "Fit width",
+    updatedFromSource: "Updated from source",
     locale: "en-GB",
   },
   zh: {
@@ -145,6 +146,7 @@ const I18N = {
     zoomIn: "放大",
     zoomOut: "缩小",
     zoomFit: "适应宽度",
+    updatedFromSource: "已按原文更新",
     locale: "zh-CN",
   },
 };
@@ -258,8 +260,16 @@ function stripAbsence(text, lang) {
   return kept.join(lang === "zh" ? "" : " ").trim() || (text || "").trim();
 }
 
+function cardUpdate(item) {
+  return (state.events && state.events.updates && state.events.updates.get(item.id)) || null;
+}
+
 function summaryText(item) {
-  return stripAbsence(bilingual(item.summary), state.lang);
+  return stripAbsence(bilingual((cardUpdate(item) || item).summary), state.lang);
+}
+
+function headlineText(item) {
+  return bilingual((cardUpdate(item) || item).headline);
 }
 
 function label(kind, id) {
@@ -300,7 +310,14 @@ function validateEvents(data) {
       byCard.set(id, event);
     }
   }
-  return {byCard};
+  // Evidence backfill: newer headline/summary for a card, valid only with this index.
+  const updates = new Map();
+  const text = (value) => value && typeof value.en === "string" && typeof value.zh === "string";
+  const raw = data.card_updates && typeof data.card_updates === "object" ? data.card_updates : {};
+  for (const [id, update] of Object.entries(raw)) {
+    if (byCard.has(id) && update && text(update.headline) && text(update.summary)) updates.set(id, update);
+  }
+  return {byCard, updates};
 }
 
 // The index fits a set of loaded days when every day's mapped articles and the index's view of
@@ -488,7 +505,7 @@ function renderSources(entry) {
     if (item) {
       const source = item.source || {};
       list.appendChild(el("li", null, [
-        el("p", {className: "source-head", text: bilingual(item.headline)}),
+        el("p", {className: "source-head", text: headlineText(item)}),
         sourceLine(source.publisher, source.url, articleWhen(item)),
         el("p", {className: "source-summary", text: summaryText(item)}),
       ]));
@@ -515,7 +532,7 @@ function renderCard(entry) {
   if (entry.priority && entry.priority.potential_urgent === true) {
     card.appendChild(el("p", {className: "alert", text: t("potentialUrgent")}));
   }
-  card.appendChild(el("h3", {className: "headline", text: bilingual(item.headline)}));
+  card.appendChild(el("h3", {className: "headline", text: headlineText(item)}));
   card.appendChild(el("p", {className: "summary", text: summaryText(item)}));
   if (level) {
     const reason = bilingual(entry.priority.reason);
@@ -533,6 +550,7 @@ function renderCard(entry) {
     notes.push(jump);
   }
   if (entry.event && entry.event.updated === true) notes.push(el("span", {text: t("sourceUpdated")}));
+  if (cardUpdate(item)) notes.push(el("span", {text: t("updatedFromSource")}));
   if (notes.length) card.appendChild(el("p", {className: "notes"}, notes));
   if (entry.members.length > 1) card.appendChild(renderSources(entry));
 

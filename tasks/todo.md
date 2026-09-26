@@ -8,10 +8,12 @@ Deadline extended by user to Sunday 27 September 2026 (Hong Kong time). Extra ti
 - [x] Complete human review of CASE 06–15 and adjudicate reported PAG linkage. All pilot judgments endorsed; source-level implementation verification remains separate.
 - [x] Implement pass-2 grouping/novelty and source corrections using docs/handover-claude-sunday-accuracy.md. Done on branch claude/sunday-accuracy (not yet integrated): 214 -> 172 events, 12 reviewed groups, 42 aliases, 1 date correction; 03 > 05 > 02 and C08 preferences recorded unresolved. C14 repayment quoted from the 8-K but not published (no source card). Handback: ../docs/accuracy-handback-2026-09-25.md.
 - [x] Fix evidence/date/summary issues and bounded relevance failure modes in the pipeline (bounded retrieval, brief-v3-evidence prompt, absence-claim stripping, role-tagged managers). Candidate frozen at 0dff5a1.
-- [ ] Label the separate acceptance packet (work/analyst-review/acceptance-2026-09-25/: 20 events, 25 filtering candidates, independent discovery), then report results against the frozen candidate. Historical recall remains unavailable; original failed calibration stays recorded.
+- [x] Label the separate acceptance packet (work/analyst-review/acceptance-2026-09-25/: 20 events, 25 filtering candidates, independent discovery), then report results against the frozen candidate. Historical recall remains unavailable; original failed calibration stays recorded.
 - [x] Integrator: merged via PR #3 (cc22423) with the PDF and source-tier work; live site verified on events-v2 (172 events) and the PDF.js viewer.
 - [ ] Monday 28 September 08:00 HKT: check the first scheduled refresh with the new source tiers (status.json feed failures, GDELT success, SEC/regulator/wire items, calls and tokens).
-- [ ] Establish the remaining DeepSeek budget before any backfill; briefs are longer (excerpts, filings) under unchanged call caps.
+- [x] Budget: about 0.05 CNY per day of refreshes on deepseek-flash; the 26 Sep backfill of 86 older cards used 134 calls (about 0.7 CNY at peak prices, upper bound). deepseek-flash kept after a side-by-side with deepseek-v4-pro on the 15 pilot cases (flash followed the evidence contract; pro returned labels instead of quotes).
+- [x] 26 Sep: routine filings rank below launches (user decision); backfill final state 74/86 cards verified, events Needs review 150 -> 76 (73 Useful, 4 Important).
+- [ ] Backfill the 64 Google-News-only events: find real URLs (GDELT title search, best-effort) and re-run tools.backfill.
 - [ ] Open source gaps (docs/source-tiers.md): NAIC and FCA (no usable feed), Business Wire, 10-Q/10-K via SEC structured data (needs a NAV-move threshold), paid press (decide after two weeks of counts).
 
 - [ ] 1. Public GitHub PDF publication is authorized. Establish Chinese locale, chart translation scope and remaining paid-call budget; analyst orders 12–15 distinct examples. Freeze ranking contract. (1.5–2 technical hours)

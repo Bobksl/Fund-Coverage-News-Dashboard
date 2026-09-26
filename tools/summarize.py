@@ -18,7 +18,7 @@ from tools import news_priority, site_data
 
 API_URL = "https://api.deepseek.com/chat/completions"
 MODEL_ID = "deepseek-flash"
-PROMPT_VERSION = "brief-v3.1-evidence"
+PROMPT_VERSION = "brief-v3.2-evidence"
 MAX_TEXT_CHARS = 2500
 MAX_ATTEMPTS = 2
 CJK = re.compile(r"[一-鿿]")
@@ -45,7 +45,7 @@ TASK = {
                  "market commentary or unrelated industries. Also false for scheduled or unchanged distributions, reminders of an already announced action with no new fact, vendor or data-product launches with no credit consequence, retrospective or week-in-review roundups that report no new event, and investor commitments that name no tracked manager or strategy. Stay true for genuinely new dividend cuts or changes, rating actions, regulatory actions, redemption changes and material sector stories even when no tracked manager is named. reason: one short sentence; for a story with no tracked manager, name the transmission channel to a tracked sub-sector."),
     "analyst_note": "If present, context for tagging only; never quote it in the summary.",
     "assessment": (
-        "assessment: object with severity (critical/substantial/bounded/unknown), linkage "
+        "assessment: object with severity (critical/substantial/bounded/unknown), routine (boolean: true only for a scheduled or administrative disclosure with no new business or credit development, such as a regular share issuance, a distribution declaration or restatement, or a standard periodic filing), linkage "
         "(direct/sector/indirect/unknown), current_adverse (boolean), resolved (boolean), "
         "deadline_at (timezone-aware ISO date-time or null), reason_en, reason_zh, quotes. "
         "Critical means payment/capital-access failure, severe impairment or systemic strategy "
@@ -188,9 +188,18 @@ class Summarizer:
             self.post = lambda payload: deepseek_post(payload, api_key)
         return self.post(body)
 
-    def __call__(self, item):
+    def _key(self, item):
         messages = build_messages(item, self.rules)
-        key = hashlib.sha256(f"{PROMPT_VERSION}|{MODEL_ID}|{messages[1]['content']}".encode()).hexdigest()
+        return messages, hashlib.sha256(f"{PROMPT_VERSION}|{MODEL_ID}|{messages[1]['content']}".encode()).hexdigest()
+
+    def forget(self, item):
+        """Drop a cached answer (e.g. one that failed evidence validation) so a retry asks again."""
+        _, key = self._key(item)
+        if self.cache.pop(key, None) is not None and self.cache_path:
+            site_data._write_json(self.cache_path, self.cache)
+
+    def __call__(self, item):
+        messages, key = self._key(item)
         if key in self.cache:
             return parse_brief(self.cache[key], self.rules)
         last_error = None
