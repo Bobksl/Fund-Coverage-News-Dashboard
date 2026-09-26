@@ -43,7 +43,7 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
     todo = [c for c in cards if not (c.get('assessment') or {}).get('assessable')
             and 'news.google.com' not in c['source']['url'] and not settled(c)]
     summarizer = summarize.Summarizer(rules, post=post, max_calls=2 * max_cards, cache_path=cache_path)
-    stats = {'candidates': len(todo), 'updated': 0, 'no_evidence': 0, 'errors': []}
+    stats = {'candidates': len(todo), 'updated': 0, 'no_evidence': 0, 'kept_previous': 0, 'errors': []}
     for card in todo[:max_cards]:
         url = card['source']['url']
         title = card.get('source_headline') or card['headline']['en']
@@ -70,6 +70,14 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
                          relevant=brief['relevant'], relevance_reason=brief['reason'],
                          prompt_version=summarize.PROMPT_VERSION, model=summarize.MODEL_ID)
             stats['updated'] += 1
+        previous = side['cards'].get(card['id']) or {}
+        verified = (previous.get('assessment') or {}).get('assessable') and previous.get('card_sha256') == entry['card_sha256']
+        if verified and not (entry.get('assessment') or {}).get('assessable'):
+            # Answers vary between runs; a new answer that fails the evidence check never replaces a verified one.
+            stats['kept_previous'] += 1
+            if 'assessment' in entry:
+                stats['updated'] -= 1
+            continue
         side['cards'][card['id']] = entry
     side.update(version=1, generated_at=now.isoformat(timespec='seconds'))
     site_data._write_json(data_dir / FILE, side)

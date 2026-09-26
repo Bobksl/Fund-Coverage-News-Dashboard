@@ -86,8 +86,10 @@ def validate_assessment(raw, item):
                for lang in ('en', 'zh')) or not re.search(r'[\u4e00-\u9fff]', raw['reason_zh']):
         return result
     result.update({key: raw[key] for key in ('severity', 'linkage', 'current_adverse', 'resolved')})
-    # Routine only demotes, so it needs no quote; anything but a real boolean counts as not routine.
-    result.update(assessable=True, deadline_at=deadline, evidence_strength='reported', routine=raw.get('routine') is True,
+    # Routine only demotes, so it needs no quote; anything but a real boolean counts as not routine. It is honoured
+    # only for verified primary sources (filings, regulator releases): on press items the flag was mostly wrong.
+    result.update(assessable=True, deadline_at=deadline, evidence_strength='reported',
+                  routine=raw.get('routine') is True and item.get('verified_primary_source') is True,
                   reason={'en': raw['reason_en'], 'zh': raw['reason_zh']}, failure=None)
     # Primary strength requires a separately verified source classification; model cannot grant it.
     if item.get('verified_primary_source') is True:
@@ -130,7 +132,8 @@ def classify(assessment, *, as_of=None):
     tier = 'urgent' if critical or material_deadline else (
         'important' if a['severity'] in ('critical', 'substantial') else 'useful')
     p.update(priority=tier, severity=a['severity'], time_sensitivity=bucket,
-             linkage=a['linkage'], evidence_strength=a['evidence_strength'], routine=a.get('routine') is True,
+             linkage=a['linkage'], evidence_strength=a['evidence_strength'],
+             routine=a.get('routine') is True and a['evidence_strength'] == 'primary',
              potential_urgent=False, reason=a['reason'])
     return p
 

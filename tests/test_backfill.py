@@ -118,7 +118,7 @@ def test_retry_unassessed_rebriefs_only_failed_entries_and_caches_raw_answers(tm
 
 
 def test_older_prompt_entries_are_rebriefed_only_on_request(tmp_path):
-    c = card('0000000000f1', 'https://alternativecreditinvestor.com/f1/')
+    c = card('0000000000f1', 'https://www.sec.gov/Archives/edgar/data/1/000000000126000001/0000000001-26-000001-index.htm')
     data = archive(tmp_path, [c])
     backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(BRIEF), max_cards=5)
     side = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))
@@ -129,3 +129,16 @@ def test_older_prompt_entries_are_rebriefed_only_on_request(tmp_path):
     stats = backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5, rebrief_older_prompt=True)
     side = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))
     assert stats['updated'] == 1 and side['cards'][c['id']]['assessment']['routine'] is True
+
+
+def test_a_rebrief_never_replaces_a_verified_assessment_with_an_unverified_one(tmp_path):
+    c = card('0000000000g1', 'https://alternativecreditinvestor.com/g1/')
+    data = archive(tmp_path, [c])
+    backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(BRIEF), max_cards=5)
+    side = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))
+    side['cards'][c['id']]['prompt_version'] = 'brief-v0-old'
+    (data / 'backfill.json').write_text(json.dumps(side), encoding='utf-8')
+    weak = dict(BRIEF, summary_en='Different text.', assessment=dict(BRIEF['assessment'], severity='unknown'))
+    stats = backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(weak), max_cards=5, rebrief_older_prompt=True)
+    kept = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))['cards'][c['id']]
+    assert stats['kept_previous'] == 1 and kept['assessment']['assessable'] and kept['summary']['en'].startswith('CIFC, a $47bn')
