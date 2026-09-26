@@ -244,6 +244,24 @@ function bilingual(value) {
   return value[state.lang] || value.en || "";
 }
 
+// Older briefs were written from headlines and often claim the article "provided no further
+// details". The pipeline cannot know that, so such sentences are not shown. Mirrors
+// tools/summarize.py strip_absence_claims exactly (a browser test compares both on the archive).
+const ABSENCE = {
+  en: /\b(no (?:further|other|additional|more|specific)\b.{0,60}\b(?:details?|figures?|information|data|terms)\b|no (?:specific )?(?:managers?|funds?|figures)\b.{0,40}\b(?:named|disclosed|provided|given)\b|(?:was|were) not (?:provided|disclosed|given)|(?:did|does|do) not (?:provide|disclose|give|name) (?:any )?(?:further|more|additional|other)?|provides? no (?:further|additional|other) detail|consisted only of the headline|beyond the headline)/i,
+  zh: /(未|没有)(?:进一步)?予?(提供|披露|给出|说明|点名|提及)|仅(有|包含)标题/,
+};
+
+function stripAbsence(text, lang) {
+  const parts = (text || "").split(lang === "zh" ? /(?<=[。！？])/ : /(?<=[.!?])\s+/);
+  const kept = parts.filter((part) => part.trim() && !ABSENCE[lang === "zh" ? "zh" : "en"].test(part));
+  return kept.join(lang === "zh" ? "" : " ").trim() || (text || "").trim();
+}
+
+function summaryText(item) {
+  return stripAbsence(bilingual(item.summary), state.lang);
+}
+
 function label(kind, id) {
   const entry = state.index && state.index.labels && state.index.labels[kind] && state.index.labels[kind][id];
   return (entry && (entry[state.lang] || entry.en)) || id;
@@ -472,7 +490,7 @@ function renderSources(entry) {
       list.appendChild(el("li", null, [
         el("p", {className: "source-head", text: bilingual(item.headline)}),
         sourceLine(source.publisher, source.url, articleWhen(item)),
-        el("p", {className: "source-summary", text: bilingual(item.summary)}),
+        el("p", {className: "source-summary", text: summaryText(item)}),
       ]));
     } else {
       const meta = member.meta || {};
@@ -498,7 +516,7 @@ function renderCard(entry) {
     card.appendChild(el("p", {className: "alert", text: t("potentialUrgent")}));
   }
   card.appendChild(el("h3", {className: "headline", text: bilingual(item.headline)}));
-  card.appendChild(el("p", {className: "summary", text: bilingual(item.summary)}));
+  card.appendChild(el("p", {className: "summary", text: summaryText(item)}));
   if (level) {
     const reason = bilingual(entry.priority.reason);
     if (reason) card.appendChild(el("p", {className: "reason", text: `${t(`prio_${level}`)}: ${reason}`}));

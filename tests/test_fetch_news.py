@@ -68,6 +68,9 @@ class ParseAndRuleTest(unittest.TestCase):
             "Shoppers close stores early": (False, [], []),
             "Blue Owl wins private credit award": (False, ["blue_owl"], ["private_credit"]),
             "Private credit outlook remains positive": (False, [], ["private_credit"]),
+            # Acceptance F14: a regulatory proposal is an event even without a deal verb.
+            "Proposed bank capital rules could deepen private credit ties": (True, [], ["private_credit"]),
+            "Regulator opens consultation on private credit valuations": (True, [], ["private_credit"]),
         }
         for text, (keep, gps, sectors) in cases.items():
             with self.subTest(text):

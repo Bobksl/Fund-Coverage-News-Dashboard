@@ -113,7 +113,7 @@ def test_prompt_carries_untrusted_text_and_distinctions_contract():
     assert 'untrusted' in messages[0]['content']
     task = json.loads(messages[1]['content'])['task']
     blob = json.dumps(task)
-    for phrase in ('committed', 'target', 'cumulative', 'special', 'reminder', 'transmission', 'gp_roles'):
+    for phrase in ('committed', 'target', 'cumulative', 'special', 'reminder', 'transmission', 'gp_roles', 'retrospective'):
         assert phrase in blob
     assert summarize.PROMPT_VERSION != 'brief-v2-priority'
 

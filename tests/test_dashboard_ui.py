@@ -388,6 +388,20 @@ def viewer_ready(page, src):
     assert page.locator("#reports .pdf-viewer [role='status']").count() == 0
 
 
+def test_summaries_hide_claims_about_unread_articles_exactly_like_the_pipeline(page):
+    from tools.summarize import strip_absence_claims
+    open_site(page)
+    samples = [(item["summary"]["en"], "en") for item in CARDS.values()] + [(item["summary"]["zh"], "zh") for item in CARDS.values()]
+    got = page.evaluate("pairs => pairs.map(([text, lang]) => stripAbsence(text, lang))", samples)
+    assert got == [strip_absence_claims(text, lang) for text, lang in samples]
+    assert sum(g != t for g, (t, _) in zip(got, samples)) > 20  # the archive really carries this filler
+    card = next(c for c in CARDS.values() if "No further details" in c["summary"]["en"])
+    show_all(page)
+    shown = page.text_content(f"#main .card[data-card='{card['id']}'] p.summary") if page.locator(
+        f"#main .card[data-card='{card['id']}'] p.summary").count() else page.text_content("#main")
+    assert "No further details" not in shown
+
+
 def test_reports_render_both_approved_pdfs_inline(page):
     open_site(page, "#reports")
     assert page.is_hidden("#toolbar") and page.is_hidden("#main")
