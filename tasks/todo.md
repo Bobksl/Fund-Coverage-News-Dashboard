@@ -1,5 +1,7 @@
 # Sunday extension and accuracy checklist
 
+Handovers (26 Sep): independent final review for ChatGPT, ../docs/handover-chatgpt-final-review.md; remaining work for Claude, ../docs/handover-claude-next.md.
+
 Plan: [plan.md](plan.md). Detailed design: [deduplication and ranking](../docs/deduplication-ranking-design.md). Status: pipeline, UI and approved EN/ZH reports deployed on 24 September; [release evidence](../docs/release-2026-09-24.md). Preserve all existing features and UI controls.
 
 Deadline extended by user to Sunday 27 September 2026 (Hong Kong time). Extra time prioritizes evidence quality and filtering precision/recall checks; no claim of guaranteed accuracy. Pilot validation: all 15 forms structurally complete; all CASE 01–15 human-endorsed after pass 2. Details and frozen input hashes: work/analyst-review/priority-pilot-2026-09-24/PASS2_DISPOSITION.md. Review text and public data unchanged.
@@ -10,10 +12,10 @@ Deadline extended by user to Sunday 27 September 2026 (Hong Kong time). Extra ti
 - [x] Fix evidence/date/summary issues and bounded relevance failure modes in the pipeline (bounded retrieval, brief-v3-evidence prompt, absence-claim stripping, role-tagged managers). Candidate frozen at 0dff5a1.
 - [x] Label the separate acceptance packet (work/analyst-review/acceptance-2026-09-25/: 20 events, 25 filtering candidates, independent discovery), then report results against the frozen candidate. Historical recall remains unavailable; original failed calibration stays recorded.
 - [x] Integrator: merged via PR #3 (cc22423) with the PDF and source-tier work; live site verified on events-v2 (172 events) and the PDF.js viewer.
-- [ ] Monday 28 September 08:00 HKT: check the first scheduled refresh with the new source tiers (status.json feed failures, GDELT success, SEC/regulator/wire items, calls and tokens).
+- [ ] Next weekday 08:00 HKT: check the scheduled refresh (new-tier items, evidence levels, routine flags, calls). The first new-tier run (25 Sep) was already checked; it found the SEC text bug, since fixed.
 - [x] Budget: about 0.05 CNY per day of refreshes on deepseek-flash; the 26 Sep backfill of 86 older cards used 134 calls (about 0.7 CNY at peak prices, upper bound). deepseek-flash kept after a side-by-side with deepseek-v4-pro on the 15 pilot cases (flash followed the evidence contract; pro returned labels instead of quotes).
 - [x] 26 Sep: routine filings rank below launches (user decision); backfill final state 74/86 cards verified, events Needs review 150 -> 76 (73 Useful, 4 Important).
-- [ ] Backfill the 64 Google-News-only events: find real URLs (GDELT title search, best-effort) and re-run tools.backfill.
+- [ ] Google-News-only events (95 Needs review on 26 Sep): GDELT lookup built but refused by both the development network and GitHub runners (26 Sep). Count for a week, then the user decides on Brave Search API. Details: ../docs/handover-claude-next.md item 2.
 - [ ] Open source gaps (docs/source-tiers.md): NAIC and FCA (no usable feed), Business Wire, 10-Q/10-K via SEC structured data (needs a NAV-move threshold), paid press (decide after two weeks of counts).
 
 - [ ] 1. Public GitHub PDF publication is authorized. Establish Chinese locale, chart translation scope and remaining paid-call budget; analyst orders 12–15 distinct examples. Freeze ranking contract. (1.5–2 technical hours)
