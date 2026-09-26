@@ -94,6 +94,7 @@ class _Extract(html.parser.HTMLParser):
         super().__init__(convert_charrefs=True)
         self.depth, self.title, self.meta, self.paragraphs, self._p = 0, '', {}, [], None
         self._in_title = False
+        self.visible = []  # all text outside skipped tags: fallback for div-only pages (many SEC filings)
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -122,7 +123,10 @@ class _Extract(html.parser.HTMLParser):
     def handle_data(self, data):
         if self._in_title:
             self.title += data
-        elif self._p is not None and not self.depth:
+            return
+        if not self.depth:
+            self.visible.append(data)
+        if self._p is not None and not self.depth:
             self._p.append(data)
 
 
@@ -143,10 +147,15 @@ def extract(raw, content_type):
     parser.feed(text)
     description = parser.meta.get('og:description') or parser.meta.get('description') or ''
     parts = [description] + [p for p in parser.paragraphs if p not in description]
-    body = ' '.join(' '.join(parts).split())
-    cover = SEC_COVER_END.search(body[:8000])
-    if cover:
-        body = body[cover.end():].strip()
+
+    def trim(text):
+        text = ' '.join(text.split())
+        cover = SEC_COVER_END.search(text[:8000])
+        return text[cover.end():].strip() if cover else text
+
+    body = trim(' '.join(parts))
+    if len(body) < MIN_EXCERPT:
+        body = trim(' '.join(parser.visible))
     return {'title': ' '.join((parser.meta.get('og:title') or parser.title).split()),
             'excerpt': body[:MAX_EXCERPT],
             'source_published_at': _published(parser.meta, raw)}

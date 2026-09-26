@@ -154,6 +154,16 @@ def test_sec_cover_page_boilerplate_is_trimmed():
     assert source_evidence.extract(page, 'text/html')['excerpt'].startswith('Thank you for your investment')
 
 
+def test_div_only_filings_fall_back_to_all_visible_text():
+    # Live OTIC 8-K (23 Sep 2026) had 201 divs and no <p>; paragraph-only extraction returned nothing.
+    page = ('<div>Date of Report (Date of earliest event reported): September 23, 2026</div>'
+            '<div><span>If an emerging growth company, indicate by check mark ... Section 13(a) of the Exchange Act. ☐</span></div>'
+            '<div><span>Item 8.01 Other Events.</span></div><div><span>' + LETTER + '</span></div>'
+            '<script>var x = "ignore";</script>').encode()
+    excerpt = source_evidence.extract(page, 'text/html')['excerpt']
+    assert excerpt.startswith('Item 8.01 Other Events.') and 'Thank you' in excerpt and 'ignore' not in excerpt
+
+
 def test_edgar_document_prefers_press_release_exhibit():
     html = INDEX_HTML.replace('</table>', '<tr><td>2</td><td>Press release</td><td><a href="/Archives/edgar/data/1/2/ex99-1.htm">'
                               'ex99-1.htm</a></td><td>EX-99.1</td></tr></table>')

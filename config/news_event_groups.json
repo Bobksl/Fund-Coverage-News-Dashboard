@@ -24,6 +24,169 @@
       ]
     },
     {
+      "event_id": "evt-266d9d2f4aad",
+      "members": [
+        {
+          "id": "266d9d2f4aad",
+          "headline": "Cheyne raises £3bn for ninth real estate debt fund",
+          "card_sha256": "05ace8d7d2a66b837d5cf7679e0727ebab692cf3f1a470f8267e91a09d8f7a32"
+        },
+        {
+          "id": "2411ca3faf8a",
+          "headline": "Cheyne Capital raises £3bn for real estate debt strategy",
+          "card_sha256": "91033b391c4e2db08cbfc8f83dbe7fc288518b5712b08e5db6fd2e2715dde559"
+        },
+        {
+          "id": "387aca84e957",
+          "headline": "Cheyne Capital raises £3 billion for ninth real estate credit programme",
+          "card_sha256": "61f6e4944876fc85fca81cdd7a7e78a1a99100eaa944eea9e88a957e3b9eda5d"
+        }
+      ],
+      "reason": "Cheyne Capital final close of Real Estate Credit Holdings IX at £3bn (23 Sep 2026 and later coverage).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-2411ca3faf8a",
+        "evt-387aca84e957"
+      ]
+    },
+    {
+      "event_id": "evt-2c8e8a403730",
+      "members": [
+        {
+          "id": "2c8e8a403730",
+          "headline": "Blue Owl Could See Junior Loan to Loparex Wiped Out in Monarch Restructuring",
+          "card_sha256": "3b2efe76d94edd44bb501edd8fdc45f8af26799b9d595dcb93da14792bc00d87"
+        },
+        {
+          "id": "bee6f703bd46",
+          "headline": "Blue Owl Could See Junior Loan to Loparex Wiped Out in Monarch Restructuring",
+          "card_sha256": "d84e1244257d066fe067a01904177680e412ae7911632f8004bcdf15bb708a1a"
+        },
+        {
+          "id": "ff88cf0f7f79",
+          "headline": "Blue Owl junior loan to Loparex could be wiped out in Monarch restructuring",
+          "card_sha256": "d6548f25e25c4859be0b7b3db6372e478188757861166436a767476b4ec9620d"
+        }
+      ],
+      "reason": "OBDC's junior loan to Loparex could be wiped out in the Monarch-led restructuring (MT Newswires 23 Sep 2026, same story via Yahoo and MarketScreener).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-bee6f703bd46",
+        "evt-ff88cf0f7f79"
+      ],
+      "representative_card_id": "2c8e8a403730"
+    },
+    {
+      "event_id": "evt-3202ae7aa46a",
+      "members": [
+        {
+          "id": "3202ae7aa46a",
+          "headline": "Neuberger launches New Bridge Aero aerospace financing platform",
+          "card_sha256": "b60191795ad2717c625c271f6aee6055f4c14ef2d6ec975255b43e2d9a3a5ba0"
+        },
+        {
+          "id": "b03eb400467f",
+          "headline": "Neuberger Specialty Finance launches Bridge AeroFinance to build over $2 billion aerospace credit portfolio",
+          "card_sha256": "1415b7f8e6ff5dd7a2d1d7470cd34037f910d344c171e322ea75317609d39716"
+        }
+      ],
+      "reason": "Neuberger Specialty Finance launches New Bridge Aero, targeting a portfolio above $2bn (ACI 14 Sep 2026, retrieved); the 22 Sep item is later coverage, not a new launch.",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-b03eb400467f"
+      ]
+    },
+    {
+      "event_id": "evt-6bbc0e19741a",
+      "members": [
+        {
+          "id": "6bbc0e19741a",
+          "headline": "KKR commits $350m to launch equipment finance platform Akrapoint",
+          "card_sha256": "716661e28fbb79b95a959a792c149544f48643a799cdb4750b8258c95302429c"
+        },
+        {
+          "id": "a128012f7260",
+          "headline": "KKR launches equipment finance platform Akrapoint Commercial Capital",
+          "card_sha256": "72786a7050ac6c6f55b608555d8d35f74a20ef20d26076541ed6b46e3b1c3ef8"
+        },
+        {
+          "id": "85520242eb65",
+          "headline": "KKR launches equipment finance firm with $350 million",
+          "card_sha256": "f1dd1537144bc6b1d019ce91fa9bd6be94c8e9104950397da331c8560dc3e848"
+        },
+        {
+          "id": "9bf89ad0481c",
+          "headline": "KKR launches $350m equipment finance platform",
+          "card_sha256": "6d5b94d0c7a164e98d81d6e7b6c3026f2b514552150c2396be5f7c461c1e2a9a"
+        },
+        {
+          "id": "6c177e5368f1",
+          "headline": "KKR Commits $350 Million to Launch Equipment Finance Platform Akrapoint",
+          "card_sha256": "0854ee0234ad801a7eda3d05b1421077aec746587856696d33c6f9fa7add0ebf"
+        },
+        {
+          "id": "54436093da1a",
+          "headline": "KKR Commits $350 Million To Launch Akrapoint Commercial Capital Equipment Finance Platform",
+          "card_sha256": "cc4e16d356c9ed40fef49d6bf3b66f58b38e1dacb0e0b8d253822b27301cf8d7"
+        },
+        {
+          "id": "54f7371abb8d",
+          "headline": "KKR launches equipment finance subsidiary",
+          "card_sha256": "e205b285c0fd3adef1a7ce0c37c91ec6ff5e7fd28c83cdf5fcaddd2c5f1cb21f"
+        },
+        {
+          "id": "f0ce070894eb",
+          "headline": "KKR commits $350 million to equipment finance",
+          "card_sha256": "7761a55e18567a162bbee959da2dd19d4417f816dd8e3cef40362fc62ce62b48"
+        },
+        {
+          "id": "ff992dfd6991",
+          "headline": "KKR Launches Equipment Finance Platform Akrapoint Commercial Capital",
+          "card_sha256": "c594c4dddd789aad1f36dab66de5e6148d18e63c6a942971012139078a65a104"
+        }
+      ],
+      "reason": "KKR launches Akrapoint Commercial Capital, a US mid-ticket equipment finance platform, with $350m committed through its asset-based finance strategy (22 Sep 2026; KKR's Business Wire release and ten rewrites).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-54436093da1a",
+        "evt-54f7371abb8d",
+        "evt-6c177e5368f1",
+        "evt-85520242eb65",
+        "evt-9bf89ad0481c",
+        "evt-a128012f7260",
+        "evt-f0ce070894eb",
+        "evt-ff992dfd6991"
+      ],
+      "representative_card_id": "6bbc0e19741a"
+    },
+    {
+      "event_id": "evt-7b15e82fcf19",
+      "members": [
+        {
+          "id": "7b15e82fcf19",
+          "headline": "Blue Owl Technology Finance Corp. expands loan facility for Athena unit",
+          "card_sha256": "3a84394615586c25d0811c82786e65301724bd0c7ccee900f9b0adcf909c69dd"
+        },
+        {
+          "id": "ed1f1f0fc2a6",
+          "headline": "Blue Owl Technology Finance Boosts Credit Line to $250 Million via Subsidiary Amendment",
+          "card_sha256": "def8f5b7a71e9b94d2d52a6943fb122545bc5c86ae782f51cb2ad223d11fdfd9"
+        },
+        {
+          "id": "1d349b99540e",
+          "headline": "Blue Owl Technology Finance Expands Loan Financing Facility",
+          "card_sha256": "2efe225559fc6f9810e7bda30932ed8774fbf73c731881bc0ed46c35f3c9cb57"
+        }
+      ],
+      "reason": "OTF amends its Athena subsidiary loan facility to $250m (15 Sep 2026 8-K coverage).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-1d349b99540e",
+        "evt-ed1f1f0fc2a6"
+      ],
+      "representative_card_id": "ed1f1f0fc2a6"
+    },
+    {
       "event_id": "evt-a0f3329b83e8",
       "members": [
         {
@@ -71,6 +234,92 @@
       ],
       "evidence_urls": [
         "https://www.kbra.com/publications/yTtCyjsh/kbra-assigns-rating-to-blue-owl-technology-finance-corp-s-400-million-senior-unsecured-notes-due-2029"
+      ]
+    },
+    {
+      "event_id": "evt-c14edac88c85",
+      "members": [
+        {
+          "id": "c14edac88c85",
+          "headline": "Apollo Eyes DePuy Synthes and Adds $5.5 Billion in Auto Loans",
+          "card_sha256": "87ca4f1ccd92360f9f7c45539b897228da95cfbfaa62e24df331618cf4bf8c33"
+        },
+        {
+          "id": "9bd9bc7b561e",
+          "headline": "Apollo Eyes DePuy Synthes, Adds $5.5 Billion in Auto Loans",
+          "card_sha256": "6e470ea14aad615781bbf1e53790c29ebe90cf2daf29b2b19049a52972c29ffd"
+        }
+      ],
+      "reason": "The same Simply Wall St roundup under two URLs (identical timestamp) mixing a DePuy Synthes private-equity bid with the Truist auto loans; kept apart from the Truist event and linked as related.",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-9bd9bc7b561e"
+      ]
+    },
+    {
+      "event_id": "evt-c5bdabf2be3f",
+      "members": [
+        {
+          "id": "c5bdabf2be3f",
+          "headline": "CIFC launches direct lending strategy on iCapital Marketplace",
+          "card_sha256": "58f00f9280b91c3a8500170a524a93a2e45ae7a0f78ea6c924b050ffc05b967f"
+        },
+        {
+          "id": "460530fb1372",
+          "headline": "CIFC launches direct lending strategy on iCapital",
+          "card_sha256": "564b7334cbd1d2dd0e8c6fb3d5e66a38e63a08ab12d2bf38042915944e7e6bb6"
+        }
+      ],
+      "reason": "The same ACI article on CIFC launching its direct lending strategy on iCapital (17 Sep 2026), two URLs.",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-460530fb1372"
+      ]
+    },
+    {
+      "event_id": "evt-d796cd9e96a0",
+      "members": [
+        {
+          "id": "d796cd9e96a0",
+          "headline": "Apollo Buys $5.5 Billion of Truist's Near-Prime Car Loans",
+          "card_sha256": "1fe6097218e4b04e7622ed9fdbbe64f85ab37a0560061db76b73c7c5a7bc77c1"
+        },
+        {
+          "id": "777afd02d6c0",
+          "headline": "Truist to Sell $5.5 Billion in Auto Loans to Apollo as New CEO Pushes Bank Overhaul",
+          "card_sha256": "6813f14cfa0b7c6d7bc4ccdcf59b050778e459d1b9b2f4a0a0af04d0a699073b"
+        }
+      ],
+      "reason": "Apollo buys $5.5bn of Truist's near-prime auto loans (Bloomberg 15 Sep 2026; later coverage).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-777afd02d6c0"
+      ]
+    },
+    {
+      "event_id": "evt-e1c1f79fff6a",
+      "members": [
+        {
+          "id": "e1c1f79fff6a",
+          "headline": "Apollo in Talks to Expand SoftBank Loan to $9 Billion",
+          "card_sha256": "adbc0a3d794865637a07b7fdc516e4874ff664f1b58cc3aa4e1d84044c604f69"
+        },
+        {
+          "id": "8f8e52b00f67",
+          "headline": "Apollo mulls raising SoftBank loan to $9 billion for OpenAI bets",
+          "card_sha256": "0120f2d7116427271608665017d2aadaa9dfbe32c745ab8ec01b8ba05b9f2687"
+        },
+        {
+          "id": "2bbf85468ef4",
+          "headline": "Apollo Plans to Increase SoftBank Loan from $5.4 Billion to $9 Billion to Support OpenAI",
+          "card_sha256": "ccb4ae4f35cdb4156910a930ff5eeb956f536358e2bf43f25400bbdb9774ccdb"
+        }
+      ],
+      "reason": "Apollo in talks to raise its NAV loan to SoftBank Vision Fund 2 from $5.4bn to $9bn (17 Sep 2026; talks, not agreed).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "aliases": [
+        "evt-2bbf85468ef4",
+        "evt-8f8e52b00f67"
       ]
     },
     {
@@ -393,17 +642,43 @@
       "event_id": "evt-reviewed-004",
       "members": [
         {
-          "id": "d5bc3cf66452",
-          "headline": "Apollo Provides $585 Million Financing to The Executive Centre",
-          "card_sha256": "6ddb2a612a17e1cc8853b1b50790224fdbfb3ac28dc0fa44660f9a2ab2b47ab2"
-        },
-        {
           "id": "d1ffa08664f4",
           "headline": "Apollo Provides $585 Million Financing to The Executive Centre",
           "card_sha256": "2f2bd66bc08c3844fa725348c424010a6791349898bd518ae53e2cdcbab80bb1"
+        },
+        {
+          "id": "aa9b94332185",
+          "headline": "Apollo backs Hong Kong's The Executive Centre with $585m financing",
+          "card_sha256": "79ca5f8f566c197f8ba940edb73735078078bf266847210ec5d92713552a6299"
+        },
+        {
+          "id": "cef717ef0cd2",
+          "headline": "Apollo Extends $585 Million Financing to the Executive Centre",
+          "card_sha256": "1178613d21833b011788b0effc7f671309cd7558e20fceef625c7da5e811a5bf"
+        },
+        {
+          "id": "d5bc3cf66452",
+          "headline": "Apollo Provides $585 Million Financing to The Executive Centre",
+          "card_sha256": "6ddb2a612a17e1cc8853b1b50790224fdbfb3ac28dc0fa44660f9a2ab2b47ab2"
         }
       ],
-      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+      "reason": "Apollo-managed funds provide $585m financing to The Executive Centre (Apollo release 15 Sep 2026 EDT and coverage).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "history": [
+        {
+          "decision": "September 23 archive audit",
+          "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved.",
+          "members": [
+            "d5bc3cf66452",
+            "d1ffa08664f4"
+          ]
+        }
+      ],
+      "aliases": [
+        "evt-aa9b94332185",
+        "evt-cef717ef0cd2"
+      ],
+      "representative_card_id": "d1ffa08664f4"
     },
     {
       "event_id": "evt-reviewed-005",
@@ -425,6 +700,16 @@
       "event_id": "evt-reviewed-006",
       "members": [
         {
+          "id": "a3cfc33727c0",
+          "headline": "KKR Private High-Grade Debt Deals Surge to $80 Billion This Year",
+          "card_sha256": "70bfe9bdc4e708ef6db600a0bf15041a1e3275cac2d9e3ddb1ec766caf0b353a"
+        },
+        {
+          "id": "8fbc643f3d19",
+          "headline": "KKR Tops $80 Billion in Private Investment-Grade Financing",
+          "card_sha256": "3695e26ac18a5396f7e88d260153c71b09ddb5643f26f7e054b85b82e44ed0d6"
+        },
+        {
           "id": "9286b5f69eb9",
           "headline": "KKR Doubles Private Debt Deals to $80 Billion as AI Spending Explodes",
           "card_sha256": "251aaff91d97bf24d4e4f029aaf3b92272519c636c43797c7b042c57747f4b61"
@@ -435,7 +720,23 @@
           "card_sha256": "4aab468d3c0735389396198b93c9d650680774200d045c4b6fbc1f131dc3d679"
         }
       ],
-      "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved."
+      "reason": "KKR private investment-grade financing: more than $80bn structured or syndicated in 2026 (Bloomberg 15 Sep 2026 and later coverage). \"Doubles private debt deals\" headlines are the same story.",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "history": [
+        {
+          "decision": "September 23 archive audit",
+          "reason": "Identical event coverage reviewed in September 23 archive audit; sources preserved.",
+          "members": [
+            "9286b5f69eb9",
+            "222098ffd1b2"
+          ]
+        }
+      ],
+      "aliases": [
+        "evt-8fbc643f3d19",
+        "evt-a3cfc33727c0"
+      ],
+      "representative_card_id": "a3cfc33727c0"
     },
     {
       "event_id": "evt-reviewed-007",
@@ -547,6 +848,23 @@
       ],
       "reason": "Apollo redemption context on other dates: 24 Sep multi-cause share move and an unanchored 13 Sep rehash; not the Q3 tender itself.",
       "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check"
+    },
+    {
+      "event_ids": [
+        "evt-6bbc0e19741a",
+        "evt-89fdd706bd80",
+        "evt-fd48ddfbbf4d"
+      ],
+      "reason": "Digest items combining the Akrapoint launch with unrelated stories (Neuberger forward flow; Goldman data-security investment).",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources"
+    },
+    {
+      "event_ids": [
+        "evt-d796cd9e96a0",
+        "evt-c14edac88c85"
+      ],
+      "reason": "Roundup that repeats the Truist auto-loan purchase alongside a private-equity bid.",
+      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources"
     }
   ],
   "corrections": [

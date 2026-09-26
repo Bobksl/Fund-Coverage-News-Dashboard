@@ -93,6 +93,8 @@ def test_absence_claims_are_removed_but_summaries_never_empty():
     zh = 'CIFC在iCapital上推出直接贷款策略。该策略的具体细节及规模未予披露。报道未提供更多细节。'
     assert summarize.strip_absence_claims(en) == 'CIFC launched a direct lending strategy on iCapital.'
     assert summarize.strip_absence_claims(zh, 'zh') == 'CIFC在iCapital上推出直接贷款策略。'
+    quoted = 'The FT published a piece titled "Soft defaults." No further details were provided in the supplied text.'
+    assert summarize.strip_absence_claims(quoted) == 'The FT published a piece titled "Soft defaults."'
     only = 'No further details were provided.'
     assert summarize.strip_absence_claims(only) == only
     brief = summarize.parse_brief(json.dumps(dict(BRIEF, summary_en=en, summary_zh=zh), ensure_ascii=False), RULES)
@@ -113,7 +115,7 @@ def test_prompt_carries_untrusted_text_and_distinctions_contract():
     assert 'untrusted' in messages[0]['content']
     task = json.loads(messages[1]['content'])['task']
     blob = json.dumps(task)
-    for phrase in ('committed', 'target', 'cumulative', 'special', 'reminder', 'transmission', 'gp_roles'):
+    for phrase in ('committed', 'target', 'cumulative', 'special', 'reminder', 'transmission', 'gp_roles', 'retrospective'):
         assert phrase in blob
     assert summarize.PROMPT_VERSION != 'brief-v2-priority'
 

@@ -126,6 +126,7 @@ def test_cross_date_pairs_show_further_coverage_and_link_back(page):
 
 
 def test_same_day_pairs_expand_to_both_sources(page):
+    from tools.summarize import strip_absence_claims
     open_site(page)
     for event in REVIEWED:
         for day, view in event["date_views"].items():
@@ -140,7 +141,8 @@ def test_same_day_pairs_expand_to_both_sources(page):
             assert items.count() == len(view["member_card_ids"])
             for index, member in enumerate(view["member_card_ids"]):
                 text = items.nth(index).text_content()
-                assert CARDS[member]["headline"]["en"] in text and CARDS[member]["summary"]["en"] in text
+                shown = strip_absence_claims(CARDS[member]["summary"]["en"])  # display hides unread-article claims
+                assert CARDS[member]["headline"]["en"] in text and shown in text
 
 
 def test_all_dates_lists_each_event_once_and_every_article(page):
@@ -386,6 +388,20 @@ def viewer_ready(page, src):
     page.wait_for_selector(f"#reports .pdf-viewer[data-src='{src}'][data-state='ready']", timeout=30000)
     assert page.eval_on_selector("#reports .pdf-page canvas", PAINTED)
     assert page.locator("#reports .pdf-viewer [role='status']").count() == 0
+
+
+def test_summaries_hide_claims_about_unread_articles_exactly_like_the_pipeline(page):
+    from tools.summarize import strip_absence_claims
+    open_site(page)
+    samples = [(item["summary"]["en"], "en") for item in CARDS.values()] + [(item["summary"]["zh"], "zh") for item in CARDS.values()]
+    got = page.evaluate("pairs => pairs.map(([text, lang]) => stripAbsence(text, lang))", samples)
+    assert got == [strip_absence_claims(text, lang) for text, lang in samples]
+    assert sum(g != t for g, (t, _) in zip(got, samples)) > 20  # the archive really carries this filler
+    card = next(c for c in CARDS.values() if "No further details" in c["summary"]["en"])
+    show_all(page)
+    shown = page.text_content(f"#main .card[data-card='{card['id']}'] p.summary") if page.locator(
+        f"#main .card[data-card='{card['id']}'] p.summary").count() else page.text_content("#main")
+    assert "No further details" not in shown
 
 
 def test_reports_render_both_approved_pdfs_inline(page):

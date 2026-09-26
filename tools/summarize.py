@@ -18,7 +18,7 @@ from tools import news_priority, site_data
 
 API_URL = "https://api.deepseek.com/chat/completions"
 MODEL_ID = "deepseek-flash"
-PROMPT_VERSION = "brief-v3-evidence"
+PROMPT_VERSION = "brief-v3.1-evidence"
 MAX_TEXT_CHARS = 2500
 MAX_ATTEMPTS = 2
 CJK = re.compile(r"[一-鿿]")
@@ -42,7 +42,7 @@ TASK = {
                  "manager, the risk or return of a tracked sub-sector, deployment, fundraising, "
                  "liquidity or valuation conditions, or the financing and competitive environment "
                  "for these strategies; false for awards, marketing, event appearances, generic "
-                 "market commentary or unrelated industries. Also false for scheduled or unchanged distributions, reminders of an already announced action with no new fact, vendor or data-product launches with no credit consequence, and investor commitments that name no tracked manager or strategy. Stay true for genuinely new dividend cuts or changes, rating actions, regulatory actions, redemption changes and material sector stories even when no tracked manager is named. reason: one short sentence; for a story with no tracked manager, name the transmission channel to a tracked sub-sector."),
+                 "market commentary or unrelated industries. Also false for scheduled or unchanged distributions, reminders of an already announced action with no new fact, vendor or data-product launches with no credit consequence, retrospective or week-in-review roundups that report no new event, and investor commitments that name no tracked manager or strategy. Stay true for genuinely new dividend cuts or changes, rating actions, regulatory actions, redemption changes and material sector stories even when no tracked manager is named. reason: one short sentence; for a story with no tracked manager, name the transmission channel to a tracked sub-sector."),
     "analyst_note": "If present, context for tagging only; never quote it in the summary.",
     "assessment": (
         "assessment: object with severity (critical/substantial/bounded/unknown), linkage "
@@ -265,7 +265,9 @@ ABSENCE_ZH = re.compile(r"(未|没有)(?:进一步)?予?(提供|披露|给出|�
 
 def strip_absence_claims(text, lang="en"):
     """Drop sentences asserting that the (unread) article gives no details; never return empty."""
-    splitter, pattern = (r"(?<=[.!?])\s+", ABSENCE_EN) if lang == "en" else (r"(?<=[。！？])", ABSENCE_ZH)
+    # A sentence may end in a closing quote or bracket: 'titled "Soft defaults." No further details...'
+    splitter, pattern = ((r"(?<=[.!?])\s+|(?<=[.!?][\"'”’)])\s+", ABSENCE_EN) if lang == "en"
+                         else (r"(?<=[。！？])|(?<=[。！？][”’）])", ABSENCE_ZH))
     kept = [s for s in re.split(splitter, text or "") if s.strip() and not pattern.search(s)]
     return ("" if lang == "zh" else " ").join(kept).strip() or (text or "").strip()
 
