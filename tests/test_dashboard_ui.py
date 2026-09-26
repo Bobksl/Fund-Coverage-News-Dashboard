@@ -32,6 +32,7 @@ EVENTS = load("events.json")["events"]
 DAYS = {day: load(f"{day}.json")["items"] for day in INDEX["dates"]}
 CARDS = {item["id"]: item for items in DAYS.values() for item in items}
 REVIEWED = [event for event in EVENTS if event["merge_rule"] == "reviewed"]
+UPDATES = load("events.json").get("card_updates", {})  # evidence backfill shown instead of card text
 
 
 def ts(value):
@@ -141,8 +142,9 @@ def test_same_day_pairs_expand_to_both_sources(page):
             assert items.count() == len(view["member_card_ids"])
             for index, member in enumerate(view["member_card_ids"]):
                 text = items.nth(index).text_content()
-                shown = strip_absence_claims(CARDS[member]["summary"]["en"])  # display hides unread-article claims
-                assert CARDS[member]["headline"]["en"] in text and shown in text
+                current = UPDATES.get(member) or CARDS[member]
+                shown = strip_absence_claims(current["summary"]["en"])  # display hides unread-article claims
+                assert current["headline"]["en"] in text and shown in text
 
 
 def test_all_dates_lists_each_event_once_and_every_article(page):
@@ -402,6 +404,30 @@ def test_summaries_hide_claims_about_unread_articles_exactly_like_the_pipeline(p
     shown = page.text_content(f"#main .card[data-card='{card['id']}'] p.summary") if page.locator(
         f"#main .card[data-card='{card['id']}'] p.summary").count() else page.text_content("#main")
     assert "No further details" not in shown
+
+
+def test_evidence_updates_replace_headline_only_text_and_are_labelled(page):
+    data = load("events.json")
+    event = next(e for e in data["events"] if len(e["member_card_ids"]) == 1)
+    cid = event["representative_card_id"]
+    data["card_updates"] = {cid: {"headline": {"en": "Updated headline from source", "zh": "按原文更新的标题"},
+                                  "summary": {"en": "Updated summary from the source page.", "zh": "按原文页面更新的摘要。"},
+                                  "evidence_level": "excerpt", "updated_at": "2026-09-26T08:00:00+00:00"}}
+    page.route("**/data/events.json", lambda route: route.fulfill(json=data))
+    open_site(page)
+    show_all(page)
+    card = page.locator(f"#main .card[data-card='{cid}']")
+    assert card.locator("h3.headline").text_content() == "Updated headline from source"
+    assert card.locator("p.summary").text_content() == "Updated summary from the source page."
+    assert "Updated from source" in card.text_content()
+    page.click("[data-lang='zh']")
+    assert card.locator("p.summary").text_content() == "按原文页面更新的摘要。"
+    # Without the event index the original card text is shown: updates never outlive their index.
+    page.unroute("**/data/events.json")
+    page.route("**/data/events.json", lambda route: route.fulfill(status=404, body="missing"))
+    open_site(page)
+    show_all(page)
+    assert "Updated headline from source" not in page.text_content("#main")
 
 
 def test_reports_render_both_approved_pdfs_inline(page):
