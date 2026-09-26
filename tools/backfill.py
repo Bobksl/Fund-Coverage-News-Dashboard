@@ -25,7 +25,8 @@ def load(data_dir):
     return json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'version': 1, 'cards': {}}
 
 
-def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_unassessed=False, cache_path=None):
+def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_unassessed=False, cache_path=None,
+        rebrief_older_prompt=False):
     now = now or datetime.now(timezone.utc)
     data_dir = Path(data_dir)
     side = load(data_dir)
@@ -36,7 +37,8 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
         if entry is None or entry.get('card_sha256') != news_events.card_hash(card):
             return False
         failed = 'assessment' in entry and not entry['assessment'].get('assessable')
-        return not (retry_unassessed and failed)
+        older = 'assessment' in entry and entry.get('prompt_version') != summarize.PROMPT_VERSION
+        return not ((retry_unassessed and failed) or (rebrief_older_prompt and older))
 
     todo = [c for c in cards if not (c.get('assessment') or {}).get('assessable')
             and 'news.google.com' not in c['source']['url'] and not settled(c)]
@@ -81,9 +83,10 @@ def main():
     parser.add_argument('--data-dir', type=Path, default=site_data.DATA_DIR)
     parser.add_argument('--max-cards', type=int, default=100)
     parser.add_argument('--retry-unassessed', action='store_true', help='re-brief entries whose assessment failed')
+    parser.add_argument('--rebrief-older-prompt', action='store_true', help='re-brief entries from an older prompt version')
     args = parser.parse_args()
     stats = run(args.data_dir, site_data.load_rules(), max_cards=args.max_cards,
-                retry_unassessed=args.retry_unassessed, cache_path=CACHE,
+                retry_unassessed=args.retry_unassessed, rebrief_older_prompt=args.rebrief_older_prompt, cache_path=CACHE,
                 retrieve=functools.partial(source_evidence.retrieve, cache_dir=source_evidence.CACHE_DIR))
     print(json.dumps(stats, ensure_ascii=False, indent=2))
 

@@ -115,3 +115,17 @@ def test_retry_unassessed_rebriefs_only_failed_entries_and_caches_raw_answers(tm
     assert json.loads((tmp_path / 'cache.json').read_text(encoding='utf-8'))
     again = backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5, retry_unassessed=True)
     assert post.calls == 2 and again['updated'] == 0  # assessed entries are settled
+
+
+def test_older_prompt_entries_are_rebriefed_only_on_request(tmp_path):
+    c = card('0000000000f1', 'https://alternativecreditinvestor.com/f1/')
+    data = archive(tmp_path, [c])
+    backfill.run(data, RULES, retrieve=retriever([]), post=FakePost(BRIEF), max_cards=5)
+    side = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))
+    side['cards'][c['id']]['prompt_version'] = 'brief-v0-old'
+    (data / 'backfill.json').write_text(json.dumps(side), encoding='utf-8')
+    post = FakePost(dict(BRIEF, assessment=dict(BRIEF['assessment'], routine=True)))
+    assert backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5)['updated'] == 0
+    stats = backfill.run(data, RULES, retrieve=retriever([]), post=post, max_cards=5, rebrief_older_prompt=True)
+    side = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))
+    assert stats['updated'] == 1 and side['cards'][c['id']]['assessment']['routine'] is True

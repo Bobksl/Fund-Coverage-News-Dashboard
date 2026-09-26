@@ -72,3 +72,24 @@ def test_quotes_tolerate_typography_and_single_item_lists_but_not_paraphrase():
     assert news_priority.validate_assessment(ok, item)['assessable']
     paraphrase = dict(base, quotes={'severity': 'orders apply to three funds', 'linkage': 'The regulator said'})
     assert not news_priority.validate_assessment(paraphrase, item)['assessable']
+
+
+def test_routine_disclosures_rank_below_non_routine_items_of_the_same_severity():
+    text = 'OTF sold unregistered Class I shares to feeder vehicles and restated its monthly distribution. CIFC launched a strategy.'
+    item = {'title': 'OTF 8-K', 'text': text}
+    base = {'severity': 'bounded', 'linkage': 'direct', 'current_adverse': False, 'resolved': False, 'deadline_at': None,
+            'reason_en': 'Routine.', 'reason_zh': '例行披露。',
+            'quotes': {'severity': 'restated its monthly distribution', 'linkage': 'OTF sold unregistered Class I shares'}}
+    routine = news_priority.classify(news_priority.validate_assessment(dict(base, routine=True), item), as_of=NOW)
+    launch = news_priority.classify(news_priority.validate_assessment(base, item), as_of=NOW)
+    assert routine['priority'] == launch['priority'] == 'useful'
+    assert routine['routine'] is True and launch['routine'] is False  # missing flag means not routine
+    old_primary = dict(routine, evidence_strength='primary')
+    events = [{'event_id': 'filing', 'last_material_update_at': '2026-09-23T00:00:00+00:00', 'priority': old_primary},
+              {'event_id': 'launch', 'last_material_update_at': '2026-09-17T00:00:00+00:00', 'priority': dict(launch, linkage='sector')}]
+    assert [e['event_id'] for e in sorted(events, key=news_priority.rank_key)] == ['launch', 'filing']
+    critical = dict(launch, priority='important', severity='substantial')
+    assert news_priority.rank_key({'event_id': 'x', 'last_material_update_at': NOW, 'priority': critical}) < \
+        news_priority.rank_key({'event_id': 'y', 'last_material_update_at': NOW, 'priority': launch})
+    junk = news_priority.validate_assessment(dict(base, routine='yes'), item)
+    assert junk['assessable'] and junk['routine'] is False

@@ -8,6 +8,9 @@ VERSION = 'priority-v1'
 ORDERS = {
     'priority': ['urgent', 'important', 'useful', 'needs_review'],
     'severity': ['critical', 'substantial', 'bounded', 'unknown'],
+    # User decision 26 Sep 2026: scheduled/administrative disclosures rank below non-routine items of the
+    # same class and severity (e.g. a BDC's monthly share sale below a strategy launch).
+    'routine': [False, True],
     'time_sensitivity': ['48h', '7d', 'monitor'],
     'linkage': ['direct', 'sector', 'indirect', 'unknown'],
     'evidence_strength': ['primary', 'reported', 'unknown'],
@@ -83,7 +86,8 @@ def validate_assessment(raw, item):
                for lang in ('en', 'zh')) or not re.search(r'[\u4e00-\u9fff]', raw['reason_zh']):
         return result
     result.update({key: raw[key] for key in ('severity', 'linkage', 'current_adverse', 'resolved')})
-    result.update(assessable=True, deadline_at=deadline, evidence_strength='reported',
+    # Routine only demotes, so it needs no quote; anything but a real boolean counts as not routine.
+    result.update(assessable=True, deadline_at=deadline, evidence_strength='reported', routine=raw.get('routine') is True,
                   reason={'en': raw['reason_en'], 'zh': raw['reason_zh']}, failure=None)
     # Primary strength requires a separately verified source classification; model cannot grant it.
     if item.get('verified_primary_source') is True:
@@ -96,7 +100,7 @@ def classify(assessment, *, as_of=None):
     now = instant(as_of)
     a = assessment if isinstance(assessment, dict) else {}
     p = {'version': VERSION, 'as_of': as_of, 'priority': 'needs_review', 'severity': 'unknown',
-         'time_sensitivity': 'monitor', 'linkage': 'unknown', 'evidence_strength': 'unknown',
+         'time_sensitivity': 'monitor', 'linkage': 'unknown', 'evidence_strength': 'unknown', 'routine': False,
          'potential_urgent': a.get('potential_urgent') is True,
          'reason': {'en': a.get('failure') or 'Evidence has not been assessed.',
                     'zh': '证据尚未充分核实，需人工复核。'}}
@@ -126,7 +130,7 @@ def classify(assessment, *, as_of=None):
     tier = 'urgent' if critical or material_deadline else (
         'important' if a['severity'] in ('critical', 'substantial') else 'useful')
     p.update(priority=tier, severity=a['severity'], time_sensitivity=bucket,
-             linkage=a['linkage'], evidence_strength=a['evidence_strength'],
+             linkage=a['linkage'], evidence_strength=a['evidence_strength'], routine=a.get('routine') is True,
              potential_urgent=False, reason=a['reason'])
     return p
 
