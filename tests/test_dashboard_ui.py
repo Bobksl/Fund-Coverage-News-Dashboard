@@ -126,6 +126,7 @@ def test_cross_date_pairs_show_further_coverage_and_link_back(page):
 
 
 def test_same_day_pairs_expand_to_both_sources(page):
+    from tools.summarize import strip_absence_claims
     open_site(page)
     for event in REVIEWED:
         for day, view in event["date_views"].items():
@@ -140,7 +141,8 @@ def test_same_day_pairs_expand_to_both_sources(page):
             assert items.count() == len(view["member_card_ids"])
             for index, member in enumerate(view["member_card_ids"]):
                 text = items.nth(index).text_content()
-                assert CARDS[member]["headline"]["en"] in text and CARDS[member]["summary"]["en"] in text
+                shown = strip_absence_claims(CARDS[member]["summary"]["en"])  # display hides unread-article claims
+                assert CARDS[member]["headline"]["en"] in text and shown in text
 
 
 def test_all_dates_lists_each_event_once_and_every_article(page):

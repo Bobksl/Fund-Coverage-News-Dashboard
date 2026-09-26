@@ -265,7 +265,9 @@ ABSENCE_ZH = re.compile(r"(未|没有)(?:进一步)?予?(提供|披露|给出|�
 
 def strip_absence_claims(text, lang="en"):
     """Drop sentences asserting that the (unread) article gives no details; never return empty."""
-    splitter, pattern = (r"(?<=[.!?])\s+", ABSENCE_EN) if lang == "en" else (r"(?<=[。！？])", ABSENCE_ZH)
+    # A sentence may end in a closing quote or bracket: 'titled "Soft defaults." No further details...'
+    splitter, pattern = ((r"(?<=[.!?])\s+|(?<=[.!?][\"'”’)])\s+", ABSENCE_EN) if lang == "en"
+                         else (r"(?<=[。！？])|(?<=[。！？][”’）])", ABSENCE_ZH))
     kept = [s for s in re.split(splitter, text or "") if s.strip() and not pattern.search(s)]
     return ("" if lang == "zh" else " ").join(kept).strip() or (text or "").strip()
 

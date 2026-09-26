@@ -253,7 +253,7 @@ const ABSENCE = {
 };
 
 function stripAbsence(text, lang) {
-  const parts = (text || "").split(lang === "zh" ? /(?<=[。！？])/ : /(?<=[.!?])\s+/);
+  const parts = (text || "").split(lang === "zh" ? /(?<=[。！？])|(?<=[。！？][”’）])/ : /(?<=[.!?])\s+|(?<=[.!?]["'”’)])\s+/);
   const kept = parts.filter((part) => part.trim() && !ABSENCE[lang === "zh" ? "zh" : "en"].test(part));
   return kept.join(lang === "zh" ? "" : " ").trim() || (text || "").trim();
 }
