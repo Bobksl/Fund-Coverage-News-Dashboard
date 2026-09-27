@@ -65,15 +65,22 @@ def ask_gdelt(gdelt, card):
 
 
 def best_match(card, entries):
+    def blocked(url):
+        try:
+            host = (urllib.parse.urlsplit(url).hostname or '').lower()
+        except ValueError:
+            return True
+        return any(host == domain or host.endswith('.' + domain) for domain in BLOCKED)
+
     wanted = set(words(card.get('source_headline') or card['headline']['en']))
     scored = [(len(wanted & set(words(e['title']))) / max(1, len(wanted)), e['url']) for e in entries
-              if not any(e['publisher'] == b or e['publisher'].endswith('.' + b) for b in BLOCKED)]
+              if not blocked(e['url'])]
     score, url = max(scored, default=(0, None))
     return url if score >= MATCH else None
 
 
 def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_unassessed=False, cache_path=None,
-        rebrief_older_prompt=False, gdelt=None, sleep=time.sleep):
+        rebrief_older_prompt=False, gdelt=None, resolved_sources=None, card_ids=None, sleep=time.sleep):
     now = now or datetime.now(timezone.utc)
     data_dir = Path(data_dir)
     side = load(data_dir)
@@ -94,6 +101,14 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
 
     todo = [c for c in cards if not (c.get('assessment') or {}).get('assessable')
             and 'news.google.com' not in c['source']['url'] and not settled(c)]
+    mapped = resolved_sources or {}
+    resolved_sources = {c['id']: mapped[c['id']] for c in cards
+                        if isinstance(mapped.get(c['id']), dict)
+                        and mapped[c['id']].get('card_sha256') == news_events.card_hash(c)}
+    # A reviewed link belongs to a specific archived card, even if another member of its
+    # event already has a priority. Keep per-article backfill distinct from event ranking.
+    todo.extend(c for c in cards if c['id'] in resolved_sources and 'news.google.com' in c['source']['url']
+                and not verified(c) and not settled(c))
     if gdelt is not None:
         # One Google-News card per event that has no verified assessment yet.
         events = news_events.build_events(cards, backfill=side)['events']
@@ -102,10 +117,14 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
             members = [by_id[i] for i in event['member_card_ids']]
             if any(verified(m) for m in members):
                 continue
+            if any(m['id'] in resolved_sources for m in members):
+                continue
             pick = next((m for m in sorted(members, key=lambda m: m['id'])
                          if 'news.google.com' in m['source']['url'] and not settled(m)), None)
             if pick:
                 todo.append(pick)
+    if card_ids is not None:
+        todo = [card for card in todo if card['id'] in card_ids]
     summarizer = summarize.Summarizer(rules, post=post, max_calls=2 * max_cards, cache_path=cache_path)
     stats = {'candidates': len(todo), 'updated': 0, 'no_evidence': 0, 'kept_previous': 0, 'resolved': 0,
              'unresolved': 0, 'gdelt_stopped': False, 'errors': []}
@@ -113,25 +132,30 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
     for card in todo[:max_cards]:
         url = card['source']['url']
         resolved = None
+        known = None
         if 'news.google.com' in url:
-            if stats['gdelt_stopped']:
-                continue
-            if asked:
-                sleep(GDELT_INTERVAL_S)
-            asked, found = True, None
-            for attempt in (1, 2):
-                try:
-                    found = ask_gdelt(gdelt, card)
-                    break
-                except fetch_news.RateLimited:
-                    if attempt == 2:
-                        stats['gdelt_stopped'] = True  # GDELT is refusing us: stop, do not hammer it
-                    else:
-                        sleep(GDELT_RETRY_S)
-                except (OSError, ValueError) as error:
-                    stats['errors'].append(f"{card['id']}: GDELT {type(error).__name__}")
-                    break
-            resolved = best_match(card, found or [])
+            known = resolved_sources.get(card['id'])
+            if known:
+                resolved = best_match(card, [known])
+            elif gdelt is not None:
+                if stats['gdelt_stopped']:
+                    continue
+                if asked:
+                    sleep(GDELT_INTERVAL_S)
+                asked, found = True, None
+                for attempt in (1, 2):
+                    try:
+                        found = ask_gdelt(gdelt, card)
+                        break
+                    except fetch_news.RateLimited:
+                        if attempt == 2:
+                            stats['gdelt_stopped'] = True  # GDELT is refusing us: stop, do not hammer it
+                        else:
+                            sleep(GDELT_RETRY_S)
+                    except (OSError, ValueError) as error:
+                        stats['errors'].append(f"{card['id']}: GDELT {type(error).__name__}")
+                        break
+                resolved = best_match(card, found or [])
             if not resolved:
                 if not stats['gdelt_stopped']:
                     stats['unresolved'] += 1
@@ -148,6 +172,7 @@ def run(data_dir, rules, *, retrieve, post=None, max_cards=100, now=None, retry_
                  'checked_at': now.isoformat(timespec='seconds'), 'evidence': item['evidence']}
         if resolved:
             entry['resolved_url'] = resolved
+            entry['resolved_via'] = 'reviewed_source_map' if known else 'gdelt'
         if item['evidence_level'] != 'excerpt':
             stats['no_evidence'] += 1
         else:
@@ -187,11 +212,15 @@ def main():
     parser.add_argument('--retry-unassessed', action='store_true', help='re-brief entries whose assessment failed')
     parser.add_argument('--rebrief-older-prompt', action='store_true', help='re-brief entries from an older prompt version')
     parser.add_argument('--gdelt', action='store_true', help='look up Google News cards in GDELT (paced, best effort)')
+    parser.add_argument('--resolved-sources', type=Path, help='reviewed card-id to source URL/title map')
+    parser.add_argument('--card-id', action='append', help='assess only this card ID; may be repeated')
     args = parser.parse_args()
     stats = run(args.data_dir, site_data.load_rules(), max_cards=args.max_cards,
                 retry_unassessed=args.retry_unassessed, rebrief_older_prompt=args.rebrief_older_prompt, cache_path=CACHE,
                 retrieve=functools.partial(source_evidence.retrieve, cache_dir=source_evidence.CACHE_DIR),
-                gdelt=fetch_news.http_get if args.gdelt else None)
+                gdelt=fetch_news.http_get if args.gdelt else None,
+                resolved_sources=json.loads(args.resolved_sources.read_text(encoding='utf-8'))
+                if args.resolved_sources else None, card_ids=set(args.card_id) if args.card_id else None)
     print(json.dumps(stats, ensure_ascii=False, indent=2))
 
 

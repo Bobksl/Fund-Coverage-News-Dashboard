@@ -2,7 +2,7 @@ import copy
 import json
 from pathlib import Path
 
-from tools import news_events
+from tools import news_events, news_priority
 
 FIXTURE = Path(__file__).parent / 'fixtures' / 'news_duplicate_cards.json'
 
@@ -35,6 +35,22 @@ def test_reviewed_mapping_does_not_apply_after_headline_changes():
     a, b = copy.deepcopy(cards()[:2])
     b['headline']['en'] = 'Apollo private credit fund redemption requests RISE in fourth quarter'
     assert len(news_events.build_events([a, b])['events']) == 2
+
+
+def test_pinned_unassessed_display_card_uses_a_validated_group_member_for_event_priority():
+    a, b = copy.deepcopy(cards()[:2])
+    a.pop('assessment', None)
+    b['assessment'] = {'version': news_priority.VERSION, 'assessable': True, 'severity': 'bounded', 'linkage': 'direct',
+                       'current_adverse': False, 'resolved': False, 'deadline_at': None,
+                       'evidence_strength': 'reported', 'routine': False,
+                       'reason': {'en': 'Source-backed event.', 'zh': '已核实的事件。'}}
+    group = {'event_id': 'evt-pinned-test', 'representative_card_id': a['id'],
+             'members': [{'id': c['id'], 'headline': c['headline']['en'], 'card_sha256': news_events.card_hash(c)}
+                         for c in (a, b)]}
+    event = news_events.build_events([a, b], groups=[group], as_of='2026-09-26T12:00:00+00:00')['events'][0]
+    assert event['representative_card_id'] == a['id']
+    assert event['priority_source_card_id'] == b['id']
+    assert event['priority']['priority'] == 'useful'
 
 
 def test_source_tracking_alias_preserves_query_identity_and_decimal_numbers():

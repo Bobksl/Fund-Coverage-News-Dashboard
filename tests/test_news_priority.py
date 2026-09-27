@@ -97,3 +97,16 @@ def test_routine_disclosures_rank_below_non_routine_items_of_the_same_severity()
         news_priority.rank_key({'event_id': 'y', 'last_material_update_at': NOW, 'priority': launch})
     junk = news_priority.validate_assessment(dict(base, routine='yes'), item)
     assert junk['assessable'] and junk['routine'] is False
+
+
+def test_unread_article_absence_claims_cannot_be_priority_reasons():
+    raw = {'severity': 'substantial', 'linkage': 'direct', 'current_adverse': False,
+           'resolved': False, 'deadline_at': None,
+           'reason_en': 'A platform launched, but no capital commitment or transaction was disclosed.',
+           'reason_zh': '平台已经推出，但未披露资金承诺或具体交易。',
+           'quotes': {'severity': 'material liquidity failure', 'linkage': 'OTF suspended withdrawals'}}
+    checked = news_priority.validate_assessment(raw, ITEM)
+    ranked = news_priority.classify(checked, as_of=NOW)
+    assert checked['assessable'] and ranked['priority'] == 'important'
+    assert 'disclosed' not in checked['reason']['en']
+    assert '未披露' not in ranked['reason']['zh']
