@@ -37,6 +37,21 @@ def test_reviewed_mapping_does_not_apply_after_headline_changes():
     assert len(news_events.build_events([a, b])['events']) == 2
 
 
+def test_exclusion_needs_exact_frozen_member_hashes():
+    a, b = copy.deepcopy(cards()[:2])
+    group = {'event_id': 'evt-reviewed-scope',
+             'members': [{'id': c['id'], 'headline': c['headline']['en'], 'card_sha256': news_events.card_hash(c)}
+                         for c in (a, b)]}
+    review = {'event_id': 'evt-reviewed-scope', 'scope': 'exclude',
+              'card_hashes': {c['id']: news_events.card_hash(c) for c in (a, b)}}
+    overlay = {'groups': [group], 'reviewed_relevance': [review]}
+    event = news_events.build_events([a, b], overlay=overlay)['events'][0]
+    assert event['reviewed_relevance'] == 'exclude'
+    b['summary']['en'] = 'Changed source card.'
+    changed = news_events.build_events([a, b], overlay=overlay)['events']
+    assert all(e.get('reviewed_relevance') != 'exclude' for e in changed)
+
+
 def test_pinned_unassessed_display_card_uses_a_validated_group_member_for_event_priority():
     a, b = copy.deepcopy(cards()[:2])
     a.pop('assessment', None)

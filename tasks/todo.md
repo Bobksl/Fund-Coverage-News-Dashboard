@@ -1,5 +1,7 @@
 # Sunday extension and accuracy checklist
 
+27 September local review: [82-row handback](../docs/reviewed-82-handback-2026-09-27.md). All 21 identity/date actions were checked against sources before priority changes. Current local projection is 249 cards, 160 events, 128 visible (106 Useful, 9 Important, 13 Needs review); 32 excluded events remain in the index. The historical counts below describe earlier snapshots.
+
 Handovers (26 Sep): independent final review for ChatGPT, ../docs/handover-chatgpt-final-review.md; remaining work for Claude, ../docs/handover-claude-next.md.
 
 Plan: [plan.md](plan.md). Detailed design: [deduplication and ranking](../docs/deduplication-ranking-design.md). Status: pipeline, UI and approved EN/ZH reports deployed on 24 September; [release evidence](../docs/release-2026-09-24.md). Preserve all existing features and UI controls.

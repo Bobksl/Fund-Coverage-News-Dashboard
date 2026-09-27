@@ -384,6 +384,7 @@ function dayEntries(day) {
     }
     if (seen.has(event)) continue;
     seen.add(event);
+    if (event.reviewed_relevance === "exclude") continue;
     const view = event.date_views[day];
     const rep = byId.get(view.representative_card_id);
     const earlier = Object.keys(event.date_views).sort()[0];
@@ -409,6 +410,7 @@ function allEntries() {
       const present = event.member_card_ids.filter((id) => cards.has(id));
       if (present.length === 0) continue; // All of its dates failed to load; reported in the notice.
       for (const id of present) mapped.add(id);
+      if (event.reviewed_relevance === "exclude") continue;
       const sources = new Map(listOf(event.sources).map((source) => [source && source.card_id, source]));
       const time = Date.parse(event.last_material_update_at);
       entries.push({rep: cards.get(event.representative_card_id) || cards.get(present[0]),
