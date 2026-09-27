@@ -1,7 +1,33 @@
 {
-  "version": 2,
+  "version": 3,
   "note": "Reviewed event overlay. Raw cards are never rewritten; changed cards invalidate their decisions.",
   "groups": [
+    {
+      "event_id": "evt-01023df58888",
+      "members": [
+        {
+          "id": "01023df58888",
+          "headline": "US insurance regulators defend oversight of insurers' growing private credit ties",
+          "card_sha256": "97877bfd34fea5df92da15daf32851d19b6cd2956011db17e9c8013429736cad"
+        },
+        {
+          "id": "a7b9323caaae",
+          "headline": "NAIC targets $1.2 trillion insurer private credit with tighter solvency rules",
+          "card_sha256": "d9914660371fc07cb8d64453768565df4a7d4236a7014b622d6c77654fc794ca"
+        },
+        {
+          "id": "b489e0c0aa7a",
+          "headline": "NAIC defends insurance oversight as Warren presses on private credit ties",
+          "card_sha256": "5025ef759b274478321155a17cb2f99dbf339a1769772dcd2ecc58154662a7f2"
+        }
+      ],
+      "reason": "Same NAIC response to Senator Warren describing existing and adopted insurer private-credit oversight measures.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
+      "representative_card_id": "b489e0c0aa7a",
+      "aliases": [
+        "evt-a7b9323caaae"
+      ]
+    },
     {
       "event_id": "evt-06b3269f6fce",
       "members": [
@@ -97,17 +123,75 @@
       ]
     },
     {
+      "event_id": "evt-36c4898b98a1",
+      "members": [
+        {
+          "id": "36c4898b98a1",
+          "headline": "Private credit roundup: Secondary buyers offer fund investors liquidity at steep discounts",
+          "card_sha256": "dff1252fb6e0745a9c32c431b82d62c48a0a5425ff745a55133b0f39e2b8282e"
+        },
+        {
+          "id": "7d740a19639c",
+          "headline": "Private credit roundup: Secondary buyers offer fund investors liquidity at steep discounts",
+          "card_sha256": "af3017906edf968f8e81f63e5c7512da311d688c3ddc72d11ccfb44040c88e67"
+        }
+      ],
+      "reason": "Duplicate 25 Sep Reuters private-credit roundup with matching source fingerprint.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
+      "representative_card_id": "36c4898b98a1",
+      "aliases": [
+        "evt-7d740a19639c"
+      ]
+    },
+    {
+      "event_id": "evt-3c569a47bfba",
+      "members": [
+        {
+          "id": "1f80f65f5807",
+          "headline": "Oracle, Blue Owl Project Delay Sends Ripples Through AI Financing, Sources Say",
+          "card_sha256": "9a0f6a2370838d1df4218bc9ee0bc1ec43cad1d16244f416e8d7f77f63719db2"
+        },
+        {
+          "id": "3c569a47bfba",
+          "headline": "Oracle, Blue Owl project delay sends ripples through AI financing",
+          "card_sha256": "32a7ed933889c9706a7fce6df9f22220ad79913c6b853b2ea21f1c13ea50d490"
+        },
+        {
+          "id": "a835cc3b1da6",
+          "headline": "Oracle-Blue Owl project delay puts spotlight on AI financing - report",
+          "card_sha256": "a6b8d2bebc26fb8cec2bc141a94daac61f1760a93b3af1fe91d75b031ecf0397"
+        }
+      ],
+      "reason": "Same Reuters analysis of Oracle, Blue Owl and Project Jupiter delay.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
+      "representative_card_id": "3c569a47bfba",
+      "aliases": [
+        "evt-1f80f65f5807",
+        "evt-a835cc3b1da6"
+      ]
+    },
+    {
       "event_id": "evt-6bbc0e19741a",
       "members": [
+        {
+          "id": "54436093da1a",
+          "headline": "KKR Commits $350 Million To Launch Akrapoint Commercial Capital Equipment Finance Platform",
+          "card_sha256": "cc4e16d356c9ed40fef49d6bf3b66f58b38e1dacb0e0b8d253822b27301cf8d7"
+        },
+        {
+          "id": "54f7371abb8d",
+          "headline": "KKR launches equipment finance subsidiary",
+          "card_sha256": "e205b285c0fd3adef1a7ce0c37c91ec6ff5e7fd28c83cdf5fcaddd2c5f1cb21f"
+        },
         {
           "id": "6bbc0e19741a",
           "headline": "KKR commits $350m to launch equipment finance platform Akrapoint",
           "card_sha256": "716661e28fbb79b95a959a792c149544f48643a799cdb4750b8258c95302429c"
         },
         {
-          "id": "a128012f7260",
-          "headline": "KKR launches equipment finance platform Akrapoint Commercial Capital",
-          "card_sha256": "72786a7050ac6c6f55b608555d8d35f74a20ef20d26076541ed6b46e3b1c3ef8"
+          "id": "6c177e5368f1",
+          "headline": "KKR Commits $350 Million to Launch Equipment Finance Platform Akrapoint",
+          "card_sha256": "0854ee0234ad801a7eda3d05b1421077aec746587856696d33c6f9fa7add0ebf"
         },
         {
           "id": "85520242eb65",
@@ -120,19 +204,14 @@
           "card_sha256": "6d5b94d0c7a164e98d81d6e7b6c3026f2b514552150c2396be5f7c461c1e2a9a"
         },
         {
-          "id": "6c177e5368f1",
-          "headline": "KKR Commits $350 Million to Launch Equipment Finance Platform Akrapoint",
-          "card_sha256": "0854ee0234ad801a7eda3d05b1421077aec746587856696d33c6f9fa7add0ebf"
+          "id": "a128012f7260",
+          "headline": "KKR launches equipment finance platform Akrapoint Commercial Capital",
+          "card_sha256": "72786a7050ac6c6f55b608555d8d35f74a20ef20d26076541ed6b46e3b1c3ef8"
         },
         {
-          "id": "54436093da1a",
-          "headline": "KKR Commits $350 Million To Launch Akrapoint Commercial Capital Equipment Finance Platform",
-          "card_sha256": "cc4e16d356c9ed40fef49d6bf3b66f58b38e1dacb0e0b8d253822b27301cf8d7"
-        },
-        {
-          "id": "54f7371abb8d",
-          "headline": "KKR launches equipment finance subsidiary",
-          "card_sha256": "e205b285c0fd3adef1a7ce0c37c91ec6ff5e7fd28c83cdf5fcaddd2c5f1cb21f"
+          "id": "d647e5a595d1",
+          "headline": "KKR launches a lender for small businesses buying work equipment",
+          "card_sha256": "3578a472d01893b7cbeb4f0aa565b21044a001c18d957906ac22734aa8579a62"
         },
         {
           "id": "f0ce070894eb",
@@ -140,13 +219,18 @@
           "card_sha256": "7761a55e18567a162bbee959da2dd19d4417f816dd8e3cef40362fc62ce62b48"
         },
         {
+          "id": "fd48ddfbbf4d",
+          "headline": "KKR to launch equipment finance platform",
+          "card_sha256": "e7895cdb2c5245ba4266fa6ce9ffb96a7010216c984e2d61c6de027b921ab8a2"
+        },
+        {
           "id": "ff992dfd6991",
           "headline": "KKR Launches Equipment Finance Platform Akrapoint Commercial Capital",
           "card_sha256": "c594c4dddd789aad1f36dab66de5e6148d18e63c6a942971012139078a65a104"
         }
       ],
-      "reason": "KKR launches Akrapoint Commercial Capital, a US mid-ticket equipment finance platform, with $350m committed through its asset-based finance strategy (22 Sep 2026; KKR's Business Wire release and ten rewrites).",
-      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "reason": "Same KKR Akrapoint equipment-finance launch; mixed digest coverage does not add a second event.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
       "aliases": [
         "evt-54436093da1a",
         "evt-54f7371abb8d",
@@ -154,7 +238,9 @@
         "evt-85520242eb65",
         "evt-9bf89ad0481c",
         "evt-a128012f7260",
+        "evt-d647e5a595d1",
         "evt-f0ce070894eb",
+        "evt-fd48ddfbbf4d",
         "evt-ff992dfd6991"
       ],
       "representative_card_id": "6bbc0e19741a"
@@ -185,6 +271,41 @@
         "evt-ed1f1f0fc2a6"
       ],
       "representative_card_id": "ed1f1f0fc2a6"
+    },
+    {
+      "event_id": "evt-89fdd706bd80",
+      "members": [
+        {
+          "id": "89fdd706bd80",
+          "headline": "KKR launches equipment finance platform; Neuberger cuts US$700m forward flow",
+          "card_sha256": "58e6aec4464d39d10ba2e36b36d75faa00ae91985055e24615745933274258ba"
+        }
+      ],
+      "reason": "Mixed SCI digest: Neuberger/Pagaya forward-flow agreement is the uncovered action; KKR Akrapoint is a related existing event.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
+      "representative_card_id": "89fdd706bd80",
+      "aliases": []
+    },
+    {
+      "event_id": "evt-92dc00f248ce",
+      "members": [
+        {
+          "id": "7fde19569bd8",
+          "headline": "Blue Owl leads $2.4 billion Iren debt deal for Nvidia chip purchases",
+          "card_sha256": "9f0a23b514b2a62b1996807d26cc7fba3a24a94cad838a9f815c4384070d872b"
+        },
+        {
+          "id": "92dc00f248ce",
+          "headline": "Blue Owl Managed Funds Lead $2.4 Billion AI Factory Financing for IREN",
+          "card_sha256": "24a8f96c2e6b8296440fed49a753ea8a7d411642c1b740a833da3eeda3aae161"
+        }
+      ],
+      "reason": "Same $2.4bn IREN GPU financing announced by Blue Owl on 28 Aug; the September card is later coverage.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
+      "representative_card_id": "92dc00f248ce",
+      "aliases": [
+        "evt-7fde19569bd8"
+      ]
     },
     {
       "event_id": "evt-a0f3329b83e8",
@@ -237,26 +358,6 @@
       ]
     },
     {
-      "event_id": "evt-c14edac88c85",
-      "members": [
-        {
-          "id": "c14edac88c85",
-          "headline": "Apollo Eyes DePuy Synthes and Adds $5.5 Billion in Auto Loans",
-          "card_sha256": "87ca4f1ccd92360f9f7c45539b897228da95cfbfaa62e24df331618cf4bf8c33"
-        },
-        {
-          "id": "9bd9bc7b561e",
-          "headline": "Apollo Eyes DePuy Synthes, Adds $5.5 Billion in Auto Loans",
-          "card_sha256": "6e470ea14aad615781bbf1e53790c29ebe90cf2daf29b2b19049a52972c29ffd"
-        }
-      ],
-      "reason": "The same Simply Wall St roundup under two URLs (identical timestamp) mixing a DePuy Synthes private-equity bid with the Truist auto loans; kept apart from the Truist event and linked as related.",
-      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
-      "aliases": [
-        "evt-9bd9bc7b561e"
-      ]
-    },
-    {
       "event_id": "evt-c5bdabf2be3f",
       "members": [
         {
@@ -277,24 +378,84 @@
       ]
     },
     {
-      "event_id": "evt-d796cd9e96a0",
+      "event_id": "evt-d15d91b0dc44",
       "members": [
         {
-          "id": "d796cd9e96a0",
-          "headline": "Apollo Buys $5.5 Billion of Truist's Near-Prime Car Loans",
-          "card_sha256": "1fe6097218e4b04e7622ed9fdbbe64f85ab37a0560061db76b73c7c5a7bc77c1"
+          "id": "a2dc87403c95",
+          "headline": "Ares private credit fund redemption requests slightly ease in third quarter",
+          "card_sha256": "4ceacbedf5257b3bec3cf8b90d5197d7734bd374dc3f2d856649ad6e8c3715d6"
         },
+        {
+          "id": "d15d91b0dc44",
+          "headline": "Ares fund withdrawal requests decline as private credit redemptions ease",
+          "card_sha256": "41807ddbca901988a1defdaa107eeba3ce53d7a6c7a6bb1125bbd806e6c1d32f"
+        },
+        {
+          "id": "d88e57713879",
+          "headline": "Ares private credit fund sees redemptions ease as withdrawal pressure moderates",
+          "card_sha256": "de03cae404b2607b8d2905aacea255dc70e04e5a084ffe5782d8169222c9fa6a"
+        }
+      ],
+      "reason": "Same Ares Strategic Income Fund Q3 tender: 13.1% requests, 5% cap.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
+      "representative_card_id": "d15d91b0dc44",
+      "aliases": [
+        "evt-a2dc87403c95",
+        "evt-d88e57713879"
+      ]
+    },
+    {
+      "event_id": "evt-d55d8b4782bb",
+      "members": [
+        {
+          "id": "c406b3a14e7b",
+          "headline": "Blue Owl raises $1.1B in junk bond offering",
+          "card_sha256": "68df0c6cd5c6bc912bc4d9867206f5134855ad818852179dd89ed1589641ac1e"
+        },
+        {
+          "id": "d55d8b4782bb",
+          "headline": "Blue Owl-backed data center borrower lands $1.1 billion with fat junk-bond yield",
+          "card_sha256": "8cfed1eb0d1524d90b855261309ba9860684893586460f708f865a8f1d7a8469"
+        }
+      ],
+      "reason": "Same $1.1bn data-centre borrower notes; the issuer is a Blue Owl-backed developer, not Blue Owl.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
+      "representative_card_id": "d55d8b4782bb",
+      "aliases": [
+        "evt-c406b3a14e7b"
+      ]
+    },
+    {
+      "event_id": "evt-d796cd9e96a0",
+      "members": [
         {
           "id": "777afd02d6c0",
           "headline": "Truist to Sell $5.5 Billion in Auto Loans to Apollo as New CEO Pushes Bank Overhaul",
           "card_sha256": "6813f14cfa0b7c6d7bc4ccdcf59b050778e459d1b9b2f4a0a0af04d0a699073b"
+        },
+        {
+          "id": "9bd9bc7b561e",
+          "headline": "Apollo Eyes DePuy Synthes, Adds $5.5 Billion in Auto Loans",
+          "card_sha256": "6e470ea14aad615781bbf1e53790c29ebe90cf2daf29b2b19049a52972c29ffd"
+        },
+        {
+          "id": "c14edac88c85",
+          "headline": "Apollo Eyes DePuy Synthes and Adds $5.5 Billion in Auto Loans",
+          "card_sha256": "87ca4f1ccd92360f9f7c45539b897228da95cfbfaa62e24df331618cf4bf8c33"
+        },
+        {
+          "id": "d796cd9e96a0",
+          "headline": "Apollo Buys $5.5 Billion of Truist's Near-Prime Car Loans",
+          "card_sha256": "1fe6097218e4b04e7622ed9fdbbe64f85ab37a0560061db76b73c7c5a7bc77c1"
         }
       ],
-      "reason": "Apollo buys $5.5bn of Truist's near-prime auto loans (Bloomberg 15 Sep 2026; later coverage).",
-      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources",
+      "reason": "The two mixed Apollo headlines also cover the same $5.5bn Truist auto-loan purchase; DePuy is outside this event subject.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
       "aliases": [
-        "evt-777afd02d6c0"
-      ]
+        "evt-777afd02d6c0",
+        "evt-c14edac88c85"
+      ],
+      "representative_card_id": "d796cd9e96a0"
     },
     {
       "event_id": "evt-e1c1f79fff6a",
@@ -607,11 +768,6 @@
       "event_id": "evt-reviewed-003",
       "members": [
         {
-          "id": "e1ef992333f2",
-          "headline": "Australia's corporate regulator calls out 'poor practices' in private credit",
-          "card_sha256": "bea64a084ad1f9317d4bdff7909fa00ce09d7279de781f4102736530e533a11c"
-        },
-        {
           "id": "25ad3e7e022e",
           "headline": "Australia's corporate regulator calls out 'poor practices' in private credit",
           "card_sha256": "28a05c9b0549a6a430cf52bff6f80fbd9d46e004034752a7d508a605daa64c6d"
@@ -620,10 +776,20 @@
           "id": "8e7307b60990",
           "headline": "Australia's ASIC flags poor practices in private credit",
           "card_sha256": "c4adc0028d0bc4a951cba599e0a0e3b00e8fe0ca59c66ed67ac70187c24138fb"
+        },
+        {
+          "id": "ca2ccf9f530d",
+          "headline": "Australian regulator warns private credit firms of more enforcement after Bathla insolvency",
+          "card_sha256": "fcf51e54e201fee0f488837f03549783cd62045e98069251b6f59a40d105a869"
+        },
+        {
+          "id": "e1ef992333f2",
+          "headline": "Australia's corporate regulator calls out 'poor practices' in private credit",
+          "card_sha256": "bea64a084ad1f9317d4bdff7909fa00ce09d7279de781f4102736530e533a11c"
         }
       ],
-      "reason": "ASIC's 22 Sep 2026 sector statement on poor private-credit practices (same Edge Malaysia article under two headlines plus TradingView). Kept separate from the Remara stop orders, which are a distinct action.",
-      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check",
+      "reason": "ASIC enforcement warning and Bathla reference in the same 22 Sep speech; Remara stop orders remain related.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md",
       "history": [
         {
           "decision": "September 23 archive audit",
@@ -635,8 +801,10 @@
         }
       ],
       "aliases": [
-        "evt-8e7307b60990"
-      ]
+        "evt-8e7307b60990",
+        "evt-ca2ccf9f530d"
+      ],
+      "representative_card_id": "8e7307b60990"
     },
     {
       "event_id": "evt-reviewed-004",
@@ -824,16 +992,6 @@
   "relations": [
     {
       "event_ids": [
-        "evt-a0f3329b83e8",
-        "evt-reviewed-003",
-        "evt-ca2ccf9f530d",
-        "evt-ae5f41c3bc26"
-      ],
-      "reason": "Same regulator and day or background (Bathla), but distinct actions: Remara stop orders, sector statement, enforcement warning coverage not verified as the same statement, and the earlier Bathla collapse.",
-      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check"
-    },
-    {
-      "event_ids": [
         "evt-reviewed-007",
         "evt-06b3269f6fce"
       ],
@@ -851,20 +1009,46 @@
     },
     {
       "event_ids": [
-        "evt-6bbc0e19741a",
-        "evt-89fdd706bd80",
-        "evt-fd48ddfbbf4d"
+        "evt-a0f3329b83e8",
+        "evt-reviewed-003",
+        "evt-ae5f41c3bc26"
       ],
-      "reason": "Digest items combining the Akrapoint launch with unrelated stories (Neuberger forward flow; Goldman data-security investment).",
-      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources"
+      "reason": "Remara stop orders, ASIC sector warning and Bathla collapse are related but distinct actions.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
     },
     {
       "event_ids": [
-        "evt-d796cd9e96a0",
-        "evt-c14edac88c85"
+        "evt-6bbc0e19741a",
+        "evt-89fdd706bd80"
       ],
-      "reason": "Roundup that repeats the Truist auto-loan purchase alongside a private-equity bid.",
-      "decision": "migration-2026-09-26: archive-wide same-story sweep prompted by the acceptance packet (grouping errors in 7/20 sampled events); each family checked against headlines, figures, dates and accessible sources"
+      "reason": "SCI digest covers KKR Akrapoint and the distinct Pagaya-Neuberger forward flow.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "event_ids": [
+        "evt-reviewed-007",
+        "evt-06b3269f6fce",
+        "evt-13e9ceb621b7"
+      ],
+      "reason": "Private-credit default release, methodology explainer and Houlihan report are related, not members.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "event_ids": [
+        "evt-36c4898b98a1",
+        "evt-ed49eab633f1"
+      ],
+      "reason": "Reuters sector roundup discusses the separate Finimize secondary-market tender.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "event_ids": [
+        "evt-fb5c98994c34",
+        "evt-f9cf14d408ff",
+        "evt-7b15e82fcf19"
+      ],
+      "reason": "Distinct OTF rating, debt financing and facility actions.",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
     }
   ],
   "corrections": [
@@ -872,12 +1056,729 @@
       "card_id": "852f9bce3cb9",
       "field": "published_at",
       "original": "2026-09-17T08:00:59+00:00",
-      "corrected": "2026-08-18",
+      "corrected": "2026-08-17",
       "event_date": "2026-08-17",
-      "basis": "Original value is the Google News feed timestamp (September observation). Publisher dateline 18 Aug 2026 was read in the endorsed pilot review; automated re-check on 25 Sep returned HTTP 403. The underlying KBRA release is dated 17 Aug 2026 (retrieved 25 Sep).",
-      "evidence_url": "https://scanx.trade/stock-market-news/debt-markets/kbra-assigns-bbb-rating-blue-owl-technology-finance-corp-400m-notes/48552910",
+      "basis": "KBRA original OTF note rating release is dated 17 Aug; the Google feed observation was 17 Sep.",
+      "evidence_url": "https://www.kbra.com/publications/yTtCyjsh/kbra-assigns-rating-to-blue-owl-technology-finance-corp-s-400-million-senior-unsecured-notes-due-2029",
       "card_sha256": "c567a11ce2b79774283f57be035a365491e2df611ca6019afe899adfc045a47e",
-      "decision": "migration-2026-09-25 from pilot-2026-09-24 pass 2 (user-endorsed) plus full-archive membership check"
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "card_id": "f9cf14d408ff",
+      "field": "published_at",
+      "original": "2026-09-11T16:22:48+00:00",
+      "corrected": "2026-09-04",
+      "event_date": "2026-09-04",
+      "basis": "OTF announced the third post-June financing and $800m aggregate raised on 4 Sep.",
+      "evidence_url": "https://www.prnewswire.com/news-releases/blue-owl-technology-finance-corp-closes-150-million-private-placement-of-senior-unsecured-notes-302869693.html",
+      "card_sha256": "081f26ab637ee3242b2c86f8690c5954610ef2bdacd84bc3bcc79977a571349d",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "card_id": "5a89fd2fec03",
+      "field": "published_at",
+      "original": "2026-09-17T12:11:26+00:00",
+      "corrected": "2026-08-05",
+      "event_date": "2026-08-05",
+      "basis": "OTF released Q2 results on 5 Aug; the September card resurfaced them.",
+      "evidence_url": "https://www.blueowltechnologyfinance.com/investors/sec-filings/all-sec-filings/content/0001747777-26-000027/exhibit991-otfxpressrelease.htm",
+      "card_sha256": "5ed0da6202f7ac1d7f4451ee06fcbd84bb5e4683ccfcf2ae71ce83b49de48a93",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "card_id": "89fdd706bd80",
+      "field": "published_at",
+      "original": "2026-09-24T11:38:06+00:00",
+      "corrected": "2026-09-16",
+      "event_date": "2026-09-16",
+      "basis": "Pagaya announced the Neuberger forward-flow agreement on 16 Sep; SCI coverage arrived later.",
+      "evidence_url": "https://investor.pagaya.com/news-releases/news-release-details/pagaya-signs-auto-forward-flow-agreement-neuberger-specialty",
+      "card_sha256": "58e6aec4464d39d10ba2e36b36d75faa00ae91985055e24615745933274258ba",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "card_id": "e38d67cdf34e",
+      "field": "published_at",
+      "original": "2026-09-25T03:05:26+00:00",
+      "corrected": "2026-06-09",
+      "event_date": "2026-06-09",
+      "basis": "Broadcom announced the $35bn Apollo/Blackstone Anthropic financing on 9 Jun.",
+      "evidence_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-apollo-and-blackstone-establish-landmark-strategic",
+      "card_sha256": "e580f79f54d14809eae2bdef7c95240d4efb98c2630b96ba865825e514a39e32",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    },
+    {
+      "card_id": "4c989b5deeb9",
+      "field": "published_at",
+      "original": "2026-09-25T22:59:48+00:00",
+      "corrected": "2026-03-23",
+      "event_date": "2026-03-23",
+      "basis": "Source published 23 Mar and reports Q1 requests of 11.2%; it is distinct from September Q3 ADS.",
+      "evidence_url": "https://stocktwits.com/news-articles/markets/equity/apollo-reportedly-caps-private-credit-fund-withdrawals/cZ3mA1VRIK4",
+      "card_sha256": "ba2b21961843e021eb87e745a3077d883944f77f6865416800fcd7dd788ea335",
+      "decision": "analyst-labels-2026-09-27; source verification in work/identity-date-verification-2026-09-27.md"
+    }
+  ],
+  "reviewed_relevance": [
+    {
+      "event_id": "evt-01023df58888",
+      "scope": "include",
+      "card_hashes": {
+        "01023df58888": "97877bfd34fea5df92da15daf32851d19b6cd2956011db17e9c8013429736cad",
+        "a7b9323caaae": "d9914660371fc07cb8d64453768565df4a7d4236a7014b622d6c77654fc794ca",
+        "b489e0c0aa7a": "5025ef759b274478321155a17cb2f99dbf339a1769772dcd2ecc58154662a7f2"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-0314de11e4c8",
+      "scope": "exclude",
+      "card_hashes": {
+        "0314de11e4c8": "587425bd741770e2f9a917df0e0c397533b9d577e446b2dd9d1a856a8039db06"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-03f8f3173fa6",
+      "scope": "exclude",
+      "card_hashes": {
+        "03f8f3173fa6": "1f09f057dcc808b9083cb0c15d2cf96501e05f9dc20394b18a0a4793a23f624e"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-06b3269f6fce",
+      "scope": "include",
+      "card_hashes": {
+        "06b3269f6fce": "f55a76838b931327294d615f571c9dc973f6f18fc989d5f5ad365a895b211689",
+        "5d75b577038f": "acf4ad7af35268846e4634b9605c5c80e12d7b3b428269ebe9be8c80532ec8e1"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-102d513164b3",
+      "scope": "include",
+      "card_hashes": {
+        "102d513164b3": "20abdaf0e7d64f1940aef469337b9fecd386db304f33790c2f31472ae123bfbe"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-13e9ceb621b7",
+      "scope": "include",
+      "card_hashes": {
+        "13e9ceb621b7": "b1744146eaf7bca977413da04750fc4bf530dd4b21542c720bcd2fa952489377"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-1635ee5b39f8",
+      "scope": "include",
+      "card_hashes": {
+        "1635ee5b39f8": "6f121e83c6b5936d0775245cf2eddcc02bff9cdc7e2881080e5778cc3107befa"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-19d305f3a22a",
+      "scope": "include",
+      "card_hashes": {
+        "19d305f3a22a": "d3ef770d6e94df7d41b2de004124e1385ed97187230cf9bf7634fc5e9e65e9e8"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-1cd8b4fcdfa6",
+      "scope": "exclude",
+      "card_hashes": {
+        "1cd8b4fcdfa6": "7185f51e9f2b03b2d09ca50fedf1b7878621e55500447756c084331fbeae869f"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-20eb0accd658",
+      "scope": "exclude",
+      "card_hashes": {
+        "20eb0accd658": "ac41f5370acc20f879f2ce1945e4d8abc2f9a3ea3e3a2742f3688c9f34faa71f"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-211ba44e3071",
+      "scope": "include",
+      "card_hashes": {
+        "211ba44e3071": "e9566aef0c4f004c36a42d6f5252ae341cd6a3e088fe707716e32a8cee35c437"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-2c8e8a403730",
+      "scope": "include",
+      "card_hashes": {
+        "2c8e8a403730": "3b2efe76d94edd44bb501edd8fdc45f8af26799b9d595dcb93da14792bc00d87",
+        "bee6f703bd46": "d84e1244257d066fe067a01904177680e412ae7911632f8004bcdf15bb708a1a",
+        "ff88cf0f7f79": "d6548f25e25c4859be0b7b3db6372e478188757861166436a767476b4ec9620d"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-2ff8ced375ce",
+      "scope": "exclude",
+      "card_hashes": {
+        "2ff8ced375ce": "7c86e6fb521f0a05832ecc44cc1cd7fa6bee7b53fec4093b0f99a733e4ca19cc"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-333fda18454b",
+      "scope": "exclude",
+      "card_hashes": {
+        "333fda18454b": "b8467ab958cc06dfc2ef1e21732ab7473eb8776fc1f8cc5d823073233df5eece"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-34278ab36e93",
+      "scope": "include",
+      "card_hashes": {
+        "34278ab36e93": "bd2ce7ef38f7e30c330f650b1bb84a43c60ee9c5419555798b2ad4741c4165a0"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-36c4898b98a1",
+      "scope": "include",
+      "card_hashes": {
+        "36c4898b98a1": "dff1252fb6e0745a9c32c431b82d62c48a0a5425ff745a55133b0f39e2b8282e",
+        "7d740a19639c": "af3017906edf968f8e81f63e5c7512da311d688c3ddc72d11ccfb44040c88e67"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-3aac8717bd35",
+      "scope": "exclude",
+      "card_hashes": {
+        "3aac8717bd35": "5fdb850e631d23aca3539167c5fb87a09016cae38592418625adca11034bd218"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-3bc4c5d6c840",
+      "scope": "include",
+      "card_hashes": {
+        "3bc4c5d6c840": "751b8360b8b9b64b6de95eb907ed7454d708fc77cf91af5d99d9bff0aac4507a"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-3c569a47bfba",
+      "scope": "include",
+      "card_hashes": {
+        "1f80f65f5807": "9a0f6a2370838d1df4218bc9ee0bc1ec43cad1d16244f416e8d7f77f63719db2",
+        "3c569a47bfba": "32a7ed933889c9706a7fce6df9f22220ad79913c6b853b2ea21f1c13ea50d490",
+        "a835cc3b1da6": "a6b8d2bebc26fb8cec2bc141a94daac61f1760a93b3af1fe91d75b031ecf0397"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-3cb3dac78660",
+      "scope": "include",
+      "card_hashes": {
+        "3cb3dac78660": "faef0602d77fbf99cce0486921debc973563edd0e1687271f3b2516d03eb8d60"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-3cffb59855a4",
+      "scope": "exclude",
+      "card_hashes": {
+        "3cffb59855a4": "537ad997ef79a922e9e937cba751ca4549e058dadc82b6171147a5b6f28e11ce"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-3e7ef26e28ba",
+      "scope": "exclude",
+      "card_hashes": {
+        "3e7ef26e28ba": "99152be0428ec1f34511c179a4d0162ca16fb7c9e0e95269c6d1e2cd0d8dc190"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-4b18ff57330b",
+      "scope": "exclude",
+      "card_hashes": {
+        "4b18ff57330b": "e4e316861303575e8b7a8c8a1897bd60cd97069efc8c5f93f8a7de2ee3a95031"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-4c989b5deeb9",
+      "scope": "exclude",
+      "card_hashes": {
+        "4c989b5deeb9": "ba2b21961843e021eb87e745a3077d883944f77f6865416800fcd7dd788ea335"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-58026075f239",
+      "scope": "include",
+      "card_hashes": {
+        "58026075f239": "ed5975482ded3a81a5f68a9158792e8b6453097b8e60927872aef3386bfa57a6"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-5a89fd2fec03",
+      "scope": "include",
+      "card_hashes": {
+        "5a89fd2fec03": "5ed0da6202f7ac1d7f4451ee06fcbd84bb5e4683ccfcf2ae71ce83b49de48a93"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-5f9cf9b9ef30",
+      "scope": "include",
+      "card_hashes": {
+        "5f9cf9b9ef30": "8173424a845181cbbc364afa08db466c56b1c0e02c6b15528c6ce90b279c7c54"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-6bbc0e19741a",
+      "scope": "include",
+      "card_hashes": {
+        "54436093da1a": "cc4e16d356c9ed40fef49d6bf3b66f58b38e1dacb0e0b8d253822b27301cf8d7",
+        "54f7371abb8d": "e205b285c0fd3adef1a7ce0c37c91ec6ff5e7fd28c83cdf5fcaddd2c5f1cb21f",
+        "6bbc0e19741a": "716661e28fbb79b95a959a792c149544f48643a799cdb4750b8258c95302429c",
+        "6c177e5368f1": "0854ee0234ad801a7eda3d05b1421077aec746587856696d33c6f9fa7add0ebf",
+        "85520242eb65": "f1dd1537144bc6b1d019ce91fa9bd6be94c8e9104950397da331c8560dc3e848",
+        "9bf89ad0481c": "6d5b94d0c7a164e98d81d6e7b6c3026f2b514552150c2396be5f7c461c1e2a9a",
+        "a128012f7260": "72786a7050ac6c6f55b608555d8d35f74a20ef20d26076541ed6b46e3b1c3ef8",
+        "d647e5a595d1": "3578a472d01893b7cbeb4f0aa565b21044a001c18d957906ac22734aa8579a62",
+        "f0ce070894eb": "7761a55e18567a162bbee959da2dd19d4417f816dd8e3cef40362fc62ce62b48",
+        "fd48ddfbbf4d": "e7895cdb2c5245ba4266fa6ce9ffb96a7010216c984e2d61c6de027b921ab8a2",
+        "ff992dfd6991": "c594c4dddd789aad1f36dab66de5e6148d18e63c6a942971012139078a65a104"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-6e521167dacd",
+      "scope": "exclude",
+      "card_hashes": {
+        "6e521167dacd": "fbf8bcafbacc367d08cc106b1d1efbaf387b404d9115e5106206ae70a0e2c26a"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-6f584577b856",
+      "scope": "include",
+      "card_hashes": {
+        "6f584577b856": "2cfdb47cda571b8783bf76877098f4d76e22e92cdfdd9ebee583216e48350daa"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-710cf91fb0dd",
+      "scope": "exclude",
+      "card_hashes": {
+        "710cf91fb0dd": "6bcdab7d0015ed11c0cdaf43ae39a2c778ed5641a762d4b2be31c7d85be53d93"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-7766be2db755",
+      "scope": "exclude",
+      "card_hashes": {
+        "7766be2db755": "ca400c495ebf5dd74660d7aee5be74469cc997c200f7aa4c53e30b7e99f48ed1"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-7b15e82fcf19",
+      "scope": "include",
+      "card_hashes": {
+        "1d349b99540e": "2efe225559fc6f9810e7bda30932ed8774fbf73c731881bc0ed46c35f3c9cb57",
+        "7b15e82fcf19": "3a84394615586c25d0811c82786e65301724bd0c7ccee900f9b0adcf909c69dd",
+        "ed1f1f0fc2a6": "def8f5b7a71e9b94d2d52a6943fb122545bc5c86ae782f51cb2ad223d11fdfd9"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-83d71e93e109",
+      "scope": "exclude",
+      "card_hashes": {
+        "83d71e93e109": "b89b0b7718f22c526b542dc8d21a1a8fdb3dd93d0ff1011eb4332b78f7e72920"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-869d02bd1303",
+      "scope": "exclude",
+      "card_hashes": {
+        "869d02bd1303": "d687732188eec6122105f152f3b4bea44e3cc08587c78ae5b5913a7132d62009"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-89fdd706bd80",
+      "scope": "include",
+      "card_hashes": {
+        "89fdd706bd80": "58e6aec4464d39d10ba2e36b36d75faa00ae91985055e24615745933274258ba"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-8cff6027c039",
+      "scope": "exclude",
+      "card_hashes": {
+        "8cff6027c039": "50be2fb28c1df02f20b69a82b439f59f046b2ac6007d07f46d3825f022dc58cb"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-92dc00f248ce",
+      "scope": "include",
+      "card_hashes": {
+        "7fde19569bd8": "9f0a23b514b2a62b1996807d26cc7fba3a24a94cad838a9f815c4384070d872b",
+        "92dc00f248ce": "24a8f96c2e6b8296440fed49a753ea8a7d411642c1b740a833da3eeda3aae161"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-9befc79860cd",
+      "scope": "exclude",
+      "card_hashes": {
+        "9befc79860cd": "bd41d8fec5f1114d7e51a227a9b9f828626ebdfd2c081830ae870392404d8874"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-a04cc4b2a80e",
+      "scope": "include",
+      "card_hashes": {
+        "a04cc4b2a80e": "1628b105672b8c2064697ae2f2dfe76d7828835f1a83dde47d6e9a1ea3966de2"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-a85f2c246e31",
+      "scope": "exclude",
+      "card_hashes": {
+        "a85f2c246e31": "73adf203ac4bd20871236705e88ae670c6577938d144e267da60f37632c68ea9"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-a9303f71d972",
+      "scope": "include",
+      "card_hashes": {
+        "a9303f71d972": "d1f27de77e26aaa89ac93faa2df66ae906feb41dc4519f4da26e71f4ddf80f7f"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-aff111288de8",
+      "scope": "exclude",
+      "card_hashes": {
+        "aff111288de8": "278283e769657f0ea54910ca241dcee90b17aa44c35c97389891004516f5be99"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-b574959d7c9b",
+      "scope": "include",
+      "card_hashes": {
+        "b574959d7c9b": "87ea0045ebc7db01911a6f1bcce2e37deb122fe7ece81178baae4688204b2f0c"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-b9177fe8e7f4",
+      "scope": "include",
+      "card_hashes": {
+        "852f9bce3cb9": "c567a11ce2b79774283f57be035a365491e2df611ca6019afe899adfc045a47e",
+        "b9177fe8e7f4": "0e9b5ed0e80071383dd97442b3452a465c28720e5c5f81c97ccb787ff181eca6"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-b9f80db2c0fa",
+      "scope": "exclude",
+      "card_hashes": {
+        "b9f80db2c0fa": "cd388edc510e2d4121672817a3f9bdeaac8059872a8969e89f1d681c06d669fa"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-bca3caecdedb",
+      "scope": "include",
+      "card_hashes": {
+        "bca3caecdedb": "bbcd8e2825aec02ed1f8a68c5f3eb6a4939120dd0cc2dde89c34445260cb4312"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-bce4f32145d7",
+      "scope": "exclude",
+      "card_hashes": {
+        "bce4f32145d7": "1702607184d131bd9aa7574e0d4d22ccae0252ec5f50b08c93e033a6218b5f27"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-bd0c177ab82a",
+      "scope": "exclude",
+      "card_hashes": {
+        "bd0c177ab82a": "742dba49f128ab11ac4c48e0d0e8114da52f781decd1db6cfa5534e87343d227"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-c1bbeccadda0",
+      "scope": "exclude",
+      "card_hashes": {
+        "c1bbeccadda0": "9bd450d3fd8d385500b48ef3fc3c53a05a7d76b2a444e4e922e5ea3c837d7a3e"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-c504193b7d21",
+      "scope": "exclude",
+      "card_hashes": {
+        "c504193b7d21": "a25c5e05754bc58252f29d9143d675adb3402957d70c4e60f7f44b15dcfb722a"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-c5572a0521c8",
+      "scope": "exclude",
+      "card_hashes": {
+        "c5572a0521c8": "369437fc78ae0c9a166b1e2e74fa9fc630d3eb276abed9f645dbe6c2be44ebca"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-c5adf2f35275",
+      "scope": "exclude",
+      "card_hashes": {
+        "c5adf2f35275": "3f54792d2e2964cf8593b6193e582880746199aa83d18ba0d135531c301667cd"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-c969ea61c5e8",
+      "scope": "exclude",
+      "card_hashes": {
+        "c969ea61c5e8": "18a027222313d2860199e953e46e8d1fab7bb7ee6c2942bc3dba845fbabba476"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-c9a7e5910906",
+      "scope": "include",
+      "card_hashes": {
+        "c9a7e5910906": "f9ad4d4860e360a3673b3e35155d6fd05475cecedfababde3f5e21e54fc9b203"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-cb2687e35fea",
+      "scope": "exclude",
+      "card_hashes": {
+        "cb2687e35fea": "132cf6c8512b5659500017f7b1d19e54e59675b4a264221a523323696220672d"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-d1529675de2a",
+      "scope": "include",
+      "card_hashes": {
+        "d1529675de2a": "c726bbe57d528cf958f58186e2dd2e3e3d8f4aa077620a857dc0e0945f7895cc",
+        "e0bddb1d00db": "dcd16be597127b00beea6a8fdb10ee05d27c53126eae3af129225f9c26555b09"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-d15d91b0dc44",
+      "scope": "include",
+      "card_hashes": {
+        "a2dc87403c95": "4ceacbedf5257b3bec3cf8b90d5197d7734bd374dc3f2d856649ad6e8c3715d6",
+        "d15d91b0dc44": "41807ddbca901988a1defdaa107eeba3ce53d7a6c7a6bb1125bbd806e6c1d32f",
+        "d88e57713879": "de03cae404b2607b8d2905aacea255dc70e04e5a084ffe5782d8169222c9fa6a"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-d55d8b4782bb",
+      "scope": "include",
+      "card_hashes": {
+        "c406b3a14e7b": "68df0c6cd5c6bc912bc4d9867206f5134855ad818852179dd89ed1589641ac1e",
+        "d55d8b4782bb": "8cfed1eb0d1524d90b855261309ba9860684893586460f708f865a8f1d7a8469"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-d6632e2fb734",
+      "scope": "include",
+      "card_hashes": {
+        "d6632e2fb734": "0b3f5498903386a460b1b9c71eabf14df65421cd617ccf12235829cb236de443"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-d796cd9e96a0",
+      "scope": "include",
+      "card_hashes": {
+        "777afd02d6c0": "6813f14cfa0b7c6d7bc4ccdcf59b050778e459d1b9b2f4a0a0af04d0a699073b",
+        "9bd9bc7b561e": "6e470ea14aad615781bbf1e53790c29ebe90cf2daf29b2b19049a52972c29ffd",
+        "c14edac88c85": "87ca4f1ccd92360f9f7c45539b897228da95cfbfaa62e24df331618cf4bf8c33",
+        "d796cd9e96a0": "1fe6097218e4b04e7622ed9fdbbe64f85ab37a0560061db76b73c7c5a7bc77c1"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-db3f32a2a078",
+      "scope": "exclude",
+      "card_hashes": {
+        "db3f32a2a078": "36d7bed4052006a546cb8ed452e529728a177bbaee06aaa42e80614d88eacd74"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-dc741bd5af7f",
+      "scope": "include",
+      "card_hashes": {
+        "dc741bd5af7f": "0979bd30151e2333307ed6cc0f9e0a03af1781faa0e4f5589e4a5df656d98bf4"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-e1c1f79fff6a",
+      "scope": "include",
+      "card_hashes": {
+        "2bbf85468ef4": "ccb4ae4f35cdb4156910a930ff5eeb956f536358e2bf43f25400bbdb9774ccdb",
+        "8f8e52b00f67": "0120f2d7116427271608665017d2aadaa9dfbe32c745ab8ec01b8ba05b9f2687",
+        "e1c1f79fff6a": "adbc0a3d794865637a07b7fdc516e4874ff664f1b58cc3aa4e1d84044c604f69"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-e38d67cdf34e",
+      "scope": "exclude",
+      "card_hashes": {
+        "e38d67cdf34e": "e580f79f54d14809eae2bdef7c95240d4efb98c2630b96ba865825e514a39e32"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-ed49eab633f1",
+      "scope": "include",
+      "card_hashes": {
+        "ed49eab633f1": "1a85af5e4604999e33380299e498d890b21af8e96297c4a165754e2d2fbf17b3"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-f668391dec0f",
+      "scope": "include",
+      "card_hashes": {
+        "f668391dec0f": "b699a41826b8c6d3bb7cd298cffc3e09ea113549e6853c8a4141529a7562423a"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-f85da15511a0",
+      "scope": "exclude",
+      "card_hashes": {
+        "f85da15511a0": "f8d50dfbe9f214b358ab4da16a8da8fbb616950210756096af1d13ba2c888510"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-f9cf14d408ff",
+      "scope": "include",
+      "card_hashes": {
+        "f9cf14d408ff": "081f26ab637ee3242b2c86f8690c5954610ef2bdacd84bc3bcc79977a571349d"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-faf5e8ec1ea6",
+      "scope": "include",
+      "card_hashes": {
+        "faf5e8ec1ea6": "07961019c97872132cfaa79b33f057c4283cf932e727d02335fc95271e3251f9"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-fb5c98994c34",
+      "scope": "include",
+      "card_hashes": {
+        "fb5c98994c34": "9a783cc0df18faf7c09b6c267e7e36288ca86dfe673109f206e764ea0d23f1c5"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-reviewed-002",
+      "scope": "include",
+      "card_hashes": {
+        "081382c9fe64": "42f509f6f9fc5faaab34415e30cfde71b4100031311ab7509b2e684b9963ee18",
+        "1b2ada6a138a": "c72f1ca95fd3238114c11bc72f5435f48c02d1c2cd65940aba8dfdec15f6090c",
+        "320feac29e99": "e85ec6948f77d0fe5c219943179ce03a4b80497f6fa83c8fe575db89d1611bb3",
+        "35e2bba06c2c": "81ee34d644853b83ef56f65b51037712c9ba02698b96280a9b76ed8b5497cd1c",
+        "3a6a9323a215": "0207aa4a4b17630e4594b21e0a3641750c4e8989c6e02b9447d3fcc717067cb0",
+        "3da7f824eda8": "ff97573f26fd4f05959a3ccf6f28fca3609fc51528129d3e0944b27c76c25215",
+        "c87e8c1c89f1": "345c910112cc006d142a22507af80d3ca69d7ae09508524259f86ec9fab07de4",
+        "fada07d0316a": "9725131c52be7b16288bbf74cfda171b811678865853ed6597fa30ef9bbf645a"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-reviewed-003",
+      "scope": "include",
+      "card_hashes": {
+        "25ad3e7e022e": "28a05c9b0549a6a430cf52bff6f80fbd9d46e004034752a7d508a605daa64c6d",
+        "8e7307b60990": "c4adc0028d0bc4a951cba599e0a0e3b00e8fe0ca59c66ed67ac70187c24138fb",
+        "ca2ccf9f530d": "fcf51e54e201fee0f488837f03549783cd62045e98069251b6f59a40d105a869",
+        "e1ef992333f2": "bea64a084ad1f9317d4bdff7909fa00ce09d7279de781f4102736530e533a11c"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-reviewed-005",
+      "scope": "include",
+      "card_hashes": {
+        "95851197cebd": "f55c83ba2d604f00af526de222024f59badbd693779e6b156ca150e047807f89",
+        "e0525b7757c6": "aea95bbf8e201ca1734ee4ba47d269ad5ac0e2c6998e4bcfbb5ff8230d067815"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-reviewed-006",
+      "scope": "include",
+      "card_hashes": {
+        "222098ffd1b2": "4aab468d3c0735389396198b93c9d650680774200d045c4b6fbc1f131dc3d679",
+        "8fbc643f3d19": "3695e26ac18a5396f7e88d260153c71b09ddb5643f26f7e054b85b82e44ed0d6",
+        "9286b5f69eb9": "251aaff91d97bf24d4e4f029aaf3b92272519c636c43797c7b042c57747f4b61",
+        "a3cfc33727c0": "70bfe9bdc4e708ef6db600a0bf15041a1e3275cac2d9e3ddb1ec766caf0b353a"
+      },
+      "decision": "analyst-labels-2026-09-27"
+    },
+    {
+      "event_id": "evt-reviewed-007",
+      "scope": "include",
+      "card_hashes": {
+        "03f8e6bdeb1d": "55138effeca05f89b03c84f42a839ce9581326e09349df6bae1411b7919aedb7",
+        "48b80ce93160": "b3e5fca1fcd9f3faf0d36e09a8721e37389707c6e889a518391dc19587ef4579",
+        "534accad5e52": "6dffaa1d7c54c1a2d859372c535d55848bf9c570515fd38672ad316aa3f42d50",
+        "5a981b62c2d4": "56868c6dbaad95f4bb30f4396b05dc4db5b31c2bf2d0329656500ec1ada2f995",
+        "6ab1f6aca955": "bab40964817b46c1eb2337940970aeef4e3a9188865ed275b3dfa87d869b894d",
+        "abc27e2be1d7": "c28b8b11f7b3ad5b43a425b3625997c5ff6524f961e9e87a80e76fe02ad4b224",
+        "af30680489de": "4a00290f92028aef91ff3c3f266841ce0860f4eeafba6a592086fc23b6b95f60",
+        "c145a80c43dc": "1f1ee3f41d2acc5b0f14b55908627c707b3f1cd4ed2c52188cf19acf32951073"
+      },
+      "decision": "analyst-labels-2026-09-27"
     }
   ]
 }

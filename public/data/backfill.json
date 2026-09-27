@@ -333,17 +333,6 @@
       "prompt_version": "brief-v3.1-evidence",
       "model": "deepseek-flash"
     },
-    "b9177fe8e7f4": {
-      "card_sha256": "0e9b5ed0e80071383dd97442b3452a465c28720e5c5f81c97ccb787ff181eca6",
-      "status": "too_large",
-      "checked_at": "2026-09-26T07:37:30+00:00",
-      "evidence": {
-        "status": "too_large",
-        "level": "headline_only",
-        "retrieved_at": "2026-09-26T07:38:05+00:00",
-        "final_url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026057230/otf-20260817.htm"
-      }
-    },
     "72c5665a255f": {
       "card_sha256": "6cf93c274b1a63270844cd6f6511485094433028c766df0eb8a771df000413ec",
       "status": "ok",
@@ -591,34 +580,57 @@
     "102d513164b3": {
       "card_sha256": "20abdaf0e7d64f1940aef469337b9fecd386db304f33790c2f31472ae123bfbe",
       "status": "ok",
-      "checked_at": "2026-09-26T08:28:00+00:00",
+      "checked_at": "2026-09-27T08:38:50+00:00",
       "evidence": {
         "status": "ok",
         "level": "excerpt",
-        "retrieved_at": "2026-09-26T08:28:24+00:00",
-        "sha256": "b6abb694b5b955b564d483aee23fafd6a5aa76521fcbecc37ce31684d89a81bf",
-        "final_url": "https://www.sec.gov/Archives/edgar/data/2150855/000215085526000002/0002150855-26-000002-index.htm"
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.stocktitan.net/sec-filings/KPLT/schedule-13d-katapult-holdings-inc-major-shareholder-acquisition-5-e747c4322e97.html",
+        "sha256": "2be960f16642aa2ad92720e14d1832a8103e3af75501e00fec9895658527dd13"
       },
+      "resolved_url": "https://www.stocktitan.net/sec-filings/KPLT/schedule-13d-katapult-holdings-inc-major-shareholder-acquisition-5-e747c4322e97.html",
+      "resolved_via": "manual_web_read",
       "headline": {
-        "en": "BasePoint Group files 13D reporting 26.8% stake in Katapult Holdings",
-        "zh": "BasePoint Group 提交 13D 文件，披露持有 Katapult Holdings 26.8% 股份"
+        "en": "BasePoint Reports 26.8% Katapult Stake After August Merger",
+        "zh": "BasePoint申报在8月合并后持有Katapult 26.8%股权"
       },
       "summary": {
-        "en": "BasePoint Group Inc. filed a Schedule 13D reporting a 26.8% stake in Katapult Holdings. The filing lists Katapult's SIC classification as services-equipment rental and leasing.",
-        "zh": "BasePoint Group Inc. 提交了 Schedule 13D 文件，披露持有 Katapult Holdings 26.8% 的股份。文件列示 Katapult 的 SIC 分类为服务—设备租赁与出租。"
+        "en": "A Schedule 13D reports that BasePoint Group beneficially owns 23.4 million Katapult shares, or 26.8% of the class. The stake arose from Katapult’s 11 August merger; the filing is a bounded ownership disclosure.",
+        "zh": "一份13D申报显示，BasePoint Group实益持有约2341万股Katapult股份，占该类别26.8%。该持股源于Katapult于8月11日完成的合并，属于有限范围的持股披露。"
       },
       "assessment": {
         "version": "priority-v1",
-        "assessable": false,
+        "assessable": true,
         "potential_urgent": false,
-        "evidence_refs": {},
-        "source_sha256": "b6abb694b5b955b564d483aee23fafd6a5aa76521fcbecc37ce31684d89a81bf",
-        "failure": "Unsupported assessment claim: severity"
+        "evidence_refs": {
+          "severity": {
+            "start": 178,
+            "end": 226
+          },
+          "linkage": {
+            "start": 60,
+            "end": 139
+          }
+        },
+        "source_sha256": "2be960f16642aa2ad92720e14d1832a8103e3af75501e00fec9895658527dd13",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
       },
       "relevant": true,
-      "relevance_reason": "BasePoint's disclosed 13D stake in Katapult signals positioning in specialty lending/leasing credit.",
-      "prompt_version": "brief-v3.2-evidence",
-      "model": "deepseek-flash"
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
     },
     "67fe54c1917d": {
       "card_sha256": "246a15e176b0fcc623f7d83294cd00ff1e33d0cec75045176f6032f905950bb4",
@@ -878,39 +890,6 @@
       "relevant": true,
       "relevance_reason": "A tracked BDC (OTF) subsidiary closed a new $250 million revolving credit facility, directly changing its funding structure and leverage capacity.",
       "prompt_version": "brief-v3.1-evidence",
-      "model": "deepseek-flash"
-    },
-    "a04cc4b2a80e": {
-      "card_sha256": "1628b105672b8c2064697ae2f2dfe76d7828835f1a83dde47d6e9a1ea3966de2",
-      "status": "ok",
-      "checked_at": "2026-09-26T08:28:00+00:00",
-      "evidence": {
-        "status": "ok",
-        "level": "excerpt",
-        "retrieved_at": "2026-09-26T07:38:51+00:00",
-        "sha256": "2719901565bfb84ab2a83a54a5fbe5da61552dff2023d28ddf3577f71eb7911a",
-        "source_published_at": "2026-08-20T14:23:26+00:00",
-        "final_url": "https://alternativecreditinvestor.com/2026/08/20/crestline-records-strong-demand-for-second-european-fund/"
-      },
-      "headline": {
-        "en": "Crestline closes second European capital solutions fund at $625m",
-        "zh": "Crestline 第二只欧洲基金以 6.25 亿美元完成募集"
-      },
-      "summary": {
-        "en": "Crestline Management has raised $625m in the final close of its second European capital solutions fund, nearly 75 per cent more than its inaugural fund. The fund targets senior debt to structured equity for asset-backed and lower-middle-market businesses across North and Western Europe and has committed about 35 percent of its capital since launching in 2025.",
-        "zh": "Crestline Management 的第二只欧洲资本解决方案基金完成最终募集，募资 6.25 亿美元，较其首只基金高出近 75%。该基金面向北欧和西欧的资产支持型及中低端市场企业，提供从优先债到结构化股权等多种资本解决方案，自 2025 年成立以来已承诺投资约 35% 的资金。"
-      },
-      "assessment": {
-        "version": "priority-v1",
-        "assessable": false,
-        "potential_urgent": false,
-        "evidence_refs": {},
-        "source_sha256": "2719901565bfb84ab2a83a54a5fbe5da61552dff2023d28ddf3577f71eb7911a",
-        "failure": "Unsupported assessment claim: severity"
-      },
-      "relevant": true,
-      "relevance_reason": "New European private credit fund close for a non-tracked manager signals continued capital raising and deployment into the European lower-middle-market and asset-backed lending sub-sector.",
-      "prompt_version": "brief-v3.2-evidence",
       "model": "deepseek-flash"
     },
     "5f9097b60c5e": {
@@ -5828,7 +5807,1453 @@
       "relevance_reason": "New redemption data for a large non-traded private credit fund signals easing investor withdrawal pressure and backlog clearing across the sector.",
       "prompt_version": "brief-v3.2-evidence",
       "model": "deepseek-flash"
+    },
+    "6ab1f6aca955": {
+      "card_sha256": "bab40964817b46c1eb2337940970aeef4e3a9188865ed275b3dfa87d869b894d",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:16:12+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:16:14+00:00",
+        "sha256": "9e643dc32c9f195ed28c0e5229e9f7b7f02524ea2378a0e386592f4975591866",
+        "source_published_at": "2026-09-15T16:13:05+00:00",
+        "final_url": "https://theleadpc.com/middle-market-private-credit-9-14-2026/"
+      },
+      "resolved_url": "https://theleadpc.com/middle-market-private-credit-9-14-2026/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "US Private Credit Default Rate Hits Record 6.3% for August 2026 TTM",
+        "zh": "美国私募信贷违约率升至创纪录的6.3%，软件行业逆势降至0.6%"
+      },
+      "summary": {
+        "en": "Fitch Ratings recorded a US Private Credit Default Rate of 6.3% for the trailing 12 months ended August 2026, up from 6.1% in July 2026 and a record high. The August period saw 89 unique defaulters and 109 default events, versus 83 and 105 in July. Healthcare providers and industrial and manufacturing each recorded a 9.9% default rate, while consumer products and services fell to 8.7% from 9.9%.",
+        "zh": "惠誉评级（Fitch Ratings）记录的截至2026年8月的过去12个月美国私募信贷违约率（PCDR）为6.3%，高于2026年7月的6.1%，创下历史新高。8月期间共有89家独立违约主体和109起违约事件，7月分别为83家和105起。医疗保健服务商以及工业与制造业的违约率均为9.9%，而消费产品与服务违约率从9.9%降至8.7%。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 68,
+            "end": 168
+          },
+          "linkage": {
+            "start": 499,
+            "end": 548
+          },
+          "current_adverse": {
+            "start": 416,
+            "end": 471
+          }
+        },
+        "source_sha256": "9e643dc32c9f195ed28c0e5229e9f7b7f02524ea2378a0e386592f4975591866",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Fitch reported a record 6.3% US private credit default rate for the TTM ended August 2026, a worsening credit signal for the direct lending sector.",
+          "zh": "惠誉报告截至2026年8月的过去12个月美国私募信贷违约率创下6.3%的纪录，对直接贷款行业而言是信贷环境恶化的信号。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Record private credit default rate and sector-level deterioration are material sector risk signals for direct lending strategies tracked across managers.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "8e7307b60990": {
+      "card_sha256": "c4adc0028d0bc4a951cba599e0a0e3b00e8fe0ca59c66ed67ac70187c24138fb",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:16:12+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:16:18+00:00",
+        "sha256": "03a378ec7c93f2553aef49be1459170fe519e690607e377939a29b531523c8fb",
+        "source_published_at": "2026-09-22",
+        "final_url": "https://www.asic.gov.au/about-asic/news-centre/speeches/the-case-for-private-credit-standards-if-not-why-not"
+      },
+      "resolved_url": "https://www.asic.gov.au/about-asic/news-centre/speeches/the-case-for-private-credit-standards-if-not-why-not",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "ASIC Warns Private Credit Sector to Prepare for Enforcement Action",
+        "zh": "澳洲ASIC警告私募信贷行业为执法行动做好准备"
+      },
+      "summary": {
+        "en": "ASIC said poor private credit practices are an enforcement priority and multiple investigations are underway. In its 22 September speech, the regulator called for adoption of its 10 principles and warned managers to improve valuations, governance and disclosure.",
+        "zh": "澳洲证券投资委员会（ASIC）表示，私募信贷领域的不良做法已成为执法重点，多项调查正在进行。监管机构在9月22日讲话中要求行业采纳其十项原则，并敦促管理人改进估值、治理和披露。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 409,
+            "end": 511
+          },
+          "linkage": {
+            "start": 310,
+            "end": 361
+          },
+          "current_adverse": {
+            "start": 1629,
+            "end": 1706
+          }
+        },
+        "source_sha256": "03a378ec7c93f2553aef49be1459170fe519e690607e377939a29b531523c8fb",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: substantial; linkage: sector.",
+          "zh": "已评估严重程度：重大；关联程度：行业。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "ASIC's regulatory scrutiny of Australian private credit governance and underwriting standards, tied to the Bathla collapse, signals regulatory and credit risk for direct lending strategies.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash",
+      "editorial_update": "Source-checked ASIC speech, 2026-09-27"
+    },
+    "ed49eab633f1": {
+      "card_sha256": "1a85af5e4604999e33380299e498d890b21af8e96297c4a165754e2d2fbf17b3",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:16:12+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:16:23+00:00",
+        "sha256": "681a063cae396c072e447c4e0022956b468d6f2ccf56aec120dceae4b62e9066",
+        "source_published_at": "2026-09-25T16:19:00.834317+00:00",
+        "final_url": "https://finimize.com/content/private-credit-fund-investors-get-a-new-exit-at-a-discount"
+      },
+      "resolved_url": "https://finimize.com/content/private-credit-fund-investors-get-a-new-exit-at-a-discount",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Secondary buyer bids for BCRED and HPS shares at 12.5%-17.5% below NAV",
+        "zh": "二级买家对BCRED和HPS份额出价，较NAV折让12.5%-17.5%"
+      },
+      "summary": {
+        "en": "Cox Capital Partners launched tender offers for Blackstone's BCRED and the HPS Corporate Lending Fund after the funds' third-quarter repurchase programs were oversubscribed, with requests around 10% of shares for BCRED and 11.5% for HPS against targets near 5%. Cox offered $20.65 for BCRED versus an August 31 NAV of $23.60 and $20.17 for HPS versus a July 31 NAV of $24.45, a 12.5%-17.5% discount.",
+        "zh": "Cox Capital Partners在Blackstone的BCRED与HPS Corporate Lending Fund第三季度回购计划被超额认购后，对这两只基金发起收购要约，BCRED的赎回申请约占份额的10%，HPS约为11.5%，而目标接近5%。Cox对BCRED出价20.65美元，对比其8月31日NAV 23.60美元；对HPS出价20.17美元，对比其7月31日NAV 24.45美元，折让幅度为12.5%-17.5%。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 365,
+            "end": 458
+          },
+          "linkage": {
+            "start": 460,
+            "end": 554
+          },
+          "current_adverse": {
+            "start": 1170,
+            "end": 1236
+          }
+        },
+        "source_sha256": "681a063cae396c072e447c4e0022956b468d6f2ccf56aec120dceae4b62e9066",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Oversubscribed repurchases at two large non-traded BDCs and secondary bids at double-digit discounts to NAV signal pressure on private credit vehicle liquidity and valuation marks.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "b9177fe8e7f4": {
+      "card_sha256": "0e9b5ed0e80071383dd97442b3452a465c28720e5c5f81c97ccb787ff181eca6",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.kbra.com/publications/yTtCyjsh/kbra-assigns-rating-to-blue-owl-technology-finance-corp-s-400-million-senior-unsecured-notes-due-2029",
+        "sha256": "b6893ed5dce0eb22c4af22fd2819d877eb56672f1934fea93204edcbb544a7d6"
+      },
+      "resolved_url": "https://www.kbra.com/publications/yTtCyjsh/kbra-assigns-rating-to-blue-owl-technology-finance-corp-s-400-million-senior-unsecured-notes-due-2029",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "KBRA Rates Blue Owl Technology Finance’s $400M Notes BBB/Stable",
+        "zh": "KBRA给予蓝猫头鹰科技金融4亿美元票据BBB评级，展望稳定"
+      },
+      "summary": {
+        "en": "KBRA rated Blue Owl Technology Finance’s $400 million 6.500% senior unsecured notes due October 2029 BBB with a Stable outlook. The rating was issued on 17 August; the September feed card was later coverage.",
+        "zh": "KBRA给予蓝猫头鹰科技金融4亿美元、票息6.500%、2029年10月到期的高级无担保票据BBB评级，展望稳定。评级发布于8月17日；9月信息流卡片是后续报道。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 162,
+            "end": 191
+          },
+          "linkage": {
+            "start": 32,
+            "end": 139
+          }
+        },
+        "source_sha256": "b6893ed5dce0eb22c4af22fd2819d877eb56672f1934fea93204edcbb544a7d6",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": true,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "a04cc4b2a80e": {
+      "card_sha256": "1628b105672b8c2064697ae2f2dfe76d7828835f1a83dde47d6e9a1ea3966de2",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:19:22+00:00",
+        "sha256": "2719901565bfb84ab2a83a54a5fbe5da61552dff2023d28ddf3577f71eb7911a",
+        "source_published_at": "2026-08-20T14:23:26+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/08/20/crestline-records-strong-demand-for-second-european-fund/"
+      },
+      "headline": {
+        "en": "Crestline closes second European fund at $625m",
+        "zh": "Crestline 第二只欧洲基金以 6.25 亿美元完成募集"
+      },
+      "summary": {
+        "en": "Crestline Management has raised $625m in the final close of its second European capital solutions fund, exceeding the capital in its inaugural fund by nearly 75 per cent. The fund targets asset-backed and lower-middle-market businesses in North and Western Europe and has committed approximately 35 percent of its capital since launching in 2025.",
+        "zh": "Crestline Management 的第二只欧洲资本解决方案基金完成最终募集，共筹集 6.25 亿美元，比其首只基金的规模高出近 75%。该基金面向北欧和西欧的资产支持及中低端市场企业，自 2025 年成立以来已投出约 35% 的资本。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 21,
+            "end": 110
+          },
+          "linkage": {
+            "start": 615,
+            "end": 698
+          }
+        },
+        "source_sha256": "2719901565bfb84ab2a83a54a5fbe5da61552dff2023d28ddf3577f71eb7911a",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "A private credit manager's European capital solutions fund closing at $625m signals continued fundraising momentum and capital deployment in asset-backed and lower-middle-market lending.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "f9cf14d408ff": {
+      "card_sha256": "081f26ab637ee3242b2c86f8690c5954610ef2bdacd84bc3bcc79977a571349d",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:19:29+00:00",
+        "sha256": "5f1eaa10a483f250cc950427972d08811e1d2e5e4b657161634daea41836ab58",
+        "source_published_at": "2026-09-04T08:30:00-04:00",
+        "final_url": "https://www.prnewswire.com/news-releases/blue-owl-technology-finance-corp-closes-150-million-private-placement-of-senior-unsecured-notes-302869693.html"
+      },
+      "resolved_url": "https://www.prnewswire.com/news-releases/blue-owl-technology-finance-corp-closes-150-million-private-placement-of-senior-unsecured-notes-302869693.html",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Blue Owl Technology Finance raises $150M in notes, $800M total since June 30",
+        "zh": "Blue Owl Technology Finance 发行 1.5 亿美元票据，自 6 月 30 日以来累计融资 8 亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance Corp. (NYSE: OTF) closed a private placement of $150 million of 7.60% senior unsecured notes due September 3, 2032. This is OTF's third financing since June 30, 2026, bringing total debt capital raised in the period to $800 million. CEO Craig W. Packer said the financing strengthens and diversifies OTF's funding base.",
+        "zh": "Blue Owl Technology Finance Corp.（NYSE: OTF）完成了 1.5 亿美元 7.60% 优先无担保票据的私募配售，票据于 2032 年 9 月 3 日到期。这是 OTF 自 2026 年 6 月 30 日以来的第三次融资，使该期间累计债务融资总额达到 8 亿美元。首席执行官 Craig W. Packer 表示，此次融资强化并多元化 OTF 的资金基础。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 90,
+            "end": 136
+          },
+          "linkage": {
+            "start": 16,
+            "end": 61
+          }
+        },
+        "source_sha256": "5f1eaa10a483f250cc950427972d08811e1d2e5e4b657161634daea41836ab58",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Incremental debt financing at a tracked BDC; strengthens liquidity with no adverse credit development.",
+          "zh": "受关注 BDC 的增量债务融资；增强流动性，无不利信用进展。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "New debt capital raise at a tracked BDC strengthens funding and liquidity, relevant to credit investors in the platform.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "fb5c98994c34": {
+      "card_sha256": "9a783cc0df18faf7c09b6c267e7e36288ca86dfe673109f206e764ea0d23f1c5",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:19:36+00:00",
+        "sha256": "6c11dd258e40bf0057f1564cb0d6393f57a9866714c61f066fda9e04286e85a7",
+        "source_published_at": "2026-09-16T02:01:27-04:00",
+        "final_url": "https://www.abfjournal.com/kbra-affirms-ratings-for-blue-owl-capital-corporation/"
+      },
+      "resolved_url": "https://www.abfjournal.com/kbra-affirms-ratings-for-blue-owl-capital-corporation/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "KBRA affirms Blue Owl Capital Corporation at BBB+ with stable outlook",
+        "zh": "KBRA确认Blue Owl Capital Corporation的BBB+评级，展望稳定"
+      },
+      "summary": {
+        "en": "KBRA affirmed the issuer and senior unsecured debt ratings of Blue Owl Capital Corporation at BBB+, with a Stable Outlook. The rating cites the BDC's ties to the $158.1 billion Blue Owl Credit platform and its diversified $15.0 billion portfolio, which was 73% senior secured first lien loans as of June 30, 2026.",
+        "zh": "KBRA确认Blue Owl Capital Corporation的发行人及高级无抵押债务评级为BBB+，展望稳定。该评级援引了该BDC与规模1581亿美元的Blue Owl Credit平台的关系，以及其多元化150亿美元投资组合，截至2026年6月30日其中73%为优先担保第一留置权贷款。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 66
+          },
+          "linkage": {
+            "start": 0,
+            "end": 99
+          }
+        },
+        "source_sha256": "6c11dd258e40bf0057f1564cb0d6393f57a9866714c61f066fda9e04286e85a7",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "KBRA affirmed existing BBB+ issuer and senior unsecured ratings for the Blue Owl-managed BDC, a ratings action with no new adverse development.",
+          "zh": "KBRA确认了Blue Owl管理的该BDC既有的BBB+发行人及高级无抵押评级，属评级行动，无新的不利进展。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "A rating affirmation for a Blue Owl-managed BDC reflects on the credit quality and funding profile of the tracked manager's platform.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "5a89fd2fec03": {
+      "card_sha256": "5ed0da6202f7ac1d7f4451ee06fcbd84bb5e4683ccfcf2ae71ce83b49de48a93",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:19:40+00:00",
+        "sha256": "2b152470df364faba93fd4ec18a87deb3b75e8c4e9cbbe839c05fb62de74999b",
+        "final_url": "https://www.blueowltechnologyfinance.com/investors/sec-filings/all-sec-filings/content/0001747777-26-000027/exhibit991-otfxpressrelease.htm"
+      },
+      "resolved_url": "https://www.blueowltechnologyfinance.com/investors/sec-filings/all-sec-filings/content/0001747777-26-000027/exhibit991-otfxpressrelease.htm",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Blue Owl Technology Q2FY26: NAV Stable at $16.48, NII per Share Rises to $0.30",
+        "zh": "Blue Owl Technology 2026财年第二季度业绩：每股NAV稳定在16.48美元，NII上升"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance Corp. (NYSE: OTF) reported second-quarter 2026 GAAP net investment income of $0.30 per share, with adjusted NII up from $0.29 in the prior quarter. NAV per share was stable at $16.48 versus $16.49 at March 31, 2026, and dividends totaled $0.40 per share, including a $0.35 base dividend and a $0.05 special dividend declared in connection with the listing. New investment commitments were $852 million, sales and repayments $222 million, and net debt-to-equity rose to 0.93x from 0.85x.",
+        "zh": "Blue Owl Technology Finance Corp.（NYSE: OTF）公布2026年第二季度GAAP每股净投资收益为0.30美元，调整后每股NII较上一季度的0.29美元上升。每股NAV稳定在16.48美元，而2026年3月31日为16.49美元；股息合计每股0.40美元，包括每股0.35美元的基础股息和与上市相关宣派的每股0.05美元特别股息。新增投资承诺为8.52亿美元，出售和还款为2.22亿美元，净债务与权益之比从0.85倍升至0.93倍。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 321,
+            "end": 389
+          },
+          "linkage": {
+            "start": 139,
+            "end": 243
+          }
+        },
+        "source_sha256": "ce2c9b5bdeb8e94f5e817aaf8fc8e6a81c0f9dfcac47eb9b5ccac22ccb5e6f28",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Quarterly results show stable NAV, higher adjusted NII, a special dividend and expanded funding, with leverage up modestly; incremental rather than a material entity-relative change.",
+          "zh": "季度业绩显示NAV稳定、调整后NII上升、特别股息以及融资渠道扩大，杠杆小幅上升；属于增量变化，而非相对实体的重大变化。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Quarterly results for a tracked BDC show NAV stability, NII, a special dividend and new funding, relevant to credit investors' view of OTF and Blue Owl's credit platform.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "e0525b7757c6": {
+      "card_sha256": "aea95bbf8e201ca1734ee4ba47d269ad5ac0e2c6998e4bcfbb5ff8230d067815",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:19:49+00:00",
+        "sha256": "8a976a2c4c6f15649eee72a610987614b576e460434691fcd21e0ff82a99b4bf",
+        "source_published_at": "2026-09-17T02:39:58-04:00",
+        "final_url": "https://www.credaily.com/briefs/us-clo-issuance-slips-to-43-8b-in-august/"
+      },
+      "resolved_url": "https://credaily.com/briefs/us-clo-issuance-slips-to-43-8b-in-august",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "US CLO Issuance Slips to $43.8B in August",
+        "zh": "美国CLO 8月发行量降至438亿美元"
+      },
+      "summary": {
+        "en": "US CLO issuance totaled $43.8B across 97 deals in August, down from $46.4B in July, while European issuance fell to €9.7B across 23 deals from €15.6B. US new issuance rose to $19B, and refinancing and resets led at $24.8B, about 57% of August volume. US new-issue BSL AAA spreads averaged 124 basis points, unchanged, and US refinancing and reset AAA pricing tightened to 118 basis points.",
+        "zh": "8月美国CLO发行量为438亿美元，共97笔交易，低于7月的464亿美元；欧洲发行量从156亿欧元降至97亿欧元，共23笔交易。美国新发行增至190亿美元，再融资和重置以248亿美元领先，约占8月发行量的57%。美国新发行BSL AAA利差平均为124个基点，保持不变，美国再融资和重置AAA定价收紧至118个基点。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 370,
+            "end": 477
+          },
+          "linkage": {
+            "start": 172,
+            "end": 254
+          }
+        },
+        "source_sha256": "8a976a2c4c6f15649eee72a610987614b576e460434691fcd21e0ff82a99b4bf",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "August CLO issuance cooled in the US and Europe while AAA spreads held steady and new US issuance rose, an incremental sector datapoint without entity-specific credit impact.",
+          "zh": "8月美国和欧洲CLO发行降温，AAA利差保持稳定，美国新发行上升，属于增量行业数据，无实体特定信用影响。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Monthly CLO issuance and AAA spread data signal the supply and pricing environment for tracked CLO and private credit managers.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "3cb3dac78660": {
+      "card_sha256": "faef0602d77fbf99cce0486921debc973563edd0e1687271f3b2516d03eb8d60",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:19:55+00:00",
+        "sha256": "6e6bc96f5b9d11f2509d30cd811a1e11134119bc8b6a98478fd17191d68ab72a",
+        "source_published_at": "2026-09-17T14:07:25+00:00",
+        "final_url": "https://bluevaultpartners.com/blue-owl-technology-income-extends-credit-facility-to-2031-and-reduces-commitments/"
+      },
+      "resolved_url": "https://bluevaultpartners.com/blue-owl-technology-income-extends-credit-facility-to-2031-and-reduces-commitments/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Blue Owl Technology Income Cuts Credit Facility to $975M, Extends Maturity to 2031",
+        "zh": "Blue Owl Technology Income Corp. 将信贷额度降至9.75亿美元，并将到期日延长至2031年"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Income Corp. amended its senior secured revolving credit facility, extending the revolving availability period from October 2028 to September 2030 and the scheduled maturity from October 2029 to September 2031. The nontraded BDC reduced total commitments from $1.05 billion to $975 million and lowered its accordion maximum to approximately $1.46 billion. The company said it voluntarily reduced the commitment to lower borrowing costs and align the facility with its target leverage.",
+        "zh": "Blue Owl Technology Income Corp. 修订了其高级担保循环信贷额度，将循环可用期从2028年10月延长至2030年9月，并将预定到期日从2029年10月延长至2031年9月。这家非上市BDC将总承诺额从10.5亿美元降至9.75亿美元，并将手风琴条款的最大额度降至约14.6亿美元。该公司表示，自愿减少承诺额是为了降低借款成本，并使该额度与其目标杠杆率保持一致。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 563,
+            "end": 638
+          },
+          "linkage": {
+            "start": 141,
+            "end": 230
+          },
+          "resolved": {
+            "start": 232,
+            "end": 350
+          }
+        },
+        "source_sha256": "6e6bc96f5b9d11f2509d30cd811a1e11134119bc8b6a98478fd17191d68ab72a",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": true,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Amendment extends the facility's availability period and maturity while reducing commitments to $975 million, an incremental financing change for a tracked manager's BDC.",
+          "zh": "该修订延长了额度的可用期和到期日，同时将承诺额降至9.75亿美元，属于对受跟踪管理人旗下BDC的增量融资变化。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Blue Owl Technology Income Corp. amended its senior secured revolving credit facility, changing capacity and maturity — a direct financing development for a tracked manager's BDC.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "a9303f71d972": {
+      "card_sha256": "d1f27de77e26aaa89ac93faa2df66ae906feb41dc4519f4da26e71f4ddf80f7f",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:19:59+00:00",
+        "sha256": "a8cf2e66c581547985dd991ce1713f2d11694520d11cbc33f4f18cdc73500be7",
+        "final_url": "https://www.qia.qa/en/Newsroom/Pages/QIA-and-J-P-Morgan-Asset-Management-Announce-$20-Billion-Strategic-Partnership.aspx"
+      },
+      "resolved_url": "https://www.qia.qa/en/Newsroom/Pages/QIA-and-J-P-Morgan-Asset-Management-Announce-$20-Billion-Strategic-Partnership.aspx",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "QIA and J.P. Morgan Asset Management sign MoU for $20 billion partnership",
+        "zh": "QIA与J.P. Morgan Asset Management签署200亿美元合作谅解备忘录"
+      },
+      "summary": {
+        "en": "QIA and J.P. Morgan Asset Management announced the signing of a Memorandum of Understanding to establish a USD 20 billion strategic partnership across public and private markets. The partnership covers a USD 15 billion public equities mandate and a USD 5 billion private markets initiative providing senior financing to U.S. middle-market companies in industrials, services, healthcare and technology.",
+        "zh": "QIA与J.P. Morgan Asset Management宣布签署谅解备忘录，建立规模200亿美元、横跨公开与私募市场的战略合作关系。该合作包括一项150亿美元的公开股票委托，以及一项50亿美元的私募市场计划，为美国工业、服务、医疗健康和科技等行业的中型企业提供优先融资。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 374,
+            "end": 422
+          },
+          "linkage": {
+            "start": 691,
+            "end": 816
+          }
+        },
+        "source_sha256": "a8cf2e66c581547985dd991ce1713f2d11694520d11cbc33f4f18cdc73500be7",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A $20bn MoU adds a large new entrant to U.S. middle-market senior lending; impact on tracked managers is incremental and indirect.",
+          "zh": "200亿美元谅解备忘录为美国中型市场优先贷款增添大型新参与者；对已追踪管理人的影响为间接且增量。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "A $20bn MoU between QIA and JPMAM creates a new U.S. middle-market senior lending competitor, relevant to private credit deployment conditions even though no tracked manager is named.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "2c8e8a403730": {
+      "card_sha256": "3b2efe76d94edd44bb501edd8fdc45f8af26799b9d595dcb93da14792bc00d87",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://newsletter.cobaltintelligence.com/p/blue-owl-marks-loparex-at-5-cents",
+        "sha256": "694159e487618c9d547ed64190a3d170371110eb8135c0caa92e934d9018bbd1"
+      },
+      "resolved_url": "https://newsletter.cobaltintelligence.com/p/blue-owl-marks-loparex-at-5-cents",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "Blue Owl’s Loparex Junior Loans Could Face Further Loss in Recapitalization",
+        "zh": "蓝猫头鹰Loparex次级贷款在重组中或面临进一步损失"
+      },
+      "summary": {
+        "en": "Blue Owl Capital Corporation had marked its $133 million of Loparex second-lien loans at about five cents on the dollar by 30 June. Loparex announced a recapitalization in September, but the cited public terms do not establish the lenders’ eventual recovery; a further loss remains possible.",
+        "zh": "蓝猫头鹰资本公司截至6月30日已将合计1.33亿美元的Loparex第二留置权贷款估值降至约每美元5美分。Loparex于9月宣布重组，但所引公开条款尚不能确定贷款人的最终回收额；仍可能出现进一步损失。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 254,
+            "end": 355
+          },
+          "linkage": {
+            "start": 98,
+            "end": 153
+          }
+        },
+        "source_sha256": "694159e487618c9d547ed64190a3d170371110eb8135c0caa92e934d9018bbd1",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked material mark on a tracked BDC loan; eventual recovery remains uncertain.",
+          "zh": "已核对来源，跟踪中的BDC贷款出现重大减值；最终回收仍不确定。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "89fdd706bd80": {
+      "card_sha256": "58e6aec4464d39d10ba2e36b36d75faa00ae91985055e24615745933274258ba",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:19:17+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:20:04+00:00",
+        "sha256": "935f0b4870d70b8e05c1703e6fcb9bc3c2d8e19ce96a8c37e72f3c5fa2f60828",
+        "source_published_at": "2026-09-16T07:30:28-0400",
+        "final_url": "https://investor.pagaya.com/news-releases/news-release-details/pagaya-signs-auto-forward-flow-agreement-neuberger-specialty"
+      },
+      "resolved_url": "https://investor.pagaya.com/news-releases/news-release-details/pagaya-signs-auto-forward-flow-agreement-neuberger-specialty",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Neuberger Specialty Finance signs $700m auto forward flow with Pagaya",
+        "zh": "Neuberger Specialty Finance与Pagaya签署7亿美元汽车贷款远期流量协议"
+      },
+      "summary": {
+        "en": "Pagaya Technologies announced a new forward flow agreement with Neuberger Specialty Finance, the asset based finance arm of Neuberger, for the purchase of up to $700 million of auto loans sourced through Pagaya's auto lending partners. The deal is Pagaya's first forward flow agreement with Neuberger and its second auto forward flow agreement overall. NBSF manages over $5 billion across 50+ portfolio companies and has cumulatively invested more than $16 billion through 80 global origination partners since the strategy began in 2018.",
+        "zh": "Pagaya Technologies宣布与Neuberger旗下资产基础融资部门Neuberger Specialty Finance达成新的远期流量协议，购买通过Pagaya汽车贷款合作网络发放的至多7亿美元汽车贷款。这是Pagaya与Neuberger的首份远期流量协议，也是Pagaya的第二份汽车远期流量协议。自2018年该策略成立以来，NBSF管理着逾50家投资组合公司及其他投资工具中的超50亿美元资产，并通过80家全球发起合作伙伴累计投资超过160亿美元。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 625,
+            "end": 686
+          },
+          "linkage": {
+            "start": 697,
+            "end": 737
+          }
+        },
+        "source_sha256": "935f0b4870d70b8e05c1703e6fcb9bc3c2d8e19ce96a8c37e72f3c5fa2f60828",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New committed forward flow capacity of up to $700m for a tracked manager's asset based finance arm is an incremental financing development rather than a change in credit quality or franchise.",
+          "zh": "被追踪管理人的资产基础融资部门获得至多7亿美元的新增承诺远期流量额度，属于增量融资进展，而非信用质量或业务格局的变化。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Neuberger's asset-based finance arm committed up to $700m of forward flow to Pagaya's auto platform, a material financing channel for a tracked manager's ABF strategy.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "3c569a47bfba": {
+      "card_sha256": "32a7ed933889c9706a7fce6df9f22220ad79913c6b853b2ea21f1c13ea50d490",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.marketscreener.com/news/oracle-blue-owl-project-delay-sends-ripples-through-ai-financing-sources-say-ce785adfd881f521",
+        "sha256": "6edab0e77b6d9f291630e7da1a8ec7150c34531082bb56b24b3a7829fa4507c5"
+      },
+      "resolved_url": "https://www.marketscreener.com/news/oracle-blue-owl-project-delay-sends-ripples-through-ai-financing-sources-say-ce785adfd881f521",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "Oracle Notice Delays Blue Owl’s Project Jupiter, Commitments Unchanged",
+        "zh": "甲骨文通知导致蓝猫头鹰Project Jupiter延期，项目承诺未变"
+      },
+      "summary": {
+        "en": "Reuters reported that Oracle issued a force majeure notice tied to Project Jupiter, which Blue Owl’s STACK Infrastructure is building for OpenAI. A person familiar with the deal said the program would be delayed about a year; Blue Owl said the parties’ financial commitments were unchanged.",
+        "zh": "路透社报道，甲骨文就蓝猫头鹰旗下STACK Infrastructure为OpenAI建设的Project Jupiter发出不可抗力通知。知情人士称项目将延期约一年；蓝猫头鹰表示各方财务承诺不变。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 290,
+            "end": 328
+          },
+          "linkage": {
+            "start": 65,
+            "end": 150
+          }
+        },
+        "source_sha256": "6edab0e77b6d9f291630e7da1a8ec7150c34531082bb56b24b3a7829fa4507c5",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "a3cfc33727c0": {
+      "card_sha256": "70bfe9bdc4e708ef6db600a0bf15041a1e3275cac2d9e3ddb1ec766caf0b353a",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:23:26+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:22:10+00:00",
+        "sha256": "6f87b7e2ca05fb9fc33a5010496ccbbbd7af39e6c90eaf95a5cabd36afbe72ec",
+        "source_published_at": "2026-09-15T10:30:00.000Z",
+        "final_url": "https://interestana.com/articles/kkr-private-high-grade-debt-deals-surge-to-80-billion-this-year-00vdi939"
+      },
+      "resolved_url": "https://interestana.com/articles/kkr-private-high-grade-debt-deals-surge-to-80-billion-this-year-00vdi939",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "KKR's Private Investment-Grade Debt Financing Doubles to $80 Billion This Year",
+        "zh": "KKR私人投资级债务融资今年翻倍至800亿美元"
+      },
+      "summary": {
+        "en": "KKR & Co. structured $80 billion in private investment-grade debt financing during the year, double its prior-year volume. The increase reflects corporate demand for flexible, tailored borrowing outside public debt markets.",
+        "zh": "KKR & Co.今年以来完成了800亿美元的私人投资级债务融资安排，规模较上年翻倍。这一增长反映出企业为在公开债务市场之外寻求灵活、定制化的借款方案而产生的需求。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 14,
+            "end": 92
+          },
+          "linkage": {
+            "start": 150,
+            "end": 229
+          }
+        },
+        "source_sha256": "6f87b7e2ca05fb9fc33a5010496ccbbbd7af39e6c90eaf95a5cabd36afbe72ec",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "KKR roughly doubled its private investment-grade financing volume to $80 billion, an incremental positive for its credit franchise rather than a stress event.",
+          "zh": "KKR私人投资级融资规模近乎翻倍至800亿美元，对其信贷业务属增量利好，而非压力事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "KKR's private investment-grade financing volume doubling to $80bn signals expanding private credit deployment by a tracked manager.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "ed1f1f0fc2a6": {
+      "card_sha256": "def8f5b7a71e9b94d2d52a6943fb122545bc5c86ae782f51cb2ad223d11fdfd9",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:23:26+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:22:09+00:00",
+        "sha256": "325e6be385e682039468e1fd57019f0bbec5e9969c20c3b966307eb0fe1e7f5b",
+        "final_url": "https://www.blueowltechnologyfinance.com/investors/sec-filings/all-sec-filings/content/0001193125-26-391950/d74167d8k.htm"
+      },
+      "resolved_url": "https://www.blueowltechnologyfinance.com/investors/sec-filings/all-sec-filings/content/0001193125-26-391950/d74167d8k.htm",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Blue Owl Technology Finance raises subsidiary credit line to $250 million",
+        "zh": "Blue Owl Technology Finance 通过子公司修订将信贷额度提高至 2.5 亿美元"
+      },
+      "summary": {
+        "en": "Athena Funding III LLC, a subsidiary of Blue Owl Technology Finance Corp., executed a first amendment on September 11, 2026 to its loan financing and servicing agreement dated May 21, 2026. The amendment raises the maximum principal amount from $150,000,000 to $250,000,000 and modifies the borrowing base test conditions.",
+        "zh": "Blue Owl Technology Finance Corp. 的子公司 Athena Funding III LLC 于 2026 年 9 月 11 日就其 2026 年 5 月 21 日签署的贷款融资与服务协议签署第一份修订案。该修订将最高本金金额从 1.5 亿美元提高至 2.5 亿美元，并修改了借款基础测试条件。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 701,
+            "end": 773
+          },
+          "linkage": {
+            "start": 162,
+            "end": 211
+          }
+        },
+        "source_sha256": "325e6be385e682039468e1fd57019f0bbec5e9969c20c3b966307eb0fe1e7f5b",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A $100 million increase in a BDC subsidiary's secured facility is an incremental funding-capacity change, not a credit event.",
+          "zh": "该 BDC 子公司担保融资额度增加 1 亿美元，属于增量融资能力变化，并非信用事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "A larger, amended borrowing-base facility for a tracked manager's BDC subsidiary expands secured funding capacity and liquidity, which can affect the vehicle's leverage and financing conditions.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "06b3269f6fce": {
+      "card_sha256": "f55a76838b931327294d615f571c9dc973f6f18fc989d5f5ad365a895b211689",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:23:26+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:22:12+00:00",
+        "sha256": "6f6cfa582b65ab54dcc6a6bd8edd8b01bed0b7847f9e05e7908c605f1cf9b38b",
+        "source_published_at": "2026-09-17T18:29:12+00:00",
+        "final_url": "https://cryptobriefing.com/private-credit-defaults-reporting-discrepancy/"
+      },
+      "resolved_url": "https://cryptobriefing.com/private-credit-defaults-reporting-discrepancy/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Private Credit Default Gauges Range From Under 1% to 19%",
+        "zh": "私人信贷违约率指标从不足1%到19%不等"
+      },
+      "summary": {
+        "en": "Fitch Ratings reported record private credit defaults of 6.3%, while Houlihan Lokey found defaults below 1% on a loan-size-weighted basis and Pimco's narrower gauge for US business development companies put \"shadow\" defaults at 19%, up from about 14% in 2022. The divergence reflects limited borrower and lender disclosure and differing definitions of distress in the $1.8 trillion market, with some measures excluding restructurings or \"bad PIK.\" An ING strategist said managers may absorb default rates of 8% to 9%, while rates of 12% to 15% after a major economic shock could raise systemic concerns.",
+        "zh": "Fitch Ratings报告私人信贷违约率创下6.3%的纪录，而Houlihan Lokey按贷款规模加权计算发现违约率低于1%，Pimco针对美国业务发展公司的更窄口径显示\"影子\"违约率为19%，高于2022年的约14%。这一分歧反映了借款人及贷款人披露有限以及不良定义不同，该市场规模为1.8万亿美元，部分指标不计入重组或\"不良PIK\"。一位ING策略师表示，管理人或许能承受8%至9%的违约率，但重大经济冲击后12%至15%的违约率可能引发系统性担忧。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 208,
+            "end": 245
+          },
+          "linkage": {
+            "start": 352,
+            "end": 431
+          }
+        },
+        "source_sha256": "6f6cfa582b65ab54dcc6a6bd8edd8b01bed0b7847f9e05e7908c605f1cf9b38b",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Divergent default measures in the $1.8 trillion private credit market bear directly on credit-investor views of risk, valuation and deployment conditions across the tracked private-credit sub-sector.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "320feac29e99": {
+      "card_sha256": "e85ec6948f77d0fe5c219943179ce03a4b80497f6fa83c8fe575db89d1611bb3",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:23:26+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:22:14+00:00",
+        "sha256": "5b777fdbf1c5961b0031bc90f14e71565334ddec66cbf214200fc1bb5debf396",
+        "source_published_at": "2026-09-22T16:10:00-04:00",
+        "final_url": "https://www.prnewswire.com/news-releases/blue-owl-credit-income-corp-enhances-capital-structure-through-recent-financing-transactions-302886704.html"
+      },
+      "resolved_url": "https://www.prnewswire.com/news-releases/blue-owl-credit-income-corp-enhances-capital-structure-through-recent-financing-transactions-302886704.html",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Blue Owl's OCIC raises $1B in notes, upsizes credit line to $4.2B",
+        "zh": "Blue Owl旗下OCIC发行10亿美元票据，将信贷额度增至42亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl Credit Income Corp. completed a $1.0 billion notes offering of $700 million 6.250% notes due 2029 and an additional $300 million of 6.550% notes due 2031. It also amended and extended its senior secured revolving credit facility, raising total commitments to $4.2 billion from $3.9 billion, extending maturity to September 2031 from October 2029 and cutting pricing to SOFR plus 1.650% to 1.775% from SOFR plus 1.875%. Together the transactions represent about $1.3 billion of debt capital raised since June 30, 2026.",
+        "zh": "Blue Owl Credit Income Corp.完成10亿美元票据发行，包括7亿美元2029年到期的6.250%票据以及额外3亿美元2031年到期的6.550%票据。公司还修订并延长了其高级担保循环信贷额度，总承诺额从39亿美元提高至42亿美元，到期日从2029年10月延长至2031年9月，利率从SOFR加1.875%降至SOFR加1.650%至1.775%。自2026年6月30日以来，这些交易合计筹集约13亿美元债务资本。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1122,
+            "end": 1181
+          },
+          "linkage": {
+            "start": 16,
+            "end": 122
+          }
+        },
+        "source_sha256": "5b777fdbf1c5961b0031bc90f14e71565334ddec66cbf214200fc1bb5debf396",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New notes and an upsized, extended revolver lower OCIC funding costs and add liquidity capacity, an incremental positive for a tracked manager's credit vehicle.",
+          "zh": "新票据发行以及额度扩大、期限延长的循环信贷降低了OCIC的融资成本并增加流动性，对受跟踪管理人的信贷载体构成增量利好。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "New debt financing for a tracked manager's credit vehicle changes its funding costs, capacity, and liability structure.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "bca3caecdedb": {
+      "card_sha256": "bbcd8e2825aec02ed1f8a68c5f3eb6a4939120dd0cc2dde89c34445260cb4312",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:27:57+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:26:43+00:00",
+        "sha256": "451a7e3412027d4c3aa61b89cfd27f1d55c110095e254efd43446e6b3c15dfc0",
+        "source_published_at": "2026-09-11T23:54:46+00:00",
+        "final_url": "https://cryptobriefing.com/apollo-winds-down-eliant-trade-finance-products/"
+      },
+      "resolved_url": "https://cryptobriefing.com/apollo-winds-down-eliant-trade-finance-products/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo winds down mid-market invoice financing products at Eliant Trade Finance",
+        "zh": "Apollo 在 Eliant Trade Finance 缩减中端发票融资产品"
+      },
+      "summary": {
+        "en": "Apollo Global Management is winding down mid-market accounts receivable and supply-chain finance offerings at its Eliant Trade Finance platform, disclosed on September 11, while the rest of the platform continues to operate. Eliant was formed in January 2022 with Apollo, Athene and BNP Paribas, launching with $1.3 billion in signed programs and reporting $1.6 billion in new 2025 transactions. The wind-down was attributed to adverse inventory financing market conditions rather than operational failure.",
+        "zh": "Apollo Global Management 正在缩减其 Eliant Trade Finance 平台的中端应收账款和供应链金融业务，该消息于9月11日披露，平台其余业务继续运营。Eliant 于2022年1月由 Apollo、Athene 与法国巴黎银行合作成立，启动时签约定向项目规模为13亿美元，2025年新增交易额为16亿美元。此次缩减被归因于库存融资市场环境不利，而非平台自身运营失误。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 28,
+            "end": 78
+          },
+          "linkage": {
+            "start": 0,
+            "end": 115
+          },
+          "current_adverse": {
+            "start": 1633,
+            "end": 1717
+          }
+        },
+        "source_sha256": "451a7e3412027d4c3aa61b89cfd27f1d55c110095e254efd43446e6b3c15dfc0",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo is winding down specific mid-market receivables and supply-chain finance products at Eliant because of adverse inventory financing conditions, an incremental retreat within a platform that otherwise remains operational.",
+          "zh": "Apollo 因库存融资环境不利而缩减 Eliant 特定的中端应收账款与供应链金融产品，属于平台内部的一次增量收缩，平台其余部分仍继续运营。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo is winding down mid-market receivables and supply-chain finance products at its Eliant Trade Finance platform, a direct change to a tracked manager's credit business.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "dc741bd5af7f": {
+      "card_sha256": "0979bd30151e2333307ed6cc0f9e0a03af1781faa0e4f5589e4a5df656d98bf4",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.coindesk.cc/morgan-stanley-limits-redemptions-at-7b-private-credit-fund-for-third-straight-quarter-116095.html",
+        "sha256": "098c9d7fc412feff40b5c42c833b9cb07280690e7a15954eb0288b4061aaf843"
+      },
+      "resolved_url": "https://www.coindesk.cc/morgan-stanley-limits-redemptions-at-7b-private-credit-fund-for-third-straight-quarter-116095.html",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "Morgan Stanley Private Credit Fund Limits Withdrawals for Third Quarter",
+        "zh": "摩根士丹利私募信贷基金连续第三季度限制赎回"
+      },
+      "summary": {
+        "en": "Morgan Stanley’s roughly $7 billion North Haven Private Income Fund met only its standard 5% quarterly withdrawal cap after investors requested 11.4% of shares. The September shareholder letter marks the third consecutive quarter of capped redemptions.",
+        "zh": "摩根士丹利约70亿美元的North Haven Private Income Fund在投资者申请赎回11.4%股份后，仅按标准的季度5%上限办理。9月股东信显示，这是该基金连续第三季度限制赎回。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 74,
+            "end": 184
+          },
+          "linkage": {
+            "start": 264,
+            "end": 398
+          }
+        },
+        "source_sha256": "098c9d7fc412feff40b5c42c833b9cb07280690e7a15954eb0288b4061aaf843",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "3bc4c5d6c840": {
+      "card_sha256": "751b8360b8b9b64b6de95eb907ed7454d708fc77cf91af5d99d9bff0aac4507a",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_indexed_filing_review",
+        "final_url": "https://archive.fast-edgar.com/20260921/A222A22FZZ2R62ZU22ZQ2WYM2FRQYZ22Z28Q/",
+        "sha256": "c476ce0e275d131cff59dc1b750942da16bde4fb47547f335de795af856d958e"
+      },
+      "resolved_url": "https://archive.fast-edgar.com/20260921/A222A22FZZ2R62ZU22ZQ2WYM2FRQYZ22Z28Q/",
+      "resolved_via": "manual_indexed_filing_review",
+      "headline": {
+        "en": "Lincoln Adviser Reports Beneficial Ownership of 72.21% of Fund Class I Shares",
+        "zh": "林肯旗下顾问公司申报实益持有基金I类股份的72.21%"
+      },
+      "summary": {
+        "en": "A 21 September Schedule 13D/A attributes beneficial ownership of 27.95 million Lincoln Bain Capital Total Credit Fund Class I shares, or 72.21% of that share class, to Lincoln Financial Investments as adviser. The shares are held by Lincoln Variable Insurance Products Trust series; this is not a claim about 72.21% of all fund share classes.",
+        "zh": "9月21日的13D/A申报将林肯贝恩资本综合信贷基金约2795万股I类股份的实益持有权归于投资顾问Lincoln Financial Investments，占该股份类别的72.21%。股份由Lincoln Variable Insurance Products Trust旗下系列持有；该比例并非基金所有股份类别的合计占比。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 256,
+            "end": 314
+          },
+          "linkage": {
+            "start": 0,
+            "end": 38
+          }
+        },
+        "source_sha256": "c476ce0e275d131cff59dc1b750942da16bde4fb47547f335de795af856d958e",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "1635ee5b39f8": {
+      "card_sha256": "6f121e83c6b5936d0775245cf2eddcc02bff9cdc7e2881080e5778cc3107befa",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:27:57+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:26:43+00:00",
+        "sha256": "ebf421ebc12adce4294410c763dedbbf6ec63c50c331197c16c934dd5f09d5e8",
+        "source_published_at": "2026-09-23T04:01:00+00:00",
+        "final_url": "https://www.thedailyupside.com/finance/banking/goldman-sachs-in-talks-to-buy-clos-leader-palmer-square-for-37-billion/"
+      },
+      "resolved_url": "https://www.thedailyupside.com/finance/banking/goldman-sachs-in-talks-to-buy-clos-leader-palmer-square-for-37-billion/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Goldman Sachs leads bidding to buy $37 billion CLO manager Palmer Square",
+        "zh": "高盛牵头竞购规模370亿美元的CLO管理机构Palmer Square"
+      },
+      "summary": {
+        "en": "Goldman Sachs is the lead bidder to acquire Kansas-based Palmer Square Capital Management, a collateralized loan obligation manager overseeing $37 billion, Bloomberg reported. The talks come amid strong demand for CLOs and a private credit liquidity squeeze.",
+        "zh": "高盛是收购总部位于堪萨斯的Palmer Square Capital Management的领先竞标者，该公司是一家管理370亿美元资产的贷款抵押债券（CLO）机构，彭博报道称。谈判之际，CLO需求强劲，而私人信贷面临流动性压力。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 556,
+            "end": 587
+          },
+          "linkage": {
+            "start": 462,
+            "end": 526
+          }
+        },
+        "source_sha256": "ebf421ebc12adce4294410c763dedbbf6ec63c50c331197c16c934dd5f09d5e8",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "A potential acquisition of a major CLO manager by Goldman signals continued consolidation and competitive pressure in alternative credit and CLO markets.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "e1c1f79fff6a": {
+      "card_sha256": "adbc0a3d794865637a07b7fdc516e4874ff664f1b58cc3aa4e1d84044c604f69",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.investing.com/news/stock-market-news/apollo-in-talks-to-boost-softbank-vision-fund-2-loan-to-9-bln--bloomberg-4904942",
+        "sha256": "0de2c5d2660b10c097e2cf70f3a38167ba4ad800c59968e34a4457a89521830f"
+      },
+      "resolved_url": "https://www.investing.com/news/stock-market-news/apollo-in-talks-to-boost-softbank-vision-fund-2-loan-to-9-bln--bloomberg-4904942",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "Apollo Reportedly Discusses Raising SoftBank Vision Fund 2 Loan to $9B",
+        "zh": "据报道，阿波罗洽谈将软银愿景基金2贷款提高至90亿美元"
+      },
+      "summary": {
+        "en": "Apollo is reportedly in talks to increase its asset-backed loan to SoftBank’s Vision Fund 2 from $5.4 billion to $9 billion. The financing is backed by Vision Fund 2 assets and had not been finalized in the report.",
+        "zh": "据报道，阿波罗正洽谈将以软银愿景基金2资产支持的贷款从54亿美元提高至90亿美元。报道指出，该融资尚未敲定。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 126,
+            "end": 157
+          },
+          "linkage": {
+            "start": 0,
+            "end": 50
+          }
+        },
+        "source_sha256": "0de2c5d2660b10c097e2cf70f3a38167ba4ad800c59968e34a4457a89521830f",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "d55d8b4782bb": {
+      "card_sha256": "8cfed1eb0d1524d90b855261309ba9860684893586460f708f865a8f1d7a8469",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.briefs.co/news/blue-owl-backed-data-center-borrower-lands-1-1-billion-with/",
+        "sha256": "21b04d3a072f4c6cc9fb543477296880a9b8d93bbb5779904ce78c2846ed23b3"
+      },
+      "resolved_url": "https://www.briefs.co/news/blue-owl-backed-data-center-borrower-lands-1-1-billion-with/",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "Blue Owl-Backed Data Center Borrower Sells $1.1B in Junk Bonds",
+        "zh": "蓝猫头鹰支持的数据中心借款人发行11亿美元垃圾债券"
+      },
+      "summary": {
+        "en": "A data center builder backed by Blue Owl affiliates raised $1.1 billion in five-year junk bonds for a CoreWeave-linked project. The notes yielded 9.25% and were rated BB-. The borrower, rather than Blue Owl, issued the debt.",
+        "zh": "一家获蓝猫头鹰关联方支持的数据中心建设商，为CoreWeave相关项目发行了11亿美元五年期垃圾债券，收益率9.25%，评级BB-。债券发行人是该借款人，而非蓝猫头鹰。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 73,
+            "end": 122
+          },
+          "linkage": {
+            "start": 23,
+            "end": 71
+          }
+        },
+        "source_sha256": "21b04d3a072f4c6cc9fb543477296880a9b8d93bbb5779904ce78c2846ed23b3",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "58026075f239": {
+      "card_sha256": "ed5975482ded3a81a5f68a9158792e8b6453097b8e60927872aef3386bfa57a6",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.kotakalternateasset.com/wp-content/uploads/2026/09/final-closure-KYGF.pdf",
+        "sha256": "9abf2c7f47dabc2c6c0c3dbbae029fcdec2aaa0737bd9847ad516286c013f3bf"
+      },
+      "resolved_url": "https://www.kotakalternateasset.com/wp-content/uploads/2026/09/final-closure-KYGF.pdf",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "Kotak Alts Closes ₹5,000 Crore Yield & Growth Fund",
+        "zh": "Kotak Alts完成500亿卢比收益与成长基金募集"
+      },
+      "summary": {
+        "en": "Kotak Alternate Asset Managers announced the final close of its Yield & Growth Fund at ₹5,000 crore, entirely from domestic investors. The fund plans to invest across private credit, real assets and selective growth opportunities.",
+        "zh": "Kotak Alternate Asset Managers宣布其收益与成长基金完成最终募集，规模达500亿卢比，资金全部来自印度国内投资者。基金计划投资私募信贷、实物资产及精选成长机会。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 168,
+            "end": 235
+          },
+          "linkage": {
+            "start": 335,
+            "end": 433
+          }
+        },
+        "source_sha256": "9abf2c7f47dabc2c6c0c3dbbae029fcdec2aaa0737bd9847ad516286c013f3bf",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
+    },
+    "c406b3a14e7b": {
+      "card_sha256": "68df0c6cd5c6bc912bc4d9867206f5134855ad818852179dd89ed1589641ac1e",
+      "status": "ok",
+      "checked_at": "2026-09-27T08:38:50+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-27T08:38:50+00:00",
+        "method": "manual_web_read",
+        "final_url": "https://www.briefs.co/news/blue-owl-backed-data-center-borrower-lands-1-1-billion-with/",
+        "sha256": "21b04d3a072f4c6cc9fb543477296880a9b8d93bbb5779904ce78c2846ed23b3"
+      },
+      "resolved_url": "https://www.briefs.co/news/blue-owl-backed-data-center-borrower-lands-1-1-billion-with/",
+      "resolved_via": "manual_web_read",
+      "headline": {
+        "en": "Blue Owl-Backed Data Center Borrower Sells $1.1B in Junk Bonds",
+        "zh": "蓝猫头鹰支持的数据中心借款人发行11亿美元垃圾债券"
+      },
+      "summary": {
+        "en": "A data center builder backed by Blue Owl affiliates raised $1.1 billion in five-year junk bonds for a CoreWeave-linked project. The notes yielded 9.25% and were rated BB-. The borrower, rather than Blue Owl, issued the debt.",
+        "zh": "一家获蓝猫头鹰关联方支持的数据中心建设商，为CoreWeave相关项目发行了11亿美元五年期垃圾债券，收益率9.25%，评级BB-。债券发行人是该借款人，而非蓝猫头鹰。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 73,
+            "end": 122
+          },
+          "linkage": {
+            "start": 23,
+            "end": 71
+          }
+        },
+        "source_sha256": "21b04d3a072f4c6cc9fb543477296880a9b8d93bbb5779904ce78c2846ed23b3",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Source-checked, bounded credit event.",
+          "zh": "已核对来源，属于有限范围的信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Reviewed analyst include decision; source span checked.",
+      "prompt_version": "human-reviewed-2026-09-27",
+      "model": "human"
     }
   },
-  "generated_at": "2026-09-26T16:13:05+00:00"
+  "generated_at": "2026-09-27T08:38:50+00:00"
 }

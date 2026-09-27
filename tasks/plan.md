@@ -1,6 +1,6 @@
-# Dashboard extension and accuracy plan — updated 25 September 2026
+# Dashboard extension and accuracy plan — updated 27 September 2026
 
-Status: event grouping, All dates, sorting and approved EN/ZH reports deployed; release evidence is docs/release-2026-09-24.md. Pilot pass 2 structurally validated; all 15 cases endorsed by the user. Current disposition: work/analyst-review/priority-pilot-2026-09-24/PASS2_DISPOSITION.md; pass-1 findings remain historical. No review labels imported into production. Historical priority backfill and editorial acceptance remain open.
+Status at 27 September: the 82 analyst rows have been applied locally to the event index and source-hash-bound backfill. The 249-card archive now projects to 160 events, of which 128 are visible: 106 Useful, 9 Important and 13 Needs review. Thirty-two excluded events remain in the index for source preservation. This is a reviewed local candidate, not a claim that GitHub Pages has deployed it. Evidence and limits: [reviewed 82 handback](../docs/reviewed-82-handback-2026-09-27.md). The earlier 25 September plan and acceptance history below remains as dated context.
 Target: **Sunday 27 September 2026, Hong Kong time**, extended by the user. Estimates are focused working hours, not a promise of perfect accuracy. The dated Friday schedule below is historical; the following revision supersedes it.
 
 ## 25 September execution update — usage-conscious handover

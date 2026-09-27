@@ -165,6 +165,7 @@ def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None,
     approved = _approved(cards, overlay.get('groups', []))
     fixes = _corrections(cards, overlay)
     raw_cards = cards
+    raw_by_id = {card['id']: card for card in raw_cards}
     # Evidence backfill (public/data/backfill.json) replaces a card's assessment and summary only while
     # the card still matches the hash it was re-briefed from; day files are never rewritten.
     entries = (backfill or {}).get('cards') or {}
@@ -292,6 +293,16 @@ def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None,
         event['aliases'] = sorted(event['aliases'] - used_ids)
         for name in [event['event_id'], *event['aliases']]:
             resolve[name] = event['event_id']
+    # Analyst scope decisions are bound to the complete frozen membership. A changed or
+    # newly added card requires a fresh review before it can be hidden from the page.
+    reviews = {r['event_id']: r for r in overlay.get('reviewed_relevance', [])}
+    for event in events:
+        review = reviews.get(event['event_id'])
+        if (review and review.get('scope') in ('include', 'exclude')
+                and set(review.get('card_hashes', {})) == set(event['member_card_ids'])
+                and all(review['card_hashes'][cid] == card_hash(raw_by_id[cid])
+                        for cid in event['member_card_ids'])):
+            event['reviewed_relevance'] = review['scope']
     related = {}
     for relation in overlay.get('relations', []):
         linked = {resolve[name] for name in relation['event_ids'] if name in resolve}
