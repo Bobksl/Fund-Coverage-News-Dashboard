@@ -72,7 +72,7 @@ The eight reviewed migration groups are frozen by card IDs, headlines and full r
 
 ## Frontend compatibility
 Treat events.json as optional. Missing, stale or invalid membership -> preserve raw-card rendering with a visible grouping limitation. Unmapped cards must remain visible.
-Do not change the old index counts to pretend they count unique events. Show both events/articles where needed.
+Do not change the old index counts to pretend they count unique events. The date selector derives its labelled visible-event count from each date view, with unmapped cards counted as singletons; after a day loads, it uses the same entries as the displayed day. Show both events/articles where needed.
 Source selection is human-reviewed card first, then assessable card, then fuller existing summary; this is not a global source-reliability score. Do not present a merged event as human reviewed unless its exact representative was reviewed.
 No frontend source grouping/scoring copy: consume this contract; report required changes to Codex.
 

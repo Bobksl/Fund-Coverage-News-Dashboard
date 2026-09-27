@@ -29,9 +29,11 @@ def load(name):
 
 INDEX = load("index.json")
 EVENTS = load("events.json")["events"]
+VISIBLE_EVENTS = [event for event in EVENTS if event.get("reviewed_relevance") != "exclude"]
 DAYS = {day: load(f"{day}.json")["items"] for day in INDEX["dates"]}
 CARDS = {item["id"]: item for items in DAYS.values() for item in items}
-REVIEWED = [event for event in EVENTS if event["merge_rule"] == "reviewed"]
+VISIBLE_CARD_IDS = {card_id for event in VISIBLE_EVENTS for card_id in event["member_card_ids"]}
+REVIEWED = [event for event in VISIBLE_EVENTS if event["merge_rule"] == "reviewed"]
 UPDATES = load("events.json").get("card_updates", {})  # evidence backfill shown instead of card text
 
 
@@ -101,15 +103,20 @@ def test_date_views_use_each_days_representative_and_keep_every_source(page):
     open_site(page)
     for day, items in DAYS.items():
         pick(page, day)
-        views = [event["date_views"][day] for event in EVENTS if day in event["date_views"]]
+        views = [event["date_views"][day] for event in VISIBLE_EVENTS if day in event["date_views"]]
         expected = [view["representative_card_id"] for view in sorted(views, key=lambda view: view["priority_rank"])]
         assert card_ids(page) == expected, day
         count = page.text_content("#main .count")
-        assert count == f"{len(views)} events · {len(items)} articles", day
-        # Every raw article of the day is reachable: as a card or inside its Sources list.
+        visible_ids = {card_id for view in views for card_id in view["member_card_ids"]}
+        assert count == f"{len(views)} events · {len(visible_ids)} articles", day
+        suffix = "event" if len(views) == 1 else "events"
+        assert page.locator(f"#dateSelect option[value='{day}']").text_content().endswith(
+            f"({len(views)} {suffix})"), day
+        # Every included article of the day is reachable: as a card or in Sources.
         links = set(page.eval_on_selector_all("#main .source a", "links => links.map(link => link.href)"))
         for item in items:
-            assert item["source"]["url"] in links, (day, item["id"])
+            if item["id"] in visible_ids:
+                assert item["source"]["url"] in links, (day, item["id"])
 
 
 def test_cross_date_pairs_show_further_coverage_and_link_back(page):
@@ -151,13 +158,13 @@ def test_all_dates_lists_each_event_once_and_every_article(page):
     open_site(page)
     show_all(page)
     ids = card_ids(page)
-    assert len(ids) == len(EVENTS) and len(set(ids)) == len(EVENTS)
-    assert ids == [event["representative_card_id"] for event in sorted(EVENTS, key=lambda event: event["priority_rank"])]
-    assert page.text_content("#main .count") == f"{len(EVENTS)} events · {len(CARDS)} articles · {len(DAYS)} dates"
+    assert len(ids) == len(VISIBLE_EVENTS) and len(set(ids)) == len(VISIBLE_EVENTS)
+    assert ids == [event["representative_card_id"] for event in sorted(VISIBLE_EVENTS, key=lambda event: event["priority_rank"])]
+    assert page.text_content("#main .count") == f"{len(VISIBLE_EVENTS)} events · {len(VISIBLE_CARD_IDS)} articles · {len(DAYS)} dates"
     links = page.eval_on_selector_all("#main .source a", "links => links.map(link => link.href)")
-    assert {item["source"]["url"] for item in CARDS.values()} <= set(links)
-    for size in {len(event["member_card_ids"]) for event in EVENTS} - {1}:
-        expected = sum(len(event["member_card_ids"]) == size for event in EVENTS)
+    assert {CARDS[card_id]["source"]["url"] for card_id in VISIBLE_CARD_IDS} <= set(links)
+    for size in {len(event["member_card_ids"]) for event in VISIBLE_EVENTS} - {1}:
+        expected = sum(len(event["member_card_ids"]) == size for event in VISIBLE_EVENTS)
         assert page.locator("details.sources summary", has_text=f"Sources ({size})").count() == expected
     # Earlier/Later are disabled here but still visible, and come back on a date.
     assert page.is_disabled("#prev") and page.is_disabled("#next") and page.is_visible("#prev")
@@ -172,13 +179,13 @@ def test_all_dates_filters_intersect_and_persist(page):
         page.select_option("#gpSelect", gp)
         for sector in [""] + list(INDEX["labels"]["sectors"]):
             page.select_option("#sectorSelect", sector)
-            expected = [event for event in EVENTS
+            expected = [event for event in VISIBLE_EVENTS
                         if (not gp or gp in event["display_gps"]) and (not sector or sector in event["display_sectors"])]
             assert len(card_ids(page)) == len(expected), (gp, sector)
             if gp or sector:
                 articles = sum(len(event["member_card_ids"]) for event in expected)
                 assert page.text_content("#main .count").startswith(
-                    f"{len(expected)} of {len(EVENTS)} events · {articles} of {len(CARDS)} articles")
+                    f"{len(expected)} of {len(VISIBLE_EVENTS)} events · {articles} of {len(VISIBLE_CARD_IDS)} articles")
     page.select_option("#gpSelect", "apollo")
     page.select_option("#sectorSelect", "private_credit")
     page.click("#today")
@@ -192,8 +199,8 @@ def test_newest_sort_and_language_do_not_change_order_unexpectedly(page):
     open_site(page)
     show_all(page)
     page.select_option("#sortSelect", "newest")
-    order = sorted(range(len(EVENTS)), key=lambda i: (-ts(EVENTS[i]["last_material_update_at"]), i))
-    assert card_ids(page) == [EVENTS[i]["representative_card_id"] for i in order]
+    order = sorted(range(len(VISIBLE_EVENTS)), key=lambda i: (-ts(VISIBLE_EVENTS[i]["last_material_update_at"]), i))
+    assert card_ids(page) == [VISIBLE_EVENTS[i]["representative_card_id"] for i in order]
     before = card_ids(page)
     page.click("[data-lang='zh']")
     assert card_ids(page) == before
@@ -202,6 +209,7 @@ def test_newest_sort_and_language_do_not_change_order_unexpectedly(page):
     page.wait_for_function("state.index !== null")
     assert page.get_attribute("html", "lang") == "zh-CN"
     assert page.get_attribute("[data-lang='zh']", "aria-pressed") == "true"
+    assert "个事件" in page.locator("#dateSelect option:not([value='*'])").first.text_content()
 
 
 def test_today_from_all_dates_and_legacy_priority_notice(page):
@@ -209,7 +217,7 @@ def test_today_from_all_dates_and_legacy_priority_notice(page):
     show_all(page)
     assert "Needs review" in page.text_content("#main")
     # The notice is shown only while nothing in the archive has an assessed priority.
-    assessed = any(event["priority"]["priority"] != "needs_review" for event in EVENTS)
+    assessed = any(event["priority"]["priority"] != "needs_review" for event in VISIBLE_EVENTS)
     assert ("No article here has an assessed priority yet" in page.text_content("#main")) is not assessed
     page.click("#today")
     page.wait_for_function("state.mode === 'date' && state.date !== null")
@@ -251,8 +259,10 @@ def test_stale_index_and_unmapped_new_card(page):
     open_site(page)
     pick(page, day)
     assert "synthetic0001" in card_ids(page)
-    event_count = sum(day in event["date_views"] for event in EVENTS) + 1
-    assert page.text_content("#main .count") == f"{event_count} events · {len(DAYS[day]) + 1} articles"
+    event_count = sum(day in event["date_views"] for event in VISIBLE_EVENTS) + 1
+    visible_articles = sum(len(event["date_views"][day]["member_card_ids"])
+                           for event in VISIBLE_EVENTS if day in event["date_views"])
+    assert page.text_content("#main .count") == f"{event_count} events · {visible_articles + 1} articles"
     # Dropping a grouped member makes the index stale for that day: raw fallback, nothing hidden.
     member = "8d1b134a37a1"
     remaining = [item for item in DAYS[day] if item["id"] != member]
@@ -262,6 +272,8 @@ def test_stale_index_and_unmapped_new_card(page):
     pick(page, day)
     assert sorted(card_ids(page)) == sorted(item["id"] for item in remaining)
     assert "does not match these articles" in page.text_content("#main")
+    assert page.locator(f"#dateSelect option[value='{day}']").text_content().endswith(
+        f"({len(remaining)} events)")
 
 
 def test_stale_date_view_cannot_omit_a_loaded_group_member(page):
@@ -288,12 +300,12 @@ def test_partial_all_dates_load_names_failures_and_retries(page):
     notice = page.text_content("#main .notice-warn")
     assert f"1 of {len(DAYS)} dates could not be loaded" in notice and "not the full archive" in notice
     assert page.text_content("#main .count").endswith(f"· {len(DAYS) - 1} dates")
-    assert len(card_ids(page)) < len(EVENTS)
+    assert len(card_ids(page)) < len(VISIBLE_EVENTS)
     page.unroute(f"**/data/{failing}.json")
     page.click("#main .retry")
     page.wait_for_function("state.mode === 'all' && !state.allLoading")
     assert page.locator("#main .notice-warn").count() == 0
-    assert len(card_ids(page)) == len(EVENTS)
+    assert len(card_ids(page)) == len(VISIBLE_EVENTS)
 
 
 def test_rapid_date_switching_keeps_last_choice(page):
@@ -408,7 +420,8 @@ def test_summaries_hide_claims_about_unread_articles_exactly_like_the_pipeline(p
 
 def test_evidence_updates_replace_headline_only_text_and_are_labelled(page):
     data = load("events.json")
-    event = next(e for e in data["events"] if len(e["member_card_ids"]) == 1)
+    event = next(e for e in data["events"]
+                 if e.get("reviewed_relevance") != "exclude" and len(e["member_card_ids"]) == 1)
     cid = event["representative_card_id"]
     data["card_updates"] = {cid: {"headline": {"en": "Updated headline from source", "zh": "按原文更新的标题"},
                                   "summary": {"en": "Updated summary from the source page.", "zh": "按原文页面更新的摘要。"},

@@ -28,7 +28,8 @@ const I18N = {
     sortNewest: "Sort: Newest",
     allGps: "All managers",
     allSectors: "All sub-sectors",
-    dateOption: "{date} ({n})",
+    dateOption: "{date} ({n} events)",
+    dateOptionOne: "{date} (1 event)",
     itemCount: "{n} items",
     itemCountOne: "1 item",
     filteredCount: "{shown} of {n} items",
@@ -99,7 +100,8 @@ const I18N = {
     sortNewest: "排序：最新",
     allGps: "全部管理人",
     allSectors: "全部子行业",
-    dateOption: "{date}（{n}）",
+    dateOption: "{date}（{n} 个事件）",
+    dateOptionOne: "{date}（1 个事件）",
     itemCount: "{n} 条新闻",
     itemCountOne: "1 条新闻",
     filteredCount: "{n} 条中的 {shown} 条",
@@ -441,6 +443,23 @@ function articleCount(entries) {
   return entries.reduce((total, entry) => total + entry.members.filter((member) => member.card).length, 0);
 }
 
+// Index counts are raw articles. Count the event views readers can actually open on this date.
+function dateEventCount(day) {
+  if (state.days.has(day)) return dayEntries(day).entries.length;
+  const raw = state.index && state.index.counts && state.index.counts[day];
+  if (typeof raw !== "number") return "?";
+  if (!state.events) return raw; // Without grouping, each raw article is a visible card.
+  let mapped = 0;
+  let visible = 0;
+  for (const event of new Set(state.events.byCard.values())) {
+    const view = event.date_views[day];
+    if (!view) continue;
+    mapped += view.member_card_ids.length;
+    if (event.reviewed_relevance !== "exclude") visible++;
+  }
+  return mapped <= raw ? visible + raw - mapped : "?"; // Recheck against loaded cards.
+}
+
 // ---- Static text, status and controls -----------------------------------------------------
 
 function applyStaticText() {
@@ -476,10 +495,12 @@ function fillSelect(select, options, value) {
 
 function renderControls() {
   const list = dates();
-  const counts = (state.index && state.index.counts) || {};
   const all = state.mode === "all";
   fillSelect(document.getElementById("dateSelect"),
-    [["*", t("allDates")], ...list.map((day) => [day, t("dateOption", {date: formatDay(day, "short"), n: counts[day] ?? "?"})])],
+    [["*", t("allDates")], ...list.map((day) => {
+      const n = dateEventCount(day);
+      return [day, t(n === 1 ? "dateOptionOne" : "dateOption", {date: formatDay(day, "short"), n})];
+    })],
     all ? "*" : (state.date || ""));
   const labels = (state.index && state.index.labels) || {};
   fillSelect(document.getElementById("gpSelect"),
@@ -705,7 +726,10 @@ async function showDate(day, notice) {
   if (state.days.has(day)) return;
   const token = ++state.token;
   await loadDay(day);
-  if (token === state.token && state.mode === "date" && state.date === day) renderMain();
+  if (token === state.token && state.mode === "date" && state.date === day) {
+    renderControls();
+    renderMain();
+  }
 }
 
 async function showAll() {
@@ -720,7 +744,10 @@ async function showAll() {
   const worker = async () => {
     while (next < pending.length) {
       await loadDay(pending[next++]);
-      if (token === state.token && state.mode === "all") renderMain();
+      if (token === state.token && state.mode === "all") {
+        renderControls();
+        renderMain();
+      }
     }
   };
   await Promise.all(Array.from({length: Math.min(DAY_CONCURRENCY, pending.length)}, worker));
