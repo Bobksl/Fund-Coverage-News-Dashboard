@@ -430,6 +430,38 @@ def test_evidence_updates_replace_headline_only_text_and_are_labelled(page):
     assert "Updated headline from source" not in page.text_content("#main")
 
 
+def test_legacy_priority_reasons_do_not_claim_unread_article_absence(page):
+    data = load("events.json")
+    event = next(e for e in data["events"] if e["priority"]["priority"] == "useful")
+    event["priority"]["reason"] = {
+        "en": "The platform launched, but no capital commitment was disclosed.",
+        "zh": "平台已经推出，但未披露资金承诺。",
+    }
+    page.route("**/data/events.json", lambda route: route.fulfill(json=data))
+    open_site(page)
+    show_all(page)
+    card = page.locator(f"#main .card[data-card='{event['representative_card_id']}']")
+    assert "disclosed" not in card.locator("p.reason").text_content()
+    page.click("[data-lang='zh']")
+    assert "未披露" not in card.locator("p.reason").text_content()
+
+
+def test_priority_from_another_event_member_links_to_its_evidence(page):
+    data = load("events.json")
+    event = next(e for e in data["events"] if len(e["member_card_ids"]) > 1)
+    other = next(i for i in event["member_card_ids"] if i != event["representative_card_id"])
+    event["priority_source_card_id"] = other
+    event["priority"] = {"priority": "useful", "reason": {"en": "Source-backed event.", "zh": "已核实的事件。"}}
+    supporting = next(s for s in event["sources"] if s["card_id"] == other)
+    supporting["evidence_url"] = "https://example.com/verified-article"
+    page.route("**/data/events.json", lambda route: route.fulfill(json=data))
+    open_site(page)
+    show_all(page)
+    card = page.locator(f"#main .card[data-card='{event['representative_card_id']}']")
+    assert "Priority based on another article" in card.text_content()
+    assert card.locator("a", has_text="Read priority source").get_attribute("href") == supporting["evidence_url"]
+
+
 def test_reports_render_both_approved_pdfs_inline(page):
     open_site(page, "#reports")
     assert page.is_hidden("#toolbar") and page.is_hidden("#main")

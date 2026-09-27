@@ -69,6 +69,14 @@ def card_assessment(card):
     return news_priority.validate_assessment(None, {'title': title, 'text': title})
 
 
+def priority_source(members, preferred):
+    """Use a validated member of this event when its pinned display card lacks evidence."""
+    if card_assessment(preferred).get('assessable'):
+        return preferred
+    supported = [card for card in members if card_assessment(card).get('assessable')]
+    return representative(supported) if supported else preferred
+
+
 def display_gps(card):
     gps = list(card['gps'])
     title = card.get('source_headline') or card['headline']['en']
@@ -247,9 +255,12 @@ def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None,
                           'display_gps': display_gps(day_chosen), 'display_sectors': day_chosen['sectors'],
                           'member_card_ids': sorted(c['id'] for c in on_day),
                           'further_coverage': day != first['date']}
-            views[day]['priority'] = news_priority.classify(card_assessment(day_chosen),
+            day_priority_source = priority_source(on_day, day_chosen)
+            views[day]['priority_source_card_id'] = day_priority_source['id']
+            views[day]['priority'] = news_priority.classify(card_assessment(day_priority_source),
                                                            as_of=day + 'T23:59:59+08:00')
-        priority = news_priority.classify(card_assessment(chosen), as_of=as_of)
+        assessment_card = priority_source(members, chosen)
+        priority = news_priority.classify(card_assessment(assessment_card), as_of=as_of)
         # Novelty: repeats never move material time; reviewed updates and confirmed revisions can.
         material = [stamp(first)] + [stamp(c) for c in members if roles.get(c['id']) == 'update']
         if latest_revision and latest_revision.get('material_update_confirmed') is True:
@@ -257,6 +268,8 @@ def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None,
         sources = []
         for c in members:
             source = dict(c['source'], card_id=c['id'], published_at=stamp(c))
+            if c['id'] in updates and updates[c['id']].get('resolved_url'):
+                source['evidence_url'] = updates[c['id']]['resolved_url']
             if c['id'] in fixes:
                 source['date_correction'] = {k: fixes[c['id']][k] for k in (
                     'original', 'corrected', 'basis', 'evidence_url', 'event_date', 'decision') if k in fixes[c['id']]}
@@ -267,6 +280,7 @@ def build_events(cards, *, groups=None, overlay=None, previous=None, as_of=None,
                        'representative_card_id': chosen['id'], 'date_views': views,
                        'display_gps': display_gps(chosen), 'display_sectors': chosen['sectors'],
                        'first_seen_at': stamp(first), 'last_material_update_at': max(material, key=epoch),
+                       'priority_source_card_id': assessment_card['id'],
                        'timestamp_basis': ('corrected' if first['id'] in fixes else
                                            'published_at' if first.get('published_at') == card_stamp(first) else 'date_only'),
                        'updated': bool(revisions), 'priority': priority,

@@ -17,6 +17,20 @@ ORDERS = {
 }
 RISK = re.compile(r'\b(payment default|defaulted|suspend(?:s|ed)? withdrawals|withdrawal suspension|'
                   r'redemption (?:gate|suspension)|bankruptcy|material impairment)\b', re.IGNORECASE)
+UNVERIFIED_ABSENCE_EN = re.compile(
+    r'\b(?:no|not|without)\b.{0,120}\b(?:disclos\w*|provid\w*|nam\w*|mention\w*|'
+    r'detail\w*|figure\w*|term\w*|giv\w*)\b', re.IGNORECASE)
+UNVERIFIED_ABSENCE_ZH = re.compile(r'(?:未|没有|无).{0,80}(?:披露|提供|提及|说明|点名|给出|公布|涉及)')
+SEVERITY_ZH = {'critical': '严重', 'substantial': '重大', 'bounded': '有限'}
+LINKAGE_ZH = {'direct': '直接', 'sector': '行业', 'indirect': '间接'}
+
+
+def safe_reason(reason, severity, linkage):
+    """Replace unverified claims about what an unread full article omits."""
+    if (UNVERIFIED_ABSENCE_EN.search(reason['en']) or UNVERIFIED_ABSENCE_ZH.search(reason['zh'])):
+        return {'en': f'Assessed severity: {severity}; linkage: {linkage}.',
+                'zh': f'已评估严重程度：{SEVERITY_ZH[severity]}；关联程度：{LINKAGE_ZH[linkage]}。'}
+    return reason
 
 
 def instant(value):
@@ -90,7 +104,8 @@ def validate_assessment(raw, item):
     # only for verified primary sources (filings, regulator releases): on press items the flag was mostly wrong.
     result.update(assessable=True, deadline_at=deadline, evidence_strength='reported',
                   routine=raw.get('routine') is True and item.get('verified_primary_source') is True,
-                  reason={'en': raw['reason_en'], 'zh': raw['reason_zh']}, failure=None)
+                  reason=safe_reason({'en': raw['reason_en'], 'zh': raw['reason_zh']},
+                                     raw['severity'], raw['linkage']), failure=None)
     # Primary strength requires a separately verified source classification; model cannot grant it.
     if item.get('verified_primary_source') is True:
         result['evidence_strength'] = 'primary'
@@ -134,7 +149,7 @@ def classify(assessment, *, as_of=None):
     p.update(priority=tier, severity=a['severity'], time_sensitivity=bucket,
              linkage=a['linkage'], evidence_strength=a['evidence_strength'],
              routine=a.get('routine') is True and a['evidence_strength'] == 'primary',
-             potential_urgent=False, reason=a['reason'])
+             potential_urgent=False, reason=safe_reason(a['reason'], a['severity'], a['linkage']))
     return p
 
 

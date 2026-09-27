@@ -57,6 +57,9 @@ const I18N = {
     prio_important: "Important",
     prio_useful: "Useful",
     prio_needs_review: "Needs review",
+    priorityReasonFallback: "Priority assessed; check the linked source for details.",
+    priorityFromMember: "Priority based on another article in this event",
+    priorityEvidenceLink: "Read priority source →",
     potentialUrgent: "Potential urgent item — needs verification",
     legacyPriority: "No article here has an assessed priority yet. Earlier articles were collected without the source evidence the priority rules need, so they are marked Needs review and Priority order falls back to recency. Newly collected, adequately evidenced items can be marked Urgent, Important or Useful.",
     lastRefreshed: "Last refreshed {time} HKT",
@@ -125,6 +128,9 @@ const I18N = {
     prio_important: "重要",
     prio_useful: "参考",
     prio_needs_review: "待复核",
+    priorityReasonFallback: "优先级已评估；详情请查看所链接的来源。",
+    priorityFromMember: "优先级依据同一事件中的另一篇报道",
+    priorityEvidenceLink: "查看优先级依据来源 →",
     potentialUrgent: "潜在紧急事项 — 有待核实",
     legacyPriority: "此处文章尚无经评估的优先级。早期文章收录时未保存优先级规则所需的来源证据，因此标为“待复核”，按优先级排序时实际按时间先后排列。新收录且证据充分的文章可标为紧急、重要或参考。",
     lastRefreshed: "最近更新：{time}（香港时间）",
@@ -253,6 +259,15 @@ const ABSENCE = {
   en: /\b(no (?:further|other|additional|more|specific)\b.{0,60}\b(?:details?|figures?|information|data|terms)\b|no (?:specific )?(?:managers?|funds?|figures)\b.{0,40}\b(?:named|disclosed|provided|given)\b|(?:was|were) not (?:provided|disclosed|given)|(?:did|does|do) not (?:provide|disclose|give|name) (?:any )?(?:further|more|additional|other)?|provides? no (?:further|additional|other) detail|consisted only of the headline|beyond the headline)/i,
   zh: /(未|没有)(?:进一步)?予?(提供|披露|给出|说明|点名|提及)|仅(有|包含)标题/,
 };
+const UNVERIFIED_REASON_ABSENCE = {
+  en: /\b(?:no|not|without)\b.{0,120}\b(?:disclos\w*|provid\w*|nam\w*|mention\w*|detail\w*|figure\w*|term\w*|giv\w*)\b/i,
+  zh: /(?:未|没有|无).{0,80}(?:披露|提供|提及|说明|点名|给出|公布|涉及)/,
+};
+
+function priorityReason(priority) {
+  const reason = bilingual(priority.reason);
+  return UNVERIFIED_REASON_ABSENCE[state.lang].test(reason) ? t("priorityReasonFallback") : reason;
+}
 
 function stripAbsence(text, lang) {
   const parts = (text || "").split(lang === "zh" ? /(?<=[。！？])|(?<=[。！？][”’）])/ : /(?<=[.!?])\s+|(?<=[.!?]["'”’)])\s+/);
@@ -375,7 +390,7 @@ function dayEntries(day) {
     entries.push({rep, members: view.member_card_ids.map((id) => ({card: byId.get(id)})),
       gps: listOf(view.display_gps), sectors: listOf(view.display_sectors),
       priority: view.priority || null, rank: typeof view.priority_rank === "number" ? view.priority_rank : null,
-      time: cardTime(rep), order: entries.length, event,
+      prioritySourceId: view.priority_source_card_id, time: cardTime(rep), order: entries.length, event,
       firstDay: view.further_coverage && earlier < day ? earlier : null});
   }
   return {entries, grouped, problem: grouped ? null : (state.events ? "stale" : "missing")};
@@ -400,6 +415,7 @@ function allEntries() {
         members: event.member_card_ids.map((id) => ({card: cards.get(id), meta: sources.get(id)})),
         gps: listOf(event.display_gps), sectors: listOf(event.display_sectors),
         priority: event.priority || null, rank: typeof event.priority_rank === "number" ? event.priority_rank : null,
+        prioritySourceId: event.priority_source_card_id,
         time: Number.isNaN(time) ? cardTime(cards.get(present[0])) : time, order: entries.length, event, firstDay: null});
     }
   }
@@ -535,8 +551,18 @@ function renderCard(entry) {
   card.appendChild(el("h3", {className: "headline", text: headlineText(item)}));
   card.appendChild(el("p", {className: "summary", text: summaryText(item)}));
   if (level) {
-    const reason = bilingual(entry.priority.reason);
+    const reason = priorityReason(entry.priority);
     if (reason) card.appendChild(el("p", {className: "reason", text: `${t(`prio_${level}`)}: ${reason}`}));
+  }
+  if (level && level !== "needs_review" && entry.prioritySourceId && entry.prioritySourceId !== item.id) {
+    const supporting = listOf(entry.event?.sources).find((source) => source?.card_id === entry.prioritySourceId);
+    const href = safeHttpUrl(supporting?.evidence_url || supporting?.url);
+    const note = el("p", {className: "notes", text: t("priorityFromMember")});
+    if (href) {
+      note.appendChild(document.createTextNode(" · "));
+      note.appendChild(el("a", {text: t("priorityEvidenceLink"), attrs: {href, target: "_blank", rel: "noopener noreferrer"}}));
+    }
+    card.appendChild(note);
   }
 
   const source = item.source || {};

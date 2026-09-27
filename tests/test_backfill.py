@@ -72,6 +72,16 @@ def test_backfill_respects_the_cap_and_records_missing_evidence(tmp_path):
     assert all(entry['status'] == 'access_denied' and 'assessment' not in entry for entry in side['cards'].values())
 
 
+def test_backfill_card_id_filter_targets_only_selected_card(tmp_path):
+    cards = [card(f'0000000000p{i}', f'https://alternativecreditinvestor.com/{i}/') for i in range(2)]
+    data = archive(tmp_path, cards)
+    log = []
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=FakePost(BRIEF), max_cards=2,
+                         card_ids={cards[1]['id']})
+    assert stats['candidates'] == 1 and log == [cards[1]['source']['url']]
+    assert set(backfill.load(data)['cards']) == {cards[1]['id']}
+
+
 def test_events_use_backfilled_assessment_and_expose_updates_but_ignore_stale_hashes(tmp_path):
     c = card('0000000000c1', 'https://alternativecreditinvestor.com/c/')
     data = archive(tmp_path, [c])
@@ -184,6 +194,69 @@ def test_gdelt_finds_a_matching_readable_copy_and_the_card_is_rebriefed(tmp_path
     assert log == ['https://example.com/cifc'] and entry['resolved_url'] == 'https://example.com/cifc'
     assert entry['assessment']['assessable'] and stats['resolved'] == 1
     assert 'startdatetime=20260914' in queries[0] and 'enddatetime=20260920' in queries[0]
+
+
+def test_reviewed_source_map_rebriefs_only_a_matching_google_card(tmp_path):
+    c = card('0000000000m1', GN, headline={'en': 'CIFC launches direct lending strategy on iCapital Marketplace', 'zh': '标题'})
+    data = archive(tmp_path, [c])
+    before = (data / '2026-09-17.json').read_bytes()
+    resolved = {c['id']: {'url': 'https://example.com/cifc',
+                          'title': 'CIFC launches direct lending strategy on iCapital Marketplace',
+                          'publisher': 'example.com', 'card_sha256': news_events.card_hash(c)}}
+    log = []
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=FakePost(BRIEF), max_cards=1,
+                         resolved_sources=resolved)
+    entry = json.loads((data / 'backfill.json').read_text(encoding='utf-8'))['cards'][c['id']]
+    assert stats['resolved'] == 1 and entry['assessment']['assessable']
+    assert entry['resolved_via'] == 'reviewed_source_map' and log == ['https://example.com/cifc']
+    assert (data / '2026-09-17.json').read_bytes() == before
+
+
+def test_reviewed_source_map_assesses_each_article_even_when_event_has_a_priority(tmp_path):
+    first = card('0000000000m4', GN + 'one')
+    second = card('0000000000m5', GN + 'two')
+    data = archive(tmp_path, [first, second])
+    links = {c['id']: {'url': f'https://example.com/{c["id"]}', 'title': c['headline']['en'],
+                       'publisher': 'example.com', 'card_sha256': news_events.card_hash(c)}
+             for c in (first, second)}
+    log = []
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=FakePost(BRIEF), max_cards=2,
+                         resolved_sources=links)
+    assert stats['updated'] == 2 and set(backfill.load(data)['cards']) == {first['id'], second['id']}
+
+
+def test_reviewed_source_map_rejects_a_different_story(tmp_path):
+    c = card('0000000000m2', GN, headline={'en': 'CIFC launches direct lending strategy on iCapital Marketplace', 'zh': '标题'})
+    data = archive(tmp_path, [c])
+    log = []
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=FakePost(BRIEF), max_cards=1,
+                         resolved_sources={c['id']: {'url': 'https://example.com/other',
+                                                     'title': 'Apollo raises a third private credit fund',
+                                                     'publisher': 'example.com',
+                                                     'card_sha256': news_events.card_hash(c)}})
+    assert stats['unresolved'] == 1 and log == []
+
+
+def test_reviewed_source_map_cannot_disguise_a_blocked_host(tmp_path):
+    c = card('0000000000m3', GN)
+    data = archive(tmp_path, [c])
+    log = []
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=FakePost(BRIEF), max_cards=1,
+                         resolved_sources={c['id']: {'url': 'https://www.bloomberg.com/private-story',
+                                                     'title': c['headline']['en'], 'publisher': 'example.com',
+                                                     'card_sha256': news_events.card_hash(c)}})
+    assert stats['unresolved'] == 1 and log == []
+
+
+def test_reviewed_source_map_ignores_a_stale_card_hash(tmp_path):
+    c = card('0000000000m6', GN)
+    data = archive(tmp_path, [c])
+    log = []
+    stats = backfill.run(data, RULES, retrieve=retriever(log), post=FakePost(BRIEF), max_cards=1,
+                         resolved_sources={c['id']: {'url': 'https://example.com/cifc',
+                                                     'title': c['headline']['en'], 'publisher': 'example.com',
+                                                     'card_sha256': 'stale'}})
+    assert stats['candidates'] == 0 and log == []
 
 
 def test_gdelt_rejects_weak_title_matches(tmp_path):

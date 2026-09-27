@@ -727,7 +727,7 @@
     "b32b39b5ccad": {
       "card_sha256": "fbaa2ca065ca1a00282f32ece3394c7073861c28cc2f0a098633241379def7e4",
       "status": "ok",
-      "checked_at": "2026-09-26T08:28:00+00:00",
+      "checked_at": "2026-09-26T14:59:37+00:00",
       "evidence": {
         "status": "ok",
         "level": "excerpt",
@@ -737,32 +737,43 @@
         "final_url": "https://alternativecreditinvestor.com/2026/08/19/goldman-to-acquire-lcn-capital-partners/"
       },
       "headline": {
-        "en": "Goldman to acquire LCN Capital Partners for about $260m",
+        "en": "Goldman Sachs to acquire LCN Capital Partners for about $260m",
         "zh": "高盛将以约2.6亿美元收购LCN Capital Partners"
       },
       "summary": {
-        "en": "Goldman Sachs has agreed to acquire real estate investment manager LCN Capital Partners for approximately $260m, with another $150m contingent on long-dated performance targets and service commitments. Roughly 80 per cent of the total will be paid in equity, and the deal is expected to close by the end of 2026 subject to regulatory approval. LCN, founded in 2011, focuses on sale-leaseback, build-to-suit and triple net lease sectors and has $3bn in assets under supervision.",
-        "zh": "高盛已同意以约2.6亿美元收购房地产投资管理公司LCN Capital Partners，另有1.5亿美元取决于长期业绩目标和服务承诺的达成。交易总额约80%将以股权支付，预计在2026年底前完成，尚待监管批准。LCN成立于2011年，专注于售后回租、定制建造和净租赁领域，管理资产规模为30亿美元。"
+        "en": "Goldman Sachs has announced it will purchase real estate investment manager LCN Capital Partners for approximately $260m, with a further $150m subject to long-dated performance targets and service commitments. Roughly 80 per cent of the total transaction will be paid in equity. LCN, founded in 2011, focuses on sale-leaseback, build-to-suit and triple net lease sectors in North America and Europe, and has $3bn in assets under supervision.",
+        "zh": "高盛宣布将以约2.6亿美元收购房地产投资管理公司LCN Capital Partners，另有1.5亿美元取决于长期业绩目标和服务承诺的达成。交易总额中约80%将以股权形式支付。LCN成立于2011年，专注于北美和欧洲的售后回租、定制开发和三重净租赁领域，管理资产规模为30亿美元。"
       },
       "assessment": {
         "version": "priority-v1",
-        "assessable": false,
+        "assessable": true,
         "potential_urgent": false,
         "evidence_refs": {
           "severity": {
-            "start": 36,
-            "end": 120
+            "start": 97,
+            "end": 128
           },
           "linkage": {
-            "start": 827,
-            "end": 886
+            "start": 0,
+            "end": 96
           }
         },
         "source_sha256": "d8cb657c2a3021804968e665283af480e6617db2f1503f039c7cf98d2b6e571b",
-        "failure": "Missing or insufficient source evidence"
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
       },
       "relevant": true,
-      "relevance_reason": "A major credit-adjacent asset manager acquiring a real estate sale-leaseback firm shifts competitive and fundraising dynamics in private credit and real assets.",
+      "relevance_reason": "A large asset manager acquiring a real estate credit and sale-leaseback platform signals continued consolidation in real-estate-linked private credit, relevant to the competitive environment for these strategies.",
       "prompt_version": "brief-v3.2-evidence",
       "model": "deepseek-flash"
     },
@@ -4297,7 +4308,1527 @@
       "relevance_reason": "Goldman Sachs Alternatives' evergreen European private credit strategy surpassing $10bn signals continued fundraising momentum and capital formation in European direct lending.",
       "prompt_version": "brief-v3.1-evidence",
       "model": "deepseek-flash"
+    },
+    "0bb392627045": {
+      "card_sha256": "3295e1b23b72c4ddd8313d71973627d0abe8958c36b1262b7cd04d55dc5be67f",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:23:40+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:03:01+00:00",
+        "sha256": "68f3d1c529b324cb6ccd03af0814d7e1c81f0fb0decd6dfdbf5dafc1ccf3acb0",
+        "source_published_at": "2026-09-23T13:12:37.000Z",
+        "final_url": "https://mco.mycomplianceoffice.com/about-us/news/mco-mycomplianceoffice-announces-strategic-growth-financing-from-accel-kkr-credit-partners"
+      },
+      "resolved_url": "https://mco.mycomplianceoffice.com/about-us/news/mco-mycomplianceoffice-announces-strategic-growth-financing-from-accel-kkr-credit-partners",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "MCO secures $100M+ growth financing from Accel-KKR Credit Partners",
+        "zh": "MCO 从 Accel-KKR Credit Partners 获得逾1亿美元增长融资"
+      },
+      "summary": {
+        "en": "MCO (MyComplianceOffice), a compliance management software provider for financial services, has received strategic growth financing from Accel-KKR Credit Partners. The $100M+ financing will fund product and AI innovation and market expansion.",
+        "zh": "为金融服务行业提供合规管理软件的 MCO（MyComplianceOffice）已从 Accel-KKR Credit Partners 获得战略增长融资。这笔逾1亿美元的融资将用于产品与人工智能创新以及市场扩张。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 12,
+            "end": 69
+          },
+          "linkage": {
+            "start": 12,
+            "end": 69
+          }
+        },
+        "source_sha256": "68f3d1c529b324cb6ccd03af0814d7e1c81f0fb0decd6dfdbf5dafc1ccf3acb0",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "indirect",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A $100M+ growth financing for a compliance software company from a non-tracked private credit fund is a bounded, incremental private credit transaction.",
+          "zh": "一家非跟踪范围内的私人信贷基金向合规软件公司提供逾1亿美元增长融资，属有限、增量的私人信贷交易。"
+        }
+      },
+      "relevant": false,
+      "relevance_reason": "Financing for a compliance software company by a private credit fund that is not a tracked manager, with no clear transmission to a tracked manager or covered credit sub-sector.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "10207993276a": {
+      "card_sha256": "53975b97ecfe2d7040753c24a925d6a1656c0fcf74cd61ec68b8107b5b1ccd3d",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:16:12+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T07:42:40+00:00",
+        "sha256": "65a7499889e68d27d0a7e64f87f98923b610d5e96e6755cba69df56808822bca",
+        "source_published_at": "2026-09-14T08:42:42+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/14/neuberger-launches-new-aerospace-financing-platform/"
+      },
+      "resolved_url": "https://alternativecreditinvestor.com/2026/09/14/neuberger-launches-new-aerospace-financing-platform/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Neuberger launches New Bridge Aero aerospace financing platform targeting over $2bn portfolio",
+        "zh": "Neuberger 推出 New Bridge Aero 航空融资平台，目标组合规模超 20 亿美元"
+      },
+      "summary": {
+        "en": "Neuberger Specialty Finance, the asset-based finance arm of Neuberger, has launched New Bridge Aero, an aerospace financing platform aiming to build a portfolio in excess of $2bn. The platform will originate and acquire loans and other debt instruments across the aerospace sector, and will be led by Richard Moody, formerly global head of aviation finance at Hamburg Commercial Bank. Deutsche Bank and Hamburg Commercial Bank are named among the institutions associated with the leadership team's backgrounds.",
+        "zh": "Neuberger 的资产支持融资部门 Neuberger Specialty Finance 已推出航空融资平台 New Bridge Aero，目标构建超过 20 亿美元的投资组合。该平台将发起并收购航空航天领域的贷款及其他债务工具，由前 Hamburg Commercial Bank 全球航空融资主管 Richard Moody 领导。Deutsche Bank 和 Hamburg Commercial Bank 出现在领导团队背景中。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 32,
+            "end": 115
+          },
+          "linkage": {
+            "start": 385,
+            "end": 477
+          }
+        },
+        "source_sha256": "65a7499889e68d27d0a7e64f87f98923b610d5e96e6755cba69df56808822bca",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Neuberger Specialty Finance launched New Bridge Aero targeting a portfolio above $2bn, an incremental expansion of its asset-based finance platform into aerospace lending.",
+          "zh": "Neuberger Specialty Finance 推出 New Bridge Aero，目标组合规模超过 20 亿美元，是其资产支持融资平台向航空贷款领域的增量扩张。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Neuberger launches a new aerospace asset-backed lending platform targeting a portfolio above $2bn, expanding credit deployment in an aircraft/asset-based finance strategy.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "1280cafe61a1": {
+      "card_sha256": "1398e1c0f84ef181128e4be4ca604e0e39e552d788ea1dc35c9dacd492b1386b",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:29:25+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:16:20+00:00",
+        "sha256": "1a5e79c69b8e167939d0c337ed6fb2f1ca127f8aaff8225341c1dc500a87989e",
+        "source_published_at": "2026-09-16T02:57:08.000Z",
+        "final_url": "https://dealroom.co/news/151088-apollo-backs-asia-flex-office-giant-with-590-million-debt-deal/"
+      },
+      "resolved_url": "https://dealroom.co/news/151088-apollo-backs-asia-flex-office-giant-with-590-million-debt-deal/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo provides $585 million financing to Executive Centre",
+        "zh": "阿波罗向 Executive Centre 提供 5.85 亿美元融资"
+      },
+      "summary": {
+        "en": "Apollo Global Management has provided $585 million in financing to The Executive Centre, a Hong Kong-based provider of premium flexible office space. Apollo-managed funds, affiliates and other long-term investors backed the deal, announced on September 15, 2026. TEC will use most of the proceeds to refinance existing debt, with the rest supporting expansion, and the transaction was led by Celia Yan, partner and co-head of APAC Credit & Hybrid at Apollo.",
+        "zh": "阿波罗全球管理公司向 The Executive Centre 提供 5.85 亿美元融资；后者是一家总部位于香港的高端灵活办公空间提供商。该交易于 2026 年 9 月 15 日宣布，由阿波罗管理的基金、关联方及其他长期投资者支持。TEC 将把大部分收益用于现有债务再融资，其余用于扩张；交易由阿波罗亚太信贷与混合资本合伙人兼联席主管 Celia Yan 领导。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 63
+          },
+          "linkage": {
+            "start": 498,
+            "end": 577
+          }
+        },
+        "source_sha256": "1a5e79c69b8e167939d0c337ed6fb2f1ca127f8aaff8225341c1dc500a87989e",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo provided $585 million of financing to The Executive Centre, a sizeable but incremental deployment by a tracked manager with no adverse credit implications.",
+          "zh": "阿波罗向 The Executive Centre 提供 5.85 亿美元融资，对受跟踪管理机构而言规模可观但属增量部署，无不利信用影响。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "A large Apollo-led private credit financing in APAC signals continued deployment capacity and competition in bespoke hybrid credit for a tracked manager.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "cef717ef0cd2": {
+      "card_sha256": "1178613d21833b011788b0effc7f671309cd7558e20fceef625c7da5e811a5bf",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:57:31+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:53:23+00:00",
+        "sha256": "c7b6aab173395608a8a4801953158de9ad2c9eee4e9153efc75cee1e7bf0abb8",
+        "source_published_at": "2026-09-16T01:42:58Z",
+        "final_url": "https://retailnews.asia/apollo-extends-585-million-financing-to-the-executive-centre"
+      },
+      "resolved_url": "https://retailnews.asia/apollo-extends-585-million-financing-to-the-executive-centre",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo Extends $585 Million Financing to The Executive Centre",
+        "zh": "Apollo向The Executive Centre提供5.85亿美元融资"
+      },
+      "summary": {
+        "en": "Apollo Global Management has extended $585 million in financing to The Executive Centre, the Hong Kong-based workspace operator announced. Proceeds will refinance existing debt and fund expansion across Asia-Pacific and the Middle East. Reports in August had indicated the company sought roughly $500 million.",
+        "zh": "Apollo Global Management已向香港办公空间运营商The Executive Centre提供5.85亿美元融资，该公司宣布。资金将用于现有债务再融资，并支持其在亚太和中东地区的扩张。8月的报道曾显示该公司寻求约5亿美元。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 202,
+            "end": 282
+          },
+          "linkage": {
+            "start": 173,
+            "end": 236
+          }
+        },
+        "source_sha256": "c7b6aab173395608a8a4801953158de9ad2c9eee4e9153efc75cee1e7bf0abb8",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo Credit provides a $585 million private credit facility to The Executive Centre for refinancing and Asia-Pacific and Middle East expansion; an incremental deployment with no adverse credit event for the manager.",
+          "zh": "Apollo Credit向The Executive Centre提供5.85亿美元私募信贷融资，用于再融资及亚太和中东扩张；对管理人而言属增量投放，无不利信用事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo extends a $585m private credit facility to a workspace operator, a direct private credit deployment for a tracked manager.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "aa9b94332185": {
+      "card_sha256": "79ca5f8f566c197f8ba940edb73735078078bf266847210ec5d92713552a6299",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:57:31+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:53:34+00:00",
+        "sha256": "d0239ef04892cc9b93ddd0300ff04203dfa2e496f2104fabacbcda7bdb51aede",
+        "source_published_at": "2026-09-16 09:12:50",
+        "final_url": "https://www.dealstreetasia.com/stories/apollo-backs-hong-kongs-the-executive-centre-with-585m-financing-495302"
+      },
+      "resolved_url": "https://www.dealstreetasia.com/stories/apollo-backs-hong-kongs-the-executive-centre-with-585m-financing-495302",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo backs Hong Kong's The Executive Centre with $585m financing",
+        "zh": "Apollo 为香港 The Executive Centre 提供 5.85 亿美元融资"
+      },
+      "summary": {
+        "en": "Apollo Global Management said it provided $584 million in financing to Hong Kong flexible office space provider The Executive Centre through its managed funds, affiliates and other long-term investors. Proceeds will primarily refinance TEC's existing debt and support its expansion across Asia. TEC, which operates more than 260 centres in 38 cities across 15 markets in Asia Pacific and the Middle East, was acquired by KKR & Co and a Tiga Investments Pte-led consortium in 2021.",
+        "zh": "Apollo Global Management 表示，已通过其管理的基金、关联公司及其他长期投资者，向香港灵活办公空间提供商 The Executive Centre（TEC）提供 5.84 亿美元融资。所得资金将主要用于为 TEC 的现有债务再融资，并支持其在亚洲的扩张。TEC 在亚太和中东 15 个市场的 38 个城市运营 260 多个中心，2021 年被 KKR & Co 和由 Tiga Investments Pte 牵头的财团收购。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 332,
+            "end": 366
+          },
+          "linkage": {
+            "start": 295,
+            "end": 340
+          }
+        },
+        "source_sha256": "d0239ef04892cc9b93ddd0300ff04203dfa2e496f2104fabacbcda7bdb51aede",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo extended a new $584m financing to TEC, an incremental direct lending transaction without adverse credit implications.",
+          "zh": "Apollo 向 TEC 提供 5.84 亿美元新融资，属增量直接贷款交易，无不利信用影响。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo provides $584m financing to TEC, a direct private credit transaction by a tracked manager, with KKR-linked ownership context.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "d1ffa08664f4": {
+      "card_sha256": "2f2bd66bc08c3844fa725348c424010a6791349898bd518ae53e2cdcbab80bb1",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:57:31+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:53:48+00:00",
+        "sha256": "03a8e88bb97bc9e91116522d12205af278816fff905a62bf91eb383cb60878ea",
+        "final_url": "https://ir.apollo.com/news-events/press-releases/detail/648/apollo-provides-585-million-financing-to-the-executive"
+      },
+      "resolved_url": "https://ir.apollo.com/news-events/press-releases/detail/648/apollo-provides-585-million-financing-to-the-executive",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo provides $585 million financing to The Executive Centre",
+        "zh": "Apollo 向 The Executive Centre 提供 5.85 亿美元融资"
+      },
+      "summary": {
+        "en": "Apollo announced that Apollo-managed funds, affiliates and other long-term investors provided a $585 million financing to The Executive Centre, an operator of premium flexible office space with over 260 centres across 38 cities in 15 APAC and Middle East markets. Proceeds will be primarily used to refinance existing debt and support expansion. Apollo framed the deal as a bespoke hybrid capital solution in Asia.",
+        "zh": "Apollo 宣布，由 Apollo 管理的基金、关联机构及其他长期投资者向 The Executive Centre 提供 5.85 亿美元融资。The Executive Centre 是亚洲领先的高端灵活办公空间提供商，在 15 个亚太及中东市场的 38 个城市拥有超过 260 个中心。资金将主要用于现有债务再融资并支持扩张。Apollo 将该交易称为亚洲的定制化混合资本解决方案。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 410,
+            "end": 467
+          },
+          "linkage": {
+            "start": 346,
+            "end": 443
+          }
+        },
+        "source_sha256": "03a8e88bb97bc9e91116522d12205af278816fff905a62bf91eb383cb60878ea",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo-managed funds and affiliates lent $585 million to refinance debt and fund expansion for an APAC flexible-office operator; a new, sized private credit financing with no adverse credit development.",
+          "zh": "Apollo 管理的基金及关联机构向一家亚太灵活办公运营商提供 5.85 亿美元贷款，用于债务再融资和扩张；这是一笔规模明确的新私募信贷融资，未出现不利信用事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "A tracked manager's credit platform extended a sizable bespoke Asia financing, reflecting private credit deployment conditions in APAC.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "460530fb1372": {
+      "card_sha256": "564b7334cbd1d2dd0e8c6fb3d5e66a38e63a08ab12d2bf38042915944e7e6bb6",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:57:31+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T07:28:05+00:00",
+        "sha256": "90f656a1a7aefe416ef8d74e052979591bfea592312e6b16c544dc3d53dcfddd",
+        "source_published_at": "2026-09-17T11:11:56+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/17/cifc-launches-direct-lending-strategy-on-icapital/"
+      },
+      "resolved_url": "https://alternativecreditinvestor.com/2026/09/17/cifc-launches-direct-lending-strategy-on-icapital/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "CIFC launches direct lending strategy on iCapital marketplace",
+        "zh": "CIFC在iCapital平台推出直接贷款策略"
+      },
+      "summary": {
+        "en": "CIFC Asset Management, a $47bn alternative credit specialist, has launched its direct lending strategy on iCapital Marketplace. The strategy lends to US lower middle market companies, focusing on senior secured, floating-rate loans to companies with $50m to $500m in revenue, with financial covenants and cash-pay interest. CIFC said its direct lending portfolio has included no covenant-lite loans to date.",
+        "zh": "规模470亿美元的另类信贷专业机构CIFC Asset Management已在iCapital Marketplace上推出其直接贷款策略。该策略向美国低中端市场企业放贷，专注于向营收在5000万至5亿美元之间的公司提供优先担保、浮动利率贷款，强调财务契约和现金付息。CIFC表示，其直接贷款组合迄今未包含任何契约宽松贷款。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 76,
+            "end": 136
+          },
+          "linkage": {
+            "start": 0,
+            "end": 70
+          }
+        },
+        "source_sha256": "90f656a1a7aefe416ef8d74e052979591bfea592312e6b16c544dc3d53dcfddd",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "CIFC's direct lending strategy becomes available on a wealth platform, an incremental distribution development with no credit-negative facts.",
+          "zh": "CIFC的直接贷款策略登陆财富管理平台，属于增量分销进展，无信贷负面事实。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "CIFC's direct lending strategy launch on iCapital expands wealth-channel access, a distribution development for a tracked private credit manager.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "d5bc3cf66452": {
+      "card_sha256": "6ddb2a612a17e1cc8853b1b50790224fdbfb3ac28dc0fa44660f9a2ab2b47ab2",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:57:31+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:54:49+00:00",
+        "sha256": "26929c31613bc48e891479ef34c30edcc55f8cd13d04ef614651be637dae3423",
+        "source_published_at": "2026-09-16T01:00:00Z",
+        "final_url": "https://www.globenewswire.com/news-release/2026/09/16/3362798/0/en/apollo-provides-585-million-financing-to-the-executive-centre.html"
+      },
+      "resolved_url": "https://www.globenewswire.com/news-release/2026/09/16/3362798/0/en/apollo-provides-585-million-financing-to-the-executive-centre.html",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo Provides $585 Million Financing to The Executive Centre",
+        "zh": "Apollo 向 The Executive Centre 提供5.85亿美元融资"
+      },
+      "summary": {
+        "en": "Apollo announced that Apollo-managed funds, affiliates and other long-term investors provided a $585 million financing to The Executive Centre, an Asia-based provider of premium flexible office space with over 260 centres in 38 cities. Proceeds will be primarily used to refinance existing debt and to support TEC's expansion. Apollo said the transaction builds on its hybrid capital solutions in Asia.",
+        "zh": "Apollo 宣布，Apollo 管理的基金、关联机构及其他长期投资者向 The Executive Centre 提供了5.85亿美元融资。The Executive Centre 是亚洲领先的高端灵活办公空间提供商，在38个城市拥有逾260个中心。所得资金将主要用于为现有债务再融资，并为 TEC 的扩张提供支持。Apollo 表示，该交易延续了其在亚洲的混合资本解决方案。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 482,
+            "end": 539
+          },
+          "linkage": {
+            "start": 418,
+            "end": 539
+          }
+        },
+        "source_sha256": "26929c31613bc48e891479ef34c30edcc55f8cd13d04ef614651be637dae3423",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo-managed funds, affiliates and other long-term investors provided a $585 million financing to The Executive Centre, an incremental private credit transaction with no adverse credit development.",
+          "zh": "Apollo 管理的基金、关联机构及其他长期投资者向 The Executive Centre 提供了5.85亿美元融资，这是一笔增量私募信贷交易，未出现不利信用事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo-managed funds and affiliates provided a $585 million financing to The Executive Centre in Asia, a direct private credit transaction for a tracked manager.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "777afd02d6c0": {
+      "card_sha256": "6813f14cfa0b7c6d7bc4ccdcf59b050778e459d1b9b2f4a0a0af04d0a699073b",
+      "status": "ok",
+      "checked_at": "2026-09-26T15:58:38+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:54:58+00:00",
+        "sha256": "4d82496a9c8ce14c81affa42e8be81b630b4446a4d91f04b4e6c339c9e7d0421",
+        "source_published_at": "2026-09-17T14:28:41-04:00",
+        "final_url": "https://vinnews.com/2026/09/17/truist-to-sell-5-5-billion-in-auto-loans-exiting-near-prime-lending-tied-to-broward-operations/"
+      },
+      "resolved_url": "https://vinnews.com/2026/09/17/truist-to-sell-5-5-billion-in-auto-loans-exiting-near-prime-lending-tied-to-broward-operations/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Truist to Sell $5.5 Billion in Auto Loans to Apollo",
+        "zh": "Truist将向Apollo出售55亿美元汽车贷款"
+      },
+      "summary": {
+        "en": "Truist Financial is selling $5.5 billion in auto loans to Apollo Global Management, according to Bloomberg, as new CEO Mike Lyons pushes a strategic overhaul. The sale is expected to generate about $5.2 billion in net proceeds and release roughly $535 million in loan-loss reserves, and marks Truist's exit from near-prime auto lending. The loans are held by Regional Acceptance Corp., a Truist subsidiary.",
+        "zh": "据彭博报道，Truist Financial正向Apollo Global Management出售55亿美元汽车贷款，新任CEO Mike Lyons正推动战略重组。该交易预计为Truist带来约52亿美元净收益，并释放约5.35亿美元贷款损失准备金，同时标志着Truist退出近优级汽车贷款业务。这些贷款由Truist子公司Regional Acceptance Corp.持有。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 48,
+            "end": 92
+          },
+          "linkage": {
+            "start": 56,
+            "end": 110
+          }
+        },
+        "source_sha256": "4d82496a9c8ce14c81affa42e8be81b630b4446a4d91f04b4e6c339c9e7d0421",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo's credit business is acquiring a $5.5bn auto-loan portfolio from Truist, an incremental but direct deployment for a tracked manager.",
+          "zh": "Apollo的信贷业务正从Truist收购55亿美元汽车贷款组合，对受跟踪管理人而言属增量但直接的资产投放。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo's credit platform is acquiring a $5.5bn bank auto-loan portfolio, a direct asset-based/consumer credit deployment by a tracked manager.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "257c06057f6a": {
+      "card_sha256": "b2178860dc91af1ae1c05beac9b1fa65b0ddc3201e6c84aa550b8f45204069a0",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T15:59:55+00:00",
+        "sha256": "2ecd7b6431eaa8cb8ec2e82aa8a6328507b87803a4826a146d1d91fa93ad2f77",
+        "source_published_at": "2026-09-21T06:46:27-04:00",
+        "final_url": "https://www.abfjournal.com/middle-market-debt-weekly-abl-capacity-holds-firm-as-fed-raises-rates-private-credit-defaults-climb/"
+      },
+      "resolved_url": "https://www.abfjournal.com/middle-market-debt-weekly-abl-capacity-holds-firm-as-fed-raises-rates-private-credit-defaults-climb/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Asset-Based Lenders Expand Capacity as Fed Raises Rates and Private Credit Defaults Hit 6.3%",
+        "zh": "美联储加息、私募信贷违约率升至6.3%之际，资产支持贷款机构扩大贷款能力"
+      },
+      "summary": {
+        "en": "Calumet amended its asset-based facility to raise total commitments by $100 million to $600 million, while Credit Acceptance extended a $500.0 million revolving secured warehouse facility by a year and cut pricing to SOFR plus 175 basis points. Hecla Mining closed a new $500 million senior secured revolver and removed the Greens Creek mortgage and all-assets lien. The Federal Open Market Committee voted 12-0 to raise the federal funds rate by 25 basis points to 3-3/4% to 4%, the first increase since July 2023, amid a record 6.3% private credit default rate.",
+        "zh": "Calumet将其资产支持贷款额度修正，总承诺额增加1亿美元至6亿美元；Credit Acceptance将5亿美元循环担保仓储贷款额度延长一年，并将定价下调至SOFR加175个基点。Hecla Mining完成新的5亿美元高级担保循环贷款，并取消Greens Creek矿的抵押及全资产留置权。联邦公开市场委员会以12比0的投票结果将联邦基金利率目标区间上调25个基点至3.75%-4%，为2023年7月以来首次加息，背景是私募信贷违约率达到创纪录的6.3%。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 435,
+            "end": 508
+          },
+          "linkage": {
+            "start": 435,
+            "end": 508
+          },
+          "current_adverse": {
+            "start": 435,
+            "end": 508
+          }
+        },
+        "source_sha256": "2ecd7b6431eaa8cb8ec2e82aa8a6328507b87803a4826a146d1d91fa93ad2f77",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A 25-basis-point Fed rate hike and a record 6.3% private credit default rate materially affect private credit risk and secured lending conditions.",
+          "zh": "美联储加息25个基点及私募信贷违约率创6.3%纪录，实质性影响私募信贷风险和有担保贷款条件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "New ABL facility amendments and a Fed rate hike with a record 6.3% private credit default rate signal shifts in secured lending capacity and private credit risk conditions.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "b21c1e9f66a0": {
+      "card_sha256": "c65013317aa26ba9d58302020ae29bee356831e99d73a60bfaf4c52a6d0f790a",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-25T04:52:44+00:00",
+        "sha256": "d324a72a9be2f943432e3cd7919181cb3a846b4056f69dac9663e59fe91f99fc",
+        "source_published_at": "2026-09-22T09:36:30+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/22/australian-regulator-cracks-down-on-three-private-credit-products/"
+      },
+      "resolved_url": "https://alternativecreditinvestor.com/2026/09/22/australian-regulator-cracks-down-on-three-private-credit-products/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "ASIC temporarily bans three private credit products of Melbourne Securities Corporation",
+        "zh": "澳大利亚监管机构暂时禁止Melbourne Securities Corporation的三只私人信贷产品"
+      },
+      "summary": {
+        "en": "Australia's ASIC has issued 21-day stop orders on three private credit products offered under the Remara Cash Management Fund, a registered managed investment scheme administered by Melbourne Securities Corporation. ASIC cited deficiencies in the products' target market determinations and said the sector should prepare for enforcement action. The regulator said the Remara Cash Management Fund has A$39.9bn in assets under management.",
+        "zh": "澳大利亚证券和投资委员会（ASIC）对由Melbourne Securities Corporation管理的注册管理投资计划Remara Cash Management Fund旗下的三只私人信贷产品发出为期21天的停止令。ASIC称发现这些产品的目标市场确定存在缺陷，并表示该行业应为执法行动做好准备。监管机构表示，Remara Cash Management Fund管理资产规模为399亿澳元。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 26,
+            "end": 74
+          },
+          "linkage": {
+            "start": 1025,
+            "end": 1056
+          },
+          "current_adverse": {
+            "start": 742,
+            "end": 776
+          }
+        },
+        "source_sha256": "d324a72a9be2f943432e3cd7919181cb3a846b4056f69dac9663e59fe91f99fc",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "ASIC stop orders on private credit products plus warning of enforcement action signal regulatory risk for the Australian private credit sub-sector, though no tracked manager is named.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "e5480fcc7ee7": {
+      "card_sha256": "0b31adc1c3be277aa8ec156d25df21ee3cea2b8a4fc46f34b3122a55c272f99d",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:03:00+00:00",
+        "sha256": "5bdce08f172a02aac80ec160811d8c31152d5b5e136ced953e53801df7aaae3d",
+        "source_published_at": "2026-09-23T12:05:00",
+        "final_url": "https://finwire.io/news/stock-markets-news/apollo-global-at-risk-as-private-credit-redemptions-continue"
+      },
+      "resolved_url": "https://finwire.io/news/stock-markets-news/apollo-global-at-risk-as-private-credit-redemptions-continue",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo's ADS BDC redemption requests fall to 14.7% in Q3 tender",
+        "zh": "Apollo的ADS BDC第三季度要约赎回申请降至14.7%"
+      },
+      "summary": {
+        "en": "Investors in Apollo Debt Solutions BDC sought to withdraw roughly 14.7% of shares in the latest tender offer, down from 16.8% in the second quarter. Apollo said investors seeking liquidity this year have received about 75% of requested capital. Redemption rates also eased at HPS Corporate Lending Fund, North Haven Private Income Fund and Oaktree Strategic Credit Fund.",
+        "zh": "投资者在最新一次要约中寻求赎回Apollo Debt Solutions BDC约14.7%的份额，低于第二季度的16.8%。Apollo表示，今年寻求流动性的投资者已获得其申请资本的约75%。HPS Corporate Lending Fund、North Haven Private Income Fund和Oaktree Strategic Credit Fund的赎回率也有所缓解。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 397,
+            "end": 518
+          },
+          "linkage": {
+            "start": 562,
+            "end": 676
+          },
+          "current_adverse": {
+            "start": 1077,
+            "end": 1173
+          }
+        },
+        "source_sha256": "5bdce08f172a02aac80ec160811d8c31152d5b5e136ced953e53801df7aaae3d",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo Debt Solutions BDC redemption requests remained elevated at 14.7% in Q3 though below Q2's 16.8%, and Apollo capped redemptions in the quarter while investors received about 75% of requested capital.",
+          "zh": "Apollo Debt Solutions BDC第三季度赎回申请仍高达14.7%，虽低于第二季度的16.8%；Apollo在该季度限制了赎回，投资者仅获得约75%的申请资本。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo's private credit vehicle redemption caps and easing redemption pressure directly affect a tracked credit manager's liquidity and franchise conditions.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "eebf558661aa": {
+      "card_sha256": "e1835e1cda13a289890c7cd2e0f59af8ebfd55bdce5b8ee772dacc9eb13cce84",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:03:02+00:00",
+        "sha256": "a582c548441ae2ae2e3d9e6b80a8aa74329c5d80393cb2c9ad1174bdfcb140b4",
+        "source_published_at": "2026-09-23T10:45:15+00:00",
+        "final_url": "https://ts2.tech/en/apollo-stock-drops-2-9-private-credit-exit-requests-still-triple-the-cap/"
+      },
+      "resolved_url": "https://ts2.tech/en/apollo-stock-drops-2-9-private-credit-exit-requests-still-triple-the-cap/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo shares fall 2.9% as Apollo Debt Solutions repurchase requests hit 14.7% of shares, triple the 5% cap",
+        "zh": "Apollo股价下跌2.9%，Apollo Debt Solutions赎回申请达股份的14.7%，为5%上限的三倍"
+      },
+      "summary": {
+        "en": "Apollo Global Management closed at $124.15, down 2.94%, before its Apollo Debt Solutions fund disclosed third-quarter repurchase requests equal to 14.7% of outstanding shares, down from 16.8% but nearly three times the fund's 5% quarterly cap. The fund expects about $0.5 billion of third-quarter net outflows, roughly 3% of net assets, and reports $4.8 billion of cash and undrawn borrowing capacity. It said most requests came from investors resubmitting previously unfilled orders and expects those seeking liquidity in 2026 to receive about 75% of requested proceeds this quarter.",
+        "zh": "Apollo Global Management收于124.15美元，下跌2.94%，此前其Apollo Debt Solutions基金披露第三季度赎回申请相当于流通股的14.7%，低于第二季度的16.8%，但接近该基金5%季度上限的三倍。该基金预计第三季度净流出约5亿美元，约占净资产的3%，并报告拥有48亿美元现金及未提取借款额度。该基金表示多数申请来自投资者重新提交此前未获满足的订单，并预计2026年寻求流动性的投资者本季度将获得约75%的申请金额。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 793,
+            "end": 840
+          },
+          "linkage": {
+            "start": 461,
+            "end": 541
+          },
+          "current_adverse": {
+            "start": 279,
+            "end": 362
+          }
+        },
+        "source_sha256": "a582c548441ae2ae2e3d9e6b80a8aa74329c5d80393cb2c9ad1174bdfcb140b4",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo Debt Solutions repurchase requests remain near three times the 5% quarterly cap with expected $0.5 billion net outflows, but $4.8 billion of liquidity and ~75% expected payout keep the impact bounded for Apollo.",
+          "zh": "Apollo Debt Solutions的赎回申请仍接近5%季度上限的三倍，预计净流出5亿美元，但48亿美元流动性和约75%的预期兑付使对Apollo的影响有限。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo's perpetual private-credit fund faces repurchase requests nearly three times its 5% quarterly cap with expected $0.5bn net outflows, a meaningful redemption/liquidity signal for private credit and a tracked manager.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "8d1b134a37a1": {
+      "card_sha256": "d64846015b51de3a30c1416d4b2b6798ce358ae43e61cd89ca161c593604fd09",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:03:46+00:00",
+        "sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "source_published_at": "2026-09-22T16:16:41-05:00",
+        "final_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/"
+      },
+      "resolved_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo私人信贷基金第三季度赎回请求下降"
+      },
+      "summary": {
+        "en": "Investors in Apollo Debt Solutions BDC sought to withdraw roughly 14.7% of shares in the third-quarter tender offer, down from 16.8% in the prior quarter, according to a regulatory filing. The fund will repurchase 5% of shares, its customary threshold, and said requests declined sequentially across both US onshore and offshore investors.",
+        "zh": "根据一份监管文件，Apollo Debt Solutions BDC的投资者在第三季度要约收购中寻求赎回约14.7%的份额，低于上一季度的16.8%。该基金将回购5%的份额，这是此类工具的惯常门槛，并称美国在岸和离岸投资者的赎回请求均环比下降。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 231,
+            "end": 294
+          },
+          "linkage": {
+            "start": 205,
+            "end": 230
+          }
+        },
+        "source_sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests at Apollo's flagship private credit BDC fell to about 14.7% from 16.8%, with repurchases at the customary 5% threshold, indicating easing but ongoing pressure.",
+          "zh": "Apollo旗舰私人信贷BDC的赎回请求从16.8%降至约14.7%，回购维持在惯常的5%门槛，显示压力有所缓解但仍在持续。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Redemption pressure at Apollo's flagship private credit BDC eased sequentially, informing credit investors' view of liquidity conditions at a tracked manager's vehicle.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "3489c10aedc3": {
+      "card_sha256": "6a604921048ace1c5c99bd2b73e89ff4ebe163c8bd56dc90b78bc5c4170056e5",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:04:09+00:00",
+        "sha256": "47e6d7c08cd02dd728c1c0392f938a6c7ea99f2dd113e07af514acb4a5cc56fc",
+        "source_published_at": "2026-09-23T06:30:56+05:30",
+        "final_url": "https://www.cnbctv18.com/market/apollo-global-caps-private-credit-fund-again-as-14-7-look-to-exit-19996182.htm"
+      },
+      "resolved_url": "https://www.cnbctv18.com/market/apollo-global-caps-private-credit-fund-again-as-14-7-look-to-exit-19996182.htm",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo caps private credit fund redemptions again as 14.7% seek exit",
+        "zh": "Apollo再次限制私募信贷基金赎回，14.7%投资者寻求退出"
+      },
+      "summary": {
+        "en": "Apollo Global Management capped redemptions from its $26 billion Apollo Debt Solutions BDC for the third quarter, limiting withdrawals to 5%. The cap was applied as 14.7% of investors sought to pull cash from the private credit fund. This is the third consecutive quarter in which Apollo has limited redemptions from the vehicle.",
+        "zh": "Apollo Global Management对旗下规模260亿美元的Apollo Debt Solutions BDC第三季度赎回进行限制，将赎回上限设为5%。在14.7%的投资者寻求从该私募信贷基金撤出现金之际，该限制被触发。这是Apollo连续第三个季度限制该工具的赎回。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 258,
+            "end": 323
+          },
+          "linkage": {
+            "start": 0,
+            "end": 77
+          },
+          "current_adverse": {
+            "start": 347,
+            "end": 372
+          }
+        },
+        "source_sha256": "47e6d7c08cd02dd728c1c0392f938a6c7ea99f2dd113e07af514acb4a5cc56fc",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo capped redemptions on its $26 billion private credit BDC for a third quarter as 14.7% of investors sought to exit, a direct liquidity constraint on a tracked manager's credit vehicle.",
+          "zh": "Apollo连续第三个季度对旗下260亿美元私募信贷BDC的赎回设限，14.7%的投资者寻求退出，这对受关注管理人的信贷工具构成直接的流动性约束。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Apollo's private credit BDC capped redemptions for a third quarter, a direct liquidity datapoint for a tracked manager's credit platform.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "8d1ecbaa14b3": {
+      "card_sha256": "321b6574f37cbe7a954705e650fcef899ffa0083d730a9a7ab0292302165b3d1",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:03:46+00:00",
+        "sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "source_published_at": "2026-09-22T16:16:41-05:00",
+        "final_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/"
+      },
+      "resolved_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo private credit BDC redemption requests ease to 14.7% in third quarter",
+        "zh": "Apollo私人信贷BDC第三季度赎回请求降至14.7%"
+      },
+      "summary": {
+        "en": "Investors in Apollo Debt Solutions BDC sought to withdraw roughly 14.7% of shares in the third-quarter tender offer, down from 16.8% in the prior quarter, according to a regulatory filing. The fund will repurchase 5% of shares, the customary threshold for such vehicles, and said requests declined sequentially across US onshore and offshore investors.",
+        "zh": "根据一份监管文件，Apollo Debt Solutions BDC的投资者在第三季度要约收购中寻求赎回约14.7%的份额，低于上一季度的16.8%。该基金将回购5%的份额，这是此类工具的惯常门槛，并表示美国在岸和离岸投资者的赎回请求均环比下降。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 231,
+            "end": 273
+          },
+          "linkage": {
+            "start": 192,
+            "end": 230
+          },
+          "current_adverse": {
+            "start": 426,
+            "end": 463
+          }
+        },
+        "source_sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests at Apollo's flagship private credit BDC stayed elevated but declined sequentially, with repurchases capped at the customary 5% threshold.",
+          "zh": "Apollo旗舰私人信贷BDC的赎回请求仍处高位但环比下降，回购被限制在惯常的5%门槛。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Redemption pressure at Apollo's flagship private credit BDC is a direct read on the manager's retail credit vehicle liquidity.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "cbc9ebc8d177": {
+      "card_sha256": "75f4a94f5736efb73742a5cdf470a5daf6867b6ce391eda4e25d305670218b72",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:03:46+00:00",
+        "sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "source_published_at": "2026-09-22T16:16:41-05:00",
+        "final_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/"
+      },
+      "resolved_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo 私人信贷基金第三季度赎回请求放缓"
+      },
+      "summary": {
+        "en": "Investors in Apollo Debt Solutions BDC sought to withdraw roughly 14.7% of shares in the third-quarter tender offer, down from 16.8% in the prior quarter, according to a regulatory filing. The fund will repurchase 5% of shares, the customary threshold for such vehicles, and said repurchase requests declined sequentially across both US onshore and offshore investors.",
+        "zh": "根据一份监管文件，Apollo Debt Solutions BDC 的投资者在第三季度要约收购中寻求赎回约 14.7% 的股份，低于上一季度的 16.8%。该基金将回购 5% 的股份，这是此类工具的惯常门槛，并称美国在岸和离岸投资者的回购请求均环比下降。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 231,
+            "end": 273
+          },
+          "linkage": {
+            "start": 192,
+            "end": 230
+          }
+        },
+        "source_sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo's flagship private credit BDC saw third-quarter withdrawal requests fall to about 14.7% from 16.8%, with repurchases capped at the customary 5% threshold.",
+          "zh": "Apollo 旗舰私人信贷 BDC 第三季度赎回请求从 16.8% 降至约 14.7%，回购规模仍受 5% 的惯常上限约束。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Redemption requests at Apollo's flagship private credit BDC declined sequentially, a liquidity datapoint for the tracked manager's credit vehicle.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "906f8c12189f": {
+      "card_sha256": "aad01550bc88b7e6829a9d7efe3a133e0e2a31ef160e3223768d09e077492b16",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:03:46+00:00",
+        "sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "source_published_at": "2026-09-22T16:16:41-05:00",
+        "final_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/"
+      },
+      "resolved_url": "https://www.regionalmedianews.com/news/national/business/apollo-private-credit-fund-redemption-requests-ease-in-third-quarter/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "Apollo 私人信贷基金第三季度赎回请求有所缓解"
+      },
+      "summary": {
+        "en": "Apollo Debt Solutions BDC recorded lower withdrawal requests in its third-quarter tender offer, with investors seeking to withdraw roughly 14.7% of shares versus 16.8% in the prior quarter, per a regulatory filing. The fund will repurchase 5% of shares, the customary threshold, and said requests declined sequentially across US onshore and offshore investors.",
+        "zh": "根据一份监管文件，Apollo Debt Solutions BDC 在第三季度要约收购中录得较低的赎回请求，投资者寻求赎回约 14.7% 的份额，而上一季度为 16.8%。该基金将回购 5% 的份额，这是此类工具的惯常门槛，并表示美国在岸和离岸投资者的赎回请求环比均有所下降。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 231,
+            "end": 273
+          },
+          "linkage": {
+            "start": 205,
+            "end": 230
+          },
+          "current_adverse": {
+            "start": 435,
+            "end": 488
+          }
+        },
+        "source_sha256": "1bd1bf57cdd5735381bfde00f775169fbf38fab41a58a3384509ffc2c9442e41",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests at a tracked manager's flagship private credit BDC remain elevated at 14.7%, exceeding the 5% repurchase threshold, though they improved sequentially from 16.8%.",
+          "zh": "某受关注管理人的旗舰私人信贷 BDC 赎回请求仍高企于 14.7%，超过 5% 的回购门槛，但较上一季度的 16.8% 环比有所改善。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Quarterly redemption request levels at a tracked manager's flagship private credit BDC signal liquidity and redemption pressure conditions in the sub-sector.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "36bca42befb3": {
+      "card_sha256": "4484d09c931a62c247ba7805a5b402aa23a4e69c99843c1f872b54b764c0442f",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:05:57+00:00",
+        "sha256": "78010c9e4d6b5ce1ef6eb607e96f1a208f552a1d31f3cc3005b1e174e39d1b94",
+        "source_published_at": "2026-09-22T20:44:38+00:00",
+        "final_url": "https://www.aol.com/articles/apollo-private-credit-fund-redemption-204438000.html"
+      },
+      "resolved_url": "https://www.aol.com/articles/apollo-private-credit-fund-redemption-204438000.html",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo private credit fund redemption requests ease in third quarter",
+        "zh": "阿波罗私人信贷基金第三季度赎回请求缓解"
+      },
+      "summary": {
+        "en": "Apollo Global Management's flagship private credit fund, Apollo Debt Solutions BDC, saw withdrawal requests fall to roughly 14.7% of shares in the third-quarter tender offer from 16.8% in the prior quarter, per a regulatory filing. The $25.9 billion fund will repurchase 5% of shares, its customary threshold, and said investors who sought liquidity in 2026 will have received an estimated 75% of requested capital after third-quarter repurchase payments. Quarterly net outflows are expected to be roughly $0.5 billion, or 3% of net asset value.",
+        "zh": "阿波罗全球管理旗下旗舰私人信贷基金Apollo Debt Solutions BDC在第三季度要约回购中的赎回请求降至约14.7%，低于上一季度的16.8%，根据一份监管文件。该规模259亿美元的基金将回购5%的份额，即此类工具的惯常上限，并表示在第三季度回购支付后，2026年寻求流动性的投资者预计已收回其申请资本的约75%。季度净流出预计约为5亿美元，占资产净值的3%。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 363,
+            "end": 414
+          },
+          "linkage": {
+            "start": 59,
+            "end": 163
+          }
+        },
+        "source_sha256": "78010c9e4d6b5ce1ef6eb607e96f1a208f552a1d31f3cc3005b1e174e39d1b94",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests at Apollo's flagship non-traded private credit BDC fell sequentially, indicating easing but ongoing liquidity pressure as unfulfilled requests are resubmitted.",
+          "zh": "阿波罗旗舰非交易型私人信贷BDC的赎回请求环比下降，表明流动性压力有所缓解但仍持续，因未获满足的请求被重新提交。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Redemption requests at Apollo's flagship private credit BDC fell sequentially, a direct liquidity and sentiment signal for a tracked manager's credit vehicle.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "2534f52ba751": {
+      "card_sha256": "1fe11669176e4e9dd7bb5a487852529b964d81a669ee248f77b668b2e8d955b3",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:05:57+00:00",
+        "sha256": "78010c9e4d6b5ce1ef6eb607e96f1a208f552a1d31f3cc3005b1e174e39d1b94",
+        "source_published_at": "2026-09-22T20:44:38+00:00",
+        "final_url": "https://www.aol.com/articles/apollo-private-credit-fund-redemption-204438000.html"
+      },
+      "resolved_url": "https://www.aol.com/articles/apollo-private-credit-fund-redemption-204438000.html",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo Private Credit Fund Redemption Requests Ease in Third Quarter",
+        "zh": "Apollo私人信贷基金第三季度赎回请求放缓"
+      },
+      "summary": {
+        "en": "Apollo Global Management's Apollo Debt Solutions BDC saw withdrawal requests of roughly 14.7% of shares in its third-quarter tender offer, down from 16.8% in the prior quarter, per a regulatory filing. The $25.9 billion fund will repurchase 5% of shares, the customary threshold. The fund said investors who sought liquidity during 2026 will have received an estimated 75% of requested capital after third-quarter repurchase payments, and it received $0.2 billion in gross subscriptions through September 1.",
+        "zh": "据监管文件，Apollo Global Management旗下的Apollo Debt Solutions BDC在第三季度要约回购中收到的赎回请求约为股份的14.7%，低于上一季度的16.8%。该259亿美元规模的基金将回购5%的股份，即此类工具的常规上限。该基金表示，在第三季度回购付款后，2026年寻求流动性的投资者预计已收到其所申请资本的约75%；截至9月1日，该基金获得2亿美元的认购总额。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 59,
+            "end": 129
+          },
+          "linkage": {
+            "start": 416,
+            "end": 503
+          }
+        },
+        "source_sha256": "78010c9e4d6b5ce1ef6eb607e96f1a208f552a1d31f3cc3005b1e174e39d1b94",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests at Apollo's flagship private credit BDC fell sequentially to about 14.7% from 16.8% and the fund will repurchase the customary 5% of shares, an incremental easing in liquidity pressure.",
+          "zh": "Apollo旗舰私人信贷BDC的赎回请求环比从16.8%降至约14.7%，基金将按常规回购5%的股份，流动性压力边际缓解。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Redemption pressure easing at Apollo's flagship private credit BDC signals liquidity conditions for non-traded private credit vehicles.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "7659a1216ef9": {
+      "card_sha256": "1972407ce0537a8fd9f9862aed9d1b3481e515177d48b0a28a4ba023d40ba03e",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:05:57+00:00",
+        "sha256": "78010c9e4d6b5ce1ef6eb607e96f1a208f552a1d31f3cc3005b1e174e39d1b94",
+        "source_published_at": "2026-09-22T20:44:38+00:00",
+        "final_url": "https://www.aol.com/articles/apollo-private-credit-fund-redemption-204438000.html"
+      },
+      "resolved_url": "https://www.aol.com/articles/apollo-private-credit-fund-redemption-204438000.html",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Apollo Debt Solutions BDC redemption requests ease to 14.7% in third-quarter tender",
+        "zh": "Apollo Debt Solutions BDC第三季度要约中赎回请求降至14.7%"
+      },
+      "summary": {
+        "en": "Apollo Global Management's flagship private credit fund, Apollo Debt Solutions BDC (ADS), saw withdrawal requests fall to roughly 14.7% of shares in the third-quarter tender offer from 16.8% in the prior quarter, per a regulatory filing. The $25.9 billion fund will repurchase 5% of shares, and said investors who sought liquidity in 2026 will have received an estimated 75% of requested capital after third-quarter repurchase payments.",
+        "zh": "据监管文件，Apollo Global Management旗下旗舰私募信贷基金Apollo Debt Solutions BDC（ADS）在第三季度要约收购中的赎回请求降至约14.7%，上一季度为16.8%。该基金规模259亿美元，将回购5%的份额，并表示在支付第三季度回购款后，2026年寻求流动性的投资者预计已收到其申请资金的约75%。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 461,
+            "end": 530
+          },
+          "linkage": {
+            "start": 429,
+            "end": 460
+          }
+        },
+        "source_sha256": "78010c9e4d6b5ce1ef6eb607e96f1a208f552a1d31f3cc3005b1e174e39d1b94",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests at Apollo's flagship non-traded BDC declined sequentially to 14.7% but remain above the customary 5% repurchase threshold, an incremental easing of pressure rather than a resolution.",
+          "zh": "Apollo旗舰非上市BDC的赎回请求环比降至14.7%，但仍高于惯常的5%回购上限，属于赎回压力的边际缓解而非解决。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Redemption pressure easing at Apollo's flagship private credit BDC is a direct credit-relevant development for the vehicle and the non-traded private credit sub-sector.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "1fa4f9cef6be": {
+      "card_sha256": "5bb22301795fcbd67b2e8da77563eda8e56a4562485074f53a97f032dd13bb79",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:06:32+00:00",
+        "sha256": "535896b870cb2cab3ab7472223778daeb38f63396fb0c11b8a26dfcb184505b9",
+        "source_published_at": "2026-09-22T16:22:20.111",
+        "final_url": "https://www.nationalmortgagenews.com/news/binoms-latest-non-qm-pool-supports-328-8-million-in-rmbs"
+      },
+      "resolved_url": "https://www.nationalmortgagenews.com/news/binoms-latest-non-qm-pool-supports-328-8-million-in-rmbs",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "BINOM non-QM pool backs $328.8 million RMBS",
+        "zh": "BINOM非QM贷款池支持3.288亿美元RMBS"
+      },
+      "summary": {
+        "en": "SLC BINOM Sponsor is bringing BINOM 2026-NQM2 to market, a $328.8 million RMBS backed by 683 non-prime home loans, 97.9% of which are non-qualified or exempt mortgages. The deal has about 15 tranches, with senior A1 credit enhancement at 26.10% and the A1A tranche at 36.10%, and a 120-day stop-advance provision. Santander U.S. Capital Markets, BofA Securities and CIBC Capital Markets are structuring agent and joint bookrunners.",
+        "zh": "SLC BINOM Sponsor正将BINOM 2026-NQM2推向市场，这是一笔3.288亿美元的RMBS，由683笔非优质住房贷款支持，其中97.9%为非合格或豁免抵押贷款。该交易约有15个档次，优先级A1档信用增级为26.10%，A1A档为36.10%，并设有120天停止垫款条款。Santander U.S. Capital Markets、BofA Securities和CIBC Capital Markets担任结构代理和联席账簿管理人。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 273,
+            "end": 348
+          },
+          "linkage": {
+            "start": 449,
+            "end": 494
+          }
+        },
+        "source_sha256": "535896b870cb2cab3ab7472223778daeb38f63396fb0c11b8a26dfcb184505b9",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New non-QM RMBS issuance with detailed tranche and credit enhancement data; no tracked manager involved and no adverse credit event.",
+          "zh": "新发行的非QM RMBS，包含详细的档次和信用增级数据；不涉及受追踪的管理人，也没有不利的信用事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "New non-QM RMBS securitization shows continued residential credit issuance conditions relevant to mortgage and structured credit sub-sectors.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "eee3b265a977": {
+      "card_sha256": "306aef74814bbc0b6ab689b0a74d1099d2c571e0b1b071f135ffb2fd56187f87",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:06:42+00:00",
+        "sha256": "cd1105c9a080b5442d8cfc5407bb090bffef24326e879fa68c50e876e5ba5551",
+        "source_published_at": "2026-09-24T14:20:44+00:00",
+        "final_url": "https://pulse2.com/cox-capital-launches-40-million-tender-offers-for-blackstone-and-hps-private-credit-fund-shares/"
+      },
+      "resolved_url": "https://pulse2.com/cox-capital-launches-40-million-tender-offers-for-blackstone-and-hps-private-credit-fund-shares/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Cox Capital Launches $40 Million Tender Offers For Blackstone And HPS Private Credit Fund Shares",
+        "zh": "Cox Capital 对 Blackstone 和 HPS 私募信贷基金份额发起 4000 万美元要约收购"
+      },
+      "summary": {
+        "en": "Cox Capital Partners launched two cash tender offers to buy up to $40 million in combined Class I shares of Blackstone Private Credit Fund (BCRED) and HPS Corporate Lending Fund (HLEND). The offers follow oversubscription of both funds' third-quarter 2026 repurchase programs, with BCRED receiving requests for about 10% of outstanding shares and HLEND about 11.5% against typical quarterly repurchase targets of roughly 5%. Cox Capital is offering $20.65 per BCRED share, a 12.5% discount to the August 31, 2026 NAV of $23.60, and $20.17 per HLEND share, a 17.5% discount to the July 31, 2026 NAV of $24.45, with an initial $20 million sought from each fund.",
+        "zh": "Cox Capital Partners 发起两项现金要约收购，拟购买 Blackstone Private Credit Fund（BCRED）和 HPS Corporate Lending Fund（HLEND）合计最多 4000 万美元的 Class I 份额。此前两家基金 2026 年第三季度回购计划均出现超额认购，BCRED 收到的回购请求约占其流通份额的 10%，HLEND 约为 11.5%，而两者通常的目标季度回购规模约为流通份额的 5%。Cox Capital 对 BCRED 份额的出价为每股 20.65 美元，较 2026 年 8 月 31 日净值 23.60 美元折让 12.5%；对 HLEND 份额出价为每股 20.17 美元，较 2026 年 7 月 31 日净值 24.45 美元折让 17.5%；初始拟从每只基金收购 2000 万美元。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 296,
+            "end": 338
+          },
+          "linkage": {
+            "start": 1081,
+            "end": 1134
+          },
+          "current_adverse": {
+            "start": 1580,
+            "end": 1634
+          }
+        },
+        "source_sha256": "cd1105c9a080b5442d8cfc5407bb090bffef24326e879fa68c50e876e5ba5551",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Elevated redemption requests at BCRED and HLEND exceeded typical quarterly repurchase levels, and a third party is offering to buy shares at 12.5% and 17.5% discounts to reported NAV, indicating secondary-market liquidity pressure in private credit vehicles.",
+          "zh": "BCRED 和 HLEND 的赎回请求超过通常的季度回购水平，第三方以较报告净值折让 12.5% 和 17.5% 的价格收购份额，显示私募信贷载体的二级市场流动性压力。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Oversubscribed repurchases and discounted secondary tender offers at BCRED and HLEND signal redemption pressure and NAV-discount pricing in private credit vehicles.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "ff992dfd6991": {
+      "card_sha256": "c594c4dddd789aad1f36dab66de5e6148d18e63c6a942971012139078a65a104",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:07:12+00:00",
+        "sha256": "6b591d1bca685e7fa1a9a4871b79feda8a009b2b8036708397baf519e87478bc",
+        "source_published_at": "2026-09-22T11:00:00.000Z",
+        "final_url": "https://www.financialcontent.com/article/bizwire-2026-9-22-kkr-launches-equipment-finance-platform-akrapoint-commercial-capital"
+      },
+      "resolved_url": "https://www.financialcontent.com/article/bizwire-2026-9-22-kkr-launches-equipment-finance-platform-akrapoint-commercial-capital",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "KKR Launches Equipment Finance Platform Akrapoint Commercial Capital",
+        "zh": "KKR推出设备融资平台Akrapoint Commercial Capital"
+      },
+      "summary": {
+        "en": "KKR announced the launch of Akrapoint Commercial Capital, a mid-ticket equipment finance company, alongside a team of industry professionals. Investment funds managed by KKR will commit $350 million through KKR's Asset Based Finance strategy to support the launch. Akrapoint will finance vocational assets, specialty trailers and industrial equipment for small and middle-market US businesses.",
+        "zh": "KKR宣布与一批行业资深人士共同推出中端设备融资公司Akrapoint Commercial Capital。KKR管理的投资基金将通过KKR的资产支持融资策略承诺3.5亿美元以支持该平台启动。Akrapoint将为美国中小型企业提供职业用车、专用拖车和工业设备的融资。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 238,
+            "end": 294
+          },
+          "linkage": {
+            "start": 59,
+            "end": 97
+          }
+        },
+        "source_sha256": "6b591d1bca685e7fa1a9a4871b79feda8a009b2b8036708397baf519e87478bc",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New KKR-backed equipment finance platform with a $350 million commitment from KKR's Asset Based Finance strategy is an incremental deployment, not a credit event.",
+          "zh": "KKR新设设备融资平台，由KKR资产支持融资策略承诺3.5亿美元，属于增量资金投放而非信用事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "KKR commits $350m from its Asset Based Finance strategy to a new equipment finance platform, signalling fresh deployment in asset-based lending.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "bc2157a000e1": {
+      "card_sha256": "9d789ef24331dd3a8788c6c1d8bca63fdb72b384536fd048c323bafa246c7897",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:13:05+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:07:44+00:00",
+        "sha256": "a427dd38a4f3facd1b7e95a6084a9166503ad480be05f4e795a60b7875f35a9a",
+        "source_published_at": "2026-09-25T10:00:06+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/25/polus-raises-e400m-for-latest-clo/"
+      },
+      "resolved_url": "https://alternativecreditinvestor.com/2026/09/25/polus-raises-e400m-for-latest-clo/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Polus Capital closes European CLO XXII at €400m",
+        "zh": "Polus Capital 以4亿欧元完成欧洲 CLO XXII 募集"
+      },
+      "summary": {
+        "en": "Polus Capital Management has closed its European collateralised loan obligation, Polus EU CLO XXII, at €400m. The close follows Cairn CLO XX at €450m in September 2025, and the firm reported raising more than $1bn for CLOs and other credit investments across Europe and the US since 2014.",
+        "zh": "Polus Capital Management 已完成其欧洲贷款抵押债券 Polus EU CLO XXII 的募集，规模为4亿欧元。此次完成紧随2025年9月4.5亿欧元的 Cairn CLO XX，该公司还报告自2014年以来已在欧洲和美国为 CLO 及其他信贷投资募集超过10亿美元。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 87,
+            "end": 104
+          },
+          "linkage": {
+            "start": 87,
+            "end": 104
+          }
+        },
+        "source_sha256": "a427dd38a4f3facd1b7e95a6084a9166503ad480be05f4e795a60b7875f35a9a",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A completed €400m European CLO close by an untracked manager is incremental news for the CLO sub-sector, with no adverse credit development.",
+          "zh": "一家未被跟踪的资产管理公司完成4亿欧元欧洲 CLO 募集，对 CLO 子行业而言为增量消息，未出现不利信贷事件。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "New European CLO close by Polus signals continued CLO issuance and structured credit deployment conditions, relevant to the CLO sub-sector.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "d88e57713879": {
+      "card_sha256": "de03cae404b2607b8d2905aacea255dc70e04e5a084ffe5782d8169222c9fa6a",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:07:47+00:00",
+        "sha256": "aa38e2483cce9835cb0064c73cfefd73b4ffccf853d771de84740587d093b1c3",
+        "source_published_at": "2026-09-25T10:09:09+01:00",
+        "final_url": "https://www.privateequitywire.co.uk/ares-private-credit-fund-sees-redemptions-ease-as-withdrawal-pressure-moderates/"
+      },
+      "resolved_url": "https://www.privateequitywire.co.uk/ares-private-credit-fund-sees-redemptions-ease-as-withdrawal-pressure-moderates/",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Ares private credit fund sees redemptions ease as withdrawal pressure moderates",
+        "zh": "Ares 私募信贷基金赎回放缓，赎回压力有所缓和"
+      },
+      "summary": {
+        "en": "Investors in the $22.7bn Ares Strategic Income Fund sought to withdraw 13.1% of shares in the third-quarter tender offer, down from 14.4% in the prior quarter, according to a Reuters report citing a regulatory filing. Redemptions were limited to 5% of shares, leaving much of the demand subject to future tender offers. New requests, after accounting for repeat submissions, represented about 3% of net asset value.",
+        "zh": "据路透社援引监管文件报道，规模 227 亿美元的 Ares Strategic Income Fund 投资者在第三季度要约回购中申请赎回 13.1% 的份额，低于上一季度的 14.4%。赎回被限制在 5% 的份额以内，使大部分赎回需求需留待未来要约回购处理。剔除重复提交后，新赎回申请约占资产净值的 3%。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 770,
+            "end": 851
+          },
+          "linkage": {
+            "start": 0,
+            "end": 97
+          },
+          "current_adverse": {
+            "start": 944,
+            "end": 1090
+          }
+        },
+        "source_sha256": "f8aea841cd70f4a8a1371e7f1b17cf479855f2ff6880afddda9e25526c31af2a",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests at a large non-traded private credit fund eased quarter over quarter but remain above the 5% quarterly cap, keeping unfulfilled demand outstanding.",
+          "zh": "一家大型非上市私募信贷基金的赎回申请环比放缓，但仍高于 5% 的季度上限，未满足的赎回需求依然存在。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "Redemption pressure at a large non-traded private credit fund eased, a direct read on liquidity conditions for tracked managers with retail private credit vehicles.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
+    },
+    "d15d91b0dc44": {
+      "card_sha256": "41807ddbca901988a1defdaa107eeba3ce53d7a6c7a6bb1125bbd806e6c1d32f",
+      "status": "ok",
+      "checked_at": "2026-09-26T16:10:51+00:00",
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-26T16:08:02+00:00",
+        "sha256": "c37480301a15a53519fbb16a3752691fa60b2652415f21a76e0d9d82afb91ff5",
+        "source_published_at": "2026-09-24T22:00:33",
+        "final_url": "https://finwire.io/news/stock-markets-news/ares-fund-withdrawal-requests-decline-as-private-credit-redemptions-ease"
+      },
+      "resolved_url": "https://finwire.io/news/stock-markets-news/ares-fund-withdrawal-requests-decline-as-private-credit-redemptions-ease",
+      "resolved_via": "reviewed_source_map",
+      "headline": {
+        "en": "Ares private credit fund redemption requests ease to 13.1% in third quarter",
+        "zh": "Ares私人信贷基金第三季度赎回请求降至13.1%"
+      },
+      "summary": {
+        "en": "Withdrawal requests at Ares Management's $22.7 billion Ares Strategic Income Fund fell to 13.1% of shares in the third-quarter tender offer from 14.4% in the prior quarter, a regulatory filing showed. The fund limited withdrawals to its customary 5% threshold; net new withdrawal demands were 3% of net asset value. BlackRock and Apollo also reported lower private credit redemption requests earlier in the month.",
+        "zh": "监管文件显示，Ares Management旗下227亿美元的Ares Strategic Income Fund（ASIF）第三季度要约收购中的赎回请求占股份比例从上一季度的14.4%降至13.1%。该基金将赎回限制在惯例的5%上限；净新增赎回需求占资产净值的3%。本月早些时候，BlackRock和Apollo也报告其私人信贷基金赎回请求下降。"
+      },
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 93,
+            "end": 211
+          },
+          "linkage": {
+            "start": 1009,
+            "end": 1127
+          }
+        },
+        "source_sha256": "c37480301a15a53519fbb16a3752691fa60b2652415f21a76e0d9d82afb91ff5",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Redemption requests eased at a large non-traded private credit fund, but the story names no tracked manager as directly involved.",
+          "zh": "一家大型非交易私人信贷基金的赎回请求有所缓解，但报道未将任何受跟踪管理人列为直接相关方。"
+        }
+      },
+      "relevant": true,
+      "relevance_reason": "New redemption data for a large non-traded private credit fund signals easing investor withdrawal pressure and backlog clearing across the sector.",
+      "prompt_version": "brief-v3.2-evidence",
+      "model": "deepseek-flash"
     }
   },
-  "generated_at": "2026-09-26T09:27:39+00:00"
+  "generated_at": "2026-09-26T16:13:05+00:00"
 }
