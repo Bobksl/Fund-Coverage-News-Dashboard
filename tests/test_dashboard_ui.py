@@ -224,6 +224,24 @@ def test_today_from_all_dates_and_legacy_priority_notice(page):
     assert page.input_value("#dateSelect") == page.evaluate("state.date")
 
 
+def test_badge_separates_auto_selected_card_from_reviewed_event(page):
+    reviewed = next(event for event in VISIBLE_EVENTS if event.get("reviewed_relevance") == "include"
+                    and CARDS[event["representative_card_id"]]["review_status"] == "unreviewed")
+    automatic = next(event for event in VISIBLE_EVENTS if not event.get("reviewed_relevance")
+                     and CARDS[event["representative_card_id"]]["review_status"] == "unreviewed")
+    open_site(page)
+    show_all(page)
+
+    def badge(event):
+        return page.text_content(f"#main .card[data-card='{event['representative_card_id']}'] .badge")
+
+    assert badge(reviewed) == "Auto-selected · event reviewed"
+    assert badge(automatic) == "Auto-selected · not yet reviewed"
+    page.click("[data-lang='zh']")
+    assert badge(reviewed) == "自动筛选 · 事件已审核"
+    assert badge(automatic) == "自动筛选 · 未经审核"
+
+
 def test_keyboard_and_mobile(page):
     page.set_viewport_size({"width": 375, "height": 812})
     open_site(page)

@@ -39,6 +39,7 @@ const I18N = {
     readOriginal: "Read original →",
     unknownPublisher: "Unknown source",
     unreviewed: "Auto-selected · not yet reviewed",
+    eventReviewed: "Auto-selected · event reviewed",
     noToday: "No new items yet today ({today}). Showing the latest day, {date}.",
     noMatch: "No items match these filters.",
     noItems: "No news has been published yet.",
@@ -111,6 +112,7 @@ const I18N = {
     readOriginal: "阅读原文 →",
     unknownPublisher: "来源未知",
     unreviewed: "自动筛选 · 未经审核",
+    eventReviewed: "自动筛选 · 事件已审核",
     noToday: "今天（{today}）暂无新内容，以下为最近一天：{date}。",
     noMatch: "没有符合筛选条件的新闻。",
     noItems: "暂未发布任何新闻。",
@@ -563,7 +565,11 @@ function renderCard(entry) {
   const item = entry.rep;
   const card = el("article", {className: "card", attrs: {"data-card": String(item.id)}});
   const flags = [];
-  if (item.review_status === "unreviewed") flags.push(el("span", {className: "badge", text: t("unreviewed")}));
+  if (item.review_status === "unreviewed") {
+    // The card was auto-selected; an analyst inclusion reviewed the event, not this card.
+    const key = entry.event?.reviewed_relevance === "include" ? "eventReviewed" : "unreviewed";
+    flags.push(el("span", {className: "badge", text: t(key)}));
+  }
   const level = entry.priority && entry.priority.priority;
   if (level && I18N.en[`prio_${level}`]) flags.push(el("span", {className: `prio prio-${level}`, text: t(`prio_${level}`)}));
   if (state.mode === "all") flags.push(el("span", {className: "when", text: formatDay(item.date, "short")}));
