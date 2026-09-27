@@ -1,6 +1,6 @@
 # Implemented news event contract — v1 schema, events-v2 grouping
 
-Status: offline pipeline implemented on codex/news-events-priority. Frontend integration belongs to Claude; public/app.js and public/index.html are unchanged.
+Status: implemented on main and consumed by public/app.js.
 
 ## Existing data preserved
 index.json and per-day files retain their old schemas and raw counts. Existing raw card IDs and content are preserved. New cards may have additive metadata below.
@@ -73,10 +73,12 @@ The eight reviewed migration groups are frozen by card IDs, headlines and full r
 ## Frontend compatibility
 Treat events.json as optional. Missing, stale or invalid membership -> preserve raw-card rendering with a visible grouping limitation. Unmapped cards must remain visible.
 Do not change the old index counts to pretend they count unique events. The date selector derives its labelled visible-event count from each date view, with unmapped cards counted as singletons; after a day loads, it uses the same entries as the displayed day. Show both events/articles where needed.
-Source selection is human-reviewed card first, then assessable card, then fuller existing summary; this is not a global source-reliability score. Do not present a merged event as human reviewed unless its exact representative was reviewed.
+Source selection is human-reviewed card first, then assessable card, then fuller existing summary; this is not a global source-reliability score. Do not present a merged event as human reviewed unless its exact representative was reviewed. An unreviewed representative of an event with reviewed_relevance=include shows "Auto-selected · event reviewed": the card stays auto-selected; only the event-level inclusion was reviewed.
 No frontend source grouping/scoring copy: consume this contract; report required changes to Codex.
 
 ## Current snapshot
-25 September migration: 222 raw cards, 214 -> 172 events; 12 reviewed groups (62 cards), 42 recorded aliases, 3 relations, 1 date correction. Original per-day files unchanged. (24 September release: 182 cards, 174 events, eight two-source pairs.)
-All legacy events have needs_review priority because source-backed assessment fields were not collected by brief-v1. This is not a completed historical ranking backfill.
+27 September (PR #10/#11, live): 249 raw cards, 160 events, 128 visible (106 Useful, 9 Important, 13 Needs review) and 32 analyst-excluded events retained. Counts change with each refresh.
+
+Dated history — 25 September migration: 222 raw cards, 214 -> 172 events; 12 reviewed groups (62 cards), 42 recorded aliases, 3 relations, 1 date correction. Original per-day files unchanged. (24 September release: 182 cards, 174 events, eight two-source pairs.)
+(25 Sep) All legacy events then had needs_review priority; the 26 Sep backfill and 27 Sep analyst review have since assessed most of them.
 Raw/source URL canonical redirect resolution, broad historical near-duplicate review, source recovery/backfill, human ranking acceptance and the live browser/PDF work remain separate delivery tasks.

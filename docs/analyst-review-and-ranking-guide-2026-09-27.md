@@ -4,7 +4,7 @@ Use this guide for the current 249-card archive. The page shows 128 events: 9 Im
 
 ## What the badge means
 
-“Auto-selected · not yet reviewed” is read from the **display card's original** `review_status`. It does not say whether the whole event's grouping, relevance or priority has since been checked. A card can still show that badge after a source-backed event review. The priority label is a separate assessment; “Needs review” means there is insufficient validated evidence for a confirmed class. Do not infer either approval or lack of approval of an entire event from the badge alone.
+The badge describes the **display card's original** `review_status`. Since 27 September it has two wordings for an auto-selected card: “Auto-selected · event reviewed” (自动筛选 · 事件已审核) when a hash-bound analyst inclusion covers the whole event, otherwise “Auto-selected · not yet reviewed”. Neither says the card itself was human-approved, and “not yet reviewed” does not rule out a reviewed grouping or earlier source check. The priority label is a separate assessment; “Needs review” means there is insufficient validated evidence for a confirmed class. Do not infer either approval or lack of approval of an entire event from the badge alone.
 
 ## Review one event
 

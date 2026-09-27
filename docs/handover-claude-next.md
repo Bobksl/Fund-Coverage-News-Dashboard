@@ -1,52 +1,43 @@
-# Claude handover — remaining work after 26 September 2026
+# Claude handover — remaining dashboard work after 27 September 2026
 
-Copy everything below the line as the prompt. Wait for the ChatGPT final review (`docs/handover-chatgpt-final-review.md`) first, if it is running, and fix its blocker findings before anything below.
+Copy everything below the line to Claude. This replaces the 26 September handover; dated acceptance and migration records remain in their original files.
 
 ---
 
-You are continuing work on the Fund Coverage News Dashboard (repo `Bobksl/Fund-Coverage-News-Dashboard`; live site https://bobksl.github.io/Fund-Coverage-News-Dashboard/). Read `tasks/plan.md`, `tasks/todo.md`, `docs/news-events-contract.md` and `docs/source-tiers.md` first. The user reads with ADHD: lead with the next action, number steps, keep lists short.
+You are continuing work on the Fund Coverage News Dashboard (`Bobksl/Fund-Coverage-News-Dashboard`; live site: https://bobksl.github.io/Fund-Coverage-News-Dashboard/). **Next action:** reconcile fresh `origin/main` and the latest refresh before editing. Read `tasks/plan.md`, `tasks/todo.md`, `docs/news-events-contract.md` and `docs/source-tiers.md` first. The user reads with ADHD: lead with the next action, number steps, and keep lists short.
 
-## Rules that still apply
+## Current handback (verify after fetching)
 
-- Work on a branch from fresh `origin/main`. Scheduled refreshes commit data to main twice each weekday (08:00 and 16:00 HKT). Never force-push. The user merges PRs; `gh` is not installed, so give a prefilled compare link.
-- Never rewrite day files (`public/data/YYYY-MM-DD.json`). Grouping changes go in `config/news_event_groups.json` with card hashes; re-brief results go in `public/data/backfill.json`. Regenerate `events.json` only with `python -m tools.news_events --data-dir public/data`, and check that every card is in exactly one event and every earlier event ID still resolves.
-- Tests never write `public/data`. Before each commit: `python -m pytest -q` (check the exit code, not just the tail), `ruff` on changed files, `git diff --check`. Write failing tests first for fixes.
-- Paid calls use `deepseek-flash` (about 0.004 CNY per brief). The user's balance is small (about 5 CNY at last report); say the expected cost before any run of more than 50 calls. SEC requests read the contact from the `SEC_CONTACT_EMAIL` env or secret; never put the email in the repo.
-- Relevance policy (user decision): include all tracked-manager and sector matches. Routine primary-source filings rank below non-routine items of the same severity. The six-component score stays rejected.
-- Manual workflow runs must use **Branch: main**. A run from another branch commits to that branch and cannot deploy.
+- PR #10 merged the source-checked review of 82 previously Needs review events. At its 27 September snapshot: **249 archived cards, 160 indexed events, 128 visible events (106 Useful, 9 Important, 13 Needs review)**. The other 32 events were analyst-excluded but remain in `events.json`; all day files and former event IDs were preserved. See `docs/reviewed-82-handback-2026-09-27.md`. These counts are a snapshot, not a promise about later refreshes.
+- PR #11 merged the date-selector fix and `docs/analyst-review-and-ranking-guide-2026-09-27.md`. Each date option now labels its **visible event** count rather than the raw card count. The guide gives analysts a source-checking and grouping template. The badge “Auto-selected · not yet reviewed” reflects the displayed raw card's original `review_status`; it does **not** prove the event-level grouping or priority has never been reviewed.
+- The accepted Priority order is **class → severity → non-routine first → time sensitivity → linkage → evidence strength → latest material update → event ID**. The user explicitly appreciates this order; do not reopen or silently retune it. Within-class rank is deterministic triage, not a calibrated estimate of investment importance. `Sort: Newest` remains available. The old six-component score remains rejected.
+- `tools/search_backfill_sources.py` already performs bounded Brave candidate discovery with `BRAVE_SEARCH_API_KEY`; candidate titles are **not** source evidence. A reviewer must check a matching page and map the card to a source before hash-bound backfill can assess it. GDELT refused both tested networks. Do not propose building the same candidate-search tool again. Confirm whether a Brave key is present in ignored local configuration without printing it; do not assume the key, quota, price or terms.
+- Last locally checked `public/data/status.json` reported a successful **26 September** refresh; the first scheduled run after PR #11 is still to be inspected. The live site's deployment state was not independently verified in this handover.
 
-## Open items, in order
+## Rules
 
-1. **Refresh health check (next weekday, 08:00 HKT run).** Read `public/data/status.json` and the new cards:
-   - feed failures and whether any SEC, regulator or wire item arrived
-   - evidence level of new cards (excerpt vs headline-only)
-   - whether any new card was flagged `routine`
-   - model calls
+- Fetch fresh `origin/main`; make a new `codex/` or `claude/` branch from it. Scheduled refreshes may commit data to main at 08:00 and 16:00 HKT on weekdays. Preserve the user's untracked `.claude/` and ignored `work/` evidence. Never force-push or reset away newer data. The user merges PRs. `gh` is not installed here: push the branch and give a prefilled GitHub compare link.
+- Never rewrite `public/data/YYYY-MM-DD.json`. Put reviewed identity/date/relevance decisions in the hash-bound overlay `config/news_event_groups.json`; put source re-briefs in `public/data/backfill.json`. Regenerate `public/data/events.json` with `python -m tools.news_events --data-dir public/data` only after checking the proposed inputs. Verify every card appears in exactly one event, and every earlier event ID resolves to a survivor or alias. Tests must never write repository `public/data`.
+- For fixes, write a failing focused test first; before each commit, run focused checks, `python -m pytest -q` (check the exit code), Ruff on changed Python files, and `git diff --check`. Report unavailable tools or environment failures as such. For UI changes, verify in a browser; for data changes, reconcile card/event counts and source hashes.
+- Paid calls use `deepseek-flash` unless the user changes that decision. The user set a **roughly CNY 50 spending cap**; the remaining balance is not verified now. State the expected spend before a run over 50 calls, check the available balance, and do not exceed the cap without approval. Never log or commit the Brave key or `SEC_CONTACT_EMAIL`. SEC contact comes only from the environment/Actions secret.
+- Relevance includes tracked-manager **and sector** matches. Routine demotion is honoured only for verified primary sources. Headline-only or search-summary-only evidence stays Needs review. No paywall bypass or publisher article bodies under `public/`.
+- Manual workflow runs must select **Branch: main**. A run from another branch commits to that branch and cannot deploy.
 
-   Report in five lines.
-2. **Google-News-only events (95 Needs review, mostly these).** GDELT refused both networks, so it is unusable. Count for a week how many Important-looking stories arrive only through Google News; the user will then decide on Brave Search API (about 1,000 free searches a month, credit card required, storage terms to confirm). If the user supplies a key, add a Brave resolver next to the GDELT one in `tools/backfill.py` (same 60% title-match gate and paywall skip) and optionally in the refresh.
-3. **Ranking decisions still open (need the user):**
-   - pilot preferences 03 > 05 > 02, and the C08 sector explainer above direct-manager Useful items
-   - F11: does an equity stake (Apollo in ONEOK) count?
-   - whether non-routine filings should stay above press-reported launches
+## Work in this order
 
-   Write each as a one-line contract before changing `tools/news_priority.py`.
-4. **Tags on older cards.** The backfill updates summaries but not manager tags, so a private-equity exit (Apollo/Kelvion) and an equity stake still show as direct manager news. Proposal: store the brief's `gp_roles` in `backfill.json` and let `display_gps` drop managers the re-brief marked as mentions. Additive; needs a test and the user's OK.
-5. **Source gaps (`docs/source-tiers.md`):**
-   - NAIC and FCA: no usable feed; consider a small page reader that follows robots.txt, as done for ASIC.
-   - Business Wire: opaque feed codes; skip unless a code is found.
-   - 10-Q/10-K: use SEC's structured-data API for NAV per share and net investment income moves; needs a NAV-move threshold from the user.
-   - Paid press: revisit after two weeks of counts.
-6. **Known content issues:**
-   - A15 (Jefferies) repeats its source's "$4bn at first close" lead sentence; decide with the user whether to add a reviewed summary correction (an additive overlay; none exists yet).
-   - The Chinese report v3, if the analyst sends corrections: add the file and update `REPORTS` in `public/app.js`, keeping v2 until approved.
-7. **Housekeeping.** Refresh the stale text in `tasks/todo.md` items 1, 2b and 5. Delete merged remote branches only if the user asks.
+1. **Refresh health:** inspect the first weekday 08:00 HKT run after the latest merge (28 September if it has occurred), its workflow result, `public/data/status.json` and new day cards. Report five lines: feed failures; SEC/regulator/wire arrivals; excerpt versus headline-only evidence; routine flags; model-call count and spend estimate. Distinguish no item from a failed feed. Check the live site after deployment.
+2. **Residual evidence:** start with the **13 visible Needs review events** from the 27 September snapshot, especially potential-urgent and inaccessible-source cases. Use `docs/analyst-review-and-ranking-guide-2026-09-27.md` for analyst decisions. Brave search can suggest URLs; verify title, entity, action, period, date and readable source text before using a reviewed source map or backfill. Preserve the 60% distinctive-title-word gate and paywall skip. Evaluate a direct Brave resolver in `tools/backfill.py` only if the existing candidate workflow proves inadequate; do not spend on broad historical replay by default. Track prospective Google-News-only Important-looking misses for a week rather than treating the old “95 Needs review” count as current.
+3. **Same-class ranking validation:** ask the analyst to compare the 9 Important events and a bounded sample of Useful pairs (top/bottom, direct/sector, primary/reported, old/new). Record source-backed disagreements and whether the field label or the rule is at issue. The earlier pilot preferences `03 > 05 > 02` and C08 above direct-manager Useful items are challenge cases, **not** authority to alter the accepted order. Keep the current order and disclose its limitation unless the user approves a written versioned rule change. F11 equity-only relevance remains a user decision; do not silently change it.
+4. **Presentation and tags:** check whether the card-level “Auto-selected” badge still misleads readers after the guide. If changing its wording, preserve the distinction between card approval and event/priority review, and test both languages. Older backfill summaries may leave manager tags too broad (for example Apollo/Kelvion and equity-only involvement). Propose a source-backed `gp_roles` sidecar/display change with tests, but obtain the user's policy decision before removing tracked-manager tags. A public “approve/group” button needs an authenticated write path and audit trail; draft a design only, not a button that silently mutates grouping.
+5. **Source gaps and conditional content:** assess NAIC/FCA official pages within robots/rate limits; Business Wire only if a usable feed code is found; 10-Q/10-K structured SEC data only after the user sets a NAV/NII threshold; revisit paid press after measured coverage counts. A15/Jefferies repeats a source lead sentence; propose a reviewed additive correction only if the user wants it. Add a Chinese report v3 only after analyst approval, preserving v2 meanwhile.
+6. **Documentation and file inventory:** update stale current-status text in `tasks/plan.md`, `tasks/todo.md` (especially items 1, 2b and 5), and the “Current snapshot” in `docs/news-events-contract.md`, while keeping dated historical results visibly dated. Inventory tracked, untracked and ignored files for generated caches, duplicate drafts and obsolete handovers. For each candidate, report path, why it may be redundant, references/dependencies, whether it is tracked or ignored, and whether deletion would lose unique evidence. **Identify file deletion candidates; do not delete files merely because they record past work.** Preserve audit/acceptance records, report PDFs, day files, and the user's `.claude/` and `work/` unless separately directed.
+7. **Git branch cleanup (authorized for clearly optional branches):** inventory local and remote branches and PR status after fetch. Delete only branches whose work is merged into current main, whose tips contain no unique unpushed commits or active PR work, and which are not `main`, the active branch, a shared/in-use branch or a needed recovery branch. Use normal non-force deletion (`git branch -d`; remote delete only after checking exact ref and merged PR). Do not use `-D`, force-push, blanket branch deletion or history rewrites. The earlier local `codex/news-events-priority` appeared **ahead by one commit**; preserve it unless that commit is accounted for. Report kept/deleted branches and the proof for each.
 
-## Done already (do not redo)
+## Done; do not repeat
 
-- Grouping sweep (177 → 153 events at the time).
-- Hidden unread-article claims, and inline PDF.js reports (phone check passed).
-- Source tiers: SEC EDGAR for 13 registrants; Fed, SEC, ECB, BoE and ESMA feeds; ASIC sitemap; GlobeNewswire and PR Newswire.
-- Backfill of 86 older cards with readable sources (74 verified).
-- Routine ranking.
-- Acceptance packet scored (results in `tasks/plan.md`).
+- The 82-event analyst reconciliation, identity/date fixes, hash-bound manual evidence, 249-card preservation and 32 exclusions are in PR #10.
+- The date-selector visible-event count and analyst review guide are in PR #11.
+- Source tiers already include SEC EDGAR for 13 registrants; Fed, SEC, ECB, BoE and ESMA feeds; ASIC sitemap; GlobeNewswire and PR Newswire. PDF.js 6.3.289 inline reports, unread-article absence-claim guards, routine ranking and the 26 September backfill are already implemented.
+- The acceptance packet was scored; its limitations and historical counts are in `tasks/plan.md`. Do not present those dated figures as the current live snapshot.
+
+Return a concise handback: next action, exact changed files/commits, refreshed counts, checks and exit codes, source/spend limits, unresolved analyst decisions, file-deletion candidates, branch cleanup evidence, and a prefilled PR compare link. The user will merge the PR.
