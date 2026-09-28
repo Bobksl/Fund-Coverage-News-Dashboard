@@ -186,6 +186,123 @@
       "observed_at": "2026-09-28T04:49:04+00:00"
     },
     {
+      "id": "5d1b85f7e7d6",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T08:30:00+00:00",
+      "headline": {
+        "en": "Blue Owl Stock Down 45% From High, Yield Near 9% as Dividend Coverage Tightens",
+        "zh": "Blue Owl股价较高点下跌45%，收益率接近9%，股息覆盖趋紧"
+      },
+      "summary": {
+        "en": "Blue Owl Capital shares have fallen roughly 45% from their 52-week high, lifting the dividend yield to about 9%. The second-quarter dividend of $0.23 per share exceeded distributable earnings of $0.22 per share, following first-quarter distributable earnings of $0.19 per share on the same dividend. The article notes Blue Owl limited withdrawals from some non-traded private credit funds earlier in 2026.",
+        "zh": "Blue Owl Capital股价较52周高点下跌约45%，股息收益率升至约9%。第二季度每股股息为0.23美元，高于每股0.22美元的可分配收益；第一季度在相同股息下可分配收益仅为每股0.19美元。文章指出，Blue Owl在2026年早些时候限制了部分非上市私募信贷基金的赎回。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "fool.com",
+        "url": "https://www.fool.com/investing/2026/09/27/blue-owl-stock-yields-about-9-after-falling-45-fro/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Stock Yields About 9% After Falling 45% From Its High. Is the Dividend Safe?",
+      "source_fingerprint": "e7372f115502da664d466179c14c93f226f11ffd9397e95f926e610ab4002de0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1243,
+            "end": 1291
+          },
+          "linkage": {
+            "start": 204,
+            "end": 284
+          },
+          "current_adverse": {
+            "start": 387,
+            "end": 441
+          }
+        },
+        "source_sha256": "0cd61a962696bd778f1d6da3e0bf62f06e5f635819bffb7a625388f2911b280d",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Blue Owl's second-quarter distributable earnings of $0.22 per share fell short of its $0.23 dividend, and the stock is down about 45% from its high after 2026 redemption limits on some non-traded private credit funds.",
+          "zh": "Blue Owl第二季度每股可分配收益0.22美元低于0.23美元的股息，且在2026年对部分非上市私募信贷基金限制赎回后，股价较高点下跌约45%。"
+        }
+      },
+      "relevance_reason": "Blue Owl's dividend coverage and prior redemption limits bear on credit-investor views of the tracked manager's private credit franchise and fundraising conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-28T16:41:29+00:00",
+        "sha256": "0cd61a962696bd778f1d6da3e0bf62f06e5f635819bffb7a625388f2911b280d",
+        "source_published_at": "2026-09-27T06:15:00Z",
+        "final_url": "https://www.fool.com/investing/2026/09/27/blue-owl-stock-yields-about-9-after-falling-45-fro/"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-09-27T06:15:00Z",
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    },
+    {
+      "id": "0f4230e246b2",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T07:45:00+00:00",
+      "headline": {
+        "en": "Blue Owl Stock Yields About 9% After Falling 45% From Its High. Is the Dividend Safe?",
+        "zh": "Blue Owl股价较历史高点下跌45%后收益率约9%，股息是否安全？"
+      },
+      "summary": {
+        "en": "Blue Owl's stock is reported to yield about 9% after falling 45% from its high. The headline raises the question of whether the dividend is safe.",
+        "zh": "据报道，Blue Owl股价较历史高点下跌45%后，收益率约为9%。该标题提出其股息是否安全的问题。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "aol.com",
+        "url": "https://www.aol.com/articles/blue-owl-stock-yields-9-063500000.html"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Stock Yields About 9% After Falling 45% From Its High. Is the Dividend Safe?",
+      "source_fingerprint": "e7372f115502da664d466179c14c93f226f11ffd9397e95f926e610ab4002de0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a39aade4448950e573a70c1dd98243109ce886d28d3bcb1c91a8240ab2f597bb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl stock decline and dividend safety question directly touch a tracked manager's credit platform and investor return prospects.",
+      "event_identity": null,
+      "evidence": {
+        "status": "error",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T16:41:33+00:00",
+        "final_url": "https://www.aol.com/articles/blue-owl-stock-yields-9-063500000.html"
+      },
+      "published_basis": "gdelt_seen",
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    },
+    {
       "id": "8f3d32df0429",
       "date": "2026-09-27",
       "published_at": "2026-09-27T07:15:00+00:00",

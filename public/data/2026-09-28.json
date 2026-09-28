@@ -1,0 +1,247 @@
+{
+  "date": "2026-09-28",
+  "items": [
+    {
+      "id": "2dc3049daad9",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T15:22:26+00:00",
+      "headline": {
+        "en": "Golub Capital invests $5m in AI credit developer F2",
+        "zh": "Golub Capital向AI信贷开发商F2投资500万美元"
+      },
+      "summary": {
+        "en": "Golub Capital has invested $5m in F2, an artificial intelligence developer specialising in credit. Golub, which has more than $90bn of capital under management, will also use F2's technology across its investment process to screen private credit investments, carry out due diligence, underwrite deals and monitor portfolios. The partnership will establish the Global Credit AI Council, chaired by Golub co-chief executive David Golub.",
+        "zh": "Golub Capital已向专注信贷领域的人工智能开发商F2投资500万美元。管理资本超过900亿美元的Golub还将在其投资流程中使用F2的技术，用于筛选私募信贷投资、开展尽职调查、承销交易和监控投资组合。该合作还将设立Global Credit AI Council，由Golub联席首席执行官David Golub担任首任主席。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/28/golub-bets-5m-on-ai-credit-firm-f2/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Golub bets $5m on AI credit firm F2",
+      "source_fingerprint": "3690f3c6cc4e7069a17ad69319925eb2866a1eceee37ea08a5396d1458b6d40b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1334bffff49c57269332a05dc53d628bb02e8d56d1e2a889a05aa83913f75258",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Golub Capital's $5m AI investment and related technology partnership is a minor strategic development rather than a credit-fundamental change, so no tracked manager is affected.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-28T16:41:03+00:00",
+        "sha256": "1334bffff49c57269332a05dc53d628bb02e8d56d1e2a889a05aa83913f75258",
+        "source_published_at": "2026-09-28T15:22:26+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/28/golub-bets-5m-on-ai-credit-firm-f2/"
+      },
+      "source_published_at": "2026-09-28T15:22:26+00:00",
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    },
+    {
+      "id": "25d187858347",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T12:19:18+00:00",
+      "headline": {
+        "en": "M&G prices fifth Margay European CLO, upsized to €457m",
+        "zh": "M&G为第五只Margay欧洲CLO定价，规模增至4.57亿欧元"
+      },
+      "summary": {
+        "en": "M&G Investments priced the fifth deal in its Margay European CLO programme, upsizing the transaction to €457m (£392m) on investor demand. It is the first Margay CLO since Ontario Teachers' Pension Plan agreed in July to commit up to €200m to help scale M&G's European CLO business. M&G said the Margay programme, launched in 2023, now manages more than €2bn of CLO assets within a broader €10bn loan platform.",
+        "zh": "M&G Investments为其Margay欧洲CLO计划的第五笔交易定价，因投资者需求旺盛，交易规模增至4.57亿欧元（3.92亿英镑）。这是自安大略省教师养老金计划于7月同意承诺最高2亿欧元以帮助扩大M&G欧洲CLO业务以来的首只Margay CLO。M&G表示，2023年推出的Margay计划目前管理超过20亿欧元的CLO资产，隶属于更广泛的100亿欧元贷款平台。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/28/mg-upsizes-fifth-margay-clo-to-e457m/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "M&G upsizes fifth Margay CLO to €457m",
+      "source_fingerprint": "a23c00e0e229a9aa48f681fbec00faf7e3fc9066e6d052c9d3d39e036dbb0f8c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 20,
+            "end": 117
+          },
+          "linkage": {
+            "start": 815,
+            "end": 890
+          }
+        },
+        "source_sha256": "f1b6ea0428477faecb8592efd02875b730a3ca24f31779bc92b495975fb33cb7",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New CLO pricing and upsizing shows continued issuance momentum in European CLOs, an incremental positive for the sub-sector with no tracked manager directly involved.",
+          "zh": "新CLO定价及规模上调显示欧洲CLO发行势头延续，对该子板块构成增量利好，但无受跟踪管理人直接参与。"
+        }
+      },
+      "relevance_reason": "New European CLO pricing and upsizing by M&G signals continued CLO issuance momentum, relevant to the CLO and private credit sub-sector even though no tracked manager is involved.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-28T16:41:11+00:00",
+        "sha256": "f1b6ea0428477faecb8592efd02875b730a3ca24f31779bc92b495975fb33cb7",
+        "source_published_at": "2026-09-28T12:19:18+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/28/mg-upsizes-fifth-margay-clo-to-e457m/"
+      },
+      "source_published_at": "2026-09-28T12:19:18+00:00",
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    },
+    {
+      "id": "05d606e39ea7",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T10:32:20+00:00",
+      "headline": {
+        "en": "3 Private Credit Stocks Retail Investors Are Watching As NAV Lending Grows",
+        "zh": "随着NAV贷款增长，散户投资者关注的三只私募信贷股票"
+      },
+      "summary": {
+        "en": "A listicle-style piece highlights three private credit stocks drawing retail investor attention as NAV lending grows. Only the headline was available, so no company names or figures were disclosed.",
+        "zh": "一篇列表式文章指出，随着NAV贷款增长，三只私募信贷股票受到散户投资者关注。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOc2h5MnlWdFRVQnVPMnVwOHY3N1hnR1pUUkRfVXNUbVlnQWFJVzRTMDZNN2hwRVlld3lQdHpXTkhLUElHck5TUUQ0Vkx2NV9RajV4YWwtV2t4VTBxV0tfdjFPQjJtX29wcjEtM2VORi1VM3RYUGRBdUZHQUphZ1FXYUpkNWdqSDJkQjh3Qno1US1rdXVHQmpidXJTazUySjUtbmpJb1M0MnhqNzh6Wk5Tay1HU3Z5ZlpOUFFoQzFEUGdJVGMxMUFsbm56alJpeXF6ZlpTMTBwd2V2d3BwaF84a2pmVDDSAeoBQVVfeXFMTV85N0RXeVNjSk81YnpveFhLNkczWFpWbEtJSG5kd3VRM192YnktclF3MU9CX1F6MldDd3Nlb0VYUm1ucUxSbGV0bjkzTk51X19EVTEtXzhqOTJrSlg0Y2dZR3k4anFZMktFQnJIcEdlWnJxSm00WHFHZmhERWRKNUV3NEtiNmZjdDhzeVMwdFFPakZ4ejV0dHJoalViM0JLUmRUZGVCZzNfLVZxTHB4VEp2WS1qTG05QWw0Yzlpb1JkWC01M29CUFVna2RGVm8wbFM0WVdJX1hrSl9XSThGR3Mzcm43R0U0WUtR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "3 Private Credit Stocks Retail Investors Are Watching As NAV Lending Grows",
+      "source_fingerprint": "f39291ed60850987a16e57ac7ff9019937eb981bb640f5f6a48edbabf64ead0c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "50ea99935ed30163bb2ddfb552112e0fe9635506a9d206dbaa0fc369c6da7730",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "NAV lending growth touches private credit deployment and risk conditions even without a named tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T16:41:14+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOc2h5MnlWdFRVQnVPMnVwOHY3N1hnR1pUUkRfVXNUbVlnQWFJVzRTMDZNN2hwRVlld3lQdHpXTkhLUElHck5TUUQ0Vkx2NV9RajV4YWwtV2t4VTBxV0tfdjFPQjJtX29wcjEtM2VORi1VM3RYUGRBdUZHQUphZ1FXYUpkNWdqSDJkQjh3Qno1US1rdXVHQmpidXJTazUySjUtbmpJb1M0MnhqNzh6Wk5Tay1HU3Z5ZlpOUFFoQzFEUGdJVGMxMUFsbm56alJpeXF6ZlpTMTBwd2V2d3BwaF84a2pmVDDSAeoBQVVfeXFMTV85N0RXeVNjSk81YnpveFhLNkczWFpWbEtJSG5kd3VRM192YnktclF3MU9CX1F6MldDd3Nlb0VYUm1ucUxSbGV0bjkzTk51X19EVTEtXzhqOTJrSlg0Y2dZR3k4anFZMktFQnJIcEdlWnJxSm00WHFHZmhERWRKNUV3NEtiNmZjdDhzeVMwdFFPakZ4ejV0dHJoalViM0JLUmRUZGVCZzNfLVZxTHB4VEp2WS1qTG05QWw0Yzlpb1JkWC01M29CUFVna2RGVm8wbFM0WVdJX1hrSl9XSThGR3Mzcm43R0U0WUtR?oc=5"
+      },
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    },
+    {
+      "id": "c3094b330ed4",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T10:21:57+00:00",
+      "headline": {
+        "en": "Institutional private credit fundraising surges 53% to $190bn, despite retail-market turmoil",
+        "zh": "机构私人信贷募资激增53%至1900亿美元，尽管零售市场动荡"
+      },
+      "summary": {
+        "en": "Institutional private credit fundraising rose 53% to $190bn, according to a headline from AltAssets Private Equity News. The increase came despite turmoil in the retail market.",
+        "zh": "据AltAssets Private Equity News的一则标题，机构私人信贷募资增长53%，达到1900亿美元。这一增长是在零售市场动荡的情况下实现的。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "AltAssets Private Equity News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaS1DMDl6eEo0RS1DS3BkRXdqSkxjZFhrOW1sR2U5eDgyTHdBVzczWUZBQVlRUjh5M1YtTlJ6U2hZZldRYzl0amFSMEtrQ05vdjktQ28wbHlXdThyOFBtX2YwUkZkTy1QR3IyMU91S2xHVmZOUlFOSUZXdzhvZDZiTU9ZelgyMmprbXJOandYX1R5WHlvMmFVbl9Cc3RPS1FhZVRIaExqV1pycE9KVnBxbUZzWmxPck5tQURic1V2dmxpN0trMkJKSg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Institutional private credit fundraising surges 53% to $190bn, despite retail-market turmoil",
+      "source_fingerprint": "882a54ac2d0d923eac25878f6ef4d493021f0f19879c5e0fdaa887fe34e00efd",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "01cbeb02825ef106f07475e943164ac6a168fdd2e30ec1befba59fa7526316c1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Institutional private credit fundraising surge indicates strategy-level deployment and fundraising conditions relevant to the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T16:41:17+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaS1DMDl6eEo0RS1DS3BkRXdqSkxjZFhrOW1sR2U5eDgyTHdBVzczWUZBQVlRUjh5M1YtTlJ6U2hZZldRYzl0amFSMEtrQ05vdjktQ28wbHlXdThyOFBtX2YwUkZkTy1QR3IyMU91S2xHVmZOUlFOSUZXdzhvZDZiTU9ZelgyMmprbXJOandYX1R5WHlvMmFVbl9Cc3RPS1FhZVRIaExqV1pycE9KVnBxbUZzWmxPck5tQURic1V2dmxpN0trMkJKSg?oc=5"
+      },
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    },
+    {
+      "id": "4bf5463d5857",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T07:53:28+00:00",
+      "headline": {
+        "en": "Redemption strain eases in big private credit funds",
+        "zh": "大型私人信贷基金赎回压力缓解"
+      },
+      "summary": {
+        "en": "Redemption strain has eased in large private credit funds, according to a headline from AMWatch.",
+        "zh": "据AMWatch报道，大型私人信贷基金的赎回压力有所缓解。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "AMWatch",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5BSEVtM2FuYllubkx5WmhXQzNGM3NwdGVzM1pEdWJ3MnhhLV9ydkJiM0xDbnVhaEZjTVc1d0wxVVJQZzcyWXhEdHhmb3NVYUU5YmhxbU5XNEhGRl8yTElfQ2xSTkVpa1h3bXN2N0RwWQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Redemption strain eases in big private credit funds",
+      "source_fingerprint": "c225014c300aab72449e2c6c7ac0b46aedb0ba7125174ade1b88ae6e567de883",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fb1b5f75bdcb26f52998833b258abd14fa30776d1249a030c341450ce85ac1c5",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals easing redemption pressure in large private credit funds, a liquidity condition that could affect tracked managers' private credit vehicles.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T16:41:21+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5BSEVtM2FuYllubkx5WmhXQzNGM3NwdGVzM1pEdWJ3MnhhLV9ydkJiM0xDbnVhaEZjTVc1d0wxVVJQZzcyWXhEdHhmb3NVYUU5YmhxbU5XNEhGRl8yTElfQ2xSTkVpa1h3bXN2N0RwWQ?oc=5"
+      },
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    }
+  ]
+}

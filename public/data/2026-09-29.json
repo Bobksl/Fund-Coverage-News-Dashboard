@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-29",
+  "items": [
+    {
+      "id": "a1671f3f04e7",
+      "date": "2026-09-29",
+      "published_at": "2026-09-28T16:03:06+00:00",
+      "headline": {
+        "en": "Oxford Finance raises $368m for ABL strategy",
+        "zh": "Oxford Finance 为 ABL 策略募集 3.68 亿美元"
+      },
+      "summary": {
+        "en": "Oxford Finance raised $368m for an asset-based lending strategy, according to a headline report.",
+        "zh": "据一则标题报道，Oxford Finance 为一项资产抵押贷款（ABL）策略募集了 3.68 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNS13XzU5NHhtQVlqNlNEUGtiSF9fVWZSMXNTSS02VnJ4SUN5Ull1aXNUWG9aeWYzTTc1NXhoSEJFUmMtVHktWHdWdkJtMVJUcVZ0WG5tdWFjcUU5OWUyVHFvZWU0cFp6LW9zNnFCVFQySUlhMEZxZUpjODQ0ZmVLb1pIUWxsMS01cnptMFpMcHFhYzRST0hHZA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oxford Finance raises $368m for ABL strategy",
+      "source_fingerprint": "2da6799d0cf6ec889123f4ddd98fddb5086884aff9b978da322dc195b2a17493",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1b552462517fd0ed9d881616803f18e6ca0eeefe37267bdbe88b092d58b30ec3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New capital raised for an asset-based lending strategy signals continued fundraising momentum in asset-backed finance, a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T16:40:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNS13XzU5NHhtQVlqNlNEUGtiSF9fVWZSMXNTSS02VnJ4SUN5Ull1aXNUWG9aeWYzTTc1NXhoSEJFUmMtVHktWHdWdkJtMVJUcVZ0WG5tdWFjcUU5OWUyVHFvZWU0cFp6LW9zNnFCVFQySUlhMEZxZUpjODQ0ZmVLb1pIUWxsMS01cnptMFpMcHFhYzRST0hHZA?oc=5"
+      },
+      "observed_at": "2026-09-28T16:36:45+00:00"
+    }
+  ]
+}
