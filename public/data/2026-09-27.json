@@ -1,0 +1,365 @@
+{
+  "date": "2026-09-27",
+  "items": [
+    {
+      "id": "2699f93724d8",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T13:11:19+00:00",
+      "headline": {
+        "en": "Private Credit Fund Redemptions Ease in Q3; Apollo Dividend Sustainability Under Spotlight",
+        "zh": "私募信贷基金第三季度赎回放缓，Apollo Global（APO）股息可持续性受关注"
+      },
+      "summary": {
+        "en": "Private credit fund redemptions eased in the third quarter, according to a headline from GuruFocus. The same headline puts the sustainability of Apollo Global's dividend under the spotlight.",
+        "zh": "据GuruFocus的一则标题，私募信贷基金第三季度赎回放缓。同一标题称Apollo Global的股息可持续性受到关注。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "GuruFocus",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdEY2enB2azJqTk1wM3Z0YU5SQlZBbGVKWktRVndLaFZnUjY4S1d4NkQ4V3VPcnEzcE8yd29yalQwWmJ6Mm1vQVdKSmxiUmg2Z2hPem84anp6WjRta3JPRHlOZjFVaERWSjhhUEU2S1FpeEs4UHlfUldsUHhGYXpJZE5IcHlqSnZIR0lDdHVwSzVRUGFwd2tQYURYZzA3YUNIc05hTUtKT3dMOVhWTlktVUI3cGZ3RGxXeVMxMGk5SVBqbVFlMXAzUHlRTTBBZmYzMDE3cUh3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private Credit Fund Redemptions Ease in Q3, Apollo Global (APO) Dividend Sustainability Under Spotlight",
+      "source_fingerprint": "bb6a79ab95ec70c07d3508ef1032ae484e9793385780b9f2d0b15d8ea46c7abc",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "76c05f06d5a9c392f8ec9502dcce13b99e435b51fe984181cd9e47e617172fa7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals easing private credit fund redemptions and scrutiny of Apollo's dividend sustainability, both relevant to credit investor views on tracked managers and the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:35+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdEY2enB2azJqTk1wM3Z0YU5SQlZBbGVKWktRVndLaFZnUjY4S1d4NkQ4V3VPcnEzcE8yd29yalQwWmJ6Mm1vQVdKSmxiUmg2Z2hPem84anp6WjRta3JPRHlOZjFVaERWSjhhUEU2S1FpeEs4UHlfUldsUHhGYXpJZE5IcHlqSnZIR0lDdHVwSzVRUGFwd2tQYURYZzA3YUNIc05hTUtKT3dMOVhWTlktVUI3cGZ3RGxXeVMxMGk5SVBqbVFlMXAzUHlRTTBBZmYzMDE3cUh3?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    },
+    {
+      "id": "907101b57ebd",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T12:43:32+00:00",
+      "headline": {
+        "en": "Private credit redemption pressure eases as fund performance improves (APO:NYSE)",
+        "zh": "私募信贷赎回压力缓解，基金业绩改善（APO:NYSE）"
+      },
+      "summary": {
+        "en": "A Seeking Alpha headline reports that private credit redemption pressure is easing as fund performance improves. The item names NYSE-listed Apollo, but gives no figures, vehicles or details.",
+        "zh": "Seeking Alpha 一则标题报道称，随着基金业绩改善，私募信贷赎回压力正在缓解。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFh6TXBQNEphNGlOX3Fpc3Y4Y3d2OTBPSEVRUHJNNXB5ajJGNUI2TmpWcTZFb0tzdTFiRVdsaVQtSm56cUFZR00yRTVmcWZiUm1Sd1hiN09uQk5mYlc5Q3gyNXJ6cVRqYWVqSUJuZGFqdE4wSjVWa0ZYRnRBc2NpZEFoWXFWZUJnUW5LY293OWFWcFlHbVNVbGcwUGJNbTdNV1hmd1ZPTmFROUk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit redemption pressure eases as fund performance improves (APO:NYSE)",
+      "source_fingerprint": "00c4a68ff4ce1d162482409eb1c63586d0a49e479d67b36e21df5d37ff8c0d0e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a28b16b7e40d15d1e5ee2a38a5b9c4e891fb8cace31135ce6d94262e08b8836c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals easing redemption pressure and improving private credit fund performance, a sector-level liquidity and valuation development for tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFh6TXBQNEphNGlOX3Fpc3Y4Y3d2OTBPSEVRUHJNNXB5ajJGNUI2TmpWcTZFb0tzdTFiRVdsaVQtSm56cUFZR00yRTVmcWZiUm1Sd1hiN09uQk5mYlc5Q3gyNXJ6cVRqYWVqSUJuZGFqdE4wSjVWa0ZYRnRBc2NpZEFoWXFWZUJnUW5LY293OWFWcFlHbVNVbGcwUGJNbTdNV1hmd1ZPTmFROUk?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    },
+    {
+      "id": "fe793ac5d259",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T11:53:05+00:00",
+      "headline": {
+        "en": "Anchorage Capital Advisors Acquires Management Contracts For 11 CLOs With $4.7 Billion In AUM",
+        "zh": "Anchorage Capital Advisors 收购11只CLO的管理合约，管理资产规模47亿美元"
+      },
+      "summary": {
+        "en": "Anchorage Capital Advisors acquired the management contracts for 11 CLOs with $4.7 billion in assets under management.",
+        "zh": "Anchorage Capital Advisors 收购了11只CLO的管理合约，相关管理资产规模为47亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaktfcW1JUzJ0LTZpTERuZVlCNE94T1VicU1HRGk2MGRhbzlQSTNXczY2c19UX0lfZkdfMjJ3SmtVY3Q5bzhKRWF2R1JnQ1V3bjhyRU05Z2NyWlBtVFJFeW5wdUJXWHI3bmU1cG1zMGloOHhKZHY2NjVIQ3VKSXF4RjJMU0Y0OTdnZDFmRDhoTWhLSFIzc1d3a3hSUkJ6bno3dnY1a1JpMlItcDRyV05QU29n0gG3AUFVX3lxTE5QcXlCMUs3ZXRYOUhvZFpUeWM0cFVSTkVXZDRudWtHeXY0VXJTNEtiTk5pZm1yUkY0V3N0WHY0ekw3dVFSdG1LUHlOeHRtdk1QNmE0RjdMdEtLS2ZtU2dXaEZvYlVvc2RfWk1EVHZzbkFfTFZUQVRUZGxSeURnXzNrMnlPelZKRE5aUXQ0M3dpcDdWZUNzLTQ3UnVpeDFPUnhDcWpEQWtobUpZcm0tZnNTWldnVjV2TQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Anchorage Capital Advisors Acquires Management Contracts For 11 CLOs With $4.7 Billion In AUM",
+      "source_fingerprint": "010dd663aea8506d2f776599c1086d4b1e8f1bf42aaa2fca5e6a33a524814164",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "03719e74d1b1139cb3936ccdaf638488dd6a324e6fe112be5cde0a151f8ce571",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new manager acquiring CLO contracts expands CLO management capacity, a sub-sector relevant to tracked credit managers.",
+      "event_identity": {
+        "subject": "anchorage capital advisors",
+        "action": "acquires",
+        "object": "management contracts for 11 clos",
+        "period": "11 clos",
+        "numbers": [
+          "$4.7 Billion",
+          "11"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaktfcW1JUzJ0LTZpTERuZVlCNE94T1VicU1HRGk2MGRhbzlQSTNXczY2c19UX0lfZkdfMjJ3SmtVY3Q5bzhKRWF2R1JnQ1V3bjhyRU05Z2NyWlBtVFJFeW5wdUJXWHI3bmU1cG1zMGloOHhKZHY2NjVIQ3VKSXF4RjJMU0Y0OTdnZDFmRDhoTWhLSFIzc1d3a3hSUkJ6bno3dnY1a1JpMlItcDRyV05QU29n0gG3AUFVX3lxTE5QcXlCMUs3ZXRYOUhvZFpUeWM0cFVSTkVXZDRudWtHeXY0VXJTNEtiTk5pZm1yUkY0V3N0WHY0ekw3dVFSdG1LUHlOeHRtdk1QNmE0RjdMdEtLS2ZtU2dXaEZvYlVvc2RfWk1EVHZzbkFfTFZUQVRUZGxSeURnXzNrMnlPelZKRE5aUXQ0M3dpcDdWZUNzLTQ3UnVpeDFPUnhDcWpEQWtobUpZcm0tZnNTWldnVjV2TQ?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    },
+    {
+      "id": "71fe1ee5a90c",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T11:53:05+00:00",
+      "headline": {
+        "en": "Anchorage Capital Advisors Acquires Management Contracts For 11 CLOs With $4.7 Billion In AUM",
+        "zh": "Anchorage Capital Advisors 收购 11 只 CLO 的管理合约，资产管理规模 47 亿美元"
+      },
+      "summary": {
+        "en": "Anchorage Capital Advisors acquired the management contracts for 11 CLOs with $4.7 billion in assets under management. No terms or counterparty were disclosed in the available text.",
+        "zh": "Anchorage Capital Advisors 收购了 11 只 CLO 的管理合约，资产管理规模为 47 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUHF5QjFLN2V0WDlIb2RaVHljNHBVUk5FV2Q0bnVrR3l2NFVyUzRLYk5OaWZtclJGNFdzdFh2NHpMN3VRUnRtS1B5Tnh0bXZNUDZhNEY3THRLS0tmbVNnV2hGb2JVb3NkX1pNRFR2c25BX0xWVEFUVGRsUnlEZ18zazJ5T3pWSkROWlF0NDN3aXA3VmVDcy00N1J1aXgxT1J4Q3FqREFraG1KWXJtLWZzU1pXZ1Y1dk3SAbcBQVVfeXFMTlBxeUIxSzdldFg5SG9kWlR5YzRwVVJORVdkNG51a0d5djRVclM0S2JOTmlmbXJSRjRXc3RYdjR6TDd1UVJ0bUtQeU54dG12TVA2YTRGN0x0S0tLZm1TZ1doRm9iVW9zZF9aTURUdnNuQV9MVlRBVFRkbFJ5RGdfM2syeU96VkpETlpRdDQzd2lwN1ZlQ3MtNDdSdWl4MU9SeENxakRBa2htSllybS1mc1NaV2dWNXZN?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Anchorage Capital Advisors Acquires Management Contracts For 11 CLOs With $4.7 Billion In AUM",
+      "source_fingerprint": "010dd663aea8506d2f776599c1086d4b1e8f1bf42aaa2fca5e6a33a524814164",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "03719e74d1b1139cb3936ccdaf638488dd6a324e6fe112be5cde0a151f8ce571",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "CLO management contract transfer signals consolidation among credit managers, relevant to CLO sub-sector conditions even without a tracked manager named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:42+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUHF5QjFLN2V0WDlIb2RaVHljNHBVUk5FV2Q0bnVrR3l2NFVyUzRLYk5OaWZtclJGNFdzdFh2NHpMN3VRUnRtS1B5Tnh0bXZNUDZhNEY3THRLS0tmbVNnV2hGb2JVb3NkX1pNRFR2c25BX0xWVEFUVGRsUnlEZ18zazJ5T3pWSkROWlF0NDN3aXA3VmVDcy00N1J1aXgxT1J4Q3FqREFraG1KWXJtLWZzU1pXZ1Y1dk3SAbcBQVVfeXFMTlBxeUIxSzdldFg5SG9kWlR5YzRwVVJORVdkNG51a0d5djRVclM0S2JOTmlmbXJSRjRXc3RYdjR6TDd1UVJ0bUtQeU54dG12TVA2YTRGN0x0S0tLZm1TZ1doRm9iVW9zZF9aTURUdnNuQV9MVlRBVFRkbFJ5RGdfM2syeU96VkpETlpRdDQzd2lwN1ZlQ3MtNDdSdWl4MU9SeENxakRBa2htSllybS1mc1NaV2dWNXZN?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    },
+    {
+      "id": "8f3d32df0429",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T07:15:00+00:00",
+      "headline": {
+        "en": "Blue Owl Stock Yields About 9% After Falling 45% From Its High. Is the Dividend Safe?",
+        "zh": "Blue Owl股价较高点下跌45%后收益率约9%。股息是否安全？"
+      },
+      "summary": {
+        "en": "Blue Owl's stock has fallen 45% from its high and yields about 9%, according to a headline-only item. The piece poses the question of whether the dividend is safe.",
+        "zh": "该报道提出了股息是否安全的问题。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNb3pDdVExTnBHTnFQMlNVbHJnT085UVVydjNPbGhGWHJfcU54VUxOM29uNVlDN3NqQmRQTThyc0EzZ1B0enBMeDJ5d2NhRlhJYnVaazRNb25OcF9zRG9UMlY1TjNEWDJ5MzRrTHBxS0psSWFiTjdLVWxnZlR5YW1UcWxuZGFhdkdyd1V2Y0J1VkdUcUwxNHhLQw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Stock Yields About 9% After Falling 45% From Its High. Is the Dividend Safe?",
+      "source_fingerprint": "e7372f115502da664d466179c14c93f226f11ffd9397e95f926e610ab4002de0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a39aade4448950e573a70c1dd98243109ce886d28d3bcb1c91a8240ab2f597bb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Questions about dividend safety at a tracked credit manager touch credit-investor views on Blue Owl's earnings coverage and book, though the text adds no new figures.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNb3pDdVExTnBHTnFQMlNVbHJnT085UVVydjNPbGhGWHJfcU54VUxOM29uNVlDN3NqQmRQTThyc0EzZ1B0enBMeDJ5d2NhRlhJYnVaazRNb25OcF9zRG9UMlY1TjNEWDJ5MzRrTHBxS0psSWFiTjdLVWxnZlR5YW1UcWxuZGFhdkdyd1V2Y0J1VkdUcUwxNHhLQw?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    },
+    {
+      "id": "5a15ed581462",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T06:35:00+00:00",
+      "headline": {
+        "en": "Blue Owl Shares 45% Below High With ~9% Yield as Dividend Safety Questioned",
+        "zh": "Blue Owl股价较高点下跌45%，收益率约9%，股息安全性受质疑"
+      },
+      "summary": {
+        "en": "Blue Owl stock yields about 9% after falling 45% from its high, according to a headline asking whether the dividend is safe.",
+        "zh": "据一则标题，Blue Owl股价较其高点下跌45%后收益率约为9%，该标题质疑其股息是否安全。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN2t6bUhHX2xpYmlhbmljOHktaXFkSnRBU2lRTkNHd2JWTmI2NnlwMG12VVRQWnhFcG1kZ1RtYnJ5WVZiOFBFNF9QOWhYQ2NocXBfZTdwdHRlV2RScEVzMXZ5M05nTF8zVW5MSDVnM2dJc040Q3UtWkNuSmNLMldIRUVkN1U5cHpwVUJsRGNqcmJiZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Stock Yields About 9% After Falling 45% From Its High. Is the Dividend Safe?",
+      "source_fingerprint": "e7372f115502da664d466179c14c93f226f11ffd9397e95f926e610ab4002de0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a39aade4448950e573a70c1dd98243109ce886d28d3bcb1c91a8240ab2f597bb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Questions the safety of Blue Owl's dividend after a large share price decline, a direct signal on a tracked manager's distribution coverage and capital access.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:47+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN2t6bUhHX2xpYmlhbmljOHktaXFkSnRBU2lRTkNHd2JWTmI2NnlwMG12VVRQWnhFcG1kZ1RtYnJ5WVZiOFBFNF9QOWhYQ2NocXBfZTdwdHRlV2RScEVzMXZ5M05nTF8zVW5MSDVnM2dJc040Q3UtWkNuSmNLMldIRUVkN1U5cHpwVUJsRGNqcmJiZw?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    },
+    {
+      "id": "2a8e06714dc4",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T04:01:32+00:00",
+      "headline": {
+        "en": "Private credit turmoil eases as investor withdrawals slow",
+        "zh": "私人信贷动荡缓解,投资者赎回放缓"
+      },
+      "summary": {
+        "en": "Private credit turmoil is easing as investor withdrawals slow, according to a Financial Times headline.",
+        "zh": "据《金融时报》一则标题,随着投资者赎回放缓,私人信贷动荡正在缓解。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQV9IODg0UThEZGVPcWp0eFpVVnQySmszWG9PbW5wNXhXcmhSczVXSS02TXBVdHo2WTN2clZzQjRhUThXYm5kTVRKR2QyNFAtMlctZ2hWaXJFd2FKcUVZbzlYalZIVW5LZTJYT2ZLREwwbUJoOENlS1VWVWt1YzlPR3FPbG8?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit turmoil eases as investor withdrawals slow",
+      "source_fingerprint": "fa122999a49be5af7cc2a4c8a9e468e2b407f6734fed1100dad86b38a9e7ebd8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ece8e64882e162906e1814f0c3fae758418ef28b407629e6ce55b6a409339c23",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals slowing investor withdrawals in private credit, a sector-wide liquidity signal for tracked managers' credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:49+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQV9IODg0UThEZGVPcWp0eFpVVnQySmszWG9PbW5wNXhXcmhSczVXSS02TXBVdHo2WTN2clZzQjRhUThXYm5kTVRKR2QyNFAtMlctZ2hWaXJFd2FKcUVZbzlYalZIVW5LZTJYT2ZLREwwbUJoOENlS1VWVWt1YzlPR3FPbG8?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    },
+    {
+      "id": "c6b3079f04b1",
+      "date": "2026-09-27",
+      "published_at": "2026-09-26T20:40:01+00:00",
+      "headline": {
+        "en": "Arthur Hayes Tells Jerome Powell To 'Warm Up' Printer After Blue Owl Freezes Redemptions",
+        "zh": "Blue Owl冻结赎回后，Arthur Hayes呼吁Jerome Powell“预热”印钞机"
+      },
+      "summary": {
+        "en": "Arthur Hayes called on Jerome Powell to 'warm up' the printer after Blue Owl froze redemptions, according to a headline.",
+        "zh": "据一则标题报道，Blue Owl冻结赎回后，Arthur Hayes呼吁Jerome Powell“预热”印钞机。所提供文本中没有更多细节。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQUE84UWVTbWJkd1VJRlY0Vjk2YzdHZnpkZDFPYUhsMzFOb2psbWM2bC1NYzlJWDFHeTk3Q3l5aW8zUXgyVXVFYndLSDIxeUpQYUNISG5fb3dmNjFoOFVocEQtUE12Vmc0b1BXcm9CTlF4eGxMODhjeU9GbGQ3MWJkX20wSzNTSXlBemp6eGdFVmc0MnFYM1pRNGVzdXlnMGZmWVpTaHZJZXBOLXBGTGpZUmpaRmc4U3NnZEk5c1pJR2w3UWtjOUtlczdobUdoZ2hRdVg4dXYwR2dtMXZKQ083QWxvOS1sb004MUJ2NjRlSQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Arthur Hayes Tells Jerome Powell To ‘Warm Up’ Printer After Blue Owl Freezes Redemptions",
+      "source_fingerprint": "f8f48169e93ec0c95cd1c07fffe31fe8dc27ee9a5f47da6375719feea97270b6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "142e255b8d4693253b0dc463b45f76b876a9898b7658c30f26d8ff567ca48c63",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A reported freeze on redemptions at Blue Owl would directly affect a tracked credit manager's liquidity and investor access to capital.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-28T04:51:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQUE84UWVTbWJkd1VJRlY0Vjk2YzdHZnpkZDFPYUhsMzFOb2psbWM2bC1NYzlJWDFHeTk3Q3l5aW8zUXgyVXVFYndLSDIxeUpQYUNISG5fb3dmNjFoOFVocEQtUE12Vmc0b1BXcm9CTlF4eGxMODhjeU9GbGQ3MWJkX20wSzNTSXlBemp6eGdFVmc0MnFYM1pRNGVzdXlnMGZmWVpTaHZJZXBOLXBGTGpZUmpaRmc4U3NnZEk5c1pJR2w3UWtjOUtlczdobUdoZ2hRdVg4dXYwR2dtMXZKQ083QWxvOS1sb004MUJ2NjRlSQ?oc=5"
+      },
+      "observed_at": "2026-09-28T04:49:04+00:00"
+    }
+  ]
+}
