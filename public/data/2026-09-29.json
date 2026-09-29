@@ -2,6 +2,402 @@
   "date": "2026-09-29",
   "items": [
     {
+      "id": "1b8c90ad935b",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T12:26:01+00:00",
+      "headline": {
+        "en": "Fidelity closes second real estate debt fund at $451m",
+        "zh": "富达以4.51亿美元完成第二只房地产债务基金募集"
+      },
+      "summary": {
+        "en": "Fidelity Investments has closed its second real estate debt opportunities fund at $451m, more than double the committed capital of its predecessor. The fund drew backing from institutional investors, family offices, registered investment advisers and high-net-worth individuals, and invests in private real estate loans and, opportunistically, tradeable real estate debt securities. Bill Maclay and Matthew Torchia manage the fund.",
+        "zh": "富达投资（Fidelity Investments）以4.51亿美元完成其第二只房地产债务机会基金的募集，超过前一只基金承诺资本的两倍。该基金获得机构投资者、家族办公室、注册投资顾问及高净值个人的资金支持，投资于私募房地产贷款，并机会性地投资于可交易的房地产债务证券。该基金由Bill Maclay和Matthew Torchia共同管理。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/29/fidelity-hits-451m-re-debt-fund-close/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fidelity hits $451m RE debt fund close",
+      "source_fingerprint": "6b474c2c9fc2dc432c46d2e4fed38fcab4531ee7a6cc3089e130ca6902f06fbb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 25,
+            "end": 87
+          },
+          "linkage": {
+            "start": 43,
+            "end": 78
+          }
+        },
+        "source_sha256": "3243e68ffeb1169f04d46fe9842db7219d52f1fd4c8c7399cba2def119af1f89",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A fund close for a non-tracked manager is an incremental data point on capital formation in real estate debt, without direct impact on a tracked manager.",
+          "zh": "非追踪管理人的基金关闭是房地产债务资本形成的增量数据点，对追踪管理人无直接影响。"
+        }
+      },
+      "relevance_reason": "A real estate debt fund closing at $451m signals continued capital formation for private real estate lending strategies, a credit sub-sector relevant to tracked managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-29T14:46:13+00:00",
+        "sha256": "3243e68ffeb1169f04d46fe9842db7219d52f1fd4c8c7399cba2def119af1f89",
+        "source_published_at": "2026-09-29T12:26:01+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/29/fidelity-hits-451m-re-debt-fund-close/"
+      },
+      "source_published_at": "2026-09-29T12:26:01+00:00",
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
+      "id": "e3ab139823fa",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T11:34:50+00:00",
+      "headline": {
+        "en": "SEC issues \"critical reminder\" on private credit valuations",
+        "zh": "SEC就私人信贷估值发出“关键提醒”"
+      },
+      "summary": {
+        "en": "The SEC issued what was described as a \"critical reminder\" on private credit valuations.",
+        "zh": "SEC就私人信贷估值发出所谓“关键提醒”。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaVNRYW41bE8wbGd2Qkp6dS1RUS1oNWg4YlJ0alN6YVUzT19PYjhCX3FzcXhxVEliNE96T0xPZHJNNE9adzZyd2FNTFB0TlA3Si1Ca1BmWFpxc3Jma3BtcHhGNGpLSFE1TW5TZFJQLWZPQ0dtYjBCVVlkZW9KV0JzRm1aM3FPdW8wV2NFczNOZ0U3cTJBTHNuclVpMFpxWWR5TTFaSEo4SUIxakk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC issues \"critical reminder\" on private credit valuations",
+      "source_fingerprint": "cbdaac447867097ce6e04dbaf7449a4f279cfc63c831039c21a297ac4553d323",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fc3ecb014e64b2f94020c572261e7626e65ac04fcaca01c37b32598c46389787",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Regulatory reminder on private credit valuations could shift valuation and risk expectations for tracked private credit managers, though the headline gives no new action.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T14:46:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaVNRYW41bE8wbGd2Qkp6dS1RUS1oNWg4YlJ0alN6YVUzT19PYjhCX3FzcXhxVEliNE96T0xPZHJNNE9adzZyd2FNTFB0TlA3Si1Ca1BmWFpxc3Jma3BtcHhGNGpLSFE1TW5TZFJQLWZPQ0dtYjBCVVlkZW9KV0JzRm1aM3FPdW8wV2NFczNOZ0U3cTJBTHNuclVpMFpxWWR5TTFaSEo4SUIxakk?oc=5"
+      },
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
+      "id": "969fffdc8995",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T11:28:01+00:00",
+      "headline": {
+        "en": "SEC issues \"critical reminder\" on private credit valuations",
+        "zh": "SEC就私募信贷估值发出“关键提醒”"
+      },
+      "summary": {
+        "en": "The SEC issued a \"critical reminder\" that the industry must maintain rigour in valuing private assets, particularly private credit, as the investor pool grows. The statement concerns existing requirements rather than new rules, but stresses how assets are valued and how valuations and risk characteristics are disclosed. Private credit investments in registered fund portfolios grew nearly 60 per cent, from $170bn in December 2020 to $270bn in December 2025, the SEC said.",
+        "zh": "SEC发出“关键提醒”，称随着投资者群体扩大，行业必须对私募资产、尤其是私募信贷的估值保持严谨。该声明涉及现有要求而非新规，但强调资产如何估值以及估值和风险特征如何向投资者披露。SEC表示，注册基金组合持有的私募信贷投资增长了近60%，从2020年12月的1700亿美元增至2025年12月的2700亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/29/sec-issues-critical-reminder-on-private-credit-valuations/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC issues “critical reminder” on private credit valuations",
+      "source_fingerprint": "0edb25c739c0c4977379cb1e8a581a6625c59feecfe9de3813cfa4cb43da64ac",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 22,
+            "end": 39
+          },
+          "linkage": {
+            "start": 172,
+            "end": 186
+          }
+        },
+        "source_sha256": "d1e9ee0a11cd8a9654838e9bab42e6386e557ea101ac9019f3341ba60e092dbc",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "SEC statement on private credit valuation rigour and disclosure affects the risk and valuation environment for private credit strategies tracked managers run.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-29T14:46:18+00:00",
+        "sha256": "d1e9ee0a11cd8a9654838e9bab42e6386e557ea101ac9019f3341ba60e092dbc",
+        "source_published_at": "2026-09-29T11:28:01+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/29/sec-issues-critical-reminder-on-private-credit-valuations/"
+      },
+      "source_published_at": "2026-09-29T11:28:01+00:00",
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
+      "id": "0566ee7fbe8d",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T10:55:32+00:00",
+      "headline": {
+        "en": "Wells Fargo downgrades FS KKR stock rating on credit concerns",
+        "zh": "富国银行因信贷担忧下调FS KKR股票评级"
+      },
+      "summary": {
+        "en": "Wells Fargo downgraded its stock rating on FS KKR, citing credit concerns.",
+        "zh": "富国银行因信贷担忧下调了对FS KKR的股票评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSjhxeDRveWtoSUtRWXJCdnZJbUxZNFpTbFRRQXpGdjZTenBTamRVZGMzeDVTYkxpdUVXWmlMeTNkVW1od25wa1F2b05jMF9GY3FnVDU5SGZvSmJHZ0xPZVBIejhRZWN5b1ZDTGdkc2FmTGdjZnpaT01KUGZYWXUwWUdEVF95Z0VkZFl3WFlqU1JINmNTdVNBS2g2REJrZjhqTFJMS21BTFZoUHJyNk15ZUJhbWREVzdNVF9IcFZn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Wells Fargo downgrades FS KKR stock rating on credit concerns",
+      "source_fingerprint": "a86cd7eb074760f0a2cf91f70f78297fb370d4f14c1c95f5e97d9569a3b025e7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "006679cb57174d3e9bcf54e7dc9499f280c0d240a37915b0579bcb4aadf209d9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A rating downgrade of a listed credit vehicle on credit concerns could affect credit investors' view of the tracked manager's credit strategy.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T14:46:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSjhxeDRveWtoSUtRWXJCdnZJbUxZNFpTbFRRQXpGdjZTenBTamRVZGMzeDVTYkxpdUVXWmlMeTNkVW1od25wa1F2b05jMF9GY3FnVDU5SGZvSmJHZ0xPZVBIejhRZWN5b1ZDTGdkc2FmTGdjZnpaT01KUGZYWXUwWUdEVF95Z0VkZFl3WFlqU1JINmNTdVNBS2g2REJrZjhqTFJMS21BTFZoUHJyNk15ZUJhbWREVzdNVF9IcFZn?oc=5"
+      },
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
+      "id": "7fafa72c5993",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T10:02:07+00:00",
+      "headline": {
+        "en": "New York Life Investment Management takes majority stake in Invictus Capital Partners",
+        "zh": "New York Life Investment Management 收购 Invictus Capital Partners 多数股权"
+      },
+      "summary": {
+        "en": "New York Life Investment Management has taken a majority stake in Invictus Capital Partners, a $20bn US single-family residential credit manager, adding its Verus Mortgage Capital sourcing and securitisation platform. The deal expands NYLIM's residential mortgage and asset-based finance capabilities within its $304bn private markets platform and gives New York Life's general account access to Invictus's residential mortgage assets. Invictus has acquired more than $48bn of residential loans over the past decade and completed over 90 US residential mortgage-backed securitisations.",
+        "zh": "New York Life Investment Management 已收购 Invictus Capital Partners 的多数股权。Invictus Capital Partners 是一家规模200亿美元的美国单户住宅信贷管理公司，其贷款获取与运营平台 Verus Mortgage Capital 一并纳入交易。该交易扩大了 NYLIM 在其3040亿美元私募市场平台内的住宅抵押贷款和资产支持金融能力，并使 New York Life 的一般账户获得 Invictus 的住宅抵押贷款资产渠道。过去十年间，Invictus 已收购超过480亿美元的住宅贷款，并完成90多笔美国住宅抵押贷款支持证券化交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage",
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/29/new-york-life-boosts-private-credit-arm-with-invictus-stake/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "New York Life boosts private credit arm with Invictus stake",
+      "source_fingerprint": "8030d0dda41fa0df9ca30df39b4f37361b7048ee315f2b5be206f4ebec0beb8c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7ab79df742576cf229bd499a7519f861c067f2d051e8fdd4ee66e01520df1968",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "A large insurance-backed asset manager taking a majority stake in a $20bn US residential credit manager expands permanent-capital-funded mortgage and asset-based finance capacity, affecting the competitive environment for residential credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-29T14:46:25+00:00",
+        "sha256": "7ab79df742576cf229bd499a7519f861c067f2d051e8fdd4ee66e01520df1968",
+        "source_published_at": "2026-09-29T10:02:07+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/29/new-york-life-boosts-private-credit-arm-with-invictus-stake/"
+      },
+      "source_published_at": "2026-09-29T10:02:07+00:00",
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
+      "id": "5daf9bbe492a",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T09:41:59+00:00",
+      "headline": {
+        "en": "Metrics freezes investor funds as $170m write-down rocks private credit",
+        "zh": "Metrics冻结投资者资金，1.7亿美元减记冲击私人信贷"
+      },
+      "summary": {
+        "en": "Metrics has frozen investor funds amid a $170m write-down, according to a headline report on private credit.",
+        "zh": "据一则有关私人信贷的头条报道，Metrics在1.7亿美元减记之际冻结了投资者资金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQYTh3N0hmdE9kRThvNmpTcHNFMzlNRDRGOS1UcVYxdkY1ci1HVmVRMk13U0JhSlNlSVlLaUpuTm95NmlhaDZDZncwekJoLUZSbnRxVEVLbmFxNnVlWWRhNmFCc3l4M29rQU9FQmZuV2QxUzg0ZG91Ykg1Rm1CekZNb3FfUURkam0waThnVUM0OGZSaDBuem5tWER2ODh6RkM0bGlNQ0NGQXZrLXE5bm5aOGdyRFk0a1VPbGtudmdGYzh2OVV6TXlNTVpTemwwYktTd2JhVU9SMkNLX1B4Mmd2d3cwamZaV3UwS1I2ODNxd0VVSGtkLTRuRkhuYkUtcXRORzRQYVZqd3A?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Metrics freezes investor funds as $170m write-down rocks private credit",
+      "source_fingerprint": "a25a07ac749c6c262c77984f723a61ad12d5a746e921c5e73a45278143918436",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "cf9caf0dbc4470f9cc2a16e9ae7246b4d755f7e5868c9e436728d4af7dcaf743",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit fund freezing investor funds and writing down $170m signals valuation and liquidity stress in the direct lending sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T14:46:27+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQYTh3N0hmdE9kRThvNmpTcHNFMzlNRDRGOS1UcVYxdkY1ci1HVmVRMk13U0JhSlNlSVlLaUpuTm95NmlhaDZDZncwekJoLUZSbnRxVEVLbmFxNnVlWWRhNmFCc3l4M29rQU9FQmZuV2QxUzg0ZG91Ykg1Rm1CekZNb3FfUURkam0waThnVUM0OGZSaDBuem5tWER2ODh6RkM0bGlNQ0NGQXZrLXE5bm5aOGdyRFk0a1VPbGtudmdGYzh2OVV6TXlNTVpTemwwYktTd2JhVU9SMkNLX1B4Mmd2d3cwamZaV3UwS1I2ODNxd0VVSGtkLTRuRkhuYkUtcXRORzRQYVZqd3A?oc=5"
+      },
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
+      "id": "e0bbb97fa084",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T09:41:20+00:00",
+      "headline": {
+        "en": "Metrics freezes investor funds as $170m write-down rocks private credit",
+        "zh": "Metrics 在 1.7 亿美元减记冲击私人信贷之际冻结投资者资金"
+      },
+      "summary": {
+        "en": "Metrics has frozen investor funds after a $170m write-down, according to a headline report.",
+        "zh": "据一则标题报道，Metrics 在 1.7 亿美元减记后冻结了投资者资金。所提供文本中没有更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Adelaide Now",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNNktMMHhXeHQzQTVKQXk2UXJNdzhJVDFYc1BoWS1DeWx3SHZwZ0xPenBVVzRaZFVIVnJzQ1VFd1lOS0pWLTgwbkVpSnNlTWxfSjlFX2dabFJ6NDBOa1NtaXlXeFhLckxTUnk4RmRfT3lOUGRHTkk2dC1UczBEeDFYbm5xbTVWUEtjZ1ZXSTkyRDBRaWNVSUJybTJBbHF1ZlJ4ODBrOXMxQjhhWWM1OWxZbnRHdVljVlhoN1pGbzVjUlctZU5uN1pHczIwVF9BbjVXRFdlcVhONzY2blE3Z1k5NjdKemRKRnh3aG9oUGJxOHBiUUxYYUhkUWgtUmVMd2txWWtTaE53?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Metrics freezes investor funds as $170m write-down rocks private credit",
+      "source_fingerprint": "a25a07ac749c6c262c77984f723a61ad12d5a746e921c5e73a45278143918436",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "cf9caf0dbc4470f9cc2a16e9ae7246b4d755f7e5868c9e436728d4af7dcaf743",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit manager freezing investor funds after a $170m write-down signals stress in private credit, a tracked sub-sector, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T14:46:29+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNNktMMHhXeHQzQTVKQXk2UXJNdzhJVDFYc1BoWS1DeWx3SHZwZ0xPenBVVzRaZFVIVnJzQ1VFd1lOS0pWLTgwbkVpSnNlTWxfSjlFX2dabFJ6NDBOa1NtaXlXeFhLckxTUnk4RmRfT3lOUGRHTkk2dC1UczBEeDFYbm5xbTVWUEtjZ1ZXSTkyRDBRaWNVSUJybTJBbHF1ZlJ4ODBrOXMxQjhhWWM1OWxZbnRHdVljVlhoN1pGbzVjUlctZU5uN1pHczIwVF9BbjVXRFdlcVhONzY2blE3Z1k5NjdKemRKRnh3aG9oUGJxOHBiUUxYYUhkUWgtUmVMd2txWWtTaE53?oc=5"
+      },
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
+      "id": "18e6f9a0644a",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T09:27:00+00:00",
+      "headline": {
+        "en": "Metrics shuts withdrawals from private credit funds holding $9b",
+        "zh": "Metrics关闭持有90亿美元资产的私人信贷基金的赎回"
+      },
+      "summary": {
+        "en": "Metrics has closed withdrawals from private credit funds holding $9 billion, according to a headline report.",
+        "zh": "据一则标题报道，Metrics已关闭持有90亿美元资产的私人信贷基金的赎回。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "AFR",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOV3ZMUlU1aGJtVUxiLVczTDhWeVBiWGM4QTFiNV8tTXp3X2VsajdaekpJZEY0MjZnSS1SdjBKOWY0elhzYWc5ZGhiaGlXV2ctZHNWT2t4ZGdDclU2RUFWejFUVk50RTNyUFVnRzJqal9WemZabGxPbmotOUlnMXVsUnNqZW9RaDZSSWJIdFp6cklNLWhVemNFVnV6SnFUUXVsMkhoUDY4THAyZm1RQjRtWlFkSlZYS1pRbHBVN2Q3ZEFIVU1Kc1Rz?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Metrics slams shut withdrawals from private credit funds holding $9b",
+      "source_fingerprint": "4889e7e7bfae4517f341034e3afc0a586caeada82368e31132f4fe89b91e688f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "08dd0f02a0a5c0025350a10d9d803c2ad8dc90459009defdadc671c32dbc29ac",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A gate on withdrawals at private credit funds could signal redemption and liquidity pressure for the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T14:46:31+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOV3ZMUlU1aGJtVUxiLVczTDhWeVBiWGM4QTFiNV8tTXp3X2VsajdaekpJZEY0MjZnSS1SdjBKOWY0elhzYWc5ZGhiaGlXV2ctZHNWT2t4ZGdDclU2RUFWejFUVk50RTNyUFVnRzJqal9WemZabGxPbmotOUlnMXVsUnNqZW9RaDZSSWJIdFp6cklNLWhVemNFVnV6SnFUUXVsMkhoUDY4THAyZm1RQjRtWlFkSlZYS1pRbHBVN2Q3ZEFIVU1Kc1Rz?oc=5"
+      },
+      "observed_at": "2026-09-29T14:43:53+00:00"
+    },
+    {
       "id": "f747c4902e72",
       "date": "2026-09-29",
       "published_at": "2026-09-29T01:31:00+00:00",
