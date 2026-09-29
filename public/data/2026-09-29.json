@@ -2,6 +2,230 @@
   "date": "2026-09-29",
   "items": [
     {
+      "id": "f747c4902e72",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T01:31:00+00:00",
+      "headline": {
+        "en": "Indian Drugmaker Taps Private Credit for Japanese Acquisition",
+        "zh": "印度制药商借助私募信贷进行日本收购"
+      },
+      "summary": {
+        "en": "An Indian pharmaceutical company is using private credit to fund an acquisition in Japan, according to a headline. No lender, deal size or terms were disclosed.",
+        "zh": "据一则标题报道，一家印度制药公司正利用私募信贷为其在日本的一笔收购提供资金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQTZIVE92S0JHRDMtYkpIcWxwMDNEWTVRc25UNERJVXZLdS02R244c1ZfZFpsWjdOU195dWVUTWxmUlpjam82UkxWd0hfYjIxYjBSQW9ERjdjdk1zcnVFRDlHN1Rkclh2QXVXaExVc1hWb21qZTBqU1p1dzhmc0gzcTdMX21CVHM1Nl9MdjlPV2xrZzlzX3YzZjBSbjJocFBmSU9SRnJlZVNBNHFReGZ3azNR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Indian Drugmaker Taps Private Credit for Japanese Acquisition",
+      "source_fingerprint": "3ca04721225fd00f44d73045a50776beb323f5e918409a411c95011b0b435f4d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "140440924dfe05d7e2052c3bd505e90bfecc0350a16af284b1341d2e9b600961",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new private credit financing for an acquisition signals deployment activity in the private credit sub-sector, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T05:17:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQTZIVE92S0JHRDMtYkpIcWxwMDNEWTVRc25UNERJVXZLdS02R244c1ZfZFpsWjdOU195dWVUTWxmUlpjam82UkxWd0hfYjIxYjBSQW9ERjdjdk1zcnVFRDlHN1Rkclh2QXVXaExVc1hWb21qZTBqU1p1dzhmc0gzcTdMX21CVHM1Nl9MdjlPV2xrZzlzX3YzZjBSbjJocFBmSU9SRnJlZVNBNHFReGZ3azNR?oc=5"
+      },
+      "observed_at": "2026-09-29T05:14:44+00:00"
+    },
+    {
+      "id": "a049b9b345ed",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T00:09:46+00:00",
+      "headline": {
+        "en": "SEC Urges Funds and Auditors to Scrutinize Private Credit Valuations",
+        "zh": "SEC 敦促基金和审计师审视私募信贷估值，监管担忧升温"
+      },
+      "summary": {
+        "en": "The SEC has urged funds and auditors to scrutinize private credit valuations amid regulatory concerns.",
+        "zh": "SEC 敦促基金和审计师审视私募信贷估值，监管担忧升温。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5UVFFwRHlWa3dTVFlRVUVleG9BTTB5UExzaG5aUVYzSzZvTF9HU0FtaWc0RDJ3T2dWNm90akVTNE5RWXh1RERKbFRCZTczVzRDRHVQMWtCVG12RWE0d2xJV0NqRWxCbXR0ZXhleVhObW5FR1VyZFE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC Urges Funds and Auditors to Scrutinize Private Credit Valuations Amid Regulatory Concerns",
+      "source_fingerprint": "8090719ea21750bb50d6b47dcb39952b7de3c8bc94a41ae2436e32b720426b2d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b82ec5ddedafc478c578a56f07737ecbfedcf1068bfe862f6cd0124cf9384fae",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "SEC scrutiny of private credit valuations could affect valuation and risk conditions across the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T05:17:19+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5UVFFwRHlWa3dTVFlRVUVleG9BTTB5UExzaG5aUVYzSzZvTF9HU0FtaWc0RDJ3T2dWNm90akVTNE5RWXh1RERKbFRCZTczVzRDRHVQMWtCVG12RWE0d2xJV0NqRWxCbXR0ZXhleVhObW5FR1VyZFE?oc=5"
+      },
+      "observed_at": "2026-09-29T05:14:44+00:00"
+    },
+    {
+      "id": "28a57f18fda8",
+      "date": "2026-09-29",
+      "published_at": "2026-09-28T20:45:28+00:00",
+      "headline": {
+        "en": "Apollo-Backed Michaels Wins S&P Ratings Lift After Cutting Debt",
+        "zh": "Apollo 支持的 Michaels 削减债务后获标普上调评级"
+      },
+      "summary": {
+        "en": "S&P raised its ratings on Michaels, an Apollo-backed company, after the company reduced its debt.",
+        "zh": "标普在 Apollo 支持的 Michaels 削减债务后上调其评级。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbWpfN1E2YkJqVFhlTE41X0tRN09zTnN1UVFxR2tRMUFOUVV0T09PQ1JMM0R3ekRyNlpyR3V3TlNFdFpjTEstdF9aRV9RTHVfT2Z3R3hIc2c1OUJyTDQyZXh4TEV3ZDlWY2NDQ2xqR19FRkhVY0tLQVFfbDRBSDdseVJBYnB5MDVkdEZ2VDh4aGRyamE3VjJFX3JsWFBPQTNpYlF2ckdhZzlWOU1jeEhvX1BuQzU?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo-Backed Michaels Wins S&P Ratings Lift After Cutting Debt",
+      "source_fingerprint": "f4c32aa9017c027b0fdbe62ce20bf4862dfd80123e1f6de1284180210a4f2650",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7122d05e7f410c6058f6b861715490b38d33418e636a845c10ca4ab02b10f8b3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A rating action on an Apollo-backed borrower is a direct credit signal for Apollo's private credit franchise.",
+      "event_identity": {
+        "subject": "michaels",
+        "action": "wins s&p ratings lift after cutting debt",
+        "object": "s&p ratings lift",
+        "period": "after cutting debt",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T05:17:22+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbWpfN1E2YkJqVFhlTE41X0tRN09zTnN1UVFxR2tRMUFOUVV0T09PQ1JMM0R3ekRyNlpyR3V3TlNFdFpjTEstdF9aRV9RTHVfT2Z3R3hIc2c1OUJyTDQyZXh4TEV3ZDlWY2NDQ2xqR19FRkhVY0tLQVFfbDRBSDdseVJBYnB5MDVkdEZ2VDh4aGRyamE3VjJFX3JsWFBPQTNpYlF2ckdhZzlWOU1jeEhvX1BuQzU?oc=5"
+      },
+      "observed_at": "2026-09-29T05:14:44+00:00"
+    },
+    {
+      "id": "20ec00101b92",
+      "date": "2026-09-29",
+      "published_at": "2026-09-28T20:22:39+00:00",
+      "headline": {
+        "en": "AB BSL CLO 8 secures Fitch ratings for new $400 million leveraged loan CLO",
+        "zh": "AB BSL CLO 8 为其新的 4 亿美元杠杆贷款 CLO 获得惠誉评级"
+      },
+      "summary": {
+        "en": "AB BSL CLO 8 secured Fitch ratings for a new $400 million leveraged loan CLO, according to a headline report.",
+        "zh": "据一则标题报道，AB BSL CLO 8 为其新的 4 亿美元杠杆贷款 CLO 获得了惠誉评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "tradersunion.com",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQzVqcXJrUENjRUlZSWlWSTJNVVB3NTJ5amxib09LZmZEQUpWU3hGZzJxRFJ0WDNKOERsckViWVVvVVlsanZqdEdvcWJZVVpGdnI0R2NGMlE5NmpGbl81OXNXV01xQ3FYQ0pFek4yazhaYzNEekFpOHJlenB1d2p6aFpDS0dzMEFOaGJIa1RrV2IwcFE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AB BSL CLO 8 secures Fitch ratings for new $400 million leveraged loan CLO",
+      "source_fingerprint": "081d62be280e172e931049d7622a1030ad726655a8d2752576381ef2b3f34fa2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fdbe60b0b7b5f7c8a2ae5728bcf64dc1a80ca3528622951e6d6947cb2329c263",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $400m broadly syndicated loan CLO obtaining ratings signals ongoing CLO issuance and leveraged loan demand, relevant to tracked CLO managers' sector environment.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T05:17:26+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQzVqcXJrUENjRUlZSWlWSTJNVVB3NTJ5amxib09LZmZEQUpWU3hGZzJxRFJ0WDNKOERsckViWVVvVVlsanZqdEdvcWJZVVpGdnI0R2NGMlE5NmpGbl81OXNXV01xQ3FYQ0pFek4yazhaYzNEekFpOHJlenB1d2p6aFpDS0dzMEFOaGJIa1RrV2IwcFE?oc=5"
+      },
+      "observed_at": "2026-09-29T05:14:44+00:00"
+    },
+    {
+      "id": "5f2e08500925",
+      "date": "2026-09-29",
+      "published_at": "2026-09-28T19:55:17+00:00",
+      "headline": {
+        "en": "SEC Calls for Greater Rigor in Valuing Private Credit Assets",
+        "zh": "SEC呼吁在私人信贷资产估值中提高严谨性"
+      },
+      "summary": {
+        "en": "The SEC called for greater rigor in the valuation of private credit assets. The article text supplied consists only of the headline.",
+        "zh": "SEC呼吁在私人信贷资产估值中提高严谨性。所提供的文章内容仅为标题。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "pymnts.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOS0NGU1NtcGhubUtCV1FRcmhlRjhNTHRtQ1dMQ1prRlBvb0g2WWhqMVJoa1QtNjRxNXBBQXNNdTRvWWppcWFITlpVdGZsWjFQQjc4b2xLUC11Y0xRdzBTNV9RRGk2WEF3X1JTeVJTZjg4VHFPYTFLVlJOY3VfTlNPalFYYzVGR2hlQVlMb3B6TGk2WUJOT2V2WWQ5UGNUMExuVmFieG13U0ZzRDI5UjA5UWZYOF9XZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC Calls for Greater Rigor in Valuing Private Credit Assets",
+      "source_fingerprint": "de742133965874efd5f1897e3d58a5d9daf41af172ed893efb03c0c506c04c11",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2d14ce315e330d9aa41acc161e19c9b362704f35561ded26451beb0d7ebd458f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A regulatory push on private credit valuation rigor affects assumptions underpinning credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-29T05:17:28+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOS0NGU1NtcGhubUtCV1FRcmhlRjhNTHRtQ1dMQ1prRlBvb0g2WWhqMVJoa1QtNjRxNXBBQXNNdTRvWWppcWFITlpVdGZsWjFQQjc4b2xLUC11Y0xRdzBTNV9RRGk2WEF3X1JTeVJTZjg4VHFPYTFLVlJOY3VfTlNPalFYYzVGR2hlQVlMb3B6TGk2WUJOT2V2WWQ5UGNUMExuVmFieG13U0ZzRDI5UjA5UWZYOF9XZw?oc=5"
+      },
+      "observed_at": "2026-09-29T05:14:44+00:00"
+    },
+    {
       "id": "a1671f3f04e7",
       "date": "2026-09-29",
       "published_at": "2026-09-28T16:03:06+00:00",
