@@ -2,6 +2,425 @@
   "date": "2026-09-30",
   "items": [
     {
+      "id": "98478d49aa9b",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T14:35:06+00:00",
+      "headline": {
+        "en": "Goldman private credit fund redemption requests under cap again",
+        "zh": "高盛私人信贷基金赎回请求再次触及上限"
+      },
+      "summary": {
+        "en": "Goldman private credit fund redemption requests are again under a cap, according to a Citywire headline.",
+        "zh": "据Citywire头条，高盛私人信贷基金的赎回请求再次受到上限限制。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Citywire",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRm9VbzBFMjBoZ2tBSWI2WllXQW1YazFvSWY1bUVhaDEza2tnXzduSjdvbjlLMloyZGZuVGdQQU84WEJObmRuMVVoRXdtMGw5Vlh3bllLaHhtdnczVkhSMFpzN01qOXZoWXItZ0FDMTRyZktvU1lNcDRaQmpNRzJLRG82VmVGN0QtTElfbHhmaEFnb3FBOGxxRmlSUTZBOElsQzhlZkhCX19Xekk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman private credit fund redemption requests under cap again",
+      "source_fingerprint": "70f4037ed219b89f9062e6b08dae4088781e4f652726dc084d9bc61e5024b7ee",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5bbe77f214ab48556d5c620d25852c34a0ca6537649d132121e6324fed88e298",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption requests at a private credit fund cap again, signaling persistent liquidity pressure in private credit vehicles.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:48:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRm9VbzBFMjBoZ2tBSWI2WllXQW1YazFvSWY1bUVhaDEza2tnXzduSjdvbjlLMloyZGZuVGdQQU84WEJObmRuMVVoRXdtMGw5Vlh3bllLaHhtdnczVkhSMFpzN01qOXZoWXItZ0FDMTRyZktvU1lNcDRaQmpNRzJLRG82VmVGN0QtTElfbHhmaEFnb3FBOGxxRmlSUTZBOElsQzhlZkhCX19Xekk?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "d01d0febcafe",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T13:22:16+00:00",
+      "headline": {
+        "en": "Metrics Credit Partners gates funds after KPMG valuation dispute",
+        "zh": "Metrics Credit Partners在毕马威估值争议后对基金设限"
+      },
+      "summary": {
+        "en": "Metrics Credit Partners, which manages around A$40bn, has temporarily suspended applications and redemptions in the unlisted wholesale funds behind its listed trusts. The move follows KPMG's disagreement with how some assets were valued and its statement that it cannot sign off the listed trusts' financial reports by the 30 September deadline. Metrics marked down all three funds, cutting net tangible asset values by 12.16 per cent at Metrics Real Estate Multi-Strategy Fund, 10.08 per cent at Metrics Income Opportunities Trust and 1.99 per cent at Metrics Master Income Trust.",
+        "zh": "管理约400亿澳元的Metrics Credit Partners已暂时暂停其上市信托背后非上市批发基金的申购与赎回。此举发生之前，毕马威对其部分资产的估值方式提出异议，并表示无法在9月30日截止日期前签署这些上市信托的财务报告。Metrics下调了三只基金的估值，Metrics Real Estate Multi-Strategy Fund、Metrics Income Opportunities Trust和Metrics Master Income Trust的净有形资产价值分别被削减12.16%、10.08%和1.99%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/30/australian-private-credit-manager-metrics-gates-funds/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australian private credit manager Metrics gates funds",
+      "source_fingerprint": "c1ed67a961d5e0148add248a636d488d934686b981612b99382320f1435f32bf",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 507,
+            "end": 593
+          },
+          "linkage": {
+            "start": 382,
+            "end": 435
+          },
+          "current_adverse": {
+            "start": 24,
+            "end": 81
+          }
+        },
+        "source_sha256": "320689a76baebb86fd5f3466c07dbd4bf332c6563bef6ef5e60fcde772b5bddc",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Multiple Australian private credit funds gated and marked down after auditor valuation dispute, signaling redemption and valuation stress in the sector.",
+      "event_identity": {
+        "subject": "metrics credit partners",
+        "action": "suspended investor withdrawals",
+        "object": "some of its funds",
+        "period": "monday",
+        "numbers": [
+          "$200bn",
+          "$3bn",
+          "$40bn",
+          "1.99",
+          "10.08",
+          "12.16",
+          "14",
+          "3",
+          "30",
+          "40",
+          "£106bn"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-30T14:48:40+00:00",
+        "sha256": "320689a76baebb86fd5f3466c07dbd4bf332c6563bef6ef5e60fcde772b5bddc",
+        "source_published_at": "2026-09-30T13:22:16+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/30/australian-private-credit-manager-metrics-gates-funds/"
+      },
+      "source_published_at": "2026-09-30T13:22:16+00:00",
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "4749a235698b",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T11:00:00+00:00",
+      "headline": {
+        "en": "Audax Private Debt Raises Third Direct-Lending Fund",
+        "zh": "Audax Private Debt 募集第三只直接贷款基金"
+      },
+      "summary": {
+        "en": "Audax Private Debt has raised its third direct-lending fund, according to a report. No fundraising target, amount raised or investor details were disclosed.",
+        "zh": "据报道，Audax Private Debt 已募集其第三只直接贷款基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR0JKdmVpZlNUQmhQS25fTVJnVWJOY1FCeXE5dWFZR19YZUR4T1JuVUllNThiUldUUGVNMkt6RC1TNGFnUEZKU3lScS12MEdyOXB4OXJMeUxpZkJSUjNpSWkxeGY1cE8wUl9KZmpMLUs1blUzNzlMOXZZZHB5aUJSVnFkWUF4UWJLamdBUEs3RzlFQ0MxS0k1QlFBRnRwMVQw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Exclusive | Audax Private Debt Raises Third Direct-Lending Fund",
+      "source_fingerprint": "33af26ef01148935de3ed6bec9068ff0baeb7d7ad067b5d6de331fe4a3c4caea",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "14f555787b7a39bc6d5c8f09b927f1f0f67c12d8069833d1e4f348185f582f34",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new direct-lending fundraise signals continued capital formation in private credit, a tracked sub-sector, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:48:48+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR0JKdmVpZlNUQmhQS25fTVJnVWJOY1FCeXE5dWFZR19YZUR4T1JuVUllNThiUldUUGVNMkt6RC1TNGFnUEZKU3lScS12MEdyOXB4OXJMeUxpZkJSUjNpSWkxeGY1cE8wUl9KZmpMLUs1blUzNzlMOXZZZHB5aUJSVnFkWUF4UWJLamdBUEs3RzlFQ0MxS0k1QlFBRnRwMVQw?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "5761a8fc0a6f",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T10:05:43+00:00",
+      "headline": {
+        "en": "Australia's Metrics freezes some fund redemptions in sign of private credit market stress",
+        "zh": "澳洲Metrics冻结部分基金赎回，显示私人信贷市场承压"
+      },
+      "summary": {
+        "en": "Australia's Metrics has frozen redemptions on some funds, according to a Reuters report. The move is described as a sign of stress in the private credit market.",
+        "zh": "据路透报道，澳大利亚Metrics已冻结部分基金的赎回。此举被视为私人信贷市场承压的迹象。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZ3lMelpkY3QxOGFTOVJrT0pPWG1Wdm9iVEI0Q0IxZHEwUGZuRUR6OG5sTmhLaUk1OTEzTC1FSS1lOW1aUll3eFkxVll0RWs1TlpwNHFKaUxRT2hnRXl3N1g4XzZMbTNJeGZjcm03dHFCWXBMZF9SU1VRUTJfa3dlMUo1dTlRMUhQbGthUWVuWWNqYXQybEV1dnV3XzBuU040R093X054bHpkT1lva0pmQkxQVEQ3U0hSNXhGQ2VJVFFMMERCUVBLSmV3WE5MR0ZKYl9RMlFVd3Bhc0pXUkE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia’s Metrics freezes some fund redemptions in sign of private credit market stress By Reuters",
+      "source_fingerprint": "31e1e1870c3a2e5daa3fa9af8348a40b6141dd34ca6bf788d203ae57fb0f3aa3",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "229102718c4abee23cd70584397a16ac4a7c66b723fa5580f735e97fe4d0fa3a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Private credit market stress evident from an Australian fund freezing redemptions, signalling broader liquidity strain for the sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:48:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZ3lMelpkY3QxOGFTOVJrT0pPWG1Wdm9iVEI0Q0IxZHEwUGZuRUR6OG5sTmhLaUk1OTEzTC1FSS1lOW1aUll3eFkxVll0RWs1TlpwNHFKaUxRT2hnRXl3N1g4XzZMbTNJeGZjcm03dHFCWXBMZF9SU1VRUTJfa3dlMUo1dTlRMUhQbGthUWVuWWNqYXQybEV1dnV3XzBuU040R093X054bHpkT1lva0pmQkxQVEQ3U0hSNXhGQ2VJVFFMMERCUVBLSmV3WE5MR0ZKYl9RMlFVd3Bhc0pXUkE?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "634c2262da01",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T08:51:10+00:00",
+      "headline": {
+        "en": "Kartesia prices inaugural CLO at €459m",
+        "zh": "Kartesia 首只 CLO 定价 4.59 亿欧元"
+      },
+      "summary": {
+        "en": "Kartesia priced its inaugural CLO at €459m.",
+        "zh": "Kartesia 为其首只 CLO 定价，规模为 4.59 亿欧元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObW5jWEV2Tm5hT2JBelFiM2p1cFduS2FsbjIxZmZKTElyVGowZjV1emQ4R3lKRkhiOEwyQ18xdG5sVUVGS2hkLU1vb0g5RHJuZVJvWXpZZXd4MEZNTFhFMlJIeU9KZWJOUDlybTB0MXNQMTl4RkgxcEx5U1N2UTYySzdYVHBEVF95RFRVSkluYjhIdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Kartesia prices inaugural CLO at €459m",
+      "source_fingerprint": "8127b08500023e2c50b9570b65be3f691730f02e20178657a2bf6d371f14c83b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b7cef63e5647953d78f7b16d1f852915012b3c7ac5f2f7b29fba1abd3e6d2c5d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new CLO pricing expands European private credit and broadly syndicated loan financing capacity, directly relevant to tracked CLO managers and the CLO sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:48:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObW5jWEV2Tm5hT2JBelFiM2p1cFduS2FsbjIxZmZKTElyVGowZjV1emQ4R3lKRkhiOEwyQ18xdG5sVUVGS2hkLU1vb0g5RHJuZVJvWXpZZXd4MEZNTFhFMlJIeU9KZWJOUDlybTB0MXNQMTl4RkgxcEx5U1N2UTYySzdYVHBEVF95RFRVSkluYjhIdw?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "f44cadc795b2",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T08:40:08+00:00",
+      "headline": {
+        "en": "Kartesia prices inaugural CLO at €459m",
+        "zh": "Kartesia 为首只 CLO 定价，规模 4.59 亿欧元"
+      },
+      "summary": {
+        "en": "Kartesia has priced its first collateralised loan obligation, Kartesia CLO I, at €459m, upsized from an initial target of €400m. The AAA tranche priced at a spread of +129bp with no arranger participation. The CLO follows the launch of Kartesia's Kartesia Loan Management strategy in May, which has raised more than €140m in equity capital and is backed by New York Life Investment Management and Candriam.",
+        "zh": "Kartesia 已为其首只担保贷款凭证 Kartesia CLO I 定价，规模 4.59 亿欧元，高于最初 4 亿欧元的目标。AAA 档定价利差为 +129bp，安排行未参与该档。该 CLO 紧随 Kartesia 今年 5 月推出的 Kartesia Loan Management 策略，该策略已募集超过 1.4 亿欧元股权资本，并获得 New York Life Investment Management 和 Candriam 的支持。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/30/kartesia-prices-inaugural-clo-at-e459m/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Kartesia prices inaugural CLO at €459m",
+      "source_fingerprint": "8d7c1d5b344812087838a7939e670621a12c8bbcf8b0b38ec7ac340706d29087",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 86
+          },
+          "linkage": {
+            "start": 360,
+            "end": 474
+          }
+        },
+        "source_sha256": "2cd6963fbe1058af7b3308a7df057b2a0a9ab7a5a610189fa846e40ebbfae861",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Kartesia's inaugural €459m European BSL CLO priced above target with strong demand; no tracked manager is directly involved, but the deal is an incremental positive datapoint for the European CLO and private credit sub-sectors.",
+          "zh": "Kartesia 首只 4.59 亿欧元欧洲 BSL CLO 定价高于目标，需求强劲；无受跟踪管理人直接参与，但该交易对欧洲 CLO 和私募信贷子板块构成增量积极数据点。"
+        }
+      },
+      "relevance_reason": "New CLO issuance and loan management strategy growth signals continued European CLO formation and private credit deployment, relevant to tracked CLO and private credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-30T14:48:56+00:00",
+        "sha256": "2cd6963fbe1058af7b3308a7df057b2a0a9ab7a5a610189fa846e40ebbfae861",
+        "source_published_at": "2026-09-30T08:40:08+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/30/kartesia-prices-inaugural-clo-at-e459m/"
+      },
+      "source_published_at": "2026-09-30T08:40:08+00:00",
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "6678bad4bf31",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T08:05:22+00:00",
+      "headline": {
+        "en": "Australia's Metrics freezes some fund redemptions in sign of private credit market stress",
+        "zh": "澳大利亚Metrics冻结部分基金赎回，显示私人信贷市场承压"
+      },
+      "summary": {
+        "en": "Australia's Metrics has frozen redemptions on some funds, according to the headline. The move is described as a sign of stress in the private credit market.",
+        "zh": "据标题，澳大利亚Metrics已冻结部分基金的赎回。此举被描述为私人信贷市场承压的迹象。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQXYwbVcxU2dPSG1vcWd5WWNMSG1fV0R3ajRTS1pac196OFFnQVFJWDNhNHg4WEdxazRfVE16TDJDcTFuVEVaT25KaEJkS0JUSUQ1VzVJN3ZrT08xXzBhQUl0b1UtLUZONlNBbERRaEU5N0RoNkZicFJnMk9OeHRhaWw4dGpIT0lwc1VmQVZEY2ViUGxJS2VzN3dSODRJSnhjT2dTalE3alc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia's Metrics freezes some fund redemptions in sign of private credit market stress",
+      "source_fingerprint": "20f574697700602c39bc30b930e43645ae2dbf0c01a952346a17cb5e1174ca87",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d857f4aad2be4e551de2582dc039c4c2fd700ffeb0854d693fbb47b47cef4395",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit manager freezing fund redemptions signals stress in private credit liquidity, a transmission channel to the tracked private credit sub-sector.",
+      "event_identity": {
+        "subject": "metrics",
+        "action": "freezes some fund redemptions",
+        "object": "some fund",
+        "period": "australia",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:48:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQXYwbVcxU2dPSG1vcWd5WWNMSG1fV0R3ajRTS1pac196OFFnQVFJWDNhNHg4WEdxazRfVE16TDJDcTFuVEVaT25KaEJkS0JUSUQ1VzVJN3ZrT08xXzBhQUl0b1UtLUZONlNBbERRaEU5N0RoNkZicFJnMk9OeHRhaWw4dGpIT0lwc1VmQVZEY2ViUGxJS2VzN3dSODRJSnhjT2dTalE3alc?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "195a421eb33b",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T05:38:00+00:00",
+      "headline": {
+        "en": "Australia's Metrics freezes some fund redemptions in sign of private credit market stress",
+        "zh": "澳大利亚Metrics冻结部分基金赎回，显示私人信贷市场承压"
+      },
+      "summary": {
+        "en": "Australia's Metrics has frozen redemptions on some funds, according to a Reuters headline. The move is described as a sign of stress in the private credit market.",
+        "zh": "据路透社标题，澳大利亚Metrics冻结了部分基金的赎回。此举被视为私人信贷市场承压的迹象。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaTlLbUhCS05BY1U3czV6QTE5YkxhbjNEbjA3b0xPdHdsY2JxVi1TbXpfNDl6WllEY3FwX0pIdU54VDN5V2dSVEtib0VYUk5hN01aR1NVNGFvN3JySmVWM1BiQWVETHhyd0o4cjNtbVJScXZsZjBDLXR5cGNKZFlMeEEzVHBna19YMmZEdVZHQXoxMkZHeFZXTmhyMUxPNmd1SmllQ25DZm9BYVZrS3JjMi1wVUxWakJCWkZSd00zM3Z5WEFk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia's Metrics freezes some fund redemptions in sign of private credit market stress",
+      "source_fingerprint": "20f574697700602c39bc30b930e43645ae2dbf0c01a952346a17cb5e1174ca87",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d857f4aad2be4e551de2582dc039c4c2fd700ffeb0854d693fbb47b47cef4395",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A redemption freeze at an Australian private credit fund signals liquidity stress in the private credit sector, which could affect tracked direct lending managers.",
+      "event_identity": {
+        "subject": "metrics",
+        "action": "freezes some fund redemptions",
+        "object": "some fund",
+        "period": "australia's metrics freezes some fund redemptions in sign of private credit market stress",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:49:04+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaTlLbUhCS05BY1U3czV6QTE5YkxhbjNEbjA3b0xPdHdsY2JxVi1TbXpfNDl6WllEY3FwX0pIdU54VDN5V2dSVEtib0VYUk5hN01aR1NVNGFvN3JySmVWM1BiQWVETHhyd0o4cjNtbVJScXZsZjBDLXR5cGNKZFlMeEEzVHBna19YMmZEdVZHQXoxMkZHeFZXTmhyMUxPNmd1SmllQ25DZm9BYVZrS3JjMi1wVUxWakJCWkZSd00zM3Z5WEFk?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
       "id": "fb317090546a",
       "date": "2026-09-30",
       "published_at": "2026-09-30T04:00:00+00:00",
@@ -86,6 +505,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNX3dTM0dNWE13ZkZZNGNOa0Nqak9xejNvR2JUXzBqMVcwS2pWczFsTzJjMkpXbUVoQVA5VmFtc2ZMWFdHVHNJcWoxQUJJMXkzeVZCY3lnSlZuSVc3YzNxYUVCQ1hrczRwWnozMGQzekhhZU1QQmluckNMX0tIQXJxeFp0d1NJRGpKMHIzX09Kbw?oc=5"
       },
       "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "25a0853d5ca1",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T03:43:00+00:00",
+      "headline": {
+        "en": "Australian Private Credit Giant Halts Withdrawals as Concerns Grow in $1.8 Trillion Industry",
+        "zh": "澳大利亚私人信贷巨头暂停赎回，1.8万亿美元行业担忧加剧"
+      },
+      "summary": {
+        "en": "An Australian private credit giant has halted withdrawals, according to a Bloomberg headline. The move comes as concerns grow in the $1.8 trillion private credit industry.",
+        "zh": "据彭博一则标题，澳大利亚一家私人信贷巨头已暂停赎回。此举正值1.8万亿美元私人信贷行业的担忧加剧之际。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM2ZUTi1tX05FbXk2dlIwX3NWR2V1SHRCYmU4WFhlU2lTcHJaM1V2TC0zUFV4NjFVVnlfd09idXZYcmY4dWliVmljcUdhbDJWV3h2Ql80cUp4OUVXalViV3BxcGQ1T3NJeEVwS2VXM1J6MmlfOVN0N1JfMFRQU1F2ejZHOWczYjlPa25Fa250Wng0dWdSNzR5cm9RbFR0UzFGM0hoUnY0MXkzZEo0eUdZNQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australian Private Credit Giant Halts Withdrawals as Concerns Grow in $1.8 Trillion Industry",
+      "source_fingerprint": "9584cf14c450644a6900509a230b1e309e157c02de629ed8af8a215c4fe65676",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e944fe2b0652d6f320f85cd05da36d09c455ba4ad445bdfc7b50916e2a5d45be",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A major Australian private credit manager halting withdrawals is a liquidity signal for the private credit sub-sector, even with no tracked manager named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:49:06+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM2ZUTi1tX05FbXk2dlIwX3NWR2V1SHRCYmU4WFhlU2lTcHJaM1V2TC0zUFV4NjFVVnlfd09idXZYcmY4dWliVmljcUdhbDJWV3h2Ql80cUp4OUVXalViV3BxcGQ1T3NJeEVwS2VXM1J6MmlfOVN0N1JfMFRQU1F2ejZHOWczYjlPa25Fa250Wng0dWdSNzR5cm9RbFR0UzFGM0hoUnY0MXkzZEo0eUdZNQ?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
     },
     {
       "id": "ce0c041ef6c3",
@@ -215,6 +677,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWHU0MDNEd2RGNnUwbFBzdldpbTJqdk0tLUs2bENQOHduNGxobHBFZGdpN0FKZHEzblVENmpWUEc1U2pvRUktcFJXNHhFRUtFU2RCYWdfZzUyOXNscXoxUTlJanI4a2lvN3lmZmlXUkQyWjg0ODd3TjdScW5Dc1dab1UzZFljQXdvc3llNzZiTQ?oc=5"
       },
       "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "692bde73b2be",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T22:50:04+00:00",
+      "headline": {
+        "en": "Goldman private credit fund defies industry elevated withdrawal trend",
+        "zh": "高盛私人信贷基金再度逆行业高赎回趋势而行"
+      },
+      "summary": {
+        "en": "Goldman's private credit fund defied an industry trend of elevated withdrawals.",
+        "zh": "高盛旗下私人信贷基金逆行业高赎回趋势而行。标题之外暂无更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Tacoma News Tribune",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBCbnFIejRYWkg4U1lDS25hZG5NY09XZVBtNnJhRXc2TGowazU0MmpCbGZ2dDRtQTRmNmloeTEwVGtHQU9rX0pzWEZaTmZSMFNEVGhaWUhzYktFdmxaSzAwY2RuQjgyLXBPQi02b1RXdC0wOHNI?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman private credit fund defies industry elevated withdrawal trend again yet again",
+      "source_fingerprint": "eb9e2e54a12fafa064fe449b6ee8846ef4924f367c430afd16d9f2ff84080490",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "386d8253484eec9ea0ae8d953298872cdbbf14c1ffdd354efac34eedd1037455",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit fund defying elevated industry withdrawal trends speaks to redemption and liquidity conditions for the tracked private credit sub-sector, even without a named tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T14:49:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBCbnFIejRYWkg4U1lDS25hZG5NY09XZVBtNnJhRXc2TGowazU0MmpCbGZ2dDRtQTRmNmloeTEwVGtHQU9rX0pzWEZaTmZSMFNEVGhaWUhzYktFdmxaSzAwY2RuQjgyLXBPQi02b1RXdC0wOHNI?oc=5"
+      },
+      "observed_at": "2026-09-30T14:46:03+00:00"
     },
     {
       "id": "9c6aed3ab7ac",
