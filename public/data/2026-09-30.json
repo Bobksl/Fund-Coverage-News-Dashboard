@@ -1,0 +1,551 @@
+{
+  "date": "2026-09-30",
+  "items": [
+    {
+      "id": "fb317090546a",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T04:00:00+00:00",
+      "headline": {
+        "en": "PaleBlueDot AI seeks $600 million private credit to buy chips",
+        "zh": "PaleBlueDot AI寻求6亿美元私人信贷用于购买芯片"
+      },
+      "summary": {
+        "en": "PaleBlueDot AI is seeking $600 million in private credit to buy chips, according to Bloomberg News.",
+        "zh": "据彭博新闻社报道，PaleBlueDot AI正寻求6亿美元私人信贷，用于购买芯片。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNcFAxRjQyM0pMYXpFbUJneVRNLWxEVWh0S1gtNV9neFJIUmc0ZmxSdk0wOUwyUU1jUm8tNjk2SkVPd0Q1LU1sLTRER2NRdWF3eXRST1VzTVQ3YWJLSkV2WDV4QndIX0s5WVNpQ0RHeFoyX2o3WlUxOVRwcl91Y3RZc3ZPaFhuZy1zS2ZITjBkUEoySWUxSk9STVBWN0ZFVllNTFRwQ1cwWXZTYUxCZTNYNHRRRkg0SFVKbVIzMDRWeEZDYzlvdDVjbXRBVmZaSTNqOUhzcEo1WThyZG1nQWc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "PaleBlueDot AI seeks $600 million private credit to buy chips - Bloomberg News",
+      "source_fingerprint": "b11b308975062342c3255e3f8849a943664cba1963edc92a9ac828178ab44836",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d9d0e442849a65ce8c2d3191d96186da1b72bfc915a8d999e6388d5fda92a4e8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $600m private credit financing for chips indicates continued AI-related direct lending deployment, relevant to the private credit sub-sector even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:32+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNcFAxRjQyM0pMYXpFbUJneVRNLWxEVWh0S1gtNV9neFJIUmc0ZmxSdk0wOUwyUU1jUm8tNjk2SkVPd0Q1LU1sLTRER2NRdWF3eXRST1VzTVQ3YWJLSkV2WDV4QndIX0s5WVNpQ0RHeFoyX2o3WlUxOVRwcl91Y3RZc3ZPaFhuZy1zS2ZITjBkUEoySWUxSk9STVBWN0ZFVllNTFRwQ1cwWXZTYUxCZTNYNHRRRkg0SFVKbVIzMDRWeEZDYzlvdDVjbXRBVmZaSTNqOUhzcEo1WThyZG1nQWc?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "9fa3172eb1ef",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T03:43:00+00:00",
+      "headline": {
+        "en": "Australian Private Credit Giant Halts Withdrawals as Concerns Grow in $1.8 Trillion Industry",
+        "zh": "澳大利亚私人信贷巨头暂停赎回，1.8万亿美元行业担忧加剧"
+      },
+      "summary": {
+        "en": "An Australian private credit firm has halted withdrawals amid growing concerns in the $1.8 trillion private credit industry.",
+        "zh": "一家澳大利亚私人信贷公司已暂停赎回，1.8万亿美元私人信贷行业的担忧不断加剧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNX3dTM0dNWE13ZkZZNGNOa0Nqak9xejNvR2JUXzBqMVcwS2pWczFsTzJjMkpXbUVoQVA5VmFtc2ZMWFdHVHNJcWoxQUJJMXkzeVZCY3lnSlZuSVc3YzNxYUVCQ1hrczRwWnozMGQzekhhZU1QQmluckNMX0tIQXJxeFp0d1NJRGpKMHIzX09Kbw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australian Private Credit Giant Halts Withdrawals as Concerns Grow in $1.8 Trillion Industry",
+      "source_fingerprint": "9584cf14c450644a6900509a230b1e309e157c02de629ed8af8a215c4fe65676",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e944fe2b0652d6f320f85cd05da36d09c455ba4ad445bdfc7b50916e2a5d45be",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit vehicle halting withdrawals signals liquidity stress in the private credit sub-sector, a transmission channel to tracked managers' direct lending strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:34+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNX3dTM0dNWE13ZkZZNGNOa0Nqak9xejNvR2JUXzBqMVcwS2pWczFsTzJjMkpXbUVoQVA5VmFtc2ZMWFdHVHNJcWoxQUJJMXkzeVZCY3lnSlZuSVc3YzNxYUVCQ1hrczRwWnozMGQzekhhZU1QQmluckNMX0tIQXJxeFp0d1NJRGpKMHIzX09Kbw?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "ce0c041ef6c3",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T01:35:00+00:00",
+      "headline": {
+        "en": "Goldman Sachs Private Credit Fund Sees Redemption Requests Slow to 2% in Q3",
+        "zh": "高盛私人信贷基金第三季度赎回请求放缓至2%"
+      },
+      "summary": {
+        "en": "Goldman Sachs Private Credit Fund saw redemption requests slow to 2% in the third quarter, according to a headline report.",
+        "zh": "据一则标题报道，Goldman Sachs Private Credit Fund 第三季度赎回请求放缓至2%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yYTcwbFp4TmVnQWNUMEtaTjFucTFQQmZvMFFwSFo0MlBNUlVabk5reE04MGxLU0FnbjB2S3VObzBZd2o0cTF4S2pGNUR5Y2lEWW03YUdfenAyQTE4M1RlSzBMcXlCdDJuM0pVYjFiUW9EenVidUE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman Sachs Private Credit Fund Sees Redemption Requests Slow to 2% in Q3",
+      "source_fingerprint": "aab48c7f3043da7af8916daf43f1e808ec1598fac30f680e54ce2eaf7b6a75e8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b3c5379e670b4632a558351bcddc1f7ba017a678355bb687b43140921010b85f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Reports slowing redemption requests at a private credit fund, a liquidity signal for the private credit sub-sector though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yYTcwbFp4TmVnQWNUMEtaTjFucTFQQmZvMFFwSFo0MlBNUlVabk5reE04MGxLU0FnbjB2S3VObzBZd2o0cTF4S2pGNUR5Y2lEWW03YUdfenAyQTE4M1RlSzBMcXlCdDJuM0pVYjFiUW9EenVidUE?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "943538bad90c",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T23:36:27+00:00",
+      "headline": {
+        "en": "Goldman's Private Credit Fund Saw Redemption Requests Cool",
+        "zh": "高盛私人信贷基金赎回请求降温"
+      },
+      "summary": {
+        "en": "Goldman's private credit fund saw redemption requests cool, according to a headline.",
+        "zh": "据一则标题消息，高盛私人信贷基金的赎回请求有所降温。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWk9kMWU1WHNLMVMxNkwzcjE2UlRwVDRGRThsZ05TRWFjYlFGelAxenRSalc4U0gwMUN0ZTN6WkJXMkR1NUdDQ3hjenFlc182bXNJZEhOcWJOQmszYnJPMmFaRzJVM0dfa0k4MVRyWmlxamxLdFFvTElfWWp4TEZfNWhJWmNuX01oRmJNRk5VQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman’s Private Credit Fund Saw Redemption Requests Cool",
+      "source_fingerprint": "816b1f84597b36b8733814171c1bf01b7a85975d627234040187c104b21ed137",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "adfe3fd1635a94f7200742f4c1556ad79460768c9d8eecc3241c7228dcff7c0b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption request trends at a large private credit fund signal liquidity and valuation conditions for the tracked private credit sub-sector, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWk9kMWU1WHNLMVMxNkwzcjE2UlRwVDRGRThsZ05TRWFjYlFGelAxenRSalc4U0gwMUN0ZTN6WkJXMkR1NUdDQ3hjenFlc182bXNJZEhOcWJOQmszYnJPMmFaRzJVM0dfa0k4MVRyWmlxamxLdFFvTElfWWp4TEZfNWhJWmNuX01oRmJNRk5VQQ?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "c833c4107eb0",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T23:01:05+00:00",
+      "headline": {
+        "en": "Goldman's Private Credit Fund Says Redemptions Are Cooling",
+        "zh": "高盛旗下私人信贷基金表示赎回正在降温"
+      },
+      "summary": {
+        "en": "Goldman's private credit fund said redemptions are cooling, according to a headline from Finimize. No figures, vehicle names or further details were available in the supplied text.",
+        "zh": "据Finimize的一条标题，高盛旗下私人信贷基金表示赎回正在降温。所提供文本中没有数字、载体名称或更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWHU0MDNEd2RGNnUwbFBzdldpbTJqdk0tLUs2bENQOHduNGxobHBFZGdpN0FKZHEzblVENmpWUEc1U2pvRUktcFJXNHhFRUtFU2RCYWdfZzUyOXNscXoxUTlJanI4a2lvN3lmZmlXUkQyWjg0ODd3TjdScW5Dc1dab1UzZFljQXdvc3llNzZiTQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman’s Private Credit Fund Says Redemptions Are Cooling",
+      "source_fingerprint": "385fd0553ba053995afd0a8feb972e040909c3726394761fda3571b9aa8a97c1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "8333067a966253e918edb41464f94d3788c027ba3269af818d6555883feadb8a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure at a large private credit fund is a capital-access signal for the private credit sub-sector even though the vehicle is not a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWHU0MDNEd2RGNnUwbFBzdldpbTJqdk0tLUs2bENQOHduNGxobHBFZGdpN0FKZHEzblVENmpWUEc1U2pvRUktcFJXNHhFRUtFU2RCYWdfZzUyOXNscXoxUTlJanI4a2lvN3lmZmlXUkQyWjg0ODd3TjdScW5Dc1dab1UzZFljQXdvc3llNzZiTQ?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "9c6aed3ab7ac",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T22:48:54+00:00",
+      "headline": {
+        "en": "Goldman private credit fund defies industry elevated withdrawal trend yet again",
+        "zh": "高盛私人信贷基金再次逆行业赎回上升趋势而行"
+      },
+      "summary": {
+        "en": "A Goldman private credit fund again ran counter to an industry trend of elevated withdrawals, according to a Reuters headline.",
+        "zh": "据路透社标题，高盛旗下一只私人信贷基金再次与行业赎回上升的趋势背道而驰。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdTdMbVhxNGw2YmFOZ3ZfRDlRVHBnODBNS0xYUXRraE9wVWFLZ181M1lfaGR5c2lnZHBBUGx6Nl9idGMxN0RWZmV3dUhsTE91Wnd4d0ZyTk5VZFlJMEotVzZINHdlOUVDWGE3cDZTZGJOa0FZS2NJQ0MzQkRBNzFUNS1xYzUtRlg3TlBKcFhtdjhzOXZ1TEItRURhOHA1VWR5WEVNemhGbTBkVmp6QV9QWHd0RmFPbzYyNjJvc1A0WlZUbkY0ckJOZC1GZndmQ1JQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman private credit fund defies industry elevated withdrawal trend yet again",
+      "source_fingerprint": "c7b81fad61a3a1c35676e3e3927df2294aa32421b1cc613961a1ac78de4eb1bc",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5afccb7f19855ce8965e122667a8dff3ddabe789adbd0c7a40ff4a1571a75a61",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals a private credit fund's redemption experience diverging from elevated industry withdrawal trend, which speaks to private credit liquidity conditions even without a tracked manager named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdTdMbVhxNGw2YmFOZ3ZfRDlRVHBnODBNS0xYUXRraE9wVWFLZ181M1lfaGR5c2lnZHBBUGx6Nl9idGMxN0RWZmV3dUhsTE91Wnd4d0ZyTk5VZFlJMEotVzZINHdlOUVDWGE3cDZTZGJOa0FZS2NJQ0MzQkRBNzFUNS1xYzUtRlg3TlBKcFhtdjhzOXZ1TEItRURhOHA1VWR5WEVNemhGbTBkVmp6QV9QWHd0RmFPbzYyNjJvc1A0WlZUbkY0ckJOZC1GZndmQ1JQ?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "7060164119f9",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T22:39:36+00:00",
+      "headline": {
+        "en": "Goldman Sachs private credit fund reports slower redemptions as industry withdrawal pressure eases",
+        "zh": "高盛私募信贷基金报告赎回放缓，行业撤资压力缓解"
+      },
+      "summary": {
+        "en": "Goldman Sachs's private credit fund reported slower redemptions, with the source framing it as industry withdrawal pressure easing.",
+        "zh": "高盛私募信贷基金报告赎回速度放缓，报道称行业撤资压力有所缓解。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNd0JzWW5jSFphNFBqWW16emRkNmpHcXpWWVN0bEw3ZTY2REtqWlVwQmJuWEZLZlVFNFBXcDlEN2NuSkNQZU8wVzhfLWVfQ1pXV3VUNTV0WHNlR0FtNjYxOHkzcW1uV0pGMGFkZkVuZXBGd0duNGNBNzY1R25hX1h6LUoxdXRjQWRRM3JxdEthTUhUSEFqcTZfSE4tS3dnTktOTUFJZU5WSQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman Sachs private credit fund reports slower redemptions as industry withdrawal pressure eases",
+      "source_fingerprint": "40a811aabe38b4f550fe073de117d70e709cf66bf6e9331ddfc15492e0710a6c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "113cacd64add39ceae3adf0123aef34b8be789e27efeb0bc93e753d1759d2999",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Slowing redemptions at a private credit fund signals easing withdrawal pressure across the sub-sector, relevant to private credit liquidity conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:47+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNd0JzWW5jSFphNFBqWW16emRkNmpHcXpWWVN0bEw3ZTY2REtqWlVwQmJuWEZLZlVFNFBXcDlEN2NuSkNQZU8wVzhfLWVfQ1pXV3VUNTV0WHNlR0FtNjYxOHkzcW1uV0pGMGFkZkVuZXBGd0duNGNBNzY1R25hX1h6LUoxdXRjQWRRM3JxdEthTUhUSEFqcTZfSE4tS3dnTktOTUFJZU5WSQ?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "6bebc2fd2c1d",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T20:24:35+00:00",
+      "headline": {
+        "en": "Anchorage Capital CLO 35 receives Fitch ratings for new US loan securitization",
+        "zh": "Anchorage Capital CLO 35就新的美国贷款证券化获得Fitch评级"
+      },
+      "summary": {
+        "en": "Anchorage Capital CLO 35 has received Fitch ratings for a new U.S. loan securitization. No tracked manager was named in the report.",
+        "zh": "Anchorage Capital CLO 35就一项新的美国贷款证券化获得Fitch评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcjB6dzlaTExMazJkamhmVXdzWi1QSWN6alBhUnhFSkt1ZWM2c09abzNaVTFXb1hkdnJPZ3pqZlMzY3I4Ul9hOS0xMkZpZjRBM3FrZVQxTVhzazRaYVhiM3hRSnVxc29sSER1OGJnU1pXalV5dFB4aVRDSGxvR2ZrZ0hFVEZaTUhTdkRvNElvdTQ5RkhfVGpRbFlKakpFQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Anchorage Capital CLO 35 receives Fitch ratings for new U.S. loan securitization",
+      "source_fingerprint": "a5e4992ea746eede2a78e4769d0b83dcddd1cc53c40770e8c12eadbea8acd6cc",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4cb74793d47dd7053af5e32cac17d62f2f81021c6e7f9fc47bf7f6d2d397030d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new CLO securitization in the U.S. loan market shows continued primary issuance in a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcjB6dzlaTExMazJkamhmVXdzWi1QSWN6alBhUnhFSkt1ZWM2c09abzNaVTFXb1hkdnJPZ3pqZlMzY3I4Ul9hOS0xMkZpZjRBM3FrZVQxTVhzazRaYVhiM3hRSnVxc29sSER1OGJnU1pXalV5dFB4aVRDSGxvR2ZrZ0hFVEZaTUhTdkRvNElvdTQ5RkhfVGpRbFlKakpFQQ?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "c6a907f38507",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T20:21:55+00:00",
+      "headline": {
+        "en": "ABPCI Direct Lending Fund ABS IV ratings affirmed as portfolio performance remains stable",
+        "zh": "ABPCI Direct Lending Fund ABS IV评级获确认，投资组合表现保持稳定"
+      },
+      "summary": {
+        "en": "Ratings on ABPCI Direct Lending Fund ABS IV were affirmed. The agency cited stable portfolio performance.",
+        "zh": "ABPCI Direct Lending Fund ABS IV的评级获确认。评级机构称投资组合表现保持稳定。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNU3YyYVJhSnh2bGxReU5GVHJyLXItVTdjaGRwSG50bGRINUZqb0hQaXdYNTBPeE5EWWFBQnBSMVpmZ2VjVmtpaExKcEpaeF9fbUhKakxkU0x0QjBxNEt1VVhlYmE2OWNwRXc5cEpUQXg3UEd6WmYxVWpwQ2ZRUURtZEdUYW5Qd1dlNWZXMzdxbFdSMTJCWUFQWFRRQXZBbXBkS2lheHhXbG9PUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "ABPCI Direct Lending Fund ABS IV ratings affirmed as portfolio performance remains stable",
+      "source_fingerprint": "4e261d831e4cef15e3dfc9f1cf0743a9318fa644416cd453ea41060f4b9e0b91",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b4052b0e203005a3de68486a77b46439b0fe9f8852f29a63d379364b91591073",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rating affirmation on a direct lending ABS vehicle signals stable private credit collateral performance for the tracked direct lending sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:53+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNU3YyYVJhSnh2bGxReU5GVHJyLXItVTdjaGRwSG50bGRINUZqb0hQaXdYNTBPeE5EWWFBQnBSMVpmZ2VjVmtpaExKcEpaeF9fbUhKakxkU0x0QjBxNEt1VVhlYmE2OWNwRXc5cEpUQXg3UEd6WmYxVWpwQ2ZRUURtZEdUYW5Qd1dlNWZXMzdxbFdSMTJCWUFQWFRRQXZBbXBkS2lheHhXbG9PUQ?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "4a20b22c3e85",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T20:21:06+00:00",
+      "headline": {
+        "en": "SEC Warns Private Credit Valuations Need More Scrutiny As Market Expands",
+        "zh": "SEC 警告称随市场扩张私募信贷估值需更多审查"
+      },
+      "summary": {
+        "en": "The SEC warned that private credit valuations require more scrutiny as the market expands.",
+        "zh": "美国证券交易委员会（SEC）警告称，随着市场扩张，私募信贷估值需要更多审查。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "benzinga.com",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObExBWnI2U0JhdmE0dGdfb0JkVDJnYjFNSG1uWnhWSkk5NmdZV3RkeFk0cVYzWEdKU1loZVRDbG0yVFYzcGRnVVdQQ1hicURXS0NFMS00MTVaMnJSSXpnRXVXUW1yQnRHcWowclhOTzJhU3JTTGx3aDF5UlV3UVpiS2M1SG1qa0tsOXFSOFdhT1UwMGJLMWxnRlJYclpmeXNBX09wUnZBN0N3X1lV?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC Warns Private Credit Valuations Need More Scrutiny As Market Expands",
+      "source_fingerprint": "a8149dff4a3963f0986e7b470e99c2a23e40e810f566dbb21431449e5fa2252c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "8ff8684ec3e10d229d175c02a33f8345707d1008712d778658ca2ffd44597394",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A regulator signalling tighter scrutiny of private credit valuations could affect valuation and risk conditions across the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObExBWnI2U0JhdmE0dGdfb0JkVDJnYjFNSG1uWnhWSkk5NmdZV3RkeFk0cVYzWEdKU1loZVRDbG0yVFYzcGRnVVdQQ1hicURXS0NFMS00MTVaMnJSSXpnRXVXUW1yQnRHcWowclhOTzJhU3JTTGx3aDF5UlV3UVpiS2M1SG1qa0tsOXFSOFdhT1UwMGJLMWxnRlJYclpmeXNBX09wUnZBN0N3X1lV?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "ad3cc824db37",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T17:39:00+00:00",
+      "headline": {
+        "en": "SEC urges rigor as private credit market expands",
+        "zh": "美国证交会在私人信贷市场扩张之际敦促从严把关"
+      },
+      "summary": {
+        "en": "The SEC urged rigor as the private credit market expands, according to American Banker.",
+        "zh": "据 American Banker 报道，美国证交会在私人信贷市场扩张之际敦促从严把关。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "American Banker",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcXRkR1l5VHVhZ194dWVmWWxiYjdEMEdDX0ttSEp3djF2X2dEMnlXMHQzMmtNQ2xuUXU4NjJFY2tpdWZvbENrQy14VVREc3ZhOFdoNi03cTVqODFZa1FJb3FONmJMX3M0RWRvakNsNUhjb2hlMmQ4RWhwRWsyUjgxQ1J5TWxRX2FhZGk5Rw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC urges rigor as private credit market expands",
+      "source_fingerprint": "0bb5f347075f8cf5acdad4fa881f2c70c779173e0ddeb16ba636b422953f246c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "44c776825ecb29e8c3291401247cf828527b6a8e84db49be39f9ac380a505453",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A US regulator urging rigor as private credit expands could signal tighter scrutiny of the tracked managers' direct-lending strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:04:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcXRkR1l5VHVhZ194dWVmWWxiYjdEMEdDX0ttSEp3djF2X2dEMnlXMHQzMmtNQ2xuUXU4NjJFY2tpdWZvbENrQy14VVREc3ZhOFdoNi03cTVqODFZa1FJb3FONmJMX3M0RWRvakNsNUhjb2hlMmQ4RWhwRWsyUjgxQ1J5TWxRX2FhZGk5Rw?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
+      "id": "19e326277712",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T10:02:07+00:00",
+      "headline": {
+        "en": "New York Life takes majority stake in Invictus Capital Partners",
+        "zh": "New York Life 收购 Invictus Capital Partners 多数股权"
+      },
+      "summary": {
+        "en": "New York Life Investment Management has taken a majority stake in Invictus Capital Partners, a $20bn US single-family residential credit manager. The deal adds Invictus' loan sourcing and securitisation platform Verus Mortgage Capital to NYLIM's $304bn private markets platform, and is expected to close in the first quarter of 2027.",
+        "zh": "New York Life Investment Management 已收购 Invictus Capital Partners 的多数股权，后者是一家规模 200 亿美元的美国单户住宅信贷管理机构。该交易将 Invictus 的贷款获取与证券化平台 Verus Mortgage Capital 纳入 NYLIM 规模 3040 亿美元的私募市场平台，预计将于 2027 年第一季度完成。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/29/new-york-life-boosts-private-credit-arm-with-invictus-stake/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "New York Life boosts private credit arm with Invictus stake",
+      "source_fingerprint": "5cf00403d9ac6cc12ac41bfe09c9058387ddc32c3b25ba57454960c7f4e38692",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 91
+          }
+        },
+        "source_sha256": "a4c77ef76e7b2a6d115db2b3a494449dc56a2dd0e4ddd7647fb4571277b8083e",
+        "failure": "Unsupported assessment claim: linkage"
+      },
+      "relevance_reason": "A major insurance asset manager taking a majority stake in a $20bn US residential credit manager expands capital and securitisation capacity in the tracked mortgage and asset-based finance sub-sectors, affecting competitive and financing conditions.",
+      "event_identity": {
+        "subject": "new york life investment management",
+        "action": "taken a majority stake",
+        "object": "invictus capital partners",
+        "period": "first quarter of 2",
+        "numbers": [
+          "$20bn",
+          "$304bn",
+          "$3bn",
+          "$48bn",
+          "$837.6bn",
+          "2",
+          "3",
+          "90",
+          "£17.6bn"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-09-30T05:05:09+00:00",
+        "sha256": "a4c77ef76e7b2a6d115db2b3a494449dc56a2dd0e4ddd7647fb4571277b8083e",
+        "source_published_at": "2026-09-29T10:02:07+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/29/new-york-life-boosts-private-credit-arm-with-invictus-stake/"
+      },
+      "source_published_at": "2026-09-29T10:02:07+00:00",
+      "observed_at": "2026-09-30T05:02:03+00:00",
+      "supersedes_card_id": "7fafa72c5993"
+    }
+  ]
+}

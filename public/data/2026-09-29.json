@@ -2,6 +2,49 @@
   "date": "2026-09-29",
   "items": [
     {
+      "id": "83dc16f999e3",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T15:19:51+00:00",
+      "headline": {
+        "en": "SEC Staff Reinforces Need for Discipline in Private Credit Valuation",
+        "zh": "SEC工作人员强调私募信贷估值需要自律"
+      },
+      "summary": {
+        "en": "SEC staff reinforced the need for discipline in private credit valuation, according to Kroll.",
+        "zh": "据Kroll，SEC工作人员强调私募信贷估值需要自律。该条目仅以标题形式提供，没有更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Kroll",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTk9zTGZoTWhKUVpzTll0dWNFb2xFN1RHM0JralJFV1dodkliTmk2c05EbWRVSVl4bHJSYmh0VkVMZ3NYTU9XVmhDQXVYamFveDVmWFRVOVVIbWRzdWZZOXRXVzVxR3RTemlKRG1fV2FoZjE2WWxpbWZhbHVqdW83RUlqSTFxNlVlV0cwNTBYN1ZtY2V4N3lLOGpiYW13VUNVUlBOMjU2VDJadjd5cnJJQnRhSQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private Credit Valuation: SEC Staff Reinforces the Need for Discipline",
+      "source_fingerprint": "8e42cb3adfb25d13a9ceed9d30b714efaea3baf10ec80cded050ee8f16778c46",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d36e05bdbe906814ffbae6f7431ea62ea4bc64a9293d5984efd2cfae1ed74079",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "SEC staff valuation guidance for private credit can affect valuation discipline and marks across tracked private credit managers, though the item is headline-only.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-09-30T05:05:03+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTk9zTGZoTWhKUVpzTll0dWNFb2xFN1RHM0JralJFV1dodkliTmk2c05EbWRVSVl4bHJSYmh0VkVMZ3NYTU9XVmhDQXVYamFveDVmWFRVOVVIbWRzdWZZOXRXVzVxR3RTemlKRG1fV2FoZjE2WWxpbWZhbHVqdW83RUlqSTFxNlVlV0cwNTBYN1ZtY2V4N3lLOGpiYW13VUNVUlBOMjU2VDJadjd5cnJJQnRhSQ?oc=5"
+      },
+      "observed_at": "2026-09-30T05:02:03+00:00"
+    },
+    {
       "id": "1b8c90ad935b",
       "date": "2026-09-29",
       "published_at": "2026-09-29T12:26:01+00:00",
