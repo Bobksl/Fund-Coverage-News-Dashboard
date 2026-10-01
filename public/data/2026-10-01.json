@@ -2,6 +2,781 @@
   "date": "2026-10-01",
   "items": [
     {
+      "id": "f2066c916451",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T14:18:43+00:00",
+      "headline": {
+        "en": "Bain Capital Private Credit receives BBB- expected rating from Fitch",
+        "zh": "Bain Capital Private Credit 获得惠誉 BBB- 预期评级"
+      },
+      "summary": {
+        "en": "Fitch assigned an expected rating of BBB- to Bain Capital Private Credit, according to a headline.",
+        "zh": "据一则标题消息，惠誉授予 Bain Capital Private Credit BBB- 预期评级。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZk5sSnNWZGJtOUdyV3htRXhuZmo3a0R3Z0xDa0t5QTVSa0s5dVNWd2Y2YmxlWXlrUGhuTC1rOHdHWE9RZDQxclFaU0pWQWYwRTZRQUhxQmplT2tLTDVfMDhjVDNsYXZSTC16N1BzN0tWTzNjNU5YSmd5Nk53eE13RFBnZENLRHVLSWNXRjBNZjVOZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bain Capital Private Credit receives BBB- expected rating from Fitch",
+      "source_fingerprint": "d7ffad09aae537d6606218e4ed6cd23790ca9ded44792409e6e129e3b23c52b1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "14a7be120eb6a300b8e1002eba9ac94ea94fe59bc5976f8d903ea3e82fd51d55",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New rating action on a tracked manager's private credit vehicle is a direct credit development for Bain Capital Credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZk5sSnNWZGJtOUdyV3htRXhuZmo3a0R3Z0xDa0t5QTVSa0s5dVNWd2Y2YmxlWXlrUGhuTC1rOHdHWE9RZDQxclFaU0pWQWYwRTZRQUhxQmplT2tLTDVfMDhjVDNsYXZSTC16N1BzN0tWTzNjNU5YSmd5Nk53eE13RFBnZENLRHVLSWNXRjBNZjVOZw?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "5e376b434a47",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T13:13:10+00:00",
+      "headline": {
+        "en": "Apollo expands daily pricing across $850 billion credit platform to boost private credit transparency",
+        "zh": "Apollo 将每日定价扩展至 8500 亿美元信贷平台，以提升私募信贷透明度"
+      },
+      "summary": {
+        "en": "Apollo is expanding daily pricing across its $850 billion credit platform, according to a headline report, in a move aimed at boosting private credit transparency.",
+        "zh": "据一则标题报道，Apollo 正将每日定价扩展至其 8500 亿美元的信贷平台，此举旨在提升私募信贷透明度。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Bitget",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyV2kwSndOZi1zSU5JeWRrelFkSzlNTW9uRnBac0pkR1EyTDZGOE10bHhNZV9jU3lIOEpwSGhleFRNZ2tqUmdiLWRqeHZFQXJ1d3ZfWnJzWDdBaHFGMXNQa2hpRdIBY0FVX3lxTFAyV2kwSndOZi1zSU5JeWRrelFkSzlNTW9uRnBac0pkR1EyTDZGOE10bHhNZV9jU3lIOEpwSGhleFRNZ2tqUmdiLWRqeHZFQXJ1d3ZfWnJzWDdBaHFGMXNQa2hpRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo expands daily pricing across $850 billion credit platform to boost private credit transparency",
+      "source_fingerprint": "05c47ffbd7711f521e494eb4f87a3d1e5a5de7ef6ef6f2330d6c211ebb77133a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3b17b62cf1284c8d2ffacbad790d0530906b9c131be3a884de225bb4d110e986",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo expanding daily pricing across its credit platform could affect valuation transparency and liquidity conditions for a tracked credit manager's strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:29+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyV2kwSndOZi1zSU5JeWRrelFkSzlNTW9uRnBac0pkR1EyTDZGOE10bHhNZV9jU3lIOEpwSGhleFRNZ2tqUmdiLWRqeHZFQXJ1d3ZfWnJzWDdBaHFGMXNQa2hpRdIBY0FVX3lxTFAyV2kwSndOZi1zSU5JeWRrelFkSzlNTW9uRnBac0pkR1EyTDZGOE10bHhNZV9jU3lIOEpwSGhleFRNZ2tqUmdiLWRqeHZFQXJ1d3ZfWnJzWDdBaHFGMXNQa2hpRQ?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "7c3248a86a05",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T13:08:18+00:00",
+      "headline": {
+        "en": "Oaktree closes debut ABF fund on $2bn",
+        "zh": "橡树资本以20亿美元关闭首只ABF基金"
+      },
+      "summary": {
+        "en": "Oaktree has closed its debut asset-backed finance fund at $2bn.",
+        "zh": "橡树资本（Oaktree）以20亿美元关闭其首只资产支持融资（ABF）基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaDRrYVVVZFFNUFZUcEowVllWUFJSR3RIc0tWU3lsWEN1TDM4bEZlRjNzaURWTmI4S182NVpVS1RnYml2cG9JSDJSckF6X2dDWmhEV3FScmZ5TEhxbnFWa0VDTmZ1T3JRMW9EWGxnNXZQZXYzaUhfVTV2THRyOWtBVDRwdi1XN2FNVUxwakdXZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree closes debut ABF fund on $2bn",
+      "source_fingerprint": "f2d604e6039c643cb62d3088f2e5ba1027d4475a3b34c1080ef680de6712bb86",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6f35cec86f14a8a9d87c109568c07cf8c7b871730716383092cf353c3bc46d6d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $2bn asset-backed finance fund close expands credit capacity in a tracked sub-sector, even though no tracked manager is named.",
+      "event_identity": {
+        "subject": "oaktree",
+        "action": "closes",
+        "object": "debut abf fund",
+        "period": "$2bn",
+        "numbers": [
+          "$2bn"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:31+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaDRrYVVVZFFNUFZUcEowVllWUFJSR3RIc0tWU3lsWEN1TDM4bEZlRjNzaURWTmI4S182NVpVS1RnYml2cG9JSDJSckF6X2dDWmhEV3FScmZ5TEhxbnFWa0VDTmZ1T3JRMW9EWGxnNXZQZXYzaUhfVTV2THRyOWtBVDRwdi1XN2FNVUxwakdXZw?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "1c8d189d16aa",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T12:56:27+00:00",
+      "headline": {
+        "en": "Oaktree closes debut asset-backed finance fund on $2bn",
+        "zh": "Oaktree 完成首只资产支持融资基金募集，规模 20 亿美元"
+      },
+      "summary": {
+        "en": "Brookfield-owned Oaktree Capital Management has closed its first asset-backed finance fund on $2bn of commitments. The money was raised across Oaktree's Asset-Backed Finance Fund (ABF I) and related vehicles, with commitments from institutional investors including US public pension schemes and sovereign wealth funds. Oaktree has invested more than $19bn through its wider ABF platform, alongside Brookfield's broader ABF platform of more than $60bn.",
+        "zh": "Brookfield 旗下 Oaktree Capital Management 已完成其首只资产支持融资基金的募集，募资规模 20 亿美元。资金通过 Oaktree 的 Asset-Backed Finance Fund（ABF I）及相关投资工具募集，出资方为机构投资者，包括美国公共养老金计划和主权财富基金。Oaktree 通过其更广泛的 ABF 平台已投资逾 190 亿美元，该平台与 Brookfield 规模超过 600 亿美元的更广泛 ABF 平台并行。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/01/oaktree-closes-debut-abf-fund-on-2bn/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree closes debut ABF fund on $2bn",
+      "source_fingerprint": "e5e666762d1101b199ada157d5e70aa12470fbeb050576e3587823cb4bc835bb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 48,
+            "end": 98
+          },
+          "linkage": {
+            "start": 17,
+            "end": 85
+          },
+          "resolved": {
+            "start": 48,
+            "end": 98
+          }
+        },
+        "source_sha256": "eda3ab65a77d31621a9ee5f5d4052ac5a4b2dbc997d34ab267dd83b187a47a72",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": true,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Oaktree's $2bn debut ABF fund close expands private asset-backed lending capacity, affecting the financing environment for a tracked credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-01T15:18:34+00:00",
+        "sha256": "eda3ab65a77d31621a9ee5f5d4052ac5a4b2dbc997d34ab267dd83b187a47a72",
+        "source_published_at": "2026-10-01T12:56:27+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/01/oaktree-closes-debut-abf-fund-on-2bn/"
+      },
+      "source_published_at": "2026-10-01T12:56:27+00:00",
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "bc5bb0ca2ca4",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T12:41:01+00:00",
+      "headline": {
+        "en": "Australian private real estate credit giant halts redemptions amid audit review",
+        "zh": "澳大利亚私人房地产信贷巨头因审计审查暂停赎回"
+      },
+      "summary": {
+        "en": "An Australian private real estate credit giant has halted redemptions amid an audit review, according to a headline.",
+        "zh": "据一则标题消息，一家澳大利亚私人房地产信贷巨头因审计审查暂停了赎回。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "pei-privaterealestate.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTWlrX2prT1VTVHQxTkFfUnQxY0trb3ZRUUZMM3p0RnNWem90eFJFSGpONmxvdlZQS0s4MXM3XzNfU01EYVZMZXc4SlItdXVxVXU5RXVzdTlXSlJST3V6dzFUWXFnc0YxVE9NeS1xV1hoQzRNS05mTXhQa08yY291cXNlS0VYbWFGNzI2RW1mMTBXaXBEOFV2bHZ0WkNBUTVzWFVDZDJHQTRic3pHUXRJcHFaajBKT3FuTFlaUVRuNFJmNmc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australian private real estate credit giant halts redemptions amid audit review",
+      "source_fingerprint": "7881536f25251a5c2d26ca9606b19e6ecbcaf93564ca1242443edd53d72530d0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6e4785d196f9ecda945f24efb62cfb05187096bab0ec5976230c5c50974cd699",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large private real estate credit manager halting redemptions amid an audit review signals potential liquidity and valuation stress in the sector, relevant to credit investors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:37+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTWlrX2prT1VTVHQxTkFfUnQxY0trb3ZRUUZMM3p0RnNWem90eFJFSGpONmxvdlZQS0s4MXM3XzNfU01EYVZMZXc4SlItdXVxVXU5RXVzdTlXSlJST3V6dzFUWXFnc0YxVE9NeS1xV1hoQzRNS05mTXhQa08yY291cXNlS0VYbWFGNzI2RW1mMTBXaXBEOFV2bHZ0WkNBUTVzWFVDZDJHQTRic3pHUXRJcHFaajBKT3FuTFlaUVRuNFJmNmc?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "0c93a79058eb",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T12:22:57+00:00",
+      "headline": {
+        "en": "Monroe prices second new-issue CLO at $399m",
+        "zh": "Monroe 为第二只新发 CLO 定价，规模 3.99 亿美元"
+      },
+      "summary": {
+        "en": "Monroe priced its second new-issue CLO at $399m.",
+        "zh": "Monroe 为其第二只新发 CLO 定价，规模 3.99 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON01fakNscmxvOXlMaktRb1ZZWlRUbXZXMU1XT1U3Q3NCMFF3V2MwNlk5UnoyUVFNVF9henJrOXRxNEQtdXN3c0VpSXBkZXdha2hlVzFoSk9Wa1VmcVdYdHNJaFc1TUFCR2I3dE00aDVOdjJaVHpCM0ZXWkJNdG5DMkxPanNwSEVhaVZFSHB1dnA4SGNlaXRN?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Monroe prices second new-issue CLO at $399m",
+      "source_fingerprint": "e684f372f6c6622e9dbfe0acbcdba97a6a738e9653370c0be64d3c86c0b85244",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5f1d3605c8beb52135a40b89aa77de3ac3a41170486cd9ce2c9db7172ee532f5",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New CLO issuance by Monroe expands supply in the broadly syndicated loan/CLO market, a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:39+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON01fakNscmxvOXlMaktRb1ZZWlRUbXZXMU1XT1U3Q3NCMFF3V2MwNlk5UnoyUVFNVF9henJrOXRxNEQtdXN3c0VpSXBkZXdha2hlVzFoSk9Wa1VmcVdYdHNJaFc1TUFCR2I3dE00aDVOdjJaVHpCM0ZXWkJNdG5DMkxPanNwSEVhaVZFSHB1dnA4SGNlaXRN?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "6d8d726f65c4",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T11:55:00+00:00",
+      "headline": {
+        "en": "Apollo Debuts Daily Private Credit Marks as SEC Urges Vigilance",
+        "zh": "阿波罗推出私募信贷每日估值标记，SEC 呼吁保持警惕"
+      },
+      "summary": {
+        "en": "Apollo has introduced daily marks for private credit. The SEC is urging vigilance on private credit valuations.",
+        "zh": "阿波罗已为私募信贷推出每日估值标记。SEC 呼吁对私募信贷估值保持警惕。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeS1tcVd3TU01RnhkZFFJTTIybU84ZEJudXMtVm9Kam9Cc0FTbVFBTGkzQlpGdFlwSmkxdEdJTTJWOW9BMUNBMHVhd0JiYnJTUnFEdU9PQmxucHBUNUQ5Smp2VUNNdlVaQmpNbUlHY1VkZFdKSWgxbVQ5dE90NmJVMEw3NlJ6TDdJY0xQcXdGaEo3VG1TU3ktODZ3Y19SaFFzNC0xN1lxYTFkMFloV2JqbG0tRUs?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Debuts Daily Private Credit Marks as SEC Urges Vigilance",
+      "source_fingerprint": "9698dfb7b4ef0e5ada174a302937d183c3c4c755a7cd7d51a80d805555b528d1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9d58c893ed91a1bae4133649a1edf4fc5abfe62b0a36119b0c8fe8bec10b81a4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo launching daily private credit marks is a valuation and disclosure change for a tracked credit manager, with SEC scrutiny of private credit marks potentially affecting the sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeS1tcVd3TU01RnhkZFFJTTIybU84ZEJudXMtVm9Kam9Cc0FTbVFBTGkzQlpGdFlwSmkxdEdJTTJWOW9BMUNBMHVhd0JiYnJTUnFEdU9PQmxucHBUNUQ5Smp2VUNNdlVaQmpNbUlHY1VkZFdKSWgxbVQ5dE90NmJVMEw3NlJ6TDdJY0xQcXdGaEo3VG1TU3ktODZ3Y19SaFFzNC0xN1lxYTFkMFloV2JqbG0tRUs?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "f1f5248908fb",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T11:48:14+00:00",
+      "headline": {
+        "en": "Monroe Capital prices second new-issue CLO of 2026 at $398.9m",
+        "zh": "Monroe Capital 为 2026 年第二只新发 CLO 定价 3.989 亿美元"
+      },
+      "summary": {
+        "en": "Monroe Capital priced its second new-issue CLO of 2026, Monroe Capital PC CLO II, at $398.9m. The vehicle holds senior secured loans to lower middle-market and traditional middle-market companies, with investment-grade tranches rated AAA to BBB- and structured to meet US, UK and EU risk-retention rules. Deutsche Bank was lead arranger; Monroe said it has issued $13bn in structured products since founding and manages $23.8bn.",
+        "zh": "Monroe Capital 为其 2026 年第二只新发 CLO——Monroe Capital PC CLO II——定价 3.989 亿美元。该工具持有面向下中端市场和传统中端市场公司的优先担保贷款，资本结构包含评级从 AAA 到 BBB- 的投资级债务档，并已按美国、英国和欧盟的风险留存要求进行结构化设计。德意志银行担任主安排行；Monroe 表示自成立以来已发行 130 亿美元结构化产品，管理资产规模达 238 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/01/monroe-prices-second-new-issue-clo-at-399m/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Monroe prices second new-issue CLO at $399m",
+      "source_fingerprint": "203e4a159ccd6014fb53ebdce367b8d4e558557ac124215dbf7a30e37bc5f612",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 121
+          },
+          "linkage": {
+            "start": 909,
+            "end": 1025
+          }
+        },
+        "source_sha256": "1abaa30ffef336d294a38a678475fa564ae2e9f5486a6758c91ad6af8d013693",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "New CLO pricing by Monroe Capital is a sector data point on private credit CLO issuance and structured product supply, but no tracked manager is involved.",
+      "event_identity": {
+        "subject": "monroe capital",
+        "action": "priced",
+        "object": "monroe capital pc clo ii",
+        "period": "2026",
+        "numbers": [
+          "$13bn",
+          "$23.8bn",
+          "$398.9",
+          "$399",
+          "$60",
+          "$643",
+          "12",
+          "2026",
+          "3",
+          "36",
+          "45",
+          "£301.8"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-01T15:18:53+00:00",
+        "sha256": "1abaa30ffef336d294a38a678475fa564ae2e9f5486a6758c91ad6af8d013693",
+        "source_published_at": "2026-10-01T11:48:14+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/01/monroe-prices-second-new-issue-clo-at-399m/"
+      },
+      "source_published_at": "2026-10-01T11:48:14+00:00",
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "467b86567fd9",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T11:35:18+00:00",
+      "headline": {
+        "en": "Brookfield Says Oaktree Asset-Backed Finance Fund Closes at CA$2 Billion",
+        "zh": "Brookfield称Oaktree资产支持融资基金以20亿加元完成募集"
+      },
+      "summary": {
+        "en": "Brookfield said an Oaktree asset-backed finance fund closed at CA$2 billion.",
+        "zh": "Brookfield表示，Oaktree旗下一只资产支持融资基金以20亿加元完成募集。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZzZEcldLWjNEbEVXSEdXbFpsVEZjSlBOVFg5QlhiaXZGQkxUNmlRSlFWblpTNDlzVk5heWNiVndHY2NjU2xIbFlxenFRVFRoNEVDWGMyaTl3TmhOYnJtMlp2ZHlCcjhkMGlBbEhSUXczbDZkLXhxVi16REZJM0tCanZQVFdwZmZqeHhZWXg1QTZibnB0MXY0OWc1OC1OQTdETlAwRm1iUHNtR21nRy15eGlNWloyaWZEMzVJeUxFeFhyaE0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Brookfield Says Oaktree Asset-Backed Finance Fund Closes at CA$2 Billion",
+      "source_fingerprint": "dd33790b186022aa7f19914ff9de71d0df98767173438e0ab236595368bcb475",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "887b7b4dff20555657694f512dd193ebf4833453231d15a4227cef0976d154c9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new Oaktree asset-backed finance fund closed at CA$2 billion, signalling continued capital formation in asset-backed lending, a tracked credit sub-sector.",
+      "event_identity": {
+        "subject": "oaktree asset-backed finance fund",
+        "action": "closes",
+        "object": "asset-backed finance fund",
+        "period": "ca$2 billion",
+        "numbers": [
+          "$2 Billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:56+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZzZEcldLWjNEbEVXSEdXbFpsVEZjSlBOVFg5QlhiaXZGQkxUNmlRSlFWblpTNDlzVk5heWNiVndHY2NjU2xIbFlxenFRVFRoNEVDWGMyaTl3TmhOYnJtMlp2ZHlCcjhkMGlBbEhSUXczbDZkLXhxVi16REZJM0tCanZQVFdwZmZqeHhZWXg1QTZibnB0MXY0OWc1OC1OQTdETlAwRm1iUHNtR21nRy15eGlNWloyaWZEMzVJeUxFeFhyaE0?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "3e4dca03b85b",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T11:30:00+00:00",
+      "headline": {
+        "en": "Carlyle Warns Private Credit's AI Push Raises Concentration Risk",
+        "zh": "Carlyle 警告私募信贷的 AI 进军加大集中度风险"
+      },
+      "summary": {
+        "en": "Carlyle warned that private credit's push into AI raises concentration risk, according to a Bloomberg report.",
+        "zh": "据 Bloomberg 报道，Carlyle 警告称私募信贷进军 AI 领域加大了集中度风险。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZ3JhNDM0elBWQXhwY2I1bzhEZ2h3TUFvbzZONXJhMVM5YWRRVXNHT241ZUhoSktiM2VZdlVKbEMtRzl0bENja1VzbVhHbm13SFVmejdqRXp6eWR0eDhzckJWTlV5VXRVbmhQX055OG1EX0NRVTNtLTBJZFpyeUQ1dTVtN0dJcEFpUGl0LXZ5Y05QLWlMTmVIenU5TDlaY1A3Z212cWFzVkYxaE5QOEZjdDliU1JBQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Carlyle Warns Private Credit’s AI Push Raises Concentration Risk",
+      "source_fingerprint": "669c9281876d23eab357d702dc1aeeec93dc6287c3f7493f4a7f5cb6a76dfa37",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2c2b53fa8b2da7820323b5b86a88d8faa4beadeceae9a08c242446dfef648211",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Carlyle's warning about AI-driven concentration risk in private credit speaks directly to sector-level risk conditions, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:18:58+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZ3JhNDM0elBWQXhwY2I1bzhEZ2h3TUFvbzZONXJhMVM5YWRRVXNHT241ZUhoSktiM2VZdlVKbEMtRzl0bENja1VzbVhHbm13SFVmejdqRXp6eWR0eDhzckJWTlV5VXRVbmhQX055OG1EX0NRVTNtLTBJZFpyeUQ1dTVtN0dJcEFpUGl0LXZ5Y05QLWlMTmVIenU5TDlaY1A3Z212cWFzVkYxaE5QOEZjdDliU1JBQQ?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "757c99d33769",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T11:15:49+00:00",
+      "headline": {
+        "en": "Oaktree closes debut asset-backed finance fund at $2B",
+        "zh": "Oaktree 完成首只资产支持融资基金募集，规模20亿美元"
+      },
+      "summary": {
+        "en": "Oaktree closed its debut asset-backed finance fund at $2 billion.",
+        "zh": "Oaktree 完成其首只资产支持融资基金的募集，规模为20亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "app.dealroom.co",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMi1CQUxGLUxDZFcta1F3ZDEweDFYc2VLQUoxMUlSbXJSQmZjcWVsS0RvZ04zZWhKbWpNSXNCVVljTmI1LXQyclE2UDBvOUlFbXhKUFgtbmtQc1daenBlZnZFWFFkV0taY0dubU45NS1BS3ZsenZYTlN6NUZZRE83clVJeklMaGU1RzBQWW50OA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree closes debut asset-backed finance fund at $2B",
+      "source_fingerprint": "0f4cb0fbc2c01faf59713d575d0648f301376dc1adfbe741b05a79ba5de09812",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "38dd90a6aa525b1f012631181349a64faf5585c0dc0ba697acd3c8ab703ed30a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Oaktree closing a $2bn debut asset-backed finance fund signals capital formation in a tracked credit sub-sector, expanding competitive deployment capacity.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:19:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMi1CQUxGLUxDZFcta1F3ZDEweDFYc2VLQUoxMUlSbXJSQmZjcWVsS0RvZ04zZWhKbWpNSXNCVVljTmI1LXQyclE2UDBvOUlFbXhKUFgtbmtQc1daenBlZnZFWFFkV0taY0dubU45NS1BS3ZsenZYTlN6NUZZRE83clVJeklMaGU1RzBQWW50OA?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "d5cfdcc82163",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T11:05:52+00:00",
+      "headline": {
+        "en": "Brookfield's Oaktree Unit Closes $2 Billion Asset-Backed Finance Fund",
+        "zh": "布鲁克菲尔德旗下橡树资本部门关闭20亿美元资产支持融资基金"
+      },
+      "summary": {
+        "en": "Brookfield's Oaktree unit closed a $2 billion asset-backed finance fund.",
+        "zh": "布鲁克菲尔德旗下橡树资本部门关闭了一只20亿美元的资产支持融资基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSGVaWUxPOUFzSk9PRkpkNjFkQUEzY09JOGZMU01OMWRRUTlNbWQ3M3pFdGtzMDItZ193NTFvcDNORUJCX3dSZVVzWlktdnZpQTVUeGZEcF94R1VONzdlcjVsbE5TZGZmSm5NejloTjlQdmVUS2pLS0tRWWQ4eFZNQkR4cTNIZGtVTC1JbVZHQlJxRHFxY2VHMGh0N0JNam43dVQwRW5XcFlfZWpDWjMzX0RjRGkxZ3Q1RlJv?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Brookfield’s Oaktree Unit Closes $2 Billion Asset-Backed Finance Fund",
+      "source_fingerprint": "01ccf2b9676f19b98c678fed18af25100ff4e8779ddb06933ce4662996678884",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "05f769b734c50a24896fe6e469f0b7ff3403a2411feb59dea28c291ab64501dc",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Oaktree, a major credit manager (though not one of the tracked managers), closing a $2bn asset-backed finance fund indicates continued capital formation in the asset-based lending sub-sector, a competitive signal for tracked asset-based finance strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:19:02+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSGVaWUxPOUFzSk9PRkpkNjFkQUEzY09JOGZMU01OMWRRUTlNbWQ3M3pFdGtzMDItZ193NTFvcDNORUJCX3dSZVVzWlktdnZpQTVUeGZEcF94R1VONzdlcjVsbE5TZGZmSm5NejloTjlQdmVUS2pLS0tRWWQ4eFZNQkR4cTNIZGtVTC1JbVZHQlJxRHFxY2VHMGh0N0JNam43dVQwRW5XcFlfZWpDWjMzX0RjRGkxZ3Q1RlJv?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "6684f8fdf1fc",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T10:47:49+00:00",
+      "headline": {
+        "en": "SEC opens door further to retail private credit push",
+        "zh": "SEC进一步为零售私募信贷推广敞开大门"
+      },
+      "summary": {
+        "en": "The SEC has opened the door further to a retail private credit push, according to Alternative Credit Investor.",
+        "zh": "据Alternative Credit Investor报道，SEC进一步为零售私募信贷推广敞开大门。现有标题中未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLVBBVXl6S0NGay1RdUpQUTBPdWMyb0lLSFhFd3M0X0g5bkg2bFFHQk94RlNhVGxmeDFpWXc1Qy1VMHJ1VmtHQkdYVjhNTUItNTZZVDQ0UUFBY2Y3X2dDTTN5VXVnU3NLRFBsOXg5Q3ZXV2RFN0hOVXhfYWpCMTM4ZEFJUGNsU1NaU09qWEdvRHMtZUxlWkFITUpBNGh4dnVnek9TRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC opens door further to retail private credit push",
+      "source_fingerprint": "67d2699c75adf3969f92e4b01f16a6590ed6d1327fbab5e1eec82144177befcb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c12ed0e8f51b0803803b4215b6bbe1bc2dea6b52b62cdf65ed66fefb169bebf8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A regulatory move by the SEC affecting retail access to private credit changes the financing and distribution environment for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:19:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLVBBVXl6S0NGay1RdUpQUTBPdWMyb0lLSFhFd3M0X0g5bkg2bFFHQk94RlNhVGxmeDFpWXc1Qy1VMHJ1VmtHQkdYVjhNTUItNTZZVDQ0UUFBY2Y3X2dDTTN5VXVnU3NLRFBsOXg5Q3ZXV2RFN0hOVXhfYWpCMTM4ZEFJUGNsU1NaU09qWEdvRHMtZUxlWkFITUpBNGh4dnVnek9TRQ?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "580b83b93b50",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T10:41:06+00:00",
+      "headline": {
+        "en": "SEC proposes rules to widen retail access to private credit",
+        "zh": "SEC 提议放宽散户投资私募信贷的渠道"
+      },
+      "summary": {
+        "en": "The SEC voted this week to propose rule amendments to widen retail investors' access to alternative assets, including private credit. The proposals include modernising the interval fund framework so vehicles can schedule repurchases to better match portfolio liquidity, and amending fund registration and reporting forms to require disclosure of performance-based compensation. The SEC is also seeking comment on new routes to accredited investor status not based on wealth.",
+        "zh": "美国证券交易委员会（SEC）本周投票提出一系列规则修订，以扩大散户投资者对包括私募信贷在内的另类资产的准入。提议包括“现代化”区间基金框架，使基金可按更契合其投资组合流动性状况的时间安排回购，并修订基金注册和报告表格，要求披露基于业绩的报酬。SEC 还在就无需依赖财富门槛的合格投资者新认定途径征求意见。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/01/sec-opens-door-further-to-retail-private-credit-push/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC opens door further to retail private credit push",
+      "source_fingerprint": "a078be31343edd113cdeafe90703f1d231eaabe8d8f454c3db90730034fe8e00",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 31,
+            "end": 114
+          },
+          "linkage": {
+            "start": 937,
+            "end": 1020
+          }
+        },
+        "source_sha256": "e504dfe4a3a221255fdb5430c9be2c2e1303b4a2d8a03671c2d74ce74bc874ac",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "US regulator proposes rules widening retail access to private credit, directly shaping fundraising and deployment conditions for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-01T15:19:09+00:00",
+        "sha256": "e504dfe4a3a221255fdb5430c9be2c2e1303b4a2d8a03671c2d74ce74bc874ac",
+        "source_published_at": "2026-10-01T10:41:06+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/01/sec-opens-door-further-to-retail-private-credit-push/"
+      },
+      "source_published_at": "2026-10-01T10:41:06+00:00",
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
+      "id": "eae20c9764c4",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T06:34:34+00:00",
+      "headline": {
+        "en": "Monroe Capital Prices $398.9MM Private Credit CLO",
+        "zh": "Monroe Capital 定价 3.989 亿美元私人信贷 CLO"
+      },
+      "summary": {
+        "en": "Monroe Capital priced a $398.9 million private credit CLO, according to a headline from ABF Journal.",
+        "zh": "据 ABF Journal 的一则标题，Monroe Capital 定价了一只规模 3.989 亿美元的私人信贷 CLO。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "ABF Journal",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZjZTbVA3ZDNoRDd2ZUNvdVdIYXZUM3lhMC1GZDlmaWhqWnlDTlJSczZrbXhvbzZlUm1CcTdHVTRaTlYzQWdrOGlWV1JUQXJtcGNPU0h6SUJSWHFnZDRFNnVtOUp3X2FKYVM5bFVkc0ctd3BVSUgzbUJ6V2pLNHNTX1J3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Monroe Capital Prices $398.9MM Private Credit CLO",
+      "source_fingerprint": "b25d9b801052ae6115050df635f53ef4faf1f25378f5f62e8c4c1ceef7ed9b5a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b1f5680cb431edcfd42791439d8f696cf922dd2628718fcfcdbbadbad4d949f3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New private credit CLO pricing signals continued CLO issuance and deployment conditions in the private credit sub-sector, though no tracked manager is named.",
+      "event_identity": {
+        "subject": "monroe capital",
+        "action": "prices",
+        "object": "$398.9mm private credit clo",
+        "period": "$398.9mm",
+        "numbers": [
+          "$398.9"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T15:19:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZjZTbVA3ZDNoRDd2ZUNvdVdIYXZUM3lhMC1GZDlmaWhqWnlDTlJSczZrbXhvbzZlUm1CcTdHVTRaTlYzQWdrOGlWV1JUQXJtcGNPU0h6SUJSWHFnZDRFNnVtOUp3X2FKYVM5bFVkc0ctd3BVSUgzbUJ6V2pLNHNTX1J3?oc=5"
+      },
+      "observed_at": "2026-10-01T15:15:55+00:00"
+    },
+    {
       "id": "e82991beeb38",
       "date": "2026-10-01",
       "published_at": "2026-10-01T01:42:22+00:00",
