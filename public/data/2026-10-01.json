@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-01",
+  "items": [
+    {
+      "id": "e82991beeb38",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T01:42:22+00:00",
+      "headline": {
+        "en": "BofA Downgrades Fair Isaac on New Grid Structure Threat to Mortgage Credit Scoring Dominance",
+        "zh": "美银下调Fair Isaac评级，称新网格结构或挑战其在抵押贷款信用评分领域的主导地位"
+      },
+      "summary": {
+        "en": "Bank of America downgraded Fair Isaac, saying the company's dominance in mortgage credit scoring could be challenged by a new grid structure, according to a report.",
+        "zh": "美国银行下调了Fair Isaac的评级，称一种新的网格结构可能挑战该公司在抵押贷款信用评分领域的主导地位。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bitget",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9mZjBrQnlOZmF0MnpqUjNkdkg1SVRkazVaNTlLdTJiQ1lUbzh1X0dESFp3MGZsUmJEekpCRHlQLWNudjk0VEJoanY3OW5FTlVTSVRzdEdSeEdlbGR1YXJQS1hjONIBY0FVX3lxTE9mZjBrQnlOZmF0MnpqUjNkdkg1SVRkazVaNTlLdTJiQ1lUbzh1X0dESFp3MGZsUmJEekpCRHlQLWNudjk0VEJoanY3OW5FTlVTSVRzdEdSeEdlbGR1YXJQS1hjOA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fair Isaac's Dominance in Mortgage Credit Scoring Could be Challenged by New Grid Structure, BofA Says in Downgrade",
+      "source_fingerprint": "6b8b0c3e2dfcb074c1e0bc48a9ae91fc8aaddf1930acadd08fb1d96238644f94",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "746c895338b1ffba6e2b365a1700f4bf27c93f3307ccc1bc2097564f41e51f15",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A potential structural challenge to FICO's mortgage credit scoring dominance could affect mortgage credit risk assessment and pricing conditions for residential credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:18:35+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9mZjBrQnlOZmF0MnpqUjNkdkg1SVRkazVaNTlLdTJiQ1lUbzh1X0dESFp3MGZsUmJEekpCRHlQLWNudjk0VEJoanY3OW5FTlVTSVRzdEdSeEdlbGR1YXJQS1hjONIBY0FVX3lxTE9mZjBrQnlOZmF0MnpqUjNkdkg1SVRkazVaNTlLdTJiQ1lUbzh1X0dESFp3MGZsUmJEekpCRHlQLWNudjk0VEJoanY3OW5FTlVTSVRzdEdSeEdlbGR1YXJQS1hjOA?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "7daad4647735",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T01:31:45+00:00",
+      "headline": {
+        "en": "SCU stock leaves the NYSE as Sculptor resets a $450 million CLO",
+        "zh": "SCU 股票退出纽约证券交易所，Sculptor 重置一只 4.5 亿美元 CLO"
+      },
+      "summary": {
+        "en": "SCU stock leaves the NYSE as Sculptor resets a $450 million CLO.",
+        "zh": "SCU 股票退出纽约证券交易所，Sculptor 重置一只 4.5 亿美元 CLO。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "AD HOC NEWS",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbERYVTZRX1dsS1RCRXlJWWZwU0VnWG4zeWVLT2tkN29VOEpQVGltN3BZYUtWWVpfcS1fS2pCZXUzTkhZNUlhV2RuYTF3dXVDYXdYWmUzMi1qd00wOVVNSERIdHJpQTgxcFZfMkllZnJfQTdSZFVGUkxhMXEzZ0NzRlVaeEtoUUN6UmFxcG04QmNjcWxtSDlsRnUtMkNaMHh4SDNCcWpHaWNxNFNmMmJwWEs3Z1ZDVXI1NklTYzBR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SCU stock leaves the NYSE as Sculptor resets a $450 million CLO",
+      "source_fingerprint": "04ceef99527080d97a2214de5b8794380f000caa9355d2121a0155383b62796e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "31b139635a71822ba4ddb19d2f231436f006425b091eacbed31740b1f16e7376",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A CLO reset and a NYSE delisting for Sculptor could affect credit investors' view of CLO sub-sector risk and refinancing conditions, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:18:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbERYVTZRX1dsS1RCRXlJWWZwU0VnWG4zeWVLT2tkN29VOEpQVGltN3BZYUtWWVpfcS1fS2pCZXUzTkhZNUlhV2RuYTF3dXVDYXdYWmUzMi1qd00wOVVNSERIdHJpQTgxcFZfMkllZnJfQTdSZFVGUkxhMXEzZ0NzRlVaeEtoUUN6UmFxcG04QmNjcWxtSDlsRnUtMkNaMHh4SDNCcWpHaWNxNFNmMmJwWEs3Z1ZDVXI1NklTYzBR?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "c3efa0e3e436",
+      "date": "2026-10-01",
+      "published_at": "2026-09-30T23:57:13+00:00",
+      "headline": {
+        "en": "Monroe Capital prices $398.9M private credit CLO, its fourth in a year",
+        "zh": "Monroe Capital为3.989亿美元私募信贷CLO定价，为其一年内第四单"
+      },
+      "summary": {
+        "en": "Monroe Capital priced a $398.9 million private credit CLO. It is the firm's fourth such CLO in a year.",
+        "zh": "Monroe Capital为一笔3.989亿美元的私募信贷CLO定价。这是该公司一年内的第四笔此类CLO。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONldMVDRtb2dJMVVnckVEci03OHpqVUhWQkNYdk95a1hvbWYzNnlCaF94VWppUkx0TU9QNkNUbUNGR1hrb2toSTFWRW1fa2hTb3JIYVhmWUFJU1hkRDJ1S3NpUS1Fb05uU0djZjJJalNHRWdIejFLZ3pjanRqVkNqdEpPSFNsVXlYaGVnQTdVeFQxLS13T2xhY3ZWZWlRTmwyYjI5bQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Monroe Capital prices $398.9M private credit CLO, its fourth in a year",
+      "source_fingerprint": "bbe6aa93b5235d855f4174748c9bb38214d237d57f8338ff32df3dedc715a95f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2e34acc482465863abab5e4cd38119c596dc3db8d9dcbf925918f4f677f36a56",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit CLO pricing by Monroe Capital adds issuance activity in the private credit sub-sector, though Monroe is not a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:18:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONldMVDRtb2dJMVVnckVEci03OHpqVUhWQkNYdk95a1hvbWYzNnlCaF94VWppUkx0TU9QNkNUbUNGR1hrb2toSTFWRW1fa2hTb3JIYVhmWUFJU1hkRDJ1S3NpUS1Fb05uU0djZjJJalNHRWdIejFLZ3pjanRqVkNqdEpPSFNsVXlYaGVnQTdVeFQxLS13T2xhY3ZWZWlRTmwyYjI5bQ?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "f9490f06a074",
+      "date": "2026-10-01",
+      "published_at": "2026-09-30T20:50:42+00:00",
+      "headline": {
+        "en": "Goldman Sachs private credit BDC redemptions come in below 5% again in Q3",
+        "zh": "高盛私募信贷BDC第三季度赎回率再次低于5%"
+      },
+      "summary": {
+        "en": "Goldman Sachs private credit BDC redemptions came in below 5% again in Q3.",
+        "zh": "高盛私募信贷BDC第三季度赎回率再次低于5%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSU5VWWgxMkh3ZUNCaGtJY0cxRXNScGNCdGFMYk96Ml8tODYtMXhqNVg1cThpMmJlUFEwTzZGQlY5SlVZZTYtMkpzQVZSYXpKX2xMZ3Z1WEUzQnkwZlFPX21pUUhFLVV1M2pwVWtVUjEyZXBVNTNvdTBpZ0paUzFwalBUVGxEWkVo?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman Sachs private credit BDC redemptions come in below 5% again in Q3",
+      "source_fingerprint": "440f4940c7d99089b6246059a5a06b4cfafb4d4dfd30d57f5a4144bfbe1dcdcf",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "063f2f237a6a6c01de068dda482a69802bd427d0764a20e7b489d2592d551803",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Goldman Sachs private credit BDC redemption level is below 5% again in Q3, a repeat of a prior level, indicating stable liquidity conditions for a private credit vehicle.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:18:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSU5VWWgxMkh3ZUNCaGtJY0cxRXNScGNCdGFMYk96Ml8tODYtMXhqNVg1cThpMmJlUFEwTzZGQlY5SlVZZTYtMkpzQVZSYXpKX2xMZ3Z1WEUzQnkwZlFPX21pUUhFLVV1M2pwVWtVUjEyZXBVNTNvdTBpZ0paUzFwalBUVGxEWkVo?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "eb736437e498",
+      "date": "2026-10-01",
+      "published_at": "2026-09-30T18:22:05+00:00",
+      "headline": {
+        "en": "Mountain View CLO XX secures Fitch ratings for $400 million leveraged loan deal",
+        "zh": "Mountain View CLO XX 为一笔 4 亿美元杠杆贷款交易获得惠誉评级"
+      },
+      "summary": {
+        "en": "Mountain View CLO XX has secured Fitch ratings for a $400 million leveraged loan deal.",
+        "zh": "Mountain View CLO XX 为一笔 4 亿美元杠杆贷款交易获得惠誉评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWTV4MXpYSE9iRjN2dE1oNFZ3X3dpN2ZBUXRqcFFGa1lqM19kQmJXb1VaUWV4S19xYVM3bzllOG4tQXVEVDd0OGZPeTJnZFBlczVWRWJRenJITE8tUmIwU2o2b3VtVlIzTnZRT2xzSWtHaE54eVdxLWZYYzItY1ctS2wwSlVBQjNoU01Pa25ZV2tCeE1hYXdQNFBRTnM1WEk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Mountain View CLO XX secures Fitch ratings for $400 million leveraged loan deal",
+      "source_fingerprint": "17783dd56f7ea296db7f6f4d44b2e328f3e3e04529998c792089c15e24f35be2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7c02255f3cd178f42bbc37f2cf00d2ba2dbe0773fc82fa22ec33410484196732",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $400m CLO issuance and Fitch ratings activity feeds directly into tracked CLO/leveraged-loan strategy sub-sector conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:18:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWTV4MXpYSE9iRjN2dE1oNFZ3X3dpN2ZBUXRqcFFGa1lqM19kQmJXb1VaUWV4S19xYVM3bzllOG4tQXVEVDd0OGZPeTJnZFBlczVWRWJRenJITE8tUmIwU2o2b3VtVlIzTnZRT2xzSWtHaE54eVdxLWZYYzItY1ctS2wwSlVBQjNoU01Pa25ZV2tCeE1hYXdQNFBRTnM1WEk?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "f4954887f35f",
+      "date": "2026-10-01",
+      "published_at": "2026-09-30T18:13:12+00:00",
+      "headline": {
+        "en": "BofA Downgrades Fair Isaac on Potential Challenge to Mortgage Credit Scoring Dominance",
+        "zh": "美银下调Fair Isaac评级，称新的网格结构可能挑战其在抵押贷款信用评分领域的主导地位"
+      },
+      "summary": {
+        "en": "Bank of America downgraded Fair Isaac, saying its dominance in mortgage credit scoring could be challenged by a new grid structure.",
+        "zh": "美国银行下调Fair Isaac评级，称新的网格结构可能挑战其在抵押贷款信用评分领域的主导地位。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM0F6YnZxandXNnlqMHhmS0M3LVNwUXhidDV0eVFWWjd5MkdOX0ZxMWppU2hpeFRITWdVUlMxc0NfWjF1MW1TajBlcmh4Si1meXVCa0l1Y3pWUzBacDNDel9TczB1N1ByWTRxZE5LRV9mOF9vY25ncmhSNWxpY0phYXJCNHRrYzJlUXJwZ3BaU3dwaWw1SkpYTU5pd3g?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fair Isaac's Dominance in Mortgage Credit Scoring Could be Challenged by New Grid Structure, BofA Says in Downgrade",
+      "source_fingerprint": "6b8b0c3e2dfcb074c1e0bc48a9ae91fc8aaddf1930acadd08fb1d96238644f94",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "746c895338b1ffba6e2b365a1700f4bf27c93f3307ccc1bc2097564f41e51f15",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A potential competitive challenge to Fair Isaac's mortgage credit scoring model could affect credit scoring costs and underwriting practices across residential mortgage credit, a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:04+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM0F6YnZxandXNnlqMHhmS0M3LVNwUXhidDV0eVFWWjd5MkdOX0ZxMWppU2hpeFRITWdVUlMxc0NfWjF1MW1TajBlcmh4Si1meXVCa0l1Y3pWUzBacDNDel9TczB1N1ByWTRxZE5LRV9mOF9vY25ncmhSNWxpY0phYXJCNHRrYzJlUXJwZ3BaU3dwaWw1SkpYTU5pd3g?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    }
+  ]
+}

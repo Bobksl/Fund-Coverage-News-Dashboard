@@ -2,6 +2,161 @@
   "date": "2026-09-30",
   "items": [
     {
+      "id": "5dcb231b1f53",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:57:10+00:00",
+      "headline": {
+        "en": "Software business Calero obtains private credit loan to support refinancing",
+        "zh": "软件企业 Calero 获得私人信贷贷款以支持再融资"
+      },
+      "summary": {
+        "en": "Calero, a software business, has obtained a private credit loan to support a refinancing. No lender, loan size or terms were disclosed in the headline.",
+        "zh": "软件企业 Calero 获得一笔私人信贷贷款，用于支持再融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQjFaSW4zWmo2b0hfUS1ZQ3NuU1FpSTVYbzBmWWZ0aW9SeE9pdjRBOVBsYk94dzU0amkxUDR1dC1lc2RwX0pWbUNtend2aHk0Ym9FczZHUXYwWDliUWtQTU5scHhiUF9INFFvVmswU3B2UU9xRU1kd19LOVZXQkxvSnk1VXk1Nm9DS3pMWUZNV0tsZ3M?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Software business Calero obtains private credit loan to support refinancing",
+      "source_fingerprint": "3be708ec25b61cd4851707c9f7f3e1b442d594cff13cd0386b289b4fd7b4b8e8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ca740fa94763442850e74535f5b20642d2bd25d87fd7ba09aa24ecdeef22683c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new private credit loan financing for a software borrower signals continued software-sector direct lending activity relevant to private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:08+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQjFaSW4zWmo2b0hfUS1ZQ3NuU1FpSTVYbzBmWWZ0aW9SeE9pdjRBOVBsYk94dzU0amkxUDR1dC1lc2RwX0pWbUNtend2aHk0Ym9FczZHUXYwWDliUWtQTU5scHhiUF9INFFvVmswU3B2UU9xRU1kd19LOVZXQkxvSnk1VXk1Nm9DS3pMWUZNV0tsZ3M?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "02ee6bdb9e7e",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:57:10+00:00",
+      "headline": {
+        "en": "Software Business Calero Obtains Private Credit Loan for Refinancing",
+        "zh": "软件企业Calero获得私人信贷贷款以支持再融资"
+      },
+      "summary": {
+        "en": "Calero, a software business, has obtained a private credit loan to support a refinancing.",
+        "zh": "软件企业Calero已获得一笔私人信贷贷款，用于支持再融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNTZ3Vl9jTHNtU2xLSFZrVVBEcmF4OGVsRThraEVXdHRyamZqaU1iZjdvbjN4cUNaYk9td2ZrUlJBOU5QYWxWcWp5Z1VkRXlvWE1QdkY2ZXd2bXVqZkNxbXdmWEp1bEZvTnNpaFQ5VWJyY3V4Y0tvcTNibUo2M2Q5RG9LbWFJZllpenV2MEhoaS1pR1ZCOGxZMUxkYXY0dEFZbFFtYWZxbmQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Software business Calero obtains private credit loan to support refinancing",
+      "source_fingerprint": "3be708ec25b61cd4851707c9f7f3e1b442d594cff13cd0386b289b4fd7b4b8e8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ca740fa94763442850e74535f5b20642d2bd25d87fd7ba09aa24ecdeef22683c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new private credit loan for a software borrower indicates continued direct-lending deployment in the software sub-sector, affecting the financing environment for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:10+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNTZ3Vl9jTHNtU2xLSFZrVVBEcmF4OGVsRThraEVXdHRyamZqaU1iZjdvbjN4cUNaYk9td2ZrUlJBOU5QYWxWcWp5Z1VkRXlvWE1QdkY2ZXd2bXVqZkNxbXdmWEp1bEZvTnNpaFQ5VWJyY3V4Y0tvcTNibUo2M2Q5RG9LbWFJZllpenV2MEhoaS1pR1ZCOGxZMUxkYXY0dEFZbFFtYWZxbmQ?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "b40baa5974dc",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:28:03+00:00",
+      "headline": {
+        "en": "BoE warns private credit vulnerable to tightening financing conditions",
+        "zh": "英国央行警告私人信贷易受融资条件收紧冲击"
+      },
+      "summary": {
+        "en": "The Bank of England's Financial Policy Committee said risk-taking in private markets and risky credit remained elevated and that higher rates could raise debt-servicing pressure on leveraged borrowers, particularly in broadly syndicated loans and private credit. The BoE held rates at 3.75 per cent in September while the Federal Reserve hiked by 25 basis points, and the Bank is running a system-wide exploratory scenario stress exercise.",
+        "zh": "英国央行金融政策委员会表示，私人市场和风险信贷领域的风险承担仍处于高位，利率上升可能加大杠杆借款人的偿债压力，尤其是银团贷款和私人信贷领域。英国央行9月将利率维持在3.75%，而美联储加息25个基点，同时央行正在开展全系统探索性情景压力测试。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "clo"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/09/30/boe-warns-private-credit-vulnerable-to-rising-rates/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "BoE warns private credit vulnerable to rising rates",
+      "source_fingerprint": "2f4bd712aa489cc95e7a2f6c91667dff3f36fc8806483787715b3847dfd10c9b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 26,
+            "end": 115
+          },
+          "linkage": {
+            "start": 496,
+            "end": 578
+          }
+        },
+        "source_sha256": "da7b10a3be96513e06c16e73432ac27e06309943c85c7075db70ff87019d2480",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Regulatory warning on private credit's vulnerability to higher rates bears on risk and financing conditions for direct lending strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-01T05:19:13+00:00",
+        "sha256": "da7b10a3be96513e06c16e73432ac27e06309943c85c7075db70ff87019d2480",
+        "source_published_at": "2026-09-30T15:28:03+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/09/30/boe-warns-private-credit-vulnerable-to-rising-rates/"
+      },
+      "source_published_at": "2026-09-30T15:28:03+00:00",
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
       "id": "98478d49aa9b",
       "date": "2026-09-30",
       "published_at": "2026-09-30T14:35:06+00:00",
@@ -43,6 +198,97 @@
         "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRm9VbzBFMjBoZ2tBSWI2WllXQW1YazFvSWY1bUVhaDEza2tnXzduSjdvbjlLMloyZGZuVGdQQU84WEJObmRuMVVoRXdtMGw5Vlh3bllLaHhtdnczVkhSMFpzN01qOXZoWXItZ0FDMTRyZktvU1lNcDRaQmpNRzJLRG82VmVGN0QtTElfbHhmaEFnb3FBOGxxRmlSUTZBOElsQzhlZkhCX19Xekk?oc=5"
       },
       "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "aa2bc4821f76",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T14:30:00+00:00",
+      "headline": {
+        "en": "Australia's Metrics Credit Partners freezes some fund redemptions as KPMG declines to sign off on three listed funds",
+        "zh": "澳大利亚Metrics Credit Partners冻结部分基金赎回，KPMG拒绝为三只上市基金签字"
+      },
+      "summary": {
+        "en": "Metrics Credit Partners, which manages around A$40 billion, has temporarily suspended redemptions from unlisted funds that feed three listed vehicles and delayed their financial reports. KPMG would not sign off on full-year accounts for the Metrics Real Estate Multi-Strategy Fund, Metrics Income Opportunities Trust and Metrics Master Income Trust before the September 30 lodgement deadline, after Metrics wrote down their asset values. The three funds have been suspended from trading since Monday; ASIC said it is closely monitoring the private credit sector.",
+        "zh": "管理约400亿澳元的Metrics Credit Partners已暂时冻结向三只上市工具输送资金的非上市基金的赎回，并推迟发布财务报告。Metrics减记资产价值后，KPMG未能在9月30日申报截止日前为Metrics Real Estate Multi-Strategy Fund、Metrics Income Opportunities Trust和Metrics Master Income Trust的全年账目签字。这三只基金自周一起已停牌；澳大利亚证券投资委员会表示正密切关注私募信贷行业。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "dealstreetasia.com",
+        "url": "https://www.dealstreetasia.com/stories/metrics-freezes-fund-redemptions-496746"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia Metrics freezes some fund redemptions signalling private credit stress",
+      "source_fingerprint": "1c34cd0c50c9afb3d15935b55a9b80d4f979ae7ad639666959dcd29c28e8a4f2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f91d7410f9bb8b143a0bdad025e9b66d7688f3c81e8ba66c197d0aec4f4b3338",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption freezes and an auditor's refusal to sign off on three private credit funds signal sector-wide valuation and liquidity stress in Australian private credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-01T05:19:17+00:00",
+        "sha256": "5b0cc7ea109902c54ad9668668f40813d925af1b38bc2502961ed8a8ce865cce",
+        "source_published_at": "2026-09-30 16:04:27",
+        "final_url": "https://www.dealstreetasia.com/stories/metrics-freezes-fund-redemptions-496746"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-09-30 16:04:27",
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "64db7d8f4de5",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T14:15:00+00:00",
+      "headline": {
+        "en": "Private Credit Stocks Slide Even as Redemption Requests Fall to 13.1 Percent",
+        "zh": "私募信贷股下滑，尽管赎回请求降至13.1%"
+      },
+      "summary": {
+        "en": "A report questions why private credit stocks are sliding even as redemption requests fall to 13.1 percent. No companies, funds or further figures are identified in the supplied headline.",
+        "zh": "一篇报道提出疑问：在赎回请求降至13.1%的情况下，私募信贷股为何仍在下滑。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "kalkine.ca",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbTFSbDlYLTNoSlhGNjJYU0tYNjRINVdIUVZvRThUaXVMUmx4cXl0clhwWWFQdGl5X0p6NjRIM3N4Y3Z6ZWZTSW9jZHhyNzNWVkRObmJyNHJISi1ENVNqMmVtLWlabGRkY0xid3pMSEpiX0JZYnpTalgtT21MNFZTMVlMZU1kZ2kwSkpsVTFHbDNsdmlSbnpkTGNhbkpfLXhETWJSQ3hLek9namcyak5fd05zbTZ5TUtpd1JN?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Why Are Private Credit Stocks Sliding Even as Redemption Requests Fall to 13.1 Percent?",
+      "source_fingerprint": "f0797844def34d38dde3bf8fc14be9a9804adff5057e14599220695ab9230400",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "03970916775ad9ded03373a38cbac7d890639ddf7aaad67f1d5286f1f9700a95",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A headline on falling private credit stock prices alongside redemption requests of 13.1% bears directly on liquidity and valuation conditions for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:19+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbTFSbDlYLTNoSlhGNjJYU0tYNjRINVdIUVZvRThUaXVMUmx4cXl0clhwWWFQdGl5X0p6NjRIM3N4Y3Z6ZWZTSW9jZHhyNzNWVkRObmJyNHJISi1ENVNqMmVtLWlabGRkY0xid3pMSEpiX0JZYnpTalgtT21MNFZTMVlMZU1kZ2kwSkpsVTFHbDNsdmlSbnpkTGNhbkpfLXhETWJSQ3hLek9namcyak5fd05zbTZ5TUtpd1JN?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
     },
     {
       "id": "d01d0febcafe",
@@ -321,6 +567,49 @@
       "observed_at": "2026-09-30T14:46:03+00:00"
     },
     {
+      "id": "450bf828f944",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T08:38:14+00:00",
+      "headline": {
+        "en": "Goldman's $18.2bn private credit fund sees redemption requests fall to 2%",
+        "zh": "高盛182亿美元私人信贷基金赎回请求降至2%"
+      },
+      "summary": {
+        "en": "Goldman's $18.2bn private credit fund saw redemption requests fall to 2%.",
+        "zh": "高盛旗下182亿美元私人信贷基金的赎回请求降至2%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "privateequitywire.co.uk",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTlRUSFRzYmkyQzdjc1dNd2Y3d3V0WVhIOTZTR00zeUdCVFRVWEpDeTVZTTk2RXgzTXBkMHJfakl3TkNJZjFQQTdad2l4Ylh5cktVdnVNTW5YQ0dJblRSTnp2MXJ4eWd1MURuREJrRGpEV2Z5bHlLOUpkdUdQVFJ3Y2dLamJkc3hpb21wZnNEWkN2SVVfcUtrNVc4NXRyUWcwbFJ2QUxyeUt5Tms?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman’s $18.2bn private credit fund sees redemption requests fall to 2%",
+      "source_fingerprint": "0dc025f4ff05dfedda167ff05926fa16bc4ae756d847a1cc1c2602b59c6bd764",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "97ac39d3229f9ccc5b1efabcbe16a4b8f91c8753af0725cdd08dc817dee22777",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption request trend at a large private credit fund signals liquidity conditions for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:23+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTlRUSFRzYmkyQzdjc1dNd2Y3d3V0WVhIOTZTR00zeUdCVFRVWEpDeTVZTTk2RXgzTXBkMHJfakl3TkNJZjFQQTdad2l4Ylh5cktVdnVNTW5YQ0dJblRSTnp2MXJ4eWd1MURuREJrRGpEV2Z5bHlLOUpkdUdQVFJ3Y2dLamJkc3hpb21wZnNEWkN2SVVfcUtrNVc4NXRyUWcwbFJ2QUxyeUt5Tms?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
       "id": "6678bad4bf31",
       "date": "2026-09-30",
       "published_at": "2026-09-30T08:05:22+00:00",
@@ -369,6 +658,151 @@
         "final_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQXYwbVcxU2dPSG1vcWd5WWNMSG1fV0R3ajRTS1pac196OFFnQVFJWDNhNHg4WEdxazRfVE16TDJDcTFuVEVaT25KaEJkS0JUSUQ1VzVJN3ZrT08xXzBhQUl0b1UtLUZONlNBbERRaEU5N0RoNkZicFJnMk9OeHRhaWw4dGpIT0lwc1VmQVZEY2ViUGxJS2VzN3dSODRJSnhjT2dTalE3alc?oc=5"
       },
       "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "c30c5b1d54a3",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T08:00:00+00:00",
+      "headline": {
+        "en": "Metrics Credit Partners Freezes Redemptions as KPMG Refuses to Sign Off on Three Listed Funds",
+        "zh": "Metrics Credit Partners 冻结赎回，KPMG 拒绝签署三只上市基金账目"
+      },
+      "summary": {
+        "en": "Metrics Credit Partners, one of Australia's largest private credit firms, has frozen investor redemptions from some of its funds and delayed the release of its financial reports. The firm said auditor KPMG would not approve the full-year accounts for three listed funds ahead of the September 30 filing deadline. Metrics manages about 40 billion Australian dollars, roughly 28 billion US dollars.",
+        "zh": "澳大利亚最大私募信贷机构之一 Metrics Credit Partners 已冻结部分基金的投资者赎回，并推迟发布财务报告。该公司表示，审计机构 KPMG 不会在 9 月 30 日申报截止日期前批准三只上市基金的全年度账目。Metrics 管理约 400 亿澳元，约合 280 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "en.shafaqna.com",
+        "url": "https://en.shafaqna.com/481104/metrics-credit-partners-freezes-redemptions-private-credit-stress/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Metrics Credit Partners Freezes Redemptions: Private Credit Stress",
+      "source_fingerprint": "89e043798aec2194f0fe109b55370f4c0cf129f1bbd645cd3cd4a7edc7b39d49",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f5fc0ebc6a76ef7ec2e28f30f9ccda1ce43f4dd609c83c27eca61130dba47297",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption freeze and auditor refusal to sign accounts at an Australian private credit manager signal sector-wide liquidity and valuation stress relevant to credit investors.",
+      "event_identity": {
+        "subject": "metrics credit partners",
+        "action": "freezes redemptions and delays reports",
+        "object": "three listed funds",
+        "period": "september 30",
+        "numbers": [
+          "28 billion",
+          "30",
+          "40 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-01T05:19:26+00:00",
+        "sha256": "f5fc0ebc6a76ef7ec2e28f30f9ccda1ce43f4dd609c83c27eca61130dba47297",
+        "source_published_at": "2026-09-30T06:53:38+00:00",
+        "final_url": "https://en.shafaqna.com/481104/metrics-credit-partners-freezes-redemptions-private-credit-stress/"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-09-30T06:53:38+00:00",
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "6dce594c42b8",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T07:15:00+00:00",
+      "headline": {
+        "en": "Australia Metrics freezes some fund redemptions in sign of private credit market stress",
+        "zh": "Australia Metrics冻结部分基金赎回，显示私人信贷市场承压"
+      },
+      "summary": {
+        "en": "Australia Metrics froze redemptions on some of its funds. The move was described as a sign of stress in the private credit market.",
+        "zh": "Australia Metrics冻结了其部分基金的赎回。此举被描述为私人信贷市场承压的迹象。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "aol.com",
+        "url": "https://www.aol.com/articles/australias-metrics-freezes-fund-redemptions-053057000.html"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia Metrics freezes some fund redemptions in sign of private credit market stress",
+      "source_fingerprint": "87e3e97cb63db612020f381222f4590478df7c200c8f0f6696d025c13ec60e62",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "337fe906438c947c9acb012dfea2cada37d2b5131c20d2e269b447ba463633c0",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit fund freezing redemptions is a direct signal of liquidity stress in the sector even without a tracked manager named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "error",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:29+00:00",
+        "final_url": "https://www.aol.com/articles/australias-metrics-freezes-fund-redemptions-053057000.html"
+      },
+      "published_basis": "gdelt_seen",
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "5f088c9e7a8d",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T05:47:04+00:00",
+      "headline": {
+        "en": "Australia's Metrics freezes some fund redemptions in sign of private credit market stress",
+        "zh": "澳大利亚Metrics冻结部分基金赎回，显示私人信贷市场承压"
+      },
+      "summary": {
+        "en": "Australia's Metrics has frozen redemptions on some of its funds, according to a headline report. The move is described as a sign of stress in the private credit market.",
+        "zh": "据一则标题报道，澳大利亚Metrics已冻结部分基金的赎回。此举被描述为私人信贷市场承压的迹象。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Columbus Ledger-Enquirer",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OYXVUaldJVk1fMWkyRHJBZG5GdnhHZmZXLWdYX2QyWm9keldhQkhPWW5mdThUTFNyb2J4U01YZGU5M0p6VDdxRldPQmxfT21LbVVoNF9ET3NLRHV2bjlRUmp2Rmttc1NIeG4wSWUtUkNlaFZvckE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia's Metrics freezes some fund redemptions in sign of private credit market stress",
+      "source_fingerprint": "20f574697700602c39bc30b930e43645ae2dbf0c01a952346a17cb5e1174ca87",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d857f4aad2be4e551de2582dc039c4c2fd700ffeb0854d693fbb47b47cef4395",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit manager freezing fund redemptions signals liquidity stress in the direct lending sub-sector, a transmission channel to tracked managers with private credit exposure.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:31+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OYXVUaldJVk1fMWkyRHJBZG5GdnhHZmZXLWdYX2QyWm9keldhQkhPWW5mdThUTFNyb2J4U01YZGU5M0p6VDdxRldPQmxfT21LbVVoNF9ET3NLRHV2bjlRUmp2Rmttc1NIeG4wSWUtUkNlaFZvckE?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
     },
     {
       "id": "195a421eb33b",
@@ -550,6 +984,92 @@
       "observed_at": "2026-09-30T14:46:03+00:00"
     },
     {
+      "id": "4ff4f5c8c1f8",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T03:43:00+00:00",
+      "headline": {
+        "en": "Australian Private Credit Giant Halts Withdrawals as Concerns Grow in $1.8 Trillion Industry",
+        "zh": "澳大利亚私人信贷巨头暂停赎回，1.8万亿美元行业担忧加剧"
+      },
+      "summary": {
+        "en": "An Australian private credit firm has halted withdrawals amid growing concerns in the $1.8 trillion private credit industry, according to a headline report. No firm, fund or figure beyond the industry total was disclosed.",
+        "zh": "据一篇标题报道，一家澳大利亚私人信贷公司已暂停赎回，1.8万亿美元私人信贷行业的担忧正在加剧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVmpXZmlJQ1VPekRnLUlCTm5qUE5fU3FvU09mUklCREpNYV8xWjI1LWN1MnJmZXdySWhSZ0dRVHFWSEEwb1YwVlZGVEVMWnBwNjRWLVFMLXk3czJvVW1OYzJ0aWVNRFZzSUJiQXVhNU9abGpwLUxMZHNTNWx2aHIyYVhqMC1UZF9JT19RX1RXaDJKSl9XcXF2aHhGbmxueE5jSmh4bg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australian Private Credit Giant Halts Withdrawals as Concerns Grow in $1.8 Trillion Industry",
+      "source_fingerprint": "9584cf14c450644a6900509a230b1e309e157c02de629ed8af8a215c4fe65676",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e944fe2b0652d6f320f85cd05da36d09c455ba4ad445bdfc7b50916e2a5d45be",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit vehicle halting withdrawals signals liquidity stress in private credit, a sector tracked via managers like Blue Owl and Apollo.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:33+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVmpXZmlJQ1VPekRnLUlCTm5qUE5fU3FvU09mUklCREpNYV8xWjI1LWN1MnJmZXdySWhSZ0dRVHFWSEEwb1YwVlZGVEVMWnBwNjRWLVFMLXk3czJvVW1OYzJ0aWVNRFZzSUJiQXVhNU9abGpwLUxMZHNTNWx2aHIyYVhqMC1UZF9JT19RX1RXaDJKSl9XcXF2aHhGbmxueE5jSmh4bg?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "ce75c7a08b04",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T03:40:00+00:00",
+      "headline": {
+        "en": "Goldman Sachs: Private credit withdrawal demand falls",
+        "zh": "高盛：私人信贷赎回需求下降"
+      },
+      "summary": {
+        "en": "Goldman Sachs reported that withdrawal demand in private credit has fallen.",
+        "zh": "高盛报告称，私人信贷的赎回需求有所下降。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "IDNFinancials",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObWtrc04zbUNKb01sR1g1NlZxa3lBdXEyTXhfUWYyN3ZsNWhnSFZjOGk1ejh5QTlPYTJ5NVZsUm9YTEdpQTJfdWROUXlhaVhXcnFhcXFkdTZRd0YzNmkwdWtLNGMzckd4VHhneFlMTDdRYng4bk9OQlV3QjJfSVZTcjZ5RlBqRGM5Tng3MXI1UWJSX24zLWlRWg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman Sachs: Private credit withdrawal demand falls",
+      "source_fingerprint": "1c555d248f75d0c1aea49e58dbe8c73e392bc86806326f360144ecff579d0880",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e90b259493f024ef400c091ba04d3c415bf1d158f26be2081c087c0c7fac09b2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Goldman Sachs reports falling private credit withdrawal demand, a sector-level liquidity signal relevant to private credit managers' fundraising and redemption conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObWtrc04zbUNKb01sR1g1NlZxa3lBdXEyTXhfUWYyN3ZsNWhnSFZjOGk1ejh5QTlPYTJ5NVZsUm9YTEdpQTJfdWROUXlhaVhXcnFhcXFkdTZRd0YzNmkwdWtLNGMzckd4VHhneFlMTDdRYng4bk9OQlV3QjJfSVZTcjZ5RlBqRGM5Tng3MXI1UWJSX24zLWlRWg?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
       "id": "ce0c041ef6c3",
       "date": "2026-09-30",
       "published_at": "2026-09-30T01:35:00+00:00",
@@ -720,6 +1240,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBCbnFIejRYWkg4U1lDS25hZG5NY09XZVBtNnJhRXc2TGowazU0MmpCbGZ2dDRtQTRmNmloeTEwVGtHQU9rX0pzWEZaTmZSMFNEVGhaWUhzYktFdmxaSzAwY2RuQjgyLXBPQi02b1RXdC0wOHNI?oc=5"
       },
       "observed_at": "2026-09-30T14:46:03+00:00"
+    },
+    {
+      "id": "be90a04f0d92",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T22:50:04+00:00",
+      "headline": {
+        "en": "Goldman private credit fund defies industry elevated withdrawal trend again yet again",
+        "zh": "Goldman私人信贷基金再次逆行业高赎回趋势而行"
+      },
+      "summary": {
+        "en": "A Goldman private credit fund again defied an industry trend of elevated withdrawals, according to a headline.",
+        "zh": "据一则标题报道，一只Goldman私人信贷基金再次逆行业高赎回趋势而行。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Macon Telegraph",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZVEFSNUV3VV91aVQwWG9sdDZ5c2tjMThzemJESDBUSVEteGVjb2VjODdQRjJCZjlBVV90X2F3aXhYUzVGT1g4cWp3d2pXbWt2b0FrdGNVLTlBTHhkQTBZYWk2TUdkT3pa?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman private credit fund defies industry elevated withdrawal trend again yet again",
+      "source_fingerprint": "eb9e2e54a12fafa064fe449b6ee8846ef4924f367c430afd16d9f2ff84080490",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "386d8253484eec9ea0ae8d953298872cdbbf14c1ffdd354efac34eedd1037455",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit fund's withdrawal behavior is a direct read on redemption pressure in the private credit sub-sector even without a tracked manager named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-01T05:19:39+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZVEFSNUV3VV91aVQwWG9sdDZ5c2tjMThzemJESDBUSVEteGVjb2VjODdQRjJCZjlBVV90X2F3aXhYUzVGT1g4cWp3d2pXbWt2b0FrdGNVLTlBTHhkQTBZYWk2TUdkT3pa?oc=5"
+      },
+      "observed_at": "2026-10-01T05:16:05+00:00"
     },
     {
       "id": "9c6aed3ab7ac",
