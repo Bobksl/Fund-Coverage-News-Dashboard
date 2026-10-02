@@ -2,6 +2,667 @@
   "date": "2026-10-02",
   "items": [
     {
+      "id": "feecdb04db8a",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T14:12:00+00:00",
+      "headline": {
+        "en": "Two Blue Owl Private Credit Funds See Redemption Requests Well Above 5%",
+        "zh": "两只Blue Owl私募信贷基金收到的赎回请求远超5%"
+      },
+      "summary": {
+        "en": "Two Blue Owl private credit funds received redemption requests well above 5%, according to a WSJ headline.",
+        "zh": "据《华尔街日报》一则标题，两只Blue Owl私募信贷基金收到的赎回请求远超5%。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYTFjMXduVmIzSFdZT2hlRHY5TUo4VXZKYlVzUlRWbUVOWmtnaFRyUGc4bndWX3RFNlRZYnJTZkNhSTRkc0wyZ2d3b3Y3OF9wQTJUMk92dVpiQjRDMlcxejZkYXVyY2tZbDVqeFg4Sml2QWI2b2s2WXJEWnlYdVdjeTVQQm0yS2QtOHFZMFY3VXNhdnl1di1MWHhHNTc1WXlWMUp4bFROQ3E2YV96YTFoY0NQenZaU0FE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Two Blue Owl Private Credit Funds See Redemption Requests Well Above 5%",
+      "source_fingerprint": "347ef11cd56c29f92c15b2c534f0a9fe887bae56f98559d56631ac0ae1fb5a43",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d0a325d03b42ab4b44f551d79804f250fd93440e6743c4e3918cd9368c6997da",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption requests above the typical 5% cap at two Blue Owl private credit funds could signal liquidity pressure and affect views on the manager and private credit strategy.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:37:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYTFjMXduVmIzSFdZT2hlRHY5TUo4VXZKYlVzUlRWbUVOWmtnaFRyUGc4bndWX3RFNlRZYnJTZkNhSTRkc0wyZ2d3b3Y3OF9wQTJUMk92dVpiQjRDMlcxejZkYXVyY2tZbDVqeFg4Sml2QWI2b2s2WXJEWnlYdVdjeTVQQm0yS2QtOHFZMFY3VXNhdnl1di1MWHhHNTc1WXlWMUp4bFROQ3E2YV96YTFoY0NQenZaU0FE?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "00dbee8c111c",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T13:11:38+00:00",
+      "headline": {
+        "en": "Blue Owl flagship fund withdrawal requests slow as private credit turmoil eases",
+        "zh": "私人信贷动荡缓解，Blue Owl旗舰基金赎回请求放缓"
+      },
+      "summary": {
+        "en": "Blue Owl's flagship fund saw withdrawal requests slow as private credit turmoil eased, according to a headline report.",
+        "zh": "据一篇标题报道，随着私人信贷动荡缓解，Blue Owl旗舰基金的赎回请求放缓。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "kelo.com",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQd1RsTmxuXzJOdmV3T05QZDI3Wjc1VGRwc0g4cnZoSHV4Q2FDUUlxVk9vWWQ3am5Od2hjZEVldHFjYTBEN2VUbENPQkEtbW9rTTFUQW82Nkt0RzhpWmRyVGxnS1dYMTJhdXJjdkt5c00zcUZsTVJiRW1xNE9OdTRYdVphaVZpZ3dDazlOVHRmYVVNeTBQQTFFTlNLaVdPdFZpQnhkUVVpZDVNM09i?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl flagship fund withdrawal requests slow as private credit turmoil eases",
+      "source_fingerprint": "b1894860d3fb9a1a6aafcae6947150f86b9da7196b568805c9a019ddd86ea50e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "320f4cf27857e7e03a8d2159cebb2639fff8d73f50be57dac2f82a7e0757f20a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure at a tracked manager's flagship private credit fund bears directly on liquidity and fundraising conditions for the strategy.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:01+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQd1RsTmxuXzJOdmV3T05QZDI3Wjc1VGRwc0g4cnZoSHV4Q2FDUUlxVk9vWWQ3am5Od2hjZEVldHFjYTBEN2VUbENPQkEtbW9rTTFUQW82Nkt0RzhpWmRyVGxnS1dYMTJhdXJjdkt5c00zcUZsTVJiRW1xNE9OdTRYdVphaVZpZ3dDazlOVHRmYVVNeTBQQTFFTlNLaVdPdFZpQnhkUVVpZDVNM09i?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "3b9b1677cc06",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T12:55:30+00:00",
+      "headline": {
+        "en": "Blue Owl private credit funds see withdrawal requests ease in third quarter",
+        "zh": "Blue Owl 私募信贷基金第三季度赎回请求放缓"
+      },
+      "summary": {
+        "en": "Blue Owl's private credit funds saw withdrawal requests ease in the third quarter, according to a headline report.",
+        "zh": "据一则标题报道，Blue Owl 的私募信贷基金第三季度赎回请求有所放缓。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQ2k0SWJ3RVFQakotbG0zMHByT2tzcFhlekZxcEpuQTNwSGE2dWRUS3pSV3pzaVJ1MkhITHNFVzlFNnQ5enZmeW1LbW5jZzBrbW43VGE3d1g2RVRwVWh1MExIZWdXTk9zZnNKMVI4cG9JWWdVNUU3b01VcTNzWTQtLTE3S3lRWDNsMGZ1bVJNUUlWTGxWS0FDUGZmMmI5T3NQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl private credit funds see withdrawal requests ease in third quarter",
+      "source_fingerprint": "544ab3a8f7f6aafecca2a31bf952e4efd28bfcf42ee3b1886d0cc978208cc5b0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bf48e8f8b5af751dcdfd0d0330b965be527a5cba8cb7ad9e409dc66ba0d1b6f5",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Directly concerns redemption pressure at a tracked private credit manager, a key liquidity signal for the sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:03+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQ2k0SWJ3RVFQakotbG0zMHByT2tzcFhlekZxcEpuQTNwSGE2dWRUS3pSV3pzaVJ1MkhITHNFVzlFNnQ5enZmeW1LbW5jZzBrbW43VGE3d1g2RVRwVWh1MExIZWdXTk9zZnNKMVI4cG9JWWdVNUU3b01VcTNzWTQtLTE3S3lRWDNsMGZ1bVJNUUlWTGxWS0FDUGZmMmI5T3NQ?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "483c5fba9ddc",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T12:41:43+00:00",
+      "headline": {
+        "en": "Blue Owl flagship fund withdrawal requests slow as private credit turmoil eases",
+        "zh": "随着私人信贷动荡缓解，Blue Owl 旗舰基金的赎回请求放缓"
+      },
+      "summary": {
+        "en": "Blue Owl's flagship fund saw withdrawal requests slow as turmoil in private credit eased, according to the headline.",
+        "zh": "据标题消息，随着私人信贷市场的动荡缓解，Blue Owl 旗舰基金的赎回请求有所放缓。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMUlBeEJPRzRGMUNUWWFBRWpJVzRKNU5zVHI2aDRKN1hIYWxRbE5YSDNFbHd1aHFnOC13SEVYZnhTM0g5TEJYQnd6NjZJOUtCVWFtcVp5UkVkMlM3WHJpcUxXcTJOaHdFNnBTbDNEZGpXVWJFNnNma09kaHU5VzRTYWZwX0JNdGF3RlZpU1dUR0k2a2laeGQwa0ZvYTlWUEN5Wl9MdTNQdEZfSkExRVJDeFlFb0FPLUc2YkR0ZHFmY3BPS2pnVkZORWoyNnY?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl flagship fund withdrawal requests slow as private credit turmoil eases",
+      "source_fingerprint": "b1894860d3fb9a1a6aafcae6947150f86b9da7196b568805c9a019ddd86ea50e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "320f4cf27857e7e03a8d2159cebb2639fff8d73f50be57dac2f82a7e0757f20a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption demand shift at a Blue Owl flagship fund bears directly on private credit liquidity and vehicle-level credit conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:05+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMUlBeEJPRzRGMUNUWWFBRWpJVzRKNU5zVHI2aDRKN1hIYWxRbE5YSDNFbHd1aHFnOC13SEVYZnhTM0g5TEJYQnd6NjZJOUtCVWFtcVp5UkVkMlM3WHJpcUxXcTJOaHdFNnBTbDNEZGpXVWJFNnNma09kaHU5VzRTYWZwX0JNdGF3RlZpU1dUR0k2a2laeGQwa0ZvYTlWUEN5Wl9MdTNQdEZfSkExRVJDeFlFb0FPLUc2YkR0ZHFmY3BPS2pnVkZORWoyNnY?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "758a2127404d",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T12:38:20+00:00",
+      "headline": {
+        "en": "Blue Owl Again Caps Two BDCs After 39%, 17% Withdrawal Requests",
+        "zh": "Blue Owl在两支BDC收到39%和17%的赎回请求后再次限制赎回"
+      },
+      "summary": {
+        "en": "Blue Owl again capped withdrawals at two BDCs after the vehicles received withdrawal requests of 39% and 17%.",
+        "zh": "Blue Owl在两支BDC收到39%和17%的赎回请求后再次对这些基金实施赎回限制。"
+      },
+      "gps": [
+        "blue_owl",
+        "otf"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUUdmamxEUUVXS0FZbUlWY3htX0p4cm50R29KSnI2eW9COGNsVjI5TzI5SEdZNGQzaDdodXZrSEJ4UFVGU0xXWW91d193TS1MOWEyR3hRdGZCTFNZQXJFTDd0aXZvYW5NZmRKd3BaSEdpZ0FjVkh2eThUc2ZVQWdDYjR4dGJyU3lScGhlNWx6clJaeE1IckpqQ1laU19mX0twQU9fS2pXXy1EU3lEeWpGdA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Again Caps Two BDCs After 39%, 17% Withdrawal Requests",
+      "source_fingerprint": "4c21f9bd39e043ad78df4dc099fa54f24d3e9a962cc64587f635d7df402c4005",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "262f680db14d631ec3895c38cadcab6f2df8880054630c4c5cb31c7c959f1116",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Repeated withdrawal caps at two Blue Owl BDCs signal redemption pressure on a tracked manager's permanent-capital vehicles.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUUdmamxEUUVXS0FZbUlWY3htX0p4cm50R29KSnI2eW9COGNsVjI5TzI5SEdZNGQzaDdodXZrSEJ4UFVGU0xXWW91d193TS1MOWEyR3hRdGZCTFNZQXJFTDd0aXZvYW5NZmRKd3BaSEdpZ0FjVkh2eThUc2ZVQWdDYjR4dGJyU3lScGhlNWx6clJaeE1IckpqQ1laU19mX0twQU9fS2pXXy1EU3lEeWpGdA?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "f12a4d1c8209",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T12:35:40+00:00",
+      "headline": {
+        "en": "Blue Owl flagship fund withdrawal requests slow as private credit turmoil eases",
+        "zh": "随着私人信贷动荡缓解，Blue Owl旗舰基金赎回请求放缓"
+      },
+      "summary": {
+        "en": "Blue Owl's flagship fund saw withdrawal requests slow as private credit turmoil eased, according to a headline report.",
+        "zh": "据一则标题报道，随着私人信贷动荡缓解，Blue Owl旗舰基金的赎回请求有所放缓。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMjdtX056ZGFfQWxsWlEzbDJXS0ZickpCcmZXb3VoN0p5OVR6ajdsOGt1WWxPMVAtR0lwUFIyTlBtLXpaemdVMlhacFpUeVNNenFNcHYtc01fX3dMcmt1bFZUU181OGttd3RSdkNyRnFkWWVfZ09yMVZHX0kyY2drbng4UWVhQ19RU3pITHVHMGhFVTBhZHV4WmVNbEpNQUxmc2JfWk92TnE4NXgySFRtTk5NZ3d1R09HZEpjMzgtVGN4WGlqeGpmMW4zdE8?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl flagship fund withdrawal requests slow as private credit turmoil eases",
+      "source_fingerprint": "b1894860d3fb9a1a6aafcae6947150f86b9da7196b568805c9a019ddd86ea50e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "320f4cf27857e7e03a8d2159cebb2639fff8d73f50be57dac2f82a7e0757f20a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption pressure easing at a tracked manager's flagship fund bears on liquidity and fundraising conditions for private credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMjdtX056ZGFfQWxsWlEzbDJXS0ZickpCcmZXb3VoN0p5OVR6ajdsOGt1WWxPMVAtR0lwUFIyTlBtLXpaemdVMlhacFpUeVNNenFNcHYtc01fX3dMcmt1bFZUU181OGttd3RSdkNyRnFkWWVfZ09yMVZHX0kyY2drbng4UWVhQ19RU3pITHVHMGhFVTBhZHV4WmVNbEpNQUxmc2JfWk92TnE4NXgySFRtTk5NZ3d1R09HZEpjMzgtVGN4WGlqeGpmMW4zdE8?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "291312fa6f19",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T12:30:10+00:00",
+      "headline": {
+        "en": "Blue Owl Credit Income Corp. sees $3.1bn third-quarter repurchase requests",
+        "zh": "Blue Owl Credit Income Corp. 第三季度回购请求达 31 亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl Credit Income Corp.'s third-quarter repurchase window closed September 30, 2026 with an estimated $3.1 billion of requests, or 16.8% of shares outstanding as of June 30, 2026, down from $3.6 billion in the prior quarter and $4.2 billion in the first quarter. OCIC will fulfil its 5% tender offer pro rata, roughly 30% of shares tendered, and says it will have provided $2.8 billion of liquidity within six months.",
+        "zh": "Blue Owl Credit Income Corp. 第三季度回购窗口于 2026 年 9 月 30 日关闭，估计收到 31 亿美元回购请求，占截至 2026 年 6 月 30 日流通股的 16.8%，低于上一季度的 36 亿美元和第一季度的 42 亿美元。OCIC 将按比例履行 5% 的要约回购，约为投标股份的 30%，并表示将在六个月内提供 28 亿美元的流动性。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Credit Income Corp.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/0001193125-26-411315-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Credit Income Corp. files 8-K: items 7.01 and 9.01",
+      "source_fingerprint": "014c23df952de293a007cff4dfec27608e617f2c6ee693205031f40be479c198",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 380,
+            "end": 518
+          },
+          "linkage": {
+            "start": 854,
+            "end": 956
+          },
+          "current_adverse": {
+            "start": 1106,
+            "end": 1191
+          }
+        },
+        "source_sha256": "cf0621fdf29648f7757cd4d3641c208237572b042255e3e00e315411093cfca3",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "OCIC faces large but declining repurchase demand, capping the tender at 5% of shares and paying out $2.8bn over six months, an incremental liquidity strain for a tracked manager's vehicle.",
+          "zh": "OCIC 面临规模较大但持续下降的回购需求，将回购上限设为股份的 5%，并在六个月内支付 28 亿美元，这对受跟踪管理人旗下工具构成增量流动性压力。"
+        }
+      },
+      "relevance_reason": "Blue Owl's perpetual BDC OCIC reports $3.1bn Q3 repurchase requests with 5% tender proration and $2.8bn liquidity paid in six months, signalling persistent redemption pressure on a tracked manager vehicle.",
+      "event_identity": {
+        "subject": "ocic",
+        "action": "repurchase request",
+        "object": "5% tender offer",
+        "period": "third-quarter",
+        "numbers": [
+          "$0.0701",
+          "$2.8 billion",
+          "$3.1 billion",
+          "$3.6 billion",
+          "$4.2 billion",
+          "0.2%",
+          "1",
+          "11",
+          "15",
+          "16.8%",
+          "18.8%",
+          "2",
+          "2,6",
+          "2,7,8,9",
+          "2021",
+          "2023",
+          "2026",
+          "2026.1,4",
+          "2026.10",
+          "21.9%",
+          "3",
+          "30",
+          "30%",
+          "31",
+          "4.0%",
+          "5",
+          "5%",
+          "60%",
+          "7.01",
+          "8",
+          "9.01",
+          "9.2%",
+          "90%",
+          "90,000"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T14:37:53+00:00",
+        "sha256": "cf0621fdf29648f7757cd4d3641c208237572b042255e3e00e315411093cfca3",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/d136475dex991.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "559d120ee81d",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T12:30:10+00:00",
+      "headline": {
+        "en": "Blue Owl Technology Income Corp. posts 2.1% quarter-to-date return, 9.2% distribution rate",
+        "zh": "Blue Owl Technology Income Corp. 本季迄今回报2.1%，分配率9.2%"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Income Corp. reported a 2.1% quarter-to-date total return for Class I shareholders as of August 31, 2026, and a 9.0% annualized total return since inception in May 2022. The fund said it has paid monthly base distributions of $0.07478 per share since November 2022, declared through November 2026. It reported 91% of the portfolio in senior secured loans and non-accruals at 0.3% of fair value as of June 30, 2026.",
+        "zh": "Blue Owl Technology Income Corp. 公布，截至2026年8月31日，I类份额本季迄今总回报为2.1%，自2022年5月成立以来年化总回报为9.0%。该基金表示，自2022年11月以来每月派发基础分配每股0.07478美元，董事会已宣布派发至2026年11月。该基金称，截至2026年6月30日，投资组合中91%为优先担保贷款，非应计项目占公允价值的0.3%。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Technology Income Corp.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1869453/000119312526411314/0001193125-26-411314-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Technology Income Corp. files 8-K: items 7.01 and 9.01",
+      "source_fingerprint": "76920ee2a1191a9f65549aa15cb7135cc94377fb1760624b3749f8f4301e0890",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "866eff1187d64029705811e2ccc7862fb48620dcfd00d38d87e1eced63b91e49",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "Shareholder update from a tracked Blue Owl non-traded BDC discloses portfolio metrics, distribution rate and credit quality relevant to private credit strategy performance.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T14:37:56+00:00",
+        "sha256": "866eff1187d64029705811e2ccc7862fb48620dcfd00d38d87e1eced63b91e49",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1869453/000119312526411314/d135805dex991.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "a7efc1ffa3e9",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T11:11:14+00:00",
+      "headline": {
+        "en": "HanseMerkur Grundvermögen launches sixth real estate debt fund with €500m target",
+        "zh": "HanseMerkur Grundvermögen 推出第六只房地产债务基金，目标规模5亿欧元"
+      },
+      "summary": {
+        "en": "HanseMerkur Grundvermögen, the real estate asset manager of insurer HanseMerkur, has launched its sixth private real estate debt fund, targeting up to €500m. The fund will provide senior secured whole loans and senior loans for existing properties in Germany, Austria and Switzerland, and has already issued a €40m green loan to refinance the Holiday Inn Express Düsseldorf Airport. HanseMerkur Insurance Group will hold a permanent 20 to 30 per cent stake in the portfolio.",
+        "zh": "保险公司 HanseMerkur 旗下的房地产资产管理公司 HanseMerkur Grundvermögen 已推出第六只私人房地产债务基金，目标规模最高5亿欧元。该基金将为德国、奥地利和瑞士的现有物业提供优先级担保整体贷款和优先级贷款，并已完成首笔融资，即4000万欧元绿色贷款，用于再融资杜塞尔多夫机场假日快捷酒店。HanseMerkur 保险集团将在这两个基金的组合中永久持有20%至30%的份额。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit",
+        "mortgage"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/02/hansemerkur-launches-sixth-re-debt-fund/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "HanseMerkur launches sixth RE debt fund",
+      "source_fingerprint": "fa90c8fcceacdc38799ec842afdb83e6aa28a42a770bbe069987a54ca2dc4831",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "82eeb877f6b01bd0abf1afbc63fd78ef46f4da1bcfff19903fd3a38cbd93de1c",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "New European real estate debt fund launch with a €500m target adds private credit deployment capacity in a tracked sub-sector, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T14:38:12+00:00",
+        "sha256": "82eeb877f6b01bd0abf1afbc63fd78ef46f4da1bcfff19903fd3a38cbd93de1c",
+        "source_published_at": "2026-10-02T11:11:14+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/02/hansemerkur-launches-sixth-re-debt-fund/"
+      },
+      "source_published_at": "2026-10-02T11:11:14+00:00",
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "0a5057f296f0",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T10:53:20+00:00",
+      "headline": {
+        "en": "SEC Urges Greater Rigor in Private Credit Valuations",
+        "zh": "SEC 敦促私募信贷估值更加严谨"
+      },
+      "summary": {
+        "en": "The SEC urged greater rigor in private credit valuations, according to a headline from connectmoney.com. Only the headline was available, with no details on the specific measures or firms involved.",
+        "zh": "据 connectmoney.com 的一则标题，SEC 敦促私募信贷估值更加严谨。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "connectmoney.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWludkNPOFN2SzhuUjFnbm0taDBVSFhkM3h6MlY0c1pYclRtaUVGY1EtZzZpb2kzbTlhZUFpeHZBdWppMnZya1NIbktzY0F3SGl6a2dTc0JwVWg3U05nd0VHMnhieWUxZTBpU0VWb294R0NjeWlBUTRpVzZFMmVmbW5IVDFyMTZURGZUNmxzUW9OZWlT?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC Urges Greater Rigor in Private Credit Valuations",
+      "source_fingerprint": "c8d8df9f943953e0376392b30817590062390d973f732ac1becad9fdfb443e3b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "0d193bd99f4a68cf5a2db0282b5a2e0a54d991955e582db2bbab6a559f8fda8a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "The SEC calling for greater scrutiny of private credit valuations could affect valuation and liquidity conditions across the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:15+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWludkNPOFN2SzhuUjFnbm0taDBVSFhkM3h6MlY0c1pYclRtaUVGY1EtZzZpb2kzbTlhZUFpeHZBdWppMnZya1NIbktzY0F3SGl6a2dTc0JwVWg3U05nd0VHMnhieWUxZTBpU0VWb294R0NjeWlBUTRpVzZFMmVmbW5IVDFyMTZURGZUNmxzUW9OZWlT?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "7222dddf4ca6",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T10:25:12+00:00",
+      "headline": {
+        "en": "Oaktree raises $2bn for debut asset-backed finance fund as Brookfield platform passes $60bn",
+        "zh": "Oaktree 为首只资产支持融资基金募资 20 亿美元，Brookfield 平台规模突破 600 亿美元"
+      },
+      "summary": {
+        "en": "Oaktree has raised $2bn for its debut asset-backed finance fund, according to a headline from AltAssets. The same headline states that Brookfield's asset-backed finance platform has passed $60bn.",
+        "zh": "据 AltAssets 一则标题，Oaktree 已为其首只资产支持融资基金募集 20 亿美元。同一标题称，Brookfield 的资产支持融资平台规模已突破 600 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "AltAssets Private Equity News",
+        "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxQRXZ3QlE4UFVjWUx5aVZHMGJLbjdEX3pLZkRmOU1fYnl0S0F6UjZnOGlneGFJNklKUk5zcGV5Tm9TVzV6X0xxbkVwc3lPaW5RNjVKM1RUZ2pzbnBxd3o4R190Y3lBclVtMFJlVWtERURLYmtOWWFCSEQ3VS00d01xbktIZUZJZHRMcUdjdl9Xc1RZT3JiQUN6SHdFdDJzRjdNTUgtQzhTZW95d0NqYUxlMUt2SHMxbUJYUG5UY1oyb185MGhLbHVwSDF1d19fRFd4R1B2ckw2NmNrQlRteHF1UEdaMnowZTlxb2ZIemNvU0pleXotYnM1azBXRUtucjVHQVg4T0ZwNE1CLXlWVkxyZkd6WmoxLUZ4UGtkQXNaLTk3T0ZGcnYxakk5cll0VXg0WTV6Y2FiYw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree raises $2bn for debut asset-backed finance fund as Brookfield platform passes $60bn",
+      "source_fingerprint": "3650b345d1d8d031ac61f06b59497f9aceaafa2cff74d817ad56f2e8126fabe9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "37da06a2ea162dd58998cea9c1727b913d508a94a27288174769cbefebd3e1e8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Oaktree's debut asset-backed finance fund and Brookfield's $60bn platform signal continued capital formation in asset-backed lending, a sub-sector tracked managers compete in.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:17+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxQRXZ3QlE4UFVjWUx5aVZHMGJLbjdEX3pLZkRmOU1fYnl0S0F6UjZnOGlneGFJNklKUk5zcGV5Tm9TVzV6X0xxbkVwc3lPaW5RNjVKM1RUZ2pzbnBxd3o4R190Y3lBclVtMFJlVWtERURLYmtOWWFCSEQ3VS00d01xbktIZUZJZHRMcUdjdl9Xc1RZT3JiQUN6SHdFdDJzRjdNTUgtQzhTZW95d0NqYUxlMUt2SHMxbUJYUG5UY1oyb185MGhLbHVwSDF1d19fRFd4R1B2ckw2NmNrQlRteHF1UEdaMnowZTlxb2ZIemNvU0pleXotYnM1azBXRUtucjVHQVg4T0ZwNE1CLXlWVkxyZkd6WmoxLUZ4UGtkQXNaLTk3T0ZGcnYxakk5cll0VXg0WTV6Y2FiYw?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "a1fe854192f6",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T10:24:00+00:00",
+      "headline": {
+        "en": "Oaktree Closes Inaugural Asset-Backed Finance Fund at $2B",
+        "zh": "Oaktree 完成首只资产支持金融基金募集，规模 20 亿美元"
+      },
+      "summary": {
+        "en": "Oaktree closed its inaugural asset-backed finance fund at $2 billion.",
+        "zh": "Oaktree 完成其首只资产支持金融基金的募集，规模为 20 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "MonitorDaily",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd2dMZW4xallsSzQwdTh2SWt3X01KX19mYV8yalI1RjlNNWVYNUtwb0NDdDByel91bnNjRV9pNHBSN2FxVmRIS042UE1rRFlDU3MzdlkzbmpCdUhoV0x2N0xBTTJGeFowemVzWXZ3N291cmVfM2V2QkdXVTBrVUNrT1NIRVd2Q2VnRFNNd0RZYw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree Closes Inaugural Asset-Backed Finance Fund at $2B",
+      "source_fingerprint": "e6c02cd53cc841a3995d5e6a9272278c2597e09f523dfaa4b5fc8dd94e3dc236",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "06e5895fa0ae187e5d52ec76ab5e07f6ca3dca8b061659b8472b4ce6abc08b81",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $2bn asset-backed finance fund close signals capital formation and competitive capacity in the asset-based lending sub-sector.",
+      "event_identity": {
+        "subject": "oaktree",
+        "action": "closes",
+        "object": "inaugural asset-backed finance fund",
+        "period": "$2b",
+        "numbers": [
+          "$2"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd2dMZW4xallsSzQwdTh2SWt3X01KX19mYV8yalI1RjlNNWVYNUtwb0NDdDByel91bnNjRV9pNHBSN2FxVmRIS042UE1rRFlDU3MzdlkzbmpCdUhoV0x2N0xBTTJGeFowemVzWXZ3N291cmVfM2V2QkdXVTBrVUNrT1NIRVd2Q2VnRFNNd0RZYw?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
+      "id": "e3dfbfbc8156",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T07:47:23+00:00",
+      "headline": {
+        "en": "Rising rates prompt non-QM issuers to slash loan purchase prices",
+        "zh": "利率上升促使非QM发行人大幅下调贷款购买价格"
+      },
+      "summary": {
+        "en": "Non-QM issuers have cut loan purchase prices in response to rising rates, according to a headline from Green Street News.",
+        "zh": "据Green Street News的一则标题，利率上升促使非QM发行人大幅下调贷款购买价格。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Green Street News",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOG02NmFGcXlPX0IwRDVTWW83cm9ldHI5cjBkdkExQ3h3N0ZBbmY5Y29vSXlnZGttT2FRa3NXaTQ5cUJFdzBvTkh4STVUdHVDTVZ3XzZWY203VTV4ZHVPclYwTkRadEhXVFlOWkEzby1HMld3eXBuNWxlcldpZGNoVTluUkg2d3dBRmh1OGZOM042WHJiSm5nOWNuTUE4dG9VYm9mZQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Rising rates prompt non-QM issuers to slash loan purchase prices",
+      "source_fingerprint": "36aa92e6f7657902069e87fc2a9134097917a90d53d4b2ffd8c81f026c7bd21c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "579d9aac483a4782165d3f2331416ed08dfc49318c9c62ea55cad16d95d94d91",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising rates reducing non-QM loan purchase prices affects residential credit valuations and issuers, transmitting to tracked residential credit sub-sectors and managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:24+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOG02NmFGcXlPX0IwRDVTWW83cm9ldHI5cjBkdkExQ3h3N0ZBbmY5Y29vSXlnZGttT2FRa3NXaTQ5cUJFdzBvTkh4STVUdHVDTVZ3XzZWY203VTV4ZHVPclYwTkRadEhXVFlOWkEzby1HMld3eXBuNWxlcldpZGNoVTluUkg2d3dBRmh1OGZOM042WHJiSm5nOWNuTUE4dG9VYm9mZQ?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
       "id": "b96b176755c3",
       "date": "2026-10-02",
       "published_at": "2026-10-01T23:45:00+00:00",
@@ -139,6 +800,50 @@
       "published_basis": "gdelt_seen",
       "source_published_at": "2026-10-01T18:49:00-04:00",
       "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
+      "id": "523c71b7f50a",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T22:49:00+00:00",
+      "headline": {
+        "en": "Egan-Jones Analysis Finds CLO Issuance Subdued While Credit Quality Holds Steady",
+        "zh": "Egan-Jones分析发现CLO发行低迷，而信用质量保持稳定"
+      },
+      "summary": {
+        "en": "Egan-Jones published an analysis finding CLO issuance subdued while credit quality holds steady.",
+        "zh": "Egan-Jones发布分析，发现CLO发行低迷，而信用质量保持稳定。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbW9VdFBXN0V3aTdDLWVNSVA4SDBCaDNWUW1rYTdHSFE1dl9fbzQ4N3R6R2FMNk5pYzFlbzgxeFZVc1I3NnNDYVl6UTk0MUt2NjlXbmE2Tl9sakxlY0pEUm1YUnh0QkFzeTVWWkM2Ql9FSjNIUWJfaEI3OUp3WmlXVk1KRURpQVMzRGJkRnRsV3VCN3RMemxWRWpCdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Egan-Jones Analysis Finds CLO Issuance Subdued While Credit Quality Holds Steady",
+      "source_fingerprint": "f2e55a8aa52d157ec9e74f3638bbb28ffff5489a2303a6e9b469f3ebeda7218d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "08fc30f66a0f7119068bafc00bc88d51549d24ea4433a00cb7c1466a529dbec8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "CLO issuance and credit-quality conditions are directly relevant to the CLO and leveraged-credit strategies of tracked managers such as CIFC and KKR.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:27+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbW9VdFBXN0V3aTdDLWVNSVA4SDBCaDNWUW1rYTdHSFE1dl9fbzQ4N3R6R2FMNk5pYzFlbzgxeFZVc1I3NnNDYVl6UTk0MUt2NjlXbmE2Tl9sakxlY0pEUm1YUnh0QkFzeTVWWkM2Ql9FSjNIUWJfaEI3OUp3WmlXVk1KRURpQVMzRGJkRnRsV3VCN3RMemxWRWpCdw?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
     },
     {
       "id": "2f455aa7741c",

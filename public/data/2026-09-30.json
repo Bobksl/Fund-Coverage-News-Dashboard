@@ -90,6 +90,50 @@
       "observed_at": "2026-10-01T05:16:05+00:00"
     },
     {
+      "id": "158b19c81cca",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:57:10+00:00",
+      "headline": {
+        "en": "Calero obtains private credit loan for refinancing",
+        "zh": "Calero获得私人信贷贷款用于再融资"
+      },
+      "summary": {
+        "en": "Software business Calero has obtained a private credit loan to support a refinancing. No lender, loan size or terms were disclosed in the headline.",
+        "zh": "软件企业Calero获得一笔私人信贷贷款以支持再融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQmw4VTVKb3Y4dUNtMUZjMjdybFU3Z09EcDM4ellyb0w0alpPanFQMGxXT1QteGNnM0FmOU94UzVlbU5CNkNIdDdzcXdPdkdRVDRaeXZ0Z0RfZEdjZ3VXN1pGdVNySmREUEkxWWZDeUR5Y3V0Q3JjM1Zvck9ucHdVUmIxakpBZnZDaF9MSlY1NzZTZWRKNElSV1U0WHRMQ1Fybl8xNUNDVS1oUmFNMS1wWA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Software business Calero obtains private credit loan to support refinancing",
+      "source_fingerprint": "3be708ec25b61cd4851707c9f7f3e1b442d594cff13cd0386b289b4fd7b4b8e8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ca740fa94763442850e74535f5b20642d2bd25d87fd7ba09aa24ecdeef22683c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new private credit refinancing loan demonstrates continued deployment in software lending, relevant to tracked private credit managers' activity.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T14:38:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQmw4VTVKb3Y4dUNtMUZjMjdybFU3Z09EcDM4ellyb0w0alpPanFQMGxXT1QteGNnM0FmOU94UzVlbU5CNkNIdDdzcXdPdkdRVDRaeXZ0Z0RfZEdjZ3VXN1pGdVNySmREUEkxWWZDeUR5Y3V0Q3JjM1Zvck9ucHdVUmIxakpBZnZDaF9MSlY1NzZTZWRKNElSV1U0WHRMQ1Fybl8xNUNDVS1oUmFNMS1wWA?oc=5"
+      },
+      "observed_at": "2026-10-02T14:35:30+00:00"
+    },
+    {
       "id": "b40baa5974dc",
       "date": "2026-09-30",
       "published_at": "2026-09-30T15:28:03+00:00",
