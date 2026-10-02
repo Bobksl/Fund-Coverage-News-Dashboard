@@ -441,6 +441,85 @@
       "observed_at": "2026-09-29T14:43:53+00:00"
     },
     {
+      "id": "35f8106322ef",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T08:45:00+00:00",
+      "headline": {
+        "en": "SEC Staff Statement Flags Private Credit Valuation Scrutiny",
+        "zh": "SEC员工声明提示私人信贷估值审查趋严"
+      },
+      "summary": {
+        "en": "On 26 September 2026, the SEC Chief Accountant and the Director of the Division of Investment Management issued a joint statement on fair valuation of private assets. The statement mostly restates existing guidance but emphasises robust valuation policies, material disclosures and scrutiny of payment-in-kind interest and non-accrual disclosures, noting private credit held by registered funds has grown nearly 60% since 2020 amid recent redemption and valuation pressure.",
+        "zh": "2026年9月26日，SEC首席会计师与投资管理部总监发布关于私人资产公允价值估值的联合声明。该声明大多重申现有指引，但强调稳健的估值政策、重大信息披露，并加强对实物支付利息（PIK）和非应计披露的审查，同时指出注册基金持有的私人信贷自2020年以来增长近60%，近期面临赎回和估值压力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "mondaq.com",
+        "url": "https://www.mondaq.com:443/unitedstates/fund-management-reits/1848382/mark-my-words-sec-staff-guidance-on-private-credit-valuation"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Mark My Words: SEC Staff Guidance On Private Credit Valuation",
+      "source_fingerprint": "646131c2a134fe409d02863a50337b912973edfbb5daee471731f3a67da7f460",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 701,
+            "end": 734
+          },
+          "linkage": {
+            "start": 1011,
+            "end": 1082
+          }
+        },
+        "source_sha256": "8edb3cd2b7b2129cd4338bd487f47468e485b8fac93fc3dc90985067a5395418",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "SEC staff joint statement signals heightened valuation scrutiny over private credit held by registered funds, a material sector development for private credit managers.",
+      "event_identity": {
+        "subject": "the chief accountant and the director of the division of investment management",
+        "action": "joint statement",
+        "object": "fair valuation of private assets",
+        "period": "26 september 2026",
+        "numbers": [
+          "2020",
+          "2026",
+          "26",
+          "60%"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T05:08:03+00:00",
+        "sha256": "ced0a6e701bf6ec91b56821a66d1c748b6255acaabc0d637f93ea10759208d3f",
+        "source_published_at": "2026-09-29T08:10:05",
+        "final_url": "https://www.mondaq.com:443/unitedstates/fund-management-reits/1848382/mark-my-words-sec-staff-guidance-on-private-credit-valuation"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-09-29T08:10:05",
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
       "id": "f747c4902e72",
       "date": "2026-09-29",
       "published_at": "2026-09-29T01:31:00+00:00",

@@ -1,0 +1,394 @@
+{
+  "date": "2026-10-02",
+  "items": [
+    {
+      "id": "b96b176755c3",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T23:45:00+00:00",
+      "headline": {
+        "en": "Egan-Jones Review Finds CLO Issuance Slowed But Credit Quality Steady",
+        "zh": "Egan-Jones 分析发现 CLO 发行低迷但信用质量保持稳定"
+      },
+      "summary": {
+        "en": "Egan-Jones released a review of the collateralized loan obligation market, attributing a sharp slowdown in new issuance to compressed returns for CLO equity investors rather than loan deterioration. US CLO issuance fell to 98 deals totaling $40.5 billion in August, down from 124 deals and $53.5 billion in August 2025, a decline of 21% by count and 24% by volume. The firm said its deal metrics showed weighted average rating scores and coupons dipping slightly across 1,613 rated CLO transactions.",
+        "zh": "Egan-Jones 发布了对担保贷款凭证（CLO）市场的评估，将新发行大幅放缓归因于 CLO 股权投资者回报被压缩，而非贷款质量恶化。8 月美国 CLO 发行降至 98 笔、总额 405 亿美元，低于 2025 年 8 月的 124 笔和 535 亿美元，笔数下降 21%、规模下降 24%。该公司表示，在其评级的 1,613 笔 CLO 交易中，加权平均评级分数和票息均略有下降。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "prnewswire.com",
+        "url": "https://www.prnewswire.com/news-releases/egan-jones-analysis-finds-clo-issuance-subdued-while-credit-quality-holds-steady-302896706.html"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Egan - Jones Analysis Finds CLO Issuance Subdued While Credit Quality Holds Steady",
+      "source_fingerprint": "29202e03d06b9234b5c8381786f4bdea17d95c9dd91e6f0c9409f44cdeb2b8b7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 283,
+            "end": 373
+          },
+          "linkage": {
+            "start": 514,
+            "end": 579
+          }
+        },
+        "source_sha256": "e3b32156e5be525fc654ce0c10cb2702b233711739b998f562b4ffbafb55c917",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "CLO issuance slowdown and credit quality trends are material to the CLO and private credit sub-sectors tracked by the team.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T05:07:01+00:00",
+        "sha256": "e3b32156e5be525fc654ce0c10cb2702b233711739b998f562b4ffbafb55c917",
+        "source_published_at": "2026-10-01T18:49:00-04:00",
+        "final_url": "https://www.prnewswire.com/news-releases/egan-jones-analysis-finds-clo-issuance-subdued-while-credit-quality-holds-steady-302896706.html"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-10-01T18:49:00-04:00",
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
+      "id": "9e14fa3954e3",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T23:15:00+00:00",
+      "headline": {
+        "en": "Egan-Jones Cites Subdued CLO Issuance as Loan Credit Quality Holds",
+        "zh": "Egan-Jones 称 CLO 发行低迷而贷款信用质量持稳"
+      },
+      "summary": {
+        "en": "Egan-Jones released a review of the collateralized loan obligation market, attributing a sharp slowdown in new issuance to compressed returns for CLO equity investors rather than deterioration in underlying loans. US CLO issuance fell to 98 deals totaling $40.5 billion in August, down from 124 deals and $53.5 billion in August 2025, a decline of 21% by count and 24% by volume. Across the 1,613 CLO transactions the firm rated as of August, weighted average rating score declined slightly and the share of assets rated CCC+ or lower held stable to slightly lower.",
+        "zh": "Egan-Jones 发布对抵押贷款凭证（CLO）市场的评估，将新发行大幅放缓归因于 CLO 股权投资者回报受挤压，而非其所持贷款质量恶化。8 月美国 CLO 发行降至 98 笔、合计 405 亿美元，低于 2025 年 8 月的 124 笔和 535 亿美元，笔数下降 21%、规模下降 24%。截至 8 月，在该公司评级的 1,613 笔 CLO 交易中，加权平均评级分数小幅下降，评级为 CCC+ 或更低的资产占比持平至略降。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "prnewswire.com",
+        "url": "http://www.prnewswire.com/news-releases/egan-jones-analysis-finds-clo-issuance-subdued-while-credit-quality-holds-steady-302896706.html"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Egan - Jones Analysis Finds CLO Issuance Subdued While Credit Quality Holds Steady",
+      "source_fingerprint": "29202e03d06b9234b5c8381786f4bdea17d95c9dd91e6f0c9409f44cdeb2b8b7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 514,
+            "end": 633
+          },
+          "linkage": {
+            "start": 279,
+            "end": 373
+          },
+          "current_adverse": {
+            "start": 407,
+            "end": 512
+          }
+        },
+        "source_sha256": "e3b32156e5be525fc654ce0c10cb2702b233711739b998f562b4ffbafb55c917",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New US CLO issuance is 24% lower by volume than a year earlier and well below the November 2024 peak, with the slowdown attributed to compressed CLO equity returns rather than credit deterioration; this is an incremental sector-level development given collateral metrics held steady.",
+          "zh": "美国 CLO 新发行规模同比下降 24%，且远低于 2024 年 11 月峰值；放缓被归因于 CLO 股权回报受挤压而非信用恶化，鉴于抵押品指标持稳，这属于小幅的行业层面变化。"
+        }
+      },
+      "relevance_reason": "A rating agency review showing CLO issuance down 24% by volume and the driver being equity return compression is a material sector signal for credit investors in CLOs and broadly syndicated loans.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T05:07:04+00:00",
+        "sha256": "e3b32156e5be525fc654ce0c10cb2702b233711739b998f562b4ffbafb55c917",
+        "source_published_at": "2026-10-01T18:49:00-04:00",
+        "final_url": "http://www.prnewswire.com/news-releases/egan-jones-analysis-finds-clo-issuance-subdued-while-credit-quality-holds-steady-302896706.html"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-10-01T18:49:00-04:00",
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
+      "id": "2f455aa7741c",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T19:31:03+00:00",
+      "headline": {
+        "en": "Monroe Capital Prices $398.9 Million Private Credit CLO",
+        "zh": "Monroe Capital 为 3.989 亿美元私人信贷 CLO 定价"
+      },
+      "summary": {
+        "en": "Monroe Capital priced a $398.9 million private credit CLO, according to a headline.",
+        "zh": "据一则标题消息，Monroe Capital 为一笔 3.989 亿美元的私人信贷 CLO 定价。目前没有更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPbXJlZ3ZlMFBNYVg1N2ZVcUpjRUp2MmJrNEx3cFNHbzZhYlhVelBDMVVJaHBWR1JCX2lyWWhOMjl1eUVnSHVBZExhSDdGM1JzTTBHQjB1SEtfb25uZ0xPSTN6bzktQkJrQjh1U1ZIVGgxYmVfUV9BNEd6VTRkVWvSAYQBQVVfeXFMUDhHUk1IdkJndm5SOC1xd3NGQjQzMEdiSDV5czlRa1JyUDJieERCR1Q2M3R1V0cybkVLWGJiMDd1eEQwUDItdzVZY3RZS1ZPc2F0LUc2eGxYajZLRkRKcjFoeFNLTE40WmxkdGhlN09aU2pENER5V2lDR2d5eHNWZnU4OEtD?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Monroe Capital Prices $398.9 Million Private Credit CLO",
+      "source_fingerprint": "562410953fcea9a1536908028192f2f6d7c3f49f9d75d12010ca2d7495b6f4c2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c1b5fffe8bd55fbc520c4cc61dac0f3ae985a76071d91deae54cde7a2eab8fe3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New private credit CLO pricing signals continued credit deployment and CLO market activity relevant to the private credit sub-sector, though no tracked manager is named.",
+      "event_identity": {
+        "subject": "monroe capital",
+        "action": "prices",
+        "object": "private credit clo",
+        "period": "$398.9 million",
+        "numbers": [
+          "$398.9 Million"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T05:07:21+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPbXJlZ3ZlMFBNYVg1N2ZVcUpjRUp2MmJrNEx3cFNHbzZhYlhVelBDMVVJaHBWR1JCX2lyWWhOMjl1eUVnSHVBZExhSDdGM1JzTTBHQjB1SEtfb25uZ0xPSTN6bzktQkJrQjh1U1ZIVGgxYmVfUV9BNEd6VTRkVWvSAYQBQVVfeXFMUDhHUk1IdkJndm5SOC1xd3NGQjQzMEdiSDV5czlRa1JyUDJieERCR1Q2M3R1V0cybkVLWGJiMDd1eEQwUDItdzVZY3RZS1ZPc2F0LUc2eGxYajZLRkRKcjFoeFNLTE40WmxkdGhlN09aU2pENER5V2lDR2d5eHNWZnU4OEtD?oc=5"
+      },
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
+      "id": "a1990b54b762",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T19:00:00+00:00",
+      "headline": {
+        "en": "Audax Private Debt closes Direct Lending Solutions Fund III at $5.4 billion hard cap",
+        "zh": "Audax Private Debt 的 Direct Lending Solutions Fund III 以 54 亿美元上限完成募集"
+      },
+      "summary": {
+        "en": "Audax Private Debt announced the final close of its Direct Lending Solutions Fund III on September 30, 2026, at its $5.4 billion hard cap in equity commitments, above a $4 billion target. With targeted leverage, related co-investing vehicles and the general partner commitment, the firm said the fund represents $10 billion of investable capital, its largest fundraise, and Audax now manages more than $30 billion. The fund lends to private equity-owned middle market companies and has already committed about $1.5 billion.",
+        "zh": "Audax Private Debt 于 2026 年 9 月 30 日宣布 Direct Lending Solutions Fund III 完成最终募集，股权承诺达到 54 亿美元的硬上限，高于 40 亿美元的目标。计入目标杠杆、相关共同投资工具和普通合伙人承诺，该公司称该基金代表 100 亿美元可投资资本，为其历史上最大规模募资，Audax 目前管理超过 300 亿美元资产。该基金向私募股权持有的中型市场公司放贷，已承诺投资约 15 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "hedgeco.net",
+        "url": "https://hedgeco.net/news/10/2026/audax-private-debt-closed-direct-lending-solutions-fund-iii-at-its-5-4-billion-hard-cap.html"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Audax Private Debt Closed Direct Lending Solutions Fund III at Its $5.4 Billion Hard Cap:",
+      "source_fingerprint": "6f09361d69eeda5a85200e56e5b76156c18496066857d6ea1e60dc8c719b3458",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "501d98e52a361837e54b6fbfe81508d33914e6b99128b4d8e5c3c4f978888785",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "A large institutional direct lending fundraise shows capital still flowing to closed-end middle market credit while semi-liquid vehicles face withdrawal pressure.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T05:07:24+00:00",
+        "sha256": "501d98e52a361837e54b6fbfe81508d33914e6b99128b4d8e5c3c4f978888785",
+        "final_url": "https://hedgeco.net/news/10/2026/audax-private-debt-closed-direct-lending-solutions-fund-iii-at-its-5-4-billion-hard-cap.html"
+      },
+      "published_basis": "gdelt_seen",
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
+      "id": "7787883e8b16",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T18:05:52+00:00",
+      "headline": {
+        "en": "Apollo Provides $131M Construction Loan for Brookfield's California Logistics Center",
+        "zh": "Apollo为Brookfield加州物流中心提供1.31亿美元建设贷款"
+      },
+      "summary": {
+        "en": "Brookfield has secured $130.5 million in construction financing from Apollo to build Locust Gateway Logistics Center, a 664,859-square-foot Class A industrial facility in Rialto, Calif. The debt is structured as a five-year financing package, with CBRE arranging the transaction.",
+        "zh": "Brookfield已从Apollo获得1.305亿美元建设融资，用于在加州里亚托建造Locust Gateway Logistics Center，这是一座面积664,859平方英尺的A级工业设施。该债务为五年期融资方案，由CBRE安排交易。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "real_estate",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/apollo-provides-131m-construction-loan-for-brookfields-california-logistics-center/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Provides $131M Construction Loan for Brookfield’s California Logistics Center",
+      "source_fingerprint": "0580009d47ff8ca85cacea719b3434d7b8f4191674159b725eba955b1d7dfcf5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 294,
+            "end": 357
+          },
+          "linkage": {
+            "start": 522,
+            "end": 591
+          }
+        },
+        "source_sha256": "5ce943c2089890ae66425374df89b829700603a33782bf45b6bbca9584f097c0",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo is the lender on a new $130.5 million construction loan, an incremental deployment for its credit platform.",
+          "zh": "Apollo是这笔1.305亿美元新建设贷款的贷款方，属于其信贷平台的增量投放。"
+        }
+      },
+      "relevance_reason": "A tracked manager (Apollo) provides a $130.5M construction loan, expanding its real estate credit deployment.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T05:07:30+00:00",
+        "sha256": "5ce943c2089890ae66425374df89b829700603a33782bf45b6bbca9584f097c0",
+        "source_published_at": "2026-10-01T14:05:52-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/apollo-provides-131m-construction-loan-for-brookfields-california-logistics-center/"
+      },
+      "source_published_at": "2026-10-01T14:05:52-04:00",
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
+      "id": "7b6ddf681819",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T16:38:31+00:00",
+      "headline": {
+        "en": "Apollo extends daily pricing across $850bn credit business",
+        "zh": "Apollo将每日定价扩展至8500亿美元信贷业务"
+      },
+      "summary": {
+        "en": "Apollo Global Management has begun rolling out daily pricing across its $850bn credit business, extending a practice launched on 1 July for investment-grade fixed income replacement products to direct lending, asset-backed finance, multi-credit and opportunistic credit vehicles. Co-president of Apollo Asset Management John Zito said the change aims to promote greater transparency as public and private markets converge. Apollo said the pricing is an estimated fair value and not a market-clearing price.",
+        "zh": "Apollo Global Management已开始在其8500亿美元信贷业务中推行每日定价，将7月1日面向投资级固定收益替代产品推出做法扩展至直接贷款、资产支持融资、多信贷和机会型信贷工具。Apollo Asset Management联席总裁John Zito表示，此举旨在在公开与私募市场持续融合之际提升透明度。Apollo称该定价为估算公允价值，并非市场出清价格。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/01/apollo-rolls-out-daily-pricing-across-850bn-credit-business/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo rolls out daily pricing across $850bn credit business",
+      "source_fingerprint": "bf6dd5202d24b50e4187c37e7a1978adbf9e490b6601445036418bbbd1977f59",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 76
+          },
+          "linkage": {
+            "start": 2048,
+            "end": 2181
+          }
+        },
+        "source_sha256": "f3620bac7876304e80af15cea3f53bd35b68095fbc154efd5f003e2595d481f4",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: direct.",
+          "zh": "已评估严重程度：有限；关联程度：直接。"
+        }
+      },
+      "relevance_reason": "Apollo extending daily pricing across its credit business is a direct operational and transparency development at a tracked credit manager, affecting valuation and investor-relations conditions for private credit.",
+      "event_identity": {
+        "subject": "apollo",
+        "action": "rolling out daily pricing across",
+        "object": "its $850bn credit business",
+        "period": "1 october",
+        "numbers": [
+          "$1",
+          "$2.6bn",
+          "$850bn",
+          "1",
+          "3",
+          "£643.7bn"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-02T05:07:41+00:00",
+        "sha256": "f3620bac7876304e80af15cea3f53bd35b68095fbc154efd5f003e2595d481f4",
+        "source_published_at": "2026-10-01T16:38:31+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/01/apollo-rolls-out-daily-pricing-across-850bn-credit-business/"
+      },
+      "source_published_at": "2026-10-01T16:38:31+00:00",
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    }
+  ]
+}

@@ -724,6 +724,94 @@
       "observed_at": "2026-10-01T15:15:55+00:00"
     },
     {
+      "id": "9fc07915d8ef",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T10:38:43+00:00",
+      "headline": {
+        "en": "Oaktree Asset-Backed Finance Fund Closes at $2 Billion",
+        "zh": "Oaktree Asset-Backed Finance Fund 以 20 亿美元完成募集"
+      },
+      "summary": {
+        "en": "Oaktree Asset-Backed Finance Fund closed at $2 billion, according to a headline report.",
+        "zh": "据一则标题报道，Oaktree Asset-Backed Finance Fund 以 20 亿美元完成募集。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Manila Times",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRy03eXU4MXlRaFhHVEx3WndvRkhPVzFsTmJXVjlPUDZwa0lfZzh1QU9uN0lHTG4tckhMWFNhZzdyVkRaRFFHUTJxWDd4dWVlNmtBdjJKeGJpd20zbUNtcWpzVm02ZXktdXhCUktPMUhuaEJ5WHNPYlpsTXNuOUVSNncyZnFhV25nTWtpcTFUbUp5b2FHNmhncnZ6dm1ZNFp3M0lvOElaZjUzVWtnN3NwclozTTJwc0tFZ1pZOGhxdmU2Zk02VmR1eDk1d9IBywFBVV95cUxQRy03eXU4MXlRaFhHVEx3WndvRkhPVzFsTmJXVjlPUDZwa0lfZzh1QU9uN0lHTG4tckhMWFNhZzdyVkRaRFFHUTJxWDd4dWVlNmtBdjJKeGJpd20zbUNtcWpzVm02ZXktdXhCUktPMUhuaEJ5WHNPYlpsTXNuOUVSNncyZnFhV25nTWtpcTFUbUp5b2FHNmhncnZ6dm1ZNFp3M0lvOElaZjUzVWtnN3NwclozTTJwc0tFZ1pZOGhxdmU2Zk02VmR1eDk1dw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree Asset-Backed Finance Fund Closes at $2 Billion",
+      "source_fingerprint": "43021c9167cec64e0b880f04b1b641142a79a1a6d0cd7d85f35ce675fd023bfc",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f6141d4f49cf856abaa1bbb316868e1d1de83d87f675f8282da25955f346276c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $2bn asset-backed finance fund close indicates continued capital formation in private credit and asset-based lending, a tracked sub-sector, even though the manager is not tracked.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T05:07:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRy03eXU4MXlRaFhHVEx3WndvRkhPVzFsTmJXVjlPUDZwa0lfZzh1QU9uN0lHTG4tckhMWFNhZzdyVkRaRFFHUTJxWDd4dWVlNmtBdjJKeGJpd20zbUNtcWpzVm02ZXktdXhCUktPMUhuaEJ5WHNPYlpsTXNuOUVSNncyZnFhV25nTWtpcTFUbUp5b2FHNmhncnZ6dm1ZNFp3M0lvOElaZjUzVWtnN3NwclozTTJwc0tFZ1pZOGhxdmU2Zk02VmR1eDk1d9IBywFBVV95cUxQRy03eXU4MXlRaFhHVEx3WndvRkhPVzFsTmJXVjlPUDZwa0lfZzh1QU9uN0lHTG4tckhMWFNhZzdyVkRaRFFHUTJxWDd4dWVlNmtBdjJKeGJpd20zbUNtcWpzVm02ZXktdXhCUktPMUhuaEJ5WHNPYlpsTXNuOUVSNncyZnFhV25nTWtpcTFUbUp5b2FHNmhncnZ6dm1ZNFp3M0lvOElaZjUzVWtnN3NwclozTTJwc0tFZ1pZOGhxdmU2Zk02VmR1eDk1dw?oc=5"
+      },
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
+      "id": "1684ba3e90a2",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T10:30:00+00:00",
+      "headline": {
+        "en": "Oaktree Asset-Backed Finance Fund Closes at $2 Billion",
+        "zh": "Oaktree Asset-Backed Finance Fund以20亿美元完成募集"
+      },
+      "summary": {
+        "en": "Oaktree Capital's Asset-Backed Finance Fund has closed at $2 billion, according to a headline report.",
+        "zh": "据一则标题报道，Oaktree Capital的Asset-Backed Finance Fund以20亿美元完成募集。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Almaguin News",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOaURiU2NPdWNJaVpNMXpQY25uZnVzdWxzYnNiYWVoZVZ3U1B0TTFVR0JlS19aclZFanNuNU9VNWpyQ2daYmxjMkU3WHAzMzVYeENJVHNHclVwbnhqVl9ySUxPSktucFROdmJCb2ppVVZCVGpoVVFMYXhQc1hkeEZwSGVMc29WaHNPMjRwNFBxOG9PajljQ3I3Uk1kczJZRDJLbWNJTGcxVXZXVk5SbzRKMXJKOExvY0I0Rm9rY1ZidUs5VHZPMy04dGYybjVWbTNJdl9zbW5kVi0wQU5jdHBVWmVsSXZBdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree Asset-Backed Finance Fund Closes at $2 Billion",
+      "source_fingerprint": "43021c9167cec64e0b880f04b1b641142a79a1a6d0cd7d85f35ce675fd023bfc",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f6141d4f49cf856abaa1bbb316868e1d1de83d87f675f8282da25955f346276c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $2bn asset-backed finance fund close signals continued capital formation and deployment capacity in the ABS/private credit sub-sector, relevant to tracked credit managers and asset-based finance strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T05:07:53+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOaURiU2NPdWNJaVpNMXpQY25uZnVzdWxzYnNiYWVoZVZ3U1B0TTFVR0JlS19aclZFanNuNU9VNWpyQ2daYmxjMkU3WHAzMzVYeENJVHNHclVwbnhqVl9ySUxPSktucFROdmJCb2ppVVZCVGpoVVFMYXhQc1hkeEZwSGVMc29WaHNPMjRwNFBxOG9PajljQ3I3Uk1kczJZRDJLbWNJTGcxVXZXVk5SbzRKMXJKOExvY0I0Rm9rY1ZidUs5VHZPMy04dGYybjVWbTNJdl9zbW5kVi0wQU5jdHBVWmVsSXZBdw?oc=5"
+      },
+      "observed_at": "2026-10-02T05:04:24+00:00"
+    },
+    {
       "id": "eae20c9764c4",
       "date": "2026-10-01",
       "published_at": "2026-10-01T06:34:34+00:00",
@@ -1034,6 +1122,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM0F6YnZxandXNnlqMHhmS0M3LVNwUXhidDV0eVFWWjd5MkdOX0ZxMWppU2hpeFRITWdVUlMxc0NfWjF1MW1TajBlcmh4Si1meXVCa0l1Y3pWUzBacDNDel9TczB1N1ByWTRxZE5LRV9mOF9vY25ncmhSNWxpY0phYXJCNHRrYzJlUXJwZ3BaU3dwaWw1SkpYTU5pd3g?oc=5"
       },
       "observed_at": "2026-10-01T05:16:05+00:00"
+    },
+    {
+      "id": "84682c152051",
+      "date": "2026-10-01",
+      "published_at": "2026-09-30T16:24:33+00:00",
+      "headline": {
+        "en": "Polus U.S. CLO IV secures Fitch ratings for $400 million loan portfolio",
+        "zh": "Polus U.S. CLO IV 为 4 亿美元贷款组合获得 Fitch 评级"
+      },
+      "summary": {
+        "en": "Polus U.S. CLO IV secured Fitch ratings for a $400 million loan portfolio.",
+        "zh": "Polus U.S. CLO IV 为其 4 亿美元贷款组合获得了 Fitch 评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQ0oyM29GckdUelZyaUlma3Q4V2l1WFVOUUxibWZEbFFnX0h5bUtmOWVyblZES3c4TG9ESDJtWUtyb0pnY3JTWWRaaFpULUtjSmd4T0hRbXlDOE9DREx3ZDh2UnFoa1VRcTZCRFhYb2F5czJyRDdqbmlWeUdPakZRWEdOMnpTa3RkZEVUUUlHdHIyQzVzV2xkUg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Polus U.S. CLO IV secures Fitch ratings for $400 million loan portfolio",
+      "source_fingerprint": "655f6752d3b4e5520fd1e806e0fab7d8d64b01e71349c9f3dd254788a51c0c10",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "89346ce7fcbe9614687b541de0a0377682a0c635b7e31ff2918d90c9718033ab",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $400m US CLO from Polus shows continued CLO formation activity, relevant to CLO and leveraged credit conditions, but no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-02T05:08:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQ0oyM29GckdUelZyaUlma3Q4V2l1WFVOUUxibWZEbFFnX0h5bUtmOWVyblZES3c4TG9ESDJtWUtyb0pnY3JTWWRaaFpULUtjSmd4T0hRbXlDOE9DREx3ZDh2UnFoa1VRcTZCRFhYb2F5czJyRDdqbmlWeUdPakZRWEdOMnpTa3RkZEVUUUlHdHIyQzVzV2xkUg?oc=5"
+      },
+      "observed_at": "2026-10-02T05:04:24+00:00"
     }
   ]
 }
