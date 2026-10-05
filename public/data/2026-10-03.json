@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-03",
+  "items": [
+    {
+      "id": "b3e07679281c",
+      "date": "2026-10-03",
+      "published_at": "2026-10-02T17:30:41+00:00",
+      "headline": {
+        "en": "Madison Realty Capital Provides $127M Refi for Fort Lauderdale Multifamily",
+        "zh": "Madison Realty Capital 为劳德代尔堡多户住宅项目提供1.27亿美元再融资"
+      },
+      "summary": {
+        "en": "Madison Realty Capital supplied a $127 million construction takeout loan for the Arcadian, a newly completed 502-unit multifamily development in Fort Lauderdale's Sistrunk District. The loan refinances an existing $84.5 million construction loan from Centennial Bank issued in 2024 as the property leases up toward stabilization.",
+        "zh": "Madison Realty Capital 为劳德代尔堡 Sistrunk 区新落成的502套多户住宅项目 Arcadian 提供了1.27亿美元的建筑工程置换贷款。该贷款用于再融资 Centennial Bank 于2024年发放的现有8,450万美元建筑贷款，项目正持续出租并迈向社会稳定期。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/madison-realty-arcadian-fuse-krea-multifamily/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Madison Realty Capital Supplies $127M Refi for Fort Lauderdale Development",
+      "source_fingerprint": "9296d8fef019fcd1ad3da3214b479ee1ca4884f0226fef5df49d08e50517ea51",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 249,
+            "end": 321
+          },
+          "linkage": {
+            "start": 646,
+            "end": 721
+          }
+        },
+        "source_sha256": "2d9d5e58d5a49aad639d593dc34b7eeba4e1927db942635469a2fbdaf850fa75",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "New $127M construction takeout loan in a tracked sub-sector (multifamily real estate credit), showing continued lender deployment.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-05T05:05:35+00:00",
+        "sha256": "2d9d5e58d5a49aad639d593dc34b7eeba4e1927db942635469a2fbdaf850fa75",
+        "source_published_at": "2026-10-02T13:30:41-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/madison-realty-arcadian-fuse-krea-multifamily/"
+      },
+      "source_published_at": "2026-10-02T13:30:41-04:00",
+      "observed_at": "2026-10-05T05:03:16+00:00"
+    },
+    {
+      "id": "cf61bf21ca48",
+      "date": "2026-10-03",
+      "published_at": "2026-10-02T16:35:56+00:00",
+      "headline": {
+        "en": "Gulf Islamic Investments buys majority stake in London House Exchange",
+        "zh": "Gulf Islamic Investments 收购 London House Exchange 多数股权"
+      },
+      "summary": {
+        "en": "Gulf Islamic Investments, a UAE-based Shari'ah-compliant alternatives manager with more than $3bn in assets, has acquired a majority stake in UK property investment platform London House Exchange from Nasdaq-listed Better Home & Finance Holding Company, after FCA approval. GII said it plans to take the platform beyond UK property into Shari'ah-compliant income-generating investments, private credit and equity-linked products, and to explore regulated tokenisation and wider geographic reach. Better will remain a strategic minority shareholder in LHX.",
+        "zh": "总部位于阿联酋、管理资产超过 30 亿美元的符合伊斯兰教法的另类投资管理公司 Gulf Islamic Investments，已从纳斯达克上市的 Better Home & Finance Holding Company 手中收购英国房地产投资平台 London House Exchange 的多数股权，该交易已获 FCA 批准。GII 表示计划将该平台从英国房地产拓展至更广泛的另类投资领域，重点发展符合伊斯兰教法的创收型投资、私人信贷和股权挂钩产品，并探索受监管的代币化及扩大地理覆盖范围。Better 将继续作为 LHX 的战略少数股东。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/02/gulf-islamic-investments-takes-majority-stake-in-london-house-exchange/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Gulf Islamic Investments takes majority stake in London House Exchange",
+      "source_fingerprint": "493018ee7821910f2fce9af59fc05162c67b04ae2109193b7f94cc2972111f27",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 456,
+            "end": 479
+          },
+          "linkage": {
+            "start": 571,
+            "end": 604
+          }
+        },
+        "source_sha256": "25f0a4de358b20cf363467a942a345bf77562a2b0db1758cdc2a52534972b893",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A Shari'ah-compliant alternatives manager acquiring a regulated UK property platform to launch private credit expands the competitive set for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-05T05:05:39+00:00",
+        "sha256": "25f0a4de358b20cf363467a942a345bf77562a2b0db1758cdc2a52534972b893",
+        "source_published_at": "2026-10-02T16:35:56+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/02/gulf-islamic-investments-takes-majority-stake-in-london-house-exchange/"
+      },
+      "source_published_at": "2026-10-02T16:35:56+00:00",
+      "observed_at": "2026-10-05T05:03:16+00:00"
+    }
+  ]
+}

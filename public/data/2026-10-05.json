@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-05",
+  "items": [
+    {
+      "id": "b43c120246f7",
+      "date": "2026-10-05",
+      "published_at": "2026-10-04T19:30:07+00:00",
+      "headline": {
+        "en": "Blue Owl Stock at Risk as Private Credit Giant Caps Withdrawals Amid Surging Outflows",
+        "zh": "Blue Owl 股价承压，私人信贷巨头在资金流出激增之际限制赎回"
+      },
+      "summary": {
+        "en": "Blue Owl Capital is reported to have capped withdrawals at its private credit vehicle amid surging outflows. The report links the move to risk for Blue Owl's stock.",
+        "zh": "据报道，Blue Owl Capital 在其私人信贷工具资金流出激增之际限制了赎回。该报道将此与 Blue Owl 股票面临的风险联系起来。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdUY5N3N1djlOdV9qMHRSTjY1U2czZVg0M1pMNGdsYzFFb0JzNzQyVFVXeWQ0VWhNVnFTSExlOWI1ZDQ4cjVkeTIxTFZUWTVKQTk5M09vVEJPTmhPQmhIaWtjMFpuUkxDZDJOamk1WXlnLUZwUGtjSXpfNWgzbnBnT3hyeXBMQjlDMUVna1JEOWVrVXFjWG9vamtuYy12TXFuLWlJQ2NuaDNVaFp3cVdGZlN2MUFLd25UTTNVZXpaWG5QVFNlWjlxZUlscGs4X0NCQ2htWDgwVVRCdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Stock at Risk as Private Credit Giant Caps Withdrawals Amid Surging Outflows - Blue Owl Capital",
+      "source_fingerprint": "6c164334227210c25b0192d864a386e7821c12f63f45376d25cadecbf7c708e7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9136c9857f92ef338d99251debe3596d15323979ff450514c6fd231d4a57cbec",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A tracked manager's credit vehicle capping withdrawals amid outflows affects liquidity and fundraising perceptions for private credit.",
+      "event_identity": {
+        "subject": "blue owl capital",
+        "action": "caps withdrawals",
+        "object": "private credit giant",
+        "period": "amid surging outflows",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T05:05:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdUY5N3N1djlOdV9qMHRSTjY1U2czZVg0M1pMNGdsYzFFb0JzNzQyVFVXeWQ0VWhNVnFTSExlOWI1ZDQ4cjVkeTIxTFZUWTVKQTk5M09vVEJPTmhPQmhIaWtjMFpuUkxDZDJOamk1WXlnLUZwUGtjSXpfNWgzbnBnT3hyeXBMQjlDMUVna1JEOWVrVXFjWG9vamtuYy12TXFuLWlJQ2NuaDNVaFp3cVdGZlN2MUFLd25UTTNVZXpaWG5QVFNlWjlxZUlscGs4X0NCQ2htWDgwVVRCdw?oc=5"
+      },
+      "observed_at": "2026-10-05T05:03:16+00:00"
+    }
+  ]
+}
