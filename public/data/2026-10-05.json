@@ -2,6 +2,596 @@
   "date": "2026-10-05",
   "items": [
     {
+      "id": "9eb483155a20",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T15:36:45+00:00",
+      "headline": {
+        "en": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist",
+        "zh": "私人信贷综述：Blue Owl赎回压力缓解，科技与再融资风险仍存"
+      },
+      "summary": {
+        "en": "A private credit roundup reported that Blue Owl redemptions eased while technology and refinancing risks persisted.",
+        "zh": "一份私人信贷综述报道称，Blue Owl的赎回压力有所缓解，而科技与再融资风险依然存在。所提供的标题未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "KSL News",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMllsbG51MnV3WEF4RTAxNURxNzRZdFV0cml2SUFVcDBlMWJoQ0hGMFIybjFfc2ZtejE3SHR6OEpjbWRmeXU4NUgyemNnS2hjUG05UC1iNWRuY1VrdFYtQV9UazB3bnd3elNtbXJET0FQMHM5QV92MnNLcWcyamRWeU5DTWhaR0ZJempJQms5R0hjcUN5UjBNdFVQaExvX1djbTdCTjdPR09NbElBdkJoMEd3Um1KaW11RV9GOA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist",
+      "source_fingerprint": "bb44aa5cb288c99adda44bbc88d057fc85947402b392c3f476f58d183202221d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "49f66f6374234dfa85933f53a9f7b1d2809beb0b874fc48c6e5e9c67fed31e5d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Roundup reports Blue Owl redemption pressure easing, a change in a tracked manager's liquidity conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:00:49+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMllsbG51MnV3WEF4RTAxNURxNzRZdFV0cml2SUFVcDBlMWJoQ0hGMFIybjFfc2ZtejE3SHR6OEpjbWRmeXU4NUgyemNnS2hjUG05UC1iNWRuY1VrdFYtQV9UazB3bnd3elNtbXJET0FQMHM5QV92MnNLcWcyamRWeU5DTWhaR0ZJempJQms5R0hjcUN5UjBNdFVQaExvX1djbTdCTjdPR09NbElBdkJoMEd3Um1KaW11RV9GOA?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "1dabb137d403",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T15:05:21+00:00",
+      "headline": {
+        "en": "Redemption queues at Blue Owl shrink",
+        "zh": "Blue Owl 赎回排队规模缩小"
+      },
+      "summary": {
+        "en": "Redemption queues at Blue Owl shrank, easing pressure, according to a headline report.",
+        "zh": "据一则标题报道，Blue Owl 的赎回排队规模缩小，压力有所缓解。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pluang",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTFJYakVBSE9TeFpuYmhCWkhYVXRldWNGNHAzMWFhZmRZNGgzbnB1SXNHLTEyNzdId2g3M2ZrVks0TGhUVkZhUEVpYkdGVE9DbE5yMDd2dVdSVEFDekxLOHIxRUVyN0JqMkJIc0RlMlY4QWIwNmJ6Q19yQUlNOXFLaUExYnhDaVBwOHFJcklOVGdaVG0wM0NUMTJEeFFKUDJyWjZYTkpVcTJFYVJaRmJz?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Redemption queues at Blue Owl shrink, easing pr...",
+      "source_fingerprint": "afc90000f83de419c92ab585d5c63cda19d5f362d9bf211ed1b9a22a4393ddf2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9eb53b6e417c534fcdf0a579248f47c07676df5449c792811284062af0b39d22",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption queue dynamics at Blue Owl bear directly on liquidity and capital-access conditions for a tracked private credit manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:00:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTFJYakVBSE9TeFpuYmhCWkhYVXRldWNGNHAzMWFhZmRZNGgzbnB1SXNHLTEyNzdId2g3M2ZrVks0TGhUVkZhUEVpYkdGVE9DbE5yMDd2dVdSVEFDekxLOHIxRUVyN0JqMkJIc0RlMlY4QWIwNmJ6Q19yQUlNOXFLaUExYnhDaVBwOHFJcklOVGdaVG0wM0NUMTJEeFFKUDJyWjZYTkpVcTJFYVJaRmJz?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "9b712ef6b8e1",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T14:15:57+00:00",
+      "headline": {
+        "en": "Chicago Leads CMBS Distress Among 11 MLB Playoff Metros",
+        "zh": "芝加哥在11个MLB季后赛都会区中CMBS困境居首"
+      },
+      "summary": {
+        "en": "As of August, 25.3 percent of the Chicago metro's outstanding CMBS balance was delinquent or in special servicing, the highest of the 11 Major League Baseball playoff metro areas and up 4.7 percentage points in a year, according to CRED iQ. The $536 million loan on Chicago's Aon Center reached maturity in July and wasn't repaid, and a three-year extension request was denied. Nationally, the CMBS distress rate was 10.9 percent in August, down from 11.5 percent a year earlier, preliminary September numbers point to 10.8 percent, and office accounts for 45.5 percent of distressed balance.",
+        "zh": "据CRED iQ，截至8月，芝加哥都会区未偿CMBS余额中有25.3%处于逾期或特殊服务状态，在11个美国职业棒球大联盟季后赛都会区中最高，同比上升4.7个百分点。芝加哥Aon Center的5.36亿美元贷款于7月到期未偿还，三年期展期请求被拒。全国范围，8月CMBS困境率为10.9%，低于上年同期的11.5%，9月初值为10.8%，其中写字楼占困境余额的45.5%。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/chicago-cmbs-distress-mlb-playoffs-cubs-white-sox/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Chicago Leads CMBS Distress Among 11 Metros in MLB Playoffs",
+      "source_fingerprint": "c1c03afd3d289f716882171e9b5f9e7dd634af5a1d075f9f9557a5e4d334247a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 851,
+            "end": 974
+          }
+        },
+        "source_sha256": "da39f3550072fb2ec53824428db266b34116fb9b89d41e8c9eba20fa92c88edc",
+        "failure": "Unsupported assessment claim: linkage"
+      },
+      "relevance_reason": "Rising US CMBS office distress, with specific large loans in special servicing, is a material sector story that can alter credit views on real estate and mortgage exposure.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-05T17:00:58+00:00",
+        "sha256": "da39f3550072fb2ec53824428db266b34116fb9b89d41e8c9eba20fa92c88edc",
+        "source_published_at": "2026-10-05T10:15:57-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/chicago-cmbs-distress-mlb-playoffs-cubs-white-sox/"
+      },
+      "source_published_at": "2026-10-05T10:15:57-04:00",
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "71f3f275284c",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:41:27+00:00",
+      "headline": {
+        "en": "Blue Owl private credit redemptions ease as refinancing risks persist",
+        "zh": "Blue Owl 私募信贷赎回放缓，再融资风险仍存"
+      },
+      "summary": {
+        "en": "The headline indicates private credit redemptions at Blue Owl are easing while refinancing risks persist.",
+        "zh": "标题显示，Blue Owl 的私募信贷赎回正在放缓，但再融资风险依然存在。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxON3hEYkh5andMZGJ6eWJyUzBKZkpHcVVfY3NyOVU5aWhrd1FsdVh6bmhTZ3NFbGg4OGJfN3U2OFZtNDFTZ1JNOU5RcURyUVlKQ1pZem1HTmt6QU5pc2RmVGpDNUNONzVWYVhaTFUzWU9NTWRMeXhfY1Fxb0l0cERHcU5JNVR0NkV2ZE5VVzRQSVQxV3FmQXR5ME5udjd6WEltOFVlRTBTcGdZMDk5STQ3Ng?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl private credit redemptions ease as refinancing risks persist",
+      "source_fingerprint": "6ca7c21837ec8e98bec118b24d521d67214928722defcbed78f2f4fdc0972abe",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1bd5b5434e246c9f3d9a39901d19269efe9085c9b0eab3f045553d67126caf7b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals easing redemption pressure at a tracked private credit manager, relevant to credit investors' view of liquidity and deployment conditions in direct lending.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:03+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxON3hEYkh5andMZGJ6eWJyUzBKZkpHcVVfY3NyOVU5aWhrd1FsdVh6bmhTZ3NFbGg4OGJfN3U2OFZtNDFTZ1JNOU5RcURyUVlKQ1pZem1HTmt6QU5pc2RmVGpDNUNONzVWYVhaTFUzWU9NTWRMeXhfY1Fxb0l0cERHcU5JNVR0NkV2ZE5VVzRQSVQxV3FmQXR5ME5udjd6WEltOFVlRTBTcGdZMDk5STQ3Ng?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "06b6d9da921a",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:40:30+00:00",
+      "headline": {
+        "en": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist",
+        "zh": "私人信贷综述：Blue Owl 赎回压力缓解，科技与再融资风险仍存"
+      },
+      "summary": {
+        "en": "A private credit roundup reports that Blue Owl redemptions have eased, while risks in technology lending and refinancing persist. No figures or specific vehicles were detailed in the available headline.",
+        "zh": "一篇私人信贷综述报道，Blue Owl 的赎回压力有所缓解，而科技贷款与再融资风险仍然存在。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "KELO-AM",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMHpMeHFoLWdJZTZlN21Hc2huMkNfOVowVkZ2bXR5eDBseUNROVNMMjQ4UlA4M0NVblluQ1Z3d0tCNDdWTllzTno5dFZTUlBSQTMtSjh5enVqUjZqWXBocWlCYm9FSXkzZHczb2tnY1FqcUxLWjRlczJxYml6OUZ6dU83YlhqNEV5ZGJ4NGFka2VCamhBVUtScTVNVE1HWkFoNG9lS2lqcmJOeGxWZlNDN0Rn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist",
+      "source_fingerprint": "bb44aa5cb288c99adda44bbc88d057fc85947402b392c3f476f58d183202221d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "49f66f6374234dfa85933f53a9f7b1d2809beb0b874fc48c6e5e9c67fed31e5d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Tracks easing redemption pressure on Blue Owl's credit platform, a direct signal for a tracked manager's liquidity and valuation conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:05+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMHpMeHFoLWdJZTZlN21Hc2huMkNfOVowVkZ2bXR5eDBseUNROVNMMjQ4UlA4M0NVblluQ1Z3d0tCNDdWTllzTno5dFZTUlBSQTMtSjh5enVqUjZqWXBocWlCYm9FSXkzZHczb2tnY1FqcUxLWjRlczJxYml6OUZ6dU83YlhqNEV5ZGJ4NGFka2VCamhBVUtScTVNVE1HWkFoNG9lS2lqcmJOeGxWZlNDN0Rn?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "7f3bae892cc0",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:36:26+00:00",
+      "headline": {
+        "en": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist",
+        "zh": "私人信贷综述：Blue Owl 赎回压力缓解，科技与再融资风险持续"
+      },
+      "summary": {
+        "en": "A Reuters private credit roundup reports that Blue Owl redemptions have eased while technology and refinancing risks persist.",
+        "zh": "路透社私人信贷综述报道，Blue Owl 的赎回情况有所缓解，而科技与再融资风险依然存在。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMVEzdkhnc2ktNV93WVEybzZvR3NuaXlRSElXTkU2SzBxbHJWeVJGMzJaN2FYSWNMa2ZNVmFPaGR6Z1h1QThadEg4bkU4ZWx0YlBCRVpzTkNNcV9EaFVLRl9CYjZvTGE3ZXVWUW91U2d3RFpndkRFTmt6T2dWMkdwQkFEZTRTVHVhb216eVB4dzNIdnpVa05KdThxYV83ZDJEdW5VUHRJckhiQW5fMTg1NmdBR1E4T0JMc0ltWDBpMEdxdVdmejlZZUNHdzhucGRRVEc3dWJ0QQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist By Reuters",
+      "source_fingerprint": "fba28da518ccb9bbbe94eb92520f115c45d06e188e262b62006682e7b4e52861",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e3cd4acb9eaa951dd649f34ec53fdd20db5e3e6ee21ca6736837b50b786f37c7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags easing redemptions at Blue Owl and persistent tech and refinancing risk in private credit, directly touching a tracked manager's credit platform and the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMVEzdkhnc2ktNV93WVEybzZvR3NuaXlRSElXTkU2SzBxbHJWeVJGMzJaN2FYSWNMa2ZNVmFPaGR6Z1h1QThadEg4bkU4ZWx0YlBCRVpzTkNNcV9EaFVLRl9CYjZvTGE3ZXVWUW91U2d3RFpndkRFTmt6T2dWMkdwQkFEZTRTVHVhb216eVB4dzNIdnpVa05KdThxYV83ZDJEdW5VUHRJckhiQW5fMTg1NmdBR1E4T0JMc0ltWDBpMEdxdVdmejlZZUNHdzhucGRRVEc3dWJ0QQ?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "83eff12cf867",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:35:11+00:00",
+      "headline": {
+        "en": "CAZ launches second GP stakes fund, targeting growth over income",
+        "zh": "CAZ推出第二只GP股权基金，侧重增长而非收益"
+      },
+      "summary": {
+        "en": "CAZ has launched its second GP stakes fund, targeting growth over income. No fundraising figure was given in the supplied headline.",
+        "zh": "CAZ已推出其第二只GP股权基金，侧重增长而非收益。"
+      },
+      "gps": [],
+      "sectors": [
+        "gp_stakes"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb1d2V2RHWEpfQTVTM2JYQUVSTXcxUzY5d0hGdGhZUFJSQktkSm1CZzFpRGlab3lEbktjU0pOeVBqcU04am5rNXpNaUl1eUtJRnY0UjNQU1FGYTZfUnFCN0ZFZjg4cGNfMnJnVnlOcWpYUWVUQmZIUmZxOUhqWGlaZkpSMGg0OWxhcG95MlpqNExGeDlNLVNncTlKV1o1dw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CAZ launches second GP stakes fund, targeting growth over income",
+      "source_fingerprint": "5c392fa798a7802bedfd355737bced7b086f4dddc6c4c2d91a65bb892f239b95",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e2028c58e9f2b2c3863fed75d0b8b46ca4a9b8307b1702d0e72645eb93dea042",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new GP stakes fund launch expands the competitive fundraising environment for tracked GP stakes strategies, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb1d2V2RHWEpfQTVTM2JYQUVSTXcxUzY5d0hGdGhZUFJSQktkSm1CZzFpRGlab3lEbktjU0pOeVBqcU04am5rNXpNaUl1eUtJRnY0UjNQU1FGYTZfUnFCN0ZFZjg4cGNfMnJnVnlOcWpYUWVUQmZIUmZxOUhqWGlaZkpSMGg0OWxhcG95MlpqNExGeDlNLVNncTlKV1o1dw?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "aca400d707e2",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:22:45+00:00",
+      "headline": {
+        "en": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist",
+        "zh": "私募信贷综述：Blue Owl 赎回压力缓解，科技与再融资风险仍存"
+      },
+      "summary": {
+        "en": "A private credit roundup headline says Blue Owl redemptions have eased while technology and refinancing risks persist.",
+        "zh": "一篇私募信贷综述标题称，Blue Owl 的赎回情况有所缓解，而科技与再融资风险依然存在。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQX3lzMHVlbmwzbWtHNmgybFRFdm1hUG91aW5MQjAzMVRzWjBYMTZFbzN3cFpPUTFLY2dMNHlpWTY2YnNUOGc4enV5SVdja0c2UHlYV01fUzBUbHlmNUJDQVU0dUhFWTBMdE5jT095WGwyS1IxcVZNSUFZQXhaTThWU0E5ak5TYUNDMXhwMlVfc25lbjBFVnBDNFRRMmk0Q0hDWUN6MW1zWmprbXJoLTlaVjBZVmcyUWZpelpNOTZRbFZ5NkdqdEEtM184V0VkcWZJMGE2MHlzdXVmMXMxYzJvQ2JkRmpHNTc3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit roundup: Blue Owl redemptions ease, tech and refinancing risks persist",
+      "source_fingerprint": "bb44aa5cb288c99adda44bbc88d057fc85947402b392c3f476f58d183202221d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "49f66f6374234dfa85933f53a9f7b1d2809beb0b874fc48c6e5e9c67fed31e5d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals easing redemption pressure at a tracked manager and ongoing tech and refinancing risk in private credit, which can shift credit investors' view on liquidity and deployment conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:12+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQX3lzMHVlbmwzbWtHNmgybFRFdm1hUG91aW5MQjAzMVRzWjBYMTZFbzN3cFpPUTFLY2dMNHlpWTY2YnNUOGc4enV5SVdja0c2UHlYV01fUzBUbHlmNUJDQVU0dUhFWTBMdE5jT095WGwyS1IxcVZNSUFZQXhaTThWU0E5ak5TYUNDMXhwMlVfc25lbjBFVnBDNFRRMmk0Q0hDWUN6MW1zWmprbXJoLTlaVjBZVmcyUWZpelpNOTZRbFZ5NkdqdEEtM184V0VkcWZJMGE2MHlzdXVmMXMxYzJvQ2JkRmpHNTc3?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "fec81eb34897",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:01:06+00:00",
+      "headline": {
+        "en": "Blue Owl's Private Credit Fund Sees Fewer Withdrawal Requests",
+        "zh": "Blue Owl 旗下私人信贷基金赎回请求减少"
+      },
+      "summary": {
+        "en": "Blue Owl's private credit fund saw fewer withdrawal requests, according to a Finimize headline.",
+        "zh": "据 Finimize 一则标题，Blue Owl 旗下私人信贷基金的赎回请求有所减少。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTjlmMndad20wRnR6Z29OTjdQemVwM04zdjBkd0lnOHBRTURWZEJic0VUV2tBRF8zQTY2ZlNqYkRZMHY3Z3JmU3ZOWGl6dHZZaExwa2FmYl9LLXJQRkh2MUU3M1pXVXR3RFMxRkw5RlpBRFFRb1E1ZThLa0laRlRHNDBVaFZFcVA5RkZWSENGOUxNa0E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl’s Private Credit Fund Sees Fewer Withdrawal Requests",
+      "source_fingerprint": "29fd0b352aaaa518701e5cd3f1f33481327fa2b746b85f4a3a7f77696369c056",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "939dfa8d7a89ed2ac24b2bf36a31b080ce98566be3df5c7cf4384659a2d24357",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A decline in withdrawal requests at a Blue Owl private credit fund bears directly on credit-fund liquidity and redemption conditions",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:14+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTjlmMndad20wRnR6Z29OTjdQemVwM04zdjBkd0lnOHBRTURWZEJic0VUV2tBRF8zQTY2ZlNqYkRZMHY3Z3JmU3ZOWGl6dHZZaExwa2FmYl9LLXJQRkh2MUU3M1pXVXR3RFMxRkw5RlpBRFFRb1E1ZThLa0laRlRHNDBVaFZFcVA5RkZWSENGOUxNa0E?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "39b93862f8f3",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:00:48+00:00",
+      "headline": {
+        "en": "Oaktree closes inaugural ABF fund on $2bn",
+        "zh": "Oaktree 首只 ABF 基金以 20 亿美元关闭"
+      },
+      "summary": {
+        "en": "Oaktree has closed its inaugural asset-backed finance fund at $2bn, according to a headline report.",
+        "zh": "据一则标题报道，Oaktree 已关闭其首只资产支持融资（ABF）基金，规模为 20 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "pei-privaterealestate.com",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVWVTLVFhQVpEMTVGWHVNaV9zNlhxT0x6akduVVExWTVVT3RfcWthWFppSHctNmFUbW1MakE0cU9YQ3lGdUNsTVJ6UVREaFd4Q2gtV3N3ZDYyZG5IQWtab2p1R2VTekc3eVpqRENSaGcyYnlFcWh3MTVxelRDWG9VdzZvSEl3WVZUTE9GWGZvcw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Oaktree closes inaugural ABF fund on $2bn",
+      "source_fingerprint": "05414338f650bd18bcbdf0aa10aef3a57f0fb777c8b2c23d0939c5d201cea47a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "85737205afce86da91863fd65360608fb8aa70ca9c91d421d00bc5b7fd82addf",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $2bn asset-backed finance fund close signals growing capital formation and competition in the ABF sub-sector, a transmission channel for tracked credit managers.",
+      "event_identity": {
+        "subject": "oaktree",
+        "action": "closes",
+        "object": "inaugural abf fund",
+        "period": "$2bn",
+        "numbers": [
+          "$2bn"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVWVTLVFhQVpEMTVGWHVNaV9zNlhxT0x6akduVVExWTVVT3RfcWthWFppSHctNmFUbW1MakE0cU9YQ3lGdUNsTVJ6UVREaFd4Q2gtV3N3ZDYyZG5IQWtab2p1R2VTekc3eVpqRENSaGcyYnlFcWh3MTVxelRDWG9VdzZvSEl3WVZUTE9GWGZvcw?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "d04979546196",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T12:28:00+00:00",
+      "headline": {
+        "en": "Investors asked to pull 39% of a USD 5 billion private credit fund",
+        "zh": "投资者要求从一只50亿美元的私人信贷基金中赎回39%"
+      },
+      "summary": {
+        "en": "Investors asked to withdraw 39% of a USD 5 billion private credit fund, according to a headline.",
+        "zh": "据一则标题报道，投资者要求从一只规模50亿美元的私人信贷基金中赎回39%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "kalkine.ca",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY0N0MHoxeW5VbXZJZ3pBNVdHcmR3MllWZlIzU0hpOW9tWjZPNEdQMjIwWXU2MnZmU0hfZV9ibzUyU3VRWFpLcWp2ZllPdUUtaFJuN0g3U0g3Q0xtUUJsaE1JVGdQRlMwTnZNLW5ZUTZFQ0NyYVFNZ0RSeWZBdmFEanpuNWpLNGx2RHU1dmktVWIyUWs0ZzN0RHJRbktJWTlrT2txZFJlNWR0dkpBbVRuQ0ZwMy1lalpUTEYxS1h6TDVxUWNWVV9mcnVlZVJZd1A4clFxd2xDYw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Why did investors ask to pull 39% of a USD 5 billion private credit fund, and who else is facing withdrawals?",
+      "source_fingerprint": "aed0666bf067f2784a0c30006cc6f3aa38046f2babe46823245972afa75eb2d7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ec10435d21a77b7b60bd60e4985ebc89b82405310a3d820bc2e65536ce375ecf",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags redemption pressure at a private credit fund, a direct signal on liquidity conditions for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:28+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY0N0MHoxeW5VbXZJZ3pBNVdHcmR3MllWZlIzU0hpOW9tWjZPNEdQMjIwWXU2MnZmU0hfZV9ibzUyU3VRWFpLcWp2ZllPdUUtaFJuN0g3U0g3Q0xtUUJsaE1JVGdQRlMwTnZNLW5ZUTZFQ0NyYVFNZ0RSeWZBdmFEanpuNWpLNGx2RHU1dmktVWIyUWs0ZzN0RHJRbktJWTlrT2txZFJlNWR0dkpBbVRuQ0ZwMy1lalpUTEYxS1h6TDVxUWNWVV9mcnVlZVJZd1A4clFxd2xDYw?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "f8b27ad96479",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T12:26:00+00:00",
+      "headline": {
+        "en": "Private credit funds face withdrawal requests up to 39% against 5% cap",
+        "zh": "私人信贷基金面临高达39%的赎回请求，上限为5%"
+      },
+      "summary": {
+        "en": "Private credit funds are facing withdrawal requests of up to 39% against a 5% cap, according to a headline. The managers behind four affected funds are not named in the supplied text.",
+        "zh": "据一则标题，私人信贷基金面临高达39%的赎回请求，上限为5%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "kalkine.ca",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNT3lzYnBacmFwamJRelVnNG5jR3h5c2RZZUhIdnE4c2R5eFJ6X1FFbHlLbHE0OGlGd28yb045VFNDR0R1a1lvTDBLRVhEejNzUHpsQ2RoMURNQ0JTYjRCVWt4M2E2N2R0bW42aVA3Rjd2YUhfdDlkd2JPLUkyLVEzRTMzbVkwX0UyM0lIaVhUS21mcUZnY0FycjhFUzFKOWVCRGhZa0c4S3MyUWJCR2c3MHZWcmgzRDk4WG9RcGU2R2tJNmQ1SDdWamEwWnVtVFRqOExXTW9KT08xdEg2Ulk0ZjQ3MFlycEk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Which four alternative managers sit behind private credit funds facing withdrawal requests of up to 39% against a 5% cap?",
+      "source_fingerprint": "83e528553765aa4c4d4d37c216657a7589b98410d53555001e0a49df23aae678",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "46567689e46902c1de7d13aa2b0836b225bc2478161bec757ee8ac7ff4a775ad",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline indicates private credit fund withdrawal requests up to 39% against a 5% cap, a liquidity condition signal for tracked credit managers, though no manager is named and the text is headline only.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:30+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNT3lzYnBacmFwamJRelVnNG5jR3h5c2RZZUhIdnE4c2R5eFJ6X1FFbHlLbHE0OGlGd28yb045VFNDR0R1a1lvTDBLRVhEejNzUHpsQ2RoMURNQ0JTYjRCVWt4M2E2N2R0bW42aVA3Rjd2YUhfdDlkd2JPLUkyLVEzRTMzbVkwX0UyM0lIaVhUS21mcUZnY0FycjhFUzFKOWVCRGhZa0c4S3MyUWJCR2c3MHZWcmgzRDk4WG9RcGU2R2tJNmQ1SDdWamEwWnVtVFRqOExXTW9KT08xdEg2Ulk0ZjQ3MFlycEk?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
+      "id": "891f0e68d734",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T08:41:39+00:00",
+      "headline": {
+        "en": "Private credit investors need transparency, not reassurance, amid redemption angst",
+        "zh": "私募信贷投资者面临赎回焦虑，需要的是透明度而非安抚"
+      },
+      "summary": {
+        "en": "A Funds Europe headline says private credit investors need transparency rather than reassurance amid redemption concerns.",
+        "zh": "Funds Europe 的一则标题称，在赎回担忧之下，私募信贷投资者需要的是透明度，而非安抚。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Funds Europe",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVHh4OFJ2ekFRMFFkUUdoVTV3WGJEaUt1XzJlQXN2QUN4RFhUWEZLM0doZkd1UTZjaHR5WGR2WUI2a1FsWDRiSURmTkVhYUstbmtPR3lsX0FpbThjTkZaemlYNjdPZm9kT2szOThSQVlSaVh3Qm1ZMkUwc0N5OTVfWjlJMjBSazM3ZW43WUZNVDktQkVIU0NXTlFCQ1V5Q3QwYUlNSDFId2ZKQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit investors need transparency, not reassurance, amid redemption angst",
+      "source_fingerprint": "9ed75515c13cf7a43b14eb6e3d4f1ea04974fa50057a8cd0ca84ce63e3d3be1e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2fb014b29ca6a446f0ff52f763d9e20116d75629c27f6c8a739039128a60d857",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Concerns transparency and redemption pressure in private credit, a sub-sector whose liquidity and fundraising conditions matter to tracked managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-05T17:01:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVHh4OFJ2ekFRMFFkUUdoVTV3WGJEaUt1XzJlQXN2QUN4RFhUWEZLM0doZkd1UTZjaHR5WGR2WUI2a1FsWDRiSURmTkVhYUstbmtPR3lsX0FpbThjTkZaemlYNjdPZm9kT2szOThSQVlSaVh3Qm1ZMkUwc0N5OTVfWjlJMjBSazM3ZW43WUZNVDktQkVIU0NXTlFCQ1V5Q3QwYUlNSDFId2ZKQQ?oc=5"
+      },
+      "observed_at": "2026-10-05T16:58:34+00:00"
+    },
+    {
       "id": "b43c120246f7",
       "date": "2026-10-05",
       "published_at": "2026-10-04T19:30:07+00:00",

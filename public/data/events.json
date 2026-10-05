@@ -2,10 +2,10 @@
   "schema_version": 1,
   "grouping_version": "events-v2",
   "ranking_version": "priority-v1",
-  "as_of": "2026-10-05T05:03:16+00:00",
+  "as_of": "2026-10-05T16:58:34+00:00",
   "overlay_version": 3,
-  "article_count": 362,
-  "event_count": 261,
+  "article_count": 375,
+  "event_count": 274,
   "events": [
     {
       "event_id": "evt-00dbee8c111c",
@@ -58,7 +58,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -84,7 +84,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 135
+      "priority_rank": 148
     },
     {
       "event_id": "evt-01023df58888",
@@ -164,7 +164,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -256,7 +256,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -282,7 +282,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 167
+      "priority_rank": 180
     },
     {
       "event_id": "evt-0314de11e4c8",
@@ -333,7 +333,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -360,7 +360,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 257
+      "priority_rank": 270
     },
     {
       "event_id": "evt-03f8f3173fa6",
@@ -413,7 +413,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -443,7 +443,7 @@
         "evt-5f9cf9b9ef30",
         "evt-reviewed-001"
       ],
-      "priority_rank": 227
+      "priority_rank": 240
     },
     {
       "event_id": "evt-0566ee7fbe8d",
@@ -492,7 +492,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -518,7 +518,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 198
+      "priority_rank": 211
     },
     {
       "event_id": "evt-05d606e39ea7",
@@ -567,7 +567,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -593,7 +593,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 209
+      "priority_rank": 222
     },
     {
       "event_id": "evt-06b3269f6fce",
@@ -671,7 +671,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -711,6 +711,85 @@
         "evt-reviewed-007"
       ],
       "priority_rank": 74
+    },
+    {
+      "event_id": "evt-06b6d9da921a",
+      "member_card_ids": [
+        "06b6d9da921a"
+      ],
+      "representative_card_id": "06b6d9da921a",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "06b6d9da921a",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "06b6d9da921a"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "06b6d9da921a",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 5
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T13:40:30+00:00",
+      "last_material_update_at": "2026-10-05T13:40:30+00:00",
+      "priority_source_card_id": "06b6d9da921a",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "KELO-AM",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMHpMeHFoLWdJZTZlN21Hc2huMkNfOVowVkZ2bXR5eDBseUNROVNMMjQ4UlA4M0NVblluQ1Z3d0tCNDdWTllzTno5dFZTUlBSQTMtSjh5enVqUjZqWXBocWlCYm9FSXkzZHczb2tnY1FqcUxLWjRlczJxYml6OUZ6dU83YlhqNEV5ZGJ4NGFka2VCamhBVUtScTVNVE1HWkFoNG9lS2lqcmJOeGxWZlNDN0Rn?oc=5",
+          "card_id": "06b6d9da921a",
+          "published_at": "2026-10-05T13:40:30+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 137
     },
     {
       "event_id": "evt-0891c2c283bf",
@@ -759,7 +838,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -834,7 +913,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -860,7 +939,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 142
+      "priority_rank": 155
     },
     {
       "event_id": "evt-0bb392627045",
@@ -911,7 +990,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -993,7 +1072,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1073,7 +1152,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1152,7 +1231,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1229,7 +1308,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1308,7 +1387,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1384,7 +1463,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1414,7 +1493,7 @@
         "evt-06b3269f6fce",
         "evt-reviewed-007"
       ],
-      "priority_rank": 244
+      "priority_rank": 257
     },
     {
       "event_id": "evt-158b19c81cca",
@@ -1465,7 +1544,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1491,7 +1570,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 168
+      "priority_rank": 181
     },
     {
       "event_id": "evt-1635ee5b39f8",
@@ -1540,7 +1619,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1621,7 +1700,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1653,7 +1732,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 158
+      "priority_rank": 171
     },
     {
       "event_id": "evt-18e6f9a0644a",
@@ -1702,7 +1781,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1728,7 +1807,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 201
+      "priority_rank": 214
     },
     {
       "event_id": "evt-1926ae0ca860",
@@ -1781,7 +1860,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1856,7 +1935,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1882,7 +1961,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 181
+      "priority_rank": 194
     },
     {
       "event_id": "evt-19d305f3a22a",
@@ -1931,7 +2010,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1958,7 +2037,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 220
+      "priority_rank": 233
     },
     {
       "event_id": "evt-1b8c90ad935b",
@@ -2009,7 +2088,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2086,7 +2165,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2167,7 +2246,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2194,7 +2273,86 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 241
+      "priority_rank": 254
+    },
+    {
+      "event_id": "evt-1dabb137d403",
+      "member_card_ids": [
+        "1dabb137d403"
+      ],
+      "representative_card_id": "1dabb137d403",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "1dabb137d403",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "1dabb137d403"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "1dabb137d403",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 2
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T15:05:21+00:00",
+      "last_material_update_at": "2026-10-05T15:05:21+00:00",
+      "priority_source_card_id": "1dabb137d403",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Pluang",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTFJYakVBSE9TeFpuYmhCWkhYVXRldWNGNHAzMWFhZmRZNGgzbnB1SXNHLTEyNzdId2g3M2ZrVks0TGhUVkZhUEVpYkdGVE9DbE5yMDd2dVdSVEFDekxLOHIxRUVyN0JqMkJIc0RlMlY4QWIwNmJ6Q19yQUlNOXFLaUExYnhDaVBwOHFJcklOVGdaVG0wM0NUMTJEeFFKUDJyWjZYTkpVcTJFYVJaRmJz?oc=5",
+          "card_id": "1dabb137d403",
+          "published_at": "2026-10-05T15:05:21+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 134
     },
     {
       "event_id": "evt-1fa4f9cef6be",
@@ -2243,7 +2401,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2325,7 +2483,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2352,7 +2510,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 237
+      "priority_rank": 250
     },
     {
       "event_id": "evt-20ec00101b92",
@@ -2401,7 +2559,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2427,7 +2585,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 205
+      "priority_rank": 218
     },
     {
       "event_id": "evt-211ba44e3071",
@@ -2476,7 +2634,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2503,7 +2661,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 231
+      "priority_rank": 244
     },
     {
       "event_id": "evt-257c06057f6a",
@@ -2554,7 +2712,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -2632,7 +2790,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2768,7 +2926,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2862,7 +3020,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2888,7 +3046,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 212
+      "priority_rank": 225
     },
     {
       "event_id": "evt-27617742e19d",
@@ -2937,7 +3095,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3016,7 +3174,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3042,7 +3200,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 204
+      "priority_rank": 217
     },
     {
       "event_id": "evt-291312fa6f19",
@@ -3095,7 +3253,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3170,7 +3328,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3196,7 +3354,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 215
+      "priority_rank": 228
     },
     {
       "event_id": "evt-2c8e8a403730",
@@ -3282,7 +3440,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -3374,7 +3532,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3449,7 +3607,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3475,7 +3633,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 208
+      "priority_rank": 221
     },
     {
       "event_id": "evt-2f455aa7741c",
@@ -3526,7 +3684,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3552,7 +3710,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 147
+      "priority_rank": 160
     },
     {
       "event_id": "evt-2ff8ced375ce",
@@ -3601,7 +3759,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3628,7 +3786,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 224
+      "priority_rank": 237
     },
     {
       "event_id": "evt-3202ae7aa46a",
@@ -3714,7 +3872,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3797,7 +3955,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3824,7 +3982,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 234
+      "priority_rank": 247
     },
     {
       "event_id": "evt-34278ab36e93",
@@ -3875,7 +4033,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3902,7 +4060,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 225
+      "priority_rank": 238
     },
     {
       "event_id": "evt-35f8106322ef",
@@ -3951,7 +4109,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4028,7 +4186,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4065,7 +4223,7 @@
       "related_event_ids": [
         "evt-ed49eab633f1"
       ],
-      "priority_rank": 223
+      "priority_rank": 236
     },
     {
       "event_id": "evt-3782c86e4cfe",
@@ -4114,7 +4272,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4189,7 +4347,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4216,6 +4374,81 @@
       "aliases": [],
       "related_event_ids": [],
       "priority_rank": 118
+    },
+    {
+      "event_id": "evt-39b93862f8f3",
+      "member_card_ids": [
+        "39b93862f8f3"
+      ],
+      "representative_card_id": "39b93862f8f3",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "39b93862f8f3",
+          "display_gps": [],
+          "display_sectors": [
+            "asset_based_finance"
+          ],
+          "member_card_ids": [
+            "39b93862f8f3"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "39b93862f8f3",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 10
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "asset_based_finance"
+      ],
+      "first_seen_at": "2026-10-05T13:00:48+00:00",
+      "last_material_update_at": "2026-10-05T13:00:48+00:00",
+      "priority_source_card_id": "39b93862f8f3",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "identity",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "pei-privaterealestate.com",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVWVTLVFhQVpEMTVGWHVNaV9zNlhxT0x6akduVVExWTVVT3RfcWthWFppSHctNmFUbW1MakE0cU9YQ3lGdUNsTVJ6UVREaFd4Q2gtV3N3ZDYyZG5IQWtab2p1R2VTekc3eVpqRENSaGcyYnlFcWh3MTVxelRDWG9VdzZvSEl3WVZUTE9GWGZvcw?oc=5",
+          "card_id": "39b93862f8f3",
+          "published_at": "2026-10-05T13:00:48+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 142
     },
     {
       "event_id": "evt-3aab807a0d5a",
@@ -4266,7 +4499,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -4341,7 +4574,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4368,7 +4601,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 252
+      "priority_rank": 265
     },
     {
       "event_id": "evt-3b9b1677cc06",
@@ -4421,7 +4654,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4447,7 +4680,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 136
+      "priority_rank": 149
     },
     {
       "event_id": "evt-3bc4c5d6c840",
@@ -4500,7 +4733,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4581,7 +4814,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4677,7 +4910,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4762,7 +4995,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4789,7 +5022,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 235
+      "priority_rank": 248
     },
     {
       "event_id": "evt-3d59d5574141",
@@ -4842,7 +5075,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -4917,7 +5150,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4943,7 +5176,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 154
+      "priority_rank": 167
     },
     {
       "event_id": "evt-3e7ef26e28ba",
@@ -4994,7 +5227,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5021,7 +5254,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 243
+      "priority_rank": 256
     },
     {
       "event_id": "evt-450bf828f944",
@@ -5070,7 +5303,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5096,7 +5329,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 176
+      "priority_rank": 189
     },
     {
       "event_id": "evt-45466877ac21",
@@ -5145,7 +5378,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5224,7 +5457,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5301,7 +5534,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5327,7 +5560,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 153
+      "priority_rank": 166
     },
     {
       "event_id": "evt-4749a235698b",
@@ -5376,7 +5609,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5402,7 +5635,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 174
+      "priority_rank": 187
     },
     {
       "event_id": "evt-483c5fba9ddc",
@@ -5455,7 +5688,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5481,7 +5714,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 137
+      "priority_rank": 150
     },
     {
       "event_id": "evt-4a20b22c3e85",
@@ -5530,7 +5763,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5556,7 +5789,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 194
+      "priority_rank": 207
     },
     {
       "event_id": "evt-4b18ff57330b",
@@ -5609,7 +5842,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5636,7 +5869,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 242
+      "priority_rank": 255
     },
     {
       "event_id": "evt-4bf5463d5857",
@@ -5685,7 +5918,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5711,7 +5944,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 211
+      "priority_rank": 224
     },
     {
       "event_id": "evt-4c989b5deeb9",
@@ -5764,7 +5997,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5799,7 +6032,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 261
+      "priority_rank": 274
     },
     {
       "event_id": "evt-523c71b7f50a",
@@ -5850,7 +6083,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5876,7 +6109,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 146
+      "priority_rank": 159
     },
     {
       "event_id": "evt-54e666894614",
@@ -5925,7 +6158,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6006,7 +6239,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6032,7 +6265,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 140
+      "priority_rank": 153
     },
     {
       "event_id": "evt-55d439246bc8",
@@ -6083,7 +6316,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6158,7 +6391,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6233,7 +6466,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6259,7 +6492,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 175
+      "priority_rank": 188
     },
     {
       "event_id": "evt-58026075f239",
@@ -6310,7 +6543,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6387,7 +6620,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6462,7 +6695,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6537,7 +6770,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6622,7 +6855,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6723,7 +6956,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6808,7 +7041,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6885,7 +7118,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6911,7 +7144,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 169
+      "priority_rank": 182
     },
     {
       "event_id": "evt-5e17d66d9c39",
@@ -6962,7 +7195,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7041,7 +7274,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7067,7 +7300,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 150
+      "priority_rank": 163
     },
     {
       "event_id": "evt-5f088c9e7a8d",
@@ -7116,7 +7349,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7142,7 +7375,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 180
+      "priority_rank": 193
     },
     {
       "event_id": "evt-5f2e08500925",
@@ -7191,7 +7424,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7217,7 +7450,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 206
+      "priority_rank": 219
     },
     {
       "event_id": "evt-5f9097b60c5e",
@@ -7266,7 +7499,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7345,7 +7578,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7375,7 +7608,7 @@
         "evt-03f8f3173fa6",
         "evt-reviewed-001"
       ],
-      "priority_rank": 248
+      "priority_rank": 261
     },
     {
       "event_id": "evt-60b5fc3bb616",
@@ -7424,7 +7657,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7499,7 +7732,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7525,7 +7758,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 172
+      "priority_rank": 185
     },
     {
       "event_id": "evt-6598f3e38c58",
@@ -7576,7 +7809,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7651,7 +7884,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7677,7 +7910,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 177
+      "priority_rank": 190
     },
     {
       "event_id": "evt-6684f8fdf1fc",
@@ -7726,7 +7959,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7752,7 +7985,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 157
+      "priority_rank": 170
     },
     {
       "event_id": "evt-67e4ea6814ca",
@@ -7801,7 +8034,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7876,7 +8109,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7951,7 +8184,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7977,7 +8210,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 188
+      "priority_rank": 201
     },
     {
       "event_id": "evt-6bbc0e19741a",
@@ -8108,7 +8341,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8258,7 +8491,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8284,7 +8517,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 192
+      "priority_rank": 205
     },
     {
       "event_id": "evt-6d8d726f65c4",
@@ -8337,7 +8570,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8363,7 +8596,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 152
+      "priority_rank": 165
     },
     {
       "event_id": "evt-6dce594c42b8",
@@ -8412,7 +8645,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8438,7 +8671,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 179
+      "priority_rank": 192
     },
     {
       "event_id": "evt-6e521167dacd",
@@ -8489,7 +8722,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8516,7 +8749,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 246
+      "priority_rank": 259
     },
     {
       "event_id": "evt-6f584577b856",
@@ -8567,7 +8800,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8594,7 +8827,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 226
+      "priority_rank": 239
     },
     {
       "event_id": "evt-6fb7deb3d317",
@@ -8643,7 +8876,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8720,7 +8953,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8801,7 +9034,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8876,7 +9109,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8902,7 +9135,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 191
+      "priority_rank": 204
     },
     {
       "event_id": "evt-710cf91fb0dd",
@@ -8951,7 +9184,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8978,7 +9211,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 259
+      "priority_rank": 272
     },
     {
       "event_id": "evt-713c2760fc8e",
@@ -9027,7 +9260,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9054,6 +9287,85 @@
       "aliases": [],
       "related_event_ids": [],
       "priority_rank": 91
+    },
+    {
+      "event_id": "evt-71f3f275284c",
+      "member_card_ids": [
+        "71f3f275284c"
+      ],
+      "representative_card_id": "71f3f275284c",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "71f3f275284c",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "71f3f275284c"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "71f3f275284c",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 4
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T13:41:27+00:00",
+      "last_material_update_at": "2026-10-05T13:41:27+00:00",
+      "priority_source_card_id": "71f3f275284c",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Traders Union",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxON3hEYkh5andMZGJ6eWJyUzBKZkpHcVVfY3NyOVU5aWhrd1FsdVh6bmhTZ3NFbGg4OGJfN3U2OFZtNDFTZ1JNOU5RcURyUVlKQ1pZem1HTmt6QU5pc2RmVGpDNUNONzVWYVhaTFUzWU9NTWRMeXhfY1Fxb0l0cERHcU5JNVR0NkV2ZE5VVzRQSVQxV3FmQXR5ME5udjd6WEltOFVlRTBTcGdZMDk5STQ3Ng?oc=5",
+          "card_id": "71f3f275284c",
+          "published_at": "2026-10-05T13:41:27+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 136
     },
     {
       "event_id": "evt-71fe1ee5a90c",
@@ -9104,7 +9416,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9136,7 +9448,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 214
+      "priority_rank": 227
     },
     {
       "event_id": "evt-7222dddf4ca6",
@@ -9185,7 +9497,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9211,7 +9523,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 143
+      "priority_rank": 156
     },
     {
       "event_id": "evt-72c5665a255f",
@@ -9260,7 +9572,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9335,7 +9647,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9410,7 +9722,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9489,7 +9801,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9564,7 +9876,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9590,7 +9902,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 155
+      "priority_rank": 168
     },
     {
       "event_id": "evt-758a2127404d",
@@ -9645,7 +9957,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9671,7 +9983,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 138
+      "priority_rank": 151
     },
     {
       "event_id": "evt-7766be2db755",
@@ -9720,7 +10032,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9747,7 +10059,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 258
+      "priority_rank": 271
     },
     {
       "event_id": "evt-7787883e8b16",
@@ -9802,7 +10114,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9877,7 +10189,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9962,7 +10274,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10063,7 +10375,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10140,7 +10452,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10219,7 +10531,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10294,7 +10606,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10369,7 +10681,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10395,7 +10707,88 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 161
+      "priority_rank": 174
+    },
+    {
+      "event_id": "evt-7f3bae892cc0",
+      "member_card_ids": [
+        "7f3bae892cc0"
+      ],
+      "representative_card_id": "7f3bae892cc0",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "7f3bae892cc0",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit",
+            "software"
+          ],
+          "member_card_ids": [
+            "7f3bae892cc0"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "7f3bae892cc0",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 6
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit",
+        "software"
+      ],
+      "first_seen_at": "2026-10-05T13:36:26+00:00",
+      "last_material_update_at": "2026-10-05T13:36:26+00:00",
+      "priority_source_card_id": "7f3bae892cc0",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMVEzdkhnc2ktNV93WVEybzZvR3NuaXlRSElXTkU2SzBxbHJWeVJGMzJaN2FYSWNMa2ZNVmFPaGR6Z1h1QThadEg4bkU4ZWx0YlBCRVpzTkNNcV9EaFVLRl9CYjZvTGE3ZXVWUW91U2d3RFpndkRFTmt6T2dWMkdwQkFEZTRTVHVhb216eVB4dzNIdnpVa05KdThxYV83ZDJEdW5VUHRJckhiQW5fMTg1NmdBR1E4T0JMc0ltWDBpMEdxdVdmejlZZUNHdzhucGRRVEc3dWJ0QQ?oc=5",
+          "card_id": "7f3bae892cc0",
+          "published_at": "2026-10-05T13:36:26+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 138
     },
     {
       "event_id": "evt-7fafa72c5993",
@@ -10477,7 +10870,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10509,7 +10902,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 199
+      "priority_rank": 212
     },
     {
       "event_id": "evt-80bc0a674b20",
@@ -10560,7 +10953,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10639,7 +11032,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10666,7 +11059,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 232
+      "priority_rank": 245
     },
     {
       "event_id": "evt-83dc16f999e3",
@@ -10715,7 +11108,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10741,7 +11134,82 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 196
+      "priority_rank": 209
+    },
+    {
+      "event_id": "evt-83eff12cf867",
+      "member_card_ids": [
+        "83eff12cf867"
+      ],
+      "representative_card_id": "83eff12cf867",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "83eff12cf867",
+          "display_gps": [],
+          "display_sectors": [
+            "gp_stakes"
+          ],
+          "member_card_ids": [
+            "83eff12cf867"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "83eff12cf867",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 7
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "gp_stakes"
+      ],
+      "first_seen_at": "2026-10-05T13:35:11+00:00",
+      "last_material_update_at": "2026-10-05T13:35:11+00:00",
+      "priority_source_card_id": "83eff12cf867",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Dealroom",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb1d2V2RHWEpfQTVTM2JYQUVSTXcxUzY5d0hGdGhZUFJSQktkSm1CZzFpRGlab3lEbktjU0pOeVBqcU04am5rNXpNaUl1eUtJRnY0UjNQU1FGYTZfUnFCN0ZFZjg4cGNfMnJnVnlOcWpYUWVUQmZIUmZxOUhqWGlaZkpSMGg0OWxhcG95MlpqNExGeDlNLVNncTlKV1o1dw?oc=5",
+          "card_id": "83eff12cf867",
+          "published_at": "2026-10-05T13:35:11+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 139
     },
     {
       "event_id": "evt-84682c152051",
@@ -10790,7 +11258,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10816,7 +11284,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 166
+      "priority_rank": 179
     },
     {
       "event_id": "evt-869d02bd1303",
@@ -10867,7 +11335,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10894,7 +11362,82 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 217
+      "priority_rank": 230
+    },
+    {
+      "event_id": "evt-891f0e68d734",
+      "member_card_ids": [
+        "891f0e68d734"
+      ],
+      "representative_card_id": "891f0e68d734",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "891f0e68d734",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "891f0e68d734"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "891f0e68d734",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 13
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T08:41:39+00:00",
+      "last_material_update_at": "2026-10-05T08:41:39+00:00",
+      "priority_source_card_id": "891f0e68d734",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Funds Europe",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVHh4OFJ2ekFRMFFkUUdoVTV3WGJEaUt1XzJlQXN2QUN4RFhUWEZLM0doZkd1UTZjaHR5WGR2WUI2a1FsWDRiSURmTkVhYUstbmtPR3lsX0FpbThjTkZaemlYNjdPZm9kT2szOThSQVlSaVh3Qm1ZMkUwc0N5OTVfWjlJMjBSazM3ZW43WUZNVDktQkVIU0NXTlFCQ1V5Q3QwYUlNSDFId2ZKQQ?oc=5",
+          "card_id": "891f0e68d734",
+          "published_at": "2026-10-05T08:41:39+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 145
     },
     {
       "event_id": "evt-89fdd706bd80",
@@ -10951,7 +11494,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11042,7 +11585,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11069,7 +11612,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 249
+      "priority_rank": 262
     },
     {
       "event_id": "evt-907101b57ebd",
@@ -11118,7 +11661,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11144,7 +11687,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 213
+      "priority_rank": 226
     },
     {
       "event_id": "evt-92dc00f248ce",
@@ -11230,7 +11773,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11314,7 +11857,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11389,7 +11932,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11464,7 +12007,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11490,7 +12033,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 186
+      "priority_rank": 199
     },
     {
       "event_id": "evt-95a84a791a92",
@@ -11539,7 +12082,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11614,7 +12157,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11689,7 +12232,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11715,7 +12258,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 170
+      "priority_rank": 183
     },
     {
       "event_id": "evt-98be626e5990",
@@ -11764,7 +12307,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11839,7 +12382,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11866,6 +12409,83 @@
       "aliases": [],
       "related_event_ids": [],
       "priority_rank": 89
+    },
+    {
+      "event_id": "evt-9b712ef6b8e1",
+      "member_card_ids": [
+        "9b712ef6b8e1"
+      ],
+      "representative_card_id": "9b712ef6b8e1",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "9b712ef6b8e1",
+          "display_gps": [],
+          "display_sectors": [
+            "real_estate",
+            "mortgage"
+          ],
+          "member_card_ids": [
+            "9b712ef6b8e1"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "9b712ef6b8e1",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Unsupported assessment claim: linkage",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 3
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "first_seen_at": "2026-10-05T14:15:57+00:00",
+      "last_material_update_at": "2026-10-05T14:15:57+00:00",
+      "priority_source_card_id": "9b712ef6b8e1",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Unsupported assessment claim: linkage",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Commercial Real Estate Financing | Commercial Observer",
+          "url": "https://commercialobserver.com/2026/10/chicago-cmbs-distress-mlb-playoffs-cubs-white-sox/",
+          "card_id": "9b712ef6b8e1",
+          "published_at": "2026-10-05T14:15:57+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 135
     },
     {
       "event_id": "evt-9befc79860cd",
@@ -11914,7 +12534,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11941,7 +12561,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 228
+      "priority_rank": 241
     },
     {
       "event_id": "evt-9c6aed3ab7ac",
@@ -11990,7 +12610,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12016,7 +12636,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 190
+      "priority_rank": 203
     },
     {
       "event_id": "evt-9e14fa3954e3",
@@ -12065,7 +12685,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12140,7 +12760,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12167,6 +12787,81 @@
       "aliases": [],
       "related_event_ids": [],
       "priority_rank": 63
+    },
+    {
+      "event_id": "evt-9eb483155a20",
+      "member_card_ids": [
+        "9eb483155a20"
+      ],
+      "representative_card_id": "9eb483155a20",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "9eb483155a20",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "9eb483155a20"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "9eb483155a20",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 1
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T15:36:45+00:00",
+      "last_material_update_at": "2026-10-05T15:36:45+00:00",
+      "priority_source_card_id": "9eb483155a20",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "KSL News",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMllsbG51MnV3WEF4RTAxNURxNzRZdFV0cml2SUFVcDBlMWJoQ0hGMFIybjFfc2ZtejE3SHR6OEpjbWRmeXU4NUgyemNnS2hjUG05UC1iNWRuY1VrdFYtQV9UazB3bnd3elNtbXJET0FQMHM5QV92MnNLcWcyamRWeU5DTWhaR0ZJempJQms5R0hjcUN5UjBNdFVQaExvX1djbTdCTjdPR09NbElBdkJoMEd3Um1KaW11RV9GOA?oc=5",
+          "card_id": "9eb483155a20",
+          "published_at": "2026-10-05T15:36:45+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 133
     },
     {
       "event_id": "evt-9fa3172eb1ef",
@@ -12219,7 +12914,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12257,7 +12952,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 183
+      "priority_rank": 196
     },
     {
       "event_id": "evt-a049b9b345ed",
@@ -12306,7 +13001,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12332,7 +13027,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 203
+      "priority_rank": 216
     },
     {
       "event_id": "evt-a04cc4b2a80e",
@@ -12381,7 +13076,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12459,7 +13154,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12546,7 +13241,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12572,7 +13267,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 207
+      "priority_rank": 220
     },
     {
       "event_id": "evt-a1990b54b762",
@@ -12621,7 +13316,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12647,7 +13342,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 148
+      "priority_rank": 161
     },
     {
       "event_id": "evt-a1fe854192f6",
@@ -12696,7 +13391,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12722,7 +13417,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 144
+      "priority_rank": 157
     },
     {
       "event_id": "evt-a42ddb1f074c",
@@ -12771,7 +13466,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12850,7 +13545,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12934,7 +13629,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13013,7 +13708,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13039,7 +13734,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 141
+      "priority_rank": 154
     },
     {
       "event_id": "evt-a85f2c246e31",
@@ -13090,7 +13785,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13117,7 +13812,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 247
+      "priority_rank": 260
     },
     {
       "event_id": "evt-a9303f71d972",
@@ -13166,7 +13861,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13249,7 +13944,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13326,7 +14021,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13352,7 +14047,86 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 171
+      "priority_rank": 184
+    },
+    {
+      "event_id": "evt-aca400d707e2",
+      "member_card_ids": [
+        "aca400d707e2"
+      ],
+      "representative_card_id": "aca400d707e2",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "aca400d707e2",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "aca400d707e2"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "aca400d707e2",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 8
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T13:22:45+00:00",
+      "last_material_update_at": "2026-10-05T13:22:45+00:00",
+      "priority_source_card_id": "aca400d707e2",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQX3lzMHVlbmwzbWtHNmgybFRFdm1hUG91aW5MQjAzMVRzWjBYMTZFbzN3cFpPUTFLY2dMNHlpWTY2YnNUOGc4enV5SVdja0c2UHlYV01fUzBUbHlmNUJDQVU0dUhFWTBMdE5jT095WGwyS1IxcVZNSUFZQXhaTThWU0E5ak5TYUNDMXhwMlVfc25lbjBFVnBDNFRRMmk0Q0hDWUN6MW1zWmprbXJoLTlaVjBZVmcyUWZpelpNOTZRbFZ5NkdqdEEtM184V0VkcWZJMGE2MHlzdXVmMXMxYzJvQ2JkRmpHNTc3?oc=5",
+          "card_id": "aca400d707e2",
+          "published_at": "2026-10-05T13:22:45+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 140
     },
     {
       "event_id": "evt-ad3cc824db37",
@@ -13401,7 +14175,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13427,7 +14201,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 195
+      "priority_rank": 208
     },
     {
       "event_id": "evt-ae5f41c3bc26",
@@ -13478,7 +14252,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -13560,7 +14334,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13587,7 +14361,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 240
+      "priority_rank": 253
     },
     {
       "event_id": "evt-b25cd6b822b1",
@@ -13636,7 +14410,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -13711,7 +14485,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13786,7 +14560,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13861,7 +14635,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13938,7 +14712,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14001,7 +14775,7 @@
               "zh": "证据尚未充分核实，需人工复核。"
             }
           },
-          "priority_rank": 1
+          "priority_rank": 14
         }
       },
       "display_gps": [
@@ -14017,7 +14791,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14043,7 +14817,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 133
+      "priority_rank": 146
     },
     {
       "event_id": "evt-b574959d7c9b",
@@ -14092,7 +14866,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14119,7 +14893,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 251
+      "priority_rank": 264
     },
     {
       "event_id": "evt-b5d4feae0128",
@@ -14174,7 +14948,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14287,7 +15061,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14384,7 +15158,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14459,7 +15233,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14486,7 +15260,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 219
+      "priority_rank": 232
     },
     {
       "event_id": "evt-bc5bb0ca2ca4",
@@ -14537,7 +15311,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14563,7 +15337,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 151
+      "priority_rank": 164
     },
     {
       "event_id": "evt-bca3caecdedb",
@@ -14616,7 +15390,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14697,7 +15471,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14724,7 +15498,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 238
+      "priority_rank": 251
     },
     {
       "event_id": "evt-bd0c177ab82a",
@@ -14773,7 +15547,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14800,7 +15574,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 236
+      "priority_rank": 249
     },
     {
       "event_id": "evt-be90a04f0d92",
@@ -14849,7 +15623,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14875,7 +15649,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 189
+      "priority_rank": 202
     },
     {
       "event_id": "evt-c1bbeccadda0",
@@ -14924,7 +15698,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14951,7 +15725,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 256
+      "priority_rank": 269
     },
     {
       "event_id": "evt-c3094b330ed4",
@@ -15000,7 +15774,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15026,7 +15800,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 210
+      "priority_rank": 223
     },
     {
       "event_id": "evt-c30c5b1d54a3",
@@ -15075,7 +15849,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15101,7 +15875,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 178
+      "priority_rank": 191
     },
     {
       "event_id": "evt-c3efa0e3e436",
@@ -15152,7 +15926,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15178,7 +15952,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 162
+      "priority_rank": 175
     },
     {
       "event_id": "evt-c504193b7d21",
@@ -15227,7 +16001,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15254,7 +16028,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 255
+      "priority_rank": 268
     },
     {
       "event_id": "evt-c5572a0521c8",
@@ -15303,7 +16077,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15330,7 +16104,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 239
+      "priority_rank": 252
     },
     {
       "event_id": "evt-c5adf2f35275",
@@ -15381,7 +16155,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15408,7 +16182,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 245
+      "priority_rank": 258
     },
     {
       "event_id": "evt-c5ae78f0b305",
@@ -15457,7 +16231,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15538,7 +16312,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15628,7 +16402,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15654,7 +16428,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 193
+      "priority_rank": 206
     },
     {
       "event_id": "evt-c6b3079f04b1",
@@ -15707,7 +16481,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15733,7 +16507,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 216
+      "priority_rank": 229
     },
     {
       "event_id": "evt-c704c89e54cc",
@@ -15782,7 +16556,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15857,7 +16631,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15883,7 +16657,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 187
+      "priority_rank": 200
     },
     {
       "event_id": "evt-c969ea61c5e8",
@@ -15936,7 +16710,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15963,7 +16737,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 229
+      "priority_rank": 242
     },
     {
       "event_id": "evt-c9a7e5910906",
@@ -16016,7 +16790,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16043,7 +16817,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 218
+      "priority_rank": 231
     },
     {
       "event_id": "evt-cb2687e35fea",
@@ -16092,7 +16866,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16119,7 +16893,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 221
+      "priority_rank": 234
     },
     {
       "event_id": "evt-ccd600d33c15",
@@ -16170,7 +16944,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16249,7 +17023,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16324,7 +17098,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16350,7 +17124,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 185
+      "priority_rank": 198
     },
     {
       "event_id": "evt-ce32ac8b2cdf",
@@ -16399,7 +17173,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16474,7 +17248,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16500,7 +17274,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 184
+      "priority_rank": 197
     },
     {
       "event_id": "evt-cf61bf21ca48",
@@ -16551,7 +17325,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16628,7 +17402,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16654,7 +17428,82 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 173
+      "priority_rank": 186
+    },
+    {
+      "event_id": "evt-d04979546196",
+      "member_card_ids": [
+        "d04979546196"
+      ],
+      "representative_card_id": "d04979546196",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "d04979546196",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "d04979546196"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "d04979546196",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 11
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T12:28:00+00:00",
+      "last_material_update_at": "2026-10-05T12:28:00+00:00",
+      "priority_source_card_id": "d04979546196",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "kalkine.ca",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY0N0MHoxeW5VbXZJZ3pBNVdHcmR3MllWZlIzU0hpOW9tWjZPNEdQMjIwWXU2MnZmU0hfZV9ibzUyU3VRWFpLcWp2ZllPdUUtaFJuN0g3U0g3Q0xtUUJsaE1JVGdQRlMwTnZNLW5ZUTZFQ0NyYVFNZ0RSeWZBdmFEanpuNWpLNGx2RHU1dmktVWIyUWs0ZzN0RHJRbktJWTlrT2txZFJlNWR0dkpBbVRuQ0ZwMy1lalpUTEYxS1h6TDVxUWNWVV9mcnVlZVJZd1A4clFxd2xDYw?oc=5",
+          "card_id": "d04979546196",
+          "published_at": "2026-10-05T12:28:00+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 143
     },
     {
       "event_id": "evt-d1529675de2a",
@@ -16707,7 +17556,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16740,7 +17589,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 222
+      "priority_rank": 235
     },
     {
       "event_id": "evt-d15d91b0dc44",
@@ -16820,7 +17669,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16915,7 +17764,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16994,7 +17843,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17104,7 +17953,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17190,7 +18039,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17216,7 +18065,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 156
+      "priority_rank": 169
     },
     {
       "event_id": "evt-d6632e2fb734",
@@ -17265,7 +18114,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17292,7 +18141,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 233
+      "priority_rank": 246
     },
     {
       "event_id": "evt-d796cd9e96a0",
@@ -17380,7 +18229,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17481,7 +18330,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17508,7 +18357,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 254
+      "priority_rank": 267
     },
     {
       "event_id": "evt-dc741bd5af7f",
@@ -17557,7 +18406,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17634,7 +18483,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17711,7 +18560,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17743,7 +18592,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 200
+      "priority_rank": 213
     },
     {
       "event_id": "evt-e188a2df5402",
@@ -17792,7 +18641,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17904,7 +18753,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18000,7 +18849,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18035,7 +18884,7 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 260
+      "priority_rank": 273
     },
     {
       "event_id": "evt-e3ab139823fa",
@@ -18084,7 +18933,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18110,7 +18959,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 197
+      "priority_rank": 210
     },
     {
       "event_id": "evt-e3dfbfbc8156",
@@ -18159,7 +19008,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18185,7 +19034,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 145
+      "priority_rank": 158
     },
     {
       "event_id": "evt-e50d7881c73e",
@@ -18234,7 +19083,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18313,7 +19162,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18388,7 +19237,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18463,7 +19312,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18489,7 +19338,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 160
+      "priority_rank": 173
     },
     {
       "event_id": "evt-eae20c9764c4",
@@ -18540,7 +19389,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18566,7 +19415,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 159
+      "priority_rank": 172
     },
     {
       "event_id": "evt-eb51b25cb448",
@@ -18621,7 +19470,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18696,7 +19545,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18722,7 +19571,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 164
+      "priority_rank": 177
     },
     {
       "event_id": "evt-ed49eab633f1",
@@ -18771,7 +19620,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18850,7 +19699,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -18930,7 +19779,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18956,7 +19805,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 139
+      "priority_rank": 152
     },
     {
       "event_id": "evt-f1f5248908fb",
@@ -19009,7 +19858,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -19094,7 +19943,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19120,7 +19969,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 149
+      "priority_rank": 162
     },
     {
       "event_id": "evt-f206f77d814a",
@@ -19173,7 +20022,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -19248,7 +20097,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -19327,7 +20176,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -19408,7 +20257,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19434,7 +20283,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 165
+      "priority_rank": 178
     },
     {
       "event_id": "evt-f668391dec0f",
@@ -19485,7 +20334,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19512,7 +20361,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 250
+      "priority_rank": 263
     },
     {
       "event_id": "evt-f6e820e3975b",
@@ -19592,7 +20441,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -19675,7 +20524,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19701,7 +20550,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 202
+      "priority_rank": 215
     },
     {
       "event_id": "evt-f7c972f393fb",
@@ -19754,7 +20603,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -19829,7 +20678,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19856,7 +20705,82 @@
       "aliases": [],
       "reviewed_relevance": "exclude",
       "related_event_ids": [],
-      "priority_rank": 253
+      "priority_rank": 266
+    },
+    {
+      "event_id": "evt-f8b27ad96479",
+      "member_card_ids": [
+        "f8b27ad96479"
+      ],
+      "representative_card_id": "f8b27ad96479",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "f8b27ad96479",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "f8b27ad96479"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "f8b27ad96479",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 12
+        }
+      },
+      "display_gps": [],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T12:26:00+00:00",
+      "last_material_update_at": "2026-10-05T12:26:00+00:00",
+      "priority_source_card_id": "f8b27ad96479",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "kalkine.ca",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNT3lzYnBacmFwamJRelVnNG5jR3h5c2RZZUhIdnE4c2R5eFJ6X1FFbHlLbHE0OGlGd28yb045VFNDR0R1a1lvTDBLRVhEejNzUHpsQ2RoMURNQ0JTYjRCVWt4M2E2N2R0bW42aVA3Rjd2YUhfdDlkd2JPLUkyLVEzRTMzbVkwX0UyM0lIaVhUS21mcUZnY0FycjhFUzFKOWVCRGhZa0c4S3MyUWJCR2c3MHZWcmgzRDk4WG9RcGU2R2tJNmQ1SDdWamEwWnVtVFRqOExXTW9KT08xdEg2Ulk0ZjQ3MFlycEk?oc=5",
+          "card_id": "f8b27ad96479",
+          "published_at": "2026-10-05T12:26:00+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 144
     },
     {
       "event_id": "evt-f9490f06a074",
@@ -19905,7 +20829,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19931,7 +20855,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 163
+      "priority_rank": 176
     },
     {
       "event_id": "evt-f9cf14d408ff",
@@ -19988,7 +20912,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20076,7 +21000,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20151,7 +21075,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20178,7 +21102,7 @@
       "aliases": [],
       "reviewed_relevance": "include",
       "related_event_ids": [],
-      "priority_rank": 230
+      "priority_rank": 243
     },
     {
       "event_id": "evt-fb317090546a",
@@ -20227,7 +21151,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20253,7 +21177,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 182
+      "priority_rank": 195
     },
     {
       "event_id": "evt-fb5c98994c34",
@@ -20306,7 +21230,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20338,6 +21262,85 @@
         "evt-f9cf14d408ff"
       ],
       "priority_rank": 31
+    },
+    {
+      "event_id": "evt-fec81eb34897",
+      "member_card_ids": [
+        "fec81eb34897"
+      ],
+      "representative_card_id": "fec81eb34897",
+      "date_views": {
+        "2026-10-05": {
+          "representative_card_id": "fec81eb34897",
+          "display_gps": [
+            "blue_owl"
+          ],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "fec81eb34897"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "fec81eb34897",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-05T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 9
+        }
+      },
+      "display_gps": [
+        "blue_owl"
+      ],
+      "display_sectors": [
+        "private_credit"
+      ],
+      "first_seen_at": "2026-10-05T13:01:06+00:00",
+      "last_material_update_at": "2026-10-05T13:01:06+00:00",
+      "priority_source_card_id": "fec81eb34897",
+      "timestamp_basis": "published_at",
+      "updated": false,
+      "priority": {
+        "version": "priority-v1",
+        "as_of": "2026-10-05T16:58:34+00:00",
+        "priority": "needs_review",
+        "severity": "unknown",
+        "time_sensitivity": "monitor",
+        "linkage": "unknown",
+        "evidence_strength": "unknown",
+        "routine": false,
+        "potential_urgent": false,
+        "reason": {
+          "en": "Missing or insufficient source evidence",
+          "zh": "证据尚未充分核实，需人工复核。"
+        }
+      },
+      "last_source_revision_at": null,
+      "merge_rule": "source",
+      "member_roles": {},
+      "sources": [
+        {
+          "publisher": "Finimize",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTjlmMndad20wRnR6Z29OTjdQemVwM04zdjBkd0lnOHBRTURWZEJic0VUV2tBRF8zQTY2ZlNqYkRZMHY3Z3JmU3ZOWGl6dHZZaExwa2FmYl9LLXJQRkh2MUU3M1pXVXR3RFMxRkw5RlpBRFFRb1E1ZThLa0laRlRHNDBVaFZFcVA5RkZWSENGOUxNa0E?oc=5",
+          "card_id": "fec81eb34897",
+          "published_at": "2026-10-05T13:01:06+00:00"
+        }
+      ],
+      "aliases": [],
+      "related_event_ids": [],
+      "priority_rank": 141
     },
     {
       "event_id": "evt-feecdb04db8a",
@@ -20390,7 +21393,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20416,7 +21419,7 @@
       ],
       "aliases": [],
       "related_event_ids": [],
-      "priority_rank": 134
+      "priority_rank": 147
     },
     {
       "event_id": "evt-ff2ebd4839b4",
@@ -20467,7 +21470,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20627,7 +21630,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20916,7 +21919,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21048,7 +22051,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -21188,7 +22191,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21290,7 +22293,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21441,7 +22444,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21609,7 +22612,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -21767,7 +22770,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-05T05:03:16+00:00",
+        "as_of": "2026-10-05T16:58:34+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -23708,5 +24711,5 @@
       "model": "deepseek-flash"
     }
   },
-  "cards_sha256": "3a22661b7385e193ec9be6c6afe07b775c4d618cb6c97751d27d75c485be0307"
+  "cards_sha256": "25caa8162ea8112a48f10139a242184d172562d40dfdfa13a0e1df928d4d88ef"
 }
