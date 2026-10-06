@@ -1,0 +1,458 @@
+{
+  "date": "2026-10-06",
+  "items": [
+    {
+      "id": "deb7aacb26a1",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T01:42:39+00:00",
+      "headline": {
+        "en": "StepStone and ASB Capital launch Shari'ah-compliant private credit fund",
+        "zh": "StepStone与ASB Capital推出符合伊斯兰教法的私募信贷基金"
+      },
+      "summary": {
+        "en": "StepStone and ASB Capital have launched a Shari'ah-compliant private credit fund, according to a headline report.",
+        "zh": "StepStone与ASB Capital推出一只符合伊斯兰教法（Shari'ah）的私募信贷基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMElsaTgtZWRwTklQa0c3OUFoV1FBZnh4YXE2UnVFOGhMU2lkZXpsSnA1bnNrelMwTWhzQWxwMTM2b1J5eWJIOWlpTXZHdzBBN2J2LTlXZXAyNTVGNXlJYVlfWXh1UktLX0ptSnFjMnNkUXRFbXZqb3ExOWVkeEY5clJaTGtPdks4ODVYVUhUMVMzN0N2UGswX1VsdjdPT2FhTkhORnpZUWdmclV1V0lVeXZKMGNsLXJ4clFhVw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "StepStone and ASB Capital launch Shari’ah-compliant private credit fund",
+      "source_fingerprint": "e5cc45fe8532e131c398421c2c15b7941b8b1d6ef6db7772262ba58e0c549376",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "92c1d3a0f6702837babcc4d417d390a5b80c83b85a93e676d58c46799d466d20",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New Shari'ah-compliant private credit vehicle launch signals continued Islamic-finance channel expansion in private credit, a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMElsaTgtZWRwTklQa0c3OUFoV1FBZnh4YXE2UnVFOGhMU2lkZXpsSnA1bnNrelMwTWhzQWxwMTM2b1J5eWJIOWlpTXZHdzBBN2J2LTlXZXAyNTVGNXlJYVlfWXh1UktLX0ptSnFjMnNkUXRFbXZqb3ExOWVkeEY5clJaTGtPdks4ODVYVUhUMVMzN0N2UGswX1VsdjdPT2FhTkhORnpZUWdmclV1V0lVeXZKMGNsLXJ4clFhVw?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "c5861a603d43",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T00:13:00+00:00",
+      "headline": {
+        "en": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt",
+        "zh": "KKR将以包括债务在内的51亿美元交易收购基金行政管理公司Gen II"
+      },
+      "summary": {
+        "en": "KKR agreed to acquire fund administrator Gen II in a deal valued at $5.1 billion including debt, according to the headline.",
+        "zh": "根据标题，KKR已同意收购基金行政管理公司Gen II，交易价值包括债务在内为51亿美元。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWUNoNVl1RGFnRVM5U2FKNldwRU9fZnREcE9NRlV2b0hQalIxYUVZdTBNU0hrb2xlSjRiOENiMEtUak5VdWRGZUtxS3RRX1J1YjJxRl9POGR5M1FJWDRqdVhuZmFpYl8tVFRDWmZjT1BsREhOQ3kzUkVWM3RtUXN2RW5DWmtFWWc2N251eEtjS0RzZk91QklrMThzbkhKeFE1MDBBdEdlSktaMlRTLW5sNFpncllLbjNfNy1FdA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt",
+      "source_fingerprint": "bf49017cc6439aaa40cb4ac96233802f88780ae771b30c28f1414a0710caaaff",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6a869a2732b13991c97a692476f02fedf36d6a5cd9e7158385508d6aa7664906",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR's acquisition of fund administrator Gen II affects its franchise and capital deployment, a relevant read-through for a tracked manager.",
+      "event_identity": {
+        "subject": "kkr",
+        "action": "buy",
+        "object": "gen ii",
+        "period": "$5.1 billion deal including debt",
+        "numbers": [
+          "$5.1 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:12+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWUNoNVl1RGFnRVM5U2FKNldwRU9fZnREcE9NRlV2b0hQalIxYUVZdTBNU0hrb2xlSjRiOENiMEtUak5VdWRGZUtxS3RRX1J1YjJxRl9POGR5M1FJWDRqdVhuZmFpYl8tVFRDWmZjT1BsREhOQ3kzUkVWM3RtUXN2RW5DWmtFWWc2N251eEtjS0RzZk91QklrMThzbkhKeFE1MDBBdEdlSktaMlRTLW5sNFpncllLbjNfNy1FdA?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "8cb708b72ce1",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T00:12:43+00:00",
+      "headline": {
+        "en": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt",
+        "zh": "KKR将以含债务的51亿美元交易收购基金行政管理公司Gen II"
+      },
+      "summary": {
+        "en": "KKR agreed to acquire fund administrator Gen II in a $5.1 billion deal including debt, according to a headline report.",
+        "zh": "据一则标题报道，KKR同意以含债务的51亿美元交易收购基金行政管理公司Gen II。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUUNHZnRjME5fN0Q4Q1V4aldLaFBva0VHajVTT3lJWEdXc0J1V1kxWXlsTk9TNzB5bWVhSFJ0bTlPTzQ4T1U1T0RLazRoNldKa2M4dmhHU25HRmVBWmZSU3Yxak9hUEVuZjZQQWFEM3M2aElPcU8zOUZIV2RDNXVVaTNEbm9CRjdhd28zVHBMdHU5Nl95bEtHZTVMRXY0V0ktbzNxNjN6WHlRUjkyaTFIdkJ2c3dpY0hINlBDTnI0M0p2dw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt",
+      "source_fingerprint": "bf49017cc6439aaa40cb4ac96233802f88780ae771b30c28f1414a0710caaaff",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6a869a2732b13991c97a692476f02fedf36d6a5cd9e7158385508d6aa7664906",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR's acquisition of a fund administrator is a material transaction for a tracked manager, though the credit-market read-through is limited at headline level.",
+      "event_identity": {
+        "subject": "kkr",
+        "action": "to buy",
+        "object": "fund administrator gen ii",
+        "period": "$5.1 billion deal including debt",
+        "numbers": [
+          "$5.1 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:14+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUUNHZnRjME5fN0Q4Q1V4aldLaFBva0VHajVTT3lJWEdXc0J1V1kxWXlsTk9TNzB5bWVhSFJ0bTlPTzQ4T1U1T0RLazRoNldKa2M4dmhHU25HRmVBWmZSU3Yxak9hUEVuZjZQQWFEM3M2aElPcU8zOUZIV2RDNXVVaTNEbm9CRjdhd28zVHBMdHU5Nl95bEtHZTVMRXY0V0ktbzNxNjN6WHlRUjkyaTFIdkJ2c3dpY0hINlBDTnI0M0p2dw?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "f86c65a87092",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T23:30:18+00:00",
+      "headline": {
+        "en": "KKR Private Credit Fund Exceeds 5% Redemption Cap to Meet Requests",
+        "zh": "KKR Private Credit Fund 突破5%赎回上限以满足请求"
+      },
+      "summary": {
+        "en": "KKR Private Credit Fund exceeded its 5% redemption cap in order to meet investor redemption requests, according to a headline report.",
+        "zh": "据一则标题报道，KKR Private Credit Fund 突破其5%赎回上限，以满足投资者的赎回请求。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRW1mSWNIRnlMd0kySnJNYmlCWEhUVVF1cGpsSEQwX2t4OER2T0ctTmNIVXBBUkZjU3pISU4xZlNXX29ya3RjcWFhbjBvOF85bG5zdDc2cTJJTmdpU0xQS2pWMllwc0ROalhLcWlFUGZGRndyaW5lU2N6bW5SU29VTC1YTzhnazhnNjE3LTVjV3RqNkYxUUd3bjZoajl2Ykc2d0VzWktaN29fQ0kycEZza1BOc0FFZ0VuaFE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR Private Credit Fund Exceeds 5% Redemption Cap to Meet Requests",
+      "source_fingerprint": "69f89651028a84a14c0e88ac281abebaa5a4ae600270ac6feb890ec1e023bb65",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "96a334b23a83d94450b2485e99a247925bc9e7e7e3718165d679132a2eddd9ea",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Redemption requests above a 5% cap at a KKR private credit fund signal liquidity pressure on the tracked manager's credit vehicle.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:17+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRW1mSWNIRnlMd0kySnJNYmlCWEhUVVF1cGpsSEQwX2t4OER2T0ctTmNIVXBBUkZjU3pISU4xZlNXX29ya3RjcWFhbjBvOF85bG5zdDc2cTJJTmdpU0xQS2pWMllwc0ROalhLcWlFUGZGRndyaW5lU2N6bW5SU29VTC1YTzhnazhnNjE3LTVjV3RqNkYxUUd3bjZoajl2Ykc2d0VzWktaN29fQ0kycEZza1BOc0FFZ0VuaFE?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "4c2b6d44142b",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T20:53:17+00:00",
+      "headline": {
+        "en": "KKR Private Credit Fund Creeps Beyond 5% Cap to Meet Redemptions",
+        "zh": "KKR私募信贷基金为满足赎回需求突破5%上限"
+      },
+      "summary": {
+        "en": "KKR's private credit fund moved beyond its 5% redemption cap in order to meet investor redemptions, according to Bloomberg. No figures on the size of the redemption requests or the amount paid out were disclosed.",
+        "zh": "据彭博报道，KKR旗下一只私募信贷基金为满足投资者赎回需求，突破了5%的赎回上限。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYzk4QkxhMTFSWEV5aHlZT2pSTVVtWEVlQTFqcHFla0RSRjQyVHRjTFRWN1puRUhZcF90VnFIbTBtRHBtV0JDSkJTRGw3ZmUyZHh2RHRhYnk5UnpobXRQdDlYSmlmLXB1d1ZqaHdHLS0yWGF1Rnd6X3N2QlI3N0VNWjdjRGd2OFFOMlpmNlBoaUFPa3drZVBBNHRhVlY1T3N6QXJ3MW8zVGdid00telRrQmxuemRlb0pyRUNMM3BNSQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR Private Credit Fund Creeps Beyond 5% Cap to Meet Redemptions",
+      "source_fingerprint": "c9409ea1c4a748ed275925bb0232ba2b87171f5c6ccce0415d266156e4886cae",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "42b8f552789cd401e6195d3b2138c273a6b9afaaa077c3be73bc468926e71bdd",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A tracked manager's private credit fund exceeding its stated redemption cap signals potential liquidity pressure on KKR's credit vehicle and the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYzk4QkxhMTFSWEV5aHlZT2pSTVVtWEVlQTFqcHFla0RSRjQyVHRjTFRWN1puRUhZcF90VnFIbTBtRHBtV0JDSkJTRGw3ZmUyZHh2RHRhYnk5UnpobXRQdDlYSmlmLXB1d1ZqaHdHLS0yWGF1Rnd6X3N2QlI3N0VNWjdjRGd2OFFOMlpmNlBoaUFPa3drZVBBNHRhVlY1T3N6QXJ3MW8zVGdid00telRrQmxuemRlb0pyRUNMM3BNSQ?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "b37741da097b",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T20:48:22+00:00",
+      "headline": {
+        "en": "KKR FS Income Trust repurchases 1.53% of shares in Q3 2026 offer",
+        "zh": "KKR FS Income Trust在2026年第三季度回购要约中回购1.53%股份"
+      },
+      "summary": {
+        "en": "KKR FS Income Trust filed an SC TO-I/A reporting results of its Q3 2026 quarterly repurchase offer, which expired September 29, 2026. The fund offered up to 5.0% of shares outstanding as of June 30, 2026 and received tenders totalling approximately 1.53% of shares outstanding, and will repurchase 100% of shares properly tendered and not withdrawn. Gross subscriptions in the first three quarters of 2026 reached approximately $213 million, 1.7x total repurchases over the same period.",
+        "zh": "KKR FS Income Trust提交SC TO-I/A，披露其2026年第三季度季度回购要约的结果，该要约于2026年9月29日到期。该基金提出回购最多相当于2026年6月30日已发行股份5.0%的股份，收到的有效投标约占已发行股份的1.53%，并将回购100%有效投标且未撤回的股份。2026年前三个季度的总认购额约为2.13亿美元，为同期回购总额的1.7倍。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "KKR FS Income Trust",
+        "url": "https://www.sec.gov/Archives/edgar/data/1930679/000110465926113726/0001104659-26-113726-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR FS Income Trust files SC TO-I/A",
+      "source_fingerprint": "e20439d328c7b8eeb1dfad1c88f6bdca69081dba71e979f758d9424ea924c0a4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1208,
+            "end": 1310
+          },
+          "linkage": {
+            "start": 30,
+            "end": 73
+          },
+          "resolved": {
+            "start": 1397,
+            "end": 1472
+          }
+        },
+        "source_sha256": "7bd0fcf5827fcdb47f2f7d608e41c7009fdac73bf64527c2dde2164761fd04eb",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": true,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "Quarterly repurchase offer was fully honoured at 100% of tendered shares, with repurchase requests below the 5.0% cap and subscriptions running above repurchases.",
+          "zh": "季度回购要约按100%投标股份全额执行，回购请求低于5.0%上限，且认购额高于回购额。"
+        }
+      },
+      "relevance_reason": "New quarterly repurchase result and subscription figures for KKR's non-traded BDC, a tracked manager vehicle, bearing on private credit deployment and liquidity conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-06T05:52:57+00:00",
+        "sha256": "7bd0fcf5827fcdb47f2f7d608e41c7009fdac73bf64527c2dde2164761fd04eb",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1930679/000110465926113726/tm2626977d1_ex99-a1vii.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "251e878916ef",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T20:10:15+00:00",
+      "headline": {
+        "en": "Blue Owl Capital Corporation: 72 Cents On The Dollar After The Dividend Reset",
+        "zh": "Blue Owl Capital Corporation：股息重置后每美元报72美分"
+      },
+      "summary": {
+        "en": "Blue Owl Capital Corporation is trading at 72 cents on the dollar following a dividend reset, according to a Seeking Alpha headline on the NYSE-listed BDC.",
+        "zh": "根据Seeking Alpha的一则标题，Blue Owl Capital Corporation在股息重置后每美元报72美分，该BDC在纽约证券交易所上市。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdUpxd3JlTzNPeXNnc0lRVUViU0VGME5rLVkta1RUdmgtWnBHMXd4dWEzcmdGRzByTUNRQW9ncjA1R0NFZl9Da0dpZDQ0U3pXdElfNDU5eDRQR05IQTJsdVBuRkhMNlRQbUhUcGw2M2FyT1pzVGJkM2hycFFuQWxvS1hEam5PbVI4d0VXdmNxVGVDSlRnS3JGVWZOV1Jrb2lZMzIxYmJTOF9Ndnhqc2lBY2w1SHlVZ0RW?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital Corporation: 72 Cents On The Dollar After The Dividend Reset (NYSE:OBDC)",
+      "source_fingerprint": "5509b036152455324399c5f6ad10dcdb6f9db09e5b9a8a3a599ffa5d2bb241bd",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "387d86af2a6b4349a9e4922e8fdd8e7b881abfe95fdcc821fc188167943daab7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A headline-only piece on Blue Owl Capital Corporation trading at 72 cents on the dollar after a dividend reset could bear on a tracked manager's listed BDC and credit franchise.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:35+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdUpxd3JlTzNPeXNnc0lRVUViU0VGME5rLVkta1RUdmgtWnBHMXd4dWEzcmdGRzByTUNRQW9ncjA1R0NFZl9Da0dpZDQ0U3pXdElfNDU5eDRQR05IQTJsdVBuRkhMNlRQbUhUcGw2M2FyT1pzVGJkM2hycFFuQWxvS1hEam5PbVI4d0VXdmNxVGVDSlRnS3JGVWZOV1Jrb2lZMzIxYmJTOF9Ndnhqc2lBY2w1SHlVZ0RW?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "642891124833",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T18:21:37+00:00",
+      "headline": {
+        "en": "Blue Owl Capital: Market Bracing For A Dividend Cut (Downgrade)",
+        "zh": "Blue Owl Capital：市场预期将削减股息（下调评级）"
+      },
+      "summary": {
+        "en": "Seeking Alpha published a downgrade item headline stating the market is bracing for a dividend cut at Blue Owl Capital, referenced to the NYSE ticker OBDC.",
+        "zh": "Seeking Alpha 发布一则下调评级报道的标题，称市场预期 Blue Owl Capital 将削减股息，并标注纽交所代码 OBDC。所提供文本未包含更多细节。"
+      },
+      "gps": [
+        "blue_owl",
+        "otf"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeTBkbFpvQzl1ZzF1T0FOS05CanhwRHNPaGRkRWtLcFZwVEl4Y3d3cmxfR1hpMzlJTHRzWXhFWHlQS29SLU9sa1NZQnExbGtTeFczeTM3RkNHMFY2MUh4LUN1X0pNaGVkdkJ5enJmakEwY0ladlpjV2xrSFZtY2UxclF0WW1qOHdxZkJvSm9UTENlMzdleEw5ZnBkRXUzQTlPRWVV?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital: Market Bracing For A Dividend Cut (Downgrade) (NYSE:OBDC)",
+      "source_fingerprint": "92dcdc420661c5711862609245531a9358388abe693e960d25ab3e9fbe9e5737",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "60fe7dbf1292e695d2ff5ad0e125488f2c0ce9ad01c56a2bcffe1b7e3781bb4a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A downgrade and market expectation of a dividend cut at a listed Blue Owl BDC directly affects credit investors' view of the tracked manager's vehicle and dividend coverage.",
+      "event_identity": {
+        "subject": "blue owl capital",
+        "action": "market bracing for a dividend cut (downgrade)",
+        "object": "obdc",
+        "period": "downgrade",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:42+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeTBkbFpvQzl1ZzF1T0FOS05CanhwRHNPaGRkRWtLcFZwVEl4Y3d3cmxfR1hpMzlJTHRzWXhFWHlQS29SLU9sa1NZQnExbGtTeFczeTM3RkNHMFY2MUh4LUN1X0pNaGVkdkJ5enJmakEwY0ladlpjV2xrSFZtY2UxclF0WW1qOHdxZkJvSm9UTENlMzdleEw5ZnBkRXUzQTlPRWVV?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "96528ed9d6e0",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T18:05:00+00:00",
+      "headline": {
+        "en": "Blue Owl's Flagship Private Credit Fund Sees Redemption Requests Fall Again in Q3",
+        "zh": "Blue Owl 旗舰私人信贷基金第三季度赎回请求再次下降"
+      },
+      "summary": {
+        "en": "Blue Owl's flagship private credit fund saw redemption requests decline again in the third quarter, according to a headline report.",
+        "zh": "据一则标题报道，Blue Owl 旗舰私人信贷基金第三季度赎回请求再次下降。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5mOHdJT3dtVEtCQVNTMjJjN1BWMDBxYk45czVSZEN1bExRWkdnTUdUYjYzLS1xdXBNdjFPdlBqUW80WndmTHBuTllIZlRFY2VaaXJxcl9QYkJrdndmcTBjUDFxQjMwek9FSkRTZUlPam1TU3M1WlE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl's Flagship Private Credit Fund Sees Redemption Requests Fall Again in Q3",
+      "source_fingerprint": "8ec2a2e015f190c98bc9b5b78c508fe269096d46affd3adc95f69329c03aae26",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "dab03be796b51a895718f0f9facbabeb736489df5d639f834ae39d37e16572a1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Falling redemption requests at Blue Owl's flagship private credit fund bear on the manager's liquidity and fundraising conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T05:53:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5mOHdJT3dtVEtCQVNTMjJjN1BWMDBxYk45czVSZEN1bExRWkdnTUdUYjYzLS1xdXBNdjFPdlBqUW80WndmTHBuTllIZlRFY2VaaXJxcl9QYkJrdndmcTBjUDFxQjMwek9FSkRTZUlPam1TU3M1WlE?oc=5"
+      },
+      "observed_at": "2026-10-06T05:50:29+00:00"
+    }
+  ]
+}
