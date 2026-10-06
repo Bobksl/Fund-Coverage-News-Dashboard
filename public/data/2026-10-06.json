@@ -2,6 +2,138 @@
   "date": "2026-10-06",
   "items": [
     {
+      "id": "000dea83d4af",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T11:07:23+00:00",
+      "headline": {
+        "en": "Market Minute: Stocks keep rising as rates move higher, private credit risks and the upcoming Firmus IPO",
+        "zh": "市场快讯：利率走高之际股市持续上涨，私募信贷风险与即将到来的Firmus IPO"
+      },
+      "summary": {
+        "en": "The headline notes stocks continuing to rise while rates move higher, alongside private credit risks and an upcoming Firmus IPO. No figures, managers or further details were supplied.",
+        "zh": "该快讯指出，在利率走高之际股市持续上涨，同时提及私募信贷风险以及即将进行的Firmus IPO。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Morningstar Australia",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVpnTGJKN0lWUzYtOUxURUNBbERNM19XZkZNckJoYVotM19rYWtWQW9XOHMzemp5a1B6em0tTGpLZDlKS0ZhRDFqT0IxSnV4NXdDNlBKSFJNNmYxTVU5cU1sOVg4UFhyN3lVY1d6S1V4aXEwLVVYUUktY0htXzJ2cFlERGJMSGhpXzVZUTdDV0IwemtVUnduNmtQLWktZDliRVdpSUZBOWh0LVZ6LWZSZXVQdmxzNlJ2YzA5MHpIbTVicWhUdGZDeW9R?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Market Minute: Stocks keep rising as rates move higher, private credit risks and the upcoming Firmus IPO",
+      "source_fingerprint": "aeb7fb46bebf97ab4232a483d53593eabd59ef84abfc5557098610f4d0253836",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1e724dae888f4e6fd7827a4e523cc2c49670ad94e09e9f0fa2a6d5c9bc2a6f47",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising rates and private credit risk commentary could shift credit investors' view of valuations and deployment conditions across tracked private credit strategies, though no specific manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T14:57:34+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVpnTGJKN0lWUzYtOUxURUNBbERNM19XZkZNckJoYVotM19rYWtWQW9XOHMzemp5a1B6em0tTGpLZDlKS0ZhRDFqT0IxSnV4NXdDNlBKSFJNNmYxTVU5cU1sOVg4UFhyN3lVY1d6S1V4aXEwLVVYUUktY0htXzJ2cFlERGJMSGhpXzVZUTdDV0IwemtVUnduNmtQLWktZDliRVdpSUZBOWh0LVZ6LWZSZXVQdmxzNlJ2YzA5MHpIbTVicWhUdGZDeW9R?oc=5"
+      },
+      "observed_at": "2026-10-06T14:55:02+00:00"
+    },
+    {
+      "id": "2ddffe512d94",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T10:48:40+00:00",
+      "headline": {
+        "en": "Endowus launches first European direct lending strategy with CVC backing",
+        "zh": "Endowus 与 CVC 合作推出首个欧洲直接贷款策略"
+      },
+      "summary": {
+        "en": "Asian wealth manager Endowus has launched its first standalone European direct lending strategy, backed by private markets firm CVC, and open to investors in Singapore and Hong Kong. Endowus said the partnership gives its clients access to European private credit beyond the US, citing CVC's EUR 52bn credit platform.",
+        "zh": "亚洲财富管理公司 Endowus 推出了其首个独立欧洲直接贷款策略，由私募市场公司 CVC 支持，面向新加坡和香港投资者开放。Endowus 表示，此次合作使其客户能够获得美国以外的欧洲私人信贷敞口，并提及其 CVC 旗下 520 亿欧元信贷平台。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/06/endowus-taps-cvc-for-first-european-direct-lending-strategy/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Endowus taps CVC for first European direct lending strategy",
+      "source_fingerprint": "734932d8d774a9fb2909af97fccb1c1b5fa2b90a039165173aa044f92bfcca02",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "107d9f6b587efdcfe1aa579e977ce92e061cd8813e1792a43095dc4826053efe",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "A new European direct lending vehicle expands private wealth access, a sector development for private credit deployment and fundraising channels.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-06T14:57:38+00:00",
+        "sha256": "107d9f6b587efdcfe1aa579e977ce92e061cd8813e1792a43095dc4826053efe",
+        "source_published_at": "2026-10-06T10:48:40+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/06/endowus-taps-cvc-for-first-european-direct-lending-strategy/"
+      },
+      "source_published_at": "2026-10-06T10:48:40+00:00",
+      "observed_at": "2026-10-06T14:55:02+00:00"
+    },
+    {
+      "id": "101ac4e7864f",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T08:24:47+00:00",
+      "headline": {
+        "en": "Blackstone-backed ASK Alternates raises over ₹500 crore for second private credit fund",
+        "zh": "Blackstone-backed ASK Alternates 为其第二只私人信贷基金募集逾500亿卢比"
+      },
+      "summary": {
+        "en": "ASK Alternates, which is backed by Blackstone, has raised more than ₹500 crore for its second private credit fund.",
+        "zh": "由 Blackstone 支持的 ASK Alternates 已为其第二只私人信贷基金募集超过500亿卢比。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "CNBC TV18",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMEhFUEtLVlhYQkZBNFVqV1pSczFuNE04SDF2aXYxOHdoNzdwQlhZUGV5eVpRRWhWZm85UFhjVEpYalZXa2daX1FXS2J4QkJwSGkyMl9WUWh5QmhBN3o0cW9EbGVwNFZCMmhJRUkxakdCUmlXZjJDc2stenllZlUySkFBbTBialZXQ3VDOW5OWFBPem02MzM2V3FuRHdUZXdwWFg5TWtoSnBqMGlaWFZzV0xxVndMTk81TzUyaEdwbWZjZ20xbjZMSEE4N1dhWDI1LUZZdNIB2gFBVV95cUxPUVhWN2hKbjVhRlRmTFJneEtiUlZKVGFRRlplOVJtNnRkaGN4aWZRXzA3VEt5aTFPZE1XNENweGFoOFZOR08wRFFEeEEyVk1DdVlQVERQMmRUS280MzYtRFZ5ZXBUUlJjMEpwSFByMC1SOVQ5djQ5YjNMMm5OZENlZ09mRnQwWUJ4bm1QUEFUSDVnZzlpb2VvWlBRcENBWkFrRDFOX0gyOF9yTzY0WVlXd21GT3FISVpEOF9zUm5oRC1hMUduX1ZMSkpPRUtwWG5tZnlVRGxlMC1zUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blackstone-backed ASK Alternates raises over ₹500 crore for second private credit fund",
+      "source_fingerprint": "30aff3a9bf202734e9bfc0b894e162a76a3e10a59a264f47f484ce453c63cc3a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "55ce594e31dfd7f974afe476b31e0663b6c0a2475be7f647e1cbc1224cd5907b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new India-focused private credit fund raise adds deployment capacity and competitive pressure in the private credit sub-sector, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T14:57:49+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMEhFUEtLVlhYQkZBNFVqV1pSczFuNE04SDF2aXYxOHdoNzdwQlhZUGV5eVpRRWhWZm85UFhjVEpYalZXa2daX1FXS2J4QkJwSGkyMl9WUWh5QmhBN3o0cW9EbGVwNFZCMmhJRUkxakdCUmlXZjJDc2stenllZlUySkFBbTBialZXQ3VDOW5OWFBPem02MzM2V3FuRHdUZXdwWFg5TWtoSnBqMGlaWFZzV0xxVndMTk81TzUyaEdwbWZjZ20xbjZMSEE4N1dhWDI1LUZZdNIB2gFBVV95cUxPUVhWN2hKbjVhRlRmTFJneEtiUlZKVGFRRlplOVJtNnRkaGN4aWZRXzA3VEt5aTFPZE1XNENweGFoOFZOR08wRFFEeEEyVk1DdVlQVERQMmRUS280MzYtRFZ5ZXBUUlJjMEpwSFByMC1SOVQ5djQ5YjNMMm5OZENlZ09mRnQwWUJ4bm1QUEFUSDVnZzlpb2VvWlBRcENBWkFrRDFOX0gyOF9yTzY0WVlXd21GT3FISVpEOF9zUm5oRC1hMUduX1ZMSkpPRUtwWG5tZnlVRGxlMC1zUQ?oc=5"
+      },
+      "observed_at": "2026-10-06T14:55:02+00:00"
+    },
+    {
       "id": "deb7aacb26a1",
       "date": "2026-10-06",
       "published_at": "2026-10-06T01:42:39+00:00",
@@ -310,6 +442,50 @@
       },
       "source_origin": "issuer_filing",
       "observed_at": "2026-10-06T05:50:29+00:00"
+    },
+    {
+      "id": "754a14ef631e",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T20:29:15+00:00",
+      "headline": {
+        "en": "Planview in Talks With Lenders Over $1.5 Billion of Debt",
+        "zh": "软件供应商 Planview 与贷款方就 15 亿美元债务进行谈判"
+      },
+      "summary": {
+        "en": "Software provider Planview is in talks with lenders over $1.5 billion of debt, according to an exclusive report. No terms of the discussions were disclosed.",
+        "zh": "据独家报道，软件供应商 Planview 正与贷款方就 15 亿美元债务进行谈判。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYk5lUlRCN3Z3SExVd1I0RDNjXzEyNnhnYXJpZFItVGR3N3E4V1NTcFdXR3BkSVdUVHk4UHRfWmgzOUR3blNaTVQ3dnZsM2FQSGpOQmY3OWhsWm1lVWE3c3dQNXFJc3pueU4yazFyRWJRNlRZTU1YVDlpYXJYcmw2Wk54U00xVXZGelFqSFNkTDZSQmpmSzMyUlhHeEZrWTJRcXpUMWd3TTYwcFB5dlQ2MmMtQ1hYU29a?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Exclusive | Software Provider Planview in Talks With Lenders Over $1.5 Billion of Debt",
+      "source_fingerprint": "71f8dbaf995a24a46d4b436c2e05183fe9c672cd163bd9f3a1d7884fbebc4ec4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5bccafd19127d6121ea915830a8ecc8c37dc38ee93593193c46a3b171e4bd406",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A software company negotiating with lenders over $1.5 billion of debt is a direct signal on private credit exposure to the software sub-sector, a key strategy for tracked managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-06T14:57:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYk5lUlRCN3Z3SExVd1I0RDNjXzEyNnhnYXJpZFItVGR3N3E4V1NTcFdXR3BkSVdUVHk4UHRfWmgzOUR3blNaTVQ3dnZsM2FQSGpOQmY3OWhsWm1lVWE3c3dQNXFJc3pueU4yazFyRWJRNlRZTU1YVDlpYXJYcmw2Wk54U00xVXZGelFqSFNkTDZSQmpmSzMyUlhHeEZrWTJRcXpUMWd3TTYwcFB5dlQ2MmMtQ1hYU29a?oc=5"
+      },
+      "observed_at": "2026-10-06T14:55:02+00:00"
     },
     {
       "id": "251e878916ef",
