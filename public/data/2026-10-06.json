@@ -328,6 +328,51 @@
       "observed_at": "2026-10-06T05:50:29+00:00"
     },
     {
+      "id": "912d07b57093",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T22:21:52+00:00",
+      "headline": {
+        "en": "Blue Owl ratings affirmed at BBB+ as Fitch maintains stable outlook",
+        "zh": "惠誉维持稳定展望，Blue Owl评级确认为BBB+"
+      },
+      "summary": {
+        "en": "Fitch affirmed Blue Owl's ratings at BBB+ and maintained a stable outlook.",
+        "zh": "惠誉确认Blue Owl的评级为BBB+，并维持稳定展望。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRFBMMnBXdTNNaUFDdjAwSTdEWEJ4NkU5LUUzb2NCZ3ZUdldBTmFLWWFlN1ByanpWM0c3ZXZMNWszRXRaZl8yV25qYjVJQjVRZ1hNTFVEbXlvQU9uaW1jOUV1ZTBqT3JzSXFRallMbGdGWTBSSkluSGFuRzl6MnhfclEwcnI0QjZmUjJCU3VMUGdCb2Rw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl ratings affirmed at BBB+ as Fitch maintains stable outlook",
+      "source_fingerprint": "5484c395855656479224b598f9b2615e1e6d0f61a8723bc467156d5e84d44133",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "eb6d6dd92a04493f6861899c3e4e778bad00f1f06b8ae2d686cee15a48b01756",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Fitch affirming Blue Owl at BBB+ with a stable outlook bears directly on the tracked manager's funding costs and capital access.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T05:25:22+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRFBMMnBXdTNNaUFDdjAwSTdEWEJ4NkU5LUUzb2NCZ3ZUdldBTmFLWWFlN1ByanpWM0c3ZXZMNWszRXRaZl8yV25qYjVJQjVRZ1hNTFVEbXlvQU9uaW1jOUV1ZTBqT3JzSXFRallMbGdGWTBSSkluSGFuRzl6MnhfclEwcnI0QjZmUjJCU3VMUGdCb2Rw?oc=5"
+      },
+      "observed_at": "2026-10-07T05:22:52+00:00"
+    },
+    {
       "id": "4c2b6d44142b",
       "date": "2026-10-06",
       "published_at": "2026-10-05T20:53:17+00:00",

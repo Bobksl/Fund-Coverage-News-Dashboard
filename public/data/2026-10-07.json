@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-07",
+  "items": [
+    {
+      "id": "aaee217afd84",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T04:00:47+00:00",
+      "headline": {
+        "en": "Blue Owl to launch ‘big push’ into insurance",
+        "zh": "Blue Owl 将对保险领域发起“大举进军”"
+      },
+      "summary": {
+        "en": "Blue Owl is preparing a major push into insurance, according to a Financial Times headline.",
+        "zh": "据《金融时报》一则标题，Blue Owl 正准备大举进军保险领域。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdDZ1ZXVMVGYzQ2xKTlYwOEJHRzRUUDlpWURmU2tubVgzcHVzNTU1YVplVXZHUHZqLWxrWGZCQTdZcFl2SFpFdncxbU4yNHZ1WDJUZmRDallYN3ZwS1lqcGJmcGIyRnE0a0kzY1NqMVBGMTNvbldpY3pheU9zUU1Wa2poNUU?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl to launch ‘big push’ into insurance",
+      "source_fingerprint": "c318a11effb1f65fc8ca9c9341dea0596813e1374f292ba996bfccd4537efd86",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "209fc804207be8f801bad901f05d949213be6a853555947cd508f6808d69f181",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's stated push into insurance signals potential changes to its credit platform strategy and asset origination channels.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T05:25:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdDZ1ZXVMVGYzQ2xKTlYwOEJHRzRUUDlpWURmU2tubVgzcHVzNTU1YVplVXZHUHZqLWxrWGZCQTdZcFl2SFpFdncxbU4yNHZ1WDJUZmRDallYN3ZwS1lqcGJmcGIyRnE0a0kzY1NqMVBGMTNvbldpY3pheU9zUU1Wa2poNUU?oc=5"
+      },
+      "observed_at": "2026-10-07T05:22:52+00:00"
+    },
+    {
+      "id": "1a0aa9013938",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T00:28:00+00:00",
+      "headline": {
+        "en": "Nuveen secures A$1 billion in commitments for Australian real estate debt strategy from CPP Investments & Temasek",
+        "zh": "Nuveen 从 CPP Investments 与 Temasek 获得 10 亿澳元承诺，用于澳大利亚房地产债务策略"
+      },
+      "summary": {
+        "en": "Nuveen has secured A$1 billion in commitments for its Australian real estate debt strategy. CPP Investments and Temasek are the named backers.",
+        "zh": "Nuveen 为其澳大利亚房地产债务策略获得了 10 亿澳元的承诺资金。CPP Investments 与 Temasek 是披露的出资方。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Cantech Letter",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNMmdXdXNrbTlvLUVyTzhCUlA2M1U1WUp4RUhRNUhoXzRfYjNPSV9lYzFKSWkxNDdTRVBoTVpKNjVsWmNBNGFtaDk5Qlpad0N4SmVCX3N1NW1XbkJGZ1VIQWIyUmNkcERUc25IVGlfNzdhM25tZDcwaktfanNzUHRlZzJobmtMSndCWGM5RHRpd0lsdEtBS0ttTzc0Nl90NzJ6c3Q5WjA5NmJwMjJVZVVkNmhUQzFRSjgxVVFMMlpTV3V4UXlTN3VTUGdqRFpqdWhDMWcwUFVOS25GZFNKUnA5UGt0em1iQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Nuveen secures A$1 billion in commitments for Australian real estate debt strategy from CPP Investments & Temasek",
+      "source_fingerprint": "e0048721d0d4901d3ed98d8df070e1820b06122a23082f532323ed114aebb93b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bd5c35ce64e10a3a91db43e879bbbc02330897766e658aff2976af63587ed974",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New A$1bn raise for an Australian real estate debt strategy signals fresh capital formation in the mortgage/real-estate private credit sub-sector, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T05:25:10+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNMmdXdXNrbTlvLUVyTzhCUlA2M1U1WUp4RUhRNUhoXzRfYjNPSV9lYzFKSWkxNDdTRVBoTVpKNjVsWmNBNGFtaDk5Qlpad0N4SmVCX3N1NW1XbkJGZ1VIQWIyUmNkcERUc25IVGlfNzdhM25tZDcwaktfanNzUHRlZzJobmtMSndCWGM5RHRpd0lsdEtBS0ttTzc0Nl90NzJ6c3Q5WjA5NmJwMjJVZVVkNmhUQzFRSjgxVVFMMlpTV3V4UXlTN3VTUGdqRFpqdWhDMWcwUFVOS25GZFNKUnA5UGt0em1iQQ?oc=5"
+      },
+      "observed_at": "2026-10-07T05:22:52+00:00"
+    },
+    {
+      "id": "dc4f7c69fbb6",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T22:28:55+00:00",
+      "headline": {
+        "en": "SpaceX looks to raise $40bn to buy Nvidia chips in financing led by Apollo",
+        "zh": "SpaceX 寻求筹集 400 亿美元购买英伟达芯片，由 Apollo 领衔融资"
+      },
+      "summary": {
+        "en": "SpaceX is looking to raise $40bn to buy Nvidia chips, in a financing led by Apollo.",
+        "zh": "SpaceX 寻求筹集 400 亿美元用于购买英伟达芯片，该融资由 Apollo 领衔。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdThuRWl1b3NtaUE5aFhSeXVUY0xfYjhBZXJJaG1VWWR0QXBSQ2txLTBrbTlKNm9KQmtqcG95Y3BLNlRQZF96a004TS1xaGlyQUVUaEdqNXZOTzZwdC1IU001ZmM5a191dGNRYjNCWXkwcEk0cjVhams2WUc5aGMxek13b1U?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SpaceX looks to raise $40bn to buy Nvidia chips in financing led by Apollo",
+      "source_fingerprint": "b40654223f1f65d2908982a0d5cab5848d0bb061995db39ada2694c21513de80",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1fd8e5a399a9d31e4db4e6e49929af4252afe4d41d9edef46f9a46b1c7357326",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large Apollo-led financing for SpaceX touches private credit and asset-backed finance conditions, affecting a tracked credit manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T05:25:12+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdThuRWl1b3NtaUE5aFhSeXVUY0xfYjhBZXJJaG1VWWR0QXBSQ2txLTBrbTlKNm9KQmtqcG95Y3BLNlRQZF96a004TS1xaGlyQUVUaEdqNXZOTzZwdC1IU001ZmM5a191dGNRYjNCWXkwcEk0cjVhams2WUc5aGMxek13b1U?oc=5"
+      },
+      "observed_at": "2026-10-07T05:22:52+00:00"
+    },
+    {
+      "id": "c07f0054e346",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T18:49:28+00:00",
+      "headline": {
+        "en": "KKR Private Credit Fund Edges Past Redemption Limit",
+        "zh": "KKR私人信贷基金突破赎回上限"
+      },
+      "summary": {
+        "en": "KKR Private Credit Fund edged past its redemption limit, according to a headline.",
+        "zh": "据一则标题消息，KKR私人信贷基金突破了其赎回上限。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaXhWY0ZUdUtjSWVKc1l4aWg0VDhITDNOWXR5aHlTXzlHYVI4V0d4WWtjaGlncWxsTGJZVHk1cG9DTGV1ZTY3Mzd2UkpVR0Y4MkJ3c3hvSTdfbG03N3pBdXRScmFRV0dEUmd6ODV1eE5qRl9ZOUNlUVR3X0V5dmcwUjFYN3hIZ2tQMWZQUnRWMzZBaEpxTEZ2VGlFenBSNmNicktqVFFYV2FwN1FlNjhrU3Y3TUFRdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR Private Credit Fund Edges Past Redemption Limit",
+      "source_fingerprint": "e205e61fe420f3424042ecbda13ed261128cb77e4c762259b1231f770824f689",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d023639b2c7f57089ae7e791e4e211a628035dd9468487125f5a884b3b6cea4d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A KKR private credit fund exceeding its redemption limit signals potential liquidity pressure in the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T05:25:14+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaXhWY0ZUdUtjSWVKc1l4aWg0VDhITDNOWXR5aHlTXzlHYVI4V0d4WWtjaGlncWxsTGJZVHk1cG9DTGV1ZTY3Mzd2UkpVR0Y4MkJ3c3hvSTdfbG03N3pBdXRScmFRV0dEUmd6ODV1eE5qRl9ZOUNlUVR3X0V5dmcwUjFYN3hIZ2tQMWZQUnRWMzZBaEpxTEZ2VGlFenBSNmNicktqVFFYV2FwN1FlNjhrU3Y3TUFRdw?oc=5"
+      },
+      "observed_at": "2026-10-07T05:22:52+00:00"
+    }
+  ]
+}
