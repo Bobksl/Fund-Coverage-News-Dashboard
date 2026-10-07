@@ -2,6 +2,304 @@
   "date": "2026-10-07",
   "items": [
     {
+      "id": "d0ca769a4acd",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T15:09:27+00:00",
+      "headline": {
+        "en": "Lenders take control as French restructurings rise",
+        "zh": "法国重组增加，贷款人接管企业"
+      },
+      "summary": {
+        "en": "Debtwire data shows France recorded 39 restructuring mandates in the first half of 2026, covering €14.57bn of debt. Lenders including CVC Credit, KKR, Blackstone and HIG Capital took elderly care operator Colisée from EQT, cutting net debt by about a third to €1.2bn and adding €285m of new financing; bondholders also took ownership of Atalian in June.",
+        "zh": "Debtwire数据显示，法国在2026年上半年录得39宗重组委托，涉及145.7亿欧元债务。包括CVC Credit、KKR、Blackstone和HIG Capital在内的贷款人从EQT手中接管养老护理运营商Colisée，将其净债务削减约三分之一至12亿欧元，并注入2.85亿欧元新融资；6月债券持有人还接管了Atalian。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/07/lenders-take-control-after-french-restructurings-pick-up/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Lenders take control after French restructurings pick up",
+      "source_fingerprint": "7ed33a9313787c86fad0fb92969dbfe44a5927da5edeeae912cb6f69e64d94f9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 454,
+            "end": 521
+          },
+          "linkage": {
+            "start": 607,
+            "end": 676
+          }
+        },
+        "source_sha256": "e37696e9816feadb4429f0a5b8c9e7a590fa7a2818a2680e197fac03336978c7",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Rising French restructurings and lender takeovers involving KKR and CVC Credit signal growing distressed refinancing activity for private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-07T15:24:34+00:00",
+        "sha256": "936cbe56c6284d997288008ae149877eccbf0834720402e0fa59ccf595bd2e3a",
+        "source_published_at": "2026-10-07T15:09:27+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/07/lenders-take-control-after-french-restructurings-pick-up/"
+      },
+      "source_published_at": "2026-10-07T15:09:27+00:00",
+      "observed_at": "2026-10-07T15:21:57+00:00"
+    },
+    {
+      "id": "3f6831ca2844",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T12:30:00+00:00",
+      "headline": {
+        "en": "Saratoga opens BDC earnings season with weak results",
+        "zh": "Saratoga 开启 BDC 财报季，业绩不佳"
+      },
+      "summary": {
+        "en": "Saratoga Investment opened the BDC earnings season, and the results were described as not pretty.",
+        "zh": "Saratoga Investment 开启 BDC 财报季，业绩被形容为不佳。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmp0Nm1SYi1EX2Z5S0JjYzNPeVV0dlNXVjlRR0lZYzRyVXpUd1BWaElpUnREdVc5Rk1PZWZUSkxhSTlmaGFRdW9EOGtXc1lfWWJwSU0xbG1sd1YwOThPSW1FU2hNTkxfeHkxSEZiQjNESjZKaU1waExEUjU3cjVEWUtaSWRXUFVYMjBjWmRNWElHS2l2eW9rVFR3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Saratoga Opens BDC Earnings Season, And It's Not Pretty (NYSE:SAR)",
+      "source_fingerprint": "e196f2f82e7c1c2faa4dfe236dac7a1b1693d1bc932ac612ce180a6163648ca8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d8d616cedd3d14755de62642824c2552def5294ebc609c78b176e7664b574190",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals weak BDC earnings, a sector-level datapoint for private credit valuations and distributions even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T15:24:39+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmp0Nm1SYi1EX2Z5S0JjYzNPeVV0dlNXVjlRR0lZYzRyVXpUd1BWaElpUnREdVc5Rk1PZWZUSkxhSTlmaGFRdW9EOGtXc1lfWWJwSU0xbG1sd1YwOThPSW1FU2hNTkxfeHkxSEZiQjNESjZKaU1waExEUjU3cjVEWUtaSWRXUFVYMjBjWmRNWElHS2l2eW9rVFR3?oc=5"
+      },
+      "observed_at": "2026-10-07T15:21:57+00:00"
+    },
+    {
+      "id": "79ed3b6397a3",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T12:29:07+00:00",
+      "headline": {
+        "en": "Hunter Point CEO says private credit retail redemption pressure isn't over",
+        "zh": "Hunter Point CEO称私人信贷的零售赎回压力尚未结束"
+      },
+      "summary": {
+        "en": "Hunter Point's chief executive said retail redemption pressure on private credit is not over, according to CNBC's Inside Alts.",
+        "zh": "据CNBC的Inside Alts报道，Hunter Point首席执行官表示，私人信贷面临的零售赎回压力尚未结束。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZUl0Z3lEZFFoVWQ0X1NmMW5JVUZqOV9iaUZSSlg1T2I0bndsS2d3V0tabXZ6UHoyaGllR281S3o4aUtiQ2s1OUpyeW8tNzRmXzdSeHBxMXFINHdQS21OSHpSMVRTajFQWS0xWGQtek0wTTZtTnR6bURWUXl3c212LW56cXl6OVI0M29EWWNfVXlwTzExdVFPbnlkWEhuWDctVUUzQkRNeS1kdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Inside Alts: Hunter Point CEO says private credit’s retail redemption pressure isn’t over",
+      "source_fingerprint": "46b333396ce4df4a0ea1dc892c96956962e020d82821ec486b92d1bc1aa3e65e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "37fe667310921271dec95c63b398f60eb539625a6f3ffc026b1f189c8823f992",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A senior industry CEO's warning that retail redemption pressure on private credit is ongoing bears on liquidity and fundraising conditions for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T15:24:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZUl0Z3lEZFFoVWQ0X1NmMW5JVUZqOV9iaUZSSlg1T2I0bndsS2d3V0tabXZ6UHoyaGllR281S3o4aUtiQ2s1OUpyeW8tNzRmXzdSeHBxMXFINHdQS21OSHpSMVRTajFQWS0xWGQtek0wTTZtTnR6bURWUXl3c212LW56cXl6OVI0M29EWWNfVXlwTzExdVFPbnlkWEhuWDctVUUzQkRNeS1kdw?oc=5"
+      },
+      "observed_at": "2026-10-07T15:21:57+00:00"
+    },
+    {
+      "id": "33dc7b098f75",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T10:17:12+00:00",
+      "headline": {
+        "en": "Blue Owl Plans Expansion Into Insurance Capital, Co-CEO Tells FT",
+        "zh": "Blue Owl联席CEO向FT表示计划拓展保险资本业务"
+      },
+      "summary": {
+        "en": "Blue Owl plans to expand into insurance capital, its co-CEO told the Financial Times.",
+        "zh": "Blue Owl联席CEO向《金融时报》表示，公司计划拓展保险资本业务。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQemV4SHpuOElyTmlCZFRWeWI1bFVaWGVWZThac20zMFBZV1VMR3JzMm5mUENJdDBvMjFCZXZ3SGJUWDU5QzhxSWhQUHJYTnZxRWpDMjhCci1KRTJ2a05ubHBTazdCdjVIUThlRXFpVFYydEhKUDRHLXRiSnJUM0NEZVE4Nk5EOW4wTFd4Y2VKTi11XzF0U29SMmdPTGVtYUJ0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Plans Expansion Into Insurance Capital, Co-CEO Tells FT",
+      "source_fingerprint": "bc32b88b95e0d2342aa62c559e993473d162958e676f4fe209094bfd2c52d04a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f295682c8f76833da9355bd318159e89802be1051cb269d620fe549b45c0685a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's stated expansion into insurance capital could alter its funding base and credit deployment capacity.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T15:24:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQemV4SHpuOElyTmlCZFRWeWI1bFVaWGVWZThac20zMFBZV1VMR3JzMm5mUENJdDBvMjFCZXZ3SGJUWDU5QzhxSWhQUHJYTnZxRWpDMjhCci1KRTJ2a05ubHBTazdCdjVIUThlRXFpVFYydEhKUDRHLXRiSnJUM0NEZVE4Nk5EOW4wTFd4Y2VKTi11XzF0U29SMmdPTGVtYUJ0?oc=5"
+      },
+      "observed_at": "2026-10-07T15:21:57+00:00"
+    },
+    {
+      "id": "42ce9eea9688",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T10:01:18+00:00",
+      "headline": {
+        "en": "Girard Sharp Seeks Former OTF II Investors for Securities Class Action Over OTF Acquisition",
+        "zh": "Girard Sharp 就 OTF 收购案征集前 OTF II 投资者参与证券集体诉讼"
+      },
+      "summary": {
+        "en": "Girard Sharp Law Firm issued a securities class action notice encouraging former Blue Owl Technology Finance Corp. II (OTF II) investors who received Blue Owl Technology Finance Corp. (OTF) shares in connection with OTF's acquisition of OTF II to come forward.",
+        "zh": "Girard Sharp 律师事务所发布证券集体诉讼通知，呼吁在 Blue Owl Technology Finance Corp.（OTF）收购 Blue Owl Technology Finance Corp. II（OTF II）交易中获得 OTF 股份的前 OTF II 投资者参与。"
+      },
+      "gps": [
+        "otf",
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "www.marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPeVB0TlJJTklNU29GckxfSXFOUTI3bFUwME9VMEhmYjMxbGNQbVQzaE45amZaTU5RZzNKQWw5dUdXY3ZEUVktTERqNHVWRFp4RGprOThlRm9lOWF2Ul9jQ0FjZUhWWW11N0d2UHVMQXBLeHZUbHVSSmdSVDMxVmp0MVdYd0d2ZUlRSGxqZHd2UmRqLXpRbWRkSy1EcjYySXl2RnZUeXU2b3Bhamk2dzdISC00eW4tMXN4VmZIMmJEZnZHdm9oYXRyRmRmM21Hd2NYVUJ0d1Ayc2k1QVRyVG9td2RsYzVvQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SECURITIES CLASS ACTION NOTICE: Girard Sharp Law Firm Encourages Former Blue Owl Technology Finance Corp. II (“OTF II”) Investors Who Received Blue Owl Technology Finance Corp. (“OTF”) Shares in Connection with OTF’s Acquisition of OTF II in",
+      "source_fingerprint": "764d12bde0365909dc8b86ad5318cf9da49e33d2e27c4122d1693456f26eaa04",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "697585dd57983ca7df984feb235c509e10e2055fd828c9027f3a72043f6e0fe2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Securities class action notice tied to Blue Owl's OTF/OTF II merger directly involves a tracked manager's listed BDC platform and may affect its litigation and franchise risk.",
+      "event_identity": {
+        "subject": "blue owl technology finance corp. ii",
+        "action": "acquisition",
+        "object": "blue owl technology finance corp.",
+        "period": "otf's acquisition of otf ii",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T15:24:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPeVB0TlJJTklNU29GckxfSXFOUTI3bFUwME9VMEhmYjMxbGNQbVQzaE45amZaTU5RZzNKQWw5dUdXY3ZEUVktTERqNHVWRFp4RGprOThlRm9lOWF2Ul9jQ0FjZUhWWW11N0d2UHVMQXBLeHZUbHVSSmdSVDMxVmp0MVdYd0d2ZUlRSGxqZHd2UmRqLXpRbWRkSy1EcjYySXl2RnZUeXU2b3Bhamk2dzdISC00eW4tMXN4VmZIMmJEZnZHdm9oYXRyRmRmM21Hd2NYVUJ0d1Ayc2k1QVRyVG9td2RsYzVvQQ?oc=5"
+      },
+      "observed_at": "2026-10-07T15:21:57+00:00"
+    },
+    {
+      "id": "7fec380da97b",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T06:54:42+00:00",
+      "headline": {
+        "en": "Blue Owl plans major expansion into insurance capital, CEO tells FT",
+        "zh": "Blue Owl 计划大举拓展保险资本业务，CEO 向 FT 表示"
+      },
+      "summary": {
+        "en": "Blue Owl plans a major expansion into insurance capital, its CEO told the Financial Times. No financial terms or transaction details were disclosed.",
+        "zh": "Blue Owl 计划大举拓展保险资本业务，其 CEO 向《金融时报》表示。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com Australia",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMkxqYVRGWGUyZWJEaVNLOEtaOC1LV3JvOVJxa2FSTUljMlE3UXhzZmo1alFhTGdXb3RJT1dNQ3AzeXAwb3pVU3l1bjVURDczSEZzbHZ0OUdOZkh3dzVQb0NzdXc4WjQ3MXJrQmdtRTc1NWU3NzV2SjhFZXQ0NmRzcUFkbTlfa24yMnBsOHVXMjNrUFBXZW5pVm5fTWk3aEVIMFdXUVI3RkdHUTZ1NHZyOUxraHNaeVFHbXlnWUpuY0JQdWRSS2c?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl plans major expansion into insurance capital, CEO tells FT",
+      "source_fingerprint": "e4f2d6536e924b3ce0c9822e540084762b32b0964c3c3e4b0c87c31c42c12028",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "093b59b5b416c220f0b756093c85ef803b99a786ec3cf72ea1aab5e483f29e5f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's stated strategic expansion into insurance capital bears directly on a tracked manager's fundraising and deployment conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-07T15:24:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMkxqYVRGWGUyZWJEaVNLOEtaOC1LV3JvOVJxa2FSTUljMlE3UXhzZmo1alFhTGdXb3RJT1dNQ3AzeXAwb3pVU3l1bjVURDczSEZzbHZ0OUdOZkh3dzVQb0NzdXc4WjQ3MXJrQmdtRTc1NWU3NzV2SjhFZXQ0NmRzcUFkbTlfa24yMnBsOHVXMjNrUFBXZW5pVm5fTWk3aEVIMFdXUVI3RkdHUTZ1NHZyOUxraHNaeVFHbXlnWUpuY0JQdWRSS2c?oc=5"
+      },
+      "observed_at": "2026-10-07T15:21:57+00:00"
+    },
+    {
       "id": "aaee217afd84",
       "date": "2026-10-07",
       "published_at": "2026-10-07T04:00:47+00:00",
