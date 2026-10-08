@@ -1,0 +1,410 @@
+{
+  "date": "2026-10-08",
+  "items": [
+    {
+      "id": "c22d8740041f",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T00:24:00+00:00",
+      "headline": {
+        "en": "Australia Regulator Puts Stop Order on More Private Credit Funds",
+        "zh": "澳大利亚监管机构对更多私人信贷基金下达停止令"
+      },
+      "summary": {
+        "en": "Australia's regulator placed a stop order on additional private credit funds, according to a headline report.",
+        "zh": "据一则标题报道，澳大利亚监管机构对更多私人信贷基金下达了停止令。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQlc1ckxTSGdXaXo5VmZINHg5ZVNHT2ZybnB4Z08tMGFzX2F5RTc3dEd4cjUxU1hvdkgzWGt1Z0Z1ZXBFczZRSFU0RnI3YUYwb1g5SGhwOXhyUnh2UjNwc3lWRWduZU5mX0MyaTU0SWZuenZ3MklVZEZmY1RfMkpSdHZ6T2NUZ0l1a240eUMwWGluazZjU3J2TUZjZU1RaFRqaUJQcVBialFMY2I5VVM0ZDNsekpQUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia Regulator Puts Stop Order on More Private Credit Funds",
+      "source_fingerprint": "5ca3445b2115def4c1b9201acc157a8c432ba2a72c4f4a65d9e15d55de3700f8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "dd70446dd07381a61d6daa6087dcf543a5aca083dd8d19f2fa340f105ccf6ab9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Regulatory stop order on private credit funds signals heightened oversight and potential fundraising or deployment constraints for the asset class.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:27+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQlc1ckxTSGdXaXo5VmZINHg5ZVNHT2ZybnB4Z08tMGFzX2F5RTc3dEd4cjUxU1hvdkgzWGt1Z0Z1ZXBFczZRSFU0RnI3YUYwb1g5SGhwOXhyUnh2UjNwc3lWRWduZU5mX0MyaTU0SWZuenZ3MklVZEZmY1RfMkpSdHZ6T2NUZ0l1a240eUMwWGluazZjU3J2TUZjZU1RaFRqaUJQcVBialFMY2I5VVM0ZDNsekpQUQ?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "1390d5696c3f",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T00:24:00+00:00",
+      "headline": {
+        "en": "Australia Regulator Puts Stop Order on More Private Credit Funds",
+        "zh": "澳大利亚监管机构对更多私人信贷基金发出停止令"
+      },
+      "summary": {
+        "en": "Australia's regulator issued a stop order on additional private credit funds, according to Bloomberg.",
+        "zh": "据彭博报道，澳大利亚监管机构对更多私人信贷基金发出停止令。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPX0ZBRjR5ZXdwbnZSbmplcjhaTWx2LU1SN2ktRXc2TE83b3o4UjJQOWVJVDV3MkpEV1ZxNHoxQklnX3ljTVpXU09FdklLMHoxM2JCdk1ZSVh3UWZpQU9zX3haRFFWbDJNV2VGNi1lLWYtd2UzcERmbmM2SmJOTjJNSTVuc255RHJWbzI1RXFCbXlzMnlDTEdYNXk1RmNWV25TMDZHamtTd3MtZlNwWTQ2dk90WXJYWTdGTUh5ZVdjTlhzeXRzSHNEempEUGNNMmcycENTcw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia Regulator Puts Stop Order on More Private Credit Funds",
+      "source_fingerprint": "5ca3445b2115def4c1b9201acc157a8c432ba2a72c4f4a65d9e15d55de3700f8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "dd70446dd07381a61d6daa6087dcf543a5aca083dd8d19f2fa340f105ccf6ab9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A regulator's stop order on additional private credit funds is a regulatory action affecting private credit vehicles, a tracked sub-sector, even without a named manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:29+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPX0ZBRjR5ZXdwbnZSbmplcjhaTWx2LU1SN2ktRXc2TE83b3o4UjJQOWVJVDV3MkpEV1ZxNHoxQklnX3ljTVpXU09FdklLMHoxM2JCdk1ZSVh3UWZpQU9zX3haRFFWbDJNV2VGNi1lLWYtd2UzcERmbmM2SmJOTjJNSTVuc255RHJWbzI1RXFCbXlzMnlDTEdYNXk1RmNWV25TMDZHamtTd3MtZlNwWTQ2dk90WXJYWTdGTUh5ZVdjTlhzeXRzSHNEempEUGNNMmcycENTcw?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "7ede49bd4085",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T00:24:00+00:00",
+      "headline": {
+        "en": "Australia Regulator Puts Stop Order on More Private Credit Funds",
+        "zh": "澳大利亚监管机构对更多私募信贷基金下达停止令"
+      },
+      "summary": {
+        "en": "Australia's regulator placed a stop order on additional private credit funds, according to a Bloomberg report. No fund managers, fund names or amounts were identified in the headline.",
+        "zh": "据彭博报道，澳大利亚监管机构对更多私募信贷基金下达了停止令。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOU3ZfeXdZaVBCRWRobEZNQ0VYbl9yTlJsMXpweXJtT1ByM1FmRE02QnM0cm5CMld0VWZIUWxTZWUyQzk4QllUalZnNVpvWG0zbWJHZWIyRlRvZm1ST1VOV1VRRVFEcl8ycU1QUDFxSTEzZUgyRGFfUlpHbWw1eVlISk9tdktNMUo0S01wdFhMWGVMY1BPTk1nSU41a213ZEtKbWppRlJQLUJoMGtOS0ZUUUVBblJVblRrR3hJQzRteFpObmM2MUlYUVR3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia Regulator Puts Stop Order on More Private Credit Funds",
+      "source_fingerprint": "5ca3445b2115def4c1b9201acc157a8c432ba2a72c4f4a65d9e15d55de3700f8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "dd70446dd07381a61d6daa6087dcf543a5aca083dd8d19f2fa340f105ccf6ab9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Australian regulator's stop order on additional private credit funds points to tighter regulatory scrutiny of the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:31+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOU3ZfeXdZaVBCRWRobEZNQ0VYbl9yTlJsMXpweXJtT1ByM1FmRE02QnM0cm5CMld0VWZIUWxTZWUyQzk4QllUalZnNVpvWG0zbWJHZWIyRlRvZm1ST1VOV1VRRVFEcl8ycU1QUDFxSTEzZUgyRGFfUlpHbWw1eVlISk9tdktNMUo0S01wdFhMWGVMY1BPTk1nSU41a213ZEtKbWppRlJQLUJoMGtOS0ZUUUVBblJVblRrR3hJQzRteFpObmM2MUlYUVR3?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "57d5b6ed2061",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T23:29:49+00:00",
+      "headline": {
+        "en": "ASIC Halts Fundraising For Three Private Credit Funds",
+        "zh": "ASIC 叫停三只私人信贷基金的募资"
+      },
+      "summary": {
+        "en": "Australia's securities regulator ASIC has halted fundraising for three private credit funds, according to a headline report.",
+        "zh": "据一则标题报道，澳大利亚证券与投资委员会（ASIC）已叫停三只私人信贷基金的募资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOFR5MWdvS1hzRFVuMlBBdkpFVWVoVWVRVFh6YWc5TnI4TWlUODdMQXJ0MGhmSHVOUUp6Zk50TXJES2RmUW1Md1BKNkVXbGY5d2Z1Q2xjSGZXZmlFc0NLYkNNMUdhTWVGRHpUakZnM2Q1TlBNY0FYYnIyWEdRc29rSGtfcVZ0aEdyaVE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "ASIC Halts Fundraising For Three Private Credit Funds",
+      "source_fingerprint": "7b5ce6f992672254a4ac069e5335281961b01639f955cc598717b2a21cc94e91",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fac5631ca332ab9b4b9deaecb05e65b9ebdc8510162c9b503c7c59e1dafbc0d7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Regulatory halt of fundraising for three private credit funds signals potential Australian regulatory tightening affecting private credit deployment conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:34+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOFR5MWdvS1hzRFVuMlBBdkpFVWVoVWVRVFh6YWc5TnI4TWlUODdMQXJ0MGhmSHVOUUp6Zk50TXJES2RmUW1Md1BKNkVXbGY5d2Z1Q2xjSGZXZmlFc0NLYkNNMUdhTWVGRHpUakZnM2Q1TlBNY0FYYnIyWEdRc29rSGtfcVZ0aEdyaVE?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "3c765ffcc9f7",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T23:20:57+00:00",
+      "headline": {
+        "en": "Australia's ASIC halts fundraising by three ASCF private credit funds",
+        "zh": "澳大利亚ASIC叫停三只ASCF私募信贷基金的募资"
+      },
+      "summary": {
+        "en": "Australia's ASIC has halted fundraising by three ASCF private credit funds.",
+        "zh": "澳大利亚ASIC已叫停三只ASCF私募信贷基金的募资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdldDVmxac0NfVFVOQ2tnWktROGRJTnBPTy1rTE1FT1lmRm5oeXQyMkhVMUJBaDVrNDVtV01ZRnhqc1lCS01ZdzVNUE10aTlyZ3JSbTZRT2szdlRyd0F2ZFZDTm80QjJoMGp2WVhfaktaWUlrTE1lVTBIalIwYWNzVnZHWVJpcGJUejI5Sk4xZUV0Z3M1OHNSalZmdXFzNXhZVGk4TUVXMmltaDctVUxkSmpnOTdzallVMDVjSnNuR1Y5S2FzajB6X3U2V0JRVnJYRy1FT0R3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia's ASIC halts fundraising by three ASCF private credit funds",
+      "source_fingerprint": "69a0ba26cd336a75d360ef25a3d526ac73bb3a259a6be9f6b457b44e96161090",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d64065c5e4835792bc65e76568b0bb2b776be2456b0ea0d3a6774b99244ce243",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Regulatory action by ASIC halting fundraising for private credit funds signals regulatory risk for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdldDVmxac0NfVFVOQ2tnWktROGRJTnBPTy1rTE1FT1lmRm5oeXQyMkhVMUJBaDVrNDVtV01ZRnhqc1lCS01ZdzVNUE10aTlyZ3JSbTZRT2szdlRyd0F2ZFZDTm80QjJoMGp2WVhfaktaWUlrTE1lVTBIalIwYWNzVnZHWVJpcGJUejI5Sk4xZUV0Z3M1OHNSalZmdXFzNXhZVGk4TUVXMmltaDctVUxkSmpnOTdzallVMDVjSnNuR1Y5S2FzajB6X3U2V0JRVnJYRy1FT0R3?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "3eaea044c926",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T20:49:20+00:00",
+      "headline": {
+        "en": "A Third Of Apollo's $35 Billion In Private Credit Trades Involved Other Firms' Loans",
+        "zh": "Apollo 350亿美元私募信贷交易中三分之一涉及其他公司的贷款"
+      },
+      "summary": {
+        "en": "A report says a third of Apollo's $35 billion in private credit trades involved other firms' loans.",
+        "zh": "一份报道称，Apollo 350亿美元私募信贷交易中有三分之一涉及其他公司的贷款。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQSlBKMmFaQkM5SnBBSWc1NnY1eTFLZFFaUjBTQ1JUek52WTVfbDhkcmg3dUFfOTZsMmpYSkQ4ckd3U2RvY2xEeHhsVVBsSV9BMDdHOWNXYk5jU1BJc1lmN0NRYTNPQUR0SktTWGtERjl2Z0FqWkZjbGJld2NoamhXVk9jcFZUZ0RJWTR5X2R0R1p6VTZmbDFyNVhOSUdodnlfNWplVzdaeGJxYVNGUVY4S2NtNEpPMVVkUVVSQVF6X19SVmVvb05uLXZuQ1ZTNHZYbkF1T0FoZWVmSEF6aE50QVlnaVRnM0JyQUc4VjRUM0xUb29jTUl4TTFicTRKc0E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "A Third Of Apollo's $35 Billion In Private Credit Trades Involved Other Firms' Loans",
+      "source_fingerprint": "1b484427460add9cf28327c6ec2bf7caeafc5125a2776d19b0272a346aa76af2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7934ea4a55419d892fb7853da106a057161ef1f59becc1b697d659c4c01aab6f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large private-credit trading book at a tracked manager signals activity in the secondaries market for credit loans, a channel affecting private-credit liquidity and valuations.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQSlBKMmFaQkM5SnBBSWc1NnY1eTFLZFFaUjBTQ1JUek52WTVfbDhkcmg3dUFfOTZsMmpYSkQ4ckd3U2RvY2xEeHhsVVBsSV9BMDdHOWNXYk5jU1BJc1lmN0NRYTNPQUR0SktTWGtERjl2Z0FqWkZjbGJld2NoamhXVk9jcFZUZ0RJWTR5X2R0R1p6VTZmbDFyNVhOSUdodnlfNWplVzdaeGJxYVNGUVY4S2NtNEpPMVVkUVVSQVF6X19SVmVvb05uLXZuQ1ZTNHZYbkF1T0FoZWVmSEF6aE50QVlnaVRnM0JyQUc4VjRUM0xUb29jTUl4TTFicTRKc0E?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "a0cbf2526b2e",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T20:49:20+00:00",
+      "headline": {
+        "en": "A Third Of Apollo's $35 Billion In Private Credit Trades Involved Other Firms' Loans",
+        "zh": "Apollo 350 亿美元私人信贷交易中约三分之一涉及其他公司的贷款"
+      },
+      "summary": {
+        "en": "About a third of Apollo's $35 billion in private credit trades involved other firms' loans, according to the report.",
+        "zh": "据报道，Apollo 350 亿美元私人信贷交易中约有三分之一涉及其他公司的贷款。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdW13WEJiUDI1ZWFKVFZTdWZQZDJRaWZSLTEyaDIxX2V1QXdMU1lKU3JoZTN1VjRVZWhZbS1yQ1JKU1g0TmRHTU9DalREVDRyTDdXVTB4T3hscU50T3ZBR1ptWHpJOWZGalVXLVZ3bWtkSm9MUzB1ZE12OEwtWTFmeUR3RncycDNoODlTVWg0d1hLYmowQmM4SlRIb3I1TDlmQ2lpRUpESlFaLWhWcFRrNFRQUnRSeDdMcF9iRW82SUZNUDR0VV9xUmRZOE5weFNqdW1uRGwtU1NyZnJ1bUE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "A Third Of Apollo's $35 Billion In Private Credit Trades Involved Other Firms' Loans",
+      "source_fingerprint": "1b484427460add9cf28327c6ec2bf7caeafc5125a2776d19b0272a346aa76af2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7934ea4a55419d892fb7853da106a057161ef1f59becc1b697d659c4c01aab6f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New disclosure on Apollo's private credit trading volume and its large share of third-party loans could change views on Apollo's credit deployment and the secondary private credit market.",
+      "event_identity": {
+        "subject": "apollo",
+        "action": "private credit trades",
+        "object": "other firms' loans",
+        "period": "$35 billion",
+        "numbers": [
+          "$35 Billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:43+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdW13WEJiUDI1ZWFKVFZTdWZQZDJRaWZSLTEyaDIxX2V1QXdMU1lKU3JoZTN1VjRVZWhZbS1yQ1JKU1g0TmRHTU9DalREVDRyTDdXVTB4T3hscU50T3ZBR1ptWHpJOWZGalVXLVZ3bWtkSm9MUzB1ZE12OEwtWTFmeUR3RncycDNoODlTVWg0d1hLYmowQmM4SlRIb3I1TDlmQ2lpRUpESlFaLWhWcFRrNFRQUnRSeDdMcF9iRW82SUZNUDR0VV9xUmRZOE5weFNqdW1uRGwtU1NyZnJ1bUE?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "8759610739a4",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T17:48:02+00:00",
+      "headline": {
+        "en": "Citigroup Provides $28M CMBS Refi for Arlington Office Building",
+        "zh": "花旗集团为阿灵顿办公楼提供2800万美元CMBS再融资"
+      },
+      "summary": {
+        "en": "Citigroup supplied a $28 million commercial mortgage-backed securities loan to refinance Jemal Equities' 10-story, 174,000-square-foot office property at 1530 Wilson Boulevard in Arlington, Virginia. Jemal Equities acquired the building in October 2025 for $28 million when it was 61 percent leased; occupancy has since risen to 89 percent. Meridian Capital Group arranged the loan.",
+        "zh": "花旗集团提供了一笔2800万美元的商业抵押贷款支持证券贷款，为Jemal Equities位于弗吉尼亚州阿灵顿威尔逊大道1530号、面积17.4万平方英尺的10层办公楼进行再融资。Jemal Equities于2025年10月以2800万美元收购该楼，当时出租率为61%，目前出租率已升至89%。Meridian Capital Group安排了这笔贷款。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/citigroup-arlington-virginia-office-turnaround/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Citigroup Supplies $28M Refi for Revived Office Building in Arlington, Va.",
+      "source_fingerprint": "aca9d8a66804723193435748efc7fe026fce75ef9840baa3f0d246d084a49931",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 615,
+            "end": 695
+          },
+          "linkage": {
+            "start": 803,
+            "end": 830
+          }
+        },
+        "source_sha256": "fd5028b22e1e21086c244ede9c563f2366f676b822c12e500652368d9c9bfa84",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A CMBS refinancing of a US office building shows banks still providing commercial real estate credit, relevant to the financing environment for real estate and structured credit strategies.",
+      "event_identity": {
+        "subject": "jemal equities",
+        "action": "landed a $28 million commercial mortgage-backed securities loan to refinance",
+        "object": "1530 wilson boulevard",
+        "period": "october 2025",
+        "numbers": [
+          "$28",
+          "$28 million",
+          "$71.4 million",
+          "10",
+          "12",
+          "1530",
+          "174,000",
+          "1990",
+          "2.8",
+          "2020",
+          "2025",
+          "2026",
+          "50",
+          "6.8",
+          "61",
+          "89"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-08T05:33:49+00:00",
+        "sha256": "fd5028b22e1e21086c244ede9c563f2366f676b822c12e500652368d9c9bfa84",
+        "source_published_at": "2026-10-07T13:48:02-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/citigroup-arlington-virginia-office-turnaround/"
+      },
+      "source_published_at": "2026-10-07T13:48:02-04:00",
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    }
+  ]
+}

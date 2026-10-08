@@ -2,6 +2,58 @@
   "date": "2026-10-07",
   "items": [
     {
+      "id": "0feed8eb9364",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T15:49:02+00:00",
+      "headline": {
+        "en": "Symetra closes $459M CLO, its second since launching leveraged credit platform",
+        "zh": "Symetra完成4.59亿美元CLO，为其推出杠杆信贷平台以来的第二只"
+      },
+      "summary": {
+        "en": "Symetra closed a $459 million CLO, its second since launching a leveraged credit platform.",
+        "zh": "Symetra完成了一只4.59亿美元的CLO，这是其推出杠杆信贷平台以来的第二只。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYVctOGx0Szg0dnVXUXNBNmdva3RYLWdUMTlnMmFzVVdNVXY4eHZfY0FnS2NrWHV4cFl0TVlZWG1CT3BRTFphN0dKaF9KM0VZQ3FuWGpvX2xPQmtmSks3VUF4QlZZazI3bENZQUFWQkNRYmc1U2x5cVlmUXpNR0lMUUI5RTQwYkp6UDdFN1hwSmtoa1FrWU1QUTV6WkM3OUNFZklPSE1CcWlwSnFRSjVZ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Symetra closes $459M CLO, its second since launching leveraged credit platform",
+      "source_fingerprint": "cee4110e21b44f26637d4947c3c3441969797ebb3954f3765fa7bf066e33b832",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "93b68463d6e1860a10470011dda05aa767146dbdc06012e4cdd1d9323c363e9a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new CLO close expands leveraged credit supply and shows insurer-linked credit platform activity, relevant to the CLO sub-sector even though no tracked manager is named.",
+      "event_identity": {
+        "subject": "symetra",
+        "action": "closes",
+        "object": "$459m clo",
+        "period": "since launching leveraged credit platform",
+        "numbers": [
+          "$459"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:33:56+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYVctOGx0Szg0dnVXUXNBNmdva3RYLWdUMTlnMmFzVVdNVXY4eHZfY0FnS2NrWHV4cFl0TVlZWG1CT3BRTFphN0dKaF9KM0VZQ3FuWGpvX2xPQmtmSks3VUF4QlZZazI3bENZQUFWQkNRYmc1U2x5cVlmUXpNR0lMUUI5RTQwYkp6UDdFN1hwSmtoa1FrWU1QUTV6WkM3OUNFZklPSE1CcWlwSnFRSjVZ?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
       "id": "d0ca769a4acd",
       "date": "2026-10-07",
       "published_at": "2026-10-07T15:09:27+00:00",
@@ -255,6 +307,49 @@
       "observed_at": "2026-10-07T15:21:57+00:00"
     },
     {
+      "id": "1b354488489d",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T08:07:53+00:00",
+      "headline": {
+        "en": "Waymo expands private debt raise to $5bn to fund robotaxi growth",
+        "zh": "Waymo将私募债务融资规模扩大至50亿美元，为robotaxi业务增长提供资金"
+      },
+      "summary": {
+        "en": "Waymo expanded a private debt raise to $5bn to fund robotaxi growth, according to Private Equity Wire.",
+        "zh": "据Private Equity Wire报道，Waymo将私募债务融资规模扩大至50亿美元，用于支持robotaxi业务增长。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Private Equity Wire",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUFlKZnNxWjd4czRtTmNkazZrSXhvanREbDdUSjJOQXJmZE1PS0VjVUtNYjNDNkRfTnF2Qk5RUWVSOEVsVzVISHNDcmkzZFJ5UFZQOHRIWDd6VDdqc1ZzcEJtTzFQRnRUcGhqa3dUSS1ITWp3RDVrNWJ2Zm0wUkt3RVltdjRka1lsUldGTXo3Y1VMZUNQREpsekpPbzRzeFNsaHc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Waymo expands private debt raise to $5bn to fund robotaxi growth",
+      "source_fingerprint": "d388e9d3b02ea3c39f86f700f3fdeb159f2218a6b28ae18fdee55ea0f31d789f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2e4d212ca76431640ff425e511eb9e02767eac306babc2327934932842b24683",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Waymo's expanded $5bn private debt raise marks a large deployment in the private credit / direct lending channel even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:34:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUFlKZnNxWjd4czRtTmNkazZrSXhvanREbDdUSjJOQXJmZE1PS0VjVUtNYjNDNkRfTnF2Qk5RUWVSOEVsVzVISHNDcmkzZFJ5UFZQOHRIWDd6VDdqc1ZzcEJtTzFQRnRUcGhqa3dUSS1ITWp3RDVrNWJ2Zm0wUkt3RVltdjRka1lsUldGTXo3Y1VMZUNQREpsekpPbzRzeFNsaHc?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
       "id": "7fec380da97b",
       "date": "2026-10-07",
       "published_at": "2026-10-07T06:54:42+00:00",
@@ -298,6 +393,51 @@
         "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMkxqYVRGWGUyZWJEaVNLOEtaOC1LV3JvOVJxa2FSTUljMlE3UXhzZmo1alFhTGdXb3RJT1dNQ3AzeXAwb3pVU3l1bjVURDczSEZzbHZ0OUdOZkh3dzVQb0NzdXc4WjQ3MXJrQmdtRTc1NWU3NzV2SjhFZXQ0NmRzcUFkbTlfa24yMnBsOHVXMjNrUFBXZW5pVm5fTWk3aEVIMFdXUVI3RkdHUTZ1NHZyOUxraHNaeVFHbXlnWUpuY0JQdWRSS2c?oc=5"
       },
       "observed_at": "2026-10-07T15:21:57+00:00"
+    },
+    {
+      "id": "0cc87ac63da2",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T04:58:00+00:00",
+      "headline": {
+        "en": "Blue Owl plans major expansion into insurance capital, CEO tells FT",
+        "zh": "Blue Owl计划大举扩张保险资本业务，CEO向《金融时报》表示"
+      },
+      "summary": {
+        "en": "Blue Owl plans a major expansion into insurance capital, its CEO told the Financial Times.",
+        "zh": "Blue Owl首席执行官向《金融时报》表示，公司计划大举扩张保险资本业务。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com UK",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObU5zOFg4ektZckJfQTAwZnd6cElRMl9BRENNVXo3UzBBX0lTT05QLUprMVlCaWZka3NNVjBoYUN3UDh0cTU3NktOck1Yc2RhWV8xVE9meDJuSEtZZnB3X2pZT2hqakZNQUNXWThmY2V2Rk1rMExKdEdibzVkeWZEdXN2UDdFNE1FOHV3aEdFWEo0Yk9OOFJPMEVnLThtSEVFV0V0d3pEN3NfckJ2MUNDaUtVNGxsaV9fVE1TcGFtNi14QnhLLVE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl plans major expansion into insurance capital, CEO tells FT",
+      "source_fingerprint": "e4f2d6536e924b3ce0c9822e540084762b32b0964c3c3e4b0c87c31c42c12028",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "093b59b5b416c220f0b756093c85ef803b99a786ec3cf72ea1aab5e483f29e5f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's potential expansion into insurance capital is a strategic development that could affect its credit platform's capital base and deployment capacity.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:34:03+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObU5zOFg4ektZckJfQTAwZnd6cElRMl9BRENNVXo3UzBBX0lTT05QLUprMVlCaWZka3NNVjBoYUN3UDh0cTU3NktOck1Yc2RhWV8xVE9meDJuSEtZZnB3X2pZT2hqakZNQUNXWThmY2V2Rk1rMExKdEdibzVkeWZEdXN2UDdFNE1FOHV3aEdFWEo0Yk9OOFJPMEVnLThtSEVFV0V0d3pEN3NfckJ2MUNDaUtVNGxsaV9fVE1TcGFtNi14QnhLLVE?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
     },
     {
       "id": "aaee217afd84",
@@ -389,6 +529,93 @@
       "observed_at": "2026-10-07T05:22:52+00:00"
     },
     {
+      "id": "d2c65bcaaaaa",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07",
+      "headline": {
+        "en": "ASIC halts offers in three mortgage schemes managed by Australian Secure Capital Fund",
+        "zh": "ASIC 叫停 Australian Secure Capital Fund 管理的三只抵押贷款计划的发售"
+      },
+      "summary": {
+        "en": "ASIC issued an interim stop order on the product disclosure statement of Australian Secure Capital Fund Limited, barring offers, issues, sales or transfers of units in the ASCF Premium Capital Fund, ASCF Select Income Fund and ASCF High Yield Fund. The regulator cited concerns the PDS may be defective, lacks clear disclosure of loan portfolio and diversification metrics, may contain a misleading statement, omits disposal costs and inadequately discloses an investor reserve account. At 30 June 2026 the Funds had $251.8 million in assets under management.",
+        "zh": "ASIC 对 Australian Secure Capital Fund Limited 的产品披露声明（PDS）发布临时停止令，禁止其发售、发行、出售或转让 ASCF Premium Capital Fund、ASCF Select Income Fund 和 ASCF High Yield Fund 的基金单位。监管机构担心该 PDS 可能存在缺陷，未清晰披露基金贷款组合和分散化指标，可能包含误导性陈述，遗漏退出成本信息，且对用于覆盖减值和资本损失的投资者储备账户披露不足。截至 2026 年 6 月 30 日，这些基金管理资产为 2.518 亿澳元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "mortgage",
+        "real_estate"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "ASIC",
+        "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-234mr-asic-halts-offers-in-mortgage-schemes-managed-by-australian-secure-capital-fund"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "ASIC 26-234MR: asic halts offers in mortgage schemes managed by australian secure capital fund",
+      "source_fingerprint": "2f65057bd9df279dc46c5520c6d4ce7ab21c2a1522077c74ad3955940748ffdd",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 171,
+            "end": 225
+          },
+          "linkage": {
+            "start": 1969,
+            "end": 2091
+          },
+          "current_adverse": {
+            "start": 154,
+            "end": 225
+          }
+        },
+        "source_sha256": "782e2474a3cf4b23fb783db55cdd6d610a5d216846539c4c05841b45eaafa8fd",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "Regulatory interim stop order blocking new offers in three retail mortgage funds on disclosure concerns is a material sector-level development for retail private credit distribution.",
+          "zh": "监管机构因披露问题发布临时停止令，禁止三只零售抵押贷款基金开展新发售，这对零售私人信贷分销构成重大行业层面事件。"
+        }
+      },
+      "relevance_reason": "Australian regulator halts retail offers for three private credit mortgage schemes, signalling heightened disclosure and distribution scrutiny for retail private credit.",
+      "event_identity": {
+        "subject": "australian secure capital fund limited",
+        "action": "interim stop order",
+        "object": "product disclosure statement",
+        "period": "at 30 june 2026",
+        "numbers": [
+          "$251.8 million",
+          "2026",
+          "234",
+          "26",
+          "30"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-08T05:33:21+00:00",
+        "sha256": "782e2474a3cf4b23fb783db55cdd6d610a5d216846539c4c05841b45eaafa8fd",
+        "source_published_at": "2026-10-07",
+        "final_url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-234mr-asic-halts-offers-in-mortgage-schemes-managed-by-australian-secure-capital-fund"
+      },
+      "source_origin": "regulator",
+      "published_basis": "page_created_date",
+      "source_published_at": "2026-10-07",
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
       "id": "dc4f7c69fbb6",
       "date": "2026-10-07",
       "published_at": "2026-10-06T22:28:55+00:00",
@@ -478,6 +705,101 @@
         "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaXhWY0ZUdUtjSWVKc1l4aWg0VDhITDNOWXR5aHlTXzlHYVI4V0d4WWtjaGlncWxsTGJZVHk1cG9DTGV1ZTY3Mzd2UkpVR0Y4MkJ3c3hvSTdfbG03N3pBdXRScmFRV0dEUmd6ODV1eE5qRl9ZOUNlUVR3X0V5dmcwUjFYN3hIZ2tQMWZQUnRWMzZBaEpxTEZ2VGlFenBSNmNicktqVFFYV2FwN1FlNjhrU3Y3TUFRdw?oc=5"
       },
       "observed_at": "2026-10-07T05:22:52+00:00"
+    },
+    {
+      "id": "999b1e55d810",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T18:49:28+00:00",
+      "headline": {
+        "en": "KKR Private Credit Fund Edges Past Redemption Limit",
+        "zh": "KKR Private Credit Fund 赎回额度被突破"
+      },
+      "summary": {
+        "en": "KKR Private Credit Fund edged past its redemption limit, according to a headline.",
+        "zh": "据一则标题，KKR Private Credit Fund 的赎回额度被突破。所提供文本中没有更多细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQb2NvWG8wTDJoME5OQUdiQ0hmYnpVWmZiT09NTXRmSlFWMFlzYmIwM3hiVTlxRERkaEd3LW95SjAwQkZmX2o3S2J4cnRfZ2NfNW5qUUpzbWhHb1VkNHJjRUYwU1FBbzZQc2pCRHVUVnBEMWIzcEZhRGhwYWhadlFoUEFKcFFhWDZXcTBQb29uV3JUX2ExRXVjUEtn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR Private Credit Fund Edges Past Redemption Limit",
+      "source_fingerprint": "e205e61fe420f3424042ecbda13ed261128cb77e4c762259b1231f770824f689",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d023639b2c7f57089ae7e791e4e211a628035dd9468487125f5a884b3b6cea4d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A redemption limit breach at a KKR private credit fund signals potential liquidity pressure on the tracked manager's credit vehicle.",
+      "event_identity": {
+        "subject": "kkr private credit fund",
+        "action": "edges past redemption limit",
+        "object": "kkr private credit fund",
+        "period": "kkr private credit fund edges past redemption limit",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:34:05+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQb2NvWG8wTDJoME5OQUdiQ0hmYnpVWmZiT09NTXRmSlFWMFlzYmIwM3hiVTlxRERkaEd3LW95SjAwQkZmX2o3S2J4cnRfZ2NfNW5qUUpzbWhHb1VkNHJjRUYwU1FBbzZQc2pCRHVUVnBEMWIzcEZhRGhwYWhadlFoUEFKcFFhWDZXcTBQb29uV3JUX2ExRXVjUEtn?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "70c9baf9ab19",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T16:58:49+00:00",
+      "headline": {
+        "en": "AG advises Eden Rock on ABL facility for Marshall Land Systems",
+        "zh": "AG就Marshall Land Systems的ABL融资为Eden Rock提供咨询"
+      },
+      "summary": {
+        "en": "Addleshaw Goddard advised Eden Rock on an asset-based lending facility for Marshall Land Systems.",
+        "zh": "Addleshaw Goddard就Marshall Land Systems的资产支持贷款（ABL）融资为Eden Rock提供法律咨询。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Addleshaw Goddard LLP",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeWJrWXVkcHJNOGE3eDMtdmp5c052aWJIa1U1SU5DYkpQRWhiVWdndVhxXzh0bVBmOGVMd2xxSG1CbURzTUFwUjVpczVETnRXTFFWNnlBd1dZS0VkNGR1c09NRk8tNXFKWGxZREZ0bG9uR1hpRm9jY2Z0WDBQanYyUmJsTmFSRXI3ZnNFRExVTHY2aEducURjVDdhazRfdlY0Uy1FTg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AG advises Eden Rock on ABL facility for Marshall Land Systems",
+      "source_fingerprint": "6570eb0ea27c5b0a581924f00f64905e9b5e21cd1fae7afd520bd5bfcd24507a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2307fc19168c3b463b866549e775b56aa7d30049316bbf6f2e3a6d1546a03c74",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New asset-based lending facility is a fresh deployment in the ABL sub-sector, which maps to tracked managers' asset-backed lending strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:34:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeWJrWXVkcHJNOGE3eDMtdmp5c052aWJIa1U1SU5DYkpQRWhiVWdndVhxXzh0bVBmOGVMd2xxSG1CbURzTUFwUjVpczVETnRXTFFWNnlBd1dZS0VkNGR1c09NRk8tNXFKWGxZREZ0bG9uR1hpRm9jY2Z0WDBQanYyUmJsTmFSRXI3ZnNFRExVTHY2aEducURjVDdhazRfdlY0Uy1FTg?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
     }
   ]
 }

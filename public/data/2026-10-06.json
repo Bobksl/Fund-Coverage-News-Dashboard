@@ -91,6 +91,60 @@
       "observed_at": "2026-10-06T14:55:02+00:00"
     },
     {
+      "id": "43f2e26f8c07",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T10:00:40+00:00",
+      "headline": {
+        "en": "KKR to Buy Fund Administrator Gen II in $5.1 Billion Deal Including Debt",
+        "zh": "KKR将以51亿美元（含债务）收购基金管理服务商Gen II"
+      },
+      "summary": {
+        "en": "KKR agreed to acquire fund administrator Gen II in a $5.1 billion deal including debt, according to a headline report.",
+        "zh": "据一篇标题报道，KKR同意以51亿美元（含债务）收购基金管理服务商Gen II。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "KSL News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaWprang0QXhJaWJQczdrUWtXOGE2LXdWSlA3a3JNM1RiQUhtRUJFYm1OWnlBLVhrU05KTDVYNVA5WEdSTkdROWxITW5IWWw4Q3duZHNVOVhfVW9hQzd2VWMzenBvZ09PUGFyVGJOM3NSNmNOcXZpSU81Z3k2ektNTmwtazNSNTFNUm1TWmYxN3M5Zm9oQm0wbkFlWTR4YmczQ09VZkNsT25GbkU?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt",
+      "source_fingerprint": "bf49017cc6439aaa40cb4ac96233802f88780ae771b30c28f1414a0710caaaff",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6a869a2732b13991c97a692476f02fedf36d6a5cd9e7158385508d6aa7664906",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR's acquisition of a fund administrator is a material franchise development for a tracked credit manager, though the $5.1bn consideration is all-in including debt.",
+      "event_identity": {
+        "subject": "kkr",
+        "action": "to buy",
+        "object": "gen ii",
+        "period": "$5.1 billion deal",
+        "numbers": [
+          "$5.1 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:34:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaWprang0QXhJaWJQczdrUWtXOGE2LXdWSlA3a3JNM1RiQUhtRUJFYm1OWnlBLVhrU05KTDVYNVA5WEdSTkdROWxITW5IWWw4Q3duZHNVOVhfVW9hQzd2VWMzenBvZ09PUGFyVGJOM3NSNmNOcXZpSU81Z3k2ektNTmwtazNSNTFNUm1TWmYxN3M5Zm9oQm0wbkFlWTR4YmczQ09VZkNsT25GbkU?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
       "id": "101ac4e7864f",
       "date": "2026-10-06",
       "published_at": "2026-10-06T08:24:47+00:00",
@@ -132,6 +186,58 @@
         "final_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMEhFUEtLVlhYQkZBNFVqV1pSczFuNE04SDF2aXYxOHdoNzdwQlhZUGV5eVpRRWhWZm85UFhjVEpYalZXa2daX1FXS2J4QkJwSGkyMl9WUWh5QmhBN3o0cW9EbGVwNFZCMmhJRUkxakdCUmlXZjJDc2stenllZlUySkFBbTBialZXQ3VDOW5OWFBPem02MzM2V3FuRHdUZXdwWFg5TWtoSnBqMGlaWFZzV0xxVndMTk81TzUyaEdwbWZjZ20xbjZMSEE4N1dhWDI1LUZZdNIB2gFBVV95cUxPUVhWN2hKbjVhRlRmTFJneEtiUlZKVGFRRlplOVJtNnRkaGN4aWZRXzA3VEt5aTFPZE1XNENweGFoOFZOR08wRFFEeEEyVk1DdVlQVERQMmRUS280MzYtRFZ5ZXBUUlJjMEpwSFByMC1SOVQ5djQ5YjNMMm5OZENlZ09mRnQwWUJ4bm1QUEFUSDVnZzlpb2VvWlBRcENBWkFrRDFOX0gyOF9yTzY0WVlXd21GT3FISVpEOF9zUm5oRC1hMUduX1ZMSkpPRUtwWG5tZnlVRGxlMC1zUQ?oc=5"
       },
       "observed_at": "2026-10-06T14:55:02+00:00"
+    },
+    {
+      "id": "16d1b4c69fea",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T06:03:50+00:00",
+      "headline": {
+        "en": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt",
+        "zh": "KKR将以51亿美元（含债务）收购基金管理公司Gen II"
+      },
+      "summary": {
+        "en": "KKR agreed to acquire fund administrator Gen II in a $5.1 billion deal including debt, according to Reuters.",
+        "zh": "据路透社报道，KKR同意以51亿美元（含债务）收购基金管理公司Gen II。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbk9NOUFNbnJRV21lUnZtN3R3aGhSeGtwMER5LVB4ZlE3aFhkY2JERnhJeEEwV2RsdXZtMXk0M3FTakp3Y1Y3b2pnX1daWTJ5LWRaM2Z5QXFFUUtmV1VuSzhhcTgxVmR0NWlWMnNWbVhYa016MzRzZVQ3WVBHVWVDT0k2aldNSnFTUmdUQ1Y5dE9XMHk3eEtlZzM3YzdqaWdqOWVpUEdLa2liQ2hLQTZEMmY0VUNjaklXQnpfNmVlM2t3NzVIZkE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR to buy fund administrator Gen II in $5.1 billion deal including debt By Reuters",
+      "source_fingerprint": "7c4231f06841c562c38b4ca13b25eeb10f701412bbfe520c103d292e708f0461",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "45c81444f3e04c379d5d83e873d8b17c5f8ab02bbb751cee619e31806946df55",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR is acquiring a fund administrator, a deal that touches the credit platform's broader alternatives franchise, though the credit impact is indirect.",
+      "event_identity": {
+        "subject": "kkr",
+        "action": "to buy",
+        "object": "gen ii",
+        "period": "$5.1 billion deal",
+        "numbers": [
+          "$5.1 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T05:34:11+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbk9NOUFNbnJRV21lUnZtN3R3aGhSeGtwMER5LVB4ZlE3aFhkY2JERnhJeEEwV2RsdXZtMXk0M3FTakp3Y1Y3b2pnX1daWTJ5LWRaM2Z5QXFFUUtmV1VuSzhhcTgxVmR0NWlWMnNWbVhYa016MzRzZVQ3WVBHVWVDT0k2aldNSnFTUmdUQ1Y5dE9XMHk3eEtlZzM3YzdqaWdqOWVpUEdLa2liQ2hLQTZEMmY0VUNjaklXQnpfNmVlM2t3NzVIZkE?oc=5"
+      },
+      "observed_at": "2026-10-08T05:31:36+00:00"
     },
     {
       "id": "deb7aacb26a1",
