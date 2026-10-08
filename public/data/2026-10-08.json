@@ -2,6 +2,271 @@
   "date": "2026-10-08",
   "items": [
     {
+      "id": "f41920187a56",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T12:22:09+00:00",
+      "headline": {
+        "en": "Symetra closes second CLO at $459m, upsized from $400m",
+        "zh": "Symetra 以 4.59 亿美元完成第二只 CLO，规模自 4 亿美元上调"
+      },
+      "summary": {
+        "en": "Symetra Investment Management closed its second CLO, Symetra CLO 2026-1, at $459m after upsizing from an initial $400m, citing strong investor interest. The deal, arranged by Morgan Stanley, is backed primarily by senior secured loans and has a two-year non-call period and a five-year reinvestment period.",
+        "zh": "Symetra Investment Management 完成其第二只 CLO——Symetra CLO 2026-1，规模为 4.59 亿美元，较最初 4 亿美元上调，公司称这反映了强劲的投资者需求。该交易由 Morgan Stanley 安排，主要 backed 由优先担保贷款构成，并设有两年非赎回期和五年再投资期。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/08/symetra-upsizes-clo-to-459m/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Symetra upsizes CLO to $459m",
+      "source_fingerprint": "cbd47d7515d2320c153540e6c19c74397eaafc28e33522a226b0a2893500050d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b2da7eff354dae85e228ce2876ad1be2aec7ec8d5e48bebd509f77e963f77fea",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "A new CLO closing at $459m shows continued CLO issuance activity, relevant to the tracked CLO sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-08T15:26:41+00:00",
+        "sha256": "b2da7eff354dae85e228ce2876ad1be2aec7ec8d5e48bebd509f77e963f77fea",
+        "source_published_at": "2026-10-08T12:22:09+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/08/symetra-upsizes-clo-to-459m/"
+      },
+      "source_published_at": "2026-10-08T12:22:09+00:00",
+      "observed_at": "2026-10-08T15:24:31+00:00"
+    },
+    {
+      "id": "029f50cdc633",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T11:38:23+00:00",
+      "headline": {
+        "en": "Nuveen raises over A$1bn at first close of Australian real estate debt strategy",
+        "zh": "Nuveen 澳大利亚房地产债务策略首次关账募资超 10 亿澳元"
+      },
+      "summary": {
+        "en": "Nuveen Real Estate has raised more than A$1bn at the first close of its Australian commercial real estate debt strategy, with commitments from Canada Pension Plan Investment Board and Singapore's Temasek. CPP Investments committed A$300m. The close includes co-investment vehicles and transactions, following a previous vintage that closed in May 2025 with A$650m.",
+        "zh": "Nuveen Real Estate 的澳大利亚商业房地产债务策略首次关账募资超过 10 亿澳元，出资方包括加拿大养老金计划投资委员会（CPP Investments）和新加坡淡马锡。CPP Investments 承诺出资 3 亿澳元。本次关账包括共同投资工具和交易，此前一期于 2025 年 5 月以 6.5 亿澳元股权承诺完成最终关账。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/08/nuveen-raises-a1bn-for-australian-re-debt-strategy/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Nuveen raises A$1bn for Australian RE debt strategy",
+      "source_fingerprint": "976e6bf010f68d0252f8befd405b608b397e91e1239baf171f357bf54a384463",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 45
+          },
+          "linkage": {
+            "start": 0,
+            "end": 129
+          }
+        },
+        "source_sha256": "f4b9e828e5f37672c4a5f9fc71e4dbd32d92549026fb6e321dbf5864d13ca6b9",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A new real estate debt strategy first close adds private credit capital and lending capacity in Australian commercial real estate, signalling sector deployment and fundraising conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-08T15:26:44+00:00",
+        "sha256": "f4b9e828e5f37672c4a5f9fc71e4dbd32d92549026fb6e321dbf5864d13ca6b9",
+        "source_published_at": "2026-10-08T11:38:23+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/08/nuveen-raises-a1bn-for-australian-re-debt-strategy/"
+      },
+      "source_published_at": "2026-10-08T11:38:23+00:00",
+      "observed_at": "2026-10-08T15:24:31+00:00"
+    },
+    {
+      "id": "c76f076fad58",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T10:26:23+00:00",
+      "headline": {
+        "en": "Ardian and SMBC launch mid-market NAV financing platform",
+        "zh": "Ardian与SMBC推出中型市场NAV融资平台"
+      },
+      "summary": {
+        "en": "Ardian and Sumitomo Mitsui Banking Corporation have partnered to launch the Direct MidCap NAV Financing platform, providing tailored financing to mid-market buyout and infrastructure funds. Ardian, which manages around $200bn in assets, is bringing mid-cap insight and proprietary data, while SMBC contributes large-cap experience and global structuring expertise.",
+        "zh": "Ardian与三井住友银行（SMBC）合作推出Direct MidCap NAV融资平台，为中型市场收购基金和基础设施基金提供定制融资。管理约2000亿美元资产的Ardian带来中型市场洞察和专有数据，SMBC则贡献大型市场经验与全球架构专长。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/08/ardian-and-smbc-team-up-to-launch-nav-financing-platform/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ardian and SMBC team up to launch NAV financing platform",
+      "source_fingerprint": "779f3ff0c81e8860eaa961f4d5ead26b3366048195aaed1af63009d7c1b9dba2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 456,
+            "end": 528
+          },
+          "linkage": {
+            "start": 910,
+            "end": 982
+          }
+        },
+        "source_sha256": "cda7ee454caf03a31450ebdf089c9fb112bd0b448b0347734f68e7e4d562d3a1",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New platform launch expands NAV financing supply for mid-market funds with no tracked manager directly involved.",
+          "zh": "新平台推出扩大了中型市场基金的NAV融资供给，不涉及被跟踪管理人。"
+        }
+      },
+      "relevance_reason": "New NAV financing platform expands private credit capacity for mid-market buyout and infrastructure funds, a sub-sector tracked by credit investors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-08T15:26:54+00:00",
+        "sha256": "cda7ee454caf03a31450ebdf089c9fb112bd0b448b0347734f68e7e4d562d3a1",
+        "source_published_at": "2026-10-08T10:26:23+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/08/ardian-and-smbc-team-up-to-launch-nav-financing-platform/"
+      },
+      "source_published_at": "2026-10-08T10:26:23+00:00",
+      "observed_at": "2026-10-08T15:24:31+00:00"
+    },
+    {
+      "id": "879f2adfc48c",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T10:17:15+00:00",
+      "headline": {
+        "en": "Legacy Private Credit Loans Face Refinancing Risks as Rates Rise",
+        "zh": "利率上升之际，存量私人信贷贷款面临再融资风险"
+      },
+      "summary": {
+        "en": "Legacy private credit loans face refinancing risks as rates rise, according to a headline from Insurance Journal.",
+        "zh": "据Insurance Journal的一则标题，随着利率上升，存量私人信贷贷款面临再融资风险。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Insurance Journal",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBialNfanNaNmxMZWNyTkpaMml4cEh6a24yTU1jNjVFbVliSTR3c2Rsb3Z1cDRYQW5RNlFLSW1OV2k4c3I0OWVrQThjMUFieTF6QjZTZTdiVHFpY1ZyUmhueTN6cGYyTWs2bkFTRXU3SlhQdVR2Z0JZdXFvQndHdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Legacy Private Credit Loans Face Refinancing Risks as Rates Rise",
+      "source_fingerprint": "5b9448bb429d85f7aac80ddffd909e174d09e01594189be9dace923ed0517758",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bf3f48a664af2069f15a8769362c392031d45b398573566334f0e53c19a32369",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising-rate refinancing pressure on legacy private credit loans could affect risk and valuations across the tracked private credit sub-sector even without a named manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T15:26:58+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBialNfanNaNmxMZWNyTkpaMml4cEh6a24yTU1jNjVFbVliSTR3c2Rsb3Z1cDRYQW5RNlFLSW1OV2k4c3I0OWVrQThjMUFieTF6QjZTZTdiVHFpY1ZyUmhueTN6cGYyTWs2bkFTRXU3SlhQdVR2Z0JZdXFvQndHdw?oc=5"
+      },
+      "observed_at": "2026-10-08T15:24:31+00:00"
+    },
+    {
+      "id": "47e795786458",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T06:18:42+00:00",
+      "headline": {
+        "en": "La Trobe Financial CEO addresses mounting pressure on private credit",
+        "zh": "La Trobe Financial CEO 就私募信贷面临的压力发表讲话"
+      },
+      "summary": {
+        "en": "A headline says the CEO of La Trobe Financial addressed mounting pressure on private credit.",
+        "zh": "一则标题称 La Trobe Financial 的 CEO 就私募信贷面临的压力发表讲话。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "News24",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOUXctaE5SOGdhRlZ1b0RwaEVzUGJEZG00dkdlSFItOXZyeldOWXQ1cFhQZG4ycXNaN1NpbVhTUGZ3V2YwYzBEWTd5LTUwWnNzWnZ5TUF1Z1lYSUNpZWo3YnB0WjgwWExfOUNlazBfZW5XQ1BDZEtkQy12SUFYN0hQYzdONVVNTzk1c28wUTBNaE9vNjdWbnlZRmlKT090TWNGcUVTUEhBRE9iRGZROWF4WEdVVXozMlJaXzdUeFMyM0ctMDliSXJHTVRrYVpxb2R5cmcyQ3A5YllIYXNMVFhlTnhQWHrSAeoBQVVfeXFMTUtzcWZlUlhzQ2d6SVA4YjNqWkNIN0t0S2dubjVIaHU4Qm1wRUFoZkkyTlVxV1Q5OWZPUVMwMVk1WEJsbVBWUElPRFgzcS0xVGVSUnROSTd6WnFlMWZJSDlWLTFvLWVMYXZWXzI1N3o5RVlWT2ppaFJFaF9SN2l1R096a0dWVHd4LWstN1RoUTNVLU1peXYwQThMRnpuQmZYTEZUWHV0YWNMaWtvLWRTV2lvMXY5N0FHaS1SYjVoSlBNX1pQOVR2bmZVV1lxMmNKYkw0ODNFSzNqd3VxN0xUMU52eV9FVUpJMnV3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "La Trobe Financial CEO addresses mounting pressure on private credit",
+      "source_fingerprint": "ea7a515b58e9d3fb60e10508018eb632b32b795baa86365cf4d61f503331f16d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "db4019903689fc233e26ce56d23a64bdbb9672848409d9f327768331f67b0f55",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Private credit sector commentary with no tracked manager named; transmission channel is sentiment toward private credit strategies that tracked managers operate in.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T15:27:04+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOUXctaE5SOGdhRlZ1b0RwaEVzUGJEZG00dkdlSFItOXZyeldOWXQ1cFhQZG4ycXNaN1NpbVhTUGZ3V2YwYzBEWTd5LTUwWnNzWnZ5TUF1Z1lYSUNpZWo3YnB0WjgwWExfOUNlazBfZW5XQ1BDZEtkQy12SUFYN0hQYzdONVVNTzk1c28wUTBNaE9vNjdWbnlZRmlKT090TWNGcUVTUEhBRE9iRGZROWF4WEdVVXozMlJaXzdUeFMyM0ctMDliSXJHTVRrYVpxb2R5cmcyQ3A5YllIYXNMVFhlTnhQWHrSAeoBQVVfeXFMTUtzcWZlUlhzQ2d6SVA4YjNqWkNIN0t0S2dubjVIaHU4Qm1wRUFoZkkyTlVxV1Q5OWZPUVMwMVk1WEJsbVBWUElPRFgzcS0xVGVSUnROSTd6WnFlMWZJSDlWLTFvLWVMYXZWXzI1N3o5RVlWT2ppaFJFaF9SN2l1R096a0dWVHd4LWstN1RoUTNVLU1peXYwQThMRnpuQmZYTEZUWHV0YWNMaWtvLWRTV2lvMXY5N0FHaS1SYjVoSlBNX1pQOVR2bmZVV1lxMmNKYkw0ODNFSzNqd3VxN0xUMU52eV9FVUpJMnV3?oc=5"
+      },
+      "observed_at": "2026-10-08T15:24:31+00:00"
+    },
+    {
       "id": "c22d8740041f",
       "date": "2026-10-08",
       "published_at": "2026-10-08T00:24:00+00:00",
@@ -174,6 +439,49 @@
       "observed_at": "2026-10-08T05:31:36+00:00"
     },
     {
+      "id": "81aab67a32d8",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T23:22:16+00:00",
+      "headline": {
+        "en": "Australia's ASIC halts fundraising by three ASCF private credit funds",
+        "zh": "澳大利亚ASIC叫停三只ASCF私募信贷基金的募资"
+      },
+      "summary": {
+        "en": "Australia's ASIC halted fundraising by three ASCF private credit funds, according to a headline report.",
+        "zh": "据一则标题报道，澳大利亚证券与投资委员会（ASIC）叫停了三只ASCF私募信贷基金的募资。目前没有更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOFJiWnlRbktDWGxqS195U3dCcVdvVndhZXk5NVduY0lPMmp5UG54NHZrS2ZHYW4zX3VtRWU4bExxY2ZFVjVsOGVrUTlfc0dXd0d1T3JUM0RGelYxdlZKYkNQTVdtdG9LempOWVNBZzMxVWh5Tl9rUTFOVlBRR19WY0tsekE5OHZleWQ0RWRzSUVnWWZzR0FfVm1GaVVnWHZ0aHFzck5LbGFjaDdPTFMtVXhGOGZxeWR1WnB0cHVrSQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia's ASIC halts fundraising by three ASCF private credit funds",
+      "source_fingerprint": "69a0ba26cd336a75d360ef25a3d526ac73bb3a259a6be9f6b457b44e96161090",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d64065c5e4835792bc65e76568b0bb2b776be2456b0ea0d3a6774b99244ce243",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Australian regulator halting fundraising for private credit funds signals regulatory risk to the private credit sub-sector, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T15:27:15+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOFJiWnlRbktDWGxqS195U3dCcVdvVndhZXk5NVduY0lPMmp5UG54NHZrS2ZHYW4zX3VtRWU4bExxY2ZFVjVsOGVrUTlfc0dXd0d1T3JUM0RGelYxdlZKYkNQTVdtdG9LempOWVNBZzMxVWh5Tl9rUTFOVlBRR19WY0tsekE5OHZleWQ0RWRzSUVnWWZzR0FfVm1GaVVnWHZ0aHFzck5LbGFjaDdPTFMtVXhGOGZxeWR1WnB0cHVrSQ?oc=5"
+      },
+      "observed_at": "2026-10-08T15:24:31+00:00"
+    },
+    {
       "id": "3c765ffcc9f7",
       "date": "2026-10-08",
       "published_at": "2026-10-07T23:20:57+00:00",
@@ -314,6 +622,51 @@
         "final_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdW13WEJiUDI1ZWFKVFZTdWZQZDJRaWZSLTEyaDIxX2V1QXdMU1lKU3JoZTN1VjRVZWhZbS1yQ1JKU1g0TmRHTU9DalREVDRyTDdXVTB4T3hscU50T3ZBR1ptWHpJOWZGalVXLVZ3bWtkSm9MUzB1ZE12OEwtWTFmeUR3RncycDNoODlTVWg0d1hLYmowQmM4SlRIb3I1TDlmQ2lpRUpESlFaLWhWcFRrNFRQUnRSeDdMcF9iRW82SUZNUDR0VV9xUmRZOE5weFNqdW1uRGwtU1NyZnJ1bUE?oc=5"
       },
       "observed_at": "2026-10-08T05:31:36+00:00"
+    },
+    {
+      "id": "151f5383b691",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T20:49:20+00:00",
+      "headline": {
+        "en": "A Third Of Apollo's $35 Billion In Private Credit Trades Involved Other Firms' Loans",
+        "zh": "Apollo 350 亿美元私人信贷交易中三分之一涉及其他公司的贷款"
+      },
+      "summary": {
+        "en": "Apollo conducted $35 billion in private credit trades, and about a third of those trades involved other firms' loans, according to the headline.",
+        "zh": "据标题信息，Apollo 完成了 350 亿美元的私人信贷交易，其中约三分之一涉及其他公司的贷款。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONzVET3hjaWdaeHc5aVdfR1NuLWNLSXhRcmFPelFfNUdqOFg2NmxJQ2ZjdDYzemR2QzBNYlF3ZUV5czZvbkVBTWdLajNLMXVMbWNleXRJZ0hLdUdFV1FtV21MUFlzTi1pZm0ybEw2TlM1elpadGVSX2hrSWgyTlNjeXpRV252cFlvWTItZjQ4YmZrdUtHMzZwMEFRak5Hdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "A Third Of Apollo's $35 Billion In Private Credit Trades Involved Other Firms' Loans",
+      "source_fingerprint": "1b484427460add9cf28327c6ec2bf7caeafc5125a2776d19b0272a346aa76af2",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7934ea4a55419d892fb7853da106a057161ef1f59becc1b697d659c4c01aab6f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's $35bn private credit trading volume with a third involving other firms' loans signals market-making depth and secondary liquidity conditions in private credit, directly touching a tracked manager's credit platform.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T15:27:17+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONzVET3hjaWdaeHc5aVdfR1NuLWNLSXhRcmFPelFfNUdqOFg2NmxJQ2ZjdDYzemR2QzBNYlF3ZUV5czZvbkVBTWdLajNLMXVMbWNleXRJZ0hLdUdFV1FtV21MUFlzTi1pZm0ybEw2TlM1elpadGVSX2hrSWgyTlNjeXpRV252cFlvWTItZjQ4YmZrdUtHMzZwMEFRak5Hdw?oc=5"
+      },
+      "observed_at": "2026-10-08T15:24:31+00:00"
     },
     {
       "id": "8759610739a4",

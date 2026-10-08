@@ -122,6 +122,60 @@
       "observed_at": "2026-10-07T15:21:57+00:00"
     },
     {
+      "id": "a53e396fad9b",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T12:58:44+00:00",
+      "headline": {
+        "en": "Apollo Trades $35 Billion Private Credit in Push to Open Market",
+        "zh": "Apollo交易350亿美元私人信贷，推动市场开放"
+      },
+      "summary": {
+        "en": "Apollo traded $35 billion of private credit as part of a push to open the market, according to a Bloomberg headline.",
+        "zh": "据彭博一则标题，Apollo交易了350亿美元私人信贷，作为推动市场开放的一部分。所提供的标题未包含更多细节。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaUZaQ01mOGNKT0hkZFFqaUFIT0preEE1LUMzTDNFZTZDaHhjVjFJa1ppQ2RyNEtFUWoxODc3aVh0RS1Ld2JlalZOYmpLZWVtcjhJSXBEUm1EdVBOUk5VRVk3cW9oZmVvLTYzWXVqTm5IS3ZROWctb213MG1WNE1OdUtadU9HaEFRd254TVpCLTVacmgxWlFwa1pzbHB4Uks1VjVMcjY3bVUwTFpxRHJRbF9RRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Trades $35 Billion Private Credit in Push to Open Market",
+      "source_fingerprint": "8b362823a78c436c672b11d7355cc38277641c06a4131218f303d2eb7ff096ea",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6dc8f9394e6b7b1a69295091ff776aa6aff454d1bcd935c38fc9d610a5c9e861",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's $35 billion private credit trading volume signals secondary market liquidity and scale for the private credit sub-sector.",
+      "event_identity": {
+        "subject": "apollo",
+        "action": "trades",
+        "object": "$35 billion private credit",
+        "period": "$35 billion",
+        "numbers": [
+          "$35 Billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-08T15:27:19+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaUZaQ01mOGNKT0hkZFFqaUFIT0preEE1LUMzTDNFZTZDaHhjVjFJa1ppQ2RyNEtFUWoxODc3aVh0RS1Ld2JlalZOYmpLZWVtcjhJSXBEUm1EdVBOUk5VRVk3cW9oZmVvLTYzWXVqTm5IS3ZROWctb213MG1WNE1OdUtadU9HaEFRd254TVpCLTVacmgxWlFwa1pzbHB4Uks1VjVMcjY3bVUwTFpxRHJRbF9RRQ?oc=5"
+      },
+      "observed_at": "2026-10-08T15:24:31+00:00"
+    },
+    {
       "id": "3f6831ca2844",
       "date": "2026-10-07",
       "published_at": "2026-10-07T12:30:00+00:00",
