@@ -537,6 +537,49 @@
       "observed_at": "2026-10-08T05:31:36+00:00"
     },
     {
+      "id": "30aaaafbf557",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T23:25:00+00:00",
+      "headline": {
+        "en": "Australia's ASIC halts fundraising by three ASCF private credit funds",
+        "zh": "澳大利亚ASIC叫停三只ASCF私募信贷基金的募资"
+      },
+      "summary": {
+        "en": "Australia's securities regulator ASIC has halted fundraising by three private credit funds managed by ASCF, according to a headline report from Reuters.",
+        "zh": "据路透社报道，澳大利亚证券与投资委员会（ASIC）已叫停三只由ASCF管理的私募信贷基金的募资活动。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYTZHQWoxUUphUkE1eVU0dW4tOFVTU3NXNzJUc1JUeW5qZV9DX0xxbjZsRm5wSzVSanBDYzlKU3BXdnBlU2dwWTlGSm1iY0U0TjE5cGJMOTJXeEZIYlF5RFlia2kzMnRSSHdvVG52N0l4U3JSVjlQWllyTGVNQXMwc2NLa2VQR2V5UmlKQ2VKei1MM2g2R00wMmc0LWFJVTVRcVprcGJ0YzYwa2ZmZnVhemUzWnBBM01rUWdjcFVB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australia's ASIC halts fundraising by three ASCF private credit funds",
+      "source_fingerprint": "69a0ba26cd336a75d360ef25a3d526ac73bb3a259a6be9f6b457b44e96161090",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d64065c5e4835792bc65e76568b0bb2b776be2456b0ea0d3a6774b99244ce243",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Regulatory action halting fundraising by private credit funds signals enforcement risk for the private credit sub-sector even without a named tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T15:09:46+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYTZHQWoxUUphUkE1eVU0dW4tOFVTU3NXNzJUc1JUeW5qZV9DX0xxbjZsRm5wSzVSanBDYzlKU3BXdnBlU2dwWTlGSm1iY0U0TjE5cGJMOTJXeEZIYlF5RFlia2kzMnRSSHdvVG52N0l4U3JSVjlQWllyTGVNQXMwc2NLa2VQR2V5UmlKQ2VKei1MM2g2R00wMmc0LWFJVTVRcVprcGJ0YzYwa2ZmZnVhemUzWnBBM01rUWdjcFVB?oc=5"
+      },
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
       "id": "81aab67a32d8",
       "date": "2026-10-08",
       "published_at": "2026-10-07T23:22:16+00:00",

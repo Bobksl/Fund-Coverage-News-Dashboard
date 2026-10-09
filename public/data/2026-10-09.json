@@ -2,6 +2,561 @@
   "date": "2026-10-09",
   "items": [
     {
+      "id": "f45eb9277fd0",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T15:00:03+00:00",
+      "headline": {
+        "en": "CVC Credit prices second European CLO of 2026 at €400m",
+        "zh": "CVC Credit为2026年第二只欧洲CLO定价，规模4亿欧元"
+      },
+      "summary": {
+        "en": "CVC Credit priced its second European CLO of 2026, Cordatus XXXIX, at around €400m, with its in-house fund CVC CLO Equity IV taking the majority of the equity tranche. CVC said it has been the most active issuer in the European CLO market this year with 13 transactions totalling €4.7bn. The deal priced with a weighted average cost of debt of 181 basis points over the base rate and a single-A tranche at 180 basis points over.",
+        "zh": "CVC Credit为其2026年第二只欧洲CLO——Cordatus XXXIX定价，规模约4亿欧元，其内部基金CVC CLO Equity IV认购了该CLO大部分股权档。CVC表示，今年迄今其是欧洲CLO市场最活跃的发行人，共完成13笔交易，总额47亿欧元。该交易定价的加权平均债务成本为基准利率加181个基点，单A档定价为加180个基点。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/09/cvc-prices-second-european-clo-of-2026-at-e400m/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CVC prices second European CLO of 2026 at €400m",
+      "source_fingerprint": "ad84a11f873c182c841ea44bbe8da9a767a4f245ab4851d7a05bd9f8c3f201eb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 15,
+            "end": 117
+          },
+          "linkage": {
+            "start": 0,
+            "end": 72
+          },
+          "resolved": {
+            "start": 235,
+            "end": 282
+          }
+        },
+        "source_sha256": "6545ee935054fa1417936dd023ec4d618c6b5760218aa12cfd26e46f14feb216",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": true,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A new €400m European CLO pricing by CVC Credit, with tight spreads and an in-house equity fund taking most of the equity; incremental sector evidence with no tracked manager involved.",
+          "zh": "CVC Credit新定价4亿欧元欧洲CLO，利差较窄且内部股权基金认购大部分股权；属增量行业证据，不涉及受跟踪管理人。"
+        }
+      },
+      "relevance_reason": "CVC Credit's new European CLO pricing and tight spreads signal continued CLO issuance conditions in Europe, relevant to the tracked CLO sub-sector even though CVC is not a tracked manager.",
+      "event_identity": {
+        "subject": "cvc credit",
+        "action": "priced",
+        "object": "cordatus xxxix",
+        "period": "2026",
+        "numbers": [
+          "$550",
+          "1",
+          "13",
+          "18",
+          "180",
+          "181",
+          "2026",
+          "3",
+          "60",
+          "70",
+          "£338.62",
+          "€32bn",
+          "€4.7bn",
+          "€400",
+          "€406"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T15:09:06+00:00",
+        "sha256": "6545ee935054fa1417936dd023ec4d618c6b5760218aa12cfd26e46f14feb216",
+        "source_published_at": "2026-10-09T15:00:03+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/09/cvc-prices-second-european-clo-of-2026-at-e400m/"
+      },
+      "source_published_at": "2026-10-09T15:00:03+00:00",
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "dafb196f4ee9",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T14:23:11+00:00",
+      "headline": {
+        "en": "BlackRock: AI fears, not fundamentals, drive software loan markdowns",
+        "zh": "BlackRock：软件贷款减记源于AI担忧而非基本面"
+      },
+      "summary": {
+        "en": "Markdowns on software loans have accounted for roughly two-thirds of total unrealised losses in private credit since the fourth quarter of 2025, according to BlackRock's quarterly private credit outlook. The weighted average valuation of first-lien software loans fell from near par at the end of 2025 to around 97 per cent of cost in the second quarter of 2026. BlackRock said Lincoln International data shows the markdowns reflect uncertainty over AI-related disruption rather than broad deterioration in software fundamentals.",
+        "zh": "BlackRock的季度私募信贷展望显示，自2025年第四季度以来，软件贷款的减记约占私募信贷全部未实现损失的三分之二。第一留置权软件贷款的加权平均估值从2025年底的接近面值降至2026年第二季度约成本的97%。BlackRock表示，Lincoln International的数据显示，这些减记反映的是对AI相关颠覆的不确定性，而非软件基本面的广泛恶化。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/09/ai-fears-not-fundamentals-behind-software-markdowns/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI fears, not fundamentals, behind software markdowns",
+      "source_fingerprint": "4752adf193e5fce4e9f397abd723a63c3477091e75a6df58db612d1c04c36ab8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 504,
+            "end": 563
+          },
+          "linkage": {
+            "start": 104,
+            "end": 128
+          }
+        },
+        "source_sha256": "ad66e2ece6d62f986120f271d2c80a0f08fd45de2ca3ec64eef556a9b223889b",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Software loan markdowns driving two-thirds of private credit unrealised losses affects valuation conditions for tracked credit managers and the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T15:09:12+00:00",
+        "sha256": "ad66e2ece6d62f986120f271d2c80a0f08fd45de2ca3ec64eef556a9b223889b",
+        "source_published_at": "2026-10-09T14:23:11+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/09/ai-fears-not-fundamentals-behind-software-markdowns/"
+      },
+      "source_published_at": "2026-10-09T14:23:11+00:00",
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "54da932aa287",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T12:49:53+00:00",
+      "headline": {
+        "en": "Deloitte survey finds private credit valuation lag as Apollo extends daily pricing",
+        "zh": "德勤调查发现私募信贷估值滞后，Apollo扩大每日定价"
+      },
+      "summary": {
+        "en": "Deloitte's 24th Fair Valuation Pricing Survey, polling more than 100 fund groups, found 48 per cent refresh private credit valuations daily using observable market inputs, while only 4 per cent carry out a full daily update revisiting unobservable inputs, cash flow assumptions and methodology. The largest share, 39 per cent, do so quarterly. Earlier this month, Apollo began extending daily pricing across its $850bn credit business. The FCA and SEC have both raised concerns about private asset valuations.",
+        "zh": "德勤第24次公允价值定价调查访问了100多家基金集团，发现48%的基金集团每日使用可观察市场输入更新私募信贷估值，但仅有4%进行每日全面更新，重新审视不可观察输入、现金流假设和方法论。占比最大的一部分（39%）按季度进行。本月早些时候，Apollo开始在其8500亿美元信贷业务中扩大每日定价。FCA和SEC均对私募资产估值提出担忧。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/09/private-credit-growth-piles-pressure-on-valuations/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit growth piles pressure on valuations",
+      "source_fingerprint": "0d4b055e64d39d96fcb53ebd860c8884420bf7ccd16e38684a80d2728060b8fc",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 729,
+            "end": 808
+          },
+          "linkage": {
+            "start": 1603,
+            "end": 1684
+          }
+        },
+        "source_sha256": "6fef7ba7b11bf8b6ae74c8c344800771d0ed83d2c0b533dbc0192ad9f121e919",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Deloitte survey data on valuation frequency and Apollo's extension of daily pricing across its $850bn credit business are incremental developments with no payment failure or franchise damage.",
+          "zh": "德勤关于估值频率的调查数据以及Apollo在其8500亿美元信贷业务中扩大每日定价，属于增量进展，未出现支付失败或业务受损。"
+        }
+      },
+      "relevance_reason": "Valuation and pricing frequency for private credit bear directly on tracked managers' credit vehicles and sector risk, with Apollo's daily pricing of its credit business a new fact.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T15:09:14+00:00",
+        "sha256": "d42964fcb7356e7201826ddba506e5938dcf0d603493c3c44f01bd104dd6dd3e",
+        "source_published_at": "2026-10-09T12:49:53+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/09/private-credit-growth-piles-pressure-on-valuations/"
+      },
+      "source_published_at": "2026-10-09T12:49:53+00:00",
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "fc041c1bc073",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T12:40:52+00:00",
+      "headline": {
+        "en": "Partners Group Launches Multi-Sector Private Credit Strategy and Restructures €6.6 Billion Flagship",
+        "zh": "Partners Group 推出多板块私人信贷策略并重组 66 亿欧元旗舰基金"
+      },
+      "summary": {
+        "en": "Partners Group launched a multi-sector private credit strategy and restructured a €6.6 billion flagship vehicle, according to the headline.",
+        "zh": "据标题报道，Partners Group 推出了一项多板块私人信贷策略，并重组了一只规模 66 亿欧元的旗舰基金。所提供文本未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "AD HOC NEWS",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdDlLaWpiYkFWa29HMU5meTljTFBUQUdiVDNNOUhhX0JwTzJCSXhLZlk0SUxXUE9YX01TQktucVJCU2VIeEwzSTBGbWVBQTRtTDdnYUFUNGJDdlBpWjhVdDZiVWpQVjJCem1VMTVlcWpUZnJJWXdkVmNGeUN4VnpVa0g2elFGd1JqQTk3X2RIanhzTXJraVVjaHBaclJfazJVcGdFcVFOM25uY2xfa3dycVg0VWdsT0hiOUI4THRoaTVlb2loY2xYZWF5MDJCMnU1Vmc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Launches Multi-Sector Private Credit Strategy and Restructures €6.6 Billion Flagshi",
+      "source_fingerprint": "f26aaa9c57b8e4e79d7c1921510a7d79c69d23ffe55073a97613e40cbc25e086",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ebeb3e52f094d61a5e071e914ebbc2fba09eec21938961f32fbf9e78d92e4c08",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New multi-sector private credit strategy launch and restructuring of a €6.6bn flagship vehicle signal private credit deployment and fundraising activity, affecting the strategy's competitive and capital environment.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T15:09:17+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdDlLaWpiYkFWa29HMU5meTljTFBUQUdiVDNNOUhhX0JwTzJCSXhLZlk0SUxXUE9YX01TQktucVJCU2VIeEwzSTBGbWVBQTRtTDdnYUFUNGJDdlBpWjhVdDZiVWpQVjJCem1VMTVlcWpUZnJJWXdkVmNGeUN4VnpVa0g2elFGd1JqQTk3X2RIanhzTXJraVVjaHBaclJfazJVcGdFcVFOM25uY2xfa3dycVg0VWdsT0hiOUI4THRoaTVlb2loY2xYZWF5MDJCMnU1Vmc?oc=5"
+      },
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "3b5e243f0c29",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T12:14:35+00:00",
+      "headline": {
+        "en": "Blackstone raises $1B to let private credit investors cash out",
+        "zh": "Blackstone 募集 10 亿美元，让私人信贷投资者套现"
+      },
+      "summary": {
+        "en": "Blackstone has raised $1 billion for a vehicle intended to let private credit investors cash out, according to a headline from Dealroom.",
+        "zh": "据 Dealroom 的一条标题，Blackstone 已募集 10 亿美元，用于设立一只让私人信贷投资者套现的工具。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdTctUENoMzJvd19fdHhiZ1hKMHpiUldLMnBQSUVoZlBWYkdueHFXYVVuZ2JQeG1qU1hJeGs4eGo5ZGdQMGtuQXJMTExSdnQ0UnJMd0E5RWlUNVRUdkdqV0dfck1Qa0dMRWlQSDJINnVzSi1VTlZ5aWg3eHZkaGZwUFlmQkdOeXhlSnpCNktxeEhfOGdwSzNrenZ2SQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blackstone raises $1B to let private credit investors cash out",
+      "source_fingerprint": "f4e63a2450f83f37d83926a6a9feffd81cad3def6adbca3b3721c8ea03f3b20d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "03c5860eafe8c695f1dc62d332e8fd1a87eeaacdbfff536801d999f6b9b933a0",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large secondaries vehicle for private credit liquidity signals evolving exit and valuation conditions for tracked private credit managers, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T15:09:19+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdTctUENoMzJvd19fdHhiZ1hKMHpiUldLMnBQSUVoZlBWYkdueHFXYVVuZ2JQeG1qU1hJeGs4eGo5ZGdQMGtuQXJMTExSdnQ0UnJMd0E5RWlUNVRUdkdqV0dfck1Qa0dMRWlQSDJINnVzSi1VTlZ5aWg3eHZkaGZwUFlmQkdOeXhlSnpCNktxeEhfOGdwSzNrenZ2SQ?oc=5"
+      },
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "2da228981f88",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T11:00:00+00:00",
+      "headline": {
+        "en": "Why private credit default rates vary so widely — and what the range actually reveals",
+        "zh": "为何私人信贷违约率差异如此之大——以及这一区间实际揭示了什么"
+      },
+      "summary": {
+        "en": "Pensions & Investments published a piece examining why private credit default rates vary so widely and what that range reveals. Only the headline was available.",
+        "zh": "Pensions & Investments 发表文章，探讨为何私人信贷违约率差异如此之大，以及这一区间实际揭示了什么。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Pensions & Investments",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWVNuTWQ5b25vZ1ZsdU4zemxaSVFGQzIyRTlTU1FLVlczUkpMbUljNUpHSjBmYVQ4UzFhelM4eEYwNnVuU2ZaNHNySkJHN2xub1otQ1QzX0pqNmM2MzZoWmROUTZ3NG50Zy1jVnVyNmRBMk80a3I2WlhiVWZqSVctVlRnYkJUU2oyUF82cGtacXBPM3NmeExCSUlHY2ZmQVRyV1E1QkF2djVTN3U2?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Why private credit default rates vary so widely — and what the range actually reveals",
+      "source_fingerprint": "785c121b9124e5b327e8113560af70bbc9fc0d31041f8190c031080b37f185b8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "01c10c5b3d37fccdb40af9c8e536bfd84306f15b074621dcc5267d63350713c1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Understanding variation in private credit default rates bears on credit risk assessment for tracked private credit managers and the direct lending sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T15:09:23+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWVNuTWQ5b25vZ1ZsdU4zemxaSVFGQzIyRTlTU1FLVlczUkpMbUljNUpHSjBmYVQ4UzFhelM4eEYwNnVuU2ZaNHNySkJHN2xub1otQ1QzX0pqNmM2MzZoWmROUTZ3NG50Zy1jVnVyNmRBMk80a3I2WlhiVWZqSVctVlRnYkJUU2oyUF82cGtacXBPM3NmeExCSUlHY2ZmQVRyV1E1QkF2djVTN3U2?oc=5"
+      },
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "b8855a36813a",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T10:55:33+00:00",
+      "headline": {
+        "en": "BlueOrchard and IFC target $2bn for emerging market private debt fund",
+        "zh": "BlueOrchard 与 IFC 拟为新兴市场私人债基金募资 20 亿美元"
+      },
+      "summary": {
+        "en": "BlueOrchard and the International Finance Corporation have teamed up on an evergreen private debt vehicle targeting $2bn for emerging market credit. Tokio Marine Group was the anchor investor in the $300m first close. Investors can subscribe and redeem on an ongoing basis subject to predefined redemption windows, with capital continuously recycled into new investments.",
+        "zh": "BlueOrchard 与国际金融公司（IFC）合作设立一只永续型私人债工具，目标为新兴市场信贷募资 20 亿美元。Tokio Marine Group 参与了 3 亿美元首次关账，并担任锚定投资人。投资者可在持续基础上申购和赎回，但受预设赎回窗口限制，资金持续循环投入新投资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/09/blueorchard-and-ifc-target-2bn-for-em-private-debt-fund/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "BlueOrchard and IFC target $2bn for EM private debt fund",
+      "source_fingerprint": "b96deb031a82c25435a20e777d4e5597f6185da7c47d9c12cad1dd653708b754",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 452,
+            "end": 506
+          },
+          "linkage": {
+            "start": 1452,
+            "end": 1531
+          }
+        },
+        "source_sha256": "f689da3a34cda3f4154ad69b20bfedbf20e0bcce188f06851d63da97d2651f94",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "New emerging market private debt vehicle targeting $2bn with a $300m first close; no tracked manager is involved.",
+          "zh": "新设新兴市场私人债工具，目标募资 20 亿美元，首次关账 3 亿美元；不涉及任何被跟踪管理人的主体。"
+        }
+      },
+      "relevance_reason": "New emerging market private debt vehicle with a $2bn fundraising target and a $300m first close, signalling private credit fundraising and deployment conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T15:09:25+00:00",
+        "sha256": "f689da3a34cda3f4154ad69b20bfedbf20e0bcce188f06851d63da97d2651f94",
+        "source_published_at": "2026-10-09T10:55:33+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/09/blueorchard-and-ifc-target-2bn-for-em-private-debt-fund/"
+      },
+      "source_published_at": "2026-10-09T10:55:33+00:00",
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "5c4748102851",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T09:41:48+00:00",
+      "headline": {
+        "en": "Partners Group launches evergreen global multi-sector private credit income fund",
+        "zh": "Partners Group 推出常青全球多板块私人信贷收益基金"
+      },
+      "summary": {
+        "en": "Partners Group has launched an evergreen global multi-sector private credit income strategy for institutional and private wealth investors worldwide. The portfolio spans senior direct lending, credit secondaries, fund financing, royalties, opportunistic credit and liquid credit, targeting high single-digit to low double-digit returns. Partners Group manages $40bn in private credit and $186bn in assets under management.",
+        "zh": "Partners Group 推出面向全球机构及私人财富投资者的常青全球多板块私人信贷收益策略。该组合涵盖优先直接贷款、信贷二级市场、基金融资、特许权使用费、机会型信贷及流动性信贷，目标回报为高个位数至低双位数。Partners Group 管理 400 亿美元私人信贷及 1,860 亿美元资产。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/09/partners-group-launches-private-credit-income-fund/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group launches private credit income fund",
+      "source_fingerprint": "3406f0458d2a1eec229d37ee9649b8a374a8be4e36545dd44fe3d93a7acf25e7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ebdb3c2996603b078cc99f16020f5e224ead600648a0d8f5c0863da446be974d",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "Partners Group's new evergreen multi-sector private credit income fund expands a competitor platform in direct lending, secondaries and fund finance, relevant to tracked managers' fundraising and competitive conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T15:09:32+00:00",
+        "sha256": "ebdb3c2996603b078cc99f16020f5e224ead600648a0d8f5c0863da446be974d",
+        "source_published_at": "2026-10-09T09:41:48+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/09/partners-group-launches-private-credit-income-fund/"
+      },
+      "source_published_at": "2026-10-09T09:41:48+00:00",
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "ecf3d5dbf018",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T08:08:34+00:00",
+      "headline": {
+        "en": "Michael Burry Flags Risks in Private Credit",
+        "zh": "迈克尔·伯里警示私人信贷风险"
+      },
+      "summary": {
+        "en": "Michael Burry flagged risks in private credit, according to a GuruFocus headline that also referenced MetLife bears watching amid dividend focus.",
+        "zh": "据GuruFocus标题，迈克尔·伯里警示私人信贷风险；该标题同时提及在股息关注下对MetLife的看空观点。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "GuruFocus",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQTJkalFOWHdselA4VmlTWXZ5aDVaMG9NN29RdFZrcjAza1dQVmNvWXBaWlBGTERxNENPUmRaQlR1cGNZTl9LNmJaVFY4ZjIyTUQ1NUlqMThLTjc4N0MtdE1WdGVFYnhCNmhMaXNGRnpwbXY4X3YxXzdmc2tFY2VfdjFpbEg1ZjhPQ2xMeG1scVp4M0ZpQmZ4QjdsSGJsUWxVNkF2ZlcyRGxTb2tEZ1VlSmlfT1JfS0tZSjhMYjNEcFFfUERn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Michael Burry Flags Risks in Private Credit, MetLife (MET) Bears Watch Amid Dividend Focus",
+      "source_fingerprint": "16ba82adaebc14190958924c91892ab46ea32d72ead2ecde47ebf555bc789f13",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4a15d9aa1d2f2bf3df28ca700e3296ea3731cb52f885d5639eac067eaead8822",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Investor commentary flagging risks in private credit could shift sentiment toward tracked private credit managers, though the item names no tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T15:09:37+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQTJkalFOWHdselA4VmlTWXZ5aDVaMG9NN29RdFZrcjAza1dQVmNvWXBaWlBGTERxNENPUmRaQlR1cGNZTl9LNmJaVFY4ZjIyTUQ1NUlqMThLTjc4N0MtdE1WdGVFYnhCNmhMaXNGRnpwbXY4X3YxXzdmc2tFY2VfdjFpbEg1ZjhPQ2xMeG1scVp4M0ZpQmZ4QjdsSGJsUWxVNkF2ZlcyRGxTb2tEZ1VlSmlfT1JfS0tZSjhMYjNEcFFfUERn?oc=5"
+      },
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
+      "id": "f81bf66ee19a",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T04:40:51+00:00",
+      "headline": {
+        "en": "Partners Group Launches Private Credit Vehicle as Investors Vote to Unwind London Trust",
+        "zh": "Partners Group 推出私募信贷工具，投资者投票决定清算伦敦信托"
+      },
+      "summary": {
+        "en": "Partners Group has launched a private credit vehicle. Investors voted to unwind a London trust.",
+        "zh": "Partners Group 推出了一只私募信贷工具。投资者投票决定清算一只伦敦信托。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "AD HOC NEWS",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPYll5QVBGN05uRmhrTTVwQUI2cmtiZ080dmhsVTRxS3d0eXRDMHRtcFFGZWk3WFd5UFhtNWpaaDZ3MkszUjhiNWdmb3drWEp0cEl5bERHYjNqY3I5UjZTRmM3akJubnVsOHRtY0RkekV2MlVxQ2dyNnFvY0dEdmNDeDdiUTMyY01oRmtFTVFRbVo0SWZta3hMUzRxeHhNZlN3QUhWVm1WWUp4aWhpc1ZGenFlUWV6cXl3SUt1aDZQX2xiSVJrdmp2MzFmMFItbDE3MDBQME5ZU1NUa2VSWk5iSUQySFdXMGdFb2pmWWx2YnM?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Launches Private Credit Vehicle as Investors Vote to Unwind London Trust",
+      "source_fingerprint": "de86e3fc95464854ba550bbfc29dbff2cdb386782f3feefabed2fd5e53a0a7f3",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "cdbfa928f89adeaf99eac11996fa7ce7d8f7994b2da1aea63580782af2663af3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New private credit vehicle launch and wind-up vote signal franchise and capital-deployment shifts in the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T15:09:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPYll5QVBGN05uRmhrTTVwQUI2cmtiZ080dmhsVTRxS3d0eXRDMHRtcFFGZWk3WFd5UFhtNWpaaDZ3MkszUjhiNWdmb3drWEp0cEl5bERHYjNqY3I5UjZTRmM3akJubnVsOHRtY0RkekV2MlVxQ2dyNnFvY0dEdmNDeDdiUTMyY01oRmtFTVFRbVo0SWZta3hMUzRxeHhNZlN3QUhWVm1WWUp4aWhpc1ZGenFlUWV6cXl3SUt1aDZQX2xiSVJrdmp2MzFmMFItbDE3MDBQME5ZU1NUa2VSWk5iSUQySFdXMGdFb2pmWWx2YnM?oc=5"
+      },
+      "observed_at": "2026-10-09T15:07:03+00:00"
+    },
+    {
       "id": "fcc68c43771d",
       "date": "2026-10-09",
       "published_at": "2026-10-09T04:27:00+00:00",
@@ -337,6 +892,52 @@
       },
       "source_published_at": "2026-10-08T16:13:34+00:00",
       "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
+      "id": "84eb56977eeb",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T14:45:06+00:00",
+      "headline": {
+        "en": "OWL Q2 2026 Earnings: Blue Owl Edges Past EPS Estimate as Shares Drift Lower",
+        "zh": "OWL 2026年第二季度财报：Blue Owl 每股收益略超预期，股价走低"
+      },
+      "summary": {
+        "en": "Blue Owl reported Q2 2026 earnings, edging past the EPS estimate, according to the headline. Shares drifted lower in the same headline reference.",
+        "zh": "据标题，Blue Owl 公布了2026年第二季度财报，每股收益略高于预期。同一标题提及股价走低。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "https://www.dars.gov.et/",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSC1fbThrUm1idGhNT0p6ZFJ4al9GOVJiZUpQQW16Mzd1WGFLbFY1TVNqWEFaZmVPdGRQMXQzWF9zZnFla0ljLUZFbkxCckpqVFhBUW4tTXJKaHN3alQzTzVJcWZFSkhCbTkxeWpOQk40WkdkZDc4aGgwc2NyOGNOZEZEdF9YWVNsaW1lNEY2U2tyeEtFS1hoMmZPTVlCNWpzVlpDTnF4UWRYNk93YXBMenZRMTFlRXZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "OWL Q2 2026 Earnings: Blue Owl Edges Past EPS Estimate as Shares Drift Lower - Earnings Season Outlook",
+      "source_fingerprint": "116fe18ff8bad9f194a8299425374743674568325ee81db44eb892c826555f51",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5a8dc71db3ae21d796c5e238fb247b5d034e9fd1cca1a6f4f11caab24cba735c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Earnings result for a tracked credit platform manager, but headline-only evidence leaves the credit implications unknown.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T15:09:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSC1fbThrUm1idGhNT0p6ZFJ4al9GOVJiZUpQQW16Mzd1WGFLbFY1TVNqWEFaZmVPdGRQMXQzWF9zZnFla0ljLUZFbkxCckpqVFhBUW4tTXJKaHN3alQzTzVJcWZFSkhCbTkxeWpOQk40WkdkZDc4aGgwc2NyOGNOZEZEdF9YWVNsaW1lNEY2U2tyeEtFS1hoMmZPTVlCNWpzVlpDTnF4UWRYNk93YXBMenZRMTFlRXZw?oc=5"
+      },
+      "observed_at": "2026-10-09T15:07:03+00:00",
+      "supersedes_card_id": "6925833e0b1c"
     }
   ]
 }
