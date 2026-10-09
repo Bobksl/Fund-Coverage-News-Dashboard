@@ -2,6 +2,104 @@
   "date": "2026-10-08",
   "items": [
     {
+      "id": "976efaea651b",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T15:30:24+00:00",
+      "headline": {
+        "en": "Fed Hikes And A Refinancing Wall: Private Credit Isn't Out Of The Woods",
+        "zh": "美联储加息与再融资墙：私募信贷尚未走出困境"
+      },
+      "summary": {
+        "en": "A Seeking Alpha item argues private credit faces pressure from Federal Reserve rate hikes and a refinancing wall. No companies, funds or figures are named in the supplied text.",
+        "zh": "一篇 Seeking Alpha 文章认为，私募信贷面临美联储加息和再融资墙带来的压力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcEtCdGJzcUV3Z3RwZEx4RWdzMlVHd195eUh6MHZWWXFEb1JSeE9SbFluUVBqVExnUFl3SEh0NzJKRUNQQjNFVV9hRTFCWHFoVF9XUFRXUDhqNUtOd2tnUHBTY21PUXFOeU4tLU1PdDhxNjVUaEt4Q0g2YnItQVNKdGtfYlBLSWstTThCZ2w1MUpwZzM0d2J0YjZ6YXBnamJNYVF5bDYyaFFTUUhJOXdj?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fed Hikes And A Refinancing Wall: Private Credit Isn't Out Of The Woods (SP500)",
+      "source_fingerprint": "4ebb5869095dfd955095afc55465a3883f404e2c43f202f8bd8cd107f9ae06b7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "0d86e2780a6311b5e0c1c84a503c674da9d65f7e905b7d9a0287444c619d14ce",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals an adverse macro backdrop for private credit strategy risk and returns through rate hikes and a refinancing wall, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T05:38:23+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcEtCdGJzcUV3Z3RwZEx4RWdzMlVHd195eUh6MHZWWXFEb1JSeE9SbFluUVBqVExnUFl3SEh0NzJKRUNQQjNFVV9hRTFCWHFoVF9XUFRXUDhqNUtOd2tnUHBTY21PUXFOeU4tLU1PdDhxNjVUaEt4Q0g2YnItQVNKdGtfYlBLSWstTThCZ2w1MUpwZzM0d2J0YjZ6YXBnamJNYVF5bDYyaFFTUUhJOXdj?oc=5"
+      },
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
+      "id": "6925833e0b1c",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T14:40:41+00:00",
+      "headline": {
+        "en": "Blue Owl Edges Past EPS Estimate in Q2 2026 as Shares Drift Lower",
+        "zh": "Blue Owl 2026年第二季度每股收益略超预期，股价走低"
+      },
+      "summary": {
+        "en": "Blue Owl reported Q2 2026 earnings that edged past the EPS estimate, according to a headline. Shares drifted lower as the company extended an earnings beat streak.",
+        "zh": "据一则标题，Blue Owl 公布的 2026 年第二季度业绩每股收益略超预期。该公司延续了盈利超预期的势头，股价走低。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "https://www.dars.gov.et/",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSC1fbThrUm1idGhNT0p6ZFJ4al9GOVJiZUpQQW16Mzd1WGFLbFY1TVNqWEFaZmVPdGRQMXQzWF9zZnFla0ljLUZFbkxCckpqVFhBUW4tTXJKaHN3alQzTzVJcWZFSkhCbTkxeWpOQk40WkdkZDc4aGgwc2NyOGNOZEZEdF9YWVNsaW1lNEY2U2tyeEtFS1hoMmZPTVlCNWpzVlpDTnF4UWRYNk93YXBMenZRMTFlRXZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "OWL Q2 2026 Earnings: Blue Owl Edges Past EPS Estimate as Shares Drift Lower - Earnings Beat Streak",
+      "source_fingerprint": "27f2d847b939bde84aa7ad67ff1924d8070f944b3d2f93490f49025990c9e69d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "afd5acccc888dac6d123e2fab72cb940c9bd72de126fa310d580a878f44e9984",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's Q2 2026 results and share reaction touch a tracked credit manager's franchise and earnings trajectory, though only a headline is available.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "edges past eps estimate",
+        "object": "q2 2026 earnings",
+        "period": "q2 2026",
+        "numbers": [
+          "2",
+          "2026"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T05:38:26+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSC1fbThrUm1idGhNT0p6ZFJ4al9GOVJiZUpQQW16Mzd1WGFLbFY1TVNqWEFaZmVPdGRQMXQzWF9zZnFla0ljLUZFbkxCckpqVFhBUW4tTXJKaHN3alQzTzVJcWZFSkhCbTkxeWpOQk40WkdkZDc4aGgwc2NyOGNOZEZEdF9YWVNsaW1lNEY2U2tyeEtFS1hoMmZPTVlCNWpzVlpDTnF4UWRYNk93YXBMenZRMTFlRXZw?oc=5"
+      },
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
       "id": "f41920187a56",
       "date": "2026-10-08",
       "published_at": "2026-10-08T12:22:09+00:00",

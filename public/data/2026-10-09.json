@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-09",
+  "items": [
+    {
+      "id": "fcc68c43771d",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T04:27:00+00:00",
+      "headline": {
+        "en": "Private Credit Funds: Why Withdrawal Gates Put Liquidity Under the Microscope",
+        "zh": "私募信贷基金：为何赎回门槛让流动性备受审视"
+      },
+      "summary": {
+        "en": "A Kalkine headline states that withdrawal gates are putting liquidity at private credit funds under the microscope.",
+        "zh": "Kalkine 的一则标题称，赎回门槛正使私募信贷基金的流动性备受审视。标题中未指明具体的基金、管理机构或数据。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Kalkine",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUVA5S0plenBhZE1OWGFoTmJBbWRTX09DOG9PU0RHWmhzTkl6TEhvaDdyMC1zNk1pby1LLVFtNTJZTXFTNE8wN1QtVWxBMHJyd3lzYVRlRDZtSG9KZm9kOHd6SnlOYkZRZG9xV3NMLThkZUNSSnU2a0NVUnRDQ2pydmNreVFLekx3UnBRckQyMUJncHlIM2tvLVN5NElPaDZBQnh0TGhFSmZVb2xwcTJTQS1MQWU?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private Credit Funds: Why Withdrawal Gates Put Liquidity Under the Microscope",
+      "source_fingerprint": "53e10968e2d5317682aab785c0a8bd293b4b6db064ab1d812b7d8e825d69d5d6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5b69754bd321ddfe6bfa25746fba091673146e1fb123e1a04faaaaf3b770b662",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags liquidity and withdrawal-gate scrutiny in private credit, a transmission channel to tracked private-credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T05:37:53+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUVA5S0plenBhZE1OWGFoTmJBbWRTX09DOG9PU0RHWmhzTkl6TEhvaDdyMC1zNk1pby1LLVFtNTJZTXFTNE8wN1QtVWxBMHJyd3lzYVRlRDZtSG9KZm9kOHd6SnlOYkZRZG9xV3NMLThkZUNSSnU2a0NVUnRDQ2pydmNreVFLekx3UnBRckQyMUJncHlIM2tvLVN5NElPaDZBQnh0TGhFSmZVb2xwcTJTQS1MQWU?oc=5"
+      },
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
+      "id": "58dd8410b72a",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T01:01:00+00:00",
+      "headline": {
+        "en": "Partners Group Launches Global Multi-Sector Private Credit Income Strategy",
+        "zh": "Partners Group 推出新的全球多板块私人信贷收益策略"
+      },
+      "summary": {
+        "en": "Partners Group has launched a new global multi-sector private credit income strategy.",
+        "zh": "Partners Group 推出了一项新的全球多板块私人信贷收益策略。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZUtUVWplR09iYTVpdXg1T2Z1Ump4Z29pS1BabkNyTFRJdFU2ZWdRNlV4SExCUEQzbDZXVVhJcjhVNFFyT1NwbFAxNTZzaWtqaFIxQnpuVGVpS0xBUnZDa2t4aWFicU5VOUtQZU1XXzFKc09kRXdmYkkxTlZMQ0VaVGpjRGt0c2VRRy1BeFFNU0Y3RjVnSGZFU2l6Z19YS1haZ2ZHTXVJWnVENGtpNlhUdjJXNFJVUC1JVGw4dlNsMThETk4ySnUwc19YOXZTVDBkeWpiMXdsMXRFMEh4WU1YWkx3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Launches New Global Multi-Sector Private Credit Income Strategy",
+      "source_fingerprint": "e1390efc869ba8758c877623776b4eb1a171c681af17e99f70f4fe4f12e78d1b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a6f891bfee5d5a6268f83a77ab7bf543759bfb4fad034f4d820b29e850aaba69",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New private credit income strategy launch signals potential fundraising and deployment in the tracked private credit sub-sector, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T05:37:57+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZUtUVWplR09iYTVpdXg1T2Z1Ump4Z29pS1BabkNyTFRJdFU2ZWdRNlV4SExCUEQzbDZXVVhJcjhVNFFyT1NwbFAxNTZzaWtqaFIxQnpuVGVpS0xBUnZDa2t4aWFicU5VOUtQZU1XXzFKc09kRXdmYkkxTlZMQ0VaVGpjRGt0c2VRRy1BeFFNU0Y3RjVnSGZFU2l6Z19YS1haZ2ZHTXVJWnVENGtpNlhUdjJXNFJVUC1JVGw4dlNsMThETk4ySnUwc19YOXZTVDBkeWpiMXdsMXRFMEh4WU1YWkx3?oc=5"
+      },
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
+      "id": "bf92d4b313f4",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T01:00:00+00:00",
+      "headline": {
+        "en": "Partners Group launches new global multi-sector private credit income strategy",
+        "zh": "Partners Group 推出新的全球多领域私人信贷收益策略"
+      },
+      "summary": {
+        "en": "Partners Group launched a new global multi-sector private credit income strategy. The announcement appeared in a TradingView feed item.",
+        "zh": "Partners Group 推出了一项新的全球多领域私人信贷收益策略。该公告出现在 TradingView 的一条资讯中。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNXRhNVg3VnBKT1ItMmw3WnhIeV8wbElzSHRYSDlUZHBuVHlzWFZNS1JHYV9VdXY2VjdxTnlhWUFiaEpDMmprYmtvNVpGTUtKVmY2TWFETWl3R2xacThSRTQtcDdYOFZjLW0tUHYwd05ySHgtRUM3SC01WmM0Zzd4TUFsMFNWRWNrQ2ZzRXgtdVJRTUZIVVJlcVIzVUVTYlpqMUZTTDBpV2UwajZWVW80VUZlYnFuZEY2UXZuRTZmMHIyb3JSLUo4Zi1tOC0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group launches new global multi-sector private credit income strategy",
+      "source_fingerprint": "379c86d5418b56682eb0ef98d478a40ab59a0a345a7d8f4928917d9a65b0a712",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2c58f40ea0d7309f602258033fd80b9197ae2810a2a3679a4df9a309a845b89f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new global multi-sector private credit income strategy expands private credit fundraising and deployment, which could shift competitive and capital conditions for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-09T05:37:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNXRhNVg3VnBKT1ItMmw3WnhIeV8wbElzSHRYSDlUZHBuVHlzWFZNS1JHYV9VdXY2VjdxTnlhWUFiaEpDMmprYmtvNVpGTUtKVmY2TWFETWl3R2xacThSRTQtcDdYOFZjLW0tUHYwd05ySHgtRUM3SC01WmM0Zzd4TUFsMFNWRWNrQ2ZzRXgtdVJRTUZIVVJlcVIzVUVTYlpqMUZTTDBpV2UwajZWVW80VUZlYnFuZEY2UXZuRTZmMHIyb3JSLUo4Zi1tOC0?oc=5"
+      },
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
+      "id": "86d1815eb86e",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T20:30:53+00:00",
+      "headline": {
+        "en": "FS KKR Capital Corp Declares $0.44 Quarterly and $0.20 Special Distribution",
+        "zh": "FS KKR Capital Corp 宣派每股 0.44 美元季度分派及每股 0.20 美元特别分派"
+      },
+      "summary": {
+        "en": "FS KKR Capital Corp (NYSE: FSK) said its board declared a fourth quarter 2026 distribution of $0.44 per share, payable on or about December 24, 2026 to holders of record on December 16, 2026. The board also declared a special distribution of $0.20 per share, representing a portion of estimated accumulated spillback income, payable on or about December 15, 2026 to holders of record on December 1, 2026. FSK said it will release third quarter 2026 results and host a call on November 5, 2026.",
+        "zh": "FS KKR Capital Corp（NYSE: FSK）表示，董事会宣派 2026 年第四季度分派每股 0.44 美元，将于 2026 年 12 月 24 日前后支付给 2026 年 12 月 16 日登记在册的股东。董事会还宣派每股 0.20 美元的特别分派，相当于估计累计溢出收益的一部分，将于 2026 年 12 月 15 日前后支付给 2026 年 12 月 1 日登记在册的股东。FSK 表示将于 2026 年 11 月 5 日发布 2026 年第三季度业绩并召开电话会议。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "FS KKR Capital Corp",
+        "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926114718/0001104659-26-114718-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "FS KKR Capital Corp files 8-K: items 7.01 and 9.01",
+      "source_fingerprint": "7052534eec471a92e4076d9f57ca69eef2a318d752fadca79b10a391570183eb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "0517a49d4bb47d31aa149b0ec95edaf71750863782b3e740789123bf1c580e60",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "FS KKR Capital Corp, an FSK-managed BDC, declares a regular quarterly distribution and a special spillback distribution, a modest capital-return datapoint for the listed BDC sub-sector.",
+      "event_identity": {
+        "subject": "fs kkr capital corp",
+        "action": "declares fourth quarter 2026 distribution of $0.44 per share",
+        "object": "special distribution of $0.20 per share",
+        "period": "fourth quarter 2026",
+        "numbers": [
+          "$0.20",
+          "$0.44",
+          "00",
+          "1",
+          "15",
+          "16",
+          "2026",
+          "24",
+          "30",
+          "5",
+          "7",
+          "7.01",
+          "8",
+          "9",
+          "9.01"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T05:37:45+00:00",
+        "sha256": "0517a49d4bb47d31aa149b0ec95edaf71750863782b3e740789123bf1c580e60",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926114718/tm2627201d1_ex99-1.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
+      "id": "1c8ce00a7a84",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T16:26:45+00:00",
+      "headline": {
+        "en": "Brightwood prices tenth CLO at $253m",
+        "zh": "Brightwood为第十只CLO定价2.53亿美元"
+      },
+      "summary": {
+        "en": "Brightwood Capital Advisors has priced its latest collateralised loan obligation, Brightwood Capital MM CLO 2026-1, at $253.55m. The deal is the middle-market focused firm's tenth CLO since 2019, with GreensLedge Capital Markets acting as placement agent.",
+        "zh": "Brightwood Capital Advisors已为其最新一笔贷款担保凭证（CLO）Brightwood Capital MM CLO 2026-1定价，规模为2.5355亿美元。该交易是这家专注中间市场的公司自2019年以来的第十只CLO，GreensLedge Capital Markets担任配售代理。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/08/brightwood-prices-tenth-clo-at-253m/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Brightwood prices tenth CLO at $253m",
+      "source_fingerprint": "f68c2653ce84819b72d14e7c6255efd0dff94c7560f8d2965d11d6c72a276e97",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 122,
+            "end": 133
+          },
+          "linkage": {
+            "start": 0,
+            "end": 80
+          }
+        },
+        "source_sha256": "650ceac2e63f6f08e1f73ffd03f392e592fc1f309fa0c219a43f411e4c631173",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A new CLO pricing shows continued middle-market private credit CLO issuance and investor demand, informing deployment and financing conditions for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T05:38:12+00:00",
+        "sha256": "650ceac2e63f6f08e1f73ffd03f392e592fc1f309fa0c219a43f411e4c631173",
+        "source_published_at": "2026-10-08T16:26:45+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/08/brightwood-prices-tenth-clo-at-253m/"
+      },
+      "source_published_at": "2026-10-08T16:26:45+00:00",
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    },
+    {
+      "id": "e7652b2d60fa",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T16:13:34+00:00",
+      "headline": {
+        "en": "ASIC halts offers in three more ASCF private credit funds",
+        "zh": "ASIC叫停另外三只ASCF私人信贷基金的发行"
+      },
+      "summary": {
+        "en": "Australia's ASIC has issued an interim stop order on the product disclosure statements for three private credit funds managed by Australian Secure Capital Fund: the ASCF Premium Capital Fund, ASCF Select Income Fund and ASCF High Yield Fund. The order prevents ASCF from offering, issuing, selling or transferring interests in the funds, with ASIC citing inadequate disclosure of loan portfolio and diversification metrics, a possible misleading and deceptive statement, and insufficient disclosure of an investor reserve account covering impairments and capital losses. As of 30 June the three funds had A$251.8m in assets under management.",
+        "zh": "澳大利亚证券与投资委员会（ASIC）对Australian Secure Capital Fund（ASCF）管理的三只私人信贷基金——ASCF Premium Capital Fund、ASCF Select Income Fund和ASCF High Yield Fund——的产品披露声明（PDS）发出临时停止令。截至6月30日，这三只基金管理资产为2.518亿澳元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "mortgage"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/08/asic-halts-offers-in-three-more-private-credit-funds/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "ASIC halts offers in three more private credit funds",
+      "source_fingerprint": "6bed8d78d9defb5462baa153d38ad46b703d388a6e96bfb6aec6a6b757718c80",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 627,
+            "end": 786
+          },
+          "linkage": {
+            "start": 1809,
+            "end": 1883
+          },
+          "current_adverse": {
+            "start": 788,
+            "end": 882
+          }
+        },
+        "source_sha256": "618c4d1eb3f12e6fd4b1e17891ead6a6566dda30f926d9e26afec119e3b6be78",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "ASIC placed interim stop orders blocking offers in three ASCF private credit funds over alleged PDS disclosure failures, an adverse regulatory action in Australian private credit.",
+          "zh": "ASIC以涉嫌PDS披露失当为由，对三只ASCF私人信贷基金发出临时停止令，禁止其发行，是澳大利亚私人信贷领域的负面监管行动。"
+        }
+      },
+      "relevance_reason": "ASIC's interim stop orders on three ASCF private credit funds and its wider crackdown signal rising Australian private credit regulatory and retail-distribution risk.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-09T05:38:15+00:00",
+        "sha256": "618c4d1eb3f12e6fd4b1e17891ead6a6566dda30f926d9e26afec119e3b6be78",
+        "source_published_at": "2026-10-08T16:13:34+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/08/asic-halts-offers-in-three-more-private-credit-funds/"
+      },
+      "source_published_at": "2026-10-08T16:13:34+00:00",
+      "observed_at": "2026-10-09T05:35:40+00:00"
+    }
+  ]
+}
