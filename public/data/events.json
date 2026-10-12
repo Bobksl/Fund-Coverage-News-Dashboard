@@ -2,9 +2,9 @@
   "schema_version": 1,
   "grouping_version": "events-v2",
   "ranking_version": "priority-v1",
-  "as_of": "2026-10-09T15:07:03+00:00",
+  "as_of": "2026-10-12T05:24:29+00:00",
   "overlay_version": 3,
-  "article_count": 443,
+  "article_count": 445,
   "event_count": 338,
   "events": [
     {
@@ -54,7 +54,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -133,7 +133,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -239,7 +239,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -331,7 +331,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -408,7 +408,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -485,7 +485,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -565,7 +565,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -644,7 +644,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -719,7 +719,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -823,7 +823,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -915,7 +915,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -990,7 +990,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1065,7 +1065,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1142,7 +1142,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1222,7 +1222,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1297,7 +1297,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1372,7 +1372,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1453,7 +1453,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1533,7 +1533,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1612,7 +1612,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1689,7 +1689,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1768,7 +1768,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -1844,7 +1844,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -1919,7 +1919,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2000,7 +2000,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2075,7 +2075,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2156,7 +2156,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2237,7 +2237,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2312,7 +2312,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2391,7 +2391,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2466,7 +2466,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2541,7 +2541,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2619,7 +2619,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2694,7 +2694,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -2771,7 +2771,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2848,7 +2848,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -2925,7 +2925,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3006,7 +3006,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3086,7 +3086,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3161,7 +3161,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3243,7 +3243,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3319,7 +3319,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3394,7 +3394,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3474,7 +3474,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3551,7 +3551,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -3629,7 +3629,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3765,7 +3765,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -3859,7 +3859,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -3934,7 +3934,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4013,7 +4013,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4092,7 +4092,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4167,7 +4167,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4279,7 +4279,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -4371,7 +4371,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -4446,7 +4446,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4521,7 +4521,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4596,7 +4596,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4673,7 +4673,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4748,7 +4748,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4824,7 +4824,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -4936,7 +4936,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5019,7 +5019,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5099,7 +5099,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5176,7 +5176,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5252,7 +5252,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5329,7 +5329,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5415,7 +5415,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5490,7 +5490,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -5565,7 +5565,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5642,7 +5642,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -5717,7 +5717,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5793,7 +5793,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5872,7 +5872,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -5951,7 +5951,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6032,7 +6032,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6124,7 +6124,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6203,7 +6203,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -6288,7 +6288,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6368,7 +6368,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -6443,7 +6443,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6520,7 +6520,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6604,7 +6604,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6691,7 +6691,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6774,7 +6774,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6849,7 +6849,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -6924,7 +6924,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7003,7 +7003,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7080,7 +7080,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7155,7 +7155,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7230,7 +7230,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7309,7 +7309,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7384,7 +7384,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7463,7 +7463,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7539,7 +7539,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7618,7 +7618,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7697,7 +7697,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7783,7 +7783,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -7862,7 +7862,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -7937,7 +7937,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8018,7 +8018,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8095,7 +8095,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8170,7 +8170,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8245,7 +8245,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8320,7 +8320,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8397,7 +8397,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8474,7 +8474,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8549,7 +8549,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8624,7 +8624,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8699,7 +8699,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8784,7 +8784,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8885,7 +8885,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -8926,9 +8926,10 @@
     {
       "event_id": "evt-5c4748102851",
       "member_card_ids": [
-        "5c4748102851"
+        "5c4748102851",
+        "74dbfa7c0fb3"
       ],
-      "representative_card_id": "5c4748102851",
+      "representative_card_id": "74dbfa7c0fb3",
       "date_views": {
         "2026-10-09": {
           "representative_card_id": "5c4748102851",
@@ -8957,6 +8958,34 @@
             }
           },
           "priority_rank": 10
+        },
+        "2026-10-12": {
+          "representative_card_id": "74dbfa7c0fb3",
+          "display_gps": [],
+          "display_sectors": [
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "74dbfa7c0fb3"
+          ],
+          "further_coverage": true,
+          "priority_source_card_id": "74dbfa7c0fb3",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-12T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Unsupported assessment claim: severity",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 2
         }
       },
       "display_gps": [],
@@ -8965,12 +8994,12 @@
       ],
       "first_seen_at": "2026-10-09T09:41:48+00:00",
       "last_material_update_at": "2026-10-09T09:41:48+00:00",
-      "priority_source_card_id": "5c4748102851",
+      "priority_source_card_id": "74dbfa7c0fb3",
       "timestamp_basis": "published_at",
-      "updated": false,
+      "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -8983,7 +9012,7 @@
           "zh": "证据尚未充分核实，需人工复核。"
         }
       },
-      "last_source_revision_at": null,
+      "last_source_revision_at": "2026-10-12T05:24:29+00:00",
       "merge_rule": "source",
       "member_roles": {},
       "sources": [
@@ -8991,6 +9020,12 @@
           "publisher": "Alternative Credit Investor",
           "url": "https://alternativecreditinvestor.com/2026/10/09/partners-group-launches-private-credit-income-fund/",
           "card_id": "5c4748102851",
+          "published_at": "2026-10-09T09:41:48+00:00"
+        },
+        {
+          "publisher": "Alternative Credit Investor",
+          "url": "https://alternativecreditinvestor.com/2026/10/09/partners-group-launches-private-credit-income-fund/",
+          "card_id": "74dbfa7c0fb3",
           "published_at": "2026-10-09T09:41:48+00:00"
         }
       ],
@@ -9045,7 +9080,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9122,7 +9157,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9199,7 +9234,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9278,7 +9313,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9353,7 +9388,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9428,7 +9463,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9503,7 +9538,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9582,7 +9617,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9661,7 +9696,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9742,7 +9777,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9817,7 +9852,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -9894,7 +9929,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -9969,7 +10004,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10044,7 +10079,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10119,7 +10154,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10194,7 +10229,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10273,7 +10308,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10348,7 +10383,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10505,7 +10540,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -10655,7 +10690,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10734,7 +10769,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10809,7 +10844,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10886,7 +10921,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -10964,7 +10999,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11040,7 +11075,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11117,7 +11152,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11198,7 +11233,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11273,7 +11308,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11348,7 +11383,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11423,7 +11458,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11499,7 +11534,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11578,7 +11613,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11655,7 +11690,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11736,7 +11771,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -11811,7 +11846,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11886,7 +11921,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -11961,7 +11996,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12040,7 +12075,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12117,7 +12152,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12192,7 +12227,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12273,7 +12308,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12348,7 +12383,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12430,7 +12465,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12505,7 +12540,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12580,7 +12615,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -12665,7 +12700,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12766,7 +12801,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12843,7 +12878,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12922,7 +12957,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -12997,7 +13032,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13072,7 +13107,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13147,7 +13182,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13228,7 +13263,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13336,7 +13371,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13421,7 +13456,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13498,7 +13533,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -13573,7 +13608,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13652,7 +13687,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13728,7 +13763,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13803,7 +13838,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13878,7 +13913,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -13957,7 +13992,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14034,7 +14069,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14114,7 +14149,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14191,7 +14226,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14266,7 +14301,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14341,7 +14376,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14424,7 +14459,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14515,7 +14550,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14606,7 +14641,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14682,7 +14717,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14761,7 +14796,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -14873,7 +14908,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -14957,7 +14992,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15032,7 +15067,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15107,7 +15142,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15182,7 +15217,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15261,7 +15296,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15336,7 +15371,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15411,7 +15446,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15486,7 +15521,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15561,7 +15596,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15640,7 +15675,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15715,7 +15750,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -15792,7 +15827,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15867,7 +15902,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -15943,7 +15978,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16018,7 +16053,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16093,7 +16128,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16168,7 +16203,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16247,7 +16282,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16334,7 +16369,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16409,7 +16444,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16487,7 +16522,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16574,7 +16609,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16649,7 +16684,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16724,7 +16759,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -16799,7 +16834,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16878,7 +16913,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -16964,7 +16999,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17041,7 +17076,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17120,7 +17155,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17197,7 +17232,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17273,7 +17308,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17356,7 +17391,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -17433,7 +17468,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17512,7 +17547,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17591,7 +17626,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17666,7 +17701,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17743,7 +17778,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -17825,7 +17860,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -17901,7 +17936,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -17976,7 +18011,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18051,7 +18086,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18130,7 +18165,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18205,7 +18240,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18282,7 +18317,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18361,7 +18396,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18436,7 +18471,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18518,7 +18553,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18593,7 +18628,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18706,7 +18741,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18803,7 +18838,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -18878,7 +18913,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -18956,7 +18991,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19035,7 +19070,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -19116,7 +19151,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19192,7 +19227,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19268,7 +19303,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19343,7 +19378,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19422,7 +19457,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19497,7 +19532,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19573,7 +19608,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19648,7 +19683,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19723,7 +19758,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19800,7 +19835,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19875,7 +19910,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -19951,7 +19986,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20029,7 +20064,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20105,7 +20140,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20186,7 +20221,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20276,7 +20311,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20355,7 +20390,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20430,7 +20465,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20505,7 +20540,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20580,7 +20615,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20659,7 +20694,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20739,7 +20774,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20815,7 +20850,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -20893,7 +20928,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -20972,7 +21007,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21047,7 +21082,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -21122,7 +21157,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21197,7 +21232,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -21274,7 +21309,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21351,7 +21386,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -21426,7 +21461,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -21505,7 +21540,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21584,7 +21619,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -21697,7 +21732,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21794,7 +21829,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -21871,7 +21906,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -21950,7 +21985,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -22060,7 +22095,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -22146,7 +22181,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -22221,7 +22256,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -22336,7 +22371,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -22391,9 +22426,10 @@
     {
       "event_id": "evt-dafb196f4ee9",
       "member_card_ids": [
+        "505b316be51c",
         "dafb196f4ee9"
       ],
-      "representative_card_id": "dafb196f4ee9",
+      "representative_card_id": "505b316be51c",
       "date_views": {
         "2026-10-09": {
           "representative_card_id": "dafb196f4ee9",
@@ -22405,7 +22441,7 @@
           "member_card_ids": [
             "dafb196f4ee9"
           ],
-          "further_coverage": false,
+          "further_coverage": true,
           "priority_source_card_id": "dafb196f4ee9",
           "priority": {
             "version": "priority-v1",
@@ -22423,6 +22459,35 @@
             }
           },
           "priority_rank": 4
+        },
+        "2026-10-12": {
+          "representative_card_id": "505b316be51c",
+          "display_gps": [],
+          "display_sectors": [
+            "software",
+            "private_credit"
+          ],
+          "member_card_ids": [
+            "505b316be51c"
+          ],
+          "further_coverage": false,
+          "priority_source_card_id": "505b316be51c",
+          "priority": {
+            "version": "priority-v1",
+            "as_of": "2026-10-12T23:59:59+08:00",
+            "priority": "needs_review",
+            "severity": "unknown",
+            "time_sensitivity": "monitor",
+            "linkage": "unknown",
+            "evidence_strength": "unknown",
+            "routine": false,
+            "potential_urgent": false,
+            "reason": {
+              "en": "Missing or insufficient source evidence",
+              "zh": "证据尚未充分核实，需人工复核。"
+            }
+          },
+          "priority_rank": 1
         }
       },
       "display_gps": [],
@@ -22434,10 +22499,10 @@
       "last_material_update_at": "2026-10-09T14:23:11+00:00",
       "priority_source_card_id": "dafb196f4ee9",
       "timestamp_basis": "published_at",
-      "updated": false,
+      "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -22450,10 +22515,16 @@
           "zh": "已评估严重程度：有限；关联程度：行业。"
         }
       },
-      "last_source_revision_at": null,
+      "last_source_revision_at": "2026-10-12T05:24:29+00:00",
       "merge_rule": "source",
       "member_roles": {},
       "sources": [
+        {
+          "publisher": "Alternative Credit Investor",
+          "url": "https://alternativecreditinvestor.com/2026/10/09/ai-fears-not-fundamentals-behind-software-markdowns/",
+          "card_id": "505b316be51c",
+          "published_at": "2026-10-09T14:23:11+00:00"
+        },
         {
           "publisher": "Alternative Credit Investor",
           "url": "https://alternativecreditinvestor.com/2026/10/09/ai-fears-not-fundamentals-behind-software-markdowns/",
@@ -22514,7 +22585,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -22596,7 +22667,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -22671,7 +22742,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -22748,7 +22819,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -22823,7 +22894,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -22900,7 +22971,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -22981,7 +23052,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -23093,7 +23164,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -23189,7 +23260,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -23273,7 +23344,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -23348,7 +23419,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -23423,7 +23494,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -23502,7 +23573,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -23577,7 +23648,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -23654,7 +23725,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -23729,7 +23800,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -23806,7 +23877,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -23887,7 +23958,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -23962,7 +24033,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -24037,7 +24108,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -24112,7 +24183,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -24191,7 +24262,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -24271,7 +24342,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -24350,7 +24421,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -24435,7 +24506,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -24514,7 +24585,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -24589,7 +24660,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -24664,7 +24735,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -24743,7 +24814,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -24824,7 +24895,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -24899,7 +24970,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -24976,7 +25047,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25083,7 +25154,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -25166,7 +25237,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25245,7 +25316,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -25320,7 +25391,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25395,7 +25466,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25475,7 +25546,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25550,7 +25621,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25625,7 +25696,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25708,7 +25779,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -25796,7 +25867,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -25871,7 +25942,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -25947,7 +26018,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -26026,7 +26097,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -26106,7 +26177,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -26181,7 +26252,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -26260,7 +26331,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -26339,7 +26410,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "needs_review",
         "severity": "unknown",
         "time_sensitivity": "monitor",
@@ -26416,7 +26487,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -26576,7 +26647,7 @@
       "updated": true,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -26865,7 +26936,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -26997,7 +27068,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -27137,7 +27208,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -27239,7 +27310,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -27390,7 +27461,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -27558,7 +27629,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "important",
         "severity": "substantial",
         "time_sensitivity": "monitor",
@@ -27716,7 +27787,7 @@
       "updated": false,
       "priority": {
         "version": "priority-v1",
-        "as_of": "2026-10-09T15:07:03+00:00",
+        "as_of": "2026-10-12T05:24:29+00:00",
         "priority": "useful",
         "severity": "bounded",
         "time_sensitivity": "monitor",
@@ -29657,5 +29728,5 @@
       "model": "deepseek-flash"
     }
   },
-  "cards_sha256": "6fa87bd053d00e4a9db2f065bcd6b2816fe5f043c6a058abbd6078b12db348ac"
+  "cards_sha256": "f74bcd40e0d86b3bfb0cae88f7f3fd83194091f047737f4b9e5c9a72ee47bb38"
 }

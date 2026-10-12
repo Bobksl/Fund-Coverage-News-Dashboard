@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-12",
+  "items": [
+    {
+      "id": "505b316be51c",
+      "date": "2026-10-12",
+      "published_at": "2026-10-09T14:23:11+00:00",
+      "headline": {
+        "en": "BlackRock: AI fears, not fundamentals, behind software loan markdowns",
+        "zh": "BlackRock：软件贷款减记源于AI担忧而非基本面"
+      },
+      "summary": {
+        "en": "BlackRock's quarterly private credit outlook found that markdowns on software loans accounted for roughly two-thirds of total unrealised losses in private credit since the fourth quarter of 2025. The weighted average valuation of first-lien software loans fell from near par at the end of 2025 to around 97 per cent of cost in the second quarter of 2026, with media and entertainment and consumer services showing the next-largest markdowns. BlackRock said Lincoln International data showed 68 per cent of software borrowers posted positive year-on-year growth in last-12-month adjusted Ebitda in the second quarter of 2026.",
+        "zh": "BlackRock的季度私募信贷展望发现，自2025年第四季度以来，软件贷款减记约占私募信贷未实现损失总额的三分之二。第一留置权软件贷款的加权平均估值从2025年底的接近面值降至2026年第二季度约成本的97%，媒体娱乐和消费服务板块的减记幅度次之。BlackRock表示，Lincoln International数据显示，2026年第二季度有68%的软件借款人的过去12个月调整后Ebitda实现同比增长。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/09/ai-fears-not-fundamentals-behind-software-markdowns/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI fears, not fundamentals, behind software markdowns",
+      "source_fingerprint": "293656805fcd245688fbcbdfdb457861b1ea855a229637df834a272cb826b02a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "715bc01b5ef8e149764edec7ed693e02857d2905af92afef7e0eebc4310c7e55",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Sector-wide software markdowns and valuation shifts affect private credit risk and return views, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-12T05:26:21+00:00",
+        "sha256": "715bc01b5ef8e149764edec7ed693e02857d2905af92afef7e0eebc4310c7e55",
+        "source_published_at": "2026-10-09T14:23:11+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/09/ai-fears-not-fundamentals-behind-software-markdowns/"
+      },
+      "source_published_at": "2026-10-09T14:23:11+00:00",
+      "observed_at": "2026-10-12T05:24:29+00:00",
+      "supersedes_card_id": "dafb196f4ee9"
+    },
+    {
+      "id": "74dbfa7c0fb3",
+      "date": "2026-10-12",
+      "published_at": "2026-10-09T09:41:48+00:00",
+      "headline": {
+        "en": "Partners Group launches evergreen multi-sector private credit income fund",
+        "zh": "Partners Group 推出常青多策略私募信贷收益基金"
+      },
+      "summary": {
+        "en": "Partners Group has launched an evergreen, global multi-sector private credit income strategy for institutional and private wealth investors, spanning senior direct lending, credit secondaries, fund financing, royalties, opportunistic credit and liquid credit in developed markets. The firm, which manages $186bn in assets and $40bn in private credit, said the strategy targets high single-digit to low double-digit returns generated largely through income.",
+        "zh": "Partners Group 推出了一项常青、全球多策略私募信贷收益策略，面向全球机构投资者和私人财富投资者，投资范围涵盖高级直接贷款、信贷二级市场、基金融资、特许权使用费、机会型信贷和流动信贷，聚焦发达市场。该公司管理资产规模达 1860 亿美元，其中私募信贷为 400 亿美元，并表示该策略的目标回报率为高个位数至低双位数，且主要来自收益。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/09/partners-group-launches-private-credit-income-fund/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group launches private credit income fund",
+      "source_fingerprint": "486b4c1d04a9650a57c361fc95f2364191edf696fbc97f3f9e589a09d009075f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "802904009142483f55412619bd7e2d1a1f76620121df68d4f2a8d6abd42b4b9b",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "Launch of a new private credit income strategy expands the competitive and fundraising landscape for tracked private credit managers, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-12T05:26:25+00:00",
+        "sha256": "802904009142483f55412619bd7e2d1a1f76620121df68d4f2a8d6abd42b4b9b",
+        "source_published_at": "2026-10-09T09:41:48+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/09/partners-group-launches-private-credit-income-fund/"
+      },
+      "source_published_at": "2026-10-09T09:41:48+00:00",
+      "observed_at": "2026-10-12T05:24:29+00:00",
+      "supersedes_card_id": "5c4748102851"
+    }
+  ]
+}
