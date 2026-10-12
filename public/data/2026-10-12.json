@@ -2,6 +2,139 @@
   "date": "2026-10-12",
   "items": [
     {
+      "id": "449baafe92c7",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T13:19:48+00:00",
+      "headline": {
+        "en": "Dividend Fears Send Blue Owl Technology Finance Tumbling",
+        "zh": "股息担忧令Blue Owl Technology Finance大跌"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Finance shares fell amid dividend-related concerns, according to TipRanks.",
+        "zh": "据TipRanks报道，Blue Owl Technology Finance股价因股息相关担忧而下跌。"
+      },
+      "gps": [
+        "otf",
+        "blue_owl"
+      ],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPN21RUDZzQWF6eVR2Z2dNMXRuaEthV191Q0hxTUprQ3NWdGNwM3JnQVdUWG8zaXpDZnBkcFFVZElmeHIyS1BwMWFWdEVhc0QwMHltdFYzQjJ3ajg0Vi1IMWVWT25pUnczNDRNT1JLVlZOZW1hQU93T2VVMml5OExieHo5bktlUGJtVmxGb3pvOTQwVFQwSVhvU2ZZOA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Dividend Fears Send Blue Owl Technology Finance Tumbling",
+      "source_fingerprint": "2c553f9e3ae259f15a3d4e2929934416f3255bf6c901e644fc7106e24ce2d2f9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "21590e05926168c7cac1d016a0a738fe88671e517d38c9e7016b1413f84afb39",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Share price move at a tracked BDC (OTF) tied to dividend concerns could signal distribution or NAV pressure for Blue Owl's tech-lending vehicle.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-12T17:38:15+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPN21RUDZzQWF6eVR2Z2dNMXRuaEthV191Q0hxTUprQ3NWdGNwM3JnQVdUWG8zaXpDZnBkcFFVZElmeHIyS1BwMWFWdEVhc0QwMHltdFYzQjJ3ajg0Vi1IMWVWT25pUnczNDRNT1JLVlZOZW1hQU93T2VVMml5OExieHo5bktlUGJtVmxGb3pvOTQwVFQwSVhvU2ZZOA?oc=5"
+      },
+      "observed_at": "2026-10-12T17:35:43+00:00"
+    },
+    {
+      "id": "62cf6a18df42",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T12:44:45+00:00",
+      "headline": {
+        "en": "Blackstone leads $1 billion private credit deal for Leidos",
+        "zh": "Blackstone 牵头为 Leidos 提供 10 亿美元私募信贷"
+      },
+      "summary": {
+        "en": "Blackstone leads a $1 billion private credit deal for Leidos, according to Bloomberg News.",
+        "zh": "据彭博新闻，Blackstone 牵头为 Leidos 提供一笔 10 亿美元的私募信贷交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcHQyWEQxeC1zNm8tM1ZnMmxCVkp3TnI5Q3FQSF85UU9OVnVITXZMRjNzWURvSEtLbExvUS1aRHVvSkd0ektkSi1zRFFlZXk2eW5FNlJmb19qQWNZeV9MVUpVcURLREdGX2hnNVpEaUdxeUdvUWVyOVZlNVhCc2FSdW92YjdxRmNoNHMya1ZibXphek1henVWTTFGZGdPNTBXaVg4dFdhUzM5eHhFYUszeDRCZmtyeW54eUR4S0FsRVd0Q2EtUm9iWlRmZHc0Z3FfOF81dnVIT1BFdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blackstone leads $1 billion private credit deal for Leidos -Bloomberg News",
+      "source_fingerprint": "78a54b88d9f85f99cc71aae19dbbb5010f8a94521fda96db3def87f2604e6f26",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "97db1a2b270c78d5b0ce632d0c8bf00356a6dfec325a4593dcb91f53212a1075",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large new private credit financing for a corporate borrower supports a constructive view of private credit deployment conditions, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-12T17:38:18+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcHQyWEQxeC1zNm8tM1ZnMmxCVkp3TnI5Q3FQSF85UU9OVnVITXZMRjNzWURvSEtLbExvUS1aRHVvSkd0ektkSi1zRFFlZXk2eW5FNlJmb19qQWNZeV9MVUpVcURLREdGX2hnNVpEaUdxeUdvUWVyOVZlNVhCc2FSdW92YjdxRmNoNHMya1ZibXphek1henVWTTFGZGdPNTBXaVg4dFdhUzM5eHhFYUszeDRCZmtyeW54eUR4S0FsRVd0Q2EtUm9iWlRmZHc0Z3FfOF81dnVIT1BFdw?oc=5"
+      },
+      "observed_at": "2026-10-12T17:35:43+00:00"
+    },
+    {
+      "id": "f86e525a07c5",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T12:30:00+00:00",
+      "headline": {
+        "en": "Blackstone Leads $1 Billion Private Credit Deal for Leidos",
+        "zh": "Blackstone 牵头为 Leidos 完成 10 亿美元私人信贷交易"
+      },
+      "summary": {
+        "en": "Blackstone led a $1 billion private credit deal for Leidos, according to a headline report.",
+        "zh": "据一则标题报道，Blackstone 牵头为 Leidos 完成了一笔 10 亿美元的私人信贷交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd3hmNF9wU3FjaTNOX25JbFN5aFlpQmwxcll2MzRIc3lJT2NHZlhPQzhlRXlVWmMxZHI0djhEcWlwb2Y2Z3JWc0hOREVudmFMZ0IwNDZyRk16NVBqY3ZlSEljZHJ1VmN3SS1ud05ORnk0VDQ2ZC14UDMyR0JQOHFMVDZDYi11end4RVR6SzJYNTl0a1lXRDVGZDB2Zk9LSmND?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blackstone Leads $1 Billion Private Credit Deal for Leidos",
+      "source_fingerprint": "bf81244fbc15ad426a15a4043bc8a2f2b4e454e5d15e3c977d1f9973153f4526",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a07a5819a70ea70b3f62d2a3f739be7f170dc977f758b9daaa6179becf4f9602",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large private credit financing for a defense contractor signals continued direct lending deployment capacity, relevant to the private credit sub-sector even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-12T17:38:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd3hmNF9wU3FjaTNOX25JbFN5aFlpQmwxcll2MzRIc3lJT2NHZlhPQzhlRXlVWmMxZHI0djhEcWlwb2Y2Z3JWc0hOREVudmFMZ0IwNDZyRk16NVBqY3ZlSEljZHJ1VmN3SS1ud05ORnk0VDQ2ZC14UDMyR0JQOHFMVDZDYi11end4RVR6SzJYNTl0a1lXRDVGZDB2Zk9LSmND?oc=5"
+      },
+      "observed_at": "2026-10-12T17:35:43+00:00"
+    },
+    {
       "id": "505b316be51c",
       "date": "2026-10-12",
       "published_at": "2026-10-09T14:23:11+00:00",
