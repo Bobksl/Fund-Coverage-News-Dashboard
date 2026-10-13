@@ -92,6 +92,49 @@
       "observed_at": "2026-10-12T17:35:43+00:00"
     },
     {
+      "id": "de019bb67bef",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T12:40:25+00:00",
+      "headline": {
+        "en": "Blackstone's $48 Billion Private Credit Fund Breaks 3-Year Streak",
+        "zh": "Blackstone 480亿美元私募信贷基金打破三年连续纪录"
+      },
+      "summary": {
+        "en": "Blackstone's $48 billion private credit fund reportedly broke a three-year streak, according to a Stocktwits headline.",
+        "zh": "据 Stocktwits 一则标题，Blackstone 旗下 480 亿美元私募信贷基金据报打破了一项持续三年的纪录。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQnZVQlk1UjZWdTd4eEZodlNoQTRpTzI2allpTDlJbWN6RktHRXVMUDZXZWNwVzFlbFUzZDJlS3RjTlV2X0VjQS14d01GMUhQRDhydjhnT2t2ZUZTMFJRc1JhZzF4WE4tT05oYm54YVlhOFQwd3hGeWowa2pranpKTzB2aHNIcU9pZm1mSnp4VXVJdGF2cFZFckRKLUFISHBGRG9velJtOGN1Y0UwbzBNTUl5dXA4RFJo?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blackstone’s $48 Billion Private Credit Fund Breaks 3-Year Streak—What It Means For Bitcoin",
+      "source_fingerprint": "7d0f9b711e24c5fd1e8d5e61a1ac9e9d7b5d61c253b339148ea9304074e3f388",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5be8a6c9fd26204caddda928345a3551568b2b593b82946372cac7d720d44347",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Large private credit vehicle reportedly breaking a multi-year streak could signal shifts in private credit fundraising and deployment conditions, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-13T06:24:21+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQnZVQlk1UjZWdTd4eEZodlNoQTRpTzI2allpTDlJbWN6RktHRXVMUDZXZWNwVzFlbFUzZDJlS3RjTlV2X0VjQS14d01GMUhQRDhydjhnT2t2ZUZTMFJRc1JhZzF4WE4tT05oYm54YVlhOFQwd3hGeWowa2pranpKTzB2aHNIcU9pZm1mSnp4VXVJdGF2cFZFckRKLUFISHBGRG9velJtOGN1Y0UwbzBNTUl5dXA4RFJo?oc=5"
+      },
+      "observed_at": "2026-10-13T06:22:30+00:00"
+    },
+    {
       "id": "f86e525a07c5",
       "date": "2026-10-12",
       "published_at": "2026-10-12T12:30:00+00:00",

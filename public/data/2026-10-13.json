@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-13",
+  "items": [
+    {
+      "id": "0c0b83a401d4",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T02:17:00+00:00",
+      "headline": {
+        "en": "Fitch assigns AAAsf to Neuberger Berman's $500 million CLO 65",
+        "zh": "惠誉授予Neuberger Berman 5亿美元CLO 65 AAAsf评级"
+      },
+      "summary": {
+        "en": "Fitch assigned an AAAsf rating to Neuberger Berman's $500 million CLO 65.",
+        "zh": "惠誉授予Neuberger Berman的5亿美元CLO 65 AAAsf评级。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Trend News Agency",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB6T1FNN01ZVWRHLWZHRjRPYU1nUC1jSjlHckp1bGUwR3NkQmRGWk1MaGhoZEROdWVJa3F4WFN5RGJ1NFUzbW5leTVxaGNfVFpC?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fitch assigns ‘AAAsf’ to Neuberger Berman’s $500 million CLO 65",
+      "source_fingerprint": "f548a898dbbe430f1dc6da18dc8913d3ad7255948add21c722b7fdb8a0bfbdde",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "779513c27058a8a5c3685b83cec46ec6b0a1d8b586fec711cd95ac711192f494",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New CLO issuance and rating action for a tracked manager's credit platform signals continued deployment in the CLO sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-13T06:24:14+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB6T1FNN01ZVWRHLWZHRjRPYU1nUC1jSjlHckp1bGUwR3NkQmRGWk1MaGhoZEROdWVJa3F4WFN5RGJ1NFUzbW5leTVxaGNfVFpC?oc=5"
+      },
+      "observed_at": "2026-10-13T06:22:30+00:00"
+    },
+    {
+      "id": "805e94f7e08f",
+      "date": "2026-10-13",
+      "published_at": "2026-10-12T17:30:14+00:00",
+      "headline": {
+        "en": "Record redemptions, low fundraising squeeze private credit funds – PitchBook",
+        "zh": "创纪录赎回与低迷募资挤压私人信贷基金——PitchBook"
+      },
+      "summary": {
+        "en": "PitchBook reports record redemptions and low fundraising are squeezing private credit funds.",
+        "zh": "PitchBook报道称，创纪录的赎回与低迷的募资正在挤压私人信贷基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUVpqMTdNaXRwMFRPNF9mS09CT3RlNFljS0hhNW5mYTJCeFdhZGxLTksyZTZPdHctVVNfd3hsSzFSdHNSdmplVnlxNkxUNXJ1TVhRMzhNVDlZRjk4SnFOQ3RMdC13blFVU3dueFh6ZmpPaXNMenFoTTFyTmtZdjBwM3F4VGVoa2JYLWNtcnlfVDZjendJbDlDempFZG1FWmhlTGRJOXUzMzFFejNpNWc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Record redemptions, low fundraising squeeze private credit funds – PitchBook",
+      "source_fingerprint": "14902f8f6b8dcd345606e657f2ac2adbe6cada08899e9e69611b68956bb8a9cf",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "395bddbdc662856b48d58827200a62d495e1d26db347bd9b1f7571a309a2b0df",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Industry-wide redemptions and weak fundraising signal tighter liquidity and deployment conditions for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-13T06:24:19+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUVpqMTdNaXRwMFRPNF9mS09CT3RlNFljS0hhNW5mYTJCeFdhZGxLTksyZTZPdHctVVNfd3hsSzFSdHNSdmplVnlxNkxUNXJ1TVhRMzhNVDlZRjk4SnFOQ3RMdC13blFVU3dueFh6ZmpPaXNMenFoTTFyTmtZdjBwM3F4VGVoa2JYLWNtcnlfVDZjendJbDlDempFZG1FWmhlTGRJOXUzMzFFejNpNWc?oc=5"
+      },
+      "observed_at": "2026-10-13T06:22:30+00:00"
+    }
+  ]
+}
