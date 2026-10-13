@@ -2,6 +2,160 @@
   "date": "2026-10-13",
   "items": [
     {
+      "id": "99d7163f7794",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T14:05:15+00:00",
+      "headline": {
+        "en": "Moody's: US life insurers increasingly use rated note feeders for private credit",
+        "zh": "穆迪：美国人寿保险公司日益依赖RNF"
+      },
+      "summary": {
+        "en": "US life insurers are increasingly using rated note feeders (RNFs) to access private credit markets, according to Moody's Ratings. Moody's estimates that 35 per cent of US life insurance investments go towards private credit, and notes RNFs carry credit and operational risks amplified by limited transparency. The National Association of Insurance Commissioners has expanded scrutiny of insurers' private credit investments, with regulatory review of RNFs ongoing.",
+        "zh": "穆迪评级表示，美国人寿保险公司正日益使用评级票据载体（RNF）来获取私募信贷市场的敞口。穆迪估计，美国人寿保险投资的35%投向私募信贷，并指出RNF存在信用和运营风险，且因透明度有限而放大。美国保险监督官协会已扩大对保险公司私募信贷投资的审查，对RNF的监管审查仍在进行中。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/13/moodys-life-insurers-increasingly-rely-on-rnfs/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Moody’s: life insurers increasingly rely on RNFs",
+      "source_fingerprint": "76b74c8461868f0fbc0a06a35151a3061e736e68fbe4cb282e5548ff85c1ec9d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1458,
+            "end": 1577
+          },
+          "linkage": {
+            "start": 0,
+            "end": 108
+          }
+        },
+        "source_sha256": "264216d6f4d0d26f5907597be6c4aff4164b2e5928c70ae37a6f8f13ba6f13ec",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Moody's report on life insurers' use of rated note feeders expands demand for private credit strategies and highlights transparency and valuation risks in these structures.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-13T15:47:28+00:00",
+        "sha256": "264216d6f4d0d26f5907597be6c4aff4164b2e5928c70ae37a6f8f13ba6f13ec",
+        "source_published_at": "2026-10-13T14:05:15+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/13/moodys-life-insurers-increasingly-rely-on-rnfs/"
+      },
+      "source_published_at": "2026-10-13T14:05:15+00:00",
+      "observed_at": "2026-10-13T15:44:50+00:00"
+    },
+    {
+      "id": "ca4921816fa9",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T10:33:37+00:00",
+      "headline": {
+        "en": "Australian regulator halts Ares credit fund amid private credit crackdown",
+        "zh": "澳大利亚监管机构在私人信贷整顿中叫停Ares信贷基金"
+      },
+      "summary": {
+        "en": "Australia's regulator has halted an Ares credit fund amid a broader crackdown on private credit.",
+        "zh": "在针对私人信贷的更广泛整顿中，澳大利亚监管机构叫停了一只Ares信贷基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Private Equity Wire",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTXFWaEVaUWdqOUpRWldPTGt0VXhMNDZlRnJqZVFfQUJVN0ViX0JVWGdjR0NxVkNLRDV6SmE3WHFZOURERWN5V3BiblZValVINXIya3Q2TlljS0ExNFNEODBWM2s1ZlFjTFAzV1BvanVXTDZfQldTTDVGQ1FSMWZqWFRTTzJtcHU5c1BiWmN0Q19qRTN0T19CVnZLSDhyWlg4LThHY0hralJjOFFIUVJR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australian regulator halts Ares credit fund amid private credit crackdown",
+      "source_fingerprint": "3a525586d52222c5219d29e1bf67e136f037b1740aaf648b934c324c4502cb19",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "efebaecc4f2519ab54b86574713fa1131ae342171e1a120d8d5261a59b1d9849",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Regulatory halt of a credit fund signals tightening oversight of private credit strategies, relevant to tracked private credit managers' regulatory risk.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-13T15:47:31+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTXFWaEVaUWdqOUpRWldPTGt0VXhMNDZlRnJqZVFfQUJVN0ViX0JVWGdjR0NxVkNLRDV6SmE3WHFZOURERWN5V3BiblZValVINXIya3Q2TlljS0ExNFNEODBWM2s1ZlFjTFAzV1BvanVXTDZfQldTTDVGQ1FSMWZqWFRTTzJtcHU5c1BiWmN0Q19qRTN0T19CVnZLSDhyWlg4LThHY0hralJjOFFIUVJR?oc=5"
+      },
+      "observed_at": "2026-10-13T15:44:50+00:00"
+    },
+    {
+      "id": "bd33a3e19252",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T10:11:02+00:00",
+      "headline": {
+        "en": "Blackstone leads $1B private credit deal for Leidos-Analogic security merger",
+        "zh": "Blackstone 牵头为 Leidos-Analogic 安全业务合并提供 10 亿美元私人信贷"
+      },
+      "summary": {
+        "en": "Blackstone is leading a $1 billion private credit deal tied to a merger involving Leidos and Analogic in the security sector.",
+        "zh": "Blackstone 牵头一笔 10 亿美元的私人信贷交易，该交易与 Leidos 和 Analogic 在安全领域的合并相关。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV1Z3ZlNNVEZxdFhMdXFXcHp1VmFQc25XUnlrbVJFYUR3M0xhckx5d0JNVTRudGlKbXFqWHFKUHRKek9RcFE2b3N0cy1LUThmZlFTT0VBcFNRd1lXa2pEQ1o3NHFvRWhrTDcxaFFRR1hvcGt2Rzg5NGtlUDBIR3NVYnJEd3d1LU5mTVctS0o5R2R6Z1VqcENsdmQ5WjJ2THJCMXdMSHJfUUwxVzJtMVE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blackstone leads $1B private credit deal for Leidos-Analogic security merger",
+      "source_fingerprint": "f9c6b0ed1b9486996cd15beb973936b734bd07126add39409d91a5e25ca97a68",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6c9da28227e5e4634988af741afd13e05f5565012b2802ddd927393ff2fa6fd5",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $1B private credit financing for an M&A transaction signals continued deployment capacity and pricing conditions in the direct lending market a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-13T15:47:34+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV1Z3ZlNNVEZxdFhMdXFXcHp1VmFQc25XUnlrbVJFYUR3M0xhckx5d0JNVTRudGlKbXFqWHFKUHRKek9RcFE2b3N0cy1LUThmZlFTT0VBcFNRd1lXa2pEQ1o3NHFvRWhrTDcxaFFRR1hvcGt2Rzg5NGtlUDBIR3NVYnJEd3d1LU5mTVctS0o5R2R6Z1VqcENsdmQ5WjJ2THJCMXdMSHJfUUwxVzJtMVE?oc=5"
+      },
+      "observed_at": "2026-10-13T15:44:50+00:00"
+    },
+    {
       "id": "0c0b83a401d4",
       "date": "2026-10-13",
       "published_at": "2026-10-13T02:17:00+00:00",
@@ -88,6 +242,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUVpqMTdNaXRwMFRPNF9mS09CT3RlNFljS0hhNW5mYTJCeFdhZGxLTksyZTZPdHctVVNfd3hsSzFSdHNSdmplVnlxNkxUNXJ1TVhRMzhNVDlZRjk4SnFOQ3RMdC13blFVU3dueFh6ZmpPaXNMenFoTTFyTmtZdjBwM3F4VGVoa2JYLWNtcnlfVDZjendJbDlDempFZG1FWmhlTGRJOXUzMzFFejNpNWc?oc=5"
       },
       "observed_at": "2026-10-13T06:22:30+00:00"
+    },
+    {
+      "id": "dcabaa874501",
+      "date": "2026-10-13",
+      "published_at": "2026-10-12T17:30:14+00:00",
+      "headline": {
+        "en": "Record redemptions, low fundraising squeeze private credit funds – PitchBook",
+        "zh": "PitchBook：创纪录的赎回与低迷的募资令私募信贷基金承压"
+      },
+      "summary": {
+        "en": "PitchBook reports that private credit funds are facing record redemptions alongside low fundraising.",
+        "zh": "PitchBook 报道称，私募信贷基金正面临创纪录的赎回，同时募资低迷。报道未指明具体管理人、载体或数据。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdTVIUFdjMWJFb28tUGZwT1J1TmwweHppejVUZWRBdldoclF2S0F6Z1ctdUozYk1OWWNNbHlEZTFLMmE1OFhxaXF1cU5qRlg1dF93czdVVDBtYnFINWphSmZFbHd2YkpwRnA3c2JtQ1lOMjNFOXRybjd0U3lvYmxKUWVGRWdqQzZYZUFTNjItV2V6bE4zdEg0bEM5Q1A1ZndWVzU3OTJxU0lQdVE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Record redemptions, low fundraising squeeze private credit funds – PitchBook",
+      "source_fingerprint": "14902f8f6b8dcd345606e657f2ac2adbe6cada08899e9e69611b68956bb8a9cf",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "395bddbdc662856b48d58827200a62d495e1d26db347bd9b1f7571a309a2b0df",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Industry-wide squeeze on private credit funds from record redemptions and weak fundraising affects deployment, liquidity and valuations across the tracked private credit sub-sector even without a named tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-13T15:47:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdTVIUFdjMWJFb28tUGZwT1J1TmwweHppejVUZWRBdldoclF2S0F6Z1ctdUozYk1OWWNNbHlEZTFLMmE1OFhxaXF1cU5qRlg1dF93czdVVDBtYnFINWphSmZFbHd2YkpwRnA3c2JtQ1lOMjNFOXRybjd0U3lvYmxKUWVGRWdqQzZYZUFTNjItV2V6bE4zdEg0bEM5Q1A1ZndWVzU3OTJxU0lQdVE?oc=5"
+      },
+      "observed_at": "2026-10-13T15:44:50+00:00"
     }
   ]
 }
