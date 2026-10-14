@@ -2,6 +2,94 @@
   "date": "2026-10-14",
   "items": [
     {
+      "id": "128eb121da73",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T12:30:00+00:00",
+      "headline": {
+        "en": "Rithm Capital Closes $375 Million Multifamily-Only RTL Securitization",
+        "zh": "Rithm Capital 完成 3.75 亿美元多户住宅专属 RTL 证券化"
+      },
+      "summary": {
+        "en": "Rithm Capital closed a $375 million securitization that it said is the largest multifamily-only residential transition loan (RTL) securitization to date.",
+        "zh": "Rithm Capital 完成了一笔 3.75 亿美元的证券化交易，该公司称这是迄今为止规模最大的多户住宅专属住宅过渡贷款（RTL）证券化。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Business Wire",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQQW1OeXUtRkVwVDRUWjBZZjZXbW5LbnA5OGdETE9LUVRyUTF3cXkwWTVIZ2pOMG9IZkZjSnNpaFZvMXNVT3BfX2xIR2lzcmdKVENTeTBYT3lEVkFIU3dKM0lOUWR2dXlKT2loNURuTU1JTjhMQ2JWZ3Vnb0EwN2tCNFRGcG43dVhBLVVrWi1sU2hyMHlYZktwdnBPWkpyNDJDZ2doU0J4NDJqcXptTWRZRm5tTmZjZHBIVE9rQklmOE5leTRvZkd4ZHJnTmxDZ2lPWVpBRkpFZnVwbUo2MHAtbGVVUEdlOTMtaVZIWnhSZVVrSUFfN1E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Rithm Capital Closes $375 Million Securitization, the Largest Multifamily-Only RTL Securitization to Date",
+      "source_fingerprint": "d9e28bcd2da8d4c16d6e1d8f24daa693300e0c86adb9c8a27d1cd7016218b13c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d2da558f37979caa3a679c64c88bd018829dfbe0711ee50525eefb017f6bd630",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $375 million multifamily-only residential transition loan securitization signals continued private credit deployment and capital-market access in residential real estate lending.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-14T13:30:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQQW1OeXUtRkVwVDRUWjBZZjZXbW5LbnA5OGdETE9LUVRyUTF3cXkwWTVIZ2pOMG9IZkZjSnNpaFZvMXNVT3BfX2xIR2lzcmdKVENTeTBYT3lEVkFIU3dKM0lOUWR2dXlKT2loNURuTU1JTjhMQ2JWZ3Vnb0EwN2tCNFRGcG43dVhBLVVrWi1sU2hyMHlYZktwdnBPWkpyNDJDZ2doU0J4NDJqcXptTWRZRm5tTmZjZHBIVE9rQklmOE5leTRvZkd4ZHJnTmxDZ2lPWVpBRkpFZnVwbUo2MHAtbGVVUEdlOTMtaVZIWnhSZVVrSUFfN1E?oc=5"
+      },
+      "observed_at": "2026-10-14T13:28:04+00:00"
+    },
+    {
+      "id": "3ac775b1e221",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T09:20:58+00:00",
+      "headline": {
+        "en": "Partners Group Confronts Redemption Squeeze With Twin Fund Restructuring and Private Credit Launch",
+        "zh": "Partners Group 面临赎回压力，启动双基金重组并推出私人信贷产品"
+      },
+      "summary": {
+        "en": "Partners Group is confronting a redemption squeeze, according to a report headline, through a restructuring of two funds alongside a private credit launch.",
+        "zh": "据一篇报道标题，Partners Group 正通过重组两只基金并推出私人信贷产品来应对赎回压力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNckgtRGZpN2FsQXZtd2JDVEJjbUZrZjkySlc4YUVweGNOMkl0RWV4dDhVek1RY3F0T2dUbThnLWg4blR2MlN0SHNEYjBlZjczNEVJSEZhWHlsTHVwVE54VnY0a2wyMmV4a0gyMjVDOEk3eTlwdU1Wb1JpRjNXdVhTRW5fVHJoeXA5ckN3dTdiU18yOEJkUlNfLXBydEpZeERMUzM4cjNJS2dzUGVHcEhESDA5UnlUdjEwRmYyS1hBX1plNkxRcGZmaWZUVWhjamVqTkRQTGswVFVxQkRp?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Confronts Redemption Squeeze With Twin Fund Restructuring and Private Credit Launch",
+      "source_fingerprint": "cede0e6d4aaf820aef69a3dc8e408552a8c31de60fd8157e3f58e6838890c8e4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bfe9a5056c6684e71e5a3bf50a5b2ec36c88baa68d10e5e90048c64ffefd95f9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline links a tracked manager (Partners Group's credit business) to a redemption squeeze, fund restructuring and private credit launch, which could change views on deployment, liquidity and fundraising conditions for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-14T13:30:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNckgtRGZpN2FsQXZtd2JDVEJjbUZrZjkySlc4YUVweGNOMkl0RWV4dDhVek1RY3F0T2dUbThnLWg4blR2MlN0SHNEYjBlZjczNEVJSEZhWHlsTHVwVE54VnY0a2wyMmV4a0gyMjVDOEk3eTlwdU1Wb1JpRjNXdVhTRW5fVHJoeXA5ckN3dTdiU18yOEJkUlNfLXBydEpZeERMUzM4cjNJS2dzUGVHcEhESDA5UnlUdjEwRmYyS1hBX1plNkxRcGZmaWZUVWhjamVqTkRQTGswVFVxQkRp?oc=5"
+      },
+      "observed_at": "2026-10-14T13:28:04+00:00"
+    },
+    {
       "id": "31c23e485847",
       "date": "2026-10-14",
       "published_at": "2026-10-13T21:08:36+00:00",
