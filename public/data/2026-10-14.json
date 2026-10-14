@@ -1,0 +1,373 @@
+{
+  "date": "2026-10-14",
+  "items": [
+    {
+      "id": "31c23e485847",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T21:08:36+00:00",
+      "headline": {
+        "en": "Carlyle Warns Private Credit Could Get Too Deep Into AI as $1 Trillion Financing Wave Looms",
+        "zh": "Carlyle警告私人信贷可能在1万亿美元融资浪潮中过度深入AI领域"
+      },
+      "summary": {
+        "en": "Carlyle warned that private credit could become too deeply involved in AI-related financing as a $1 trillion financing wave looms, according to a Benzinga headline.",
+        "zh": "据Benzinga报道，Carlyle警告称，随着1万亿美元融资浪潮临近，私人信贷可能在AI相关融资中涉足过深。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNb0F0SThKZEJRMzcweUNzSHUxM3RoeVFRZzJHWnJ0MmhFeDd0RDhuZjdycF9rZnItQUF2MG1JcDhvWUVjRkhJZW03MEJIb01zLW0xR0tEbUVYb2VNb2NybnliU2dNdnJSSFExQk96OHY2S1pCSUw1VGhKS2JJbkpTLTN0UDRQRFhmMEFMNnhfZzhwX1JyTXB2UllicW1LT1hERzAwVmswVElNZHQzOVRnZDI5WE5fV25zTEwyTzFTOVhwcDA0ZjZMZU54WXdSYzlOWTFkaE92allDaFhTS0k2NjVaVWl0dGcwMmc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Carlyle Warns Private Credit Could Get Too Deep Into AI as $1 Trillion Financing Wave Looms",
+      "source_fingerprint": "300d7a73b993b8739f4f551d1469ea4c9ff462100c87f336fdf2c93e949fec5c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a034ec726f42d3b6ba48fb32f1a558870ca85cb49eefac44dc38eeb229237002",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Carlyle's warning on private credit exposure to AI financing highlights potential risk in the direct lending sub-sector, a transmission channel to tracked managers with private credit platforms.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-14T04:25:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNb0F0SThKZEJRMzcweUNzSHUxM3RoeVFRZzJHWnJ0MmhFeDd0RDhuZjdycF9rZnItQUF2MG1JcDhvWUVjRkhJZW03MEJIb01zLW0xR0tEbUVYb2VNb2NybnliU2dNdnJSSFExQk96OHY2S1pCSUw1VGhKS2JJbkpTLTN0UDRQRFhmMEFMNnhfZzhwX1JyTXB2UllicW1LT1hERzAwVmswVElNZHQzOVRnZDI5WE5fV25zTEwyTzFTOVhwcDA0ZjZMZU54WXdSYzlOWTFkaE92allDaFhTS0k2NjVaVWl0dGcwMmc?oc=5"
+      },
+      "observed_at": "2026-10-14T04:23:44+00:00"
+    },
+    {
+      "id": "ad7a4e528a0c",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T20:08:20+00:00",
+      "headline": {
+        "en": "KKR FS Income Trust unit signs $250 million revolving credit facility with BMO",
+        "zh": "KKR FS Income Trust子公司与BMO签署2.5亿美元循环信贷安排"
+      },
+      "summary": {
+        "en": "K-FIT Finance BMO-1 LLC, a wholly-owned financing subsidiary of KKR FS Income Trust, entered into a Loan and Security Agreement on October 7, 2026 with Bank of Montreal as administrative agent. The facility provides for borrowings in U.S. dollars, Canadian dollars, pounds sterling and euros of up to an initial aggregate principal amount of $250 million, with a revolving period ending October 7, 2029 and maturity on October 7, 2031. Borrowings bear interest at benchmark rates plus 1.85% during the revolving period and 2.00% thereafter.",
+        "zh": "KKR FS Income Trust的全资融资子公司K-FIT Finance BMO-1 LLC于2026年10月7日与作为行政代理的蒙特利尔银行签订贷款和担保协议。该融资安排允许以美元、加元、英镑和欧元借款，初始本金总额最高为2.5亿美元，循环期至2029年10月7日，到期日为2031年10月7日。借款利率为基准利率加循环期内1.85%、其后2.00%的利差。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "KKR FS Income Trust",
+        "url": "https://www.sec.gov/Archives/edgar/data/1930679/000110465926115497/0001104659-26-115497-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR FS Income Trust files 8-K: items 1.01 and 9.01",
+      "source_fingerprint": "81dc7dc8cc2976cd3d39e8d53680a5628333cdb92f83eb7712fc7ffd9900b401",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 148,
+            "end": 190
+          },
+          "linkage": {
+            "start": 55,
+            "end": 130
+          }
+        },
+        "source_sha256": "42f0ab45f4ba0ad4d76919082d2a56f70e0f56105380549f9a1f5103e9855f4f",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "A new $250 million revolving financing facility for a KKR BDC vehicle expands funding capacity; incremental rather than a material change in franchise or credit condition.",
+          "zh": "KKR旗下一家BDC载体新获2.5亿美元循环融资安排，扩大了融资能力，属于增量事件而非业务或信用状况的重大变化。"
+        }
+      },
+      "relevance_reason": "A tracked manager's BDC vehicle closed a new $250 million multi-currency revolving financing facility, directly relevant to private credit funding capacity and terms.",
+      "event_identity": {
+        "subject": "k-fit finance bmo-1 llc",
+        "action": "entered into a loan and security agreement",
+        "object": "up to $250,000,000",
+        "period": "october 7, 2026",
+        "numbers": [
+          "$250,000,000",
+          "1",
+          "1.01",
+          "1.85%",
+          "2.00%",
+          "2026",
+          "2029",
+          "2031",
+          "7",
+          "8",
+          "9.01"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-14T04:25:55+00:00",
+        "sha256": "42f0ab45f4ba0ad4d76919082d2a56f70e0f56105380549f9a1f5103e9855f4f",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1930679/000110465926115497/tm2627463d1_8k.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-14T04:23:44+00:00"
+    },
+    {
+      "id": "e97038d75c2b",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T19:07:44+00:00",
+      "headline": {
+        "en": "Starwood Property Trust Provides $238M Refi on N.C. Life Sciences Campus",
+        "zh": "Starwood Property Trust 为北卡生命科学园区提供 2.38 亿美元再融资"
+      },
+      "summary": {
+        "en": "King Street Properties secured $237.7 million to refinance the first phase of Pathway Triangle, a four-building advanced manufacturing and life sciences campus spanning nearly 582,000 square feet in Morrisville, N.C., anchored by Novartis. Starwood Property Trust provided the debt, arranged by a JLL Capital Markets team.",
+        "zh": "King Street Properties 获得 2.377 亿美元，用于对 Pathway Triangle 一期进行再融资。该项目是位于北卡罗来纳州莫里斯维尔的一座四栋建筑的高级制造与生命科学园区，总面积近 58.2 万平方英尺，主力租户为 Novartis。Starwood Property Trust 提供贷款，由 JLL Capital Markets 团队安排。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/starwood-property-trust-238m-refi-north-carolina-life-sciences-campus/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Starwood Property Trust Provides $238M Refi on N.C. Life Sciences Campus",
+      "source_fingerprint": "22496a22ef680bf32a53177f61fa04ad8c03d17ec5478471f556778978c8cda8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 397,
+            "end": 468
+          },
+          "linkage": {
+            "start": 631,
+            "end": 672
+          }
+        },
+        "source_sha256": "6ec6d3cc983a8f13a3b39a63960846c64295e85f44c01594d70385e73ed6a3e9",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "indirect",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: indirect.",
+          "zh": "已评估严重程度：有限；关联程度：间接。"
+        }
+      },
+      "relevance_reason": "A new $237.7M commercial mortgage refinancing by Starwood Property Trust shows continued deployment capacity in life sciences and advanced manufacturing real estate credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-14T04:26:05+00:00",
+        "sha256": "6ec6d3cc983a8f13a3b39a63960846c64295e85f44c01594d70385e73ed6a3e9",
+        "source_published_at": "2026-10-13T15:07:44-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/starwood-property-trust-238m-refi-north-carolina-life-sciences-campus/"
+      },
+      "source_published_at": "2026-10-13T15:07:44-04:00",
+      "observed_at": "2026-10-14T04:23:44+00:00"
+    },
+    {
+      "id": "53a0cb48f9b9",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T18:17:00+00:00",
+      "headline": {
+        "en": "Private credit redemption demand eases but remains above key 5% threshold, Fitch says",
+        "zh": "惠誉称私募信贷赎回需求有所缓和，但仍高于5%的关键门槛"
+      },
+      "summary": {
+        "en": "Fitch said private credit redemption demand has eased but remains above the key 5% threshold.",
+        "zh": "惠誉表示，私募信贷赎回需求已有所缓和，但仍高于5%的关键门槛。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Pensions & Investments",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWlQ5TjhPcVpSSTlYYk5xd2diYURZSDBuT1hLSFFHTEhSUGRtcFdxN1l3MVJLYW9RUV9FVHJIT0dKX2tOT05jU1VwN2tTV1lIT1NTeHl4bWlOMFhMN1FFLVBHZ01EdUFrdHVYNHpiaDl1LVBoeUZRQUhvSG1oYnZiWGxHTUJQR21qLWRLVml4dThqdjl0R1d4dUZWRmdYR19fdkNtUWtLaEwySy1HNzNXazJ3azFNX0xmT09YcWx6OA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit redemption demand eases but remains above key 5% threshold, Fitch says",
+      "source_fingerprint": "15942c14ca9922d2f3d6c289d4f145e13f4a66adaa35d99cc651fad92dd57350",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bb4df566d87877c08e3359fa49e86c6753a9aab5f80cf79c53d25447dd03e9b0",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Fitch-reported redemption demand above the 5% threshold signals ongoing liquidity pressure on private credit vehicles, relevant to tracked managers' credit platforms.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-14T04:26:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWlQ5TjhPcVpSSTlYYk5xd2diYURZSDBuT1hLSFFHTEhSUGRtcFdxN1l3MVJLYW9RUV9FVHJIT0dKX2tOT05jU1VwN2tTV1lIT1NTeHl4bWlOMFhMN1FFLVBHZ01EdUFrdHVYNHpiaDl1LVBoeUZRQUhvSG1oYnZiWGxHTUJQR21qLWRLVml4dThqdjl0R1d4dUZWRmdYR19fdkNtUWtLaEwySy1HNzNXazJ3azFNX0xmT09YcWx6OA?oc=5"
+      },
+      "observed_at": "2026-10-14T04:23:44+00:00"
+    },
+    {
+      "id": "3d534f4945d3",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T17:05:32+00:00",
+      "headline": {
+        "en": "Anderson Family Properties Lands $550M Refi for Century City Office Campus",
+        "zh": "Anderson Family Properties 为 Century City 办公园区完成 5.5 亿美元再融资"
+      },
+      "summary": {
+        "en": "Anderson Family Properties secured a $550 million refinancing for its 940,000-square-foot office campus at 1800 and 1900 Avenue of the Stars in Century City, per CoStar. Wells Fargo led the financing with J.P. Morgan Chase, and the CMBS loan is expected to close Oct. 15. The campus is 95.5 percent leased, with Ares Management the largest tenant at more than 206,000 square feet through 2036.",
+        "zh": "据 CoStar 报道，Anderson Family Properties 为其位于 Century City 1800 和 1900 Avenue of the Stars、面积 94 万平方英尺的办公园区完成了 5.5 亿美元再融资。Wells Fargo 牵头此次融资，J.P. Morgan Chase 参与，该 CMBS 贷款预计于 10 月 15 日完成。该园区出租率为 95.5%，最大租户 Ares Management 承租超过 20.6 万平方英尺，租期至 2036 年。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/anderson-refi-century-city-office-la/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Anderson Family Properties Lands $550M Refi for Century City Office Campus",
+      "source_fingerprint": "b7844f38e3db4c65614431f427ba5e897fec12559ba71b5682a0c0e40397640b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 371,
+            "end": 405
+          },
+          "linkage": {
+            "start": 577,
+            "end": 653
+          }
+        },
+        "source_sha256": "b82733e57a0982a7bd86e8b5a4c1bbcad5d076ac73cd1037f59240fb7988debd",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $550M CMBS office refinancing in Century City signals continued CMBS financing access for office assets, informing real-estate credit conditions even though no tracked manager is the borrower or lender.",
+      "event_identity": {
+        "subject": "anderson family properties",
+        "action": "secured a $550 million refinancing",
+        "object": "940,000-square-foot office campus at 1800 and 1900 avenue of the stars in century city",
+        "period": "close oct. 15",
+        "numbers": [
+          "$100",
+          "$205 million",
+          "$219 million",
+          "$300 million",
+          "$550",
+          "$550 million",
+          "$94",
+          "13.6",
+          "15",
+          "1800",
+          "1900",
+          "2022",
+          "2025",
+          "2026",
+          "2036",
+          "206,000",
+          "25.4",
+          "32",
+          "875,000",
+          "940,000",
+          "95.5"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-14T04:26:11+00:00",
+        "sha256": "b82733e57a0982a7bd86e8b5a4c1bbcad5d076ac73cd1037f59240fb7988debd",
+        "source_published_at": "2026-10-13T13:05:32-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/anderson-refi-century-city-office-la/"
+      },
+      "source_published_at": "2026-10-13T13:05:32-04:00",
+      "observed_at": "2026-10-14T04:23:44+00:00"
+    },
+    {
+      "id": "2643e629fdd7",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T16:27:16+00:00",
+      "headline": {
+        "en": "Peachtree Group Completes $2.2B in 2026 Private Credit Activity",
+        "zh": "Peachtree Group 完成 2026 年 22 亿美元私募信贷业务"
+      },
+      "summary": {
+        "en": "Peachtree Group reported $2.2 billion in 2026 private credit activity. The total includes $524 million in government-enabled financing.",
+        "zh": "Peachtree Group 公布 2026 年完成 22 亿美元私募信贷业务。该总额包括 5.24 亿美元的政府支持融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "citybiz",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSEZNc3dRbTREb214aWRheE9mTHBOZEpWWWlvM28tb2YxNjdTUmNDanpmSGplT2JBaVBkTjVrTlRqZFpsTFZRRmRFY3lqb0ExMlFtYktVRjRrVUFqeEd6SXJoVnFKcWtSNmRjS0FqXzBWRG0tc19rbGx3dGNYM3dTSnRoZHk4ZE52SmN2eC01TXVBX1BZUUZnWFV5VmhLdDJfdEN6alYzWEpUYWRxdWJ0Y3hZR09pZUllbHB3dkhWdjRLZnczVlhNTG92dWRBdnZrVGl4YVY2UUxfTjNUX2hkbElR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Peachtree Group Completes $2.2B in 2026 Private Credit Activity, Including $524M in Government-Enabled Financing",
+      "source_fingerprint": "4d799e49403364a2d3f729308bf2fb2a652a1013689139b6e098cfec539c814c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "24416bdcb16c3ae4c46d130badb6d3e9daa064be5076ccc92901836dc8351f69",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A newly announced multi-billion private credit originations total signals continued deployment capacity in commercial real estate credit, relevant to the tracked real estate and asset-based lending sub-sectors even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-14T04:26:15+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSEZNc3dRbTREb214aWRheE9mTHBOZEpWWWlvM28tb2YxNjdTUmNDanpmSGplT2JBaVBkTjVrTlRqZFpsTFZRRmRFY3lqb0ExMlFtYktVRjRrVUFqeEd6SXJoVnFKcWtSNmRjS0FqXzBWRG0tc19rbGx3dGNYM3dTSnRoZHk4ZE52SmN2eC01TXVBX1BZUUZnWFV5VmhLdDJfdEN6alYzWEpUYWRxdWJ0Y3hZR09pZUllbHB3dkhWdjRLZnczVlhNTG92dWRBdnZrVGl4YVY2UUxfTjNUX2hkbElR?oc=5"
+      },
+      "observed_at": "2026-10-14T04:23:44+00:00"
+    }
+  ]
+}
