@@ -302,6 +302,51 @@
       "observed_at": "2026-10-14T13:28:04+00:00"
     },
     {
+      "id": "61e244a20371",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T04:45:57+00:00",
+      "headline": {
+        "en": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report",
+        "zh": "Blue Owl 联席CEO承认暂停赎回带来的冲击正造成麻烦：报道"
+      },
+      "summary": {
+        "en": "A report says Blue Owl's co-CEO admitted the fallout from halting redemptions is causing headaches. Only the headline was available.",
+        "zh": "一篇报道称，Blue Owl 的联席CEO承认暂停赎回所带来的冲击正在造成麻烦。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZU01REM5MExFeHFGTEhEb2VTaS1tVlc3bUV6S3pBQm1vUF91Y25WMXloTTQ0Mks3ZkZ6alFSMFItVFFNQ2pHOU5PMlZpSWtQMW0wWGJFeWQxUU1CTl80ZEV1UWlvSkttZ1c2bE8yejVNOFlhdGlpcTlaS2NoM2twYUlOUm9GMXhhN1owOGJBdDVUVWE2M1ZSUU80ekVJR0huV1Q1Vmw3UWFoY1N6SVpta2N6UjJwT3ZSY3lWUzhMdTQ1ejM1WS1GcXllMmVZUW5KV0w0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report",
+      "source_fingerprint": "0b4afcc0ba53e1d14f2ccdbbea6c3e2eaf77c93077456e34712bee9ee8d19228",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3fcc505dc5a8ca328acae5a59554406e3ef60a7626fec24d83e62defdbb43314",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A tracked manager's co-CEO acknowledging fallout from halting redemptions bears directly on the manager's liquidity and redemption conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:31+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZU01REM5MExFeHFGTEhEb2VTaS1tVlc3bUV6S3pBQm1vUF91Y25WMXloTTQ0Mks3ZkZ6alFSMFItVFFNQ2pHOU5PMlZpSWtQMW0wWGJFeWQxUU1CTl80ZEV1UWlvSkttZ1c2bE8yejVNOFlhdGlpcTlaS2NoM2twYUlOUm9GMXhhN1owOGJBdDVUVWE2M1ZSUU80ekVJR0huV1Q1Vmw3UWFoY1N6SVpta2N6UjJwT3ZSY3lWUzhMdTQ1ejM1WS1GcXllMmVZUW5KV0w0?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
       "id": "31c23e485847",
       "date": "2026-10-14",
       "published_at": "2026-10-13T21:08:36+00:00",

@@ -2,6 +2,367 @@
   "date": "2026-10-15",
   "items": [
     {
+      "id": "13a5381de8db",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T10:00:00+00:00",
+      "headline": {
+        "en": "Monroe Capital, PM Alpha and EBW Capital Launch Exchange Traded Note Linked to Monroe Capital's Direct Lending Strategy",
+        "zh": "Monroe Capital、PM Alpha与EBW Capital推出挂钩Monroe Capital直接贷款策略的交易所交易票据"
+      },
+      "summary": {
+        "en": "Monroe Capital, PM Alpha and EBW Capital launched an exchange traded note linked to Monroe Capital's direct lending strategy. The announcement was published by Business Wire.",
+        "zh": "Monroe Capital、PM Alpha与EBW Capital推出一只挂钩Monroe Capital直接贷款策略的交易所交易票据。该公告由Business Wire发布。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Business Wire",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQMjdDcEg4TU40Y0VxVmh6WVVyNXo3M2pOeVVEbUpjOUpOZjNfd3RocmhyUUdpYWVQSjhoSFMzcnRqTnlrVHJ0ank1VVo4b1VTbEtwS3JYY3R2SXg3Z0M4WVNwZGFtTW9wdlliNkc0MlFGTTRMOW1WbkxCQ0ZMRy1wdWRQZUFKT1hLREtfTUdqbXlhWEktejJLY0hYRUpkSk1XSG4wektrWWpHamlYRWdQYmk4MTh1UG9zWkZ1QXBmWENWNDN3QnRkaXBsZzZTNllLdmJ0cUt0MlJYWk1JSDQtUGtfdzN5RVFSZGtBMWZCMG9fNGdqR0N2azlGbnA2WFZselVMRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Monroe Capital, PM Alpha and EBW Capital Launch Exchange Traded Note Linked to Monroe Capital's Direct Lending Strategy",
+      "source_fingerprint": "0cf301044be0bc730210239f6b802757e4b93fcdb12e34b1450d8ee296b731e1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4568ac043b320131922643645f4c4b7c3e508b4b275a9a9753752b5eac6bd86b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new exchange traded note linked to Monroe Capital's direct lending strategy expands retail access to private credit, an incremental sector development relevant to direct lending strategy conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:14:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQMjdDcEg4TU40Y0VxVmh6WVVyNXo3M2pOeVVEbUpjOUpOZjNfd3RocmhyUUdpYWVQSjhoSFMzcnRqTnlrVHJ0ank1VVo4b1VTbEtwS3JYY3R2SXg3Z0M4WVNwZGFtTW9wdlliNkc0MlFGTTRMOW1WbkxCQ0ZMRy1wdWRQZUFKT1hLREtfTUdqbXlhWEktejJLY0hYRUpkSk1XSG4wektrWWpHamlYRWdQYmk4MTh1UG9zWkZ1QXBmWENWNDN3QnRkaXBsZzZTNllLdmJ0cUt0MlJYWk1JSDQtUGtfdzN5RVFSZGtBMWZCMG9fNGdqR0N2azlGbnA2WFZselVMRQ?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "2c6bab56e55c",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T09:54:31+00:00",
+      "headline": {
+        "en": "Kartesia Asset Finance deploys €88m across three aviation, maritime and logistics deals",
+        "zh": "Kartesia Asset Finance在航空、海事和物流三笔交易中部署8800万欧元"
+      },
+      "summary": {
+        "en": "Kartesia Asset Finance completed three investments totalling €88m from its KAF III fund, spanning aviation, maritime and logistics assets in Europe and the US. The deals follow the close of KAF III at €366m, including €50m from the European Investment Fund, and the fund has a target size of €500m. The firm said it aims to deploy between €300m and €400m annually.",
+        "zh": "Kartesia Asset Finance从其KAF III基金完成了三笔总额8800万欧元的投资，涵盖欧洲和美国的航空、海事及物流资产。这些交易是在KAF III以3.66亿欧元完成募集之后进行的，其中包括来自European Investment Fund的5000万欧元，该基金的目标规模为5亿欧元。该公司表示，其目标是在其资产融资策略中每年部署3亿至4亿欧元。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "aircraft_leasing"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/15/kartesia-deploys-e88m-across-aviation-and-maritime-deals/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Kartesia deploys €88m across aviation and maritime deals",
+      "source_fingerprint": "c6ff52dd05a261a46f52c9a79edc5d63053410761b2b9500dda81be1eaf83df8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2a83109339a520b995fdbbeea29198ea1dffd54582a1c95bbf5774868032a576",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "An asset-finance vehicle deployed capital across aviation, maritime and logistics assets, signalling continued activity in specialty asset-based lending even though no tracked manager is involved.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-15T13:15:00+00:00",
+        "sha256": "2a83109339a520b995fdbbeea29198ea1dffd54582a1c95bbf5774868032a576",
+        "source_published_at": "2026-10-15T09:54:31+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/15/kartesia-deploys-e88m-across-aviation-and-maritime-deals/"
+      },
+      "source_published_at": "2026-10-15T09:54:31+00:00",
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "8d1148f8dfc8",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T09:27:00+00:00",
+      "headline": {
+        "en": "Castlelake enters CRE CLO market amid surge in issuance by private credit lenders",
+        "zh": "Castlelake进入CRE CLO市场，私人信贷机构发行量激增"
+      },
+      "summary": {
+        "en": "Castlelake has entered the CRE CLO market, according to a headline report, amid a surge in issuance by private credit lenders. No transaction size, timing or counterparty details were disclosed in the available text.",
+        "zh": "据一则标题报道，Castlelake已进入CRE CLO市场，此时私人信贷机构的发行量正在激增。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "clo",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternatives Watch",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTFFjNUlkWkprNUd3T2VBeE9yNlBhNklTYUk0Qm9fRm9kYmNsODR1enMya0tQRnZYWWJESGpLbk5BaXdlMUlzeUkxXzZ4YWtlcC1pV2NidWZRRmJKWW5uV2VTUU02ckdmNXpLeUtXS21ueC10WGV4RDlINzFUZTlUMk01dUJ4eG5m?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Castlelake enters CRE CLO market amid surge in issuance by private credit lenders",
+      "source_fingerprint": "34a1db0d54b3c6c27e8aa0997b6bb6ce51a4a5c5830075c6e2c8b7f875882481",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "043da643a123c45a38eb1c916c2dc7a49e1065618d97ed0f0785a7c8e775fa17",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New private credit lender entering the CRE CLO market signals expanding securitisation supply and competitive conditions for asset-backed and real estate credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:05+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTFFjNUlkWkprNUd3T2VBeE9yNlBhNklTYUk0Qm9fRm9kYmNsODR1enMya0tQRnZYWWJESGpLbk5BaXdlMUlzeUkxXzZ4YWtlcC1pV2NidWZRRmJKWW5uV2VTUU02ckdmNXpLeUtXS21ueC10WGV4RDlINzFUZTlUMk01dUJ4eG5m?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "39ed552e8b68",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T08:10:30+00:00",
+      "headline": {
+        "en": "Partners Group Bets on Private Credit as Redemption Pressure Tests Its Fund Line-Up",
+        "zh": "Partners Group 押注私募信贷，赎回压力考验其基金阵容"
+      },
+      "summary": {
+        "en": "Partners Group is betting on private credit while redemption pressure tests its fund line-up, according to a headline.",
+        "zh": "据一则标题，Partners Group 押注私募信贷，同时赎回压力考验其基金阵容。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTjYtcHVST2JQaklib3ZaaTRFVWFkYnczYjlMQ29FN1RhVy0wbVZud2thS252amh3TXFIUHlRTXpZbEhNOWtPbnJ0enFqdE45dkN2bi1DOFFFb3BmdGFoX0NxSU9aMXN0OXB1eHVhaS16XzNPcEV2a1NhWmdHY2lnVW5jbEcycFdBT09DTVAxelY5QWRDYjdsNDNqN2ttWjN0d1RQSE1VOEpwa1ltSU5uMUNPQnBPa0ZwU01yRXhmbG9PNzdUTW8wZGV4c1R4Vkh0QjRRR3hoZ3g4QQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Bets on Private Credit as Redemption Pressure Tests Its Fund Line-Up",
+      "source_fingerprint": "29842d4d7caedb9029a8332e5645530558c549b47e745d984a9eecafa7a369da",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6668687dc5b453a20ff778c38ddd54dffa91968b100ebe52d4184eb1ac05b1aa",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Private credit fundraising and redemption pressure at a large alternatives manager signal deployment and liquidity conditions for the asset class.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:08+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTjYtcHVST2JQaklib3ZaaTRFVWFkYnczYjlMQ29FN1RhVy0wbVZud2thS252amh3TXFIUHlRTXpZbEhNOWtPbnJ0enFqdE45dkN2bi1DOFFFb3BmdGFoX0NxSU9aMXN0OXB1eHVhaS16XzNPcEV2a1NhWmdHY2lnVW5jbEcycFdBT09DTVAxelY5QWRDYjdsNDNqN2ttWjN0d1RQSE1VOEpwa1ltSU5uMUNPQnBPa0ZwU01yRXhmbG9PNzdUTW8wZGV4c1R4Vkh0QjRRR3hoZ3g4QQ?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "b9d0d28536fb",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T08:01:16+00:00",
+      "headline": {
+        "en": "Blue Owl's Stack Infrastructure Seeks $6 Billion Loan for Melbourne Data Center",
+        "zh": "Blue Owl 旗下 Stack Infrastructure 为墨尔本数据中心寻求 60 亿美元贷款"
+      },
+      "summary": {
+        "en": "Blue Owl's Stack Infrastructure is seeking a $6 billion loan for a Melbourne data center, according to a headline.",
+        "zh": "据标题消息，Blue Owl 旗下 Stack Infrastructure 正为墨尔本数据中心寻求 60 亿美元贷款。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPM0tCVjdTMnpFTDVNcXc3LXFoMUxiLW94X1l5TWRfQnNoMl9yTUEzMFVzUFJFdUt1V3BtS3BrQkpSeDRSYWtnMmtFT05sU2U3d21RRFVXeGYwYTktSGxXSUh4TGpyTVZNZHduTk9ESWFwa3czUkR2OVVtb1BrS0pPVHJ5bF9RcVVpSEZ2NmZWS3FveUJNMThGWWJiajVlT2xlNzBZbHVaU0RVZ180STVob05Ya1Vrc2MyOEtZanRxUkNpaHo2dDMwdFpBbw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl's Stack Infrastructure Seeks $6 Billion Loan for Melbourne Data Center",
+      "source_fingerprint": "05b3fc467dceca2c46b01be275ee39fff99eac52851b331f77b7996628fed7f5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f7d4bb30cced88b85733f4bc1756968d2956f8827262be4ed256920cce82db21",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Stack Infrastructure, a Blue Owl portfolio company, is seeking a large data center loan, which signals asset-backed lending and private credit deployment activity relevant to Blue Owl's credit business.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:10+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPM0tCVjdTMnpFTDVNcXc3LXFoMUxiLW94X1l5TWRfQnNoMl9yTUEzMFVzUFJFdUt1V3BtS3BrQkpSeDRSYWtnMmtFT05sU2U3d21RRFVXeGYwYTktSGxXSUh4TGpyTVZNZHduTk9ESWFwa3czUkR2OVVtb1BrS0pPVHJ5bF9RcVVpSEZ2NmZWS3FveUJNMThGWWJiajVlT2xlNzBZbHVaU0RVZ180STVob05Ya1Vrc2MyOEtZanRxUkNpaHo2dDMwdFpBbw?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "2a76012d781b",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T03:02:16+00:00",
+      "headline": {
+        "en": "8090 CEO Chamath Palihapitiya Warns AI Infrastructure Financing Boom Raises Private Credit Bubble Risk",
+        "zh": "8090 CEO Chamath Palihapitiya 警告 AI 基础设施融资热潮加剧私人信贷泡沫风险"
+      },
+      "summary": {
+        "en": "8090 CEO Chamath Palihapitiya said the boom in AI infrastructure financing raises the risk of a private credit bubble.",
+        "zh": "8090 CEO Chamath Palihapitiya 表示，AI 基础设施融资热潮加剧了私人信贷泡沫风险。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Lokmat Times",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNU1lmVFZDTjRldFVmd2JMN0xSTC1PY1NnVDdDazlxMXR6S29NeGFWWFdFQ0tXdW13QkxvMHZTOFo1c2dRTFl5NXhYa1dNRGtSbGNJQzNuUEhCeFBTODhqdWl3NGxHOWJGNWlLd25wVEZIMndoLTNCYVVtZFJGWFVlLWJraWZwVTVTZUJiakFyMUs3MGVIOTY4dm8wTW8wSm5zUzJXa2JyUHR6LVpuclpBWW43VG5hV1RJc3RQNzRfRGxPUWFma21lazRlME5WQ3E4V2xBaGR6M0zSAdgBQVVfeXFMTVNZZlRWQ040ZXRVZndiTDdMUkwtT2NTZ1Q3Q2s5cTF0ektvTXhhVlhXRUNLV3Vtd0JMbzB2UzhaNXNnUUxZeTV4WGtXTURrUmxjSUMzblBIQnhQUzg4anVpdzRsRzliRjVpS3ducFRGSDJ3aC0zQmFVbWRSRlhVZS1ia2lmcFU1U2VCYmpBcjFLNzBlSDk2OHZvME1vMEpuc1MyV2ticlB0ei1abnJaQVluN1RuYVdUSXN0UDc0X0RsT1FhZmttZWs0ZTBOVkNxOFdsQWhkejNM?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI infrastructure financing boom raises risk of private credit bubble: 8090 CEO Chamath Palihapitiya",
+      "source_fingerprint": "9b026842bdc8d86ff2e4138d920e7a4b90fdda1bef553dee6348f94eeffb4a32",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "549f3474322da18525b383d6167562628e690e4c7c0c0860d62e0ed182941a33",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Warning about private credit bubble risk from AI infrastructure financing is a material sector story with no tracked manager named, transmitting to the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:13+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNU1lmVFZDTjRldFVmd2JMN0xSTC1PY1NnVDdDazlxMXR6S29NeGFWWFdFQ0tXdW13QkxvMHZTOFo1c2dRTFl5NXhYa1dNRGtSbGNJQzNuUEhCeFBTODhqdWl3NGxHOWJGNWlLd25wVEZIMndoLTNCYVVtZFJGWFVlLWJraWZwVTVTZUJiakFyMUs3MGVIOTY4dm8wTW8wSm5zUzJXa2JyUHR6LVpuclpBWW43VG5hV1RJc3RQNzRfRGxPUWFma21lazRlME5WQ3E4V2xBaGR6M0zSAdgBQVVfeXFMTVNZZlRWQ040ZXRVZndiTDdMUkwtT2NTZ1Q3Q2s5cTF0ektvTXhhVlhXRUNLV3Vtd0JMbzB2UzhaNXNnUUxZeTV4WGtXTURrUmxjSUMzblBIQnhQUzg4anVpdzRsRzliRjVpS3ducFRGSDJ3aC0zQmFVbWRSRlhVZS1ia2lmcFU1U2VCYmpBcjFLNzBlSDk2OHZvME1vMEpuc1MyV2ticlB0ei1abnJaQVluN1RuYVdUSXN0UDc0X0RsT1FhZmttZWs0ZTBOVkNxOFdsQWhkejNM?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "981605620b13",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T02:35:00+00:00",
+      "headline": {
+        "en": "AI infrastructure financing boom raises risk of private credit bubble: 8090 CEO Chamath Palihapitiya",
+        "zh": "8090 首席执行官 Chamath Palihapitiya：AI 基础设施融资热潮加大私募信贷泡沫风险"
+      },
+      "summary": {
+        "en": "8090 CEO Chamath Palihapitiya said the boom in AI infrastructure financing raises the risk of a private credit bubble.",
+        "zh": "8090 首席执行官 Chamath Palihapitiya 表示，AI 基础设施融资热潮加大了私募信贷泡沫的风险。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "ANI News",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTmxzdFZqMHNyUXJfdXJxbnF4bDFQd2pfQVdGZnRrLUFJcTdZM29SX1VqQXFwLV9XbS01ZDlIX21Vek1PZ09FeE9ESTVuLThTT3JWREVMd0ZWNTNsNzFwYTNZTVdpbTVtWEQ2dlVFMFJFb0RlNGtpdUhjQ0tfa1lENG9ZRTNuSkFPdUpFVWlNLWRHN0hDTW1NMTNCQ0hRSkx4YmljUmRSLUh2Z2xDWW02Ty1YZjJ1enk0OU9QSjNTNi0yTGhxZlpYalRCYWJicUlfMzQwVnRZUFFXNWlVQVdUUTQxNlg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI infrastructure financing boom raises risk of private credit bubble: 8090 CEO Chamath Palihapitiya",
+      "source_fingerprint": "9b026842bdc8d86ff2e4138d920e7a4b90fdda1bef553dee6348f94eeffb4a32",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "549f3474322da18525b383d6167562628e690e4c7c0c0860d62e0ed182941a33",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "CEO warns AI infrastructure financing boom raises private credit bubble risk, a sector-level signal for private credit risk conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTmxzdFZqMHNyUXJfdXJxbnF4bDFQd2pfQVdGZnRrLUFJcTdZM29SX1VqQXFwLV9XbS01ZDlIX21Vek1PZ09FeE9ESTVuLThTT3JWREVMd0ZWNTNsNzFwYTNZTVdpbTVtWEQ2dlVFMFJFb0RlNGtpdUhjQ0tfa1lENG9ZRTNuSkFPdUpFVWlNLWRHN0hDTW1NMTNCQ0hRSkx4YmljUmRSLUh2Z2xDWW02Ty1YZjJ1enk0OU9QSjNTNi0yTGhxZlpYalRCYWJicUlfMzQwVnRZUFFXNWlVQVdUUTQxNlg?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "f89929b88917",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T02:08:00+00:00",
+      "headline": {
+        "en": "Castlelake first commercial real estate CLO raises $1.1 billion",
+        "zh": "Castlelake 首只商业房地产 CLO 募集 11 亿美元"
+      },
+      "summary": {
+        "en": "Castlelake's first commercial real estate CLO raised $1.1 billion, according to a headline report.",
+        "zh": "据标题报道，Castlelake 的首只商业房地产 CLO 募集了 11 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Asset Securitization Report",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbXlEd1pYalpmdG5HX3RHS3pvRXNuM0s0QVBXMjAzQmFjeHQtVlJmYmVmallQSk9fNDF4ZzY0RElHRmdCTDhoSHgwSHBkMnJXVjlBVkw4QjhEU1d0MExuMkd6R2FhM1RhMC1BWVEybTVIam5RSGRtZXBqSUQ0eWJZa3N6U3VVdEpuSmUtS0FoU3hXbFA5N2R2SHRrU3ZwYXNFRmwxSjFR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Castlelake first commercial real estate CLO raises $1.1 billion",
+      "source_fingerprint": "3a93c78e126a631430fdf83952eb386c70d88183d5e20d8d60b895d3aa45e642",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "62c13b64ecf2e10c8a617695473aea2e49db0e128a3241d02c5c930839f2e984",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $1.1 billion commercial real estate CLO adds issuance to the structured credit market, relevant to CLO and real estate credit sub-sectors where tracked managers are active.",
+      "event_identity": {
+        "subject": "castlelake",
+        "action": "raises",
+        "object": "first commercial real estate clo",
+        "period": "$1.1 billion",
+        "numbers": [
+          "$1.1 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:18+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbXlEd1pYalpmdG5HX3RHS3pvRXNuM0s0QVBXMjAzQmFjeHQtVlJmYmVmallQSk9fNDF4ZzY0RElHRmdCTDhoSHgwSHBkMnJXVjlBVkw4QjhEU1d0MExuMkd6R2FhM1RhMC1BWVEybTVIam5RSGRtZXBqSUQ0eWJZa3N6U3VVdEpuSmUtS0FoU3hXbFA5N2R2SHRrU3ZwYXNFRmwxSjFR?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
       "id": "c102b0a59467",
       "date": "2026-10-15",
       "published_at": "2026-10-15T00:13:14+00:00",
@@ -391,6 +752,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqeUE0bE94QU5rR29sXzVFSThLd0sxd21MbjdWZEdTUGo3dzRFTU9nblFVYXlkR3gycXF0NEV0YVEtZTUtMU93d09fbm9QaTVneFUyV3pyVl9iSDQ?oc=5"
       },
       "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "45b69478c09c",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T17:33:29+00:00",
+      "headline": {
+        "en": "Rising borrowing costs raise the stakes for physical climate risk in private credit",
+        "zh": "借贷成本上升加大私募信贷面临物理气候风险的影响"
+      },
+      "summary": {
+        "en": "Rising borrowing costs raise the stakes for physical climate risk in private credit, according to the Institutional Investors Group on Climate Change. No specific managers, funds or transactions were identified in the available text.",
+        "zh": "据气候变化机构投资者集团（IIGCC）称，借贷成本上升加大了私募信贷面临的物理气候风险。现有文本未指明具体管理人、基金或交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Institutional Investors Group on Climate Change (IIGCC)",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbWlkMm5sSVprUjltZHJnaVIzUlFmYjBBSEpSbnBzYVVqeE1oUHRwWFJPQ2pYRnhISjZ3Yl9qdHhoX0dEaTRIbFItR0ctYXZGTTJxdG5OdElWbkdUMTdwVDc2c0EzQUxkM1M5OFhGYnhVV3NHUmN2OWk4MFR1UXdvOC1xQUF0aW1IRkHSAYoBQVVfeXFMTW1pZDJubElaa1I5bWRyZ2lSM1JRZmIwQUhKUm5wc2FVanhNaFB0cFhST0NqWEZ4SEo2d2JfanR4aF9HRGk0SGxSLUdHLWF2Rk0ycXRuTnRJVm5HVDE3cFQ3NnNBM0FMZDNTOThYRmJ4VVdzR1JjdjlpODBUdVF3bzgtcUFBdGltSEZB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Rising borrowing costs raise the stakes for physical climate risk in private credit",
+      "source_fingerprint": "b319a6a953e9284e8456e54653804c50204b9275cb5299e6e09bf0118e9abe6e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9f87688547161f0372959bb12efa4604ea49cf5e8e208387343ed9644ea7573d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising borrowing costs interacting with physical climate risk affects credit underwriting and loan performance across private credit strategies, a channel to tracked manager credit businesses.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T13:15:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbWlkMm5sSVprUjltZHJnaVIzUlFmYjBBSEpSbnBzYVVqeE1oUHRwWFJPQ2pYRnhISjZ3Yl9qdHhoX0dEaTRIbFItR0ctYXZGTTJxdG5OdElWbkdUMTdwVDc2c0EzQUxkM1M5OFhGYnhVV3NHUmN2OWk4MFR1UXdvOC1xQUF0aW1IRkHSAYoBQVVfeXFMTW1pZDJubElaa1I5bWRyZ2lSM1JRZmIwQUhKUm5wc2FVanhNaFB0cFhST0NqWEZ4SEo2d2JfanR4aF9HRGk0SGxSLUdHLWF2Rk0ycXRuTnRJVm5HVDE3cFQ3NnNBM0FMZDNTOThYRmJ4VVdzR1JjdjlpODBUdVF3bzgtcUFBdGltSEZB?oc=5"
+      },
+      "observed_at": "2026-10-15T13:12:17+00:00"
     },
     {
       "id": "308983248a4c",
