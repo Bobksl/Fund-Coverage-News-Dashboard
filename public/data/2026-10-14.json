@@ -2,6 +2,173 @@
   "date": "2026-10-14",
   "items": [
     {
+      "id": "6374a2ddfb4c",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T14:04:59+00:00",
+      "headline": {
+        "en": "Benefit Street expands asset-backed finance platform via Encina deal",
+        "zh": "Benefit Street通过与Encina的交易扩充资产支持融资平台"
+      },
+      "summary": {
+        "en": "Benefit Street Partners, Franklin Templeton's global alternative credit arm, expanded its asset-backed finance platform through a deal with private credit firm Encina Lender Finance. A new fund backed by Franklin Templeton and BSP-affiliated funds acquired an initial seed portfolio of around $480m of commitments originated by Encina, and a 14-strong Encina investment team will join BSP.",
+        "zh": "Franklin Templeton旗下全球另类信贷部门Benefit Street Partners通过与私人信贷公司Encina Lender Finance的交易，扩大了其资产支持融资平台。一只由Franklin Templeton和BSP关联基金支持的新基金收购了Encina发起的约4.8亿美元承诺的初始种子组合，一支由14人组成的Encina投资团队也将加入BSP。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/14/benefit-street-bulks-up-abf-capabilities-with-encina-deal/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Benefit Street bulks up ABF capabilities with Encina deal",
+      "source_fingerprint": "e57726a0c29881bb4f5ccdc33974e788ae27f6b206b1c032d1c452dcb1156bdb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 696,
+            "end": 734
+          },
+          "linkage": {
+            "start": 556,
+            "end": 597
+          }
+        },
+        "source_sha256": "0361474a9d20d63fba6e07ff0ede1a78b6f5f5c29e7ba78ffa87582158171a30",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Sale of a ~$480m Encina-originated ABF seed portfolio and team to Benefit Street is an incremental expansion of an ABF platform, not a tracked manager.",
+          "zh": "向Benefit Street出售约4.8亿美元Encina发起的ABF种子组合及团队，是ABF平台的增量扩张，不涉及被追踪的管理人。"
+        }
+      },
+      "relevance_reason": "Benefit Street (Franklin Templeton's alternative credit arm) acquires a $480m Encina-originated ABF seed portfolio and team, expanding asset-backed finance capacity and competition for private credit/ABF strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-15T04:50:52+00:00",
+        "sha256": "0361474a9d20d63fba6e07ff0ede1a78b6f5f5c29e7ba78ffa87582158171a30",
+        "source_published_at": "2026-10-14T14:04:59+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/14/benefit-street-bulks-up-abf-capabilities-with-encina-deal/"
+      },
+      "source_published_at": "2026-10-14T14:04:59+00:00",
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "6e66a9719506",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T13:32:50+00:00",
+      "headline": {
+        "en": "Bain Capital Provides €130M Financing for JLL Partners' Acquisition of Life Couriers",
+        "zh": "贝恩资本为JLL Partners收购Life Couriers提供1.3亿欧元融资"
+      },
+      "summary": {
+        "en": "Bain Capital provided €130 million in financing for JLL Partners' acquisition of Life Couriers.",
+        "zh": "贝恩资本为JLL Partners收购Life Couriers提供了1.3亿欧元的融资。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "citybiz",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUENzWUJjeUQ3ZVpZemt3dTlWSW9GOXNYS2RIWmhZVHR2MlNaTUE3RG9PWVZ1QWFrTExYUWhnclluQmlCN3VqWlhEUHV5WVhsZ0IzN3J1T2NDZVBDU2lDaExPZXVwbURiQng2ZGtTMTdLYnl2aTNuRm9BLU8zZ2pWZFJJZmpldFBxSnJXRmR1SU1tTzN0X2Y2QUdFcUV1ZUdVbksyM2wxR3RBX1VYLUpVVTRkOGhUM1NqYmN1N2dlaw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bain Capital Provides €130M Financing for JLL Partners’ Acquisition of Life Couriers",
+      "source_fingerprint": "04528615b32853df9ad0e79edc6e7e87a6e5e0a83a99bbd65051c976bb8657c0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "646b2efd2dea16073cada99a81267decd2d878b1e2ccd26de470dddb1c209f40",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Bain Capital Credit's €130M financing for an acquisition is a direct private credit transaction involving a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:58+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUENzWUJjeUQ3ZVpZemt3dTlWSW9GOXNYS2RIWmhZVHR2MlNaTUE3RG9PWVZ1QWFrTExYUWhnclluQmlCN3VqWlhEUHV5WVhsZ0IzN3J1T2NDZVBDU2lDaExPZXVwbURiQng2ZGtTMTdLYnl2aTNuRm9BLU8zZ2pWZFJJZmpldFBxSnJXRmR1SU1tTzN0X2Y2QUdFcUV1ZUdVbksyM2wxR3RBX1VYLUpVVTRkOGhUM1NqYmN1N2dlaw?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "8d844e69e643",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T13:30:00+00:00",
+      "headline": {
+        "en": "Castlelake Prices $1.1 Billion Commercial Real Estate CLO",
+        "zh": "Castlelake 为 11 亿美元商业地产 CLO 定价"
+      },
+      "summary": {
+        "en": "Castlelake priced a $1.1 billion commercial real estate CLO, CLCRE 2026-FL1, according to PR Newswire.",
+        "zh": "据 PR Newswire 报道，Castlelake 为一笔 11 亿美元的商业地产 CLO（CLCRE 2026-FL1）完成定价。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "PR Newswire",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVWJ3cHdfLWtDeTBtSDljSU9jYzVWMWJmM2RwenFZZDNETXlkMU9tTVNydlpIRVhMUlNRTXFYVG1HRmU3T0xvb2xoT2RkQ1VyMU1uT1ROd3A4cUoxV2IxTm9vRUFtRWlBM0lmdkhETnBqcmotYzJCOE0weXNYSGpZRjhVbWQ5VGlKVzlEOExKVFNrdzJrY1VpX0t0Y3hXQzhLMDJ4M2phU1JQVnF4R3hiOXdwY19xcWhYWGhNQ0tmMngzakpnajY4?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Castlelake Prices $1.1 Billion Commercial Real Estate CLO, CLCRE 2026-FL1",
+      "source_fingerprint": "278457c5fe9d3afe26d296dab44dcb0345d95eb428c88d150f8616b18b00007e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "be2bccd14298963a2d9b86d0548a0d84e3a87265c1dfa3a3a613a7489aba4b5c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New CRE CLO pricing at $1.1bn signals ongoing deployment and financing capacity in the private credit and CLO sub-sector.",
+      "event_identity": {
+        "subject": "castlelake",
+        "action": "prices",
+        "object": "clcre 2026-fl1",
+        "period": "$1.1 billion",
+        "numbers": [
+          "$1.1 Billion",
+          "1",
+          "2026"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:51:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVWJ3cHdfLWtDeTBtSDljSU9jYzVWMWJmM2RwenFZZDNETXlkMU9tTVNydlpIRVhMUlNRTXFYVG1HRmU3T0xvb2xoT2RkQ1VyMU1uT1ROd3A4cUoxV2IxTm9vRUFtRWlBM0lmdkhETnBqcmotYzJCOE0weXNYSGpZRjhVbWQ5VGlKVzlEOExKVFNrdzJrY1VpX0t0Y3hXQzhLMDJ4M2phU1JQVnF4R3hiOXdwY19xcWhYWGhNQ0tmMngzakpnajY4?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
       "id": "128eb121da73",
       "date": "2026-10-14",
       "published_at": "2026-10-14T12:30:00+00:00",
@@ -45,6 +212,51 @@
         "final_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQQW1OeXUtRkVwVDRUWjBZZjZXbW5LbnA5OGdETE9LUVRyUTF3cXkwWTVIZ2pOMG9IZkZjSnNpaFZvMXNVT3BfX2xIR2lzcmdKVENTeTBYT3lEVkFIU3dKM0lOUWR2dXlKT2loNURuTU1JTjhMQ2JWZ3Vnb0EwN2tCNFRGcG43dVhBLVVrWi1sU2hyMHlYZktwdnBPWkpyNDJDZ2doU0J4NDJqcXptTWRZRm5tTmZjZHBIVE9rQklmOE5leTRvZkd4ZHJnTmxDZ2lPWVpBRkpFZnVwbUo2MHAtbGVVUEdlOTMtaVZIWnhSZVVrSUFfN1E?oc=5"
       },
       "observed_at": "2026-10-14T13:28:04+00:00"
+    },
+    {
+      "id": "68376a0693a9",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T12:00:00+00:00",
+      "headline": {
+        "en": "Bain Capital Provides €130 Million Credit Facility for JLL Partners' Acquisition of Life Couriers",
+        "zh": "Bain Capital为JLL Partners收购Life Couriers提供1.3亿欧元信贷额度"
+      },
+      "summary": {
+        "en": "Bain Capital provided a €130 million credit facility to support JLL Partners' acquisition of Life Couriers.",
+        "zh": "Bain Capital提供1.3亿欧元信贷额度，支持JLL Partners收购Life Couriers。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOV1czank1VzRfTTNRMkRnRDV2MHdxQUU5Ty1qYU9IWlc2X0tvaUxjM1liZTRmdm1wZHpzM0hZUVQxWWw3VVdhR05yRW5vci1FMmxaeUMydE9UdFVLNFNGR3NNWlRqNmFhTm9Fc09GM0hXeUsyNVZ1VVhRdjlSS1NIOG5UNXF0d0ZqQ2QyWkU0aEhuX1hkZ1NQT29B?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bain Capital Provides €130 Million Credit Facility to Support Acquisition of Life Couriers by JLL Partners",
+      "source_fingerprint": "9e10c067ae2696efb58aa0ce56b219df7bbfc61b2bbda3b9fbbef9142422b7d1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5a4250c8c8f558a9c4ff3275b42917a097925bfd5982a7b299985f34c87aad6c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New Bain Capital Credit facility financing an acquisition directly involves a tracked manager's credit business.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:51:03+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOV1czank1VzRfTTNRMkRnRDV2MHdxQUU5Ty1qYU9IWlc2X0tvaUxjM1liZTRmdm1wZHpzM0hZUVQxWWw3VVdhR05yRW5vci1FMmxaeUMydE9UdFVLNFNGR3NNWlRqNmFhTm9Fc09GM0hXeUsyNVZ1VVhRdjlSS1NIOG5UNXF0d0ZqQ2QyWkU0aEhuX1hkZ1NQT29B?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
     },
     {
       "id": "3ac775b1e221",

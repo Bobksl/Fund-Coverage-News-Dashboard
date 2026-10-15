@@ -1,0 +1,525 @@
+{
+  "date": "2026-10-15",
+  "items": [
+    {
+      "id": "c102b0a59467",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T00:13:14+00:00",
+      "headline": {
+        "en": "Goldman Sachs, UBS Grow More Selective on Financing for Australia's Private Credit Managers",
+        "zh": "彭博报道：高盛与瑞银对澳大利亚私人信贷管理机构的融资趋于挑剔"
+      },
+      "summary": {
+        "en": "Bloomberg reports that Goldman Sachs and UBS are growing more selective on financing for Australia's private credit managers.",
+        "zh": "彭博报道称，高盛与瑞银对澳大利亚私人信贷管理机构的融资变得更加挑剔。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "www.marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOM2lKLVFoeVZfQmNyYkQ2dzBTLV9Ed2JMM1dXYWJGMUNEcFVMUmpJZlBxa2hPMDhmSjkxb1lYVmhwNHBmeHhkSmVOaXpHZjlYT3V2VTlOYnZxSzEwdGRqQnhza3A4OFFHR3lscUh0cklIVWs5VElkQzVxLV9XUzAteVpZV2E1bEprdVpXUU1PLUZ1ejNFWWg5WVNkVThJdHlTcXJGYkQ3ZzFUNTRIeUVmUU55eE50LXQ2bnFuOU9YV3V5eVR5b2dKQXNNUEJlTWx5Y29xSUZ5V21Vb1JoLU1fOXh3SzkzZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman Sachs, UBS Grow More Selective on Financing for Australia's Private Credit Managers, Bloomberg Reports",
+      "source_fingerprint": "d65155e1d065defdbeeb297264007f99642dacf3d9be0e6722a71223d619f834",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e1c3288c3aa604c157703517811ce538a01430e3f4a121503c12f4b44a2b0f42",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Banks becoming more selective on financing for Australian private credit managers can affect the financing and competitive environment for tracked private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:49:53+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOM2lKLVFoeVZfQmNyYkQ2dzBTLV9Ed2JMM1dXYWJGMUNEcFVMUmpJZlBxa2hPMDhmSjkxb1lYVmhwNHBmeHhkSmVOaXpHZjlYT3V2VTlOYnZxSzEwdGRqQnhza3A4OFFHR3lscUh0cklIVWs5VElkQzVxLV9XUzAteVpZV2E1bEprdVpXUU1PLUZ1ejNFWWg5WVNkVThJdHlTcXJGYkQ3ZzFUNTRIeUVmUU55eE50LXQ2bnFuOU9YV3V5eVR5b2dKQXNNUEJlTWx5Y29xSUZ5V21Vb1JoLU1fOXh3SzkzZw?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "d045436eb537",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T22:05:00+00:00",
+      "headline": {
+        "en": "KBRA Releases Research on Private Credit Structured Credit Issuance Momentum",
+        "zh": "KBRA发布研究报告：私人信贷结构化信贷趋势观察——宏观不确定性下发行重获动能"
+      },
+      "summary": {
+        "en": "KBRA released research titled Private Credit: Structured Credit Trend Watch—Issuance Regains Momentum Despite Macro Uncertainty.",
+        "zh": "KBRA发布题为《私人信贷：结构化信贷趋势观察——宏观不确定性下发行重获动能》的研究报告。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "clo"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "FinancialContent",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxORUtlWXVSMmg4eV94VTE1MzNzSFZKQW9QMThxdVJGZk1lS3lYMXpnN0NlSDF1aGYyOVpfWG1fbjFsd0ViSTBqRV9CVm9DUUI5dEpwNWhIOE1iWG5hZnVEVnVBeHVJMGRIOHBRWW5abHB5cVVLeklWUmZsY2RCSjFuQnpJTmZGTVlsa09WWDlrdkZ3ck16a2RMb2FvcUZCZFlVSENLdkRmU0ptdXlZSmhSRTNmWFVZVEloZlpMaU5BelhhYWxrMk1UVzMzNGdKcFVpVDljVzE1SUkzTS1vOGxUamZYdjBlOHF3MldCUGR3QkliVldzbE5oT0pDX0NxMVhJWEhqa0RjVmV5UQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KBRA Releases Research – Private Credit: Structured Credit Trend Watch—Issuance Regains Momentum Despite Macro Uncertainty",
+      "source_fingerprint": "83b9028201c7842908558b841bfdc1bc2b7775f96d7d70520a1ef87007cbc439",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9cac205c602aca57c149ff67ec01f4bd6012699c88e527b416253f9b14a440d3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KBRA research on private credit structured credit issuance momentum signals conditions for the private credit and CLO sub-sectors tracked by credit investors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxORUtlWXVSMmg4eV94VTE1MzNzSFZKQW9QMThxdVJGZk1lS3lYMXpnN0NlSDF1aGYyOVpfWG1fbjFsd0ViSTBqRV9CVm9DUUI5dEpwNWhIOE1iWG5hZnVEVnVBeHVJMGRIOHBRWW5abHB5cVVLeklWUmZsY2RCSjFuQnpJTmZGTVlsa09WWDlrdkZ3ck16a2RMb2FvcUZCZFlVSENLdkRmU0ptdXlZSmhSRTNmWFVZVEloZlpMaU5BelhhYWxrMk1UVzMzNGdKcFVpVDljVzE1SUkzTS1vOGxUamZYdjBlOHF3MldCUGR3QkliVldzbE5oT0pDX0NxMVhJWEhqa0RjVmV5UQ?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "babb87bb7b65",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T21:41:25+00:00",
+      "headline": {
+        "en": "Global Banks Pull Back From Private Credit Financing",
+        "zh": "全球银行撤出私人信贷融资"
+      },
+      "summary": {
+        "en": "Global banks are pulling back from private credit financing, according to a headline briefing on Australia.",
+        "zh": "据一则在澳大利亚简报中的标题报道，全球银行正在撤出私人信贷融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZUFDU0lBRmk5NF9HcWFsM0ZrWUhMR00wRzZLTGNSclNZR25qQnpRNC11ckVlbG5qdURDM3IwNl9ScmQxaklOcDk4SWtpZnhvOERaaEZQaVlqaGtCNndTRnVITXNrVkgyNi04ckYtWGQ4alhDQVhQNG1xamhWUmJZM3Jnd29CWFp4MlJRRjJFbEJHcnR6dm5CRTIwak8xaldLcW5FcVA4NmQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Global Banks Pull Back From Private Credit Financing: Australia Briefing",
+      "source_fingerprint": "49c098d2c5869bf2b0c4c7ca3380a45774bfd906bc6291b9d328cf034f0f2c18",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "64f979f4f3cb795462c9a8e8a2d97d2fb3d375d3831ec1ce3782ca99e85115c7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Global banks retreating from private credit financing could shift the funding environment and competitive dynamics for tracked private credit managers, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:01+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZUFDU0lBRmk5NF9HcWFsM0ZrWUhMR00wRzZLTGNSclNZR25qQnpRNC11ckVlbG5qdURDM3IwNl9ScmQxaklOcDk4SWtpZnhvOERaaEZQaVlqaGtCNndTRnVITXNrVkgyNi04ckYtWGQ4alhDQVhQNG1xamhWUmJZM3Jnd29CWFp4MlJRRjJFbEJHcnR6dm5CRTIwak8xaldLcW5FcVA4NmQ?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "d524d67f7dc0",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T19:09:40+00:00",
+      "headline": {
+        "en": "Australian private credit funds face tighter bank financing as lenders turn selective",
+        "zh": "随着贷款机构转向挑剔，澳大利亚私人信贷基金面临更紧的银行融资"
+      },
+      "summary": {
+        "en": "Bank financing for Australian private credit funds is tightening as lenders become more selective, according to a headline report.",
+        "zh": "据一篇头条报道，随着贷款机构变得更加挑剔，澳大利亚私人信贷基金获得的银行融资正在收紧。报道未指明具体管理人、数字或交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZFg2MV9aeEk3a2dTcVBKWTFtdzloWF9MVDh4UlJfYUt1OGJid0owOHJqWDFQNkl0TncxdDA0WVVldXYwMEZNdFdVMmZzdXRpbjFILThveXcxSEtIOVM2U0RLQklRQVdpZ2tIbTA2X0dPOFhlSGFlZ0lWM1dfZFpQdE9Fd0QxNEkzOWFhdms3dVNmVWhwOEN3aHVzWWp2Mmxz?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Australian private credit funds face tighter bank financing as lenders turn selective",
+      "source_fingerprint": "dc0b2d2db06c32720e86570348660c6ccdad95ae84aa96b726b80d51bc951d4e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "627a1ad74c93687e5275c2f61f21c469491602d8f8318e4745001def7c359cd9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Tighter bank financing for Australian private credit funds signals potential constraints on sector leverage and deployment, a transmission channel to tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:19+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZFg2MV9aeEk3a2dTcVBKWTFtdzloWF9MVDh4UlJfYUt1OGJid0owOHJqWDFQNkl0TncxdDA0WVVldXYwMEZNdFdVMmZzdXRpbjFILThveXcxSEtIOVM2U0RLQklRQVdpZ2tIbTA2X0dPOFhlSGFlZ0lWM1dfZFpQdE9Fd0QxNEkzOWFhdms3dVNmVWhwOEN3aHVzWWp2Mmxz?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "8877e6a0e766",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T19:00:00+00:00",
+      "headline": {
+        "en": "Banks Pull Back From Financing Australian Private Credit Funds",
+        "zh": "银行撤回对澳大利亚私人信贷基金的融资"
+      },
+      "summary": {
+        "en": "Banks are pulling back from financing Australian private credit funds, according to Bloomberg.",
+        "zh": "据彭博报道，银行正在撤回对澳大利亚私人信贷基金的融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYlQ2emZDMFREZWxfT0RvMWRrbHlNWkh6Unc5alNDOUxvSU05M0ZLVDVIMndpQnBEUU5OU3NMQ0JZWXlNMmQzS3UyMjktN1FGMGMtNmpoSExoVWN5ZHU1UzFPME1TZ0k5M250Ym5yV2hGU3ZJMlNIVlBiV3ppOHpfRHpUdFQxc3BtQ2ZVa1dpM1B5a0s0STFjc2JOb1ZKbko1NUVQSEc0RnJGaDg2VFRBMUx1QQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Banks Pull Back From Financing Australian Private Credit Funds",
+      "source_fingerprint": "f43893d43f8019c94c1a16f3ae1b893301b295ce3799a54928464643a1adb5df",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5c277f159c13f8c59736cb4ca461733d50d523e7b66f40159f4de2ba82c39d35",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Banks retreating from financing Australian private credit funds signals tighter funding/liquidity conditions for the private credit strategy.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYlQ2emZDMFREZWxfT0RvMWRrbHlNWkh6Unc5alNDOUxvSU05M0ZLVDVIMndpQnBEUU5OU3NMQ0JZWXlNMmQzS3UyMjktN1FGMGMtNmpoSExoVWN5ZHU1UzFPME1TZ0k5M250Ym5yV2hGU3ZJMlNIVlBiV3ppOHpfRHpUdFQxc3BtQ2ZVa1dpM1B5a0s0STFjc2JOb1ZKbko1NUVQSEc0RnJGaDg2VFRBMUx1QQ?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "9e44ca681788",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T18:19:45+00:00",
+      "headline": {
+        "en": "U.S. private credit stress signals higher default risk",
+        "zh": "美国私人信贷承压，预示违约风险上升"
+      },
+      "summary": {
+        "en": "A headline reports that stress in U.S. private credit is signalling higher default risk. No managers, vehicles or figures were supplied.",
+        "zh": "有标题报道称，美国私人信贷领域的压力预示着违约风险上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQ0laNXNNYlJFQkdWSjJCc2xXdGxMcVhhMTdadmlnQVJwNVRPYUNTbjdmLWE0bWM3QVRpa21pT1NNYkhlaTJGTzlWb1NtajBaMHZHcnBSazdiLW9nQmJtMVlGUER3aHZsNVpqa2lpMFcwbkhFTHlwQUFEYnF5ZW95N3I4XzkxZHhqM3gxWVhQN3Z4aUE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "U.S. private credit stress signals higher default risk",
+      "source_fingerprint": "6328a93d42a5df8511179174513832e995b1039c1d922e889624471acc9a0112",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "383a9c7b38c70e1db7eb214de8c4a076db533e89b17b94a48dc076ee8b55998d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A headline signalling rising private credit default risk could change credit investors' view of the private credit sub-sector, though no tracked manager or figures are named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:22+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQ0laNXNNYlJFQkdWSjJCc2xXdGxMcVhhMTdadmlnQVJwNVRPYUNTbjdmLWE0bWM3QVRpa21pT1NNYkhlaTJGTzlWb1NtajBaMHZHcnBSazdiLW9nQmJtMVlGUER3aHZsNVpqa2lpMFcwbkhFTHlwQUFEYnF5ZW95N3I4XzkxZHhqM3gxWVhQN3Z4aUE?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "45e589bcf128",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T18:01:55+00:00",
+      "headline": {
+        "en": "Rithm Capital's Genesis Capital Closes $375M Multifamily Loan Securitization",
+        "zh": "Rithm Capital 旗下 Genesis Capital 完成 3.75 亿美元多户住宅贷款证券化"
+      },
+      "summary": {
+        "en": "Rithm Capital announced that its commercial real estate originations subsidiary, Genesis Capital, closed a $375 million securitization of U.S. multifamily loans. The deal, NRMLT 2026-RTL1, is collateralized by a pool of 55 loans and is the first multifamily-only securitization Genesis has closed since Rithm acquired the firm in 2021. Multifamily originations represent 40 percent of Genesis' total origination volume, and rose from $160 million in the first quarter of 2024 to $637 million in the second quarter of 2026.",
+        "zh": "Rithm Capital 宣布，其商业房地产发起子公司 Genesis Capital 完成了 3.75 亿美元美国多户住宅贷款证券化。该交易名为 NRMLT 2026-RTL1，以 55 笔贷款组合为抵押，是 Rithm 于 2021 年收购该公司以来 Genesis 完成的首笔纯多户住宅证券化。多户住宅贷款发起占 Genesis 总发起量的 40%，并从 2024 年第一季度的 1.6 亿美元增至 2026 年第二季度的 6.37 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/rithm-capital-375m-genesis-securitization-multifamily/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Rithm Capital Closes $375M Securitization of Multifamily Loans",
+      "source_fingerprint": "51a303c201ef09f050ee98c0b79b23b5361d722a4548366a38bfa889df5859da",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 562,
+            "end": 624
+          },
+          "linkage": {
+            "start": 571,
+            "end": 598
+          }
+        },
+        "source_sha256": "38627770641d8c70886baf8992de9dd55773014fa6b7021837b5c4baceb17971",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A $375 million commercial mortgage-backed securitization of multifamily loans expands real-estate credit issuance, relevant to the mortgage and real-estate sub-sectors even though Rithm is not a tracked manager.",
+      "event_identity": {
+        "subject": "genesis capital",
+        "action": "closed a $375 million securitization",
+        "object": "u.s. multifamily loans",
+        "period": "2026",
+        "numbers": [
+          "$1.7 billion",
+          "$160 million",
+          "$17 billion",
+          "$375",
+          "$375 million",
+          "$63 billion",
+          "$637 million",
+          "1",
+          "2021",
+          "2024",
+          "2025",
+          "2026",
+          "40",
+          "55"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-15T04:50:31+00:00",
+        "sha256": "38627770641d8c70886baf8992de9dd55773014fa6b7021837b5c4baceb17971",
+        "source_published_at": "2026-10-14T14:01:55-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/rithm-capital-375m-genesis-securitization-multifamily/"
+      },
+      "source_published_at": "2026-10-14T14:01:55-04:00",
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "b41438fa85f6",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T17:50:39+00:00",
+      "headline": {
+        "en": "AI Chip Financing Raises Questions About Private Credit Risk",
+        "zh": "AI芯片融资引发对私人信贷风险的疑问"
+      },
+      "summary": {
+        "en": "A headline reports that AI chip financing is raising questions about private credit risk.",
+        "zh": "一则标题报道称，AI芯片融资正在引发对私人信贷风险的疑问。所提供文本未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "TOKENPOST",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqeUE0bE94QU5rR29sXzVFSThLd0sxd21MbjdWZEdTUGo3dzRFTU9nblFVYXlkR3gycXF0NEV0YVEtZTUtMU93d09fbm9QaTVneFUyV3pyVl9iSDQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI Chip Financing Raises Questions About Private Credit Risk",
+      "source_fingerprint": "ae998452b2b06dfc6aef0b036e2702739ba2253a14006d30b226550dbd95b057",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e7fde26c08da92176c00adf2663e64fe945869c5a52632bd9188b38150bc061b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags potential credit risk from AI chip financing, a transmission channel to private credit sub-sector exposures.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:35+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqeUE0bE94QU5rR29sXzVFSThLd0sxd21MbjdWZEdTUGo3dzRFTU9nblFVYXlkR3gycXF0NEV0YVEtZTUtMU93d09fbm9QaTVneFUyV3pyVl9iSDQ?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "308983248a4c",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T16:55:01+00:00",
+      "headline": {
+        "en": "CXtec taken over by investor, obtains private credit for refinancing",
+        "zh": "CXtec被投资者收购，获得私人信贷用于再融资"
+      },
+      "summary": {
+        "en": "An investor has taken over CXtec, and the company has obtained private credit for refinancing.",
+        "zh": "一位投资者收购了CXtec，该公司已获得私人信贷用于再融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVGxSYmNXVWZIM0ZUVUtVdGtmZ0dQcU9aVXVXazQwMVppV3JnekhZdVVyZDVBa2E0ZG5JUkxMeTU2U1Z4MERoak5MS1JaZ0FVTUlmT293MjVXX0VUcm1udW16WC1UVHlDckhhekJNYlVwUFVidmpWVTlXRHZSbUJBTEZ1LW8tUzdFbnFGTlJmWTlXY08tdFVSRjZad0tHQ04zLV9MMGN3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CXtec taken over by investor, obtains private credit for refinancing",
+      "source_fingerprint": "7c62075007a74f3b3ffaa77e43886f55c190d575b137dfb22c8e0441c9fc96b0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9f5776c7d9e5250287b9688ee29bb696f38bbaca24847ec6b900fac285915cef",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A private credit refinancing is arranged for a company acquired by an investor, an incremental signal for private credit deployment.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVGxSYmNXVWZIM0ZUVUtVdGtmZ0dQcU9aVXVXazQwMVppV3JnekhZdVVyZDVBa2E0ZG5JUkxMeTU2U1Z4MERoak5MS1JaZ0FVTUlmT293MjVXX0VUcm1udW16WC1UVHlDckhhekJNYlVwUFVidmpWVTlXRHZSbUJBTEZ1LW8tUzdFbnFGTlJmWTlXY08tdFVSRjZad0tHQ04zLV9MMGN3?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "7ae953753955",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T16:26:39+00:00",
+      "headline": {
+        "en": "U.S. CLO Issuance Slips to $41.1B as AAA Spreads Tighten",
+        "zh": "美国CLO发行量降至411亿美元，AAA级利差收窄"
+      },
+      "summary": {
+        "en": "U.S. CLO issuance slipped to $41.1 billion as AAA spreads tightened, according to the headline.",
+        "zh": "据标题，美国CLO发行量降至411亿美元，同时AAA级利差收窄。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "CRE Daily",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQW9RTHRXZ0UwSEpuRUFNOFhucnRTd0JhSU9wWTN4elhraExyTWs0SlAtbkdoZlNVWDN2ajZ5eTliSS1uXzdhcGM2YnR3Qk9DS1Y5ekpkZmdxTVhrVjRJRGxab2JreldMLVE2QW9lZW5LVUtCc0NWeUpqa0F6UE1RSm82b2tzQUc1cTd5X1V3eHY?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "U.S. CLO Issuance Slips to $41.1B as AAA Spreads Tighten",
+      "source_fingerprint": "66b5dc024805504501c23f73ae5dbb9b1871cb95b6f3718afd84620a77a706fe",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3f847a6cf0163651300a2e1436409e5861bae8c6014fe455656c1e419b63540d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "CLO issuance volume and AAA spread movement are material sector conditions for tracked CLO and credit platforms.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:42+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQW9RTHRXZ0UwSEpuRUFNOFhucnRTd0JhSU9wWTN4elhraExyTWs0SlAtbkdoZlNVWDN2ajZ5eTliSS1uXzdhcGM2YnR3Qk9DS1Y5ekpkZmdxTVhrVjRJRGxab2JreldMLVE2QW9lZW5LVUtCc0NWeUpqa0F6UE1RSm82b2tzQUc1cTd5X1V3eHY?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    },
+    {
+      "id": "9b5fe44c93e8",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T16:25:29+00:00",
+      "headline": {
+        "en": "Partners Group Launches Evergreen Private Credit Income Strategy",
+        "zh": "Partners Group 推出常青私人信贷收益策略"
+      },
+      "summary": {
+        "en": "Partners Group launched an evergreen private credit income strategy, according to a headline report.",
+        "zh": "据一则标题报道，Partners Group 推出了一项常青私人信贷收益策略。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "https://www.connectmoney.com/",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZFpuZHZ1M2lKZEU4RzVuYTNBREJRZUItUVg2eTRndU5yNDM5RjJkdmEzZlQ2Yy01c2JpdW10M0RkdHp1bUdBaUppMVZsM0o1TXppektFc1Z2UmZUbS1oakptT2ZLZ1h2TjhsXzhQZWZqNmxTWnkySzVCbXhwWmxCMU9wRVQwcG85MkNtUkhreF82RWQzdkItMm8yQXpzUFo1MmJsSw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Launches Evergreen Private Credit Income Strategy",
+      "source_fingerprint": "24d6b98575112092783629bdd1c3c0c35738b580296dd0bd94e9467375c51e54",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d319c8e66b2d0de4bf159849c06b28a4667934f9d281afd1dc85bbbb8493784f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New evergreen private credit income strategy launch signals continued fundraising and product expansion in the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-15T04:50:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZFpuZHZ1M2lKZEU4RzVuYTNBREJRZUItUVg2eTRndU5yNDM5RjJkdmEzZlQ2Yy01c2JpdW10M0RkdHp1bUdBaUppMVZsM0o1TXppektFc1Z2UmZUbS1oakptT2ZLZ1h2TjhsXzhQZWZqNmxTWnkySzVCbXhwWmxCMU9wRVQwcG85MkNtUkhreF82RWQzdkItMm8yQXpzUFo1MmJsSw?oc=5"
+      },
+      "observed_at": "2026-10-15T04:06:13+00:00"
+    }
+  ]
+}
