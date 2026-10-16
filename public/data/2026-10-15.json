@@ -2,6 +2,49 @@
   "date": "2026-10-15",
   "items": [
     {
+      "id": "36a55fd2df48",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T15:54:48+00:00",
+      "headline": {
+        "en": "Lenders skeptical as VantageScore shifts mortgage credit rules",
+        "zh": "VantageScore调整抵押贷款信用规则，贷款机构持怀疑态度"
+      },
+      "summary": {
+        "en": "VantageScore has shifted mortgage credit rules. Lenders are skeptical of the change.",
+        "zh": "VantageScore调整了抵押贷款信用规则。贷款机构对这一变化持怀疑态度。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Mortgage Professional America",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWkNXcEszTm8ySG45UnRtTHIyYW1nZkVlUXJXaWFYXzhoQ3o1em85SmFxT2FqaU5tUkN2M3dmdTBFZzZscmpxc3BIWUkxcXRrRm1mNk5OZlZUNEdtZExDbUJvd3F4eTNZamZuZnhONUlaM2pYT1hsUWFUTVl2Vnh3RzN0Zmxlb2NBdERtM3JyUG9XTEE5UC1Fd085c2M0UHdvNUVIdmJ0U0JWSEwwMUx1YW43cnIyZ19qSDhzYXhSNVFJNTVROVV3Sw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Lenders skeptical as VantageScore shifts mortgage credit rules",
+      "source_fingerprint": "4b2cd6b3121ae2866a622442f2a8c7578b7b0f60841337af0b4ebae5a2c33a0e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d917a3a848f7a0d35f0334f85a260c32ee5c2e4118316e151fb800f534c18e02",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A change to mortgage credit scoring rules could affect the risk and return of residential mortgage and structured credit exposures in the tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWkNXcEszTm8ySG45UnRtTHIyYW1nZkVlUXJXaWFYXzhoQ3o1em85SmFxT2FqaU5tUkN2M3dmdTBFZzZscmpxc3BIWUkxcXRrRm1mNk5OZlZUNEdtZExDbUJvd3F4eTNZamZuZnhONUlaM2pYT1hsUWFUTVl2Vnh3RzN0Zmxlb2NBdERtM3JyUG9XTEE5UC1Fd085c2M0UHdvNUVIdmJ0U0JWSEwwMUx1YW43cnIyZ19qSDhzYXhSNVFJNTVROVV3Sw?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
       "id": "13a5381de8db",
       "date": "2026-10-15",
       "published_at": "2026-10-15T10:00:00+00:00",

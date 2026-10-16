@@ -1,0 +1,699 @@
+{
+  "date": "2026-10-16",
+  "items": [
+    {
+      "id": "a6529b42d77b",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T22:25:41+00:00",
+      "headline": {
+        "en": "Dividend Jitters Send Blue Owl Tech Finance Tumbling",
+        "zh": "股息担忧令Blue Owl Tech Finance大跌"
+      },
+      "summary": {
+        "en": "A TipRanks headline reports dividend jitters sent Blue Owl Tech Finance tumbling.",
+        "zh": "TipRanks一则标题报道称，股息担忧令Blue Owl Tech Finance大跌。所提供文本未包含更多细节。"
+      },
+      "gps": [
+        "otf",
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOS0hTaVV3Rk1PMEtaaVAyVGY5LVNnOGVKSVZXekNwZzhwVjYxQy0wQWYwTmc2WUlRY0pxUEJiMXI1Y3hyeUkydzBnN3h0YndCRFB0U1BVek9HSjViN0xBakczSnhvNW5xWjA1X1hzcWRNRE41UHVpVEpQRXpsNmJHT3RtVS0wM2Q3TXB5NE9mMDVJNGpoTHc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Dividend Jitters Send Blue Owl Tech Finance Tumbling",
+      "source_fingerprint": "12b8d3a8041e6fc94db05b56613b89567326f8edf9f080db09724ac1cacf4249",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9f0129b3ac686e6ee4fc2ac1d193686dc7b93080edc82f46844555f10e480ddc",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals potential dividend concerns at a tracked BDC (OTF), which could affect credit investor views on distributions and valuation, though no details are supplied.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:04:46+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOS0hTaVV3Rk1PMEtaaVAyVGY5LVNnOGVKSVZXekNwZzhwVjYxQy0wQWYwTmc2WUlRY0pxUEJiMXI1Y3hyeUkydzBnN3h0YndCRFB0U1BVek9HSjViN0xBakczSnhvNW5xWjA1X1hzcWRNRE41UHVpVEpQRXpsNmJHT3RtVS0wM2Q3TXB5NE9mMDVJNGpoTHc?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "c1a66a87f547",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T21:45:00+00:00",
+      "headline": {
+        "en": "Benefit Street Partners Adds Encina Lender Finance Team and About $480 Million Seed Portfolio to ABF Platform",
+        "zh": "Benefit Street Partners将Encina Lender Finance团队及约4.8亿美元种子组合纳入其ABF平台"
+      },
+      "summary": {
+        "en": "Benefit Street Partners added Encina Lender Finance's team and a roughly $480 million seed portfolio to its asset-based finance platform.",
+        "zh": "Benefit Street Partners将Encina Lender Finance的团队以及约4.8亿美元的种子组合纳入其资产抵押融资（ABF）平台。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "HedgeCo.Net",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPX1kwRUdlSUkzX0MxbjNUdFRnaXFGSllXZ3hPOU9tY2RxVVFXSmgxZExpVXhOY0lieDJIbG1WYUJPOVhSd0QzSDlwVEFsb1oydlZ3LXFISld3b2JiNmJhRFZsNndnU2E2VHBqWXlBRDg5QTlXSkdFem82LUNyam45eXFYZDdQVmdnUUVzLVFkeGNqdFFlRVgwTzFfX0pVWVVYY01uVU5ycUhrTjViZzRSbWVtQm5CNERtRVFNTW1OLXhZV3h2aUJrcXFIVmwwWTZ4ekplOERrNmo4aGZXd1NBRkVlS0VobUV1dXVXcw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Benefit Street Partners Added Encina Lender Finance’s Team and a Roughly $480 Million Seed Portfolio to Its ABF Platform",
+      "source_fingerprint": "653661dc0de7ea51998aa2157a0dc5ebea148c48ae6312176c818450ec705f84",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9415beca8e9d285d2a15f386be78a4ed26bb6ed1191066db4e6915140a2f35a8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "An asset-based finance platform adds a lending team and roughly $480m seed portfolio, signalling continued capital deployment in a tracked sub-sector though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:04:48+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPX1kwRUdlSUkzX0MxbjNUdFRnaXFGSllXZ3hPOU9tY2RxVVFXSmgxZExpVXhOY0lieDJIbG1WYUJPOVhSd0QzSDlwVEFsb1oydlZ3LXFISld3b2JiNmJhRFZsNndnU2E2VHBqWXlBRDg5QTlXSkdFem82LUNyam45eXFYZDdQVmdnUUVzLVFkeGNqdFFlRVgwTzFfX0pVWVVYY01uVU5ycUhrTjViZzRSbWVtQm5CNERtRVFNTW1OLXhZV3h2aUJrcXFIVmwwWTZ4ekplOERrNmo4aGZXd1NBRkVlS0VobUV1dXVXcw?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "efab337fa120",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T21:13:41+00:00",
+      "headline": {
+        "en": "Blue Owl Capital Finance Enters Fourth Amendment to Credit Agreement",
+        "zh": "Blue Owl Capital Finance 签署信贷协议第四次修订"
+      },
+      "summary": {
+        "en": "Blue Owl Capital Finance entered into a fourth amendment to its credit agreement on October 14, 2026, according to an SEC filing.",
+        "zh": "根据一份SEC文件，Blue Owl Capital Finance 于2026年10月14日签署了其信贷协议的第四次修订。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPWnVFcFNnSnNkcTdLMXdxN3pxdF9La2duRmdjRHh2TEF4US1SWTdobGFzdjNfd29QZFJaRVVOOVNjXy05R1pydUpSTmEzVW9kUkNDLTNUN1FlZEFVdVNYTDYyR1Y4aW5DcGNHbEJXT0hNdDFoMFNZVzlQU1E4WjNzUTNXZklvRTVWRnhobzNTX2ZCYmhWQTVvbWVUVHlwY3NhQWVpSzZyaVV2Y3l0cnpYemVpaVl5Y3FHRkNIMWlRRmo5cTdMSFFVZGNXT3U4U21rRUtVWk9Ed0E2T3hKc0NNWVJ6LUNfa190YUN4d0dIMGN5R3BUbUpZSFF5RUU?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital - Finance Enters Fourth Amendment To Credit Agreement On October 14, 2026 - SEC Filing",
+      "source_fingerprint": "afa4a108a6718e5a85d26d0d07aadb5517d86e9dc9c334d9104a0e656b7df075",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "8cf2dc92cf7bceb54078dd0fbb06d3070258f4309c2fb2f083b21d41689b6dbd",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A credit agreement amendment at a tracked manager's finance subsidiary is a direct credit event, though a routine administrative amendment with no disclosed terms.",
+      "event_identity": {
+        "subject": "blue owl capital - finance",
+        "action": "enters fourth amendment to credit agreement",
+        "object": "credit agreement",
+        "period": "october 14, 2026",
+        "numbers": [
+          "14",
+          "2026"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:04:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPWnVFcFNnSnNkcTdLMXdxN3pxdF9La2duRmdjRHh2TEF4US1SWTdobGFzdjNfd29QZFJaRVVOOVNjXy05R1pydUpSTmEzVW9kUkNDLTNUN1FlZEFVdVNYTDYyR1Y4aW5DcGNHbEJXT0hNdDFoMFNZVzlQU1E4WjNzUTNXZklvRTVWRnhobzNTX2ZCYmhWQTVvbWVUVHlwY3NhQWVpSzZyaVV2Y3l0cnpYemVpaVl5Y3FHRkNIMWlRRmo5cTdMSFFVZGNXT3U4U21rRUtVWk9Ed0E2T3hKc0NNWVJ6LUNfa190YUN4d0dIMGN5R3BUbUpZSFF5RUU?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "95a5247a4b0e",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T20:43:07+00:00",
+      "headline": {
+        "en": "Franklin Templeton and Benefit Street Partners expand asset-backed finance platform with $480 million Encina transaction",
+        "zh": "Franklin Templeton与Benefit Street Partners通过4.8亿美元Encina交易扩展资产支持融资平台"
+      },
+      "summary": {
+        "en": "Franklin Templeton and Benefit Street Partners expanded their asset-backed finance platform with a $480 million Encina transaction.",
+        "zh": "Franklin Templeton与Benefit Street Partners通过一笔4.8亿美元的Encina交易扩展了其资产支持融资平台。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQa09xTEJsbzg1ckljSkIzSzd4NEhlSXZXNWpFR3dYSE55NGlQVHE2eE9KRUd5ZHdTMzR2endYMDR6S0xrUVFsTUFWZHI0SVJ5dFE4SGhqTGJfSVBMei1sS0wwOWlUS1pfcVF2MjZHVERoMlVjM2dHeG9oQUNwQWluZG1UQ0Qtdk8tWE1FcTJmTUJQYnpmQmFnVWlPR0UwVVVmVkdtZGg2aWlRUk93Z1B5MWpsU0RqQzBNdHF2MW1zb0FWcE1YTDRfY1hiYndobFh3QWduYUtn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Franklin Templeton And Benefit Street Partners Expand Asset-Backed Finance Platform With $480 Million Encina Transaction",
+      "source_fingerprint": "c1386fd44b6182a303349a9ef30ff4fc002e0d496cd7cd94536eec42bdbd556c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "0b37aa2dd32e7e57a2c402d015ca78c4eb820054e25585532602815ae2bf5795",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $480m asset-backed finance transaction expands a credit platform, signalling continued deployment in asset-based lending even without a tracked manager named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:04:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQa09xTEJsbzg1ckljSkIzSzd4NEhlSXZXNWpFR3dYSE55NGlQVHE2eE9KRUd5ZHdTMzR2endYMDR6S0xrUVFsTUFWZHI0SVJ5dFE4SGhqTGJfSVBMei1sS0wwOWlUS1pfcVF2MjZHVERoMlVjM2dHeG9oQUNwQWluZG1UQ0Qtdk8tWE1FcTJmTUJQYnpmQmFnVWlPR0UwVVVmVkdtZGg2aWlRUk93Z1B5MWpsU0RqQzBNdHF2MW1zb0FWcE1YTDRfY1hiYndobFh3QWduYUtn?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "a7fd35a026a8",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T20:42:31+00:00",
+      "headline": {
+        "en": "Private credit faces deployment squeeze as fundraising hits record",
+        "zh": "私募信贷面临投放挤压，募资创纪录"
+      },
+      "summary": {
+        "en": "Private credit is facing a deployment squeeze while fundraising hits a record, according to a headline from Mezha.net.",
+        "zh": "据Mezha.net报道，私募信贷在募资创下纪录之际正面临投放挤压。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Mezha.net",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNN25heWlUb2Y4YzN1ZGhUZU9qWjJFalBONThVcDJ5QUU0S3JKVldHS2NhSnplby1raW55cXdBTXIza0Zybm53alBZM1phYUhnMGhkT0NlU2xLSTJQXzRqLTBHQnVKR3dUTVlhNFB3SlA0cEJyTndrdUVGZkNDSjlreVNmMFlidw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit faces deployment squeeze as fundraising hits record",
+      "source_fingerprint": "041c0d13f38dd486d1675ad0050474caa4939fb642cb04c9bbd79419ac0e9da5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "47f1a3273e3249eefb55363b71e742fd673ca6ad4e46a67186bdfb0aed6d25c2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Record fundraising alongside a deployment squeeze affects deployment and competitive conditions for tracked private-credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:01+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNN25heWlUb2Y4YzN1ZGhUZU9qWjJFalBONThVcDJ5QUU0S3JKVldHS2NhSnplby1raW55cXdBTXIza0Zybm53alBZM1phYUhnMGhkT0NlU2xLSTJQXzRqLTBHQnVKR3dUTVlhNFB3SlA0cEJyTndrdUVGZkNDSjlreVNmMFlidw?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "f00544b2a6d6",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T20:23:00+00:00",
+      "headline": {
+        "en": "Blue Owl Capital Lifts Revolver to $3.225 Billion With MUFG, Extends Maturity to 2031",
+        "zh": "Blue Owl Capital 将循环信贷额度提高至32.25亿美元，MUFG参与，期限延长至2031年"
+      },
+      "summary": {
+        "en": "Blue Owl Capital increased its revolving credit facility to $3.225 billion, with MUFG involved, and extended the facility's maturity to 2031.",
+        "zh": "Blue Owl Capital 将循环信贷额度提高至32.25亿美元，MUFG参与其中，并将该额度期限延长至2031年。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNeWE1QUo3eC1mNVJCazBRYUJ3dVpTMUptNHZiT0VKakZ3ZF93NFNLRFVTcHpDTC1zQklJQWFnX1lwTHBON2lTdWFIZHN4Zm9ySTd1NVkxX2lDZHRRZTZVV1psanVHY3EwVERXTmo3LThlT3lEdWwteHFPa1J3YjBoUUNXWmxQSWQwaE5ZWUI4VDA2bjJKM0gxOUZxNVJfTG5fX2E3Q1BuSlZ1dEtHdHl1LWk3dmZRZXhzRVVrazkwT0w2ZWR0WHpZNjZ1SDVlYjNCZ3pHOEpRaHdNTkZuZFE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital Lifts Revolver to $3.225 Billion With MUFG, Extends Maturity to 2031",
+      "source_fingerprint": "f58dab93c8e2091881d47fd4766a754f66b11f5d521cbdf857db3f4b3f4a984d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "888138ac1c076e51011d7958102d271eae04f5d7a9f9bd2ccba62bca50d47f4b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl expands and extends a corporate revolver, a direct liquidity and funding development for a tracked credit manager.",
+      "event_identity": {
+        "subject": "blue owl capital",
+        "action": "lifts revolver",
+        "object": "mufg",
+        "period": "2031",
+        "numbers": [
+          "$3.225 Billion",
+          "2031"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNeWE1QUo3eC1mNVJCazBRYUJ3dVpTMUptNHZiT0VKakZ3ZF93NFNLRFVTcHpDTC1zQklJQWFnX1lwTHBON2lTdWFIZHN4Zm9ySTd1NVkxX2lDZHRRZTZVV1psanVHY3EwVERXTmo3LThlT3lEdWwteHFPa1J3YjBoUUNXWmxQSWQwaE5ZWUI4VDA2bjJKM0gxOUZxNVJfTG5fX2E3Q1BuSlZ1dEtHdHl1LWk3dmZRZXhzRVVrazkwT0w2ZWR0WHpZNjZ1SDVlYjNCZ3pHOEpRaHdNTkZuZFE?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "d773f207cae9",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T20:19:01+00:00",
+      "headline": {
+        "en": "Blue Owl lifts revolver commitment to $3.225bn and extends maturity to 2031",
+        "zh": "Blue Owl将循环信贷承诺提高至32.25亿美元，并将到期日延长至2031年"
+      },
+      "summary": {
+        "en": "On October 14, 2026, Blue Owl Finance LLC, an indirect subsidiary of Blue Owl Capital Inc., and several Blue Owl guarantor entities entered a Fourth Amendment to their June 15, 2022 credit agreement with MUFG Bank, Ltd. as administrative agent and the lenders party thereto. The amendment increased the revolving credit commitment to a total new commitment of $3,225,000,000, subject to a potential increase to $3,870,000,000 if certain conditions are met, reduced the applicable margin and commitment fee rate, and extended the facility maturity to October 14, 2031.",
+        "zh": "2026年10月14日，Blue Owl Capital Inc.的间接子公司Blue Owl Finance LLC与多家Blue Owl担保实体，与作为行政代理人的MUFG Bank, Ltd.及协议各贷款方签署了其2022年6月15日信贷协议的第四修正案。该修正案将循环信贷承诺总额提高至3,225,000,000美元，并在满足特定条件后可能进一步增至3,870,000,000美元，同时下调了适用利率和承诺费率，并将该融资工具的到期日延长至2031年10月14日。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "BLUE OWL CAPITAL INC.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1823945/000119312526422905/0001193125-26-422905-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "BLUE OWL CAPITAL INC. files 8-K: items 1.01, 2.03and9.01",
+      "source_fingerprint": "fb72cee00022eb97d9590c9f9427b3f40014efc9a0274173e73079bad3c90911",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1680,
+            "end": 1771
+          },
+          "linkage": {
+            "start": 276,
+            "end": 362
+          }
+        },
+        "source_sha256": "cdf512fc11e82a73fa87d5a8e9ecbe1c053943db798d741caa4e280b87946abc",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "Blue Owl upsized its corporate revolver and reduced pricing while extending maturity to 2031, a modest funding-cost and liquidity improvement rather than a credit-negative event.",
+          "zh": "Blue Owl扩大了公司循环信贷额度、下调了定价并将到期日延长至2031年，这属于融资成本和流动性的小幅改善，而非信用负面事件。"
+        }
+      },
+      "relevance_reason": "Blue Owl amended and upsized its corporate revolver, marginally improving its own funding cost and liquidity and extending maturity, a direct funding-environment signal for a tracked credit manager.",
+      "event_identity": {
+        "subject": "blue owl finance llc",
+        "action": "entered into an amendment (the \"fourth amendment\")",
+        "object": "the amended and restated credit agreement, dated as of june 15, 2022",
+        "period": "on october 14, 2026",
+        "numbers": [
+          "$3,225,000,000.00",
+          "$3,870,000,000.00",
+          "0.0",
+          "1.01",
+          "127.5",
+          "137.5",
+          "14",
+          "15",
+          "16.5",
+          "2.03",
+          "20.0",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026",
+          "2031",
+          "23",
+          "27.5",
+          "29",
+          "37.5",
+          "7.0",
+          "77.5",
+          "8",
+          "87.5",
+          "9.01"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-16T04:04:38+00:00",
+        "sha256": "cdf512fc11e82a73fa87d5a8e9ecbe1c053943db798d741caa4e280b87946abc",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1823945/000119312526422905/d901314d8k.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "001dd0c44d8c",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T20:01:58+00:00",
+      "headline": {
+        "en": "Castlelake Prices $1.1B Debut Commercial Real Estate CLO",
+        "zh": "Castlelake 完成 11 亿美元首次商业地产 CLO 定价"
+      },
+      "summary": {
+        "en": "Castlelake priced its debut commercial real estate CLO at $1.1 billion, according to a headline report.",
+        "zh": "据一则标题报道，Castlelake 为其首次商业地产 CLO 完成定价，规模为 11 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "https://www.connectmoney.com/",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZFdBV2pMeHBiVFVVMWVvYjRVMmxaNzBoVnZKWjVTTU9PWDM3bklmekVNZE1UYUt2SkxtcnNVSFlQcWVNeE1MY3VNc3YxdEdGRGJfeW9nVlU1c044QmVWQXBzUFpNSjRnUUVpeGtGbGZUVXFBYldnWE9KdlFqaTZKSEludTV1aHF6M2RxVEN2ME5fV1VjcmdtaA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Castlelake Prices $1.1B Debut Commercial Real Estate CLO",
+      "source_fingerprint": "16ba3cfeb8ef2060bf26f94500942a102d6a5eae344eb31c43d9bba4ae3e2494",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4c189a8845eff8bc1ccb20230a7ebfeaa036ea14cd87149019d3f39908f0ce76",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $1.1B CRE CLO pricing signals continued asset-backed issuance capacity in real estate credit, a channel with consequences for credit investors' sector view.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:12+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZFdBV2pMeHBiVFVVMWVvYjRVMmxaNzBoVnZKWjVTTU9PWDM3bklmekVNZE1UYUt2SkxtcnNVSFlQcWVNeE1MY3VNc3YxdEdGRGJfeW9nVlU1c044QmVWQXBzUFpNSjRnUUVpeGtGbGZUVXFBYldnWE9KdlFqaTZKSEludTV1aHF6M2RxVEN2ME5fV1VjcmdtaA?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "0ff9140be66c",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T18:33:47+00:00",
+      "headline": {
+        "en": "Private credit faces deployment squeeze as fundraising hits record",
+        "zh": "私人信贷在募资创纪录之际面临投放压力"
+      },
+      "summary": {
+        "en": "Private credit faces a deployment squeeze as fundraising hits a record, according to a Reuters headline.",
+        "zh": "据路透社一则标题，私人信贷在募资创纪录之际面临投放压力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdW8zUF80MHpiNi1RMHVNa3NjWGFxZHlZRlZNaDFUQm0xeURIbDRELTBhd2VWQV9IZWhTc3JsUENxcVYxM2RfWV84ZGlBd1hqVlVYQnI5UnQwcFVWZHBNRUxxVGRmZWdZMUV4UGVjV1FZUGpwWk9QQWJ0V1hybXVDYzVHbTNBWmVsc01oWVhyZFd6dkFSbmxvckNaVk9meUtkd2I0cGttR3ZvUEdOWHJBc0xoVXZWZ3NYNXhB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit faces deployment squeeze as fundraising hits record",
+      "source_fingerprint": "041c0d13f38dd486d1675ad0050474caa4939fb642cb04c9bbd79419ac0e9da5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "47f1a3273e3249eefb55363b71e742fd673ca6ad4e46a67186bdfb0aed6d25c2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Record fundraising and a deployment squeeze signal pressure on deployment and terms across private credit, a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdW8zUF80MHpiNi1RMHVNa3NjWGFxZHlZRlZNaDFUQm0xeURIbDRELTBhd2VWQV9IZWhTc3JsUENxcVYxM2RfWV84ZGlBd1hqVlVYQnI5UnQwcFVWZHBNRUxxVGRmZWdZMUV4UGVjV1FZUGpwWk9QQWJ0V1hybXVDYzVHbTNBWmVsc01oWVhyZFd6dkFSbmxvckNaVk9meUtkd2I0cGttR3ZvUEdOWHJBc0xoVXZWZ3NYNXhB?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "3a386673ea89",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T18:26:00+00:00",
+      "headline": {
+        "en": "Private Credit Faces Deployment Squeeze as Fundraising Hits Record",
+        "zh": "私募信贷面临投放压力，募资创纪录"
+      },
+      "summary": {
+        "en": "A report says private credit is facing a deployment squeeze while fundraising has reached a record level.",
+        "zh": "一份报告称，私募信贷面临投放压力，同时募资规模已达到创纪录水平。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "U.S. News - Money",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbmtvaEY4RGgzSUhGNXphcXVQUFhVVFhRdkpwTTBGMmo5ejktaTZDdkQza2JHOU5OV3Ixc3BOalFsZkI2NnpNdE9sVjZRQm9nNGM4QVpGdVRfTVFSRkd6WVVUTUR1Ymk2TEE5cUc1N1RsRnBILUZzUHlaT3dnQXFIb3FSV0NlMlFCdFNZMG5qTmMwVldYT0xYUnBieF9keWdPS0ExZ3hIMGtsNGp2N1d2ckt0TS0xSHNtU0lleU95M0o1OHp4?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private Credit Faces Deployment Squeeze as Fundraising Hits Record",
+      "source_fingerprint": "538e11320ab49daacfea3bb39c74faa7e236109b434a06478bb810d11509b8b4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c18de7990c51d0b0207e87b6a31f29600ba140e5affbfeb432a10fb839c9bfce",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Private credit fundraising and deployment conditions are a core driver of returns and capital access for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbmtvaEY4RGgzSUhGNXphcXVQUFhVVFhRdkpwTTBGMmo5ejktaTZDdkQza2JHOU5OV3Ixc3BOalFsZkI2NnpNdE9sVjZRQm9nNGM4QVpGdVRfTVFSRkd6WVVUTUR1Ymk2TEE5cUc1N1RsRnBILUZzUHlaT3dnQXFIb3FSV0NlMlFCdFNZMG5qTmMwVldYT0xYUnBieF9keWdPS0ExZ3hIMGtsNGp2N1d2ckt0TS0xSHNtU0lleU95M0o1OHp4?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "5655f653f0b6",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T18:21:34+00:00",
+      "headline": {
+        "en": "Private credit faces deployment squeeze as fundraising hits record",
+        "zh": "私募信贷融资创纪录之际面临投放压力"
+      },
+      "summary": {
+        "en": "Private credit is facing a deployment squeeze while fundraising hits a record, according to a headline from TradingView.",
+        "zh": "据TradingView一则标题，私募信贷在融资创下纪录之际正面临投放压力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTF9obm9IUWkzZE83RUg3SkNsZGtRV2JaaVhudzI0eE5ER0VGOHZBR2VoUGNRS3VhLUtTQTRIYWFrZVRlRHFkZzB0WlNXbU9xaVJ1SFNEeDN6M21kR1V4a1FobUxnMkdFcDVVaHFSSk1nU0RHQWdQeUJJZ0toRVJiSHhOOThsNWZIQ2Y3aDZTR19KaG9fT3JmbzJ4UG51R1BUMVpMQURPbkhReTZQSUgzMkVsQmRxYkVBWGNwS3ZtRjJmd2pOMnBYMkM5OTZudUVPUlE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit faces deployment squeeze as fundraising hits record",
+      "source_fingerprint": "041c0d13f38dd486d1675ad0050474caa4939fb642cb04c9bbd79419ac0e9da5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "47f1a3273e3249eefb55363b71e742fd673ca6ad4e46a67186bdfb0aed6d25c2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Record private credit fundraising alongside a deployment squeeze bears on deployment and fundraising conditions for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:21+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTF9obm9IUWkzZE83RUg3SkNsZGtRV2JaaVhudzI0eE5ER0VGOHZBR2VoUGNRS3VhLUtTQTRIYWFrZVRlRHFkZzB0WlNXbU9xaVJ1SFNEeDN6M21kR1V4a1FobUxnMkdFcDVVaHFSSk1nU0RHQWdQeUJJZ0toRVJiSHhOOThsNWZIQ2Y3aDZTR19KaG9fT3JmbzJ4UG51R1BUMVpMQURPbkhReTZQSUgzMkVsQmRxYkVBWGNwS3ZtRjJmd2pOMnBYMkM5OTZudUVPUlE?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "ca2014cc0cf4",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T18:12:55+00:00",
+      "headline": {
+        "en": "Bain Capital Provides €130 Million Credit Facility To Support JLL Partners' Acquisition Of Life Couriers",
+        "zh": "Bain Capital 提供 1.3 亿欧元信贷额度，支持 JLL Partners 收购 Life Couriers"
+      },
+      "summary": {
+        "en": "Bain Capital provided a €130 million credit facility to support JLL Partners' acquisition of Life Couriers.",
+        "zh": "Bain Capital 提供了一笔 1.3 亿欧元的信贷额度，用于支持 JLL Partners 收购 Life Couriers。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWWxXZGtkbzFSYkRBYUZWaVcyVExjbmxVVmpKMGRMRjRTZUgzN2JxZ1FobkR1dHktbE1HYjMyVGdITDJXTzV4Wk9HTnhiQUpCeTFES210T2FubWJwMjBjamlTVXk1T19uYmVhWjF3cU94SmhiWG5lZmdhQkpwdXdMdV9VUjNtQjNkbDFDNUVvOVZ2MkM4UUhFLTA3VVdZQVpseVE2SXYxUUh3TjNXZFFvYlRkOFRCTFZNSS1zZTlEQTg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bain Capital Provides €130 Million Credit Facility To Support JLL Partners' Acquisition Of Life Couriers",
+      "source_fingerprint": "2fd2f10d79bd469d4522d22b8f6f0c96d063239115f15af2ea17e190d1f46527",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d1d93f1221ab088936f858debccb6032fbae00e41d698d5fdc02faeb5ee79963",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new €130m private credit facility for an acquisition is a direct deployment signal for a tracked credit manager's lending strategy.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:23+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWWxXZGtkbzFSYkRBYUZWaVcyVExjbmxVVmpKMGRMRjRTZUgzN2JxZ1FobkR1dHktbE1HYjMyVGdITDJXTzV4Wk9HTnhiQUpCeTFES210T2FubWJwMjBjamlTVXk1T19uYmVhWjF3cU94SmhiWG5lZmdhQkpwdXdMdV9VUjNtQjNkbDFDNUVvOVZ2MkM4UUhFLTA3VVdZQVpseVE2SXYxUUh3TjNXZFFvYlRkOFRCTFZNSS1zZTlEQTg?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "915db1ce0f32",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T17:23:03+00:00",
+      "headline": {
+        "en": "Victory Park launches tokenised feeder fund for asset-backed credit",
+        "zh": "Victory Park 推出资产支持信贷代币化联接基金"
+      },
+      "summary": {
+        "en": "Victory Park Capital launched the AltsABF Tokenized Feeder Fund (VALTS), offering US investors tokenised access to the Privacore VPC Asset Backed Credit Fund (AltsABF), a non-listed closed-end interval fund launched in January 2026. VPC partnered with Tradable, which has tokenised $3bn in private credit, and VALTS is available on the Stellar blockchain network. It expects quarterly liquidity and monthly income distributions in stablecoin.",
+        "zh": "Victory Park Capital 推出了 AltsABF Tokenized Feeder Fund（VALTS），为美国投资者提供对 Privacore VPC Asset Backed Credit Fund（AltsABF）的代币化投资渠道，后者是一只于 2026 年 1 月推出的非上市封闭式区间基金。VPC 与已代币化 30 亿美元私人信贷的 Tradable 合作，VALTS 在 Stellar 区块链网络上提供。该基金预计提供季度流动性和以稳定币形式支付的月度收益分配。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/15/victory-park-launches-tokenised-asset-backed-credit-fund/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Victory Park launches tokenised asset-backed credit fund",
+      "source_fingerprint": "1f11864bf2f4c09506394c3a4ab040caa7c501914caf6555103ff4e215ce554d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c4413a92b5e45bd91b6e1edbd43a720587de78b85147aba49e6fb3f215173381",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Tokenised feeder fund launch expands distribution for Victory Park's asset-backed credit strategy, a new access channel for private credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-16T04:05:28+00:00",
+        "sha256": "c4413a92b5e45bd91b6e1edbd43a720587de78b85147aba49e6fb3f215173381",
+        "source_published_at": "2026-10-15T17:23:03+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/15/victory-park-launches-tokenised-asset-backed-credit-fund/"
+      },
+      "source_published_at": "2026-10-15T17:23:03+00:00",
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "6df555ba7ba1",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T16:25:41+00:00",
+      "headline": {
+        "en": "KKR CLO 68 Ltd. secures Fitch ratings for new loan-backed issuance",
+        "zh": "KKR CLO 68 Ltd. 新一笔贷款支持发行获得惠誉评级"
+      },
+      "summary": {
+        "en": "KKR CLO 68 Ltd. has secured Fitch ratings for a new loan-backed issuance, according to a headline. No deal size, pricing or closing details were provided.",
+        "zh": "据一则标题消息，KKR CLO 68 Ltd. 的新一笔贷款支持发行已获得惠誉评级。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQR2lBc0NZRkpJSnpUMXVzdC1BYlRNY1lXdUJPd04zS3pTODZhVkliTWJJMjBwSEtYaEhJbUpmYzJkQlNMSWNOZDdXQ3FRVUJBT1FwVFZDM1kzUlZHMlMyaTRRUXMycVptVmY1Rm1CWlNvcHVwcXJ3LVNSRzRDREsybXRRNlVtWE5oODUw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR CLO 68 Ltd. secures Fitch ratings for new loan-backed issuance",
+      "source_fingerprint": "007334a62441966538febc8e552055d82a44db0ea61214b4f7b12f1e19ac2963",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "08d80d3b90895305f8db0bfca000dd67c37b26da294b98f5bc0114197262bf8d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Fitch ratings for a new KKR-sponsored CLO is a direct credit-market development for a tracked manager's CLO platform, though the headline carries no figures.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T04:05:34+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQR2lBc0NZRkpJSnpUMXVzdC1BYlRNY1lXdUJPd04zS3pTODZhVkliTWJJMjBwSEtYaEhJbUpmYzJkQlNMSWNOZDdXQ3FRVUJBT1FwVFZDM1kzUlZHMlMyaTRRUXMycVptVmY1Rm1CWlNvcHVwcXJ3LVNSRzRDREsybXRRNlVtWE5oODUw?oc=5"
+      },
+      "observed_at": "2026-10-16T04:02:30+00:00"
+    }
+  ]
+}
