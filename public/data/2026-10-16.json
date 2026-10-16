@@ -2,6 +2,368 @@
   "date": "2026-10-16",
   "items": [
     {
+      "id": "3f686662ed48",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T12:26:30+00:00",
+      "headline": {
+        "en": "Carlyle to acquire $7.7bn consumer loan portfolio from Truist",
+        "zh": "Carlyle 将从 Truist 收购 77 亿美元消费者贷款组合"
+      },
+      "summary": {
+        "en": "Carlyle has agreed to acquire a $7.7bn portfolio of unsecured personal loans from US bank Truist, expanding its asset-backed finance business. The portfolio mainly comprises fixed-rate, fully amortising loans to prime and super-prime borrowers, and the deal is being led by Carlyle's ABF team within its Global Credit platform, which had about $211bn in assets under management as of 30 June 2026. The transaction is expected to close in the fourth quarter of 2026.",
+        "zh": "Carlyle 已同意从美国银行 Truist 收购一个 77 亿美元的无抵押个人贷款组合，以扩展其资产支持融资业务。该组合主要由面向优质和超优质借款人的固定利率、完全摊还贷款构成，交易由 Carlyle 全球信贷平台内的 ABF 团队主导；截至 2026 年 6 月 30 日，该平台管理资产约 2,110 亿美元。该交易预计于 2026 年第四季度完成。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/16/carlyle-to-acquire-7-7bn-consumer-loan-portfolio-from-truist/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Carlyle to acquire $7.7bn consumer loan portfolio from Truist",
+      "source_fingerprint": "b511fa64606f242c90ad89a7cc761539a4f4d716601b7e4fc7c3ea53d94d183f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 105
+          },
+          "linkage": {
+            "start": 532,
+            "end": 629
+          }
+        },
+        "source_sha256": "ec9c6812bc80514d0dc64015b8716ae2889a6160a11e842ae0a5c24af6a10221",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Carlyle is not a tracked manager; the deal is a large bank consumer portfolio sale that signals asset-backed finance deployment conditions for the tracked sub-sector.",
+          "zh": "Carlyle 并非受跟踪的管理人；该交易是一笔大型银行消费者贷款组合出售，反映受跟踪子板块的资产支持融资部署环境。"
+        }
+      },
+      "relevance_reason": "A large bank consumer loan portfolio sale to a credit manager signals continued bank balance-sheet offloading and asset-backed finance deployment conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-16T13:08:19+00:00",
+        "sha256": "ec9c6812bc80514d0dc64015b8716ae2889a6160a11e842ae0a5c24af6a10221",
+        "source_published_at": "2026-10-16T12:26:30+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/16/carlyle-to-acquire-7-7bn-consumer-loan-portfolio-from-truist/"
+      },
+      "source_published_at": "2026-10-16T12:26:30+00:00",
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
+      "id": "3644924a7191",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T11:00:07+00:00",
+      "headline": {
+        "en": "Moody's Finds Private Credit Stress Is Worse than Default Rates Suggest, Warns of Maturity Wall",
+        "zh": "穆迪发现私人信贷压力比违约率所显示的更为严重，并警告存在到期墙"
+      },
+      "summary": {
+        "en": "Moody's found that private credit stress is worse than default rates suggest and warned of a maturity wall, according to a report headline.",
+        "zh": "据一篇报道标题，穆迪发现私人信贷压力比违约率所显示的更为严重，并警告存在到期墙。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSlBUTkdpc0o3TjR0NC0xaV94dFZpcENIbXhCQTkzS2ladzZfaGJSWmV2YktmZklUNzhEaWtYc3hQanc3a1pOeXNrU3pLbjFYWjhxemFaQ2F1cUVibVMwYWJid1MwUVpQTmFYMEY5bGZKZlh0UHBEWVBKYWR2ZjNmb1Ztc3RfX0Jac20tcXBiTzQySUNQNkhwcWR1VFdIUks4M1FmbFdtWXRBT1BEaW1McWU1YWllRXlqWi1pS3l1dGJkS0pwV2R5cmh6Q0FYLS1mNzNBQlV2UkdST1NSVE5vX3JSY2FTemF3Z0RENnpB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Moody’s Finds Private Credit Stress Is Worse than Default Rates Suggest, Warns of Maturity Wall",
+      "source_fingerprint": "728fece198ca54e5836033aa5d3f2ffebeff6187799b4ff272ee63188f0a311b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3a56c1a27d87afba479bf52be4a36cf799f11e582bec035dbce5c8bdd7158161",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's warning on private credit stress and a maturity wall bears directly on the risk environment for tracked private credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:23+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSlBUTkdpc0o3TjR0NC0xaV94dFZpcENIbXhCQTkzS2ladzZfaGJSWmV2YktmZklUNzhEaWtYc3hQanc3a1pOeXNrU3pLbjFYWjhxemFaQ2F1cUVibVMwYWJid1MwUVpQTmFYMEY5bGZKZlh0UHBEWVBKYWR2ZjNmb1Ztc3RfX0Jac20tcXBiTzQySUNQNkhwcWR1VFdIUks4M1FmbFdtWXRBT1BEaW1McWU1YWllRXlqWi1pS3l1dGJkS0pwV2R5cmh6Q0FYLS1mNzNBQlV2UkdST1NSVE5vX3JSY2FTemF3Z0RENnpB?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
+      "id": "b895ffc9df52",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T10:28:48+00:00",
+      "headline": {
+        "en": "Blue Owl defends software exposure amid private credit redemption pressures",
+        "zh": "Blue Owl 在私人信贷赎回压力下为其软件敞口辩护"
+      },
+      "summary": {
+        "en": "Blue Owl defended its software exposure as private credit faces redemption pressures.",
+        "zh": "在私人信贷面临赎回压力之际，Blue Owl 为其软件敞口进行了辩护。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Private Equity Wire",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNUg0d3ZaR3R1UUZqYmx5U3pYNTNDT0R0N2F1LW9POWxZaF84VHUyUy1sTUFfLUl0a08yVUxTeVM4SDk4bFZZSk9RZjdIazZkcEJyTEU5Q202emNFdEdIR29MNjJNNUJ4aWd2OW5MSFl0S0k4QU9IRnpzbzd4TlNoUnhWb0U0d1ZmcUZyUW5sS3N2NWNfbTFOcHZXTUFyc19hT3BCWWE5NzRwTWNrUDNkWmRn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl defends software exposure amid private credit redemption pressures",
+      "source_fingerprint": "4c48cb4b7ebc616ed6eff21c7e7a12115c65125bff5eb3fb4bc7e7bdebe64fbb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "01ad286bf2a1f39a9f99e5bace5018aa53ab7259da26d130f41c18f5b66f4224",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl is defending its software exposure amid private credit redemption pressures, directly implicating a tracked manager's credit franchise and sector risk.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:26+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNUg0d3ZaR3R1UUZqYmx5U3pYNTNDT0R0N2F1LW9POWxZaF84VHUyUy1sTUFfLUl0a08yVUxTeVM4SDk4bFZZSk9RZjdIazZkcEJyTEU5Q202emNFdEdIR29MNjJNNUJ4aWd2OW5MSFl0S0k4QU9IRnpzbzd4TlNoUnhWb0U0d1ZmcUZyUW5sS3N2NWNfbTFOcHZXTUFyc19hT3BCWWE5NzRwTWNrUDNkWmRn?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
+      "id": "2c26e48782d9",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T07:22:42+00:00",
+      "headline": {
+        "en": "Bain Capital Provides €130MM Credit Facility to Support JLL Partners’ Acquisition",
+        "zh": "贝恩资本提供1.3亿欧元信贷额度，支持JLL Partners的收购"
+      },
+      "summary": {
+        "en": "Bain Capital provided a €130 million credit facility. The financing supports an acquisition by JLL Partners.",
+        "zh": "贝恩资本提供了一笔1.3亿欧元的信贷额度。该融资用于支持JLL Partners的一项收购。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "ABF Journal",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNm85Qi1FbHNIWnFkVmZsSjVoZHp2elVaTzJVLVBNZy01SHdaaEMxVlNRVHMzdUllZFB0aC0xWUo2a1V6TkhsNUt6QzhfcGFNdUZlT0dYWmNSZENSZ3lTOVpId3lXSmE5QnZjekVnX2p3RkZKUWswZl9DcnhKN3p2RjNVQlhyNGI3czdfOTBsejNqekJTTmZQRmR3OEFDNDJlcHJrU1R4NmVVeGpH?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bain Capital Provides €130MM Credit Facility to Support JLL Partners’ Acquisition",
+      "source_fingerprint": "47ff46000c54770d52778a07d23a3f13ff72b0863292c1e5a4c3a618c169f02e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d997d693c08141508fd756bbf29dee6d1020766ea08df8038c4b2b183ed58f0d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New €130m private credit facility by Bain Capital Credit signals continued direct-lending deployment in Europe (ABF).",
+      "event_identity": {
+        "subject": "bain capital",
+        "action": "provides",
+        "object": "jll partners' acquisition",
+        "period": "€130mm credit facility",
+        "numbers": [
+          "€130"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:29+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNm85Qi1FbHNIWnFkVmZsSjVoZHp2elVaTzJVLVBNZy01SHdaaEMxVlNRVHMzdUllZFB0aC0xWUo2a1V6TkhsNUt6QzhfcGFNdUZlT0dYWmNSZENSZ3lTOVpId3lXSmE5QnZjekVnX2p3RkZKUWswZl9DcnhKN3p2RjNVQlhyNGI3czdfOTBsejNqekJTTmZQRmR3OEFDNDJlcHJrU1R4NmVVeGpH?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
+      "id": "a29c5ac23d7e",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T05:51:39+00:00",
+      "headline": {
+        "en": "La Trobe Private Credit Fund Raises September 2026 Distribution to 1.27 Cents Per Unit After RBA Rate Increase",
+        "zh": "La Trobe Private Credit Fund将2026年9月分派提高至每单位1.27澳分，此前澳洲央行加息"
+      },
+      "summary": {
+        "en": "La Trobe Private Credit Fund raised its September 2026 monthly distribution to 1.27 cents per unit following an RBA rate increase.",
+        "zh": "在澳洲央行加息后，La Trobe Private Credit Fund将其2026年9月的月度分派提高至每单位1.27澳分。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Kalkine",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOOUNkNTRjZjhCRlc1eG43LS1FZUxlNlBXTjl0OHJhdGlvRjZic2k0aEpqbDkwT0NJa2lsRVluZzhLVE9GaTBhS0VWUGVKeV83QWlhY1VaYmNQanV2amZhQ0tXVkJhNndNRTNsWWVibUxiMzF0OGpVYXFHczkycEtuWWRIMDR0UEtGaEVuX291R0NJTGFtS2JlbEhsdVY0alZnLVk1cDlzcThIbVpTZExBNkNjLXBWdFRkTlQtdW0yT294N0E5OHpXZ2QycWFyZXBvMTZ1SDRHVlpxNnBQU0xCY041MFotNnRMV2REVjBzQzBReElxdDB5SG5sTQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "La Trobe Private Credit Fund Monthly Profile: September 2026 Distribution Raised to 1.27 Cents Per Unit After RBA Rate Increase",
+      "source_fingerprint": "6e288108531ac1c2ac698f90642579464e533a3dc2506f05a9c1c4f027e14660",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7e5d26285253e585503262e73d840df18f2c066d56e47c68ce0371e85c90e0e4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A monthly distribution increase for an Australian private credit fund, indicating a sector-level economic development. However, no tracked manager or strategy is named and the evidence is headline-only, so linkage to covered strategies is indirect.",
+      "event_identity": {
+        "subject": "la trobe private credit fund",
+        "action": "distribution raised",
+        "object": "september 2026 distribution",
+        "period": "september 2026",
+        "numbers": [
+          "1.27",
+          "2026"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:35+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOOUNkNTRjZjhCRlc1eG43LS1FZUxlNlBXTjl0OHJhdGlvRjZic2k0aEpqbDkwT0NJa2lsRVluZzhLVE9GaTBhS0VWUGVKeV83QWlhY1VaYmNQanV2amZhQ0tXVkJhNndNRTNsWWVibUxiMzF0OGpVYXFHczkycEtuWWRIMDR0UEtGaEVuX291R0NJTGFtS2JlbEhsdVY0alZnLVk1cDlzcThIbVpTZExBNkNjLXBWdFRkTlQtdW0yT294N0E5OHpXZ2QycWFyZXBvMTZ1SDRHVlpxNnBQU0xCY041MFotNnRMV2REVjBzQzBReElxdDB5SG5sTQ?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
+      "id": "c30eca3719ea",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T04:49:49+00:00",
+      "headline": {
+        "en": "Blue Owl Private Credit Redemptions Are Falling, Bloomberg Says",
+        "zh": "彭博称Blue Owl私募信贷赎回正在下降"
+      },
+      "summary": {
+        "en": "Bloomberg reports that private credit redemptions are falling at Blue Owl.",
+        "zh": "彭博报道称，Blue Owl的私募信贷赎回正在下降。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORVhmZGVfX1FYcm1MdWxvd3FSTWlTbk50SVVUMkdmaEhxc0RIZ1FjWFE2eDU2TkFSR052TVdCc0czX3liWmZLVUxXUjhfb2VDVkl6WFZBMEtfNUNMbEpMWmJsY0F0ZDBqbTFXSV9Ud1VSMmNnOVRxNjNVVFBxdWFLN1BOazNjcUZmVE5RVEVvQ2hjY3VsVHc1NGZxbHNNeWJveUpIUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Watch Blue Owl: Private Credit Redemptions Are Falling",
+      "source_fingerprint": "bc313140034dadfa38540764f0924e6a9ed4acf4eef01b16d7298bbf5ebae830",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a57688c0af5e74150871dbc59bcdfb77b401f5afa27240ff78d44ee660acdfd3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A change in private credit redemption trends at a tracked manager bears directly on liquidity conditions for its credit vehicles.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORVhmZGVfX1FYcm1MdWxvd3FSTWlTbk50SVVUMkdmaEhxc0RIZ1FjWFE2eDU2TkFSR052TVdCc0czX3liWmZLVUxXUjhfb2VDVkl6WFZBMEtfNUNMbEpMWmJsY0F0ZDBqbTFXSV9Ud1VSMmNnOVRxNjNVVFBxdWFLN1BOazNjcUZmVE5RVEVvQ2hjY3VsVHc1NGZxbHNNeWJveUpIUQ?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
+      "id": "717daff18467",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T22:36:00+00:00",
+      "headline": {
+        "en": "Blue Owl Boosts Credit Facility to $3.225 Billion, Cuts Margins, Extends Maturity to 2031",
+        "zh": "Blue Owl将信贷额度提高至32.25亿美元，下调利差，并将到期日延长至2031年"
+      },
+      "summary": {
+        "en": "Blue Owl boosted a credit facility to $3.225 billion, cut margins and extended the facility's maturity to 2031.",
+        "zh": "Blue Owl将一项信贷额度提高至32.25亿美元，下调了利差，并将该额度的到期日延长至2031年。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Minichart",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZS1tUFZnUnE5Z1NxMWoyYWhuNFNQLV9sWDlhcUQ2akZCRGFlS3pKNFdTT01QYzBnQ0N0eHVYaG5vRlZEa1lud0lWS2JmY0JzaDA5QWV4Y2ViWVowN0ZkdkhxWnR0VFNKMzltNUJQSkFqSmNndl9mREp5V0ItRzIxWmkyV0JPMjlEYUVDQi1icy0yeURwOUtFV3VXYlRtbXdEZTZfejhraThPdzNhYmlHWHB5X25ydlQtX2dGWkhEdUZaZlhBX2c?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Boosts Credit Facility to $3.225 Billion, Cuts Margins, Extends Maturity to 2031",
+      "source_fingerprint": "83c63091f299d1e52b7ff5d1e20a2785179a0df069194964e4d884a0d4e18908",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "70b3767b5d2e072880cd97bf3f22d08b820da43ba57d5da176324df75b705e8f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A tracked manager increased and repriced its credit facility, a change in funding cost and liquidity conditions.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "boosts credit facility to $3.225 billion, cuts margins, extends maturity to 2031",
+        "object": "credit facility",
+        "period": "2031",
+        "numbers": [
+          "$3.225 Billion",
+          "2031"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZS1tUFZnUnE5Z1NxMWoyYWhuNFNQLV9sWDlhcUQ2akZCRGFlS3pKNFdTT01QYzBnQ0N0eHVYaG5vRlZEa1lud0lWS2JmY0JzaDA5QWV4Y2ViWVowN0ZkdkhxWnR0VFNKMzltNUJQSkFqSmNndl9mREp5V0ItRzIxWmkyV0JPMjlEYUVDQi1icy0yeURwOUtFV3VXYlRtbXdEZTZfejhraThPdzNhYmlHWHB5X25ydlQtX2dGWkhEdUZaZlhBX2c?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
       "id": "a6529b42d77b",
       "date": "2026-10-16",
       "published_at": "2026-10-15T22:25:41+00:00",
@@ -144,6 +506,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPWnVFcFNnSnNkcTdLMXdxN3pxdF9La2duRmdjRHh2TEF4US1SWTdobGFzdjNfd29QZFJaRVVOOVNjXy05R1pydUpSTmEzVW9kUkNDLTNUN1FlZEFVdVNYTDYyR1Y4aW5DcGNHbEJXT0hNdDFoMFNZVzlQU1E4WjNzUTNXZklvRTVWRnhobzNTX2ZCYmhWQTVvbWVUVHlwY3NhQWVpSzZyaVV2Y3l0cnpYemVpaVl5Y3FHRkNIMWlRRmo5cTdMSFFVZGNXT3U4U21rRUtVWk9Ed0E2T3hKc0NNWVJ6LUNfa190YUN4d0dIMGN5R3BUbUpZSFF5RUU?oc=5"
       },
       "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "6abcbe59fad6",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T21:06:34+00:00",
+      "headline": {
+        "en": "Private credit faces deployment squeeze as fundraising hits record",
+        "zh": "私募信贷面临投放压力，募资创下纪录"
+      },
+      "summary": {
+        "en": "Private credit is facing a deployment squeeze while fundraising has reached a record, according to a headline report.",
+        "zh": "据一则标题报道，私募信贷在募资创下纪录之际正面临投放压力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "The Mighty 790 KFGO",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdXdhS2NFV3dsRXRtQXpvSkVIVGJXVE1jLXFieW1tWTNQM2F1WDlHWHBzM1AzSUs3U0UybzkyeTBZZV9VSlVVWXFWTTJ5RFU0cEk1OXAtNk9JbGoxaHh5TVltZmNrcXNRU21WdHBfUFJUTnBVSjZ0czR0clg3U0cwdnZQWUdGOXlZdDFzaV9Sc1FZai1VbXlXZG0wVQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit faces deployment squeeze as fundraising hits record",
+      "source_fingerprint": "041c0d13f38dd486d1675ad0050474caa4939fb642cb04c9bbd79419ac0e9da5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "47f1a3273e3249eefb55363b71e742fd673ca6ad4e46a67186bdfb0aed6d25c2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Sector-level story on private credit fundraising and deployment conditions, which bears on the financing environment for tracked managers' credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdXdhS2NFV3dsRXRtQXpvSkVIVGJXVE1jLXFieW1tWTNQM2F1WDlHWHBzM1AzSUs3U0UybzkyeTBZZV9VSlVVWXFWTTJ5RFU0cEk1OXAtNk9JbGoxaHh5TVltZmNrcXNRU21WdHBfUFJUTnBVSjZ0czR0clg3U0cwdnZQWUdGOXlZdDFzaV9Sc1FZai1VbXlXZG0wVQ?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
     },
     {
       "id": "95a5247a4b0e",
@@ -428,6 +833,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZFdBV2pMeHBiVFVVMWVvYjRVMmxaNzBoVnZKWjVTTU9PWDM3bklmekVNZE1UYUt2SkxtcnNVSFlQcWVNeE1MY3VNc3YxdEdGRGJfeW9nVlU1c044QmVWQXBzUFpNSjRnUUVpeGtGbGZUVXFBYldnWE9KdlFqaTZKSEludTV1aHF6M2RxVEN2ME5fV1VjcmdtaA?oc=5"
       },
       "observed_at": "2026-10-16T04:02:30+00:00"
+    },
+    {
+      "id": "2709981daaa0",
+      "date": "2026-10-16",
+      "published_at": "2026-10-15T18:37:33+00:00",
+      "headline": {
+        "en": "Private credit faces deployment squeeze as fundraising hits record",
+        "zh": "私募信贷在募资创纪录之际面临投放压力"
+      },
+      "summary": {
+        "en": "Private credit is facing a deployment squeeze as fundraising reaches a record, according to Reuters.",
+        "zh": "据路透社报道，私募信贷在募资创下纪录之际正面临投放压力。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNnlmbDUwNW9GcV93UmVJbEtOVmpPQklsLWhmcF9jNWl1aUZuUm1tYTExOVY3MW04Zi1fRkRxekhTcFduVHBfWTJvTWtSSkZiMTA4R21MR2tuQ252ZmFrdXVfZW00RFpKZmM1VjFHRWJrNjNuOVBvMEVIUHJNbXl6SDhaZF95aGdZZ3pMWVVOMzQ5WlRGQzBhSXJCS0o0QTAwWGthbzJWRUt1eVpWaVYzb1RrWVNmVVhSQlVja3lOU3E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit faces deployment squeeze as fundraising hits record By Reuters",
+      "source_fingerprint": "1fbdd14381db92998f0e82ef4c48ff3582b6b70ce2a96f9428741d3ab9901a51",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3f1b524bfb12b62b59904ecf3391c8acdf5506af7f321bc8cfc10cf1c5b29bdc",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Record private credit fundraising alongside a deployment squeeze could signal pressure on deployment and returns for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:46+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNnlmbDUwNW9GcV93UmVJbEtOVmpPQklsLWhmcF9jNWl1aUZuUm1tYTExOVY3MW04Zi1fRkRxekhTcFduVHBfWTJvTWtSSkZiMTA4R21MR2tuQ252ZmFrdXVfZW00RFpKZmM1VjFHRWJrNjNuOVBvMEVIUHJNbXl6SDhaZF95aGdZZ3pMWVVOMzQ5WlRGQzBhSXJCS0o0QTAwWGthbzJWRUt1eVpWaVYzb1RrWVNmVVhSQlVja3lOU3E?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
     },
     {
       "id": "0ff9140be66c",

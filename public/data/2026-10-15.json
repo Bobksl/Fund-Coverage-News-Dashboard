@@ -45,6 +45,49 @@
       "observed_at": "2026-10-16T04:02:30+00:00"
     },
     {
+      "id": "ddf9115c3092",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:31:25+00:00",
+      "headline": {
+        "en": "Partners Group Confronts Redemption Wave With Fund Splits and Fresh Private Credit Push",
+        "zh": "Partners Group 面对赎回潮，采取基金分拆并加码私募信贷"
+      },
+      "summary": {
+        "en": "Partners Group is facing a wave of redemptions, according to a headline from ad-hoc-news.de.",
+        "zh": "据 ad-hoc-news.de 的一则标题，Partners Group 正面临赎回潮。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQX0RqLXdXNjZlM3N6c3U3S2pXZm5MNXo2ZUl1VlF2b2hpMU9lbUR4TzZkODI3NkUwVGVURnZGek1KeHpGdDNvTVdBZlBOYWRvZFAxeXpPMVFialBmSUJHZGJNRkZuUEQ5NHdQQVNBUXJ3OFFCc1k0RzlTMEs0Q0xpb2FrZVZuUlRhZ1BzRFlRWmY4enhHQlZFOFhMTWVnMW5nTE1aeDFPUExuemh4dU14aEV4a3BKdkVkdlNJNjlxd3hRRDZQUkcwWlhmTUl3QTd3LW1VYWtR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Confronts Redemption Wave With Fund Splits and Fresh Private Credit Push",
+      "source_fingerprint": "4365d0a98a8e95ccf4a4c23aad6ff77c570825348e2edb3d70ede1e813c1f6de",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c79b04e95802b7f35324cd455c08fa5f0676bd2ded02968b0f93fbdc9e6dadf1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline points to redemption pressure and a private credit expansion at a credit manager, which bears on liquidity and fundraising conditions for the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:08:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQX0RqLXdXNjZlM3N6c3U3S2pXZm5MNXo2ZUl1VlF2b2hpMU9lbUR4TzZkODI3NkUwVGVURnZGek1KeHpGdDNvTVdBZlBOYWRvZFAxeXpPMVFialBmSUJHZGJNRkZuUEQ5NHdQQVNBUXJ3OFFCc1k0RzlTMEs0Q0xpb2FrZVZuUlRhZ1BzRFlRWmY4enhHQlZFOFhMTWVnMW5nTE1aeDFPUExuemh4dU14aEV4a3BKdkVkdlNJNjlxd3hRRDZQUkcwWlhmTUl3QTd3LW1VYWtR?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
+    },
+    {
       "id": "13a5381de8db",
       "date": "2026-10-15",
       "published_at": "2026-10-15T10:00:00+00:00",
@@ -265,6 +308,50 @@
         "final_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPM0tCVjdTMnpFTDVNcXc3LXFoMUxiLW94X1l5TWRfQnNoMl9yTUEzMFVzUFJFdUt1V3BtS3BrQkpSeDRSYWtnMmtFT05sU2U3d21RRFVXeGYwYTktSGxXSUh4TGpyTVZNZHduTk9ESWFwa3czUkR2OVVtb1BrS0pPVHJ5bF9RcVVpSEZ2NmZWS3FveUJNMThGWWJiajVlT2xlNzBZbHVaU0RVZ180STVob05Ya1Vrc2MyOEtZanRxUkNpaHo2dDMwdFpBbw?oc=5"
       },
       "observed_at": "2026-10-15T13:12:17+00:00"
+    },
+    {
+      "id": "e1f8abd478a5",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T06:05:00+00:00",
+      "headline": {
+        "en": "Blue Owl's Stack Eyes $6 Billion Loan as Selloff Hits AI Sector",
+        "zh": "AI板块抛售之际，Blue Owl旗下Stack寻求60亿美元贷款"
+      },
+      "summary": {
+        "en": "Blue Owl's Stack is eyeing a $6 billion loan, according to a headline during a selloff in the AI sector.",
+        "zh": "在AI板块遭遇抛售之际，Blue Owl旗下Stack寻求60亿美元贷款。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUjZ4LUtLbkVIX2xSWlptNzA0Ymc0cFNOYUpqV3J1RVZDbHVfQTRETHpQS1h0QVlsSWFwaThHUnZ2LXlPd252VVlGY0lBZXNMTmNYZTRtLWxKVFhZMU9zUmVkYmhINkF2NVQ1d1h3UmxLV3locHpkVkt4NmdCTnFMbXZmLXRuSjRxLUtaQndn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl’s Stack Eyes $6 Billion Loan as Selloff Hits AI Sector",
+      "source_fingerprint": "65d8cd47c9adc4fd19e607667846ea7c4fdd5d30aff6e6c0ace6a684b43c53da",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "8499e0f2544c2f23e1c59e6ad9b0d75c38751c321d36e16e76d88f525ee35710",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $6bn loan reportedly sought by Blue Owl's Stack is a large financing event for a tracked manager's credit/software-linked exposure amid an AI-sector selloff.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-16T13:09:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUjZ4LUtLbkVIX2xSWlptNzA0Ymc0cFNOYUpqV3J1RVZDbHVfQTRETHpQS1h0QVlsSWFwaThHUnZ2LXlPd252VVlGY0lBZXNMTmNYZTRtLWxKVFhZMU9zUmVkYmhINkF2NVQ1d1h3UmxLV3locHpkVkt4NmdCTnFMbXZmLXRuSjRxLUtaQndn?oc=5"
+      },
+      "observed_at": "2026-10-16T13:06:09+00:00"
     },
     {
       "id": "2a76012d781b",
