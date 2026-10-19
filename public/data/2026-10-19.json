@@ -2,6 +2,230 @@
   "date": "2026-10-19",
   "items": [
     {
+      "id": "1c0240c0a8f1",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T12:41:54+00:00",
+      "headline": {
+        "en": "KKR exploring financing for Luzon Corridor projects",
+        "zh": "KKR 正探索为吕宋走廊项目提供融资"
+      },
+      "summary": {
+        "en": "KKR is exploring financing for Luzon Corridor projects, according to BusinessWorld Online.",
+        "zh": "据 BusinessWorld Online 报道，KKR 正探索为吕宋走廊项目提供融资。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "BusinessWorld Online",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOX0pJLVFlSUJuODEwYjB4QU1ZLThMRkw1bEZkZW5xQkdaNVU5TUxPZjJuU1ZrS1hqT3JNMkFXbkUxRHE2MHpjTi00VGFTWVdkdnI3TTRxUmZ0eVlvZFZmeHI2VEJObnBIUVVjdE1XT2ViY3dYbXlLUkRFRm5aVWRlNEFIeUVjZDhkUktDYzNmSWZMbWdNa2FFSXZWZko3RFU5Yi1ERVVn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR exploring financing for Luzon Corridor projects",
+      "source_fingerprint": "52501e488fb359413b76ed7f0bf7b254c2f04d09a7a2caf20775051f3617d0df",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1bb015312b4924cb992736a1fa44017ab1d99d1ce0f30a84ed9fa8dd9719fd6a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Signals potential KKR credit/financing deployment into Philippine infrastructure, relevant to KKR Credit activity and APAC deployment conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-19T15:26:24+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOX0pJLVFlSUJuODEwYjB4QU1ZLThMRkw1bEZkZW5xQkdaNVU5TUxPZjJuU1ZrS1hqT3JNMkFXbkUxRHE2MHpjTi00VGFTWVdkdnI3TTRxUmZ0eVlvZFZmeHI2VEJObnBIUVVjdE1XT2ViY3dYbXlLUkRFRm5aVWRlNEFIeUVjZDhkUktDYzNmSWZMbWdNa2FFSXZWZko3RFU5Yi1ERVVn?oc=5"
+      },
+      "observed_at": "2026-10-19T15:23:51+00:00"
+    },
+    {
+      "id": "a494151868cb",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T11:19:28+00:00",
+      "headline": {
+        "en": "Neuberger Berman takes mezzanine tranche in iwoca's €185m German credit line",
+        "zh": "Neuberger Berman 承接 iwoca 1.85 亿欧元德国信贷额度的夹层部分"
+      },
+      "summary": {
+        "en": "Digital lender iwoca added a new €185m credit line for the German market, with ABN Amro as senior lender and Neuberger Berman providing the mezzanine tranche. The refinancing lifts iwoca's total commitment in Germany to over €560m, as it targets a €1bn German loan book by 2028.",
+        "zh": "数字贷款机构 iwoca 为德国市场新增 1.85 亿欧元信贷额度，ABN Amro 担任优先贷款人，Neuberger Berman 提供夹层部分。此次再融资使 iwoca 在德国的总承诺额超过 5.6 亿欧元，其目标是在 2028 年前将德国贷款规模增至 10 亿欧元。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/19/iwoca-expands-german-financing-line/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Iwoca expands German financing line",
+      "source_fingerprint": "ff0bf2806c477f4a302965ef66d35a0df5c8f55952226fe0244ddb0c4bc4a4fd",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 329,
+            "end": 389
+          },
+          "linkage": {
+            "start": 324,
+            "end": 438
+          }
+        },
+        "source_sha256": "420ca82f8e9378aa66427367357428b7e4d3f0a0c37858e45168724c1b45765b",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Neuberger Berman provides mezzanine financing in a new German SME credit facility, an incremental deployment for a tracked manager.",
+          "zh": "Neuberger Berman 在一项新的德国中小企业信贷额度中提供夹层融资，属于受追踪管理人的增量投放。"
+        }
+      },
+      "relevance_reason": "Neuberger Berman provides the mezzanine tranche of a new €185m German SME credit facility for iwoca, a direct private-credit deployment by a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-19T15:26:29+00:00",
+        "sha256": "420ca82f8e9378aa66427367357428b7e4d3f0a0c37858e45168724c1b45765b",
+        "source_published_at": "2026-10-19T11:19:28+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/19/iwoca-expands-german-financing-line/"
+      },
+      "source_published_at": "2026-10-19T11:19:28+00:00",
+      "observed_at": "2026-10-19T15:23:51+00:00"
+    },
+    {
+      "id": "515f5478a5b7",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T11:00:17+00:00",
+      "headline": {
+        "en": "Nuveen Private Capital passes $100bn committed capital after three-year fundraising drive",
+        "zh": "Nuveen Private Capital 经过三年募资后承诺资本突破 1000 亿美元"
+      },
+      "summary": {
+        "en": "Nuveen Private Capital, which combines US lender Churchill Asset Management and European manager Arcmont Asset Management, said it has passed $100bn in committed capital, growing by more than half in three years. The platform said it invested $27bn over the past year across more than 400 middle-market deals.",
+        "zh": "由美国贷款机构 Churchill Asset Management 与欧洲管理机构 Arcmont Asset Management 组成的 Nuveen Private Capital 表示，其承诺资本已突破 1000 亿美元，三年内增长超过一半。该平台称，过去一年在 400 多笔中型市场交易中投资了 270 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/19/exclusive-nuveen-private-capital-hits-100bn-after-three-year-fundraising-drive/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Exclusive: Nuveen Private Capital hits $100bn after three-year fundraising drive",
+      "source_fingerprint": "8eb98bfd32f4338c741ff293b560038b6413bfb847f9bce78f298cbee86ccfb0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 7,
+            "end": 53
+          },
+          "linkage": {
+            "start": 750,
+            "end": 805
+          }
+        },
+        "source_sha256": "b5f8c2afd398c8418eb221b15545a6f09cccbe149b68844abd819366d61be3cf",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Nuveen Private Capital, combining Churchill and Arcmont, passing $100bn committed capital and deploying $27bn signals continued private credit fundraising and deployment momentum, bearing on competitive and capital-raising conditions for tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-19T15:26:32+00:00",
+        "sha256": "b5f8c2afd398c8418eb221b15545a6f09cccbe149b68844abd819366d61be3cf",
+        "source_published_at": "2026-10-19T11:00:17+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/19/exclusive-nuveen-private-capital-hits-100bn-after-three-year-fundraising-drive/"
+      },
+      "source_published_at": "2026-10-19T11:00:17+00:00",
+      "observed_at": "2026-10-19T15:23:51+00:00"
+    },
+    {
+      "id": "dd3ba3fc6f53",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T07:22:08+00:00",
+      "headline": {
+        "en": "Together prices £409m commercial mortgage-backed securitisation",
+        "zh": "Together为4.09亿英镑商业抵押贷款支持证券定价"
+      },
+      "summary": {
+        "en": "Together priced a £409m commercial mortgage-backed securitisation, according to the headline.",
+        "zh": "据标题消息，Together为一笔4.09亿英镑的商业抵押贷款支持证券完成了定价。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "mortgage"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "The Intermediary",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeERFWndYR3A3NXE1SDZtYWp5UGhrVXdGVXJwY2RyS0I1aTMwcnhZVVlOY1VqUURLR1Itd3dLM2lzSUxPdHl0ZDRyME01OGZXR2lyM1BTcy1PeHVNdHhiLVc0SFFwckotMW5nNDhxaDhDWWc3eks3Nm13QVZmbERpM3JvSUVZYXpIcXF2MkhndExsNjZDZG5qY3l4eDNxaWhndU1J?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Together prices £409m commercial mortgage-backed securitisation",
+      "source_fingerprint": "4886cf66a90ce56cfe0ea3afdfd6860f7c28efef7fa810927b8589ef7d5efd1c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b95a930f4a0f410668fa3ea08ee85671470b138ad42b570cf8567a2378f392d8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new £409m UK commercial mortgage-backed securitisation priced by a non-bank lender signals continued ABS issuance conditions that shape asset-based and mortgage credit origination capacity for tracked strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-19T15:26:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeERFWndYR3A3NXE1SDZtYWp5UGhrVXdGVXJwY2RyS0I1aTMwcnhZVVlOY1VqUURLR1Itd3dLM2lzSUxPdHl0ZDRyME01OGZXR2lyM1BTcy1PeHVNdHhiLVc0SFFwckotMW5nNDhxaDhDWWc3eks3Nm13QVZmbERpM3JvSUVZYXpIcXF2MkhndExsNjZDZG5qY3l4eDNxaWhndU1J?oc=5"
+      },
+      "observed_at": "2026-10-19T15:23:51+00:00"
+    },
+    {
       "id": "ab1b776ff403",
       "date": "2026-10-19",
       "published_at": "2026-10-19T04:03:28+00:00",
@@ -44,6 +268,58 @@
         "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVV83a1ZPNExOZVlxUS1KY0Q3M0EzV1lNUnNaSHk5ZXhNa3FVZFNQWms1ZUk3WVpad0tudVFqWWtLdnhGX2w3SnlCS0JWR1NhRWV5RlpPdno1Rmh2V1JDcG9HX2ExaUduSlhOT1NPYi1zNGdDckdYa0xjQzJMTFdlUDVqYVVPbHA0Wk5hcWhfbm1INUxzZUIya0M1XzZoQWw0?oc=5"
       },
       "observed_at": "2026-10-19T04:08:42+00:00"
+    },
+    {
+      "id": "a4792ec940d3",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T03:00:00+00:00",
+      "headline": {
+        "en": "VietJet faces worldwide asset freeze over $250 million aircraft leasing debt",
+        "zh": "越捷航空因2.5亿美元飞机租赁债务面临全球资产冻结"
+      },
+      "summary": {
+        "en": "VietJet faces a worldwide asset freeze tied to $250 million in aircraft leasing debt, according to AeroTime.",
+        "zh": "据AeroTime报道，越捷航空（VietJet）因2.5亿美元飞机租赁债务面临全球资产冻结。"
+      },
+      "gps": [],
+      "sectors": [
+        "aircraft_leasing"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "AeroTime",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZERGQ0gxTno4QzFRU2hHRDcyR2RsMzA0WHhERkxHLVpvVE05RVVteXd4b1czQVNlNTdadEg3TV95LUJ3X3EtSnBYRFR2SXY0dEotS21HVnVIRVdnR1A3N0g0R1dVc0hFWEIyVmlhQnA4ZVRWc2xQUUVmdGxMSTJEZG5YanJ5RjdjZ0Rjd2xxQmt0aWlZUFlrdnJSWms3bTFHOUFLYzE2dlVtVVVfMkJXVVJnQWjSAbQBQVVfeXFMTWRERkNIMU56OEMxUVNoR0Q3MkdkbDMwNFh4REZMRy1ab1RNOUVVbXl3eG9XM0FTZTU3WnRIN01feS1Cd19xLUpwWERUdkl2NHRKLUttR1Z1SEVXZ0dQNzdINEdXVXNIRVhCMlZpYUJwOGVUVnNsUFFFZnRsTEkyRGRuWGpyeUY3Y2dEY3dscUJrdGlpWVBZa3ZyUlprN20xRzlBS2MxNnZVbVVVXzJCV1VSZ0Fo?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "VietJet faces worldwide asset freeze over $250 million aircraft leasing debt",
+      "source_fingerprint": "a70b571a2837cee225fe25b24fb377613af222fd5ff0694a1198eab16009f003",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "51085a8b36a3d5ede439cd3b389ad59b0a13321b22580a4678f1bff8d67548d8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A worldwide asset freeze over $250m aircraft leasing debt signals rising credit risk in aircraft leasing, a tracked specialty lending sub-sector.",
+      "event_identity": {
+        "subject": "vietjet",
+        "action": "faces worldwide asset freeze",
+        "object": "aircraft leasing debt",
+        "period": "$250 million",
+        "numbers": [
+          "$250 million"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-19T15:26:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZERGQ0gxTno4QzFRU2hHRDcyR2RsMzA0WHhERkxHLVpvVE05RVVteXd4b1czQVNlNTdadEg3TV95LUJ3X3EtSnBYRFR2SXY0dEotS21HVnVIRVdnR1A3N0g0R1dVc0hFWEIyVmlhQnA4ZVRWc2xQUUVmdGxMSTJEZG5YanJ5RjdjZ0Rjd2xxQmt0aWlZUFlrdnJSWms3bTFHOUFLYzE2dlVtVVVfMkJXVVJnQWjSAbQBQVVfeXFMTWRERkNIMU56OEMxUVNoR0Q3MkdkbDMwNFh4REZMRy1ab1RNOUVVbXl3eG9XM0FTZTU3WnRIN01feS1Cd19xLUpwWERUdkl2NHRKLUttR1Z1SEVXZ0dQNzdINEdXVXNIRVhCMlZpYUJwOGVUVnNsUFFFZnRsTEkyRGRuWGpyeUY3Y2dEY3dscUJrdGlpWVBZa3ZyUlprN20xRzlBS2MxNnZVbVVVXzJCV1VSZ0Fo?oc=5"
+      },
+      "observed_at": "2026-10-19T15:23:51+00:00"
     }
   ]
 }
