@@ -2,6 +2,145 @@
   "date": "2026-10-16",
   "items": [
     {
+      "id": "50bbc9ade95a",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T15:48:23+00:00",
+      "headline": {
+        "en": "Goldman Sachs and Phoenix Financial partner in $4bn private credit push",
+        "zh": "高盛与Phoenix Financial合作推进40亿美元私募信贷布局"
+      },
+      "summary": {
+        "en": "Goldman Sachs has entered a strategic partnership with Israeli asset manager Phoenix Financial, which plans to deploy more than $4bn across global private credit opportunities. The firms will collaborate on corporate credit, asset-backed finance, real estate and infrastructure debt, with Phoenix gaining access to Goldman Sachs Alternatives' private investment-grade credit, senior direct lending and opportunistic credit strategies. Goldman Sachs Alternatives' private credit platform managed approximately $230bn as of 30 June 2026, while Phoenix oversees more than $220bn in assets under management.",
+        "zh": "高盛与以色列资产管理公司Phoenix Financial达成战略合作，后者计划在全球私募信贷机会中部署超过40亿美元。双方将在企业信贷、资产支持融资、房地产和基础设施债务领域开展投资合作，Phoenix将获得高盛另类投资在私募投资级信贷、优先直接贷款和机会型信贷策略方面的全球投资能力。截至2026年6月30日，高盛另类投资私募信贷平台管理资产约2300亿美元，Phoenix管理的资产规模超过2200亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance",
+        "real_estate"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/16/goldman-sachs-and-phoenix-financial-partner-in-4bn-private-credit-push/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Goldman Sachs and Phoenix Financial partner in $4bn private credit push",
+      "source_fingerprint": "6ccac4fb5a684cb26ebb7c054fd864dae762eb9d5982d3bc3be531915898a620",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 99,
+            "end": 129
+          },
+          "linkage": {
+            "start": 422,
+            "end": 464
+          }
+        },
+        "source_sha256": "eb39a26b0b30a47e7e05d74abb14b073013214b49e64a9096b948611deea9525",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A new $4bn-plus private credit deployment partnership between Goldman Sachs and Phoenix Financial signals incremental capital formation for private credit and asset-backed finance, with no tracked manager directly involved.",
+          "zh": "高盛与Phoenix Financial达成的逾40亿美元私募信贷部署合作，表明私募信贷和资产支持融资领域有新增资本形成，但不涉及所追踪的管理人。"
+        }
+      },
+      "relevance_reason": "A large asset manager committing to deploy more than $4bn into global private credit via a partnership signals capital formation and competitive conditions for direct lending and asset-based strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-19T04:11:34+00:00",
+        "sha256": "eb39a26b0b30a47e7e05d74abb14b073013214b49e64a9096b948611deea9525",
+        "source_published_at": "2026-10-16T15:48:23+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/16/goldman-sachs-and-phoenix-financial-partner-in-4bn-private-credit-push/"
+      },
+      "source_published_at": "2026-10-16T15:48:23+00:00",
+      "observed_at": "2026-10-19T04:08:42+00:00"
+    },
+    {
+      "id": "8ecc252c7094",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T14:30:10+00:00",
+      "headline": {
+        "en": "Fitch warns of mounting pressure on US BDC loan quality into 2027",
+        "zh": "惠誉警告美国BDC贷款质量压力将持续至2027年"
+      },
+      "summary": {
+        "en": "Fitch Ratings expects continued pressure on US business development company asset quality into 2027 amid higher borrowing costs and a competitive lending environment. In its review of eight US BDCs, non-accrual investments averaged 2.7 per cent of debt investments at cost in the second quarter of 2026 versus 2.5 per cent across Fitch-rated BDCs, with rates ranging from zero to 9.4 per cent. Net investment income fell to an annualised 4.8 per cent of average portfolios at cost in the first half of 2026 from 5.4 per cent in 2025, and dividend coverage slipped to 103.5 per cent from 105.9 per cent.",
+        "zh": "惠誉评级预计，在借贷成本上升和竞争激烈的放贷环境下，美国业务发展公司（BDC）的资产质量压力将持续至2027年。惠誉对八家美国BDC的评估显示，2026年第二季度非应计投资平均占按成本计债务投资的2.7%，而惠誉评级的全部BDC为2.5%，非应计率区间为零至9.4%。2026年上半年净投资收益降至按成本计平均组合的年化4.8%，2025年为5.4%；股息覆盖率从2025年的105.9%降至103.5%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/16/fitch-warns-of-mounting-pressure-on-us-bdc-loan-quality-into-2027/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fitch warns of mounting pressure on US BDC loan quality into 2027",
+      "source_fingerprint": "e42d899c5c2e3dd6df0fd5413204f15b37ac670da70104daaaa8333278e8424c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 109,
+            "end": 174
+          },
+          "linkage": {
+            "start": 604,
+            "end": 677
+          },
+          "current_adverse": {
+            "start": 834,
+            "end": 893
+          }
+        },
+        "source_sha256": "2a9b79e6ca79f9ce0c7595eb43f6d0fb0f21b012b5b397bce4d3085ca2118590",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: substantial; linkage: sector.",
+          "zh": "已评估严重程度：重大；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A rating agency flags rising BDC non-accruals, weaker NII and thinner dividend coverage in private credit portfolios, a sector-level credit signal for BDC-based lending strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-19T04:11:40+00:00",
+        "sha256": "2a9b79e6ca79f9ce0c7595eb43f6d0fb0f21b012b5b397bce4d3085ca2118590",
+        "source_published_at": "2026-10-16T14:30:10+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/16/fitch-warns-of-mounting-pressure-on-us-bdc-loan-quality-into-2027/"
+      },
+      "source_published_at": "2026-10-16T14:30:10+00:00",
+      "observed_at": "2026-10-19T04:08:42+00:00"
+    },
+    {
       "id": "3f686662ed48",
       "date": "2026-10-16",
       "published_at": "2026-10-16T12:26:30+00:00",

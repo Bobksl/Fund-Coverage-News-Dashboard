@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-19",
+  "items": [
+    {
+      "id": "ab1b776ff403",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T04:03:28+00:00",
+      "headline": {
+        "en": "High financing costs threaten commercial real estate and construction",
+        "zh": "高企的融资成本威胁商业地产与建筑业"
+      },
+      "summary": {
+        "en": "High financing costs are threatening commercial real estate and construction, according to a headline from The Guardian Nigeria News.",
+        "zh": "据《卫报尼日利亚新闻》的一则标题，高企的融资成本正威胁商业地产与建筑业。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "The Guardian Nigeria News",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVV83a1ZPNExOZVlxUS1KY0Q3M0EzV1lNUnNaSHk5ZXhNa3FVZFNQWms1ZUk3WVpad0tudVFqWWtLdnhGX2w3SnlCS0JWR1NhRWV5RlpPdno1Rmh2V1JDcG9HX2ExaUduSlhOT1NPYi1zNGdDckdYa0xjQzJMTFdlUDVqYVVPbHA0Wk5hcWhfbm1INUxzZUIya0M1XzZoQWw0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "How high financing costs threaten commercial real estate, construction",
+      "source_fingerprint": "e7cace2b3f11a57fb5dce26e12da7ba7e76624d0bf4d9803db22cc7c25578da9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "8014ddb3f5c631cae23fc71e88807bb084ac0fdc354282f849d46fd819d9d9c4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising financing costs for commercial real estate and construction could affect returns and deployment for real estate credit and asset-backed lending sub-sectors, including tracked residential/mortgage credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-19T04:11:14+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVV83a1ZPNExOZVlxUS1KY0Q3M0EzV1lNUnNaSHk5ZXhNa3FVZFNQWms1ZUk3WVpad0tudVFqWWtLdnhGX2w3SnlCS0JWR1NhRWV5RlpPdno1Rmh2V1JDcG9HX2ExaUduSlhOT1NPYi1zNGdDckdYa0xjQzJMTFdlUDVqYVVPbHA0Wk5hcWhfbm1INUxzZUIya0M1XzZoQWw0?oc=5"
+      },
+      "observed_at": "2026-10-19T04:08:42+00:00"
+    }
+  ]
+}
