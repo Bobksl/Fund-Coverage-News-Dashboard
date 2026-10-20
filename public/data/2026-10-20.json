@@ -1,0 +1,345 @@
+{
+  "date": "2026-10-20",
+  "items": [
+    {
+      "id": "26fa2e75f379",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T20:44:46+00:00",
+      "headline": {
+        "en": "CRED iQ: 23% of Maturing Multifamily Loans Need New Equity to Refinance",
+        "zh": "CRED iQ：23%的到期多户住宅贷款需注入新资本才能再融资"
+      },
+      "summary": {
+        "en": "CRED iQ found that 23 percent of multifamily loans maturing between October 2026 and December 2028, and 31 percent of the balance, could not refinance without new equity, requiring $6.8 billion. The $136 billion analyzed covers Fannie Mae, Freddie Mac and CMBS loans. September's SOFR increase added $846 million to the gap.",
+        "zh": "CRED iQ发现，2026年10月至2028年12月间到期的多户住宅贷款中，23%的贷款数量及31%的贷款余额若无新资本注入将无法再融资，所需资金为68亿美元。此次分析覆盖房利美、房地美及CMBS贷款共计1,360亿美元。9月SOFR上升使资金缺口增加8.46亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/multifamily-debt-refinances/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "A Third of Maturing Multifamily Debt Needs Cash Infusion to Refinance",
+      "source_fingerprint": "71b5a403240d48c73e737db3fee50b9caa1afd42ecf9064826e5c5c91ad5a116",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "40b9020e7ee9636d31170f68576b22d755814b51aa9fe93cc2c3f6b450ab567c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Multifamily refinancing shortfalls and equity needs affect residential and real estate credit managers' exposures and asset performance.",
+      "event_identity": {
+        "subject": "cred iq",
+        "action": "resized",
+        "object": "every multifamily loan in fannie mae, freddie mac and commercial mortgage-backed securities deals",
+        "period": "october 2026 and december 2028",
+        "numbers": [
+          "$1 billion",
+          "$136 billion",
+          "$15.5 million",
+          "$183 million",
+          "$246 million",
+          "$25,000",
+          "$4 billion",
+          "$6.8 billion",
+          "$63 million",
+          "$846 million",
+          "1.25",
+          "15",
+          "17",
+          "178",
+          "1929",
+          "2",
+          "20",
+          "2016",
+          "2017",
+          "2018",
+          "2021",
+          "2022",
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "23",
+          "25",
+          "3",
+          "3.35",
+          "3.62",
+          "3.85",
+          "31",
+          "39",
+          "4.01",
+          "46",
+          "54",
+          "57",
+          "767",
+          "94"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-20T04:23:32+00:00",
+        "sha256": "40b9020e7ee9636d31170f68576b22d755814b51aa9fe93cc2c3f6b450ab567c",
+        "source_published_at": "2026-10-19T16:44:46-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/multifamily-debt-refinances/"
+      },
+      "source_published_at": "2026-10-19T16:44:46-04:00",
+      "observed_at": "2026-10-20T04:20:51+00:00"
+    },
+    {
+      "id": "4e183a1d9c96",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T20:35:31+00:00",
+      "headline": {
+        "en": "MB Private lands NZ$150M Westpac line to launch NZ private credit push",
+        "zh": "MB Private 获得 Westpac 1.5 亿新西兰元信贷额度，启动新西兰私募信贷业务"
+      },
+      "summary": {
+        "en": "MB Private secured a NZ$150 million Westpac facility to launch a New Zealand private credit push, according to the headline.",
+        "zh": "据标题报道，MB Private 获得 Westpac 1.5 亿新西兰元信贷额度，用于启动新西兰私募信贷业务。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaXZtZnNfal9fWGR3bE11cGZZcTVqbzRxQUV3SXpMa0cwZ01jWTZSNUc2bTJmNF9lbUlpd0I4elVKV0dkMmdGWmg1XzdJRjlYeHAxb0wyYTlLclBwWTB6b2tFckpJRnNzWTFDb3dUcm5sNXd4VnVfeHduQ3VqTExWenRiWEZPM2N2OGtvWkpWVXJLTU1NMWpDN255akx2eUdjYnV1QkROaw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "MB Private lands NZ$150M Westpac line to launch NZ private credit push",
+      "source_fingerprint": "b15817a64119ea7ef5a2027ac912d0c161a362126028c1a313c35ed7d440e253",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fb0534a684384fd48b10f67a1b3824cc1c12cde48873a7cb17a22b7b34386531",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new NZ$150m bank facility backing a new private credit manager signals bank financing and competitive capacity entering the NZ private credit sub-sector.",
+      "event_identity": {
+        "subject": "mb private",
+        "action": "lands",
+        "object": "nz$150m westpac line",
+        "period": "nz$150m westpac line",
+        "numbers": [
+          "$150"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-20T04:23:35+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaXZtZnNfal9fWGR3bE11cGZZcTVqbzRxQUV3SXpMa0cwZ01jWTZSNUc2bTJmNF9lbUlpd0I4elVKV0dkMmdGWmg1XzdJRjlYeHAxb0wyYTlLclBwWTB6b2tFckpJRnNzWTFDb3dUcm5sNXd4VnVfeHduQ3VqTExWenRiWEZPM2N2OGtvWkpWVXJLTU1NMWpDN255akx2eUdjYnV1QkROaw?oc=5"
+      },
+      "observed_at": "2026-10-20T04:20:51+00:00"
+    },
+    {
+      "id": "3a42dc1a225f",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T20:20:39+00:00",
+      "headline": {
+        "en": "Neuberger Berman CLO wins AAAsf rating as leveraged loan demand supports issuance",
+        "zh": "Neuberger Berman CLO 获 AAAsf 评级，杠杆贷款需求支撑发行"
+      },
+      "summary": {
+        "en": "A Neuberger Berman CLO received an AAAsf rating, according to Traders Union. The report ties the rating to leveraged loan demand supporting CLO issuance.",
+        "zh": "据 Traders Union 报道，一只 Neuberger Berman CLO 获得 AAAsf 评级。报道将该评级与支撑 CLO 发行的杠杆贷款需求联系起来。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVkZVSTFzX3pHNFlrTGVyMm4yZEl2N2RRY0dMTU12Tnd1UGk0Wmw5TGp1MVQta3JDQ1RUel9JM0dLQW94aTV4aklnLWE5N0Z3VzEydnYzWGVzQ211OGRIbHZSMlJmNjV0b09Nay13R2xLTmFnVWdadjZRenBBYUYzSzkwXzRPdldkdVRhSGhFYkxhQlBV?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Neuberger Berman CLO wins AAAsf rating as leveraged loan demand supports issuance",
+      "source_fingerprint": "f8ace8cc662a862f3040b61cf131bcbfa133a5d1774e3b42236db59d001f82fb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2714da8a3044c8f91180c31279367d8ac45773ab458c21c3e1987c4948a0b1d8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A Neuberger Berman CLO receiving an AAAsf rating signals continued CLO issuance activity, relevant to NB's credit platform and the CLO sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-20T04:23:37+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVkZVSTFzX3pHNFlrTGVyMm4yZEl2N2RRY0dMTU12Tnd1UGk0Wmw5TGp1MVQta3JDQ1RUel9JM0dLQW94aTV4aklnLWE5N0Z3VzEydnYzWGVzQ211OGRIbHZSMlJmNjV0b09Nay13R2xLTmFnVWdadjZRenBBYUYzSzkwXzRPdldkdVRhSGhFYkxhQlBV?oc=5"
+      },
+      "observed_at": "2026-10-20T04:20:51+00:00"
+    },
+    {
+      "id": "02c2bf8955ca",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T18:20:42+00:00",
+      "headline": {
+        "en": "CIFC Funding 2024-IV reset transaction receives Fitch expected ratings",
+        "zh": "CIFC Funding 2024-IV 重置交易获得惠誉预期评级"
+      },
+      "summary": {
+        "en": "Fitch assigned expected ratings to the reset transaction for CIFC Funding 2024-IV. CIFC is the manager associated with the vehicle in the headline.",
+        "zh": "惠誉对 CIFC Funding 2024-IV 的重置交易授予预期评级。根据标题，CIFC 是相关载体的管理人。"
+      },
+      "gps": [
+        "cifc"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNXBDREhPZkVXaU5wOVc2NXBNX05RN2VNb1lqQTFyaUVmWmt1M01vLWhWTXFhVGc0MWxaS2NmSFFjYW03TWJvZ0tXc1NSSE42MW44S3UyTkItSF9yMlhKRGJ5LWdwQUZHRDNrcmNzdmVaNkFsVXRJaHRtbndUV0I1THY0a09Ud3k2WldyRVlFQWJYamVhOU90Xy1peVV6UQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CIFC Funding 2024-IV reset transaction receives Fitch expected ratings",
+      "source_fingerprint": "4760cf6d6ca587ed375fd9f0b7cfb10009cdeeca0146a195a52e50a7627ac47c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "93b2a8f865bf0e1a3e6fe5d453874ca9b49a28379f129fca5bc91941ae3901a7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A CLO reset for a tracked CLO manager changes financing terms and liability costs in the tracked CLO sub-sector.",
+      "event_identity": {
+        "subject": "cifc funding 2024-iv",
+        "action": "reset transaction",
+        "object": "fitch expected ratings",
+        "period": "reset transaction",
+        "numbers": [
+          "2024"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-20T04:23:42+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNXBDREhPZkVXaU5wOVc2NXBNX05RN2VNb1lqQTFyaUVmWmt1M01vLWhWTXFhVGc0MWxaS2NmSFFjYW03TWJvZ0tXc1NSSE42MW44S3UyTkItSF9yMlhKRGJ5LWdwQUZHRDNrcmNzdmVaNkFsVXRJaHRtbndUV0I1THY0a09Ud3k2WldyRVlFQWJYamVhOU90Xy1peVV6UQ?oc=5"
+      },
+      "observed_at": "2026-10-20T04:20:51+00:00"
+    },
+    {
+      "id": "08195215b063",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T17:45:00+00:00",
+      "headline": {
+        "en": "Barclays defends £15 billion private credit book after reported BoE scrutiny",
+        "zh": "巴克莱在据报道英国央行审查后为其150亿英镑私人信贷账簿辩护"
+      },
+      "summary": {
+        "en": "Barclays said its £15 billion ($19.97 billion) private credit exposure was treated in line with accounting and regulatory capital requirements, after the Financial Times reported the Bank of England was examining whether its traders had understated the risk. Barclays said the mark-to-market value of its exposure to loan total return swaps linked to private credit assets was about £300 million, based on roughly £1.5 billion of underlying notional assets, and that the vast majority of its private credit exposure sits in the banking book.",
+        "zh": "巴克莱表示，其150亿英镑（199.7亿美元）的私人信贷敞口已按会计准则和监管资本要求处理；此前《金融时报》报道称，英国央行正在审查其交易员是否低估了相关风险。巴克莱称，其与私人信贷资产挂钩的贷款总收益互换敞口的市值约为3亿英镑，对应约15亿英镑的标的资产名义金额，并称其私人信贷敞口绝大部分位于银行账簿。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "aol.com",
+        "url": "https://www.aol.com/articles/barclays-defends-15-billion-private-170012000.html"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Barclays defends £15 billion private credit book after reported BoE scrutiny",
+      "source_fingerprint": "32a2032f8edd90b46687b3d0f8a0a3bf23cede15b8599d25107e01368df479d8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "8026d5e8186ec1cc6ade60d9cd4a780e91c20bf8117b0551a593a0a6b3e073b3",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "Reported BoE scrutiny of Barclays' private credit risk treatment could shift regulatory and valuation conditions for private credit exposure more broadly.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-20T04:23:46+00:00",
+        "sha256": "8026d5e8186ec1cc6ade60d9cd4a780e91c20bf8117b0551a593a0a6b3e073b3",
+        "source_published_at": "2026-10-19T17:00:12+00:00",
+        "final_url": "https://www.aol.com/articles/barclays-defends-15-billion-private-170012000.html"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-10-19T17:00:12+00:00",
+      "observed_at": "2026-10-20T04:20:51+00:00"
+    },
+    {
+      "id": "f9565d036c4a",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T17:23:00+00:00",
+      "headline": {
+        "en": "Anchor Loans Provides $58.5 Million in Construction Financing for Two Build-to-Rent Communities in Deltona, Florida",
+        "zh": "Anchor Loans 为佛罗里达州德尔托纳两个建租社区提供5850万美元建设融资"
+      },
+      "summary": {
+        "en": "Anchor Loans provided $58.5 million in vertical construction financing for two build-to-rent communities in Deltona, Florida.",
+        "zh": "Anchor Loans 为佛罗里达州德尔托纳的两个建租社区提供了5850万美元的垂直建设融资。所提供摘录中没有其他细节。"
+      },
+      "gps": [
+        "pretium"
+      ],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "PR Newswire",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNS3hHV2xxa29yajl2ci00RWZzOWZraHl6WGNZNlNFV3R5MnVnRFRFeW12a3NEWWotM2FrbU84RnNhX0ZzYmRKTVlEblRUclFfeWxPal93UEN2ckt1c0hFSU9nWjhDSUdzd2RnOWdoVFhlZnlUTmJreVVmd09aMElFMVVrRUtKdU9HSnJTX0Z2UHJpTDRHQmRQbXBGTms0T1I3cldMYlZHLWhpMkExM0xFTjFPM3BoR1FJYzM0OTR2eXdlMl9oUHZwcFIzZktKUTd0V3Etd3lrZ1FrNUJwVEZxczJiZXY1SkVZSnc5SHFTSXV0U29QX2FFZjhBTG0yQWhqX0tnd3JUUkNxUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Anchor Loans Provides $58.5 Million in Vertical Construction Financing for Two Build-to-Rent Communities in Deltona, Florida",
+      "source_fingerprint": "8fa384db5a266b8b1d1b0b79e4dfefea56af5faaa4c6e7f83333c62518d1983d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "56b54f2f80cb6f5708c0946c3fdc0e1335735291bf075e3d603243e2f39e60b8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $58.5 million construction financing for build-to-rent communities by Anchor Loans, a Pretium mortgage platform, signals continued residential credit deployment.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-20T04:23:49+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNS3hHV2xxa29yajl2ci00RWZzOWZraHl6WGNZNlNFV3R5MnVnRFRFeW12a3NEWWotM2FrbU84RnNhX0ZzYmRKTVlEblRUclFfeWxPal93UEN2ckt1c0hFSU9nWjhDSUdzd2RnOWdoVFhlZnlUTmJreVVmd09aMElFMVVrRUtKdU9HSnJTX0Z2UHJpTDRHQmRQbXBGTms0T1I3cldMYlZHLWhpMkExM0xFTjFPM3BoR1FJYzM0OTR2eXdlMl9oUHZwcFIzZktKUTd0V3Etd3lrZ1FrNUJwVEZxczJiZXY1SkVZSnc5SHFTSXV0U29QX2FFZjhBTG0yQWhqX0tnd3JUUkNxUQ?oc=5"
+      },
+      "observed_at": "2026-10-20T04:20:51+00:00"
+    }
+  ]
+}

@@ -2,6 +2,58 @@
   "date": "2026-10-19",
   "items": [
     {
+      "id": "ae060f1c1170",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T15:48:41+00:00",
+      "headline": {
+        "en": "CIC Private Debt prices Victory Street CLO III at €403.75m",
+        "zh": "CIC Private Debt 将 Victory Street CLO III 定价为 4.0375 亿欧元"
+      },
+      "summary": {
+        "en": "CIC Private Debt priced its Victory Street CLO III at €403.75m, according to the headline.",
+        "zh": "据标题消息，CIC Private Debt 将其 Victory Street CLO III 定价为 4.0375 亿欧元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPd0l1WG9aU0I4RjdYRzdVQnRzOHJudzlOTHhLMUNKUGNydlVQOVowRVdYV2RrdVhuR2pubk50N3ZrN3NzWEFxOEQyeWhadDBwNHhSOXpNWUhMVllEaUVMMFJ2eTRkZXRfWmNtVDhKWG53eVp4N3g0SjI4V2ktVzlLS0Z2ZWhzWVh1SXVZc2pHTDAyZ2o0MnZSRjAxTHdfejRBOHhuSGphYXFKTjdh?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CIC Private Debt prices Victory Street CLO III at €403.75m",
+      "source_fingerprint": "e736f01668582910e33a2d48d2623d7d9b97014cb0f12181bbce9b046d67cf61",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d3b0650b1cb765200577c5212796b241934490a96c9885968e963f030eecd085",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new European CLO pricing by CIC Private Debt signals continued CLO issuance and deployment conditions in a tracked sub-sector, though no tracked manager is named.",
+      "event_identity": {
+        "subject": "cic private debt",
+        "action": "prices",
+        "object": "victory street clo iii",
+        "period": "€403.75m",
+        "numbers": [
+          "€403.75"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-20T04:23:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPd0l1WG9aU0I4RjdYRzdVQnRzOHJudzlOTHhLMUNKUGNydlVQOVowRVdYV2RrdVhuR2pubk50N3ZrN3NzWEFxOEQyeWhadDBwNHhSOXpNWUhMVllEaUVMMFJ2eTRkZXRfWmNtVDhKWG53eVp4N3g0SjI4V2ktVzlLS0Z2ZWhzWVh1SXVZc2pHTDAyZ2o0MnZSRjAxTHdfejRBOHhuSGphYXFKTjdh?oc=5"
+      },
+      "observed_at": "2026-10-20T04:20:51+00:00"
+    },
+    {
       "id": "1c0240c0a8f1",
       "date": "2026-10-19",
       "published_at": "2026-10-19T12:41:54+00:00",
