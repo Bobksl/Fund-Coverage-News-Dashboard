@@ -2,6 +2,72 @@
   "date": "2026-10-20",
   "items": [
     {
+      "id": "a37b578b0505",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T08:00:13+00:00",
+      "headline": {
+        "en": "Moody's: German insurers increase private credit allocations",
+        "zh": "穆迪：德国保险公司加大私募信贷配置"
+      },
+      "summary": {
+        "en": "Moody's analysis says German insurers are likely to keep raising private credit exposure, with illiquid assets growing to 19.4 per cent in 2025 from 15.8 per cent in 2019. Private credit accounted for around 9.3 per cent of German insurers' total invested assets at end-2024, versus a European average of 7.5 per cent. Moody's notes BaFin has increased scrutiny of insurers with significant private asset exposure.",
+        "zh": "穆迪分析称，德国保险公司可能继续提高私募信贷敞口，非流动资产占比从2019年的15.8%升至2025年的19.4%。截至2024年底，私募信贷约占德国保险公司总投资资产的9.3%，而欧洲平均为7.5%。穆迪指出，BaFin已加强对持有大量私募资产敞口的保险公司的审查。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/20/moodys-german-insurers-pile-into-private-credit/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Moody’s: German insurers pile into private credit",
+      "source_fingerprint": "f38bd31ebd6fe4afb6c6ef792dbb37bef441cd9cc1a2da7cb7335dd95aa82403",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1415,
+            "end": 1516
+          },
+          "linkage": {
+            "start": 626,
+            "end": 708
+          }
+        },
+        "source_sha256": "44d45b513a66b8cbae539f27d5e2757b4a81f75864d271fec3d08338230cb968",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Moody's analysis signals rising German insurer allocations to private credit and tighter BaFin scrutiny, affecting demand and oversight conditions for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-20T13:28:34+00:00",
+        "sha256": "44d45b513a66b8cbae539f27d5e2757b4a81f75864d271fec3d08338230cb968",
+        "source_published_at": "2026-10-20T08:00:13+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/20/moodys-german-insurers-pile-into-private-credit/"
+      },
+      "source_published_at": "2026-10-20T08:00:13+00:00",
+      "observed_at": "2026-10-20T13:26:28+00:00"
+    },
+    {
       "id": "26fa2e75f379",
       "date": "2026-10-20",
       "published_at": "2026-10-19T20:44:46+00:00",
