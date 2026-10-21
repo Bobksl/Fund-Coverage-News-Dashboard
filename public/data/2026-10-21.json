@@ -2,6 +2,99 @@
   "date": "2026-10-21",
   "items": [
     {
+      "id": "537695a0775d",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T13:28:42+00:00",
+      "headline": {
+        "en": "Apollo Debt Solutions BDC reports 9.06% Class I distribution rate, $23.78 NAV at September 30",
+        "zh": "Apollo Debt Solutions BDC公布：截至9月30日，Class I份额分配率9.06%，每股净资产23.78美元"
+      },
+      "summary": {
+        "en": "Apollo Debt Solutions BDC disclosed in an 8-K that its Class I shares generated a 9.06% annualized distribution rate in September 2026, with three-month and one-year total net returns of 2.06% and 6.05% as of September 30, 2026. Annualized inception-to-date total net return was 8.13%, and net asset value per share was $23.78 as of September 30, 2026. The fund described a third-quarter shift in market conditions, including a 25-basis-point Fed rate hike in September and a 10-year Treasury yield of about 5.3%.",
+        "zh": "Apollo Debt Solutions BDC在8-K中披露，其Class I份额在2026年9月实现9.06%的年化分配率；截至2026年9月30日，三个月和一年总净回报分别为2.06%和6.05%。自成立以来的年化总净回报为8.13%，截至2026年9月30日的每股净资产为23.78美元。该基金称第三季度市场环境出现明显变化，包括美联储9月加息25个基点和10年期美国国债收益率约5.3%。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Apollo Debt Solutions BDC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1837532/000119312526427340/0001193125-26-427340-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Debt Solutions BDC files 8-K: item 7.01",
+      "source_fingerprint": "b6b608e5fbf770aa96ed9b18e2d3cf881f7ca8b475886b3d8f5b9baddb6741c4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 411,
+            "end": 463
+          },
+          "linkage": {
+            "start": 175,
+            "end": 222
+          }
+        },
+        "source_sha256": "073b30dcd9642fd0d090843913d096673cb62fb981c5f3a697aaf75f05a7d4ac",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "Quarterly BDC performance disclosure with new NAV, distribution and return figures; no credit event, but it updates the economics of Apollo's retail credit vehicle.",
+          "zh": "BDC季度业绩披露，包含新的每股净资产、分配率和回报数据；无信用事件，但更新了Apollo零售信贷载体的经济表现。"
+        }
+      },
+      "relevance_reason": "Apollo's flagship non-traded BDC reported quarterly NAV, distribution rate and returns amid a tougher credit and rate backdrop, informing views on Apollo's retail credit franchise performance.",
+      "event_identity": {
+        "subject": "apollo debt solutions bdc",
+        "action": "files 8-k",
+        "object": "item 7.01",
+        "period": "third quarter of 2026",
+        "numbers": [
+          "$100",
+          "$23.78",
+          "1,2",
+          "10",
+          "16",
+          "2.06%",
+          "2007",
+          "20221,3",
+          "2026",
+          "25",
+          "30",
+          "5.3%",
+          "6.05%",
+          "7.01",
+          "8",
+          "8.13%",
+          "82",
+          "9.06%"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-21T13:38:09+00:00",
+        "sha256": "4f795383b55a452716a618f8798ee4f347529d733f3271fd71d6aa96721f67b2",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1837532/000119312526427340/d164012d8k.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-21T13:35:59+00:00"
+    },
+    {
       "id": "f2c64d5c768a",
       "date": "2026-10-21",
       "published_at": "2026-10-20T21:09:44+00:00",

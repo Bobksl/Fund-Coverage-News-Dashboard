@@ -532,6 +532,58 @@
         "final_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNS3hHV2xxa29yajl2ci00RWZzOWZraHl6WGNZNlNFV3R5MnVnRFRFeW12a3NEWWotM2FrbU84RnNhX0ZzYmRKTVlEblRUclFfeWxPal93UEN2ckt1c0hFSU9nWjhDSUdzd2RnOWdoVFhlZnlUTmJreVVmd09aMElFMVVrRUtKdU9HSnJTX0Z2UHJpTDRHQmRQbXBGTms0T1I3cldMYlZHLWhpMkExM0xFTjFPM3BoR1FJYzM0OTR2eXdlMl9oUHZwcFIzZktKUTd0V3Etd3lrZ1FrNUJwVEZxczJiZXY1SkVZSnc5SHFTSXV0U29QX2FFZjhBTG0yQWhqX0tnd3JUUkNxUQ?oc=5"
       },
       "observed_at": "2026-10-20T04:20:51+00:00"
+    },
+    {
+      "id": "0027feb520a5",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T17:01:31+00:00",
+      "headline": {
+        "en": "Barclays defends £15 billion private credit book after reported BoE scrutiny",
+        "zh": "巴克莱在据报遭英国央行审查后为150亿英镑私募信贷账簿辩护"
+      },
+      "summary": {
+        "en": "Barclays defended its £15 billion private credit book following reported scrutiny from the Bank of England.",
+        "zh": "在据报受到英国央行审查后，巴克莱为其150亿英镑的私募信贷账簿进行了辩护。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMERBcFo5YWhscVF4cnpuNHpTU1ZtdmhEWUVRb20yTHpRX2wzZ2l3YnJMcWN4UVRQYURvY0xlMm9Uekd0aUJ6azhHakREYnYxb0xXU3JWalZyalNyUkRhR3R6VVktZUtoVnpjQ0swZDdXVFV2Rnl3N3dWOU1HZ0RvZEtvWUE3UndzeXZQaEdSV1pXTmM5SkNrTHdZZmZ4UFJHOWQzbzVna2FWZV8xUVNwOHk1cUJVVjhGZ2IxbkxadFJjUkFERnlZ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Barclays defends £15 billion private credit book after reported BoE scrutiny",
+      "source_fingerprint": "32a2032f8edd90b46687b3d0f8a0a3bf23cede15b8599d25107e01368df479d8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "cc95281b93ae7485a3d5b57166e702c709a680f12e29845a84958746c7de8773",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Reported central bank scrutiny of a major bank's private credit exposure could shape regulatory and financing conditions for private credit strategies.",
+      "event_identity": {
+        "subject": "barclays",
+        "action": "defends",
+        "object": "£15 billion private credit book",
+        "period": "after reported boe scrutiny",
+        "numbers": [
+          "£15 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-21T13:38:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMERBcFo5YWhscVF4cnpuNHpTU1ZtdmhEWUVRb20yTHpRX2wzZ2l3YnJMcWN4UVRQYURvY0xlMm9Uekd0aUJ6azhHakREYnYxb0xXU3JWalZyalNyUkRhR3R6VVktZUtoVnpjQ0swZDdXVFV2Rnl3N3dWOU1HZ0RvZEtvWUE3UndzeXZQaEdSV1pXTmM5SkNrTHdZZmZ4UFJHOWQzbzVna2FWZV8xUVNwOHk1cUJVVjhGZ2IxbkxadFJjUkFERnlZ?oc=5"
+      },
+      "observed_at": "2026-10-21T13:35:59+00:00"
     }
   ]
 }
