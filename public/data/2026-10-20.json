@@ -2,6 +2,132 @@
   "date": "2026-10-20",
   "items": [
     {
+      "id": "984d03233b6d",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T14:48:37+00:00",
+      "headline": {
+        "en": "BoE reviews whether Barclays misstated risk on private credit loans",
+        "zh": "英国央行审查巴克莱是否低报私人信贷贷款风险"
+      },
+      "summary": {
+        "en": "The Bank of England is understood to be reviewing whether Barclays traders misrepresented private credit loans to understate their risk, following an insider complaint reported by the Financial Times. The review focuses on whether total return swaps financing the loans were logged in the trading book rather than the banking book, which would have lowered capital requirements. Barclays was approached for comment.",
+        "zh": "据《金融时报》报道，在一名内部人士投诉后，英国央行正在审查巴克莱的交易员是否对私人信贷贷款作出不实陈述以低报其风险。审查重点是这些为贷款融资的总收益互换是否被记入交易账簿而非银行账簿，若如此将降低资本要求。巴克莱被要求置评。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/20/boe-investigates-barclays-private-credit-loans/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "BoE investigates Barclays’ handling of private credit loans",
+      "source_fingerprint": "e764726886e2b9845fe6283b83397d8e6b9cf3865e4ecc732b1e76c6f8d00a0f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f7642d3edeeab48b42906ef7cf09653050594a9acaa7236804c09e1fa4c5a2ac",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A regulator's probe into how a major bank books private credit financing derivatives touches capital treatment and risk transparency for the private credit sector, a channel to tracked credit strategies.",
+      "event_identity": {
+        "subject": "barclays",
+        "action": "reviewing",
+        "object": "private credit loans",
+        "period": "earlier this year",
+        "numbers": [
+          "3"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-21T04:13:48+00:00",
+        "sha256": "f7642d3edeeab48b42906ef7cf09653050594a9acaa7236804c09e1fa4c5a2ac",
+        "source_published_at": "2026-10-20T14:48:37+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/20/boe-investigates-barclays-private-credit-loans/"
+      },
+      "source_published_at": "2026-10-20T14:48:37+00:00",
+      "observed_at": "2026-10-21T04:10:54+00:00"
+    },
+    {
+      "id": "0311737096f9",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T14:27:25+00:00",
+      "headline": {
+        "en": "Blackstone $1.3B 2021 CMBS Multifamily Loan Enters Special Servicing",
+        "zh": "Blackstone规模13亿美元的2021年CMBS多户住宅贷款进入特别服务"
+      },
+      "summary": {
+        "en": "A $1.3 billion Blackstone CMBS multifamily loan issued in fall 2021, with a $517.7 million balance, entered special servicing after missing its October 2026 maturity date, per a Morningstar Credit alert. The BX 2021-21M Mortgage Trust deal's remaining portfolio comprises six properties totaling 1,842 units, and Blackstone received a three-month forbearance to allow sale of the remaining assets.",
+        "zh": "据Morningstar Credit的警报，一笔由Blackstone于2021年秋季发行的13亿美元CMBS多户住宅贷款（余额5.177亿美元）在错过2026年10月到期日后进入特别服务。BX 2021-21M Mortgage Trust交易的剩余资产组合包含六处物业、共计1,842个单位，Blackstone获得三个月宽限期以出售剩余资产。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/blackstone-sun-belt-multifamily-cmbs-loan/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blackstone’s 2021 $1.3B CMBS Multifamily Loan Hits Special Servicing",
+      "source_fingerprint": "a0b9a2c69e2dbc764971ab09d72759f7b9eeda3dd753580eef11d5e59bd16eb7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 511,
+            "end": 585
+          },
+          "linkage": {
+            "start": 400,
+            "end": 460
+          },
+          "current_adverse": {
+            "start": 511,
+            "end": 540
+          }
+        },
+        "source_sha256": "f628bf798a9a164184909409480f334689029404009bf54c9728f1677c96e175",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "indirect",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A large Blackstone CMBS multifamily loan entered special servicing after missing its October 2026 maturity, though the borrower obtained a three-month forbearance and Blackstone is not a tracked manager.",
+          "zh": "一笔大型Blackstone CMBS多户住宅贷款在错过2026年10月到期日后进入特别服务，但借款人获得三个月宽限期，且Blackstone并非受追踪的管理人。"
+        }
+      },
+      "relevance_reason": "A large Blackstone CMBS multifamily loan entering special servicing after missing its maturity signals rising distress in pre-rate-spike apartment lending, a credit-negative data point for real estate and private credit exposure.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-21T04:13:51+00:00",
+        "sha256": "f628bf798a9a164184909409480f334689029404009bf54c9728f1677c96e175",
+        "source_published_at": "2026-10-20T10:27:25-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/blackstone-sun-belt-multifamily-cmbs-loan/"
+      },
+      "source_published_at": "2026-10-20T10:27:25-04:00",
+      "observed_at": "2026-10-21T04:10:54+00:00"
+    },
+    {
       "id": "a37b578b0505",
       "date": "2026-10-20",
       "published_at": "2026-10-20T08:00:13+00:00",

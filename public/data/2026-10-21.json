@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-21",
+  "items": [
+    {
+      "id": "f2c64d5c768a",
+      "date": "2026-10-21",
+      "published_at": "2026-10-20T21:09:44+00:00",
+      "headline": {
+        "en": "Apollo Debt Solutions BDC sells Class I shares, declares distributions; NAV slips to $23.78",
+        "zh": "Apollo Debt Solutions BDC出售I类份额并宣布分红，每股净资产降至23.78美元"
+      },
+      "summary": {
+        "en": "Apollo Debt Solutions BDC sold unregistered Class I common shares to feeder vehicles as of October 1, 2026, with the final share count set on October 20, 2026. On October 20 the fund declared distributions for all share classes, payable November 27, 2026, and reported September 30 NAV per share of $23.78 versus $23.84 at August 31. The fund originated about $1.6 billion of private debt in the September quarter at a weighted average spread of 486 basis points, with roughly 100% first lien and 84% floating rate, and its portfolio stood at about $25.5 billion across 377 companies.",
+        "zh": "Apollo Debt Solutions BDC截至2026年10月1日向联接载体出售未注册的I类普通股，最终股份数量于2026年10月20日确定。该基金于10月20日宣布各类别份额分红，将于2026年11月27日支付，并公布截至9月30日的每股净资产为23.78美元，8月31日为23.84美元。该基金在截至9月30日的季度发起了约16亿美元私募债务投资，加权平均利差486个基点，新增直接投资中约100%为第一留置权、约84%为浮动利率；截至9月30日组合公允价值约255亿美元，覆盖377家公司。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Apollo Debt Solutions BDC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1837532/000119312526426842/0001193125-26-426842-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Debt Solutions BDC files 8-K: items 3.02, 7.01and8.01",
+      "source_fingerprint": "a2470e163d3dc26c0979bf3f2e7c5d7ad4f600a1fb647f52e7b97aaf84b493f5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "252900a796f3f77d22e2e376d7d8dfcb123ae646cf2b267ec6b50cbebcd92c5d",
+        "failure": "Unsupported assessment claim: severity"
+      },
+      "relevance_reason": "Apollo's flagship BDC discloses new NAV decline, quarterly origination volume and spreads, and a distribution declaration, all of which inform credit investors' view of Apollo's private credit vehicle performance and deployment.",
+      "event_identity": {
+        "subject": "apollo debt solutions bdc",
+        "action": "declared distributions",
+        "object": "each class of its common shares",
+        "period": "october 20, 2026",
+        "numbers": [
+          "$1.6 billion",
+          "$23.78",
+          "$23.84",
+          "$25.5 billion",
+          "0.51%",
+          "1",
+          "100%",
+          "1933",
+          "2",
+          "2.06%",
+          "20",
+          "2022",
+          "2026",
+          "27",
+          "3",
+          "3.02",
+          "30",
+          "31",
+          "377",
+          "4",
+          "4.23%",
+          "486",
+          "56",
+          "6.05%",
+          "7",
+          "7.01",
+          "8",
+          "8.01",
+          "8.13%",
+          "8.72%",
+          "84%",
+          "9.08%"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-21T04:13:33+00:00",
+        "sha256": "252900a796f3f77d22e2e376d7d8dfcb123ae646cf2b267ec6b50cbebcd92c5d",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1837532/000119312526426842/d65634d8k.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-21T04:10:54+00:00"
+    },
+    {
+      "id": "e1ed03face2f",
+      "date": "2026-10-21",
+      "published_at": "2026-10-20T20:57:24+00:00",
+      "headline": {
+        "en": "Bonaccord advances fundraising for third GP stakes fund",
+        "zh": "Bonaccord推进第三只GP少数股权基金的募资"
+      },
+      "summary": {
+        "en": "Bonaccord is advancing fundraising for its third GP stakes fund, according to a SecondaryLink headline.",
+        "zh": "据SecondaryLink标题，Bonaccord正在推进其第三只GP少数股权基金的募资。"
+      },
+      "gps": [],
+      "sectors": [
+        "gp_stakes"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "SecondaryLink",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNM2NPekNlUjcwRjNISEt4UFIySnp5OXlFOUZCbWxkY1J4MDRuamNKZkdhTmRGQVBvUkxVaGk3aWljV2NPYThXUmN4YnNCVk0zSkRXLUh2aVNqM0VYQThfMWxoMi14WVJMU3lHTlpxaVhENHVvVERNRzQ0a0Itcm1KQWMwQW5qVjZoS05iQmVSeldZSTVTTVo3NUNUZWs4T2R5T0NFc1pHdzhpSGhXTVp6RQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bonaccord advances fundraising for third GP stakes fund",
+      "source_fingerprint": "cb86f4b86ed881658dfae356606a2e9de8f59f8a65201a38afdf318c456feaff",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "866f6bafb07df4afc1cda780df9b4cf153f7166092ee118ea99dcd7fd224badf",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "GP stakes fundraising progress signals competitive and capital-formation conditions for tracked GP stakes strategies such as Blue Owl GP Strategic Capital and Neuberger Berman Strategic Capital.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-21T04:13:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNM2NPekNlUjcwRjNISEt4UFIySnp5OXlFOUZCbWxkY1J4MDRuamNKZkdhTmRGQVBvUkxVaGk3aWljV2NPYThXUmN4YnNCVk0zSkRXLUh2aVNqM0VYQThfMWxoMi14WVJMU3lHTlpxaVhENHVvVERNRzQ0a0Itcm1KQWMwQW5qVjZoS05iQmVSeldZSTVTTVo3NUNUZWs4T2R5T0NFc1pHdzhpSGhXTVp6RQ?oc=5"
+      },
+      "observed_at": "2026-10-21T04:10:54+00:00"
+    },
+    {
+      "id": "d8f47ff310fa",
+      "date": "2026-10-21",
+      "published_at": "2026-10-20T20:21:20+00:00",
+      "headline": {
+        "en": "Blue Owl takes minority stake in Switzerland's Ufenau Capital Partners",
+        "zh": "Blue Owl收购瑞士Ufenau Capital Partners少数股权"
+      },
+      "summary": {
+        "en": "Blue Owl has taken a minority stake in Ufenau Capital Partners, a Swiss firm, according to a headline report. No transaction terms were disclosed in the available text.",
+        "zh": "据一则标题报道，Blue Owl已收购瑞士公司Ufenau Capital Partners的少数股权。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "gp_stakes"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY3N4RGl2NjJRVFBKX2dxLXR6WXVJU3VBMGlvZTZKMnBucjBZZTZ3RnA0RF9UN3RWYTYyRVEzVFM0Wi15RFlPV1U0YUVLVUF1QmU3c1k2VFR6WlZiRW9uRFBnM1pST2hwWEVoYjhqUm51NXpJck9STkdqblU1SnJ5WC1XNmdXNXJhUDZMNmJfeGxFbjZiSmNqdnVyVWFoSkUyWnlIMlVVWQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl takes minority stake in Switzerland's Ufenau Capital Partners",
+      "source_fingerprint": "95874e25cd1dbc609750d7512124ded72c6b89f62d6d0ab76da64366353b692e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "965549c6cbed27c3d34aa098a7ce7605d3c2eb61c52d057592a1ee24572dae74",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's GP Strategic Capital unit taking a minority stake in a Swiss PE firm is a direct franchise/deployment development for a tracked manager, though headline-only.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-21T04:13:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY3N4RGl2NjJRVFBKX2dxLXR6WXVJU3VBMGlvZTZKMnBucjBZZTZ3RnA0RF9UN3RWYTYyRVEzVFM0Wi15RFlPV1U0YUVLVUF1QmU3c1k2VFR6WlZiRW9uRFBnM1pST2hwWEVoYjhqUm51NXpJck9STkdqblU1SnJ5WC1XNmdXNXJhUDZMNmJfeGxFbjZiSmNqdnVyVWFoSkUyWnlIMlVVWQ?oc=5"
+      },
+      "observed_at": "2026-10-21T04:10:54+00:00"
+    },
+    {
+      "id": "dc520ced44be",
+      "date": "2026-10-21",
+      "published_at": "2026-10-20T18:15:50+00:00",
+      "headline": {
+        "en": "Sound Physicians closing $1B private credit refinancing after canceling BSL process",
+        "zh": "Sound Physicians 取消银团贷款流程后，即将完成10亿美元私募信贷再融资"
+      },
+      "summary": {
+        "en": "Sound Physicians is closing on a $1B private credit refinancing after canceling a broadly syndicated loan process, according to PitchBook. No lenders or other deal terms were disclosed in the supplied text.",
+        "zh": "据 PitchBook 报道，Sound Physicians 在取消银团贷款（BSL）流程后，即将完成10亿美元私募信贷再融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNEV4YmllQkk2ZFZucktLQS1nR3lXQTRBYUgwSUhMY3h5bVQ5YVl2TFpIdHcxcVRsSS1NdHZqZmlKZEZCM2w2ODNJdENsQmw0cGRrVldhMHFRVWRIS2sxMFpreWFRbnhIc3BYUUVSZWNpYVRIY3VlWnpfSVUySHhkOXgtUzg2U1o0eW9meEtLOWd6d0I5bHl0UXV3VTNBOFEyc2xUY0U0aUd3YkMzR2xEaGE1QXFXektYT1RBMWR3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Sound Physicians closing on $1B private credit refinancing after canceling BSL process",
+      "source_fingerprint": "ece01d60a629e63cae4b99873dafd429e0ce157fcbc353a2f2e10988501a2962",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6b9dc7d048f2dbb3c8ca41242cc6c3fbcb3c56a61dbccf56f44944ce5c6fcf84",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $1B private credit refinancing that displaced a broadly syndicated loan process shows direct lending taking share from syndicated markets, a transmission channel to tracked private credit managers.",
+      "event_identity": {
+        "subject": "sound physicians",
+        "action": "private credit refinancing",
+        "object": "bsl process",
+        "period": "$1b",
+        "numbers": [
+          "$1"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-21T04:13:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNEV4YmllQkk2ZFZucktLQS1nR3lXQTRBYUgwSUhMY3h5bVQ5YVl2TFpIdHcxcVRsSS1NdHZqZmlKZEZCM2w2ODNJdENsQmw0cGRrVldhMHFRVWRIS2sxMFpreWFRbnhIc3BYUUVSZWNpYVRIY3VlWnpfSVUySHhkOXgtUzg2U1o0eW9meEtLOWd6d0I5bHl0UXV3VTNBOFEyc2xUY0U0aUd3YkMzR2xEaGE1QXFXektYT1RBMWR3?oc=5"
+      },
+      "observed_at": "2026-10-21T04:10:54+00:00"
+    }
+  ]
+}
