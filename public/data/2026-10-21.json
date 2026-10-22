@@ -95,6 +95,121 @@
       "observed_at": "2026-10-21T13:35:59+00:00"
     },
     {
+      "id": "cd1e0b727277",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T13:16:00+00:00",
+      "headline": {
+        "en": "Private credit redemptions: crisis or growing pains?",
+        "zh": "私募信贷赎回：危机还是成长的烦恼？"
+      },
+      "summary": {
+        "en": "A headline only raises the question of whether private credit redemptions represent a crisis or growing pains. No details, figures or firms are disclosed in the supplied text.",
+        "zh": "仅一条标题提出私募信贷赎回究竟是危机还是成长的烦恼这一问题。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Institutional Asset Manager",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMEdnbEZvcFpJUi1od2Rqb3VlYVhZaW5oWXUwZ0pBYVM3ZWlQX1dPQ09nWm8yZWE2NERjME13al9QaDZIQS05ZlZBUEdnWW5WVUJkRm1Nal81bnZPalFCOF9pYkh1Y2h3VzNLVkl0YlgwVXJ4N3BkdWNlSlpxandORmtCOUU1T2VIc2xyTkgtUGVRLWRQNlE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private credit redemptions: crisis or growing pains?",
+      "source_fingerprint": "e1aeb54ff1403f4db2f6f742cbcf5a4d0dded76b23753c2be6f690d70ed31b74",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "720f45b9c7f3dc82c52ed491f72e1a61eba374b52395ae5f1661a0e1fa45af9a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline on private credit redemptions touches liquidity conditions for the tracked private credit sub-sector, relevant to credit investors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T04:12:53+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMEdnbEZvcFpJUi1od2Rqb3VlYVhZaW5oWXUwZ0pBYVM3ZWlQX1dPQ09nWm8yZWE2NERjME13al9QaDZIQS05ZlZBUEdnWW5WVUJkRm1Nal81bnZPalFCOF9pYkh1Y2h3VzNLVkl0YlgwVXJ4N3BkdWNlSlpxandORmtCOUU1T2VIc2xyTkgtUGVRLWRQNlE?oc=5"
+      },
+      "observed_at": "2026-10-22T04:10:36+00:00"
+    },
+    {
+      "id": "ec338ac05999",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T05:15:00+00:00",
+      "headline": {
+        "en": "MA Financial suspends redemptions on $2.3bn property lending funds, winds up retail fund",
+        "zh": "MA Financial暂停23亿美元房地产贷款基金赎回，并清盘零售基金"
+      },
+      "summary": {
+        "en": "MA Financial Group suspended all redemptions across its $2.3 billion property-related lending funds after deteriorating conditions in property and private credit markets. The ASX-listed group, which has $7.5 billion of private credit assets under management, said its $100 million retail MA Secured Real Estate Income Fund would be wound up following a decision by the fund's responsible entity earlier in the week.",
+        "zh": "MA Financial Group在房地产和私募信贷市场状况恶化后，暂停了其23亿美元房地产相关贷款基金的全部赎回。这家在澳交所上市的集团管理着75亿美元私募信贷资产，并表示其1亿美元的零售基金MA Secured Real Estate Income Fund将在该基金责任实体本周早些时候作出决定后清盘。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "afr.com",
+        "url": "https://www.afr.com/companies/financial-services/ma-financial-halts-redemptions-in-property-funds-winds-up-retail-fund-20261021-p617ez"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "MA Financial Group (MAF ASX) halts property lending fund redemptions, winds up retail fund amid market downturn",
+      "source_fingerprint": "0c9cd9e953e56f1e6977582fc59105546abe6e10fb56b67b28776c467c5c22fb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 178,
+            "end": 254
+          },
+          "linkage": {
+            "start": 316,
+            "end": 383
+          },
+          "current_adverse": {
+            "start": 259,
+            "end": 310
+          }
+        },
+        "source_sha256": "5e409d69a3e0e58b93370b8b8d75f88747639b45b84f618e8f127a1de0f26fed",
+        "failure": null,
+        "severity": "substantial",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: substantial; linkage: sector.",
+          "zh": "已评估严重程度：重大；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A property lending fund suspending redemptions and winding up a retail vehicle signals stress in private credit real estate strategies, affecting sector risk views.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-22T04:12:56+00:00",
+        "sha256": "5e409d69a3e0e58b93370b8b8d75f88747639b45b84f618e8f127a1de0f26fed",
+        "source_published_at": "2026-10-21T02:57:13Z",
+        "final_url": "https://www.afr.com/companies/financial-services/ma-financial-halts-redemptions-in-property-funds-winds-up-retail-fund-20261021-p617ez"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-10-21T02:57:13Z",
+      "observed_at": "2026-10-22T04:10:36+00:00"
+    },
+    {
       "id": "f2c64d5c768a",
       "date": "2026-10-21",
       "published_at": "2026-10-20T21:09:44+00:00",

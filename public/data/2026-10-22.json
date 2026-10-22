@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-22",
+  "items": [
+    {
+      "id": "8dc66f7d32a5",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T20:27:34+00:00",
+      "headline": {
+        "en": "Barings Provides $138.6 Million Mortgage Financing To Refinance Speedway Commerce Center",
+        "zh": "Barings提供1.386亿美元抵押贷款融资，用于Speedway Commerce Center再融资"
+      },
+      "summary": {
+        "en": "Barings provided $138.6 million in mortgage financing to refinance the Speedway Commerce Center.",
+        "zh": "Barings提供1.386亿美元抵押贷款融资，用于Speedway Commerce Center的再融资。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbFd6Rkl0ZzdTSExyQmhFbGdxeEFIdExCTnlJY0NqSkM5cjVXQ19HUUh6OEV0MWNxRldUbWxiZW5VcVdLNnBYMklSOTVOQXUzSnE4b2h0STdJaXU3ZjZnZ0sySVNtUUJRdUFGTzRKdHZ5ZTExRVJ4WmhfczVJbjl5Rl9hR1VYQVIzeDlfWUpWT1YyRlBHanRHZGlWSjlPc3dnS09ZT3A4QTFVX2M?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Barings Provides $138.6 Million Mortgage Financing To Refinance Speedway Commerce Center",
+      "source_fingerprint": "cc59f7f2d3cb3481f0097497b474aac8ddde92a9817b2c3cd178223e5db69639",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "278b4a2e4e261e0aa059b7f50c5b49eea03bf9a7bd65ad90e9fabb0fe870b500",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New large commercial mortgage financing shows continued deployment by a credit manager in real estate lending, signaling sector activity relevant to real-estate credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T04:12:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbFd6Rkl0ZzdTSExyQmhFbGdxeEFIdExCTnlJY0NqSkM5cjVXQ19HUUh6OEV0MWNxRldUbWxiZW5VcVdLNnBYMklSOTVOQXUzSnE4b2h0STdJaXU3ZjZnZ0sySVNtUUJRdUFGTzRKdHZ5ZTExRVJ4WmhfczVJbjl5Rl9hR1VYQVIzeDlfWUpWT1YyRlBHanRHZGlWSjlPc3dnS09ZT3A4QTFVX2M?oc=5"
+      },
+      "observed_at": "2026-10-22T04:10:36+00:00"
+    },
+    {
+      "id": "245374143561",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T16:40:44+00:00",
+      "headline": {
+        "en": "Apollo highlights Yankees financing as AI-resilient leisure bet",
+        "zh": "Apollo强调洋基队融资为抗AI冲击的休闲类投资"
+      },
+      "summary": {
+        "en": "Apollo highlighted its financing tied to the New York Yankees as a leisure-sector bet considered resilient to AI disruption, per a headline-level report. No deal terms, amounts or dates were provided.",
+        "zh": "据仅标题层面的报道，Apollo强调其与纽约洋基队相关的融资是一笔被视为能抵御AI冲击的休闲行业投资。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMlkta0FKSE13c3RTTFZ2SE5MN1FkMkFMNk9yUlZYUEFVZzNOblJnVWdhdERMb2YtNTdKVHdIYU1vLVl6LU1kVTBMRi1lbk5TWXgzUXRTWC1vNzIwMWlLN3NkOGx5cHpoUk51aDE3XzhmbmFyU3ptQkVfMXNRUHFPT0MtS1YzbEdHbW1teVFTR1IxZE9kYl90dXpXb1UwNjhEUDB2bg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo highlights Yankees financing as AI-resilient leisure bet",
+      "source_fingerprint": "6d7b79db19972af5cfae606d25b6ec36482194dc0a82267064d64bfedd912ade",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5cc4d1d93e0e0de7a443a1d3840a2321523fa2ed2a464d6810356b32a6a3109b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's financing activity in sports and leisure assets signals continued private credit deployment by a tracked manager, though the headline gives no deal terms.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T04:12:42+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMlkta0FKSE13c3RTTFZ2SE5MN1FkMkFMNk9yUlZYUEFVZzNOblJnVWdhdERMb2YtNTdKVHdIYU1vLVl6LU1kVTBMRi1lbk5TWXgzUXRTWC1vNzIwMWlLN3NkOGx5cHpoUk51aDE3XzhmbmFyU3ptQkVfMXNRUHFPT0MtS1YzbEdHbW1teVFTR1IxZE9kYl90dXpXb1UwNjhEUDB2bg?oc=5"
+      },
+      "observed_at": "2026-10-22T04:10:36+00:00"
+    },
+    {
+      "id": "a3e0f57544c4",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T16:06:29+00:00",
+      "headline": {
+        "en": "Apollo Fund Touts NY Yankees Financing as 'AI-Resilient Leisure'",
+        "zh": "Apollo基金推介纽约洋基队融资，称之为“抗AI冲击的休闲业”"
+      },
+      "summary": {
+        "en": "An Apollo fund is highlighting its financing of the New York Yankees, describing the exposure as 'AI-resilient leisure'. No deal size, terms or structure were disclosed in the headline.",
+        "zh": "Apollo旗下一只基金正在推介其对纽约洋基队的融资，并将该敞口描述为“抗AI冲击的休闲业”。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUFZnMlpvX0xiZ2tEcUZhd2dvM0Fzc0lNYmY5UkRubzRsWm5lc2taZ1N6ODlTSkxvdGNhQUFFQnd3cndHWjVra0p4dGpFZGhtUHBvOW12Ty1ZM1RPX1JvZjBxd2xFVS1Ed0NwN3Z1clNDdHJIdzExSV9jSElmSUlRVXJDUDB1UUY5NUcxZ0Y2a2NmdzI1TURzckQxUnB3VFZBcWJ5RDhDRi1UVFp4RzRvMUZObw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Fund Touts NY Yankees Financing as ‘AI-Resilient Leisure’",
+      "source_fingerprint": "e8e0ed50dbff32025d4238bda8707b384042275ea296023a8d48930aad8c1ac9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "023c4935f1cc3f6024ea0b89ad14ce35f27859062ed03edab9838035107377ca",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's credit fund providing financing tied to the New York Yankees signals new asset-based/private credit deployment for a tracked manager.",
+      "event_identity": {
+        "subject": "apollo fund",
+        "action": "touts",
+        "object": "ny yankees financing",
+        "period": "ai-resilient leisure",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T04:12:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUFZnMlpvX0xiZ2tEcUZhd2dvM0Fzc0lNYmY5UkRubzRsWm5lc2taZ1N6ODlTSkxvdGNhQUFFQnd3cndHWjVra0p4dGpFZGhtUHBvOW12Ty1ZM1RPX1JvZjBxd2xFVS1Ed0NwN3Z1clNDdHJIdzExSV9jSElmSUlRVXJDUDB1UUY5NUcxZ0Y2a2NmdzI1TURzckQxUnB3VFZBcWJ5RDhDRi1UVFp4RzRvMUZObw?oc=5"
+      },
+      "observed_at": "2026-10-22T04:10:36+00:00"
+    }
+  ]
+}
