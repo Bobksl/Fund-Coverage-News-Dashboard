@@ -2,6 +2,331 @@
   "date": "2026-10-22",
   "items": [
     {
+      "id": "8f524db02e9a",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T11:47:31+00:00",
+      "headline": {
+        "en": "LSEG Raises 2026 Outlook, to Buy Octus for $3.54 Billion",
+        "zh": "LSEG上调2026年展望，将以35.4亿美元收购Octus"
+      },
+      "summary": {
+        "en": "LSEG raised its 2026 outlook and agreed to acquire Octus for $3.54 billion, expanding its private credit push.",
+        "zh": "LSEG上调2026年展望，并同意以35.4亿美元收购Octus，以扩大其私人信贷业务布局。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVWFncXZCZ2UzcV9UNFJUVnl3YVlIeV9Qblh2XzJRVEtaSmUxa3ptanM2MUFXUnE2THpobkJmcXFqR295WEp4cEd3a1otdmdOUlFrX0Z6WlVCTFRfRmhwNlVKVW9iMFRfUjhRbTdWQk9sOHJlcFlLZFRvWVJvVTNiNVRkeDdjdVBWaXlDMmFFRzNNOUpXWXYwc2VnUm9pZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Lseg Raises 2026 Outlook, Expands Private Credit Push With $3.54 Billion Octus Deal",
+      "source_fingerprint": "1aa5fa0f0310a4ff767500df1196d60d880339f5a42b691792eccacd758ba623",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b15e5b0d8b75a82b1fc23349606002b3057a913e9be8684b443ff1d0e1f0f980",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "LSEG's $3.54bn Octus acquisition signals continued consolidation and investment in private credit data infrastructure, a sector-level development for credit investors without directly naming a tracked manager.",
+      "event_identity": {
+        "subject": "lseg",
+        "action": "expands private credit push with",
+        "object": "octus",
+        "period": "2026",
+        "numbers": [
+          "$3.54 Billion",
+          "2026"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T13:40:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVWFncXZCZ2UzcV9UNFJUVnl3YVlIeV9Qblh2XzJRVEtaSmUxa3ptanM2MUFXUnE2THpobkJmcXFqR295WEp4cEd3a1otdmdOUlFrX0Z6WlVCTFRfRmhwNlVKVW9iMFRfUjhRbTdWQk9sOHJlcFlLZFRvWVJvVTNiNVRkeDdjdVBWaXlDMmFFRzNNOUpXWXYwc2VnUm9pZw?oc=5"
+      },
+      "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
+      "id": "80959aba6405",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T11:27:34+00:00",
+      "headline": {
+        "en": "Fitch rates Neuberger Berman CLO 58 reset backed by $500 million loans",
+        "zh": "惠誉对Neuberger Berman CLO 58重置进行评级，该CLO由5亿美元贷款支持"
+      },
+      "summary": {
+        "en": "Fitch rated the reset of Neuberger Berman CLO 58, which is backed by $500 million of loans.",
+        "zh": "惠誉对Neuberger Berman CLO 58的重置进行评级，该CLO由5亿美元贷款支持。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "trend.az",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9YbVpuOUZ1OGEzWFpNQW9LRUg5c1gyYnlFVWNJOENlRENpcldQbDF0VTBNLUc2aG1qVmlrSDRUNWctZHM0TWhKQ2UzNnN2VzNp?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fitch rates Neuberger Berman CLO 58 reset backed by $500 million loans",
+      "source_fingerprint": "5dc860fb3489472938469535ee13fc1f02edc3dd634d5af2849f31eea2cde703",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5f3858f598c2a4edf9852e970d1253baa6df28ff2ed57857f089cc92b421cdf7",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A rating action on a Neuberger Berman CLO reset bears on the risk and financing conditions of its CLO strategy.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T13:40:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9YbVpuOUZ1OGEzWFpNQW9LRUg5c1gyYnlFVWNJOENlRENpcldQbDF0VTBNLUc2aG1qVmlrSDRUNWctZHM0TWhKQ2UzNnN2VzNp?oc=5"
+      },
+      "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
+      "id": "cbf88b094800",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T11:00:00+00:00",
+      "headline": {
+        "en": "LSEG to acquire Octus, expanding across public and private credit solutions",
+        "zh": "LSEG 将收购 Octus，拓展公开与私募信贷解决方案"
+      },
+      "summary": {
+        "en": "LSEG announced it will acquire Octus, describing the deal as creating a market leader across public and private credit solutions.",
+        "zh": "LSEG 宣布将收购 Octus，并将该交易描述为打造公开与私募信贷解决方案领域的市场领导者。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQc3RpR3p5Q3Fhcld0cGNDNlhxVExkVFRNRDd0U3g1cFcwUnUwMDVVOUhlbjNnRkNfaGtqemJvVW5aQ2JiWkFtUDlJcG81THVkX1Y2bDJ4dDc1RnBvMDI0M0dhS1UtMmFWS1lHVHFaOHdvVXhLb3lnUWxuSHBzR0ZOazVGa3gwYTlkVVkyN05EVmx4TzFjM2t6R3FaU0k0dC02?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "LSEG to Acquire Octus, Creating Market Leader Across Public and Private Credit Solutions",
+      "source_fingerprint": "3f3fdbc9c9c16578efeadee8975d00c64748a151c4e9204ffd72fc6dc1d67ce5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3dd00c2eb0ac4565ceca30022836a7133b41da53965ee29e5aed741f23d0fdb4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A major data and infrastructure provider is acquiring a private credit intelligence platform, affecting the information environment for credit strategies, but no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T13:40:43+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQc3RpR3p5Q3Fhcld0cGNDNlhxVExkVFRNRDd0U3g1cFcwUnUwMDVVOUhlbjNnRkNfaGtqemJvVW5aQ2JiWkFtUDlJcG81THVkX1Y2bDJ4dDc1RnBvMDI0M0dhS1UtMmFWS1lHVHFaOHdvVXhLb3lnUWxuSHBzR0ZOazVGa3gwYTlkVVkyN05EVmx4TzFjM2t6R3FaU0k0dC02?oc=5"
+      },
+      "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
+      "id": "6ee1c7c9266c",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T10:00:43+00:00",
+      "headline": {
+        "en": "Sound Point hires Ninety One's European secured lending team",
+        "zh": "Sound Point 聘请 Ninety One 的欧洲担保贷款团队"
+      },
+      "summary": {
+        "en": "Sound Point Capital Management has hired a three-person investment team from Ninety One as part of a partnership between the two firms. Chris Rust and Lei Lei become portfolio managers and co-heads of European secured lending, with Lachlan Viney as director and senior analyst, all based in London. The partnership aims to support completion of the Ninety One European Credit Opportunities Fund 1 and expand Sound Point's European private credit offering. Sound Point manages over $44bn in assets.",
+        "zh": "Sound Point Capital Management 作为与 Ninety One 合作的一部分，聘请了 Ninety One 的一支三人投资团队。Chris Rust 和 Lei Lei 被任命为投资组合经理兼欧洲担保贷款联席主管，Lachlan Viney 被任命为董事兼高级分析师，三人均在伦敦办公。该合作旨在支持完成 Ninety One European Credit Opportunities Fund 1，并扩展 Sound Point 的欧洲私募信贷业务。Sound Point 管理资产超过 440 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/22/sound-point-hires-ninety-ones-european-secured-lending-team/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Sound Point hires Ninety One’s European secured lending team",
+      "source_fingerprint": "482ce1cb035a684930b6e3587481ac80a2873bcd6d78d7709e592ea68349a645",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 31,
+            "end": 87
+          },
+          "linkage": {
+            "start": 644,
+            "end": 697
+          }
+        },
+        "source_sha256": "a1663923d3e72fe0afbf567b5905b91502f2eebe30b103edafbb636bef6103b4",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A team hire and partnership between two untracked credit managers indicates continued build-out of European asset-backed lending; incremental for sector competition but no tracked manager involvement.",
+          "zh": "两家未跟踪的信贷管理机构之间的团队招聘与合作，显示欧洲资产支持贷款业务持续扩张；对行业竞争而言属增量信息，但无被跟踪管理机构参与。"
+        }
+      },
+      "relevance_reason": "A credit manager's team move and new European asset-backed lending partnership signals competitive and deployment shifts in European private credit, though no tracked manager is involved.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-22T13:40:45+00:00",
+        "sha256": "a1663923d3e72fe0afbf567b5905b91502f2eebe30b103edafbb636bef6103b4",
+        "source_published_at": "2026-10-22T10:00:43+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/22/sound-point-hires-ninety-ones-european-secured-lending-team/"
+      },
+      "source_published_at": "2026-10-22T10:00:43+00:00",
+      "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
+      "id": "8f04f5735946",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T09:08:41+00:00",
+      "headline": {
+        "en": "CoreWeave debt selloff raises concerns over private credit's AI exposure",
+        "zh": "CoreWeave债务遭抛售，引发对私募信贷AI敞口的担忧"
+      },
+      "summary": {
+        "en": "A selloff in CoreWeave debt has raised concerns over private credit's exposure to AI.",
+        "zh": "CoreWeave债务遭抛售，引发市场对私募信贷在AI领域敞口的担忧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Private Equity Wire",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNUlTSUQ5X1Npc0ttX2FCclpFbEFqQVNvU0lLQ2dOVlJQS1kwZDFOVVZtS25lWFVoSGo2NHJxOEcySFZycjNBNXVaVzNMVTR6MjY3NFJ3aDlienIyaW55c2hQV3Jqa0xTaFZNRzdOdzJGODdjMDl6Z1BaRG81VkNERUZYdGxkUGZxeGhYS0ZfcHRGbUZvdlBsbktpUXQxM2FSRWt3Y0dMR1JGRzdU?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CoreWeave debt selloff raises concerns over private credit’s AI exposure",
+      "source_fingerprint": "ba17491114cc9e38e6d987d91366cee02e202987c78a9c63ba359fdf69f4b9a8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "961a98b61c3cae2a340de0ba1e412464e0ce2345a4b02ac7b86e23611a96b197",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A selloff in CoreWeave debt raising concerns about private credit's AI exposure bears on the risk environment for private credit strategies, a tracked sub-sector.",
+      "event_identity": {
+        "subject": "coreweave",
+        "action": "debt selloff",
+        "object": "debt",
+        "period": "coreweave debt selloff",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T13:40:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNUlTSUQ5X1Npc0ttX2FCclpFbEFqQVNvU0lLQ2dOVlJQS1kwZDFOVVZtS25lWFVoSGo2NHJxOEcySFZycjNBNXVaVzNMVTR6MjY3NFJ3aDlienIyaW55c2hQV3Jqa0xTaFZNRzdOdzJGODdjMDl6Z1BaRG81VkNERUZYdGxkUGZxeGhYS0ZfcHRGbUZvdlBsbktpUXQxM2FSRWt3Y0dMR1JGRzdU?oc=5"
+      },
+      "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
+      "id": "066d8c3df508",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T08:00:03+00:00",
+      "headline": {
+        "en": "ACORE Capital launches wealth solutions platform for real estate credit",
+        "zh": "ACORE Capital推出财富解决方案平台，聚焦房地产信贷"
+      },
+      "summary": {
+        "en": "ACORE Capital has launched a dedicated wealth solutions platform to widen access to its commercial real estate investment strategies, offering high-net-worth investors in-house real estate credit underwriting across credit and select equity investments. Mick Manning, formerly a managing director at Apollo's bridge investment group, has been appointed president of the division, overseeing strategy, product development and distribution. CEO Warren de Haan called the launch a natural extension of the platform built over the past decade.",
+        "zh": "ACORE Capital推出专门的财富解决方案平台，以扩大其商业房地产投资策略的覆盖面，为高净值投资者提供涵盖信贷及部分股权投资的内部房地产信贷承销能力。曾在Apollo旗下bridge investment group担任董事总经理的Mick Manning被任命为该部门总裁，负责战略、产品开发和分销。首席执行官Warren de Haan称此次推出是过去十年所建平台的自然延伸。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/22/acore-capital-launches-wealth-platform/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "ACORE CAPITAL launches wealth platform",
+      "source_fingerprint": "6ce06c84d0cda5959cf9b408ec7412a8ef46bcb8a81d5148c65fa9877f9e910b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 64
+          },
+          "linkage": {
+            "start": 793,
+            "end": 843
+          }
+        },
+        "source_sha256": "d46f78d8a0c5b75f4feb078e83dbb9f6b60ad9809ad59b5beac0eb603630215d",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "New wealth channel for a commercial real estate credit manager expands private real estate credit distribution to high-net-worth investors, a transmission channel to the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-22T13:40:53+00:00",
+        "sha256": "d46f78d8a0c5b75f4feb078e83dbb9f6b60ad9809ad59b5beac0eb603630215d",
+        "source_published_at": "2026-10-22T08:00:03+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/22/acore-capital-launches-wealth-platform/"
+      },
+      "source_published_at": "2026-10-22T08:00:03+00:00",
+      "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
       "id": "8dc66f7d32a5",
       "date": "2026-10-22",
       "published_at": "2026-10-21T20:27:34+00:00",

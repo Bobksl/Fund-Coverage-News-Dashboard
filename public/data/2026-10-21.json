@@ -2,6 +2,58 @@
   "date": "2026-10-21",
   "items": [
     {
+      "id": "03a3f6b39312",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T14:06:21+00:00",
+      "headline": {
+        "en": "Amundi raises €200m in first close of fifth-generation private debt fund",
+        "zh": "Amundi第五代私募债基金首关募资2亿欧元"
+      },
+      "summary": {
+        "en": "Amundi raised €200m in the first close of its fifth-generation private debt fund.",
+        "zh": "Amundi第五代私募债基金完成首关，募资2亿欧元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOU1zNnNOM21ZTGdJb3BLRURUX1hMYUx3MVRKNTM1SVZzTHRTM05MTV9UVERETHNfajJIVThkeFVnWWdEMDNfWGVuYWNJMTJhV1M1SGNWMjNld0hpcXJMcFR3ZENqaTdaczRDVlRTTmxVZlZ6ZXJtUk9FTi1IZXhsUEcyMGlxSzdIUlh3UGtVV0NQRGtzSTlNMklaZ0dCNm1qUms0MnhwUjhSRXpkVVE2ZEV2VTFiUmNsbTdDbjQycw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Amundi raises €200m in first close of fifth-generation private debt fund",
+      "source_fingerprint": "4cf235641abdfd3675a24541e0cafb0f3a9e8166bf65e280ba72dc641b784c6f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e26bc297ede3c0a9180d5327a4f441994a29b686ce0e5f6bd3037d79ee79d1f1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large asset manager's new private debt fund first close signals continued fundraising momentum in the European direct lending sub-sector, a competitive signal for tracked credit managers.",
+      "event_identity": {
+        "subject": "amundi",
+        "action": "raises",
+        "object": "fifth-generation private debt fund",
+        "period": "first close",
+        "numbers": [
+          "€200"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-22T13:41:00+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOU1zNnNOM21ZTGdJb3BLRURUX1hMYUx3MVRKNTM1SVZzTHRTM05MTV9UVERETHNfajJIVThkeFVnWWdEMDNfWGVuYWNJMTJhV1M1SGNWMjNld0hpcXJMcFR3ZENqaTdaczRDVlRTTmxVZlZ6ZXJtUk9FTi1IZXhsUEcyMGlxSzdIUlh3UGtVV0NQRGtzSTlNMklaZ0dCNm1qUms0MnhwUjhSRXpkVVE2ZEV2VTFiUmNsbTdDbjQycw?oc=5"
+      },
+      "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
       "id": "537695a0775d",
       "date": "2026-10-21",
       "published_at": "2026-10-21T13:28:42+00:00",
