@@ -2,6 +2,349 @@
   "date": "2026-10-23",
   "items": [
     {
+      "id": "663ad3ceef27",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T12:19:33+00:00",
+      "headline": {
+        "en": "CIFC European Funding CLO IV note ratings upgraded on stronger portfolio performance",
+        "zh": "CIFC European Funding CLO IV 因资产组合表现增强而获票据评级上调"
+      },
+      "summary": {
+        "en": "Ratings on notes of CIFC European Funding CLO IV were upgraded, according to a headline citing stronger portfolio performance. The headline did not specify which tranches were upgraded or the size of the upgrade.",
+        "zh": "据一则援引资产组合表现增强的标题报道，CIFC European Funding CLO IV 的票据评级被上调。"
+      },
+      "gps": [
+        "cifc"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSGxNcTk0YjdnWmJiM0FHMGZmSHlUTERnblZuY1g3YkJEYWlSaU5kVkk2akdicmd0MnlFd2w2c3d2VFZBdmtleHJ4OTJnZWVzTFRLZmlRS0dtbmVjZnd2T29zOG5LNGtnU0dkS3BveUNLVDl0ME5OMEhPb1c5OEd0UW9zYXg2OE1RRVE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CIFC European Funding CLO IV note ratings upgraded on stronger portfolio performance",
+      "source_fingerprint": "8afb40d42845a0553d24398e8f5a2f9233db55e15e0ea92b28ae7c9fe49e6806",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a3ea4eadef9c3d4f471af473476e600c582259a7b4a34c98e02b3642909e8810",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A rating upgrade on a CIFC-managed European CLO signals improved collateral performance for a tracked CLO manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-23T13:15:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSGxNcTk0YjdnWmJiM0FHMGZmSHlUTERnblZuY1g3YkJEYWlSaU5kVkk2akdicmd0MnlFd2w2c3d2VFZBdmtleHJ4OTJnZWVzTFRLZmlRS0dtbmVjZnd2T29zOG5LNGtnU0dkS3BveUNLVDl0ME5OMEhPb1c5OEd0UW9zYXg2OE1RRVE?oc=5"
+      },
+      "observed_at": "2026-10-23T13:13:35+00:00"
+    },
+    {
+      "id": "02f06852f681",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T11:35:34+00:00",
+      "headline": {
+        "en": "Polus Capital closes $400m reset of Polus US CLO I",
+        "zh": "Polus Capital完成Polus US CLO I的4亿美元重置"
+      },
+      "summary": {
+        "en": "Polus Capital Management has closed the $400m reset of its US CLO, Polus US CLO I, its first US CLO reset. It follows the close of Polus EU CLO XXII at EUR400m at the end of September and Cairn CLO XX at EUR450m in September 2025. London-based Polus has $14bn in assets under management.",
+        "zh": "Polus Capital Management已完成其美国CLO——Polus US CLO I的4亿美元重置，这是其首次美国CLO重置。此前，该公司于9月底以4亿欧元完成最新欧洲CLO Polus EU CLO XXII，并于2025年9月以4.5亿欧元完成Cairn CLO XX。总部位于伦敦的Polus管理资产规模为140亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/23/polus-resets-us-clo-at-400m/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Polus resets US CLO at $400m",
+      "source_fingerprint": "5d189bf72d7c3e657c878b4746a4288838ecdec702d22606bb0835caf8e7ba3e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 29,
+            "end": 102
+          },
+          "linkage": {
+            "start": 218,
+            "end": 248
+          }
+        },
+        "source_sha256": "707d7da772d9347061c05af1e9b83e47143c2fd1765f159350d5ea5f441c9231",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "A new CLO reset by a non-tracked manager is an incremental sector datapoint rather than a change at a tracked manager.",
+          "zh": "非跟踪管理人的新CLO重置属于增量性行业数据点，而非跟踪管理人的变化。"
+        }
+      },
+      "relevance_reason": "First US CLO reset by Polus, a credit manager outside the tracked list, signals continued CLO reset activity relevant to the CLO sub-sector and competitive environment.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-23T13:15:43+00:00",
+        "sha256": "707d7da772d9347061c05af1e9b83e47143c2fd1765f159350d5ea5f441c9231",
+        "source_published_at": "2026-10-23T11:35:34+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/23/polus-resets-us-clo-at-400m/"
+      },
+      "source_published_at": "2026-10-23T11:35:34+00:00",
+      "observed_at": "2026-10-23T13:13:35+00:00"
+    },
+    {
+      "id": "5e177d7addcb",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T11:02:22+00:00",
+      "headline": {
+        "en": "Tikehau deploys €3.4bn year-to-date, €943m in Q3 credit",
+        "zh": "Tikehau年内已部署34亿欧元，第三季度信贷投资9.43亿欧元"
+      },
+      "summary": {
+        "en": "Tikehau Capital has deployed €3.4bn so far this year, including €943m of credit investments in the third quarter, its busiest quarter of 2026 for the asset class. Add-on loans to existing borrowers were about 45 per cent of direct lending deployment in the first nine months; assets under management were €51.7bn at end-September and the firm returned €2.2bn to investors year-to-date, including €1.1bn in Q3.",
+        "zh": "Tikehau Capital今年迄今已部署34亿欧元，其中第三季度信贷投资9.43亿欧元，为2026年该资产类别最繁忙的季度。前九个月对现有借款人的追加贷款约占直接贷款部署的45%；截至9月底资产管理规模为517亿欧元，公司年内已向投资者返还22亿欧元，其中第三季度11亿欧元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/23/tikehau-deploys-e3-4bn-amid-market-volatility/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Tikehau deploys €3.4bn amid market volatility",
+      "source_fingerprint": "0e51a95379eeba5fd75cace67bc412154b9c44c249cdf97efd5cf6649322aa77",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1975,
+            "end": 2017
+          },
+          "linkage": {
+            "start": 63,
+            "end": 116
+          }
+        },
+        "source_sha256": "cb69e1a187c5a120303b88786665b1fe0f7391d1a5666f207b852bf1dc1bdd72",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Quarterly deployment and flow update from a European credit manager; incremental read on deployment pace and private credit inflows, no tracked manager involved.",
+          "zh": "欧洲信贷管理人的季度部署与资金流更新；对部署节奏和私募信贷流入提供增量参考，不涉及受跟踪管理人。"
+        }
+      },
+      "relevance_reason": "Third-quarter deployment and flow data for a private credit and CLO manager signals sector deployment and fundraising conditions, though Tikehau is not a tracked manager.",
+      "event_identity": {
+        "subject": "tikehau capital",
+        "action": "deployed",
+        "object": "€3.4bn",
+        "period": "so far this year",
+        "numbers": [
+          "$35.8bn",
+          "2025",
+          "2026",
+          "3",
+          "45",
+          "£2.8bn",
+          "€1.1bn",
+          "€2.2bn",
+          "€215",
+          "€3.4bn",
+          "€450",
+          "€459",
+          "€5.2bn",
+          "€51.7bn",
+          "€715",
+          "€80",
+          "€943"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-23T13:15:46+00:00",
+        "sha256": "cb69e1a187c5a120303b88786665b1fe0f7391d1a5666f207b852bf1dc1bdd72",
+        "source_published_at": "2026-10-23T11:02:22+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/23/tikehau-deploys-e3-4bn-amid-market-volatility/"
+      },
+      "source_published_at": "2026-10-23T11:02:22+00:00",
+      "observed_at": "2026-10-23T13:13:35+00:00"
+    },
+    {
+      "id": "e52929eff2dc",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T10:14:52+00:00",
+      "headline": {
+        "en": "Partners Group closes $510 million rated feeder for evergreen private credit strategy",
+        "zh": "Partners Group为其永续私募信贷策略完成5.1亿美元评级联接基金募集"
+      },
+      "summary": {
+        "en": "Partners Group closed a $510 million rated feeder for its evergreen private credit strategy.",
+        "zh": "Partners Group为其永续私募信贷策略完成了一只5.1亿美元的评级联接基金募集。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "HedgeCo.Net",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNc2NsV1FKX2xwSVZIMzBPMjZQM0NYQ0MyZWlKRTNvOVBQZ3BBTTluMFBMOEVDdkc5SmQzWmdUaENVRG5EUWhPZTgzVUdnbVZOcTdBZGVoMXo5YlBILWY2TVZoYzM0NTJvUnlva2tIQ3dRc2NpaWJ4cVpnSmNqRWh2Qkc3QkY3cThvbWI4T1FtTjdRT1NEUFVzdkVEQktjZmN5X3FPVHhrUTZTaU9fRWhUbjdZdGVQOGI3YU8xQUZhVG5qVW5RWV9j?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Closed a $510 Million Rated Feeder for Its Evergreen Private Credit Strategy",
+      "source_fingerprint": "1a9e9f6a665e3fcd8bbfe4f54dd7b3b3d279aa143b14e090dcc530d6a46b71ad",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3c0633970ddffbebd1ac1ae4aa6ae3cef453650755728a45eb4a3e389a2657e6",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline reports a closed $510m rated feeder for an evergreen private credit strategy, a fundraising datapoint for the private credit sub-sector, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-23T13:15:49+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNc2NsV1FKX2xwSVZIMzBPMjZQM0NYQ0MyZWlKRTNvOVBQZ3BBTTluMFBMOEVDdkc5SmQzWmdUaENVRG5EUWhPZTgzVUdnbVZOcTdBZGVoMXo5YlBILWY2TVZoYzM0NTJvUnlva2tIQ3dRc2NpaWJ4cVpnSmNqRWh2Qkc3QkY3cThvbWI4T1FtTjdRT1NEUFVzdkVEQktjZmN5X3FPVHhrUTZTaU9fRWhUbjdZdGVQOGI3YU8xQUZhVG5qVW5RWV9j?oc=5"
+      },
+      "observed_at": "2026-10-23T13:13:35+00:00"
+    },
+    {
+      "id": "e784d9abefb1",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T08:13:10+00:00",
+      "headline": {
+        "en": "Rating inquiries suggest VantageScore could show up in non-QM deals within months",
+        "zh": "评级问询显示VantageScore可能在数月内出现在non-QM交易中"
+      },
+      "summary": {
+        "en": "Rating inquiries suggest VantageScore could appear in non-QM deals within months.",
+        "zh": "评级问询显示VantageScore可能在数月内出现在non-QM交易中。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Green Street News",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMlNDTHZ2a2JPcTFWLWotYlhHRC1FdHF6blJyNVpKZE5Uc1J1Z1E2RDlfUnYwRFQtdWREcDZ0THM5VVd5VF9OOWpIQ2hETDJydHctb190VmJxSjg5YnBYdldZSDlnNzZhaUpBR1dzd2pkQWRzOXlSS0NWazlrZm8wc0dUMkE4MWdKeTZoXzg2bFRYLW1OVFVOOUxuZWZqVnBhR2JRT214ajdLZVFIa2JwOHFfdlVrREZFZGc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Rating inquiries suggest VantageScore could show up in non-QM deals within months",
+      "source_fingerprint": "c11ab52590c6ca69f47b437a15858775e8e699869fb3b3e9282d78fef1ebbd6f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "73bceb215b22039770b443e8e5e951bf75f7adf6721a4ce9f51ff0f4c02c3161",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Potential adoption of VantageScore in non-QM securitizations could shift underwriting and collateral performance in the mortgage and residential credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-23T13:15:52+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMlNDTHZ2a2JPcTFWLWotYlhHRC1FdHF6blJyNVpKZE5Uc1J1Z1E2RDlfUnYwRFQtdWREcDZ0THM5VVd5VF9OOWpIQ2hETDJydHctb190VmJxSjg5YnBYdldZSDlnNzZhaUpBR1dzd2pkQWRzOXlSS0NWazlrZm8wc0dUMkE4MWdKeTZoXzg2bFRYLW1OVFVOOUxuZWZqVnBhR2JRT214ajdLZVFIa2JwOHFfdlVrREZFZGc?oc=5"
+      },
+      "observed_at": "2026-10-23T13:13:35+00:00"
+    },
+    {
+      "id": "7cc7a44e9fbd",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T08:00:59+00:00",
+      "headline": {
+        "en": "IPA: $2.1 Trillion Debt Maturity Wave Raises Pressure on Multifamily Owners",
+        "zh": "IPA：2.1万亿美元债务到期潮加大多户住宅业主压力"
+      },
+      "summary": {
+        "en": "IPA flagged a $2.1 trillion wave of debt maturities and said it raises pressure on multifamily owners, according to a headline.",
+        "zh": "据一则标题报道，IPA指出存在规模2.1万亿美元的债务到期潮，并表示这将加大多户住宅业主的压力。所提供文本未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Real Estate Daily News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSUJvSU9wRDBla1NiWW5sNnZtMFFpOXdyNEpLeE5yRXZmYWZNQ3pyWEFrRDVXMktxUUY0U29iQU1xdkZSbl9jdk5xVU9xNk0zSW5rY0pJaFFoU182RnF2aFFsN1p2cnpQMWJkaXp1YWRoT3pwdFZycGlLX0swR25rTXdoYTRHTXJZU2dDMWM4eUNCYmJvQjNCU0d5TFpKVzNRamxSd3lUS1hHWG8?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "IPA: $2.1 Trillion Debt Maturity Wave Raises Pressure on Multifamily Owners",
+      "source_fingerprint": "973e2a657a194985d28a9516ad57b3fe2ca1e1c7135ce8de16d6bb7f0a437675",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6f25a683cefa4ea8d44c6203c9cd5d421dbcf85d343fe740a93e5026ec594eb3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A widely cited $2.1 trillion debt maturity wave affecting multifamily owners signals refinancing stress in CRE credit, with transmission to tracked managers that lend against real estate and multifamily.",
+      "event_identity": {
+        "subject": "ipa",
+        "action": "raises pressure on multifamily owners",
+        "object": "$2.1 trillion debt maturity wave",
+        "period": "$2.1 trillion debt maturity wave",
+        "numbers": [
+          "$2.1"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-23T13:15:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSUJvSU9wRDBla1NiWW5sNnZtMFFpOXdyNEpLeE5yRXZmYWZNQ3pyWEFrRDVXMktxUUY0U29iQU1xdkZSbl9jdk5xVU9xNk0zSW5rY0pJaFFoU182RnF2aFFsN1p2cnpQMWJkaXp1YWRoT3pwdFZycGlLX0swR25rTXdoYTRHTXJZU2dDMWM4eUNCYmJvQjNCU0d5TFpKVzNRamxSd3lUS1hHWG8?oc=5"
+      },
+      "observed_at": "2026-10-23T13:13:35+00:00"
+    },
+    {
       "id": "c1edf5b0622c",
       "date": "2026-10-23",
       "published_at": "2026-10-22T19:50:46+00:00",

@@ -97,6 +97,49 @@
       "observed_at": "2026-10-23T04:14:35+00:00"
     },
     {
+      "id": "024b9604680e",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T13:00:00+00:00",
+      "headline": {
+        "en": "Credit Benchmark: U.S. Corporate Default Risk Rises 54% Over Decade as Private Credit Vulnerabilities Grow",
+        "zh": "Credit Benchmark：美国企业违约风险十年上升54%，私募信贷脆弱性加剧"
+      },
+      "summary": {
+        "en": "Credit Benchmark reports that U.S. corporate default risk has risen 54% over the past decade, with private credit vulnerabilities growing.",
+        "zh": "Credit Benchmark报告称，美国企业违约风险在过去十年上升了54%，同时私募信贷的脆弱性正在加剧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "GlobeNewswire",
+        "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQbFdvQm5UUlpNT3g3c1FlZ3NFelg5X1lWVTNiQW1oN2Z0SzVpdnp4WlhQclByQ3hiWExVQkxoVlM4UWgyUENGajVWekdQT3BNR0dTWlB4Ujc2cU5lZl9TYlhmN00wOGRaeWdmSWp5dlBXY3pWMWRWMVZ5enpJNzV1eUlqUlA0T0VKMUZfRDQyZmxCZHNEZmotU1RLSl94eFEwV1BDcDJsUS1YLTV2bDUwX0xqUmtTejBxU2ZPVlpzTVRId2gxS0I2NFhBT3hrRlllZXU3eFJlYklOUkFvc1lKQ3AxR1c5YW1Cb3FuRHFxZDhwSHc2TFp5OVVKYU83QTlPT1lYNmFB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Credit Benchmark: U.S. Corporate Default Risk Rises 54% Over Decade as Private Credit Vulnerabilities Grow",
+      "source_fingerprint": "b3d68e8e7bfdae2913e8f90ba0e160e1fbc3233440786ec07231c0d7f5f5e183",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "207245b617025227d95e347cc62280cebedf7d5501f3e8d222a2f6574b467715",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Sector-level data on rising U.S. corporate default risk and private credit vulnerabilities bears on credit conditions for tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-23T13:15:57+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQbFdvQm5UUlpNT3g3c1FlZ3NFelg5X1lWVTNiQW1oN2Z0SzVpdnp4WlhQclByQ3hiWExVQkxoVlM4UWgyUENGajVWekdQT3BNR0dTWlB4Ujc2cU5lZl9TYlhmN00wOGRaeWdmSWp5dlBXY3pWMWRWMVZ5enpJNzV1eUlqUlA0T0VKMUZfRDQyZmxCZHNEZmotU1RLSl94eFEwV1BDcDJsUS1YLTV2bDUwX0xqUmtTejBxU2ZPVlpzTVRId2gxS0I2NFhBT3hrRlllZXU3eFJlYklOUkFvc1lKQ3AxR1c5YW1Cb3FuRHFxZDhwSHc2TFp5OVVKYU83QTlPT1lYNmFB?oc=5"
+      },
+      "observed_at": "2026-10-23T13:13:35+00:00"
+    },
+    {
       "id": "8f524db02e9a",
       "date": "2026-10-22",
       "published_at": "2026-10-22T11:47:31+00:00",
@@ -420,6 +463,62 @@
       },
       "source_published_at": "2026-10-22T08:00:03+00:00",
       "observed_at": "2026-10-22T13:37:54+00:00"
+    },
+    {
+      "id": "7edd63e94236",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T05:00:00+00:00",
+      "headline": {
+        "en": "Pendle Opens Yield Market for Centrifuge deJAAA Tied to Janus Henderson AAA CLO Fund",
+        "zh": "Pendle 推出与 Janus Henderson AAA CLO 策略挂钩的 deJAAA 收益市场"
+      },
+      "summary": {
+        "en": "Pendle said on Oct. 21 that a live yield market for Centrifuge's deJAAA product opened on its decentralized finance platform. The deJAAA product is linked to the Janus Henderson Anemoy AAA CLO Fund, and the Pendle market is scheduled to mature Nov. 26, 2026. Janus Henderson separately said Aug. 13 that a AAA CLO ETF surpassed $30 billion in assets under management.",
+        "zh": "Pendle 于10月21日表示，Centrifuge 的 deJAAA 产品已在其去中心化金融平台上线收益市场。deJAAA 产品挂钩 Janus Henderson Anemoy AAA CLO 基金，该 Pendle 市场计划于2026年11月26日到期。Janus Henderson 另行于8月13日表示，一只 AAA CLO ETF 的管理资产规模已超过300亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "econotimes.com",
+        "url": "https://econotimes.com/Pendle-Launches-deJAAA-Yield-Market-Tied-to-Janus-Henderson-CLO-Strategy-1759841"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Pendle Launches deJAAA Yield Market Tied to Janus Henderson CLO Strategy",
+      "source_fingerprint": "328aa8cba2198bc1d4a43372af9eded7e7e15363722552ebe0901421af59a124",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 178,
+            "end": 240
+          },
+          "linkage": {
+            "start": 97,
+            "end": 151
+          }
+        },
+        "source_sha256": "bcdd11bae80a54ad2dc93ae673f6fa605f34df082ae872a2525f2137b401f30a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Tokenized CLO fund distribution expands a credit sub-sector's investor access, though no tracked manager is directly involved.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-23T13:16:00+00:00",
+        "sha256": "bcdd11bae80a54ad2dc93ae673f6fa605f34df082ae872a2525f2137b401f30a",
+        "source_published_at": "2026-10-22T04:34:14Z",
+        "final_url": "https://econotimes.com/Pendle-Launches-deJAAA-Yield-Market-Tied-to-Janus-Henderson-CLO-Strategy-1759841"
+      },
+      "published_basis": "gdelt_seen",
+      "source_published_at": "2026-10-22T04:34:14Z",
+      "observed_at": "2026-10-23T13:13:35+00:00"
     },
     {
       "id": "8dc66f7d32a5",
