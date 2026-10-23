@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-23",
+  "items": [
+    {
+      "id": "c1edf5b0622c",
+      "date": "2026-10-23",
+      "published_at": "2026-10-22T19:50:46+00:00",
+      "headline": {
+        "en": "Newmark Launches Multifamily Bridge Program With $35M Georgia Loan",
+        "zh": "Newmark推出多户型过桥贷款项目，首单为佐治亚州3500万美元贷款"
+      },
+      "summary": {
+        "en": "Newmark has launched a Multifamily Bridge Program providing short-term bridge loans to multifamily assets, with the possibility of eventually becoming a Fannie Mae and Freddie Mac agency lender. Its first deal is a $35 million bridge loan to MFP Capital to refinance Independence Place, a 264-unit multifamily property in Hinesville, Georgia. Henry Stimler, Bill Weber and Ricky Warner originated the debt.",
+        "zh": "Newmark推出了多户型过桥贷款项目（Multifamily Bridge Program），为多户型资产提供短期过桥贷款，未来有可能成为房利美和房地美的代理贷款机构。首笔交易是向MFP Capital提供3500万美元过桥贷款，用于再融资佐治亚州海恩斯维尔264套多户型物业Independence Place。该笔债务由Henry Stimler、Bill Weber和Ricky Warner发起。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/newmark-launches-bridge-lending-program/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Newmark Launches Bridge Lending Program, Makes $35M Loan for Georgia Multi Asset",
+      "source_fingerprint": "c7ed327444cd63af814fbd90182b376abd0be31ea1aa7d8cc25c0e8df75cb297",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 437,
+            "end": 540
+          },
+          "linkage": {
+            "start": 338,
+            "end": 389
+          }
+        },
+        "source_sha256": "f02085997973c36c1a2c6977e187cc7040374b01ad5d3de10e0f95becd9fa4b7",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A large brokerage launching a multifamily bridge lending program expands competition for short-term property debt, a channel touching tracked real-estate and mortgage credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-23T04:17:13+00:00",
+        "sha256": "f02085997973c36c1a2c6977e187cc7040374b01ad5d3de10e0f95becd9fa4b7",
+        "source_published_at": "2026-10-22T15:50:46-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/newmark-launches-bridge-lending-program/"
+      },
+      "source_published_at": "2026-10-22T15:50:46-04:00",
+      "observed_at": "2026-10-23T04:14:35+00:00"
+    }
+  ]
+}

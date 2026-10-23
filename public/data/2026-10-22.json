@@ -2,6 +2,101 @@
   "date": "2026-10-22",
   "items": [
     {
+      "id": "ca64520938ac",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T13:43:56+00:00",
+      "headline": {
+        "en": "Partners Group raises $510M insurer feeder for evergreen private credit",
+        "zh": "Partners Group为常青私募信贷募集5.1亿美元保险资金联接载体"
+      },
+      "summary": {
+        "en": "Partners Group raised a $510 million insurer feeder vehicle for evergreen private credit, according to Dealroom.",
+        "zh": "据Dealroom报道，Partners Group为常青私募信贷募集了一只规模5.1亿美元的保险资金联接载体。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVzFLV0tybkl4dWVsMUkxSktfM21ySHNmMW5wVGlzOEhpOEFYLVlReHZzUjlNZ0xVM01TZXM5OTVBWUZnUlVXTkQ2aVEzOG45ZjJCdE1obTQtYXFBa3QwLS1vUk1KcU9BanU5ZWJhNFNla2JPSllGQThrVE44Y0s2SklwUmVNeGFKSjlkVGg1RTVLRDJDZU53NjhLbGtYM05nZnFhOVJaZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group raises $510M insurer feeder for evergreen private credit",
+      "source_fingerprint": "31661b5504bcbe889783eb27715ce17a8ad0205bfade0615b74c2385f4ec3afe",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6a1aa96047dc689afd742eae79ec7ce695cf55bf87bc718871ae1fccfd1d3f87",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New capital raised into a private credit vehicle signals continued LP demand for evergreen private credit strategies.",
+      "event_identity": {
+        "subject": "partners group",
+        "action": "raises",
+        "object": "insurer feeder for evergreen private credit",
+        "period": "$510m",
+        "numbers": [
+          "$510"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-23T04:17:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVzFLV0tybkl4dWVsMUkxSktfM21ySHNmMW5wVGlzOEhpOEFYLVlReHZzUjlNZ0xVM01TZXM5OTVBWUZnUlVXTkQ2aVEzOG45ZjJCdE1obTQtYXFBa3QwLS1vUk1KcU9BanU5ZWJhNFNla2JPSllGQThrVE44Y0s2SklwUmVNeGFKSjlkVGg1RTVLRDJDZU53NjhLbGtYM05nZnFhOVJaZw?oc=5"
+      },
+      "observed_at": "2026-10-23T04:14:35+00:00"
+    },
+    {
+      "id": "975cecd751c9",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T13:00:00+00:00",
+      "headline": {
+        "en": "Credit Benchmark: U.S. Corporate Default Risk Rises 54% Over Decade as Private Credit Vulnerabilities Grow",
+        "zh": "Credit Benchmark：美国企业违约风险十年上升54%，私募信贷脆弱性加剧"
+      },
+      "summary": {
+        "en": "Credit Benchmark reported that U.S. corporate default risk has risen 54% over a decade, according to the headline. The same headline cites growing private credit vulnerabilities.",
+        "zh": "据标题，Credit Benchmark 报告称美国企业违约风险在十年间上升了54%。同一标题还提到私募信贷的脆弱性正在加剧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdzFjdmljVDVCLTlKSWpJMVdGa2RFQ3JiTVJEZUVCV05IOXN3RGUyUXdLZmlsNks0aXhGVnFkNEU3dVk4SG9NNjNNZ3B3bHo4cjBqbFJiSnVRXzJWa2o3OXQxaEJFbVJIWmVKOW1memVrMFVsamg3OXpGLWk0VVZmR0Vmb1FuVXozYUE3VGpGTjVISGdMYjV3MTUtRWpjVUJCS2dz?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Credit Benchmark: U.S. Corporate Default Risk Rises 54% Over Decade as Private Credit Vulnerabilities Grow",
+      "source_fingerprint": "b3d68e8e7bfdae2913e8f90ba0e160e1fbc3233440786ec07231c0d7f5f5e183",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "207245b617025227d95e347cc62280cebedf7d5501f3e8d222a2f6574b467715",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising U.S. corporate default risk tied to private credit vulnerabilities could affect credit conditions for tracked private credit managers and the sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-23T04:17:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdzFjdmljVDVCLTlKSWpJMVdGa2RFQ3JiTVJEZUVCV05IOXN3RGUyUXdLZmlsNks0aXhGVnFkNEU3dVk4SG9NNjNNZ3B3bHo4cjBqbFJiSnVRXzJWa2o3OXQxaEJFbVJIWmVKOW1memVrMFVsamg3OXpGLWk0VVZmR0Vmb1FuVXozYUE3VGpGTjVISGdMYjV3MTUtRWpjVUJCS2dz?oc=5"
+      },
+      "observed_at": "2026-10-23T04:14:35+00:00"
+    },
+    {
       "id": "8f524db02e9a",
       "date": "2026-10-22",
       "published_at": "2026-10-22T11:47:31+00:00",
