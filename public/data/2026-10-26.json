@@ -2,6 +2,666 @@
   "date": "2026-10-26",
   "items": [
     {
+      "id": "a2dc6f4ffc76",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T14:36:30+00:00",
+      "headline": {
+        "en": "CrowdProperty secures £100m forward flow partnership with ColCap Financial UK",
+        "zh": "CrowdProperty与ColCap Financial UK达成1亿英镑远期流量合作"
+      },
+      "summary": {
+        "en": "CrowdProperty has secured a £100m forward flow partnership with ColCap Financial UK, the parent of buy-to-let lender Molo, to fund loans to SME housebuilders. ColCap Financial UK will provide up to £100m over an initial two-year term, with CrowdProperty originating development finance, development exit, development finish and bridging loans of £200,000 to £5m. Laeceum advised CrowdProperty on the transaction.",
+        "zh": "CrowdProperty与ColCap Financial UK（买房出租贷款机构Molo的母公司）达成1亿英镑远期流量合作，为中小型房屋建筑商提供贷款资金。ColCap Financial UK将在初始两年期内提供最多1亿英镑，CrowdProperty将发放20万至500万英镑的开发融资、开发退出、开发完工及过桥贷款。Laeceum担任CrowdProperty该交易的顾问。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "real_estate"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/26/crowdproperty-enters-100m-forward-flow-partnership-with-colcap-financial-uk/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CrowdProperty enters £100m forward flow partnership with ColCap Financial UK",
+      "source_fingerprint": "90369a278ea5107ac80608f726a1f2a9ba0e4f0083531ceb2334a56e180c9261",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 18,
+            "end": 58
+          },
+          "linkage": {
+            "start": 620,
+            "end": 685
+          }
+        },
+        "source_sha256": "c6acf33fac43060d50dccee1b075bc9820adbc03289855d95aca9c4f4eed7c7e",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A £100m forward flow facility into UK property development lending expands asset-backed lending capacity, a channel relevant to tracked private credit and asset-based finance strategies.",
+      "event_identity": {
+        "subject": "crowdproperty",
+        "action": "secured a £100m forward flow partnership",
+        "object": "colcap financial uk",
+        "period": "initial two-year term",
+        "numbers": [
+          "$25bn",
+          "1.3bn",
+          "2022",
+          "3",
+          "£100",
+          "£13.1bn",
+          "£200,000",
+          "£5",
+          "£500"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-26T15:02:14+00:00",
+        "sha256": "c6acf33fac43060d50dccee1b075bc9820adbc03289855d95aca9c4f4eed7c7e",
+        "source_published_at": "2026-10-26T14:36:30+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/26/crowdproperty-enters-100m-forward-flow-partnership-with-colcap-financial-uk/"
+      },
+      "source_published_at": "2026-10-26T14:36:30+00:00",
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "1f9ca95437e9",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T13:46:27+00:00",
+      "headline": {
+        "en": "PennantPark Secures $1.9 Billion Across Senior Credit Funds",
+        "zh": "PennantPark 旗下高级信贷基金募集 19 亿美元"
+      },
+      "summary": {
+        "en": "PennantPark secured $1.9 billion across its senior credit funds, according to a headline report, which cited strong investor demand for core middle market lending.",
+        "zh": "据一则标题报道，PennantPark 旗下高级信贷基金共募集 19 亿美元，报道称这反映出投资者对核心中间市场贷款需求强劲。所提供文本未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Manila Times",
+        "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNSEZCVGtqQkloY1VFMk9FWnRSMjYwR0lXMHJLYzVXQ29SVjVRemFyOWV3V3lrOG5qMkxuZ2xEeWRPeHcxWWo2R21zc1FJc254cWFPR2twTFJpQWdLS3VJV0t2MVFyTzZHSl9LYk5TTkFiZTFJUFlHN29oOFBMUmxOZnVqX0xOblMybHRfYjZPdHJzWVNscmI0NmpEbTFsQmZrVzZnRTJBR1dCR3lud3dERTJiYnhCeTRfYUR1ZTlYc0lOYVFqdkwycWlSbTAzT1Z2cVlGaXRBb283ckJQRmpBaW1neVhYSlQ2aVEtbUZKcWQ2NFZOcExZUlRCMi1MWDRacEdZSEtKN3FjNXloTjJ4bXdyZGlzLTFabDBPM1lna1JrREpsS0RqNC130gGqAkFVX3lxTE1IRkJUa2pCSWhjVUUyT0VadFIyNjBHSVcwcktjNVdDb1JWNVF6YXI5ZXdXeWs4bmoyTG5nbER5ZE94dzFZajZHbXNzUUlzbnhxYU9Ha3BMUmlBZ0tLdUlXS3YxUXJPNkdKX0tiTlNOQWJlMUlQWUc3b2g4UExSbE5mdWpfTE5uUzJsdF9iNk90cnNZU2xyYjQ2akRtMWxCZmtXNmdFMkFHV0JHeW53d0RFMmJieEJ5NF9hRHVlOVhzSU5hUWp2TDJxaVJtMDNPVnZxWUZpdEFvbzdyQlBGakFpbWd5WFhKVDZpUS1tRkpxZDY0Vk5wTFlSVEIyLUxYNFpwR1lIS0o3cWM1eWhOMnhtd3JkaXMtMVpsME8zWWdrUmtESmxLRGo0LXc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "PennantPark Secures $1.9 Billion Across Senior Credit Funds, Highlighting Strong Investor Demand for Core Middle Market Lending",
+      "source_fingerprint": "731eaf349b404180d1ab9a04ba9446cd475ebec82224ce2753d0c8732ec75056",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bf329d72c5901e1a9c298108f704a49f499663743afe564963334c253ca87be3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large private credit capital raise signals continued deployment capacity and investor demand in core middle market lending, a competitive read-through for tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNSEZCVGtqQkloY1VFMk9FWnRSMjYwR0lXMHJLYzVXQ29SVjVRemFyOWV3V3lrOG5qMkxuZ2xEeWRPeHcxWWo2R21zc1FJc254cWFPR2twTFJpQWdLS3VJV0t2MVFyTzZHSl9LYk5TTkFiZTFJUFlHN29oOFBMUmxOZnVqX0xOblMybHRfYjZPdHJzWVNscmI0NmpEbTFsQmZrVzZnRTJBR1dCR3lud3dERTJiYnhCeTRfYUR1ZTlYc0lOYVFqdkwycWlSbTAzT1Z2cVlGaXRBb283ckJQRmpBaW1neVhYSlQ2aVEtbUZKcWQ2NFZOcExZUlRCMi1MWDRacEdZSEtKN3FjNXloTjJ4bXdyZGlzLTFabDBPM1lna1JrREpsS0RqNC130gGqAkFVX3lxTE1IRkJUa2pCSWhjVUUyT0VadFIyNjBHSVcwcktjNVdDb1JWNVF6YXI5ZXdXeWs4bmoyTG5nbER5ZE94dzFZajZHbXNzUUlzbnhxYU9Ha3BMUmlBZ0tLdUlXS3YxUXJPNkdKX0tiTlNOQWJlMUlQWUc3b2g4UExSbE5mdWpfTE5uUzJsdF9iNk90cnNZU2xyYjQ2akRtMWxCZmtXNmdFMkFHV0JHeW53d0RFMmJieEJ5NF9hRHVlOVhzSU5hUWp2TDJxaVJtMDNPVnZxWUZpdEFvbzdyQlBGakFpbWd5WFhKVDZpUS1tRkpxZDY0Vk5wTFlSVEIyLUxYNFpwR1lIS0o3cWM1eWhOMnhtd3JkaXMtMVpsME8zWWdrUmtESmxLRGo0LXc?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "759351823716",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T13:46:27+00:00",
+      "headline": {
+        "en": "PennantPark Secures $1.9 Billion Across Senior Credit Funds",
+        "zh": "PennantPark 旗下高级信贷基金募集 19 亿美元"
+      },
+      "summary": {
+        "en": "PennantPark secured $1.9 billion across its senior credit funds, according to a headline report. The article excerpt frames the raise as evidence of strong investor demand for core middle market lending.",
+        "zh": "据标题报道，PennantPark 在其高级信贷基金中募集了 19 亿美元。文章摘要称，此次募资体现了投资者对核心中间市场贷款的强劲需求。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The Manila Times",
+        "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOMTNOSTItYXAtVktMN1Y4MVZqck9wV2J6dFdCX3dKckljUENsM0s0V1J4SkZScnMzUm81dHFDX1hESlNXZmZFMjVBemNHSi05U3JRSmNkOUtxTWZ0N083YUhNd0R1YVF1NEl6MjNodjJUV2Y2ME9GbWkxWklLYlNkWjNiWklxQmF4VkU1RFV6X0EzTnFfVUdVT1h6aXFqdURXNUV0QzFEMGtLVzRiMXFQRUdEWGJlZFhOT3BlUGsxdk1RVkctRkYtYVBNTV9OcUxvT2FEMEl1WV9UaHFhUENxVW5LR3pHR3ZsaXZGTWpHbUZJU04tQ0ZEZHBXTkp3aU42TTZ0Z2JFa2ktOEY3SG4xbkN1Z0RnckYwWl9zTU53VjBmbFFw0gGqAkFVX3lxTE1IRkJUa2pCSWhjVUUyT0VadFIyNjBHSVcwcktjNVdDb1JWNVF6YXI5ZXdXeWs4bmoyTG5nbER5ZE94dzFZajZHbXNzUUlzbnhxYU9Ha3BMUmlBZ0tLdUlXS3YxUXJPNkdKX0tiTlNOQWJlMUlQWUc3b2g4UExSbE5mdWpfTE5uUzJsdF9iNk90cnNZU2xyYjQ2akRtMWxCZmtXNmdFMkFHV0JHeW53d0RFMmJieEJ5NF9hRHVlOVhzSU5hUWp2TDJxaVJtMDNPVnZxWUZpdEFvbzdyQlBGakFpbWd5WFhKVDZpUS1tRkpxZDY0Vk5wTFlSVEIyLUxYNFpwR1lIS0o3cWM1eWhOMnhtd3JkaXMtMVpsME8zWWdrUmtESmxLRGo0LXc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "PennantPark Secures $1.9 Billion Across Senior Credit Funds, Highlighting Strong Investor Demand for Core Middle Market Lending",
+      "source_fingerprint": "731eaf349b404180d1ab9a04ba9446cd475ebec82224ce2753d0c8732ec75056",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bf329d72c5901e1a9c298108f704a49f499663743afe564963334c253ca87be3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $1.9bn capital raise by a middle-market senior credit lender signals continued fundraising capacity and demand in private credit, informing competitive and fundraising conditions for tracked credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:28+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOMTNOSTItYXAtVktMN1Y4MVZqck9wV2J6dFdCX3dKckljUENsM0s0V1J4SkZScnMzUm81dHFDX1hESlNXZmZFMjVBemNHSi05U3JRSmNkOUtxTWZ0N083YUhNd0R1YVF1NEl6MjNodjJUV2Y2ME9GbWkxWklLYlNkWjNiWklxQmF4VkU1RFV6X0EzTnFfVUdVT1h6aXFqdURXNUV0QzFEMGtLVzRiMXFQRUdEWGJlZFhOT3BlUGsxdk1RVkctRkYtYVBNTV9OcUxvT2FEMEl1WV9UaHFhUENxVW5LR3pHR3ZsaXZGTWpHbUZJU04tQ0ZEZHBXTkp3aU42TTZ0Z2JFa2ktOEY3SG4xbkN1Z0RnckYwWl9zTU53VjBmbFFw0gGqAkFVX3lxTE1IRkJUa2pCSWhjVUUyT0VadFIyNjBHSVcwcktjNVdDb1JWNVF6YXI5ZXdXeWs4bmoyTG5nbER5ZE94dzFZajZHbXNzUUlzbnhxYU9Ha3BMUmlBZ0tLdUlXS3YxUXJPNkdKX0tiTlNOQWJlMUlQWUc3b2g4UExSbE5mdWpfTE5uUzJsdF9iNk90cnNZU2xyYjQ2akRtMWxCZmtXNmdFMkFHV0JHeW53d0RFMmJieEJ5NF9hRHVlOVhzSU5hUWp2TDJxaVJtMDNPVnZxWUZpdEFvbzdyQlBGakFpbWd5WFhKVDZpUS1tRkpxZDY0Vk5wTFlSVEIyLUxYNFpwR1lIS0o3cWM1eWhOMnhtd3JkaXMtMVpsME8zWWdrUmtESmxLRGo0LXc?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "d11b0cb49274",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T13:40:24+00:00",
+      "headline": {
+        "en": "Northpointe Plans Retail Mortgage Exit, Pursues CMG Deal",
+        "zh": "Northpointe计划退出零售抵押贷款业务，并寻求CMG交易"
+      },
+      "summary": {
+        "en": "Northpointe plans to exit retail mortgage operations and is pursuing a deal involving CMG, according to a headline report.",
+        "zh": "据一则标题报道，Northpointe计划退出零售抵押贷款业务，并正在寻求一项涉及CMG的交易。所提供文本未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "National Mortgage Professional",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMGVyWjR2aUluLU5FVERmQ1E2R2V1TW1VSl8zUl9kZ3ZNT1V0TFMyTmo2S2o0eTdvUDdoRl9kTVNsaXI4cGMtWU9oUHVzVkQtcFZHQjFGTGFWMW9KYkhwWmwwMkhXdHhreEVUcmZwRnU2Zk8zSmN4dEpwcmVHS0RmYnpnbjZXN0FHcVBpNXE0X1FGb0hmLU42QmxnTkxaVm1fblVJ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Northpointe Plans Retail Mortgage Exit, Pursues CMG Deal",
+      "source_fingerprint": "5a89a611e80893d9b8811ac361069cde9f7f605a566cc38876adfed99e740ad6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "9b74b4f93e11595c5e95cf9cb2e39fe495532667cab588e8de01c07485c90587",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A residential mortgage lender exiting retail and pursuing an acquisition signals consolidation and competitive shifts in the mortgage sector, a channel to tracked mortgage-credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:31+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMGVyWjR2aUluLU5FVERmQ1E2R2V1TW1VSl8zUl9kZ3ZNT1V0TFMyTmo2S2o0eTdvUDdoRl9kTVNsaXI4cGMtWU9oUHVzVkQtcFZHQjFGTGFWMW9KYkhwWmwwMkhXdHhreEVUcmZwRnU2Zk8zSmN4dEpwcmVHS0RmYnpnbjZXN0FHcVBpNXE0X1FGb0hmLU42QmxnTkxaVm1fblVJ?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "7c223c5ce115",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:56:15+00:00",
+      "headline": {
+        "en": "Apollo to take minority stake in Abu Dhabi's Mubadala Capital",
+        "zh": "Apollo将收购阿布扎比Mubadala Capital少数股权"
+      },
+      "summary": {
+        "en": "Apollo is to take a minority stake in Abu Dhabi's Mubadala Capital, according to a headline report. No deal size or terms were given.",
+        "zh": "据一则标题报道，Apollo将收购阿布扎比Mubadala Capital的少数股权。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYlVRempJV2N2MTlWRVR0bTNnYWh2QlVWYzRpUmhnZzY2RktyZG12cmRNeVBLTTI3c0p1Z200eGZBRngzTjRLeC01RTZhVmNiblBQekZIOWF6dml4STBtN2dYTGx2aTFjWE5PdGE1WTBST1BIWkpaM19YOHNWRzJ1S0MyeVh6ZTgxWlFnTVI3ZFRvS0Ixa2p0djhRSlN5Tm5Ub1hBWjdidVNZdUVJekdR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo to take minority stake in Abu Dhabi’s Mubadala Capital",
+      "source_fingerprint": "dde5a980a3d53e35792c84cc0c8f41140d2551e91c5afe90b4a8308917296a93",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4733e3796442e3bc65dd4ffa9cc645696e1d0afa208ea1669cb0fbfca06f9ff9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo, a tracked credit manager, is taking a minority stake in a sovereign-backed asset manager, a franchise and capital-deployment development.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYlVRempJV2N2MTlWRVR0bTNnYWh2QlVWYzRpUmhnZzY2RktyZG12cmRNeVBLTTI3c0p1Z200eGZBRngzTjRLeC01RTZhVmNiblBQekZIOWF6dml4STBtN2dYTGx2aTFjWE5PdGE1WTBST1BIWkpaM19YOHNWRzJ1S0MyeVh6ZTgxWlFnTVI3ZFRvS0Ixa2p0djhRSlN5Tm5Ub1hBWjdidVNZdUVJekdR?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "3e8569812a28",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:55:53+00:00",
+      "headline": {
+        "en": "Single-asset CMBS deals take 76% of 2026 private-label issuance",
+        "zh": "单一资产CMBS交易占2026年私募标签发行量的76%"
+      },
+      "summary": {
+        "en": "Single-asset, single-borrower deals accounted for 76 percent of 2026 private-label CMBS issuance through September, with SASB and large-loan deals totaling $66 billion against $21.2 billion of conduits. Combined volume of $87.2 billion was up 2 percent from the same months of 2025, with conduits up 6 percent and SASB up 1 percent. The Cosmopolitan of Las Vegas loan became a $3.05 billion bond deal in February, the largest single deal cited.",
+        "zh": "截至9月，单一资产、单一借款人交易占2026年私募标签CMBS发行量的76%，SASB及大额贷款交易合计660亿美元，相比之下通道类交易为212亿美元。合计发行量为872亿美元，较2025年同期增长2%，其中通道类增长6%，SASB增长1%。拉斯维加斯大都会酒店（Cosmopolitan of Las Vegas）的一笔贷款在2月成为一笔30.5亿美元的债券交易，是文中提及的最大单笔交易。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/cmbs-sasb-conduit-2026/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SASBs Dominate Conduits 3 to 1 in 2026 CMBS Market",
+      "source_fingerprint": "a1264d4c79531631ca82d94f8723c9450c807e8eb728a284bc3df3064e7ab113",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 267,
+            "end": 383
+          },
+          "linkage": {
+            "start": 803,
+            "end": 883
+          }
+        },
+        "source_sha256": "02cd6760e2369f6a5a69a7d57f777e291892f25492bbfab23e2569a96d27b62d",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Shift in commercial mortgage securitization toward single-borrower deals affects issuance conditions and refinancing channels for tracked real estate and asset-backed credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-26T15:02:41+00:00",
+        "sha256": "02cd6760e2369f6a5a69a7d57f777e291892f25492bbfab23e2569a96d27b62d",
+        "source_published_at": "2026-10-26T08:55:53-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/cmbs-sasb-conduit-2026/"
+      },
+      "source_published_at": "2026-10-26T08:55:53-04:00",
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "a4deb9f0ed65",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:47:50+00:00",
+      "headline": {
+        "en": "Apollo to acquire minority stake in Mubadala Capital, backing $5 billion in investment commitments",
+        "zh": "Apollo将收购Mubadala Capital少数股权，并支持50亿美元投资承诺"
+      },
+      "summary": {
+        "en": "Apollo agreed to acquire a minority stake in Mubadala Capital and to back $5 billion in investment commitments, according to a headline report.",
+        "zh": "据一则标题报道，Apollo同意收购Mubadala Capital的少数股权，并将支持50亿美元的投资承诺。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "citybiz",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeUYtZTJEMU5NVDREMENGZXkxanppUUIyXzZfdGRVSF9XdG9peDJVMFB4bFo2dWp5QU04S1ByWVA5bUFtS1lsR2gzVEYxYndwTnJ2M3c3WlN3V0lnZGhhMW11SDZaeUtUTnFRVEpYTlBaUzlnUzN4N2dWcEJCRlBEd2VYYkcwbW9KTDNsbFVUenZNZDZXWHJRRG93TzJXb3RSdWVUUWoxbmNBOElTRnNJV0czdkpYR2dPUHRPLVhOOXZ6NW9mZmlEMTV4SUlwbjBa?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo to Acquire Minority Stake in Mubadala Capital, Backing $5 Billion in Investment Commitments",
+      "source_fingerprint": "f4979675f85f8a782057a5e3be36c737b4e97e5e3022e54ebe3639625714ae09",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "68f259981bdd7036d5b3d1da3d579020d94123c568c3303dde7ddd9b9e676aa2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's minority stake in Mubadala Capital and $5bn in investment commitments signal deployment of Apollo's credit and asset-backed capital, relevant to Apollo's franchise and deployment conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeUYtZTJEMU5NVDREMENGZXkxanppUUIyXzZfdGRVSF9XdG9peDJVMFB4bFo2dWp5QU04S1ByWVA5bUFtS1lsR2gzVEYxYndwTnJ2M3c3WlN3V0lnZGhhMW11SDZaeUtUTnFRVEpYTlBaUzlnUzN4N2dWcEJCRlBEd2VYYkcwbW9KTDNsbFVUenZNZDZXWHJRRG93TzJXb3RSdWVUUWoxbmNBOElTRnNJV0czdkpYR2dPUHRPLVhOOXZ6NW9mZmlEMTV4SUlwbjBa?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "5bc1794af48d",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:45:51+00:00",
+      "headline": {
+        "en": "Apollo to take minority stake in Mubadala Capital, committing capital across its strategies",
+        "zh": "Apollo将收购Mubadala Capital少数股权，并向其各策略承诺资本"
+      },
+      "summary": {
+        "en": "Apollo has made a strategic investment in Mubadala Capital, the alternative asset management arm of Abu Dhabi's Mubadala Investment Company, taking a minority equity stake and committing capital across its investment strategies. Additional strategic investors are expected to join Apollo in committing an aggregate of $5bn to Mubadala Capital's strategies at initial close. The deal is expected to close in the fourth quarter of 2026, with Mubadala Capital continuing to operate independently.",
+        "zh": "Apollo已对阿布扎比Mubadala Investment Company旗下另类资产管理机构Mubadala Capital进行战略投资，收购少数股权并向其各项投资策略承诺资本。其他战略投资者预计将与Apollo一同在首次交割时向Mubadala Capital的策略合计承诺50亿美元。该交易预计于2026年第四季度完成，Mubadala Capital将继续独立运营。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/26/apollo-to-take-minority-stake-in-abu-dhabis-mubadala-capital/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo to take minority stake in Abu Dhabi’s Mubadala Capital",
+      "source_fingerprint": "915a1e9e43771c06ab99156ca43b6608519c43d8d9b4f7c4b9054e153f789931",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 58
+          },
+          "linkage": {
+            "start": 1051,
+            "end": 1145
+          }
+        },
+        "source_sha256": "ef892d9969538082f017db5cdd5987aeeae5ef615403e2388b80320e864ec820",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo disclosed a minority equity investment in Mubadala Capital with capital commitments across its strategies, an incremental strategic transaction rather than a credit deterioration.",
+          "zh": "Apollo披露对Mubadala Capital的少数股权投资并承诺向其各策略配置资本，属于增量战略交易，而非信用恶化。"
+        }
+      },
+      "relevance_reason": "Apollo's minority equity investment and capital commitments to Mubadala Capital expand its credit and alternatives platform partnership, signaling deployment and strategic activity for a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-26T15:02:47+00:00",
+        "sha256": "ef892d9969538082f017db5cdd5987aeeae5ef615403e2388b80320e864ec820",
+        "source_published_at": "2026-10-26T12:45:51+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/26/apollo-to-take-minority-stake-in-abu-dhabis-mubadala-capital/"
+      },
+      "source_published_at": "2026-10-26T12:45:51+00:00",
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "9f351440c019",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:42:30+00:00",
+      "headline": {
+        "en": "SpaceX secures $40B Apollo financing deal to expand AI infrastructure",
+        "zh": "SpaceX 获得 Apollo 400 亿美元融资交易，以扩展 AI 基础设施"
+      },
+      "summary": {
+        "en": "SpaceX has secured a $40B financing deal with Apollo to expand AI infrastructure, according to a headline report.",
+        "zh": "据一则标题报道，SpaceX 已与 Apollo 达成 400 亿美元融资交易，用于扩展 AI 基础设施。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMnkyRHJmRWtTY19HNHc4eTBRbWkwT3hXUTFTbElGSGs1aW9oUnFvSUxjUGFTckFhb2lSa3l0OVdUa1JVNFo5VlN1NTBFd21GVjdBVEZmcUxFcVhfQmNWZ2pKOWZBeDdGbE1oMll6cTFod0ctYTdjV2tJUV85bGNidGtTQzFHTHVQRjBvOE81djBQdlRzV0U3c0ZNcUdGaGJHRHBNRnNKeU1LRm1QMHlqalZvRU03d1BNbEtmendqc2lXWlkyY3pqdmR3dw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SpaceX secures $40B Apollo financing deal to expand AI infrastructure",
+      "source_fingerprint": "e7c71c4926c905a8eba7a560de3b6b117d3d13f4dbedc81416915f4d325674f5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3ae71a8ab3cfbc02fa3574fb7ceec656b6b39ba52ab359c8a836ead404d0815d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's reported $40B financing for SpaceX is a major private credit deployment directly involving a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMnkyRHJmRWtTY19HNHc4eTBRbWkwT3hXUTFTbElGSGs1aW9oUnFvSUxjUGFTckFhb2lSa3l0OVdUa1JVNFo5VlN1NTBFd21GVjdBVEZmcUxFcVhfQmNWZ2pKOWZBeDdGbE1oMll6cTFod0ctYTdjV2tJUV85bGNidGtTQzFHTHVQRjBvOE81djBQdlRzV0U3c0ZNcUdGaGJHRHBNRnNKeU1LRm1QMHlqalZvRU03d1BNbEtmendqc2lXWlkyY3pqdmR3dw?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "f37a926e336f",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:24:14+00:00",
+      "headline": {
+        "en": "Apollo strikes deal for minority stake in Mubadala Capital",
+        "zh": "Apollo 达成收购 Mubadala Capital 少数股权协议"
+      },
+      "summary": {
+        "en": "Apollo has struck a deal to acquire a minority stake in Mubadala Capital, according to a headline report. No financial terms or further details were disclosed.",
+        "zh": "据一则标题报道，Apollo 已达成协议收购 Mubadala Capital 的少数股权。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [],
+      "region": "Global",
+      "source": {
+        "publisher": "PEI Private Equity",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTFdaaW5uQm1QSS0xSEVXdWxmSEpqa0pta01TaEd1M1pwNFJucG9tYnR3a3pIZFhPYnFyWmFjSFJPT0F3SnI2Qm5UR1BKNWpmSUY3NDNNb1BUQ2M0Y01FMWxRQ2ZSb2YxUEN6azIzWmF2SjBUOVB3MUFFWHA5ZF9odEFlMEJUQ2thQzFKU0dweldJanlsaGp2S2tadGhDR3YzZXlxZA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo strikes deal for minority stake in Mubadala Capital",
+      "source_fingerprint": "65a2018ddf14e044841e52d8ecd23d0f16c4c090984be390cdb8f8010618c315",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f6325af359d26f79fe7552542bce4ed6f6b53a09991a6007055c1c2cbd052469",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo taking a minority stake in Mubadala Capital is a strategic move involving a tracked manager's broader franchise, though credit impact is unclear from the headline.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTFdaaW5uQm1QSS0xSEVXdWxmSEpqa0pta01TaEd1M1pwNFJucG9tYnR3a3pIZFhPYnFyWmFjSFJPT0F3SnI2Qm5UR1BKNWpmSUY3NDNNb1BUQ2M0Y01FMWxRQ2ZSb2YxUEN6azIzWmF2SjBUOVB3MUFFWHA5ZF9odEFlMEJUQ2thQzFKU0dweldJanlsaGp2S2tadGhDR3YzZXlxZA?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "cc695533f9f6",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:07:34+00:00",
+      "headline": {
+        "en": "SpaceX said to enter $40 billion deal with Apollo for AI chip financing",
+        "zh": "据报道SpaceX与Apollo达成400亿美元交易，为AI芯片融资"
+      },
+      "summary": {
+        "en": "A headline reports that SpaceX has entered a $40 billion deal with Apollo for AI chip financing.",
+        "zh": "一则标题报道称，SpaceX已与Apollo达成400亿美元交易，用于AI芯片融资。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "asset_based_finance",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdzduaWFPcUZkaDJ6cUJWX2tNT2d2UDd1Z0ljQTF1OVZ0Q1dvQ1dBaFJOMlczdHpQLXlNVXFwUWhhNGl6R1VndDV5NGhvMDRiVWZjUVJqRVJDWFdoZkhRUmNiT0MxZ2tpRWN3Ujluc28tT0czS1dQdktTZFplUGJ6Mkpzb2JlQUtKRHdkZVh4R3IwMXZXRDVXUA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SpaceX enters $40 billion deal with Apollo for AI chip financing",
+      "source_fingerprint": "fd214b90adb9171eec984dbb31ac4d3e80d6f1363fb21c2c483ee71ca4628349",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "27e3839fbc055f6c06729474e8aa3cd693afcecacbd27fd43f8241f74ccf27e8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline links Apollo to a reported $40bn SpaceX financing deal, a potential large deployment for its credit and asset-backed business.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:02:56+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdzduaWFPcUZkaDJ6cUJWX2tNT2d2UDd1Z0ljQTF1OVZ0Q1dvQ1dBaFJOMlczdHpQLXlNVXFwUWhhNGl6R1VndDV5NGhvMDRiVWZjUVJqRVJDWFdoZkhRUmNiT0MxZ2tpRWN3Ujluc28tT0czS1dQdktTZFplUGJ6Mkpzb2JlQUtKRHdkZVh4R3IwMXZXRDVXUA?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "4e73b32723a5",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T10:51:34+00:00",
+      "headline": {
+        "en": "Man Group expands Meiji Yasuda Life partnership with private credit commitment",
+        "zh": "Man Group扩大与Meiji Yasuda Life的合作，获得私募信贷承诺"
+      },
+      "summary": {
+        "en": "Man Group expanded its partnership with Meiji Yasuda Life Insurance through a private credit commitment. No commitment amount or terms were given in the supplied headline.",
+        "zh": "Man Group通过一笔私募信贷承诺扩大了与Meiji Yasuda Life Insurance的合作。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPd1V3Y2NWb3V1YjM1UmpTbHRBUE9tX0psdXNESE0tTUdGdmR3RDFsS2daNjEwWFJrV0FLUUNDVE9RZG1kdW5lTkJ6OGZTYkxnUEs3RkYtZkVsSUhiaFNsRVd6bFdFWm9aMHJpb2tHMUt2UmowSndlNlNNVWxXb2xJRTZrSFpnZWZ4Smp5cW5MT0FBT2haQURmV0V1MjFDV3lBZUtEcENId24zYVBMbFlLcGpXeTlSYlZnUC1QYUVsZnlJTHhabUhxSzFPTGttWGlLd1k0dERaQUJfdEpBakM4?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Man Group expands Meiji Yasuda Life Insurance partnership with private credit commitment",
+      "source_fingerprint": "ad9da0fa90172a72598ca1a6e535ecc01159393cc9939392fef8201397cc5ef7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "97853386a0b61f1a9388f998ff62c66ac257529139c94eea9db5e66d2bb1bd5d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large insurer committing to private credit via a manager expands institutional capital supply for private credit strategies, a transmission channel to the private credit sub-sector, though Man Group is not a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:03:01+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPd1V3Y2NWb3V1YjM1UmpTbHRBUE9tX0psdXNESE0tTUdGdmR3RDFsS2daNjEwWFJrV0FLUUNDVE9RZG1kdW5lTkJ6OGZTYkxnUEs3RkYtZkVsSUhiaFNsRVd6bFdFWm9aMHJpb2tHMUt2UmowSndlNlNNVWxXb2xJRTZrSFpnZWZ4Smp5cW5MT0FBT2haQURmV0V1MjFDV3lBZUtEcENId24zYVBMbFlLcGpXeTlSYlZnUC1QYUVsZnlJTHhabUhxSzFPTGttWGlLd1k0dERaQUJfdEpBakM4?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "74843d36fd40",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T09:50:52+00:00",
+      "headline": {
+        "en": "Raymond James sees AI financing opportunities for Apollo, Owl Rock and Ares",
+        "zh": "Raymond James 认为 Apollo、Owl Rock 和 Ares 存在 AI 融资机会"
+      },
+      "summary": {
+        "en": "Raymond James identified AI financing opportunities for Apollo, Owl Rock and Ares, according to a StreetInsider headline.",
+        "zh": "据 StreetInsider 一则标题，Raymond James 指出 Apollo、Owl Rock 和 Ares 存在 AI 融资机会。所提供文本未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "StreetInsider",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN1MtdFlQTGI5N1VxRzdsa2JEdUFJeEhQZEhOTktib085anNQZGhvQnRZN3BsUnFIY1Y1aXdPUkdRWjhsQUFmT1EzREhCY0E4N0o5SVhvV1kyanJOVC1ER1VnaGFOR1dXZEt6dEw3R215dTQwLTM2SWZUOWNNdjA3REEwcmxCbGI1UHJmTG13NEFMaUpDQ294WEJYWWs2ZkFia1RTYjh4bXV3dHVfVFdfbm5ySWE5OVF0UG5iVkdSLXJFQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Raymond James sees AI financing opportunities for Apollo, Owl Rock and Ares",
+      "source_fingerprint": "501b2a9679a46216bd50a787713cf06acd64a87d51be6df7e833053d08f047a3",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fef0869b4bfb8aea7f495c89c3db7c13f9d5af318b0de0753ce155285302ec72",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Broker research flagging AI financing opportunities touches credit deployment prospects for tracked managers Apollo and Blue Owl (Owl Rock), though headline-only evidence limits detail.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T15:03:10+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN1MtdFlQTGI5N1VxRzdsa2JEdUFJeEhQZEhOTktib085anNQZGhvQnRZN3BsUnFIY1Y1aXdPUkdRWjhsQUFmT1EzREhCY0E4N0o5SVhvV1kyanJOVC1ER1VnaGFOR1dXZEt6dEw3R215dTQwLTM2SWZUOWNNdjA3REEwcmxCbGI1UHJmTG13NEFMaUpDQ294WEJYWWs2ZkFia1RTYjh4bXV3dHVfVFdfbm5ySWE5OVF0UG5iVkdSLXJFQQ?oc=5"
+      },
+      "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
       "id": "d5239c320b12",
       "date": "2026-10-26",
       "published_at": "2026-10-26T02:19:45+00:00",

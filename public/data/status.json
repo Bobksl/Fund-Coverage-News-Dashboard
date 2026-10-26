@@ -4,9 +4,9 @@
     "en": "Refreshes automatically on weekdays at 08:00 and 16:00 Hong Kong time",
     "zh": "工作日香港时间 08:00 和 16:00 自动更新"
   },
-  "last_refresh_at": "2026-10-26T04:12:03+00:00",
+  "last_refresh_at": "2026-10-26T14:59:47+00:00",
   "last_refresh_result": "succeeded",
-  "last_success_at": "2026-10-26T04:12:03+00:00",
-  "new_items": 4,
-  "detail": "45 feeds ok, 7 failed; 14 matched the rule; 4 added; 10 rejected by the model"
+  "last_success_at": "2026-10-26T14:59:47+00:00",
+  "new_items": 13,
+  "detail": "47 feeds ok, 5 failed; 26 matched the rule; 13 added; 13 rejected by the model"
 }
