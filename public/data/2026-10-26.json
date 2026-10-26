@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-26",
+  "items": [
+    {
+      "id": "d5239c320b12",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T02:19:45+00:00",
+      "headline": {
+        "en": "Partners Group Raises $510 Million For Second 2026 Rated Feeder Supporting Private Credit Evergreen Strategy",
+        "zh": "Partners Group 为支持私人信贷常青策略的第二只2026年评级联接基金募集5.1亿美元"
+      },
+      "summary": {
+        "en": "Partners Group raised $510 million for a second 2026 rated feeder supporting its private credit evergreen strategy, according to the headline.",
+        "zh": "据标题报道，Partners Group 为支持其私人信贷常青策略的第二只2026年评级联接基金募集了5.1亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWG1ZVjVNQzBiTlYzd3BXS3lOeks0SVM5QWFoQWFidlB6aGVfU0FYWi1LRFZ4VmVUWWx3V0xIaUdoYW1iejREM3Q5SnJuMkotZTl4LXJqbzMxM3B3U0dnTTkzNTJyN1B5NlpXa3VNMURiNEk3ZF9ZTDNMRV9WTFJldUNmcFpja3p2UzVKYkZ5cjBBaFZwcWFCUXJscl9UV0JXOTA3VVZLczBONk1kOS0wb3YtUVNhTGpaOUc0VnJxV3g5TnpJU1E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group Raises $510 Million For Second 2026 Rated Feeder Supporting Private Credit Evergreen Strategy",
+      "source_fingerprint": "83db25c3270d121e61d84412f5bb10e0784ac54295907cf6186fad2e9cb2d650",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "568d498d16044c69f6aa409e036afaccdf03594ba6970f3e452782622c3bce4c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Capital raised for a private credit evergreen feeder signals continued fundraising momentum in private credit, the sub-sector tracked managers operate in.",
+      "event_identity": {
+        "subject": "partners group",
+        "action": "raises $510 million",
+        "object": "second 2026 rated feeder",
+        "period": "2026",
+        "numbers": [
+          "$510 Million",
+          "2026"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T04:14:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWG1ZVjVNQzBiTlYzd3BXS3lOeks0SVM5QWFoQWFidlB6aGVfU0FYWi1LRFZ4VmVUWWx3V0xIaUdoYW1iejREM3Q5SnJuMkotZTl4LXJqbzMxM3B3U0dnTTkzNTJyN1B5NlpXa3VNMURiNEk3ZF9ZTDNMRV9WTFJldUNmcFpja3p2UzVKYkZ5cjBBaFZwcWFCUXJscl9UV0JXOTA3VVZLczBONk1kOS0wb3YtUVNhTGpaOUc0VnJxV3g5TnpJU1E?oc=5"
+      },
+      "observed_at": "2026-10-26T04:12:03+00:00"
+    },
+    {
+      "id": "5dfed66dec47",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T01:01:15+00:00",
+      "headline": {
+        "en": "UK commercial property lending jumps 29% on refinancing surge",
+        "zh": "英国商业地产贷款因再融资激增而跃升29%"
+      },
+      "summary": {
+        "en": "UK commercial property lending rose 29%, driven by a surge in refinancing activity, according to CoStar.",
+        "zh": "据CoStar报道，受再融资活动激增推动，英国商业地产贷款增长29%。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "CoStar",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTDd6SUZDNFlOUWw3NU1yN3FyWDZjUUhkZHcxZGU2c2EtWVRYaG1yVDBla2h3T3hXamVhMDloUzJvWHdMaERZZkxDTGI5TnpOMVdTV0VKUmNUQXZXV0xfamNvSllIc3hJM0RvN0xRTVhpcWhUak5VSXkzZWJxSFhkYWFyZS1TRVEtSGhJZDBpVUoxZl9XMTdEaXFEeUZVTGlQRkw4VTVpQ3A3Zw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "News | UK commercial property lending leaps 29% on refinancing explosion",
+      "source_fingerprint": "e7eb01d97eec2e4617f146d55abd80d3ccf2eb6edb7ab29fb18f15c0dc32b63b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "886883c3bd1223446c40cfd0c53df87048f253973de83966ddf68a08b99623bf",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "UK commercial real estate lending up 29% on refinancing signals stronger real estate credit demand, a transmission channel to private credit and real estate sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T04:14:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTDd6SUZDNFlOUWw3NU1yN3FyWDZjUUhkZHcxZGU2c2EtWVRYaG1yVDBla2h3T3hXamVhMDloUzJvWHdMaERZZkxDTGI5TnpOMVdTV0VKUmNUQXZXV0xfamNvSllIc3hJM0RvN0xRTVhpcWhUak5VSXkzZWJxSFhkYWFyZS1TRVEtSGhJZDBpVUoxZl9XMTdEaXFEeUZVTGlQRkw4VTVpQ3A3Zw?oc=5"
+      },
+      "observed_at": "2026-10-26T04:12:03+00:00"
+    },
+    {
+      "id": "fbaaadcf3183",
+      "date": "2026-10-26",
+      "published_at": "2026-10-25T18:05:00+00:00",
+      "headline": {
+        "en": "Apollo Warns AI Gains Concentrated in Tech as Bond Markets Flag $680 Billion Buildout Risk",
+        "zh": "Apollo警告AI收益仅集中于科技行业，债券市场对6800亿美元建设发出警示"
+      },
+      "summary": {
+        "en": "Apollo warned that AI has paid off only for technology companies while bond markets flash a warning on a $680 billion buildout, according to BigGo Finance.",
+        "zh": "据BigGo Finance报道，Apollo警告称AI仅令科技公司受益，同时债券市场对6800亿美元的建设发出警示。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "BigGo Finance",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxYUpiUC1KMUg2SEd4emhtc2tGV1JDM3NvRFlNQUlmTFdMR0ZscFprMG1Ldlh4MVFjcHk2dzRhc005Q1lubDFFRHFFejdhalRCRloxQWlTUVQtdXVqY3BaZzNfeUxWamRZY20wLUVJcmRLcXlNZXc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Warns AI Has Paid Off Only for Tech as Bond Markets Flash Warning on $680 Billion Buildout",
+      "source_fingerprint": "ee9796c95b4b516269bbe92b8da358a1511fc7f36e5946fdd9e6921080d4bfee",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b4a58da57b60aa2d2525a4b1d113361afbf7e9b414fdb794e4a2ff145db64861",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's warning on AI buildout financing touches credit-market risk in the private credit and asset-backed lending space.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T04:14:58+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxYUpiUC1KMUg2SEd4emhtc2tGV1JDM3NvRFlNQUlmTFdMR0ZscFprMG1Ldlh4MVFjcHk2dzRhc005Q1lubDFFRHFFejdhalRCRloxQWlTUVQtdXVqY3BaZzNfeUxWamRZY20wLUVJcmRLcXlNZXc?oc=5"
+      },
+      "observed_at": "2026-10-26T04:12:03+00:00"
+    }
+  ]
+}

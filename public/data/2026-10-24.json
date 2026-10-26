@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-24",
+  "items": [
+    {
+      "id": "6457efb789ba",
+      "date": "2026-10-24",
+      "published_at": "2026-10-24T13:42:53+00:00",
+      "headline": {
+        "en": "BlackRock $26 Billion Private Credit Fund Limits Withdrawals",
+        "zh": "贝莱德规模260亿美元的私募信贷基金限制赎回"
+      },
+      "summary": {
+        "en": "A BlackRock private credit fund with $26 billion in assets limited withdrawals, according to a headline report.",
+        "zh": "据一则标题报道，贝莱德旗下一只规模260亿美元的私募信贷基金限制了赎回。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Unisba Media",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9iMHBtX2VLVG8yZkthVUVPV2U1X0Mwa1VTc3JHYTlreG84Qk53a0dYalZwWGYxZ1hQNGlackdEMFJVUzByek9YY1pnRjhscVU1amxIbVB6Q0wySjFnX2NyZmQwdXFEVV9TQnZR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "BlackRock $26 Billion Private Credit Fund Limits Withdrawals Nba Draft (8Vu8zYSBv6)",
+      "source_fingerprint": "aa734d6d3442c42c22e6a894c3aaaadb2c8276e91ae51113a3ba8c4dd763de1e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "30b3b630404ed3069a0922abb5dee836e1630ff9e9caf982541993ec7b306381",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large private credit fund imposing withdrawal limits signals liquidity stress in the asset class, feeding through to tracked direct-lending sub-sector conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-26T04:15:10+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9iMHBtX2VLVG8yZkthVUVPV2U1X0Mwa1VTc3JHYTlreG84Qk53a0dYalZwWGYxZ1hQNGlackdEMFJVUzByek9YY1pnRjhscVU1amxIbVB6Q0wySjFnX2NyZmQwdXFEVV9TQnZR?oc=5"
+      },
+      "observed_at": "2026-10-26T04:12:03+00:00"
+    }
+  ]
+}
