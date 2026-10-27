@@ -2,6 +2,92 @@
   "date": "2026-10-26",
   "items": [
     {
+      "id": "30d6b2724274",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T15:52:22+00:00",
+      "headline": {
+        "en": "Allianz Trade: Rate Shocks Raise Private Credit Losses",
+        "zh": "安联贸易：利率冲击加剧私募信贷损失"
+      },
+      "summary": {
+        "en": "Allianz Trade said in a headline that rate shocks raise private credit losses.",
+        "zh": "安联贸易在标题中表示，利率冲击加剧了私募信贷的损失。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "CEO Magazyn",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUEUxT21ZUklhSDRBUDh1MW9sa2tFWEk0Q1E5cFZwa2oyUEFFb1Q2aURyT0xJSGNqSE56elNZTVJGa3VaNU1CdnZGYmpvRkt5YUUtcUFEbFpwRzRCcGxKV1QwRFFwTW55bnhzQ0t5azNlODB3bHZLWlNndURmTHlEakdZbnI?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Allianz Trade: Rate Shocks Raise Private Credit Losses",
+      "source_fingerprint": "c60147ced67aa02400acacb4b109440d7cae1d9da289ff158a54c5227b936fc7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "7a7d68ee0f6fba79edfaa6aea31e64520cdf71dc163fde091af88d93dd32d2c9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A credit insurer's assessment of rate-shock-driven private credit losses bears on loss expectations for tracked private credit strategies even without a named manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUEUxT21ZUklhSDRBUDh1MW9sa2tFWEk0Q1E5cFZwa2oyUEFFb1Q2aURyT0xJSGNqSE56elNZTVJGa3VaNU1CdnZGYmpvRkt5YUUtcUFEbFpwRzRCcGxKV1QwRFFwTW55bnhzQ0t5azNlODB3bHZLWlNndURmTHlEakdZbnI?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "9bfa06a67407",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T14:50:43+00:00",
+      "headline": {
+        "en": "Apollo takes minority stake in Abu Dhabi's Mubadala Capital",
+        "zh": "阿波罗收购阿布扎比穆巴达拉资本少数股权"
+      },
+      "summary": {
+        "en": "Apollo has taken a minority stake in Mubadala Capital, the Abu Dhabi-based asset manager.",
+        "zh": "阿波罗已收购总部位于阿布扎比的资产管理公司穆巴达拉资本的少数股权。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [],
+      "region": "Global",
+      "source": {
+        "publisher": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYzZ6MGdSdlNWc3BNeXNJaUJocVEyTlNZTHpYSkVESkhKbmVuZ1JNSWZkbVhfZnMtQ245UEw4OEY5ZWJhMWxMb292ZnJDR0lxVWJOcUlQOUJMRTlhWjJRSW9zUVlNaXBmcjdYWU9abk5vNHFSWEVIczlUaHJWQmxLUUFNQUo?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo takes minority stake in Abu Dhabi’s Mubadala Capital",
+      "source_fingerprint": "6c99c83ee8088042e9928fe7117a6875ca275e11bbba6abb8b050e0e6ae559c4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fc6dead54a942f32b10a992200e2fc204353fce5c1528ab150a44efdfb6b3ec2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo, a tracked credit manager, is taking a minority stake in Mubadala Capital, a strategic move that touches on the franchise and capital partnerships of a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:47+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYzZ6MGdSdlNWc3BNeXNJaUJocVEyTlNZTHpYSkVESkhKbmVuZ1JNSWZkbVhfZnMtQ245UEw4OEY5ZWJhMWxMb292ZnJDR0lxVWJOcUlQOUJMRTlhWjJRSW9zUVlNaXBmcjdYWU9abk5vNHFSWEVIczlUaHJWQmxLUUFNQUo?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
       "id": "a2dc6f4ffc76",
       "date": "2026-10-26",
       "published_at": "2026-10-26T14:36:30+00:00",
@@ -442,6 +528,61 @@
       "observed_at": "2026-10-26T14:59:47+00:00"
     },
     {
+      "id": "5cf11df4c722",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:44:41+00:00",
+      "headline": {
+        "en": "SpaceX Agrees to $40 Billion Chip-Financing Deal With Apollo",
+        "zh": "SpaceX与Apollo达成400亿美元芯片融资协议"
+      },
+      "summary": {
+        "en": "SpaceX has agreed to a $40 billion chip-financing deal with Apollo, according to Bloomberg.",
+        "zh": "据彭博报道，SpaceX已与Apollo达成一项400亿美元的芯片融资协议。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPamdPTzVpR21fZ2xIMVMzZXdYWlRoLUVxeERUQWxJem80cV8yODZNT0hlcEJFLUJCNFR3TzdqcTk5UjgxZWppWUhHNzJFWlVldWEycXRWUk1JSW9IWVp5QWh0dHhoSWhiWlVORjV3UnhRM1ZYX1NOSmgtYktOZ2pzU25oYXdLWTJGdjRPTFBkRElKS3VJeWVSSVotbEY2MG5zcmJ2dFRjNERzMm9FYy1R?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SpaceX Agrees to $40 Billion Chip-Financing Deal With Apollo",
+      "source_fingerprint": "cf7b9a4fcae3cb0df9acd82cc8ef7270f1500c26768be123f996bb5222e7ce16",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1577907eeb4941bcee6641701e161b3d193dddb0480d2e91fb50ceac82a67bec",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $40 billion Apollo-linked chip financing deal with SpaceX indicates large-scale Apollo credit deployment, relevant to Apollo's asset-backed and private credit activity.",
+      "event_identity": {
+        "subject": "spacex",
+        "action": "agrees to $40 billion chip-financing deal",
+        "object": "apollo",
+        "period": "$40 billion chip-financing deal",
+        "numbers": [
+          "$40 Billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:52+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPamdPTzVpR21fZ2xIMVMzZXdYWlRoLUVxeERUQWxJem80cV8yODZNT0hlcEJFLUJCNFR3TzdqcTk5UjgxZWppWUhHNzJFWlVldWEycXRWUk1JSW9IWVp5QWh0dHhoSWhiWlVORjV3UnhRM1ZYX1NOSmgtYktOZ2pzU25oYXdLWTJGdjRPTFBkRElKS3VJeWVSSVotbEY2MG5zcmJ2dFRjNERzMm9FYy1R?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
       "id": "9f351440c019",
       "date": "2026-10-26",
       "published_at": "2026-10-26T12:42:30+00:00",
@@ -485,6 +626,51 @@
         "final_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMnkyRHJmRWtTY19HNHc4eTBRbWkwT3hXUTFTbElGSGs1aW9oUnFvSUxjUGFTckFhb2lSa3l0OVdUa1JVNFo5VlN1NTBFd21GVjdBVEZmcUxFcVhfQmNWZ2pKOWZBeDdGbE1oMll6cTFod0ctYTdjV2tJUV85bGNidGtTQzFHTHVQRjBvOE81djBQdlRzV0U3c0ZNcUdGaGJHRHBNRnNKeU1LRm1QMHlqalZvRU03d1BNbEtmendqc2lXWlkyY3pqdmR3dw?oc=5"
       },
       "observed_at": "2026-10-26T14:59:47+00:00"
+    },
+    {
+      "id": "6e1f59e0a9f9",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T12:34:42+00:00",
+      "headline": {
+        "en": "Apollo Global Management, Partners to Invest $5 Billion, Take Minority Stake in Mubadala Capital",
+        "zh": "Apollo Global Management 与合作伙伴将投资50亿美元，收购Mubadala Capital少数股权"
+      },
+      "summary": {
+        "en": "Apollo Global Management and partners are to invest $5 billion and take a minority stake in Mubadala Capital, according to a headline report.",
+        "zh": "据一则标题报道，Apollo Global Management 与合作伙伴将投资50亿美元，并收购Mubadala Capital的少数股权。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeDBhV2N4ck94OU9zb2ZvZW83RnZzWEMzbzNoN1BsWkZGSVMxYmo2dEFGX1g4X1h2WEJsNnFnQlhOU1NrTUhYWHpabEU0bU1vNWJBU3BWc0lLSGFEZ0tBQjVFal9uaHR4UXhfcUFhS1FyYllMSk4yNTJOSHJ5MExvdDhDRHpUbGlGRDhTdDk1MVBCWHVQdUVIWFUyZTh6bmdyRm16VzlzdVc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Global Management, Partners to Invest $5 Billion, Take Minority Stake in Mubadala Capital",
+      "source_fingerprint": "616f5da02e7f5c76c8822f06d473c99e1f556059190b8cd47abefd4cfec7762d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "de1bec8ae333e47699b328bdba93540d08cb212428cd020b4c89b3ae83f7f34e",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo committing $5bn alongside partners for a minority stake in Mubadala Capital signals deployment of the tracked manager's capital and an expansion of its asset-management footprint.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeDBhV2N4ck94OU9zb2ZvZW83RnZzWEMzbzNoN1BsWkZGSVMxYmo2dEFGX1g4X1h2WEJsNnFnQlhOU1NrTUhYWHpabEU0bU1vNWJBU3BWc0lLSGFEZ0tBQjVFal9uaHR4UXhfcUFhS1FyYllMSk4yNTJOSHJ5MExvdDhDRHpUbGlGRDhTdDk1MVBCWHVQdUVIWFUyZTh6bmdyRm16VzlzdVc?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
     },
     {
       "id": "f37a926e336f",
@@ -757,6 +943,80 @@
         "final_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTDd6SUZDNFlOUWw3NU1yN3FyWDZjUUhkZHcxZGU2c2EtWVRYaG1yVDBla2h3T3hXamVhMDloUzJvWHdMaERZZkxDTGI5TnpOMVdTV0VKUmNUQXZXV0xfamNvSllIc3hJM0RvN0xRTVhpcWhUak5VSXkzZWJxSFhkYWFyZS1TRVEtSGhJZDBpVUoxZl9XMTdEaXFEeUZVTGlQRkw4VTVpQ3A3Zw?oc=5"
       },
       "observed_at": "2026-10-26T04:12:03+00:00"
+    },
+    {
+      "id": "8a7e87906bef",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26",
+      "headline": {
+        "en": "ASIC halts offers in Murdoch Clarke mortgage fund over defective PDS concerns",
+        "zh": "ASIC因PDS缺陷担忧叫停Murdoch Clarke抵押基金的发售"
+      },
+      "summary": {
+        "en": "ASIC issued an interim stop order on the product disclosure statement of Murdoch Clarke Mortgage Management Ltd, barring offers, issues, sales or transfers of interests in Murdoch Clarke Mortgage Fund. ASIC cited concerns over disclosure of related party transactions, fees and costs, risks and withdrawals. The fund had $573.2 million in net assets under management at 30 June 2026 and mainly invests in interest-only mortgages secured over Tasmanian real property.",
+        "zh": "ASIC对Murdoch Clarke Mortgage Management Ltd的产品披露声明（PDS）发出临时停止令，禁止其发售、发行、出售或转让Murdoch Clarke Mortgage Fund的权益。ASIC担忧该PDS在关联方交易、费用与成本、风险以及赎回方面的披露不足。截至2026年6月30日，该基金管理资产净值为5.732亿澳元，主要投资于以塔斯马尼亚房地产作抵押的只付息贷款。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage",
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "ASIC",
+        "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-257mr-asic-halts-offers-in-mortgage-scheme-managed-by-murdoch-clarke-mortgage-management-ltd"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "ASIC 26-257MR: asic halts offers in mortgage scheme managed by murdoch clarke mortgage management ltd",
+      "source_fingerprint": "07033dde3c6d9872095f82039eb177916fdb27c66d48c7152936e7ac721b6a93",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 161,
+            "end": 196
+          },
+          "linkage": {
+            "start": 1781,
+            "end": 1824
+          },
+          "current_adverse": {
+            "start": 392,
+            "end": 470
+          }
+        },
+        "source_sha256": "52b93906ecbbe053fada91592f34a73154875182329e1155284f17d53c261774",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "ASIC interim stop order on a mortgage fund PDS is a regulatory action in private credit with implications for retail distribution and disclosure standards in a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-27T04:33:58+00:00",
+        "sha256": "52b93906ecbbe053fada91592f34a73154875182329e1155284f17d53c261774",
+        "source_published_at": "2026-10-26",
+        "final_url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-257mr-asic-halts-offers-in-mortgage-scheme-managed-by-murdoch-clarke-mortgage-management-ltd"
+      },
+      "source_origin": "regulator",
+      "published_basis": "page_created_date",
+      "source_published_at": "2026-10-26",
+      "observed_at": "2026-10-27T04:31:17+00:00"
     },
     {
       "id": "fbaaadcf3183",

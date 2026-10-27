@@ -1,0 +1,582 @@
+{
+  "date": "2026-10-27",
+  "items": [
+    {
+      "id": "264a27f3dd69",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T22:21:36+00:00",
+      "headline": {
+        "en": "Neuberger Berman CLO 57 refinancing draws Fitch ratings on $500 million loan portfolio",
+        "zh": "Neuberger Berman CLO 57 进行再融资，Fitch 对5亿美元贷款组合给出评级"
+      },
+      "summary": {
+        "en": "Neuberger Berman CLO 57 is refinancing, with Fitch ratings covering a $500 million loan portfolio.",
+        "zh": "Neuberger Berman CLO 57 正在进行再融资，Fitch 对其5亿美元贷款组合给出评级。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUncwX3poc0UzSE9Wa0NfNXR3clhUYWhmWXk5WmVsa1E5R1dJNUN6SjA0dGR1NnFuZ2laaFZMOFlLVmI4Zjk4WGs2V2J4cGloRTFiOXRUS20wcm9FWW1ZX3RyeTdFTWNzeW1DZFBnc3lhdWJldFZQUnhyZjhFZG5lQWNENk1wUThHQ2s4Yjh2Qi1aclk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Neuberger Berman CLO 57 refinancing draws Fitch ratings on $500 million loan portfolio",
+      "source_fingerprint": "a4bbe38c9f65a2c9c8bac3601ff98901ef62e9513761b4177740c95c6f3a841d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2eb9eae7c2ba7cd61b238663503695d3d830e48132b2a9ea64967effe77ac7fd",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A Neuberger Berman CLO vehicle refinancing a $500 million portfolio bears directly on NB's CLO franchise and issuance conditions for tracked CLO strategies.",
+      "event_identity": {
+        "subject": "neuberger berman clo 57",
+        "action": "refinancing",
+        "object": "$500 million loan portfolio",
+        "period": "refinancing",
+        "numbers": [
+          "$500 million",
+          "57"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:11+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUncwX3poc0UzSE9Wa0NfNXR3clhUYWhmWXk5WmVsa1E5R1dJNUN6SjA0dGR1NnFuZ2laaFZMOFlLVmI4Zjk4WGs2V2J4cGloRTFiOXRUS20wcm9FWW1ZX3RyeTdFTWNzeW1DZFBnc3lhdWJldFZQUnhyZjhFZG5lQWNENk1wUThHQ2s4Yjh2Qi1aclk?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "72ea5d00a7f3",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T22:21:30+00:00",
+      "headline": {
+        "en": "CIFC Funding 2014-II-R partial refinancing receives final Fitch ratings",
+        "zh": "CIFC Funding 2014-II-R 部分再融资获惠誉最终评级"
+      },
+      "summary": {
+        "en": "CIFC Funding 2014-II-R received final ratings from Fitch for a partial refinancing, according to a headline report. No terms, amounts or rating levels were disclosed in the supplied text.",
+        "zh": "据一则标题报道，CIFC Funding 2014-II-R 的部分再融资获得惠誉的最终评级。"
+      },
+      "gps": [
+        "cifc"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRWxOTFRTQnQ3WkVUQlVQQnQzSFdhN29kaVkzX3luMWhmcVdYM20ySi1vNEZsWU9yMVhSamZmRXFBRmJlWGRmSnRKWVBNbWp0cnVQb3ZBaWRrdldIYW4xUnFEZHBCZlpXOE9GYV9xS1ZmZ21BOFJCeTJRSFR6dGV4eXZ2YzJaRmlTUkxZbFZCcUtiMVZPVmU0NXF1bXRiNDBmQVVTVQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "CIFC Funding 2014-II-R partial refinancing receives final Fitch ratings",
+      "source_fingerprint": "5f69402a16769b9f46919a0f9d40ed762d4d42ca0f430649a30e30bb9bafb3df",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2476ad778d2bacb24d65824fa7d9926ae6ca324af6f3e0f6744783814282ec79",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Fitch final ratings on a CIFC CLO's partial refinancing is a routine structured credit event for a tracked CLO manager, with limited but direct credit relevance.",
+      "event_identity": {
+        "subject": "cifc funding 2014-ii-r",
+        "action": "partial refinancing receives final fitch ratings",
+        "object": "partial refinancing",
+        "period": "2014-ii-r",
+        "numbers": [
+          "2014"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:13+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRWxOTFRTQnQ3WkVUQlVQQnQzSFdhN29kaVkzX3luMWhmcVdYM20ySi1vNEZsWU9yMVhSamZmRXFBRmJlWGRmSnRKWVBNbWp0cnVQb3ZBaWRrdldIYW4xUnFEZHBCZlpXOE9GYV9xS1ZmZ21BOFJCeTJRSFR6dGV4eXZ2YzJaRmlTUkxZbFZCcUtiMVZPVmU0NXF1bXRiNDBmQVVTVQ?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "1805fdc621c6",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T22:06:28+00:00",
+      "headline": {
+        "en": "Regulator halts nine-figure mortgage fund over disclosure concerns",
+        "zh": "监管机构因披露问题叫停一只九位数抵押贷款基金"
+      },
+      "summary": {
+        "en": "A regulator has halted a nine-figure mortgage fund over disclosure concerns, according to a headline report.",
+        "zh": "据一则头条报道，监管机构因披露问题叫停了一只九位数抵押贷款基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Mortgage Professional America",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQ195bmhqSUxjcHhveXo1NWdTclJGbFpiSS1HN1dvN3VxX1pQMkdqZVRRS3QtQ3Z1N2NpQ3dCMlVEQm5Hd2Y0ZHE2VUlManNhSjN1cnRKRWwxSlJNa1owZUdxRVpHZnAzb2VfNDNzNHFoMGZMLXNqc2tzU0s4SnNRY3liem0yRVBzX3hwY3JSdXhkMTAtM2JGMHZaelhBQ0l2RlpsUUNVQ2FtVEZqUHhYQ0xR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Regulator halts nine-figure mortgage fund over disclosure concerns",
+      "source_fingerprint": "615cb9bbfba8b1165b9fe03bb1a077bbae11c085a76aadbaa8e1232d6bc042c1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ae26c784dd213befcb891e2d8ec0077a308c0b65dcaea858ef6521ae1ba55d2a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A regulator halting a mortgage fund over disclosure concerns is a market-integrity event that could affect conditions for mortgage and residential credit strategies, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQ195bmhqSUxjcHhveXo1NWdTclJGbFpiSS1HN1dvN3VxX1pQMkdqZVRRS3QtQ3Z1N2NpQ3dCMlVEQm5Hd2Y0ZHE2VUlManNhSjN1cnRKRWwxSlJNa1owZUdxRVpHZnAzb2VfNDNzNHFoMGZMLXNqc2tzU0s4SnNRY3liem0yRVBzX3hwY3JSdXhkMTAtM2JGMHZaelhBQ0l2RlpsUUNVQ2FtVEZqUHhYQ0xR?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "6de9b07a0a4e",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T21:50:17+00:00",
+      "headline": {
+        "en": "Bain Capital Private Credit reports $1.16bn NAV, $2.40bn portfolio fair value as of Sept 30",
+        "zh": "Bain Capital Private Credit报告截至9月30日净资产值11.6亿美元、投资组合公允价值24亿美元"
+      },
+      "summary": {
+        "en": "Bain Capital Private Credit reported aggregate NAV of $1.16 billion, portfolio fair value of $2.40 billion and debt of $1.37 billion as of September 30, 2026, per an SEC filing.",
+        "zh": "根据一份SEC文件，Bain Capital Private Credit报告截至2026年9月30日的合计净资产值为11.6亿美元，投资组合公允价值为24亿美元，债务为13.7亿美元。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOSE9EVzEzRjhtVkd6WmtacDFXOW9YbW5Sdi16emRGOFBWQUM0a1lHVUNFMTFPTHdLWVV0YzE5cGdlbkJlSEd5b1pPbnUwX1FMVFNCeW5XR1kwdk9reWRxNThfOEE2QWx1QS1pSVVrYUM3aHc3Q1dnaTU2Q3dzWWZFWUthdU1qbUpkNTdlTEJDV2RyWlQ3ZWl4OGpYQVg1bm96c1Y3UTdLYXlmNlY4a2g2akxYRnJUM3N5Y2haSHJzOEM0Vi1ONHpxNjEydGR2eWpKSFlJbWNHbHFmQzZBeWVvUzRkLUVvNzBjNldnU0ZLY3NBaTNQWmVHSzdYX3NkTDU2R1B5ZTY3bTRwd2QxREV5dTNjZk1vcmVWT1dJMGJWX3VKNmY3U3g4YmhjTHNPWlk?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bain Capital Private Credit - Aggregate Nav $1.16 Billion, Portfolio Fair Value $2.40 Billion, Debt $1.37 Billion As Of Sept 30, 2026 - SEC Filing",
+      "source_fingerprint": "4fdbd4d668fa17931082f6cd74043579d085232420084f94d93d580472722655",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "485d40f5f9d7fe4e061caceef439e04c9ee11d78278001a03545ae9e42d7c8bd",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Periodic SEC filing discloses NAV, portfolio fair value and debt for Bain Capital's private credit vehicle, a tracked manager's credit strategy.",
+      "event_identity": {
+        "subject": "bain capital private credit",
+        "action": "sec filing",
+        "object": "portfolio fair value",
+        "period": "sept 30, 2026",
+        "numbers": [
+          "$1.16 Billion",
+          "$1.37 Billion",
+          "$2.40 Billion",
+          "2026",
+          "30"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:18+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOSE9EVzEzRjhtVkd6WmtacDFXOW9YbW5Sdi16emRGOFBWQUM0a1lHVUNFMTFPTHdLWVV0YzE5cGdlbkJlSEd5b1pPbnUwX1FMVFNCeW5XR1kwdk9reWRxNThfOEE2QWx1QS1pSVVrYUM3aHc3Q1dnaTU2Q3dzWWZFWUthdU1qbUpkNTdlTEJDV2RyWlQ3ZWl4OGpYQVg1bm96c1Y3UTdLYXlmNlY4a2g2akxYRnJUM3N5Y2haSHJzOEM0Vi1ONHpxNjEydGR2eWpKSFlJbWNHbHFmQzZBeWVvUzRkLUVvNzBjNldnU0ZLY3NBaTNQWmVHSzdYX3NkTDU2R1B5ZTY3bTRwd2QxREV5dTNjZk1vcmVWT1dJMGJWX3VKNmY3U3g4YmhjTHNPWlk?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "ef4ac33c4b56",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T21:24:51+00:00",
+      "headline": {
+        "en": "Blue Owl Technology Income Corp. files final amendment to issuer tender offer",
+        "zh": "Blue Owl Technology Income Corp. 提交发行人要约收购最终修订文件"
+      },
+      "summary": {
+        "en": "Blue Owl Technology Income Corp. filed a final amendment to its Schedule TO tender offer statement, originally filed August 26, 2026. The offer covers up to 13,926,862 Class S, Class D and Class I shares, representing up to 5.00% of shares outstanding as of June 30, 2026, at a per-share price in effect as of September.",
+        "zh": "Blue Owl Technology Income Corp. 就其附表TO要约收购声明提交最终修订文件，原文件于2026年8月26日提交。该要约收购最多13,926,862股S类、D类和I类普通股，占截至2026年6月30日已发行股份的至多5.00%，收购价格按9月生效的每股价格确定。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Technology Income Corp.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1869453/000162828026067330/0001628280-26-067330-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Technology Income Corp. files SC TO-I/A",
+      "source_fingerprint": "f28d780f76987326909aea320c6b9890a741b2d41b82154e107a6476373bb1a9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1718,
+            "end": 1759
+          },
+          "linkage": {
+            "start": 253,
+            "end": 320
+          }
+        },
+        "source_sha256": "8cef4153c17f3f81f956a6580acdeae9258d5866b1bc7cd0bce3c02cc12a64b6",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": true,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: direct.",
+          "zh": "已评估严重程度：有限；关联程度：直接。"
+        }
+      },
+      "relevance_reason": "Final amendment to a Blue Owl BDC issuer tender offer, a capital-return action for a tracked manager's vehicle.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-27T04:33:47+00:00",
+        "sha256": "8cef4153c17f3f81f956a6580acdeae9258d5866b1bc7cd0bce3c02cc12a64b6",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1869453/000162828026067330/otic-scheduletoaoctober2026.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "eb72ff960fc2",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T21:23:54+00:00",
+      "headline": {
+        "en": "Blue Owl Credit Income Corp. files final amendment to issuer tender offer",
+        "zh": "Blue Owl Credit Income Corp. 提交发行人要约收购最终修订"
+      },
+      "summary": {
+        "en": "Blue Owl Credit Income Corp. filed Amendment No. 1, a final amendment, to its Schedule TO tender offer originally filed August 26, 2026. The company offered to purchase up to 101,609,217 Class S, Class D and Class I common shares, representing up to 5.00% of shares outstanding as of June 30, 2026, at the price per share in effect as of September 30, 2026.",
+        "zh": "Blue Owl Credit Income Corp. 就其最初于2026年8月26日提交的 Schedule TO 要约收购提交了第1号修订，即最终修订。公司要约购买最多101,609,217股 S 类、D 类和 I 类普通股，占截至2026年6月30日已发行股份的至多5.00%，购买价格为2026年9月30日生效的每股价格。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Blue Owl Credit Income Corp.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026067327/0001628280-26-067327-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Credit Income Corp. files SC TO-I/A",
+      "source_fingerprint": "0890410484c066f3f3cfe22bc85ec14b386ac709f79dcfa72ffb93ee79cde222",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 1703,
+            "end": 1744
+          },
+          "linkage": {
+            "start": 253,
+            "end": 281
+          },
+          "resolved": {
+            "start": 1703,
+            "end": 1744
+          }
+        },
+        "source_sha256": "baa0a22f33f9626432a72bd7e03bf0dd1c2e6d6832a75cd5d5539519906f6f00",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": true,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": true,
+        "reason": {
+          "en": "Final amendment to a scheduled issuer tender offer by a Blue Owl BDC; administrative completion of an announced buyback with no new credit development.",
+          "zh": "Blue Owl 旗下 BDC 按计划进行的发行人要约收购最终修订；为已公布回购的行政性完成，无新的信用面进展。"
+        }
+      },
+      "relevance_reason": "Final amendment to a Blue Owl BDC issuer tender offer reports the results of a completed buyback of up to 5% of shares, a liquidity event for a tracked manager's vehicle.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-27T04:33:51+00:00",
+        "sha256": "baa0a22f33f9626432a72bd7e03bf0dd1c2e6d6832a75cd5d5539519906f6f00",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026067327/ocic-scheduletoaoctober2026.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "1a76fefee6db",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T21:12:16+00:00",
+      "headline": {
+        "en": "Kayne Anderson BDC Sees Wider Discount and Higher Non-Accruals",
+        "zh": "Kayne Anderson BDC 折价扩大且非应计贷款增加"
+      },
+      "summary": {
+        "en": "A Seeking Alpha headline reports a wider discount and increased non-accruals at Kayne Anderson BDC (NYSE: KBDC).",
+        "zh": "Seeking Alpha 一则标题报道，Kayne Anderson BDC（NYSE: KBDC）折价扩大且非应计贷款增加。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZE55dkhEYkpiLTRXdkZNWDFOcjd0enVuZEstNjNlZHhzaGluel90TXlvMHM1TU9vRTZZbTBwdkI4S3JkNE1kdnU5RVVCR0JLWE4tREJKQ2kyb2NZZnRiQWJLanBZd1J5ekJKUHczc2hoZlktU2hBVDVSdHo5V3VjdmR5MUQtWjRrakVYSm9RT3RtYk5nS24wZU9CNA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Kayne Anderson BDC: Increased Discount And Non-Accruals (NYSE:KBDC)",
+      "source_fingerprint": "57fb753aeb0a4a3ae187cd2c8b920ab832710247ff1506711993550cdb0ee7a1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "323ab467b673ebf43e1b7f89284b25c6935e8f6a8719a5444bdc64f7887e7c47",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags rising non-accruals at a BDC, a signal on credit quality conditions for private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZE55dkhEYkpiLTRXdkZNWDFOcjd0enVuZEstNjNlZHhzaGluel90TXlvMHM1TU9vRTZZbTBwdkI4S3JkNE1kdnU5RVVCR0JLWE4tREJKQ2kyb2NZZnRiQWJLanBZd1J5ekJKUHczc2hoZlktU2hBVDVSdHo5V3VjdmR5MUQtWjRrakVYSm9RT3RtYk5nS24wZU9CNA?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "41a3fa82bfca",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T18:27:10+00:00",
+      "headline": {
+        "en": "Dividend Reset Could Be A Key Test For Blue Owl Capital Stock",
+        "zh": "股息重置或成Blue Owl Capital股票的关键考验"
+      },
+      "summary": {
+        "en": "A headline from Simply Wall Street frames a potential dividend reset as a key test for Blue Owl Capital stock.",
+        "zh": "Simply Wall Street的一则标题将潜在的股息重置视为Blue Owl Capital股票的关键考验。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Simply Wall Street",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOR0toTFp3Q2ROZzhDZkJrdmdpWFA4VG0zeEhUczZLM2NWZmNxbU1ZOVd3R01JeU5uYTlmendURzd4a2VzOWdmNGxkX09lamtlMlBwVEYyOWdGNjllSlJqanRvSFFFcjZWcW9IektRZmkxT0NPQ3d6djBLOWlXT3p6YjJleGtDOENDWVFWZVRDa1hNZWxvTFhsbklFb25lSWNFYWtrVUV3aWpjU3k4Z1VUZTZVelltb19lMllBVk1fa0xITzlqWDluamZzR0d5WjZ4YjA2THE1QzNna2lWSHBlaEZJSWnSAeQBQVVfeXFMTkdLaExad0NkTmc4Q2ZCa3ZnaVhQOFRtM3hIVHM2SzNjVmZjcW1NWTlXd0dNSXlObmE5Znp3VEc3eGtlczlnZjRsZF9PZWprZTJQcFRGMjlnRjY5ZUpSamp0b0hRRXI2VnFvSHpLUWZpMU9DT0N3enYwSzlpV096emIyZXhrQzhDQ1lRVmVUQ2tYTWVsb0xYbG5JRW9uZUljRWFra1VFd2lqY1N5OGdVVGU2VXpZbW9fZTJZQVZNX2tMSE85alg5bmpmc0dHeVo2eGIwNkxxNUMzZ2tpVkhwZWhGSUlp?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Dividend Reset Could Be A Key Test For Blue Owl Capital Stock",
+      "source_fingerprint": "90e6430f94d10051c8059700562f73baa0bb694deb8ff342a0016f1019a15b5e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "24f2034e4b1748784146b595c8de80a1007c813f5571cf113b6f9f282258b526",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags a possible dividend reset at Blue Owl, a covered credit platform, which could affect valuation and capital-return expectations if confirmed.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:30+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOR0toTFp3Q2ROZzhDZkJrdmdpWFA4VG0zeEhUczZLM2NWZmNxbU1ZOVd3R01JeU5uYTlmendURzd4a2VzOWdmNGxkX09lamtlMlBwVEYyOWdGNjllSlJqanRvSFFFcjZWcW9IektRZmkxT0NPQ3d6djBLOWlXT3p6YjJleGtDOENDWVFWZVRDa1hNZWxvTFhsbklFb25lSWNFYWtrVUV3aWpjU3k4Z1VUZTZVelltb19lMllBVk1fa0xITzlqWDluamZzR0d5WjZ4YjA2THE1QzNna2lWSHBlaEZJSWnSAeQBQVVfeXFMTkdLaExad0NkTmc4Q2ZCa3ZnaVhQOFRtM3hIVHM2SzNjVmZjcW1NWTlXd0dNSXlObmE5Znp3VEc3eGtlczlnZjRsZF9PZWprZTJQcFRGMjlnRjY5ZUpSamp0b0hRRXI2VnFvSHpLUWZpMU9DT0N3enYwSzlpV096emIyZXhrQzhDQ1lRVmVUQ2tYTWVsb0xYbG5JRW9uZUljRWFra1VFd2lqY1N5OGdVVGU2VXpZbW9fZTJZQVZNX2tMSE85alg5bmpmc0dHeVo2eGIwNkxxNUMzZ2tpVkhwZWhGSUlp?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "b38b506facfc",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T18:27:09+00:00",
+      "headline": {
+        "en": "Dividend Reset Could Be A Key Test For Blue Owl Capital Stock",
+        "zh": "股息重置可能成为Blue Owl Capital股票的关键考验"
+      },
+      "summary": {
+        "en": "A headline from Simply Wall Street frames a dividend reset as a key test for Blue Owl Capital's stock. No figures, distribution details or management commentary were supplied.",
+        "zh": "Simply Wall Street的一则标题将股息重置视为Blue Owl Capital股票的关键考验。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Simply Wall Street",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPS3E2eGszTndQQjhrWjFnZ19MM1dsT0gxZU85a19FemZDR0MxYkZsSkpWWjlZUE1NckQzWkh2SnJBS3RkbXRreGRxT2JDNzBfcHg4RlAwa2U0cEtLdzdsRnduN1BXeHlQTkhzcnBpUFV4aUxKajFYWG53djJScERYRl9vM0RYcGVVN1ZXVTFvaUJOaENfTUdnNVdvV2tXMjVKT0l3S1lDQ0dXZVZNLVA1YU1nYUFBZjYtYVBaZWk4d2REdXpOS1dyNHVXcndWSi1qTUduaGlyaHJDd0lCQkY40gHkAUFVX3lxTE5HS2hMWndDZE5nOENmQmt2Z2lYUDhUbTN4SFRzNkszY1ZmY3FtTVk5V3dHTUl5Tm5hOWZ6d1RHN3hrZXM5Z2Y0bGRfT2Vqa2UyUHBURjI5Z0Y2OWVKUmpqdG9IUUVyNlZxb0h6S1FmaTFPQ09Dd3p2MEs5aVdPenpiMmV4a0M4Q0NZUVZlVENrWE1lbG9MWGxuSUVvbmVJY0Vha2tVRXdpamNTeThnVVRlNlV6WW1vX2UyWUFWTV9rTEhPOWpYOW5qZnNHR3laNnhiMDZMcTVDM2draVZIcGVoRklJaQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Dividend Reset Could Be A Key Test For Blue Owl Capital Stock",
+      "source_fingerprint": "90e6430f94d10051c8059700562f73baa0bb694deb8ff342a0016f1019a15b5e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "24f2034e4b1748784146b595c8de80a1007c813f5571cf113b6f9f282258b526",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags a potential dividend reset at Blue Owl, a tracked credit manager, relevant to its credit business economics though no figures given.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:32+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPS3E2eGszTndQQjhrWjFnZ19MM1dsT0gxZU85a19FemZDR0MxYkZsSkpWWjlZUE1NckQzWkh2SnJBS3RkbXRreGRxT2JDNzBfcHg4RlAwa2U0cEtLdzdsRnduN1BXeHlQTkhzcnBpUFV4aUxKajFYWG53djJScERYRl9vM0RYcGVVN1ZXVTFvaUJOaENfTUdnNVdvV2tXMjVKT0l3S1lDQ0dXZVZNLVA1YU1nYUFBZjYtYVBaZWk4d2REdXpOS1dyNHVXcndWSi1qTUduaGlyaHJDd0lCQkY40gHkAUFVX3lxTE5HS2hMWndDZE5nOENmQmt2Z2lYUDhUbTN4SFRzNkszY1ZmY3FtTVk5V3dHTUl5Tm5hOWZ6d1RHN3hrZXM5Z2Y0bGRfT2Vqa2UyUHBURjI5Z0Y2OWVKUmpqdG9IUUVyNlZxb0h6S1FmaTFPQ09Dd3p2MEs5aVdPenpiMmV4a0M4Q0NZUVZlVENrWE1lbG9MWGxuSUVvbmVJY0Vha2tVRXdpamNTeThnVVRlNlV6WW1vX2UyWUFWTV9rTEhPOWpYOW5qZnNHR3laNnhiMDZMcTVDM2draVZIcGVoRklJaQ?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "7d2de44e32a8",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T18:05:00+00:00",
+      "headline": {
+        "en": "Apollo Takes Minority Stake in Mubadala Capital as $5 Billion Commitment Deepens Abu Dhabi Ties",
+        "zh": "Apollo 入股 Mubadala Capital，50 亿美元承诺深化与阿布扎比的联系"
+      },
+      "summary": {
+        "en": "Apollo has taken a minority stake in Mubadala Capital, alongside a $5 billion commitment, deepening ties with Abu Dhabi.",
+        "zh": "Apollo 入股 Mubadala Capital，并伴随 50 亿美元的承诺，从而深化了与阿布扎比的联系。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "BigGo Finance",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuWWlVZThBRnlCT1pWV3o3LXZNdU0tWWlKZmVZWDlLVE5wbFJxMUd2QzI1ODRDSkU0OTRZQ2tnVGxja0VDMmJiMjNiVW91bjJXYjA5WEVCN3VNdEVrTFpibno3TUtmbmdQS0pyaTdhNGNvZWlUN0E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo Takes Minority Stake in Mubadala Capital as $5 Billion Commitment Deepens Abu Dhabi Ties",
+      "source_fingerprint": "6500a78200f8ab4d1f89458ded4e9cce36920cd0e1b4c611dc29d69858a2cd53",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "fc7ceb35a86e02d078cc3bef1479f65de622ac2cb56d7a1c9bc075eec0259c7c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo committing $5 billion for a minority stake in Mubadala Capital signals capital deployment by a tracked credit manager with potential implications for its credit franchise and Abu Dhabi ties.",
+      "event_identity": {
+        "subject": "apollo",
+        "action": "takes minority stake",
+        "object": "mubadala capital",
+        "period": "$5 billion commitment",
+        "numbers": [
+          "$5 Billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:34+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuWWlVZThBRnlCT1pWV3o3LXZNdU0tWWlKZmVZWDlLVE5wbFJxMUd2QzI1ODRDSkU0OTRZQ2tnVGxja0VDMmJiMjNiVW91bjJXYjA5WEVCN3VNdEVrTFpibno3TUtmbmdQS0pyaTdhNGNvZWlUN0E?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    },
+    {
+      "id": "00f0692f4176",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T16:56:00+00:00",
+      "headline": {
+        "en": "Apollo acquires minority stake in Abu Dhabi's Mubadala Capital",
+        "zh": "Apollo收购阿布扎比Mubadala Capital少数股权"
+      },
+      "summary": {
+        "en": "Apollo has acquired a minority stake in Abu Dhabi's Mubadala Capital, according to a headline report. No financial terms or further details were provided.",
+        "zh": "据一则标题报道，Apollo已收购阿布扎比Mubadala Capital的少数股权。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Pensions & Investments",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVHdBLW5NbVJJaS1PeVdkV3F0eG1Lc1BvMzdIakl2OGdHQURPSkc5R1lULXRXUHBXVGFGQU5jR3V0NnloZDVkM1FjdENnWEtwUXAwWVl5YzZBT29uT1BWRU91TndIZURPTVFtR3d2NFlna3hjRHo5LWo3czhiQkVxNU9Ta2wwWkVmWGlz?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apollo acquires minority stake in Abu Dhabi’s Mubadala Capital",
+      "source_fingerprint": "2147b92cc05cc761bb2dcbc4f4131a062c2059057932b4851796366e54f2ded1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "0b56a4f5ad1e3ee10037cf11f4b2df704b0faa585600e1595956db46ed5d8e87",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo, a tracked credit manager, taking a minority stake in Mubadala Capital could affect its capital base and deployment capacity.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T04:34:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVHdBLW5NbVJJaS1PeVdkV3F0eG1Lc1BvMzdIakl2OGdHQURPSkc5R1lULXRXUHBXVGFGQU5jR3V0NnloZDVkM1FjdENnWEtwUXAwWVl5YzZBT29uT1BWRU91TndIZURPTVFtR3d2NFlna3hjRHo5LWo3czhiQkVxNU9Ta2wwWkVmWGlz?oc=5"
+      },
+      "observed_at": "2026-10-27T04:31:17+00:00"
+    }
+  ]
+}
