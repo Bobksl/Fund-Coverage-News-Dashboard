@@ -2,6 +2,360 @@
   "date": "2026-10-27",
   "items": [
     {
+      "id": "17d3e00884c2",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T13:48:03+00:00",
+      "headline": {
+        "en": "SpaceX strikes USD 40 billion GPU leasing deal with private credit players",
+        "zh": "SpaceX与私人信贷机构达成400亿美元GPU租赁交易"
+      },
+      "summary": {
+        "en": "SpaceX has struck a USD 40 billion GPU leasing deal involving private credit players. The headline names the counterparties only as private credit players.",
+        "zh": "SpaceX与私人信贷机构达成了一项400亿美元的GPU租赁交易。标题仅将这些交易对手称为私人信贷机构。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeVRCUHJCRHZYX0UxSWt4TFRsZnVsTlA0NDJZT1Vha3Nmd1dzSmFCbGk4RmM4c2ZfR0FMcnVTZWVGNEpLcU9fS2JjOGpSZURrLUV3a19EamN1S2tWVEdybkhjZXFtZjc2TlNVQWJVQ0k3QWNJOU5md3pDT3BkSHBFZm5wcENMdXhiRVBPMEtieGxkWkFkUEowbXE0ejRwcVNHRVlBaHIxNG0ySzJyLXhHRXg4V3Jhd2l1NUE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SpaceX Strikes USD 40 Billion GPU Leasing Deal with Private Credit Players",
+      "source_fingerprint": "398ab6edb4b224f9daf471c72b84fc31ab99125fda67075509dd6256f9829378",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "65b3ce1bcf20898f80ee6fcb9386c5fd037f2e598eb0d85163dc223ee5911302",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $40bn GPU leasing financing involving private credit players signals large-scale asset-backed lending activity relevant to private credit sub-sector conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T14:15:30+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeVRCUHJCRHZYX0UxSWt4TFRsZnVsTlA0NDJZT1Vha3Nmd1dzSmFCbGk4RmM4c2ZfR0FMcnVTZWVGNEpLcU9fS2JjOGpSZURrLUV3a19EamN1S2tWVEdybkhjZXFtZjc2TlNVQWJVQ0k3QWNJOU5md3pDT3BkSHBFZm5wcENMdXhiRVBPMEtieGxkWkFkUEowbXE0ejRwcVNHRVlBaHIxNG0ySzJyLXhHRXg4V3Jhd2l1NUE?oc=5"
+      },
+      "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
+      "id": "661550a4a3ba",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T12:05:12+00:00",
+      "headline": {
+        "en": "Ares Capital to buy MidCap Financial Investment from Apollo for $2.6bn",
+        "zh": "Ares Capital将以26亿美元从Apollo收购MidCap Financial"
+      },
+      "summary": {
+        "en": "Ares Capital has agreed to acquire private credit fund MidCap Financial Investment (MFIC) from Apollo in a stock-and-cash deal at an enterprise value of about $2.6bn. MFIC shareholders will receive $10.88 per fully diluted share, comprising $1.21 in cash from an Ares Management subsidiary and $9.67 in Ares Capital stock. The deal, expected to close in the first half of 2027 subject to MFIC stockholder and regulatory approvals, is expected to be modestly accretive to Ares Capital's core earnings per share.",
+        "zh": "Ares Capital已同意以约26亿美元的企业价值，通过现金加股票交易从Apollo收购私人信贷基金MidCap Financial Investment（MFIC）。MFIC股东每完全稀释股将获得10.88美元，包括来自Ares Management子公司的1.21美元现金和9.67美元的Ares Capital股票。该交易预计于2027年上半年完成，尚需MFIC股东及监管批准，预计对Ares Capital核心每股收益略有增厚。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/27/ares-capital-to-acquire-midcap-financial-from-apollo-for-2-6bn/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares Capital to acquire MidCap Financial from Apollo for $2.6bn",
+      "source_fingerprint": "44486de7f3775c333d5026afbb4158bce0768e5ad82573d9bc2a48102c4a7fe3",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 17,
+            "end": 94
+          },
+          "linkage": {
+            "start": 1611,
+            "end": 1680
+          }
+        },
+        "source_sha256": "1554a922adce52a1c68f5cc75b39fa65efa738750243359d78eef3f2d086331a",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Apollo agreed to sell MFIC to Ares Capital for about $2.6bn, a completed sale agreement awaiting stockholder and regulatory approval.",
+          "zh": "Apollo同意以约26亿美元将MFIC出售给Ares Capital，协议已达成，尚待股东和监管批准。"
+        }
+      },
+      "relevance_reason": "Apollo exits a BDC and Ares consolidates it, reshaping the US middle-market direct lending competitive landscape.",
+      "event_identity": {
+        "subject": "ares capital",
+        "action": "has agreed to acquire",
+        "object": "midcap financial investment",
+        "period": "first half of 2027",
+        "numbers": [
+          "$1.21",
+          "$10.88",
+          "$2.6bn",
+          "$31bn",
+          "$35bn",
+          "$9.67",
+          "200",
+          "2027",
+          "3",
+          "30",
+          "600",
+          "800",
+          "£1.9bn"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-27T14:15:35+00:00",
+        "sha256": "1554a922adce52a1c68f5cc75b39fa65efa738750243359d78eef3f2d086331a",
+        "source_published_at": "2026-10-27T12:05:12+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/27/ares-capital-to-acquire-midcap-financial-from-apollo-for-2-6bn/"
+      },
+      "source_published_at": "2026-10-27T12:05:12+00:00",
+      "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
+      "id": "eef69f3e7764",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T10:40:49+00:00",
+      "headline": {
+        "en": "Ares Capital to acquire MidCap Financial Investment Corp in $2.6 billion stock-and-cash deal",
+        "zh": "Ares Capital将以约26亿美元股票加现金交易收购MidCap Financial Investment Corp"
+      },
+      "summary": {
+        "en": "Ares Capital Corporation and MidCap Financial Investment Corporation announced a definitive merger agreement under which Ares Capital will acquire MFIC for a total enterprise value of approximately $2.6 billion. MFIC stockholders are expected to receive total consideration of $10.88 per fully diluted share, consisting of about $1.21 in cash and about $9.67 in Ares Capital stock, representing a 30.1% premium to MFIC's last closing price. Before closing, MFIC expects to declare and pay a special dividend of its undistributed taxable income, with the stock consideration reduced dollar-for-dollar.",
+        "zh": "Ares Capital Corporation与MidCap Financial Investment Corporation宣布达成最终合并协议，Ares Capital将以约26亿美元的总企业价值收购MFIC。MFIC股东预计每股摊薄后获得总计10.88美元对价，包括约1.21美元现金和约9.67美元Ares Capital股票，较MFIC上一收盘价溢价30.1%。交割前，MFIC预计将宣布并支付特别股息，分配其未分配应税收入，股票对价将相应等额扣减。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "MidCap Financial Investment Corp",
+        "url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526432622/0001193125-26-432622-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "MidCap Financial Investment Corp files 8-K: items 1.01, 2.02, 7.01and9.01",
+      "source_fingerprint": "45ede39f1405c4741b39e0a932dcbb3196cf51cab5be746316b74635e10e1ab1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 687,
+            "end": 714
+          },
+          "linkage": {
+            "start": 1109,
+            "end": 1164
+          }
+        },
+        "source_sha256": "4064d4737d989b1a33097d37c129a7c9cc562bd5a30c38932d99e1ba2451f17f",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "A $2.6 billion BDC merger is a new consolidation event for the US direct lending sector, but it involves no tracked manager.",
+          "zh": "这笔26亿美元的BDC合并是美国直接贷款领域的新整合事件，但不涉及任何被跟踪的管理人。"
+        }
+      },
+      "relevance_reason": "A stock-and-cash BDC merger reshapes the US direct lending competitive landscape and publicly traded BDC valuations.",
+      "event_identity": {
+        "subject": "ares capital",
+        "action": "acquire",
+        "object": "mfic",
+        "period": "october 27, 2026",
+        "numbers": [
+          "$1.21",
+          "$10.88",
+          "$2.6 billion",
+          "$9.67",
+          "1.01",
+          "104.5%",
+          "2.02",
+          "2026",
+          "25.8%",
+          "27",
+          "30",
+          "30.1%",
+          "50%",
+          "7.01",
+          "8",
+          "9.01"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-27T14:15:24+00:00",
+        "sha256": "4064d4737d989b1a33097d37c129a7c9cc562bd5a30c38932d99e1ba2451f17f",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1278752/000119312526432622/d115048dex991.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
+      "id": "9dd01e537c60",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T10:18:40+00:00",
+      "headline": {
+        "en": "Apollo Global Management linked to $40 billion AI financing",
+        "zh": "Apollo Global Management 与 400 亿美元 AI 融资相关联"
+      },
+      "summary": {
+        "en": "A Yahoo Finance headline asks why Apollo Global Management is tied to a $40 billion AI financing.",
+        "zh": "Yahoo Finance 一则标题询问 Apollo Global Management 为何与一笔 400 亿美元的 AI 融资相关联。所提供的标题中没有更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVk5sNXlHVHk3aDdVcGltR09QQVhSOVRyYk9CTG9iY1Azdm1ZTVNnSUN3MjlNbTZPUUtySTRCeGljMnpGM2pvaGVSbnFMRnJ3REdaMm5qaS02X1NZMnFLVUlKcUtXYnAzNFJrV25uYTlTU0xkYXdoYXNrYkFlMko0UFluZHhvcVdtS2JIcWk5TkxrOW5mZloxQ21ETUw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Why Is Apollo Global Management (APO) Tied To A $40 Billion AI Financing?",
+      "source_fingerprint": "48cc6bb38df9bbf6acfb0cf47a21cd86d1183a04a0d384a30a2c8b95c9573709",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6fe45abdb52dd65aded9d46584356741ca1f5261aeeb341f35405b72fcdbceb1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A headline tying Apollo to a $40 billion AI financing could signal a large credit deployment, though the source supplies only the headline.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T14:15:39+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVk5sNXlHVHk3aDdVcGltR09QQVhSOVRyYk9CTG9iY1Azdm1ZTVNnSUN3MjlNbTZPUUtySTRCeGljMnpGM2pvaGVSbnFMRnJ3REdaMm5qaS02X1NZMnFLVUlKcUtXYnAzNFJrV25uYTlTU0xkYXdoYXNrYkFlMko0UFluZHhvcVdtS2JIcWk5TkxrOW5mZloxQ21ETUw?oc=5"
+      },
+      "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
+      "id": "4d6717606d2f",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T10:11:37+00:00",
+      "headline": {
+        "en": "Commercial real estate faces refinancing pressure as debt maturities create buying opportunities",
+        "zh": "商业地产面临再融资压力，债务到期带来买入机会"
+      },
+      "summary": {
+        "en": "Commercial real estate is facing refinancing pressure as debt maturities create buying opportunities, according to a headline from Traders Union. No companies, figures or transactions were identified in the supplied text.",
+        "zh": "据Traders Union的一则标题，商业地产正面临再融资压力，债务到期带来买入机会。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "asset_based_finance"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcXVPdVBMY2pZcW1xQ1plQTdMOU1oanRfaEs1QTRaQ1pLY1Y4U0dMUDJRb1F5NWloTVRuUDI0UmkteUlscHRTVjhaYnh0cl96TnFCZmh2SmFTSmRKMGN0WXl6RmFMWTFkMEF4MFFyZ2pKTEU2bkJ4Zi1WQlVpR0poTzJpWjB4amtuRWlJVTJELTFfQzVsdVN5OUlBaFhwOVJLZ0FCaW1hc1lmX2dF?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Commercial real estate faces refinancing pressure as debt maturities create buying opportunities",
+      "source_fingerprint": "7c39c09d3fd4b1f9d83da54c45c1598e166c65dbe82367da0eaccd203de487c4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a42428defbf77d4a65bd9e68d2b8cbd5aaa876ca8af39c320695909cff367917",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags CRE refinancing pressure and maturity-driven buying opportunities, a transmission channel to real estate and asset-based credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T14:15:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcXVPdVBMY2pZcW1xQ1plQTdMOU1oanRfaEs1QTRaQ1pLY1Y4U0dMUDJRb1F5NWloTVRuUDI0UmkteUlscHRTVjhaYnh0cl96TnFCZmh2SmFTSmRKMGN0WXl6RmFMWTFkMEF4MFFyZ2pKTEU2bkJ4Zi1WQlVpR0poTzJpWjB4amtuRWlJVTJELTFfQzVsdVN5OUlBaFhwOVJLZ0FCaW1hc1lmX2dF?oc=5"
+      },
+      "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
+      "id": "375928b7f815",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T09:00:35+00:00",
+      "headline": {
+        "en": "Apex Group Backs Launch of £250 Million Tokenised Private Credit Fund in Dubai's DIFC",
+        "zh": "Apex Group 支持在迪拜 DIFC 推出一只 2.5 亿英镑的代币化私募信贷基金"
+      },
+      "summary": {
+        "en": "Apex Group is backing the launch of a £250 million tokenised private credit fund in Dubai's DIFC, according to the report headline.",
+        "zh": "据报道标题，Apex Group 支持在迪拜 DIFC 推出一只 2.5 亿英镑的代币化私募信贷基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Menafn",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWFFmbU1Gak50cC1oeFRacGJrajZNVU1oVE40elROUDdkV1R0UElEUEE4M0VRUXh1Rk9WRUdhSVFGU0N3dWlmbUhUWkR2NkgtZVpTQ2FjY3NXdDFUV3dRSHV2WURjeDlyblB6UzZKWVg3c2VkUGVORXlwWVBFaE1wbDVjWmxoX21pNGZvVm41eVdrV09kRVFQbkhkUW8zN1JZTjQ2cVRKWEJRYVBXZUlhVHR0UQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Apex Group Backs Launch Of £250 Million Tokenised Private Credit Fund In Dubai's DIFC",
+      "source_fingerprint": "528a7537c852227c0da56d80a591ddf5c07f082132d0bfbc2c3ebce672e79b46",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c8117bcb4ca84687fc86a5751f91da3660009b01511e624001b5b5a4a05cffc1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new £250 million tokenised private credit fund in DIFC signals continued private credit product expansion and fundraising activity, a sector-level development for tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-27T14:15:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWFFmbU1Gak50cC1oeFRacGJrajZNVU1oVE40elROUDdkV1R0UElEUEE4M0VRUXh1Rk9WRUdhSVFGU0N3dWlmbUhUWkR2NkgtZVpTQ2FjY3NXdDFUV3dRSHV2WURjeDlyblB6UzZKWVg3c2VkUGVORXlwWVBFaE1wbDVjWmxoX21pNGZvVm41eVdrV09kRVFQbkhkUW8zN1JZTjQ2cVRKWEJRYVBXZUlhVHR0UQ?oc=5"
+      },
+      "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
       "id": "264a27f3dd69",
       "date": "2026-10-27",
       "published_at": "2026-10-26T22:21:36+00:00",
