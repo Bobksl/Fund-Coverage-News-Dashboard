@@ -1,0 +1,368 @@
+{
+  "date": "2026-10-28",
+  "items": [
+    {
+      "id": "7ccee36cce55",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T00:42:21+00:00",
+      "headline": {
+        "en": "Moody's: AI financing drives private credit growth as refinancing risks rise",
+        "zh": "穆迪：人工智能融资推动私人信贷增长，再融资风险上升"
+      },
+      "summary": {
+        "en": "Moody's said AI-related financing is driving growth in private credit while refinancing risks are rising, The Edge Malaysia reported.",
+        "zh": "据《The Edge Malaysia》报道，穆迪表示人工智能相关融资正在推动私人信贷增长，同时再融资风险正在上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "The Edge Malaysia",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1MHROajBVenhWYnBQZm5sbDhnSEJhN2traW55Y0NzZUVDSXBsbjRtX2xuczgtbG93b24yelFic2pHZmlfazhtTnpLWmphZnlVU0Zn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI financing driving private credit growth as refinancing risks rise, Moody’s says",
+      "source_fingerprint": "83bfc5982127a42a08ff33d3067b78aed78971c4a0c969b969c9cfed5b57a897",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2c8283ad1497b313f514b73171dac29e7a99f6e47aed078237774a21c8f3dc8b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's view on AI-driven private credit growth and rising refinancing risk transmits directly to private credit deployment and risk conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:05:38+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1MHROajBVenhWYnBQZm5sbDhnSEJhN2traW55Y0NzZUVDSXBsbjRtX2xuczgtbG93b24yelFic2pHZmlfazhtTnpLWmphZnlVU0Zn?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "c874d790b3ac",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T20:23:11+00:00",
+      "headline": {
+        "en": "Blue Owl Capital Faces Earnings And Dividend Pressure; Stock Questioned Against Fair Value",
+        "zh": "Blue Owl Capital 面临盈利与股息压力，股价是否低于公允价值受质疑"
+      },
+      "summary": {
+        "en": "Simply Wall Street ran a headline questioning whether Blue Owl Capital's stock is below fair value amid earnings and dividend pressure.",
+        "zh": "Simply Wall Street 发布标题，质疑在盈利与股息压力下 Blue Owl Capital 的股价是否低于公允价值。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Simply Wall Street",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSkltM2RFRnFBR2hORnhNNHRYek9DOVVKelZoRFlqbHA3aF83TGNwbnJROUp0eU43d1BLVWFKMGJmbGozTGJEOFIxbldrS285cDFELWlkcDJiTERPd2VvclA4NEZCa3JzYzNVNGtKM2FDY0Z6aXNmSnNKRXJKcVROVnhmWm5FTjRjYXM4T0tjeUxDWDFxUTk0bEZIOTItTGxfZkN3NnJibEtLQVVLSjNuSXY4T3hUZnhIMzY1Sk5RdW9WcHFJblFTX1BEQTF1SVZvQTBhYS1adzdyYjJlSHRZ0gHkAUFVX3lxTFBQZ29wc2FRZXRoQTM4eXlPcC1ZM21wckpRQjFtaEpSVHF1RVJhbVlmekNyZ0d4dVdVejBYNGVzVC1TbUZBWUlpcVpidWdCYXJJVlNacXllWUctdVpKMnZYWXFhb3FSWTlMRHozTTZDal9ia2dVSEtfX2hvU0d1aFpfMklWUk0yVkpaOXlEc3NYT3V1cHNxbW1aUG80T2R1SFNObjk3bFB5QTVnVVdQaUVzTFhmNlkzMmJrYXZWbUlWdzh2T2ZUQ01HTC1kVXR2VlJoM3MyOGc3UEFpVDFtcGU3a2daTA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital (OWL) Faces Earnings And Dividend Pressure, Is The Stock Below Fair Value?",
+      "source_fingerprint": "4b5d947c524f5959f91773716240c6e1783006c44f7dc6d93980897ace6fe014",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "05bd5df195ed1e8d79b256522b4371f61431e92cd329b7ee525340fce486f42b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals earnings and dividend pressure at Blue Owl, a tracked credit manager, though no details are given.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:05:42+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSkltM2RFRnFBR2hORnhNNHRYek9DOVVKelZoRFlqbHA3aF83TGNwbnJROUp0eU43d1BLVWFKMGJmbGozTGJEOFIxbldrS285cDFELWlkcDJiTERPd2VvclA4NEZCa3JzYzNVNGtKM2FDY0Z6aXNmSnNKRXJKcVROVnhmWm5FTjRjYXM4T0tjeUxDWDFxUTk0bEZIOTItTGxfZkN3NnJibEtLQVVLSjNuSXY4T3hUZnhIMzY1Sk5RdW9WcHFJblFTX1BEQTF1SVZvQTBhYS1adzdyYjJlSHRZ0gHkAUFVX3lxTFBQZ29wc2FRZXRoQTM4eXlPcC1ZM21wckpRQjFtaEpSVHF1RVJhbVlmekNyZ0d4dVdVejBYNGVzVC1TbUZBWUlpcVpidWdCYXJJVlNacXllWUctdVpKMnZYWXFhb3FSWTlMRHozTTZDal9ia2dVSEtfX2hvU0d1aFpfMklWUk0yVkpaOXlEc3NYT3V1cHNxbW1aUG80T2R1SFNObjk3bFB5QTVnVVdQaUVzTFhmNlkzMmJrYXZWbUlWdzh2T2ZUQ01HTC1kVXR2VlJoM3MyOGc3UEFpVDFtcGU3a2daTA?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "420676b03d49",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T18:55:36+00:00",
+      "headline": {
+        "en": "Moody's says AI financing drives private credit growth as refinancing risks rise",
+        "zh": "穆迪称AI融资推动私人信贷增长，同时再融资风险上升"
+      },
+      "summary": {
+        "en": "Moody's said AI financing is driving private credit growth while refinancing risks are rising, according to a headline carried by ET Enterprise AI.",
+        "zh": "据ET Enterprise AI报道，穆迪表示AI融资正在推动私人信贷增长，同时再融资风险上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "ET Enterprise AI",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUlRmcmd5WmxEOVQ3U2ZQQnVETmJIS015alJJUzMyYU9sa1ZTN29abzNXNDlKTVFlTVVQd1d4TWVwX1VidC0ySlFxVkU3M0twWlJHVmRraHRQV0hncHNBWnhPYThtVFFndVlha243eWxWMXlyZXJsQmhFQ2dtbGtLMGJzVnB6T3NMYVI4MkMycllFTGJPWkNpNnVQT0pFNHhfM05VRXVlSDBoOFljWTV6X0xlTEVqRXhnNGEyc19zTDJoNGFUZmp3Mk80ZFZrSnZINV9xYjJYdDRkRjJJdXRMMnpKTlBjcFFqNWfSAe8BQVVfeXFMTkxpaGhjMi1sTU16TDZBXzM4WXhUei1LWXBYNnZCclExZEdibGlNRDRHOWdvS0dfTzBoWVc0YjNfZmlGcGlaNTkwcHExbkFkZzR6c1ZVbjFJMmRPSy1Ga3dZM0lFMEEyUUhudUJBeHVpZDBQXzVSekFxRVMxczV1NGc4eVdMT2hMcTZKUkdVMkdzN0U1cUlzTl80aWp2TmZ6OFY5NndoZTdCNHlGZEFuN1gxSFhMQ3R6RWVEVGx3NHJrUS0tWDlSa3ZLMWQ0UTNxVmVITjFBTGkycWsxRXFFNFZLMnNpRGtRWHJOM1hRbk0?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI financing driving private credit growth as refinancing risks rise, Moody's says",
+      "source_fingerprint": "4a2498bdcbeff8563cd5ef6763e0d515023c22f61b595e1a7fdb00347b9480e1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c5c2c5f3ec5e170e66f51ed630ff5a9ac9621e1deaf78c06c7e6d11ef0127af1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's flags AI-related private credit growth and rising refinancing risk, a sector-level signal for private credit strategies tracked by managers such as Blue Owl and KKR.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:05:46+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUlRmcmd5WmxEOVQ3U2ZQQnVETmJIS015alJJUzMyYU9sa1ZTN29abzNXNDlKTVFlTVVQd1d4TWVwX1VidC0ySlFxVkU3M0twWlJHVmRraHRQV0hncHNBWnhPYThtVFFndVlha243eWxWMXlyZXJsQmhFQ2dtbGtLMGJzVnB6T3NMYVI4MkMycllFTGJPWkNpNnVQT0pFNHhfM05VRXVlSDBoOFljWTV6X0xlTEVqRXhnNGEyc19zTDJoNGFUZmp3Mk80ZFZrSnZINV9xYjJYdDRkRjJJdXRMMnpKTlBjcFFqNWfSAe8BQVVfeXFMTkxpaGhjMi1sTU16TDZBXzM4WXhUei1LWXBYNnZCclExZEdibGlNRDRHOWdvS0dfTzBoWVc0YjNfZmlGcGlaNTkwcHExbkFkZzR6c1ZVbjFJMmRPSy1Ga3dZM0lFMEEyUUhudUJBeHVpZDBQXzVSekFxRVMxczV1NGc4eVdMT2hMcTZKUkdVMkdzN0U1cUlzTl80aWp2TmZ6OFY5NndoZTdCNHlGZEFuN1gxSFhMQ3R6RWVEVGx3NHJrUS0tWDlSa3ZLMWQ0UTNxVmVITjFBTGkycWsxRXFFNFZLMnNpRGtRWHJOM1hRbk0?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "1fdadaee44c1",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T18:32:02+00:00",
+      "headline": {
+        "en": "Moody's: AI financing drives private credit growth as refinancing risks rise",
+        "zh": "穆迪：AI融资推动私募信贷增长，再融资风险上升"
+      },
+      "summary": {
+        "en": "Moody's said AI-related financing is driving growth in private credit while refinancing risks are rising, according to Reuters.",
+        "zh": "据路透社报道，穆迪表示AI相关融资正在推动私募信贷增长，同时再融资风险也在上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMlFHLTNZbVhfQjRZSmFmT1N5S2s2UTNsUkIzRnF0eFNXbG1GTTlURnZsU2ZDUGJMNVhGX2tPVzBrdkpSR1Y2VHBxZlFfMUdHcnJoTWNjNVlLMFBkNzRja1RaVVRaWFBSaUU5ak1LN3lxUDBqRE45UVRBVm9USHk0SzZ3WG1pc0tXRDgwVU1JenB2cmFDN2pyb3d1U0tZQmlqNjA2UzltdmZFaHFLNWZxV0pITWlVV1U5enM5SGtNWjJfdEhQQVljbG9lcnFLZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI financing driving private credit growth as refinancing risks rise, Moody’s says",
+      "source_fingerprint": "83bfc5982127a42a08ff33d3067b78aed78971c4a0c969b969c9cfed5b57a897",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2c8283ad1497b313f514b73171dac29e7a99f6e47aed078237774a21c8f3dc8b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's view links AI-related financing to private credit growth and rising refinancing risk, a sector-wide signal for private credit strategy conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:05:48+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMlFHLTNZbVhfQjRZSmFmT1N5S2s2UTNsUkIzRnF0eFNXbG1GTTlURnZsU2ZDUGJMNVhGX2tPVzBrdkpSR1Y2VHBxZlFfMUdHcnJoTWNjNVlLMFBkNzRja1RaVVRaWFBSaUU5ak1LN3lxUDBqRE45UVRBVm9USHk0SzZ3WG1pc0tXRDgwVU1JenB2cmFDN2pyb3d1U0tZQmlqNjA2UzltdmZFaHFLNWZxV0pITWlVV1U5enM5SGtNWjJfdEhQQVljbG9lcnFLZw?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "bf4164c80eff",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T18:24:31+00:00",
+      "headline": {
+        "en": "RRE 22 CLO ratings affirmed on stable portfolio performance",
+        "zh": "RRE 22 CLO因投资组合表现稳定而获评级确认"
+      },
+      "summary": {
+        "en": "RRE 22 CLO had its ratings affirmed on stable portfolio performance, according to the headline.",
+        "zh": "据标题显示，RRE 22 CLO因投资组合表现稳定而获得评级确认。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVzUyUG4xLXd5SUN2cTByOUNiMTluQ19DMTRoRUl6YXB4Q2pkWGZNMmlqWTY2ZFVJQ1NwcndQcXpiMEdWOGJDeW5pYVc1R19UTEloTGR0enpwS3Q5SUJiTU1DdWpNVGRZQURnQUg2aHpfdFZ2WVhvNndYTmY5Z1c1MlpObXlGcXM0bTI4Yw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "RRE 22 CLO ratings affirmed on stable portfolio performance",
+      "source_fingerprint": "d56fad3a5d5a80cfd454366e82981cb3b2ae9c476d744a6d0f6e599d15e744a1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f6fd84a980fd6aeb792fd3cc7156774c5f5d004f4ff927fc206094c8e9d8f276",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A CLO rating affirmation signals stable collateral performance, a read-across for CLO and credit managers in the sector.",
+      "event_identity": {
+        "subject": "rre 22 clo",
+        "action": "ratings affirmed",
+        "object": "stable portfolio performance",
+        "period": "stable portfolio performance",
+        "numbers": [
+          "22"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:05:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVzUyUG4xLXd5SUN2cTByOUNiMTluQ19DMTRoRUl6YXB4Q2pkWGZNMmlqWTY2ZFVJQ1NwcndQcXpiMEdWOGJDeW5pYVc1R19UTEloTGR0enpwS3Q5SUJiTU1DdWpNVGRZQURnQUg2aHpfdFZ2WVhvNndYTmY5Z1c1MlpObXlGcXM0bTI4Yw?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "2c9fd5835b13",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T17:39:28+00:00",
+      "headline": {
+        "en": "KKR closes on $460M private credit continuation vehicle, with AllianzGI leading",
+        "zh": "KKR完成4.6亿美元私募信贷延续基金，AllianzGI领投"
+      },
+      "summary": {
+        "en": "KKR closed a $460M private credit continuation vehicle, with AllianzGI leading. Few further details were provided in the headline.",
+        "zh": "KKR完成了一只4.6亿美元的私募信贷延续基金，由AllianzGI领投。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQzd3bmVxV0JzVlBTMjNSZmRjb285c3d0cURILUU2cGtuY0ZsZW5HUUc3V1JJc2tuMHhna243T3RNd0JYM25PZ2RiSDF4emlNQnBmYnVRY3p3U19KcjVsRTA1SC16dHdYLXdON3gxMUQ0YlJOYTZSQjVMdnJxQzFCSjdnTHFzdw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR closes on $460M private credit continuation vehicle, with AllianzGI leading",
+      "source_fingerprint": "509b7701207dc55c78921a606526008bd328672ac304f0ae1252a35272c3f0a9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4e86ad09f9545bc934e6558b4872ba50b0b3913fe9acc209bdf0bf4196658ccb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR closed a $460M private credit continuation vehicle, a direct deployment and capital-formation event for its credit platform.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:05:56+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQzd3bmVxV0JzVlBTMjNSZmRjb285c3d0cURILUU2cGtuY0ZsZW5HUUc3V1JJc2tuMHhna243T3RNd0JYM25PZ2RiSDF4emlNQnBmYnVRY3p3U19KcjVsRTA1SC16dHdYLXdON3gxMUQ0YlJOYTZSQjVMdnJxQzFCSjdnTHFzdw?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "b4d721026147",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T16:23:55+00:00",
+      "headline": {
+        "en": "Neuberger Berman Euro CLO reset notes win final Fitch ratings",
+        "zh": "Neuberger Berman欧元CLO重置票据获惠誉最终评级"
+      },
+      "summary": {
+        "en": "Fitch assigned final ratings to reset notes of a Neuberger Berman euro CLO, according to a headline.",
+        "zh": "据一则标题报道，惠誉对Neuberger Berman旗下一只欧元CLO的重置票据授予最终评级。"
+      },
+      "gps": [
+        "neuberger"
+      ],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUmdUenE4eVBlNURDWEFiYVdZUFhWb0JuNGJaV21VRnZ2b2x0WlN5YU5XeXlxcGpKWTJJem1DUWV1U1lRekVmQ3pBZDNmbnFfUDIxQUJVd0pNVW10VkQ5MkIycjg2R0llY3NIbWk2cm40QlptakVrRWQteTROamZuU3pXaEVseHBmSm1aTnIxTEU5NVBVb0hJc1dCZ3I?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Neuberger Berman Euro CLO reset notes win final Fitch ratings",
+      "source_fingerprint": "64ef4a4fd65b865bff0f109f16a21dfeed84e9e07a959e162368ef7fdea38afe",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e83965455ee84d2454b79c00c253ac082d11371fb67348cac35ece60cce7d2cc",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A rating action on a Neuberger Berman European CLO reset affects the manager's structured credit vehicle, though headline-only details limit the read.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:05:58+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUmdUenE4eVBlNURDWEFiYVdZUFhWb0JuNGJaV21VRnZ2b2x0WlN5YU5XeXlxcGpKWTJJem1DUWV1U1lRekVmQ3pBZDNmbnFfUDIxQUJVd0pNVW10VkQ5MkIycjg2R0llY3NIbWk2cm40QlptakVrRWQteTROamZuU3pXaEVseHBmSm1aTnIxTEU5NVBVb0hJc1dCZ3I?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "91530206090d",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T16:00:51+00:00",
+      "headline": {
+        "en": "Data Center Lenders Grow More Selective as Sector Lending Grows",
+        "zh": "数据中心贷款机构日趋挑剔，行业贷款规模仍在增长"
+      },
+      "summary": {
+        "en": "Bank lenders committed an estimated $121.91 billion in credit for data center properties in 2025, with an average loan amount of $1.2 billion, according to S&P Global Ratings data. CMBS issuance for data centers reached $11 billion in 2025, up 266 percent from 2024, and $4.9 billion in the first half of 2026, according to CBRE Capital Markets. Lenders are becoming more selective about sponsors and tenants as they explore exposure limits to the sector, Newmark's Chris Lozinak said.",
+        "zh": "根据标普全球评级数据，2025年银行向数据中心物业提供的信贷承诺估计为1219.1亿美元，平均贷款规模为12亿美元。根据世邦魏理仕资本市场数据，2025年数据中心CMBS发行量达110亿美元，较2024年增长266%；2026年上半年发行量为49亿美元。Newmark的Chris Lozinak表示，随着贷款机构评估对该行业、特定发起人或租户的风险敞口限制，它们在交易上正变得更加挑剔。"
+      },
+      "gps": [],
+      "sectors": [
+        "asset_based_finance",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/data-center-financing-risks-2026/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "With Data Centers, Lenders Are Getting a Lot More Selective",
+      "source_fingerprint": "d993d114616dc8ee22b9b417b7edfcc44345a4d96150d370908bed33d50770e8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1bb73863f694c44437aadbda7e577fe3ff3fe879861dae4f3be3852c4884fe50",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Lenders becoming more selective on data center financing, with shrinking or tightening credit access, affects the financing environment for asset-backed and commercial real estate credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-28T05:06:00+00:00",
+        "sha256": "1bb73863f694c44437aadbda7e577fe3ff3fe879861dae4f3be3852c4884fe50",
+        "source_published_at": "2026-10-27T12:00:51-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/data-center-financing-risks-2026/"
+      },
+      "source_published_at": "2026-10-27T12:00:51-04:00",
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    }
+  ]
+}

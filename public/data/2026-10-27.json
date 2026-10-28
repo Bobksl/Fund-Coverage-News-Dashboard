@@ -2,6 +2,101 @@
   "date": "2026-10-27",
   "items": [
     {
+      "id": "a67362899fbd",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T15:31:43+00:00",
+      "headline": {
+        "en": "Maycomb Capital Closes $100 Million Impact Private Credit Fund",
+        "zh": "Maycomb Capital 关闭1亿美元影响力私募信贷基金"
+      },
+      "summary": {
+        "en": "Maycomb Capital has closed a $100 million impact private credit fund, according to a headline report.",
+        "zh": "据一则标题报道，Maycomb Capital 已关闭一只规模1亿美元的影响力私募信贷基金。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Palestineherald.com",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS2RwNFRkZkNBNmlzWHVud3hKckg2TXBRT19vSW9tQk1kdGUxWGtKNnV2dU16WkxXUmd5NzMzenIwcmlVUFlMR1hSbld6YU1YN3ZlNy12ck1hUUVKQlpueEpDU0hKLWMxYjhCNEZwd1ZuV2ZfNHVaRkVXd1lpMnRGLWNRNXlWN3QtcEo2YlJZUncwUHBuRHdvVjQxaDFBeGdxRmNBbk5ydkEwRkExdEdTS3QzZExVaEp2dG9Wa2lmQk9FMnVmMjh5VWhUeXJvTF81cEZGOUh4aWNWNzhyZ2t2Q2FfRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Maycomb Capital Closes $100 Million Impact Private Credit Fund",
+      "source_fingerprint": "7d424dde2be47dca0ddb4b0d1b29b5b711053bf0637297aa48462b2076854449",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "85003248c4498de247656f897f8167e9af24feaba67656aa9f417ea684a5046b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A newly closed $100m impact private credit fund signals incremental private credit fundraising and deployment capacity, relevant to the private credit sub-sector.",
+      "event_identity": {
+        "subject": "maycomb capital",
+        "action": "closes",
+        "object": "impact private credit fund",
+        "period": "$100 million",
+        "numbers": [
+          "$100 Million"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:06:06+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS2RwNFRkZkNBNmlzWHVud3hKckg2TXBRT19vSW9tQk1kdGUxWGtKNnV2dU16WkxXUmd5NzMzenIwcmlVUFlMR1hSbld6YU1YN3ZlNy12ck1hUUVKQlpueEpDU0hKLWMxYjhCNEZwd1ZuV2ZfNHVaRkVXd1lpMnRGLWNRNXlWN3QtcEo2YlJZUncwUHBuRHdvVjQxaDFBeGdxRmNBbk5ydkEwRkExdEdTS3QzZExVaEp2dG9Wa2lmQk9FMnVmMjh5VWhUeXJvTF81cEZGOUh4aWNWNzhyZ2t2Q2FfRQ?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "305c47d7bb27",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T15:05:00+00:00",
+      "headline": {
+        "en": "Argentum AI Seeks $5 Billion Private Credit Deal for Chips as Neocloud Funding Tightens",
+        "zh": "Argentum AI 寻求 50 亿美元私人信贷交易用于芯片，Neocloud 融资趋紧"
+      },
+      "summary": {
+        "en": "Argentum AI is seeking a $5 billion private credit deal to fund chips, according to a headline report. The report frames the move against tightening funding conditions for neocloud providers.",
+        "zh": "据一则头条报道，Argentum AI 正寻求一笔 50 亿美元的私人信贷交易，用于芯片相关融资。报道称此举背景是 Neocloud 提供商的融资环境趋紧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "BigGo Finance",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YcHNBbXIzVGVUY2xvTktKZWpEdjUzaUVIeXNJQ0d6MGFmOWljWnBlSFRFcUwzamw0cXNxdWJVUWdYbmE3S0FqS05HaFBjUW40eGVaMjJJdHJ0aTZ2Yk4yYWx1YWlKMi1xTnJEZDBYUmUzckZyS0E?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Argentum AI Seeks $5 Billion Private Credit Deal for Chips as Neocloud Funding Tightens",
+      "source_fingerprint": "64f582ea649633dac6f09ad58a94d107a073150cab8d3e66b6a8651ea04555a4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bb154639968e7fd21c6c18a271ffdfcefac1a16c78628ec16c4882cc52ce78bb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A $5bn private credit financing request for AI chips signals neocloud demand for direct lending, a transmission channel into the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:06:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YcHNBbXIzVGVUY2xvTktKZWpEdjUzaUVIeXNJQ0d6MGFmOWljWnBlSFRFcUwzamw0cXNxdWJVUWdYbmE3S0FqS05HaFBjUW40eGVaMjJJdHJ0aTZ2Yk4yYWx1YWlKMi1xTnJEZDBYUmUzckZyS0E?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
       "id": "17d3e00884c2",
       "date": "2026-10-27",
       "published_at": "2026-10-27T13:48:03+00:00",
@@ -44,6 +139,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeVRCUHJCRHZYX0UxSWt4TFRsZnVsTlA0NDJZT1Vha3Nmd1dzSmFCbGk4RmM4c2ZfR0FMcnVTZWVGNEpLcU9fS2JjOGpSZURrLUV3a19EamN1S2tWVEdybkhjZXFtZjc2TlNVQWJVQ0k3QWNJOU5md3pDT3BkSHBFZm5wcENMdXhiRVBPMEtieGxkWkFkUEowbXE0ejRwcVNHRVlBaHIxNG0ySzJyLXhHRXg4V3Jhd2l1NUE?oc=5"
       },
       "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
+      "id": "1499ee68a615",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T13:38:25+00:00",
+      "headline": {
+        "en": "Private credit scrutiny shifts from investigation to litigation, new claims filed",
+        "zh": "私募信贷审查由调查转向诉讼，引发新的索赔"
+      },
+      "summary": {
+        "en": "A D&O Diary item reports that scrutiny of private credit has moved from investigation to litigation, fueling new claims. No companies, figures or specific cases were named in the available headline.",
+        "zh": "D&O Diary一则报道称，对私募信贷的审查已从调查阶段转向诉讼，并引发了新的索赔。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "The D&O Diary",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRjdRVzdJbkt1aUJuZ003YzFTd1JXclY4UmFzaDJwZU1QNHF4ZERGWHVlNXhsYThSOWl1MzNLTHRoaVBYNnlKZExkY2dDR2ZlSlpzS1RNQzZvSF9UbFVFWGdoeDhMZHUxT0VMeHZma2szTVJ3eFgtY2N2YmR4azRhTWV2aEZwb3NQNmNEWlhrQWs2R3B6bFR2dVNtMmJwNHBONHZaM1VtWTgzVi1naHFjenFwQWNxZTcwRVd1TWlLckh2MjZxeVdCazl2VlktQQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "From Investigation to Litigation: Private Credit Scrutiny Fuels New Claims",
+      "source_fingerprint": "e8386a1237b35a239a9d354676bdc33825d0f6bb62d0825fa4d95f91e66c1002",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "0999dcbd3f1810f7af871902fb5d249126daf7bc43c2f288e2a7cef1351c1c18",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline-only item signals rising litigation risk for private credit, a transmission channel to tracked private-credit managers and the sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T05:06:17+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRjdRVzdJbkt1aUJuZ003YzFTd1JXclY4UmFzaDJwZU1QNHF4ZERGWHVlNXhsYThSOWl1MzNLTHRoaVBYNnlKZExkY2dDR2ZlSlpzS1RNQzZvSF9UbFVFWGdoeDhMZHUxT0VMeHZma2szTVJ3eFgtY2N2YmR4azRhTWV2aEZwb3NQNmNEWlhrQWs2R3B6bFR2dVNtMmJwNHBONHZaM1VtWTgzVi1naHFjenFwQWNxZTcwRVd1TWlLckh2MjZxeVdCazl2VlktQQ?oc=5"
+      },
+      "observed_at": "2026-10-28T05:03:08+00:00"
     },
     {
       "id": "661550a4a3ba",
