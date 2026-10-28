@@ -54,6 +54,49 @@
       "observed_at": "2026-10-28T05:03:08+00:00"
     },
     {
+      "id": "b314f1481a2f",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T15:12:44+00:00",
+      "headline": {
+        "en": "Moody's says AI financing is expanding private credit as refinancing risks build",
+        "zh": "穆迪称人工智能融资正在扩大私人信贷规模，同时再融资风险上升"
+      },
+      "summary": {
+        "en": "Moody's said AI financing is expanding private credit while refinancing risks build, according to a report headline.",
+        "zh": "据一则报道标题，穆迪表示人工智能融资正在扩大私人信贷规模，同时再融资风险正在上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaUp0eFJyUm9lN0RzWUFITnJ5am8tYS1nNVRmS1VFRHJHSHZ6MXd4bDB0bEx6a1VFc3AtOC1MYUx6WTFzanY4RDBuYUNxaHYxTWhaVVZRbkU3Q0gzT3ZadHhiZkZ0ekZmRUtLQW5OdDNKc1A3Qk9ELVJsLXp4NFpDRGhYVVpuY0dRLUFhSllwc21iTktjcElLZmJyRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Moody's says AI financing is expanding private credit as refinancing risks build",
+      "source_fingerprint": "e3d9042f56080d7f866fa730f1be4f7a611cc57017d32d76e8a89905acd49856",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "3b1017720d9147971a1248f51d8e616f8474c5e4fe42b9f64aefdd85fcb3e7f9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's flags AI-related private credit growth alongside rising refinancing risk, affecting private credit sector conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T15:00:22+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaUp0eFJyUm9lN0RzWUFITnJ5am8tYS1nNVRmS1VFRHJHSHZ6MXd4bDB0bEx6a1VFc3AtOC1MYUx6WTFzanY4RDBuYUNxaHYxTWhaVVZRbkU3Q0gzT3ZadHhiZkZ0ekZmRUtLQW5OdDNKc1A3Qk9ELVJsLXp4NFpDRGhYVVpuY0dRLUFhSllwc21iTktjcElLZmJyRQ?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
       "id": "305c47d7bb27",
       "date": "2026-10-27",
       "published_at": "2026-10-27T15:05:00+00:00",
@@ -95,6 +138,50 @@
         "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YcHNBbXIzVGVUY2xvTktKZWpEdjUzaUVIeXNJQ0d6MGFmOWljWnBlSFRFcUwzamw0cXNxdWJVUWdYbmE3S0FqS05HaFBjUW40eGVaMjJJdHJ0aTZ2Yk4yYWx1YWlKMi1xTnJEZDBYUmUzckZyS0E?oc=5"
       },
       "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "bf4ed2275195",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T14:45:56+00:00",
+      "headline": {
+        "en": "Moody's: AI financing drives private credit growth as refinancing risks rise",
+        "zh": "穆迪：AI融资推动私人信贷增长，再融资风险上升"
+      },
+      "summary": {
+        "en": "Moody's says AI financing is driving growth in private credit while refinancing risks are rising, according to TradingView.",
+        "zh": "据TradingView报道，穆迪表示AI相关融资正在推动私人信贷增长，同时再融资风险正在上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPREJlbXAza2pwOURoUnREaXBiMmxnNjVQeXplQUpsYnZEQlYtdFNycUNNd0NSM3JET09mbUxRcE5KREE3WjJVX0xYV1pyazF6S0VmXzlEbFhiYWhZcC1wUjJuU01JZW10YlNjNjFhSFVDQzJ4YnpMOXFmNU1RZ3pteVpmSHVJTDBRQUpwQkkwZFVkM2pFN0gwdm5KMlA3X2pIaXo2eGJnX1hMWWpUYXBvWXJpbUxUVHZwWkU5OGc0TkctcHNIbUR4N3FmbmU4b1B5OVBfWVJFN1RZS0F3VTVETFJTV3otUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI financing driving private credit growth as refinancing risks rise, Moody’s says",
+      "source_fingerprint": "83bfc5982127a42a08ff33d3067b78aed78971c4a0c969b969c9cfed5b57a897",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2c8283ad1497b313f514b73171dac29e7a99f6e47aed078237774a21c8f3dc8b",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's flags AI-linked lending as a driver of private credit growth alongside rising refinancing risk, a sector-level signal for private credit exposures.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T15:00:24+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPREJlbXAza2pwOURoUnREaXBiMmxnNjVQeXplQUpsYnZEQlYtdFNycUNNd0NSM3JET09mbUxRcE5KREE3WjJVX0xYV1pyazF6S0VmXzlEbFhiYWhZcC1wUjJuU01JZW10YlNjNjFhSFVDQzJ4YnpMOXFmNU1RZ3pteVpmSHVJTDBRQUpwQkkwZFVkM2pFN0gwdm5KMlA3X2pIaXo2eGJnX1hMWWpUYXBvWXJpbUxUVHZwWkU5OGc0TkctcHNIbUR4N3FmbmU4b1B5OVBfWVJFN1RZS0F3VTVETFJTV3otUQ?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
     },
     {
       "id": "17d3e00884c2",
@@ -492,6 +579,50 @@
         "final_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWFFmbU1Gak50cC1oeFRacGJrajZNVU1oVE40elROUDdkV1R0UElEUEE4M0VRUXh1Rk9WRUdhSVFGU0N3dWlmbUhUWkR2NkgtZVpTQ2FjY3NXdDFUV3dRSHV2WURjeDlyblB6UzZKWVg3c2VkUGVORXlwWVBFaE1wbDVjWmxoX21pNGZvVm41eVdrV09kRVFQbkhkUW8zN1JZTjQ2cVRKWEJRYVBXZUlhVHR0UQ?oc=5"
       },
       "observed_at": "2026-10-27T14:12:53+00:00"
+    },
+    {
+      "id": "4712261a19be",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T07:00:00+00:00",
+      "headline": {
+        "en": "SaaS blog flags $300 billion software debt wall, warns large B2B defaults have not yet begun",
+        "zh": "SaaS博客警示3000亿美元软件债务到期高峰，称大型B2B违约尚未开始"
+      },
+      "summary": {
+        "en": "A SaaStr article headlined \"The $300 Billion Software Debt Wall: The Big B2B Defaults Unfortunately Haven’t Even Started Yet\" points to roughly $300 billion of software debt and warns that major B2B defaults have not yet begun.",
+        "zh": "SaaStr一篇题为《3000亿美元软件债务到期高峰：大型B2B违约不幸尚未开始》的文章指出软件行业约有3000亿美元债务，并警告大型B2B违约尚未开始。"
+      },
+      "gps": [],
+      "sectors": [
+        "software",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "www.saastr.com",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdXNMRFA4ZGdUSFBWUUNXaE9IMVVPZlk2RTg1T3Y4U05EOXAtVE50Y1QzX2ZkYTJ0bWZvdGk1ZlA2bkN6UmJNWkNPYm5ZQXhQaFFsellPMHNGcHBHU0t4b1ZZWjR3bjhCTm13TjhxRTlBdmxMM3M3Sk9Ub3Z1UkkzSHRXbkhwbWc2UkpkdDY5SmJzQ2djSkFFOGFpdjMxbmRINk5mQnk5aEh6OUVHenZtTlNyM1VWSWl6?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "The $300 Billion Software Debt Wall: The Big B2B Defaults Unfortunately Haven’t Even Started Yet",
+      "source_fingerprint": "0c32c5b828f4a8b2b45916666ccd0b7501198251fd2e5720f91925f13a2f038b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b0f1574276419636985bdc48ba934dd3c65a3917c3dcdaf758bf5f9da559f390",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A headline warning of a $300bn software debt maturity wall signals potential credit stress in software-exposed private credit and BDC lending, a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T15:00:27+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdXNMRFA4ZGdUSFBWUUNXaE9IMVVPZlk2RTg1T3Y4U05EOXAtVE50Y1QzX2ZkYTJ0bWZvdGk1ZlA2bkN6UmJNWkNPYm5ZQXhQaFFsellPMHNGcHBHU0t4b1ZZWjR3bjhCTm13TjhxRTlBdmxMM3M3Sk9Ub3Z1UkkzSHRXbkhwbWc2UkpkdDY5SmJzQ2djSkFFOGFpdjMxbmRINk5mQnk5aEh6OUVHenZtTlNyM1VWSWl6?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
     },
     {
       "id": "264a27f3dd69",

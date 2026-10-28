@@ -2,6 +2,393 @@
   "date": "2026-10-28",
   "items": [
     {
+      "id": "ed499ac6507d",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T13:47:26+00:00",
+      "headline": {
+        "en": "State Street begins daily NAV model to support Apollo's daily pricing across $850bn credit business",
+        "zh": "道富银行启动每日净资产值模式，支持Apollo在其8500亿美元信贷业务中推行每日定价"
+      },
+      "summary": {
+        "en": "State Street has started implementing a daily NAV operating model for certain private markets strategies in support of Apollo's decision to roll out daily pricing across its $850bn credit business. The change moves a process traditionally built around monthly valuations to daily delivery, with both firms citing investor demand for transparency and timely reporting.",
+        "zh": "道富银行已开始为部分私募市场策略实施每日净资产值运营模式，以支持Apollo在其8500亿美元信贷业务中推行每日定价的决定。此举将传统上围绕月度估值构建的流程改为每日交付，两家公司均提到投资者对透明度和及时报告的需求。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/28/state-street-expands-daily-pricing-to-support-apollo/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "State Street expands daily pricing to support Apollo",
+      "source_fingerprint": "b9994c6a1dcc4b89988b119cc0d230eeefa1f6a6d39eb15851d39abc36e4a0f6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 329,
+            "end": 399
+          },
+          "linkage": {
+            "start": 106,
+            "end": 144
+          }
+        },
+        "source_sha256": "036298fb20767ef0dc7d49efad705442d73ae0d243dfb6689527fb2bdc02266f",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Operational shift to daily NAV pricing across Apollo's credit business is an incremental transparency change, not a credit event.",
+          "zh": "Apollo信贷业务转向每日净资产值定价属于增量透明度变化，并非信用事件。"
+        }
+      },
+      "relevance_reason": "Apollo's move to daily NAV pricing across its $850bn credit business changes valuation and transparency conditions for a tracked credit manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-28T14:59:52+00:00",
+        "sha256": "036298fb20767ef0dc7d49efad705442d73ae0d243dfb6689527fb2bdc02266f",
+        "source_published_at": "2026-10-28T13:47:26+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/28/state-street-expands-daily-pricing-to-support-apollo/"
+      },
+      "source_published_at": "2026-10-28T13:47:26+00:00",
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
+      "id": "9a7f1cc88d82",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T13:44:10+00:00",
+      "headline": {
+        "en": "KKR closes first private credit continuation vehicle at $460M, led by AllianzGI",
+        "zh": "KKR 完成首只 4.6 亿美元私募信贷接续基金，由 AllianzGI 领投"
+      },
+      "summary": {
+        "en": "KKR closed its first private credit continuation vehicle at $460M. AllianzGI led the transaction.",
+        "zh": "KKR 完成首只私募信贷接续基金，规模 4.6 亿美元。该交易由 AllianzGI 领投。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ3EzRHlCVE5aTWxWa1lrdVpLWjlTZV9VUUZtN21GZ3ZwY0tjcHpRWmNPa1FyTkxpT25TNG5teHMyMVQ5S3lzOUx5Wnc5eTdiamVtVndUZlIzc3NKWEJGbklPNnFzSFN6U3h6bjFYSlhWVHR2ejhpdFpxTW9YaENvMmFNb1BTbjBKUWVuNEN3azBxb0d2WTRUdEFnUzY4bnREZ3Q0d0ItRDg3VFhGak9LVA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR closes first private credit continuation vehicle at $460M, led by AllianzGI",
+      "source_fingerprint": "684d18a887a418844de9aa9e57b40bbeb33e3c70aea2ebe260e5fd07b027b6e0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e45a0aded9a4bbd298468d53e92ec693bfb8ecb56d02f0ff267a5a711f3cf7b3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR closing its first private credit continuation vehicle shows credit secondaries deployment and liquidity tools for a tracked manager's private credit strategy.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T14:59:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ3EzRHlCVE5aTWxWa1lrdVpLWjlTZV9VUUZtN21GZ3ZwY0tjcHpRWmNPa1FyTkxpT25TNG5teHMyMVQ5S3lzOUx5Wnc5eTdiamVtVndUZlIzc3NKWEJGbklPNnFzSFN6U3h6bjFYSlhWVHR2ejhpdFpxTW9YaENvMmFNb1BTbjBKUWVuNEN3azBxb0d2WTRUdEFnUzY4bnREZ3Q0d0ItRDg3VFhGak9LVA?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
+      "id": "80e28a2a4397",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T13:14:22+00:00",
+      "headline": {
+        "en": "Tree Line closes $680m private credit continuation vehicle with PGIM and LGT as co-leads",
+        "zh": "Tree Line 完成6.8亿美元私募信贷接续基金，PGIM与LGT担任联合领投"
+      },
+      "summary": {
+        "en": "Tree Line Capital Partners closed a $680m private credit continuation vehicle, with PGIM and LGT Capital Partners acting as co-lead investors. The vehicle gives existing investors in several Tree Line direct lending funds a liquidity option while Tree Line keeps managing a portfolio mainly of senior secured, first-lien loans to more than 60 US lower middle market companies. PGIM said earlier this year it planned to deploy up to $1bn over two years into private credit secondaries.",
+        "zh": "Tree Line Capital Partners 完成了一只6.8亿美元的私募信贷接续基金，PGIM 与 LGT Capital Partners 担任联合领投方。该基金为 Tree Line 多只直接贷款基金的现有投资者提供了流动性选择，同时 Tree Line 继续管理一个主要由优先担保、第一留置权贷款组成的投资组合，覆盖60多家美国中小企业，行业分布广泛。PGIM 今年早些时候曾表示，计划在两年内向私募信贷二级市场投入最多10亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/28/tree-line-closes-680m-continuation-vehicle/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Tree Line closes $680m continuation vehicle",
+      "source_fingerprint": "c15566e1f100adf4fe7da2bedce5594739d8deb53ccd795091801a51f2d15938",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 345,
+            "end": 402
+          },
+          "linkage": {
+            "start": 37,
+            "end": 72
+          }
+        },
+        "source_sha256": "8c1981a248d4efb1aeb490fd680145779f20510315ae3af834f1b933f4b1f55f",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "A new $680m private credit continuation vehicle shows continued secondaries and GP-led liquidity activity in direct lending, a transmission channel for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-28T14:59:58+00:00",
+        "sha256": "8c1981a248d4efb1aeb490fd680145779f20510315ae3af834f1b933f4b1f55f",
+        "source_published_at": "2026-10-28T13:14:22+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/28/tree-line-closes-680m-continuation-vehicle/"
+      },
+      "source_published_at": "2026-10-28T13:14:22+00:00",
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
+      "id": "9c13e0c74f55",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T12:03:08+00:00",
+      "headline": {
+        "en": "Moody's: Private Credit Default-Equivalent Rate Hits 5.8% as Insurer Capital Risks Mount",
+        "zh": "穆迪：私募信贷违约等价率升至5.8%，保险公司资本风险加剧"
+      },
+      "summary": {
+        "en": "Moody's reported that the private credit default-equivalent rate reached 5.8%, according to a headline from bfsi.economictimes.indiatimes.com. The report also flags mounting capital risks for insurers.",
+        "zh": "据bfsi.economictimes.indiatimes.com报道，穆迪称私募信贷违约等价率已达到5.8%。该报道还指出保险公司面临的资本风险正在加剧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "bfsi.economictimes.indiatimes.com",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbUNBU2VhUThmT0JqQllXajd6cndDQlJuOXJQLWZVcHdneGZKemd1WExWNVJ0VEZpdGVoZXV1YkdvSTBoWmFWcVc4VGFaMzBXa1g4dmhnZzV6OU5qWjZjclVscFhkMDZjOUNvaE1LdGc2RHVPcnQ5WXlkTzllSVhMOHhMOXlCeVB1QXVQY3JjSHlBSV9sbGoyLXg2SkJOLUhFSWkzLXl6TmRtSXVZajBRSmxpUkJnYmUxRVFWX2pJWmF5YzFYZ2hxVnFzZExQNV9wbko0VlpNTTc5elR6RzU5dUpn0gHnAUFVX3lxTE8wekUtMlQ3dUFsLVI3NFVWbFVJQWYzVGxhQzVkVGFiTW5rYUFyNUhsSlJOX2dnTTEyVWwwNFNKeVBZRnZ3VGhfUjJEaVJrRnY2dGYwWVRoaEZuWDJ5ZlZNODVULXlVR3BzbkNLQmRRU2Q1Rno4TzdTTkY5VE5TWWR6YUhzWnE0anlESllNaGtIRHJrYzRqMG9HWHA3Y1czT1lIdDEtd3AwVXotVXgyQ3BneXJMcUsyNzJoREx0OW1XdmJRUEt2ajJlT0xPTEU0OExHT3hoamJqd0EzM3NWdFNSZlFtRURldw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private Credit Default-Equivalent Rate Hits 5.8%, Insurer Capital Risks Mount: Moody’s",
+      "source_fingerprint": "b89a171d4db7e720335ddf5212d3099661840c67f056523e7b4981ab86d30af5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "44a621c2fba5295f073662fc9c22567ffcba398cf2b27b3ed9652a23c2fdab8c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's data on rising private credit default-equivalent rates bears on credit risk and insurer capital exposure for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T15:00:02+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbUNBU2VhUThmT0JqQllXajd6cndDQlJuOXJQLWZVcHdneGZKemd1WExWNVJ0VEZpdGVoZXV1YkdvSTBoWmFWcVc4VGFaMzBXa1g4dmhnZzV6OU5qWjZjclVscFhkMDZjOUNvaE1LdGc2RHVPcnQ5WXlkTzllSVhMOHhMOXlCeVB1QXVQY3JjSHlBSV9sbGoyLXg2SkJOLUhFSWkzLXl6TmRtSXVZajBRSmxpUkJnYmUxRVFWX2pJWmF5YzFYZ2hxVnFzZExQNV9wbko0VlpNTTc5elR6RzU5dUpn0gHnAUFVX3lxTE8wekUtMlQ3dUFsLVI3NFVWbFVJQWYzVGxhQzVkVGFiTW5rYUFyNUhsSlJOX2dnTTEyVWwwNFNKeVBZRnZ3VGhfUjJEaVJrRnY2dGYwWVRoaEZuWDJ5ZlZNODVULXlVR3BzbkNLQmRRU2Q1Rno4TzdTTkY5VE5TWWR6YUhzWnE0anlESllNaGtIRHJrYzRqMG9HWHA3Y1czT1lIdDEtd3AwVXotVXgyQ3BneXJMcUsyNzJoREx0OW1XdmJRUEt2ajJlT0xPTEU0OExHT3hoamJqd0EzM3NWdFNSZlFtRURldw?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
+      "id": "2a8f0755cd42",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T11:58:01+00:00",
+      "headline": {
+        "en": "State Street Launches Daily NAV Model for Apollo Private Credit Funds",
+        "zh": "道富为Apollo私人信贷基金推出每日净值模型"
+      },
+      "summary": {
+        "en": "State Street launched a daily NAV model for Apollo private credit funds.",
+        "zh": "道富为Apollo私人信贷基金推出了每日净值模型。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Securities.io",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdlBkX2VfUzJfa3lMZ1VGaC1KeDlzVjRyeHgxMnotZnBETmtKZndNWnQ0NkEzTFZrUGFvdndnbFY4N0h1bGgzYTN1WkFEN0hXWlNyR3J6MkIwOE9oeTRuQkp5UHE2RG80TnNaMUV6cTBZX09mUENjWmVhLUhaYVlWekV4b25tQkI3Mks1MVRLTGVfeGFFbGpBTG13Vzg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "State Street Launches Daily NAV Model for Apollo Private Credit Funds",
+      "source_fingerprint": "5de4ba214e3a1c049d1f209c65bed26f14ead7aa68f619567a5fcfd50339774f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5e5cb7eca21441a008a1a044166002db58744d76a08066fcfc7fc2520de62d02",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Daily NAV model for Apollo private credit funds could affect valuation and liquidity conditions for Apollo's credit vehicle.",
+      "event_identity": {
+        "subject": "apollo private credit funds",
+        "action": "launches daily nav model",
+        "object": "apollo private credit funds",
+        "period": "daily",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T15:00:05+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdlBkX2VfUzJfa3lMZ1VGaC1KeDlzVjRyeHgxMnotZnBETmtKZndNWnQ0NkEzTFZrUGFvdndnbFY4N0h1bGgzYTN1WkFEN0hXWlNyR3J6MkIwOE9oeTRuQkp5UHE2RG80TnNaMUV6cTBZX09mUENjWmVhLUhaYVlWekV4b25tQkI3Mks1MVRLTGVfeGFFbGpBTG13Vzg?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
+      "id": "80ddd5c70062",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T11:33:42+00:00",
+      "headline": {
+        "en": "State Street launches daily NAV model for Apollo's private credit funds",
+        "zh": "State Street 为 Apollo 的私募信贷基金推出每日净值模型"
+      },
+      "summary": {
+        "en": "State Street has launched a daily NAV model for Apollo's private credit funds, according to a headline report.",
+        "zh": "据一则标题报道，State Street 已为 Apollo 的私募信贷基金推出每日净值模型。"
+      },
+      "gps": [
+        "apollo"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "StreetInsider",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbWh6LWkyb3BNYjUwNmRyMzlFVzc3NnhCRTRRVEpBVHpsUldmdExBTHlvczJYTHE3S2wwd2VjMEtzbnEyZzNYRENqb1lmZ1pDZXMzZ2JyTWxGc21leTBJazJvQk9EREJ4T3lieE5pQmZ5T29mM2g2RDhDTkZWY3FSd0ZCYlJlVEZ0MDdEeEtDSUFZSDBmXzJEUEctYW8tMTlnMzhjeUFHMXFMMWNRS2hIN0c2ZmtKYm8yOXpvYVpjWi1QU3JpZFZKVw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "State Street launches daily NAV model for Apollo's private credit funds",
+      "source_fingerprint": "8bd1afd3f191324b7324a2e4cb9da4c58975739ea2d14163e40192660247645c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "94421abef5984f14c5fd331aade85b897fd56c0fb6ac6fe8c4dbf00cda9e6ff4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A custody bank introducing daily NAV for Apollo's private credit funds could affect valuation and liquidity conditions for a tracked credit manager's vehicles.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T15:00:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbWh6LWkyb3BNYjUwNmRyMzlFVzc3NnhCRTRRVEpBVHpsUldmdExBTHlvczJYTHE3S2wwd2VjMEtzbnEyZzNYRENqb1lmZ1pDZXMzZ2JyTWxGc21leTBJazJvQk9EREJ4T3lieE5pQmZ5T29mM2g2RDhDTkZWY3FSd0ZCYlJlVEZ0MDdEeEtDSUFZSDBmXzJEUEctYW8tMTlnMzhjeUFHMXFMMWNRS2hIN0c2ZmtKYm8yOXpvYVpjWi1QU3JpZFZKVw?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
+      "id": "468a236fb9b1",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T10:43:05+00:00",
+      "headline": {
+        "en": "AllianzGI leads KKR's first private credit continuation vehicle",
+        "zh": "安联环球投资牵头KKR首个私募信贷接续基金"
+      },
+      "summary": {
+        "en": "Allianz Global Investors acted as lead investor in KKR's first secondaries transaction for its direct lending platform, according to a LinkedIn post cited by Alternative Credit Investor. AllianzGI said the investment provides access to a diversified portfolio of predominantly senior, US-focused direct lending investments. George Mueller, partner in KKR's credits and markets division, said KKR was pleased to expand its relationship with AllianzGI. No transaction size was given.",
+        "zh": "据Alternative Credit Investor援引的领英帖子，安联环球投资（AllianzGI）担任KKR直接贷款平台首笔二级市场交易的领投方。安联环球投资表示，该投资提供了对以美国为主、以优先担保为主的多元化直接贷款组合的敞口。KKR信贷与市场部门合伙人George Mueller表示，KKR很高兴通过该交易扩大与安联环球投资的合作关系。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/28/allianzgi-leads-kkrs-first-private-credit-continuation-vehicle/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AllianzGI leads KKR’s first private credit continuation vehicle",
+      "source_fingerprint": "36240c4ec0b0928defdad6f08d35f96a4ae796ea0268447ccacad2a00c4cb411",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 73,
+            "end": 134
+          },
+          "linkage": {
+            "start": 67,
+            "end": 102
+          }
+        },
+        "source_sha256": "550312a054b1cf6c2f09cbe89bfcb0ffb41b69d0330e59a8b226dbc7b2b2be69",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "KKR's first private credit continuation vehicle for its direct lending platform is a new, incremental secondaries transaction led by AllianzGI, with no sign of stress or impairment.",
+          "zh": "KKR直接贷款平台的首个私募信贷接续基金是由安联环球投资牵头的新增二级市场交易，没有压力或减值的迹象。"
+        }
+      },
+      "relevance_reason": "KKR's first private credit continuation vehicle marks a new secondaries exit tool for its direct lending platform, relevant to credit investors tracking KKR.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-28T15:00:11+00:00",
+        "sha256": "550312a054b1cf6c2f09cbe89bfcb0ffb41b69d0330e59a8b226dbc7b2b2be69",
+        "source_published_at": "2026-10-28T10:43:05+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/28/allianzgi-leads-kkrs-first-private-credit-continuation-vehicle/"
+      },
+      "source_published_at": "2026-10-28T10:43:05+00:00",
+      "observed_at": "2026-10-28T14:57:33+00:00"
+    },
+    {
       "id": "7ccee36cce55",
       "date": "2026-10-28",
       "published_at": "2026-10-28T00:42:21+00:00",
@@ -43,6 +430,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1MHROajBVenhWYnBQZm5sbDhnSEJhN2traW55Y0NzZUVDSXBsbjRtX2xuczgtbG93b24yelFic2pHZmlfazhtTnpLWmphZnlVU0Zn?oc=5"
       },
       "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "50f03a3daf56",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T20:57:35+00:00",
+      "headline": {
+        "en": "Moody's: AI financing boosts private credit growth amid refinancing risks",
+        "zh": "穆迪：AI融资推动私人信贷增长，再融资风险犹存"
+      },
+      "summary": {
+        "en": "Moody's said AI-related financing is boosting growth in private credit while refinancing risks persist, according to a headline report.",
+        "zh": "穆迪表示，与AI相关的融资正在推动私人信贷增长，同时再融资风险依然存在。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Crypto Briefing",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPelloX3p0NW00R2VOc3E2MWJWcVVDbU43Y1VQYUtqSGowVkszTnVyeGxzNVdDcllxR2dsU0FsNzZTMFBuWjE2Z19GZmR6Sk0wdmwxR0tvZ3R6UkVTekpzMUdtM3pkOTViUk8xbHNQYU5mQ3ZOTm1KRmhPN2pZTnJ1NG5jNTVTbkJvcWRIYkRhLW5RV1JyRVBEZlJLWUM0bHNt?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI financing boosts private credit growth amid refinancing risks: Moody’s",
+      "source_fingerprint": "9bcca591a068f79ee0ef612d9aa76ea8245e9a22f481b7c9a9decf11785e9d02",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d5e191bd6d8ba70558ceaaa393ce854d8b7f24287913e9cce25d11d491057994",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's flagging AI-driven private credit growth alongside refinancing risks bears on sector risk and deployment conditions for tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-28T15:00:15+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPelloX3p0NW00R2VOc3E2MWJWcVVDbU43Y1VQYUtqSGowVkszTnVyeGxzNVdDcllxR2dsU0FsNzZTMFBuWjE2Z19GZmR6Sk0wdmwxR0tvZ3R6UkVTekpzMUdtM3pkOTViUk8xbHNQYU5mQ3ZOTm1KRmhPN2pZTnJ1NG5jNTVTbkJvcWRIYkRhLW5RV1JyRVBEZlJLWUM0bHNt?oc=5"
+      },
+      "observed_at": "2026-10-28T14:57:33+00:00"
     },
     {
       "id": "c874d790b3ac",
