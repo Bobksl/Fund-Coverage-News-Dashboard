@@ -2,6 +2,747 @@
   "date": "2026-10-29",
   "items": [
     {
+      "id": "f201f3e41669",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T14:53:45+00:00",
+      "headline": {
+        "en": "Ares raises $31 billion on private credit, real assets fundraising strength",
+        "zh": "Ares凭借私募信贷和实物资产募资实力募集310亿美元"
+      },
+      "summary": {
+        "en": "Ares raised $31 billion, with private credit and real assets cited as fundraising strengths.",
+        "zh": "Ares募资310亿美元，私募信贷和实物资产被列为募资亮点。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTHBQTUtJajFvZFVlZTR0UzRUSkk4Ry00djlBVFRCWFhUbVNXUElSbDU5b3d5WWJlcUpiUHVDbmsteVlrekx4SzNKYlFPR3IxQlhhZmFtNGV3MDVNSXBkR1k2NkIzOERINVJXZGZKQWZPaHV1V3RGMVpVSG0taGZweXhGbkNrRkpWNmJwWWpzNnRzdGx6U3pUTFZIbUxQaGhOdWc5cEh6bERzZm44TEtodm9EVWtWVmF1RVZTRTVTNmRnZU85?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares raises $31 billion on private credit, real assets fundraising strength",
+      "source_fingerprint": "201bffd7000ed3aaaca2d7db385a580b8df110a60db43a09ac926e802c0c33e7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e2edef248477c01b65b56387f0f5ce413d87cc2085f434cf0cde099ab84741b4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals a large private credit fundraising by a major credit manager, relevant to deployment and fundraising conditions for the tracked private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:06:21+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTHBQTUtJajFvZFVlZTR0UzRUSkk4Ry00djlBVFRCWFhUbVNXUElSbDU5b3d5WWJlcUpiUHVDbmsteVlrekx4SzNKYlFPR3IxQlhhZmFtNGV3MDVNSXBkR1k2NkIzOERINVJXZGZKQWZPaHV1V3RGMVpVSG0taGZweXhGbkNrRkpWNmJwWWpzNnRzdGx6U3pUTFZIbUxQaGhOdWc5cEh6bERzZm44TEtodm9EVWtWVmF1RVZTRTVTNmRnZU85?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "eb1e35e75901",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T12:27:43+00:00",
+      "headline": {
+        "en": "Ares heads for record fundraising year on private credit, real assets strength",
+        "zh": "Ares凭借私募信贷和实物资产实力有望创下融资纪录年"
+      },
+      "summary": {
+        "en": "Ares is heading for a record fundraising year, driven by its private credit and real assets businesses, according to Reuters.",
+        "zh": "据路透社报道，Ares凭借其私募信贷和实物资产业务，有望创下融资纪录年。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbE9kVVlndUMwY2R2XzJIOEMyU2ltYTRSVURBSHlVSzZndExHMC15eDdVenh3TjRlTm5rM25VV3dkd2RCQk11M0FIbXpDRTVSNkFUMEktNlZyNDFfNm1EUVRJcWMzR1hBQzRlZk5pNHF5MUhLNjZnbnZ4Y2p3RDZXd2NwejdLVGxXY1AxdXBCMmMzVkg3cnhqQWc3cF9pS1V1Z1ZKTWNZUXNuU2NCZXBSZU5RZWozMXFrYWFCUFR3eEZXak91?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares heads for record fundraising year on private credit, real assets strength",
+      "source_fingerprint": "7c389d8a68ab2219213ddbed24b9b9f34fb5c3eae479b09e1e4403403a10535a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a60b0387edd64a57d44695822a307ac8e8c50853e37d69d3b866fbfbb7b9f483",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A record fundraising year for a major private credit manager signals strong capital deployment conditions for the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:06:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbE9kVVlndUMwY2R2XzJIOEMyU2ltYTRSVURBSHlVSzZndExHMC15eDdVenh3TjRlTm5rM25VV3dkd2RCQk11M0FIbXpDRTVSNkFUMEktNlZyNDFfNm1EUVRJcWMzR1hBQzRlZk5pNHF5MUhLNjZnbnZ4Y2p3RDZXd2NwejdLVGxXY1AxdXBCMmMzVkg3cnhqQWc3cF9pS1V1Z1ZKTWNZUXNuU2NCZXBSZU5RZWozMXFrYWFCUFR3eEZXak91?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "3258ed2b7db5",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T12:27:18+00:00",
+      "headline": {
+        "en": "Ares heads for record fundraising year on private credit, real assets strength",
+        "zh": "Ares 凭借私募信贷和实物资产实力，有望创下融资纪录之年"
+      },
+      "summary": {
+        "en": "Ares is heading for a record fundraising year, supported by its private credit and real assets businesses, according to a TradingView headline.",
+        "zh": "据 TradingView 一则标题报道，Ares 有望创下融资纪录之年，其私募信贷和实物资产业务提供支撑。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "real_estate"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZU1tT1pSSGJvU1AtVTJiem12NGJaa29aQndwYzZZYVFFcGRWUTF1SEZTMC1MSkEtTDQ1OEQwSUp1Xy1CMDh5T0JqeGhOdlFoNW9ZMUsybWxKRXktSkp6TzY3TkJGSUJITGw4LVVNOURwUHloZDVCVjBzZGgzOHZxOFBBaHg1bzVXYzdKT0Z4eUo1SHJ5ZnptVDZOTDNBUnRGQWJLZWZSaGZfREdDVk9Vb1E4ZVhIVl9vdV9ucnZoUndZcGpTN0h6THYtU0pmeHpEZVBEQnpyMmNBU21JSm1Bcw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares heads for record fundraising year on private credit, real assets strength",
+      "source_fingerprint": "7c389d8a68ab2219213ddbed24b9b9f34fb5c3eae479b09e1e4403403a10535a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a60b0387edd64a57d44695822a307ac8e8c50853e37d69d3b866fbfbb7b9f483",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Signals record fundraising momentum for a major private credit manager, a read-across for sector deployment and competitive conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:06:47+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZU1tT1pSSGJvU1AtVTJiem12NGJaa29aQndwYzZZYVFFcGRWUTF1SEZTMC1MSkEtTDQ1OEQwSUp1Xy1CMDh5T0JqeGhOdlFoNW9ZMUsybWxKRXktSkp6TzY3TkJGSUJITGw4LVVNOURwUHloZDVCVjBzZGgzOHZxOFBBaHg1bzVXYzdKT0Z4eUo1SHJ5ZnptVDZOTDNBUnRGQWJLZWZSaGZfREdDVk9Vb1E4ZVhIVl9vdV9ucnZoUndZcGpTN0h6THYtU0pmeHpEZVBEQnpyMmNBU21JSm1Bcw?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "4c8e67995028",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T11:37:15+00:00",
+      "headline": {
+        "en": "Blue Owl third-quarter profit beats estimates, AUM hits record $330 billion",
+        "zh": "Blue Owl第三季度利润超预期，资产管理规模创纪录达3300亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl's third-quarter profit beat estimates and its assets under management reached a record $330 billion, according to Reuters.",
+        "zh": "据路透社报道，Blue Owl第三季度利润超出预期，其资产管理规模达到创纪录的3300亿美元。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV0xxMWFHQnhvM0RrRGVjMjI1OHl2ZkRDdDlMckh0WG5aWjRJa3ZhWHJfOVdaRTQxNndvU2VyNTBlanNyZGtYY29hUUZib1M3Zk8zeENxZzBqRHlEQUVGa2VJVW9yLTllTDVXNm1CUDc1UnhlWFJiVUJQdTdIc0tDcHRrWnl6X08yVUdsRUY1MlRnLU9xdW13TGFhQmhDTTlaYTB0ZURGeFBWOGg2cUNWWEdn?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl third-quarter profit beats estimates, AUM hits record $330 billion",
+      "source_fingerprint": "67cb4687b7212d31d5ff124f884608886916bc070217c76a97a88051bd8364d0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "be7ba06fdffaf4cea7138a96a1188b04e38ad2e3ff8fed3e69b1600272068d0d",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Record AUM and earnings beat at Blue Owl, a tracked credit manager, signal deployment and fundraise momentum relevant to credit investors.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "third-quarter profit beats estimates",
+        "object": "aum",
+        "period": "third-quarter",
+        "numbers": [
+          "$330 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:06:54+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV0xxMWFHQnhvM0RrRGVjMjI1OHl2ZkRDdDlMckh0WG5aWjRJa3ZhWHJfOVdaRTQxNndvU2VyNTBlanNyZGtYY29hUUZib1M3Zk8zeENxZzBqRHlEQUVGa2VJVW9yLTllTDVXNm1CUDc1UnhlWFJiVUJQdTdIc0tDcHRrWnl6X08yVUdsRUY1MlRnLU9xdW13TGFhQmhDTTlaYTB0ZURGeFBWOGg2cUNWWEdn?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "6806df67bac1",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T11:10:49+00:00",
+      "headline": {
+        "en": "Blue Owl raises $12.6B, posts higher preliminary Q3 profit",
+        "zh": "Blue Owl募资126亿美元，第三季度初步利润上升"
+      },
+      "summary": {
+        "en": "Blue Owl raised $12.6B in capital, according to a headline on its preliminary third-quarter results. The headline also states the firm posted higher preliminary Q3 profit.",
+        "zh": "据一则关于其第三季度初步业绩的标题报道，Blue Owl募资126亿美元。该标题还称公司第三季度初步利润上升。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Stock Titan",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPd2N0NWpwM2M5UmQtM3Z0MEdjbDM2UTlBUE1xcDVlMzFjVkZZbG1pQW4wd1k2Q0ZzLWZ6NFN1cTBMQ0JwNElfX015bU96U0FkMUliT29OOWVBWEh6YUw0cllOYU1vWHdrLTQ0Y25WTHZxeHBKdTMweHRpLW1VaGRuSXNmLUphTXpkaHRyWmR2a3V1NW00UUhMeTQydnAtTl9INzJmNEpNWkdlTnZJ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "With $12.6B raised, Blue Owl (OWL) posts higher preliminary Q3 profit.",
+      "source_fingerprint": "740a9ff2ca0cd3e6a458cdacba76b276de1fc87b2cffeb45a73e7e60052c81c4",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "6141eb9594019b1fa80010d079b3ccfa22494bfd7fd3382fa5bd89cddeb3e2a1",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's $12.6B capital raise and higher preliminary Q3 profit bear on its fundraising momentum and earnings trajectory, relevant to a credit investor's view of the manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:06:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPd2N0NWpwM2M5UmQtM3Z0MEdjbDM2UTlBUE1xcDVlMzFjVkZZbG1pQW4wd1k2Q0ZzLWZ6NFN1cTBMQ0JwNElfX015bU96U0FkMUliT29OOWVBWEh6YUw0cllOYU1vWHdrLTQ0Y25WTHZxeHBKdTMweHRpLW1VaGRuSXNmLUphTXpkaHRyWmR2a3V1NW00UUhMeTQydnAtTl9INzJmNEpNWkdlTnZJ?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "0df37891178b",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T11:10:15+00:00",
+      "headline": {
+        "en": "Blue Owl reports Q3 2026 results, declares $0.23 Class A dividend",
+        "zh": "Blue Owl公布2026年第三季度业绩，宣布每股A类股0.23美元股息"
+      },
+      "summary": {
+        "en": "Blue Owl Capital Inc. reported financial results for the third quarter ended September 30, 2026, and said it raised nearly $50 billion over the last twelve months, calling it a record institutional capital raising quarter. The firm declared a quarterly dividend of $0.23 per Class A Share, payable November 23, 2026, to shareholders of record on November 10, 2026.",
+        "zh": "Blue Owl Capital Inc.公布了截至2026年9月30日的第三季度财务业绩，并表示过去十二个月募资近500亿美元，称这是创纪录的机构募资季度。公司宣布每股A类股季度股息0.23美元，将于2026年11月23日支付给2026年11月10日登记在册的股东。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "BLUE OWL CAPITAL INC.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1823945/000182394526000050/0001823945-26-000050-index.htm"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "BLUE OWL CAPITAL INC. files 8-K: items 2.02, 8.01and9.01",
+      "source_fingerprint": "9f610a2589a70b97818c9df00c6d37b37fcecd73d83b65792407f05337d4cb0a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 673,
+            "end": 717
+          },
+          "linkage": {
+            "start": 128,
+            "end": 160
+          }
+        },
+        "source_sha256": "7b7ef255255371304341f68d1d9d0953e324e4995d635d3af8b365c4237a903a",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "direct",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "primary",
+        "routine": false,
+        "reason": {
+          "en": "Quarterly results with a record institutional fundraising quarter and a dividend declaration; incremental to franchise strength, no adverse credit development.",
+          "zh": "季度业绩显示创纪录的机构募资季度并宣布股息；对业务实力属增量信息，无不利信用事件。"
+        }
+      },
+      "relevance_reason": "Blue Owl's quarterly results show record institutional fundraising and nearly $50bn raised over twelve months, a material signal on deployment and fundraising conditions for a tracked credit manager.",
+      "event_identity": {
+        "subject": "blue owl capital inc.",
+        "action": "reported its financial results",
+        "object": "third quarter ended september 30, 2026",
+        "period": "third quarter ended september 30, 2026",
+        "numbers": [
+          "$0.23",
+          "$50 billion",
+          "00",
+          "1",
+          "10",
+          "15",
+          "2",
+          "2.02",
+          "2026",
+          "23",
+          "29",
+          "30",
+          "3620",
+          "461",
+          "542",
+          "5787",
+          "585",
+          "601",
+          "626",
+          "666",
+          "8",
+          "8.01",
+          "805",
+          "833",
+          "884",
+          "9.01",
+          "93026",
+          "99.1",
+          "991",
+          "9983"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-29T15:06:18+00:00",
+        "sha256": "7b7ef255255371304341f68d1d9d0953e324e4995d635d3af8b365c4237a903a",
+        "final_url": "https://www.sec.gov/Archives/edgar/data/1823945/000182394526000050/a93026-ex991xearningspress.htm"
+      },
+      "source_origin": "issuer_filing",
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "e1b22566e33f",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T11:02:53+00:00",
+      "headline": {
+        "en": "Blue Owl Fees Beat Estimates Though Redemptions Weigh on Inflows",
+        "zh": "Blue Owl费用收入超预期，但赎回拖累资金流入"
+      },
+      "summary": {
+        "en": "Blue Owl's fees beat estimates, while redemptions weighed on inflows, according to Bloomberg.",
+        "zh": "据彭博报道，Blue Owl的费用收入超出预期，但赎回对资金流入构成拖累。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVDgyMDFRdnVoY01WbW1nR01fOTZpd0w3a3BkUjFYcnB6NGNXbGljWDYxTEpCUF9GUjk4anlIVHhLWTlISndZUEYwMWQ4WDhtRXUwb0RrT0pQQXlRcDZZUTdoRDRfT3RNLVQwdnlxYi0weWJwZHlDYmplOW4zdnJqSC1BZ2l4VTlzdUhxWE9sV2VxdU8ySDBvWkwzR0c4WXRiX0phRjRteXJmdFFDaVQ3QkFZMkRxZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Fees Beat Estimates Though Redemptions Weigh on Inflows",
+      "source_fingerprint": "b67a207cb75e47602865249384517c7593ecc8f9ceacfb36294f947fec7bc39f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "41f97a95c8e563c365e67885bf70c38b436c896f5bf2c6516273267559cd1183",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl fee results beat estimates but redemptions weigh on inflows, bearing on a tracked manager's earnings and fundraising/flow conditions.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "fees beat estimates though redemptions weigh on inflows",
+        "object": "redemptions weigh on inflows",
+        "period": "blue owl fees beat estimates",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:07:05+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVDgyMDFRdnVoY01WbW1nR01fOTZpd0w3a3BkUjFYcnB6NGNXbGljWDYxTEpCUF9GUjk4anlIVHhLWTlISndZUEYwMWQ4WDhtRXUwb0RrT0pQQXlRcDZZUTdoRDRfT3RNLVQwdnlxYi0weWJwZHlDYmplOW4zdnJqSC1BZ2l4VTlzdUhxWE9sV2VxdU8ySDBvWkwzR0c4WXRiX0phRjRteXJmdFFDaVQ3QkFZMkRxZw?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "e788b52103cd",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T11:01:51+00:00",
+      "headline": {
+        "en": "Blue Owl's Fundraising Kept Growing Even As Its Stock Fell",
+        "zh": "Blue Owl的募资持续增长，尽管其股价下跌"
+      },
+      "summary": {
+        "en": "Blue Owl's fundraising continued to grow even as its stock declined, according to a headline.",
+        "zh": "据一则标题，Blue Owl的募资持续增长，尽管其股价下跌。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX01DTDVIbVBEdHhSVGNYVG5LQ1VpZFlfT3VQMDNNNVV6Z1VhZ1BBei1EdEFQckZOY0tMS3lEbWh4M1hwYngyWmZlZk45QTJhN0pBdzhQdzQzTFJBLXNwNmlJblJYbHVockNhS2RHUTlFM0xuc0N4S3dDMlh6UzhVSFVsbmdxMmdISTZGUU1oUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl’s Fundraising Kept Growing Even As Its Stock Fell",
+      "source_fingerprint": "11daa0d58904cf138f4d09d4e4375d8ef23b94c44dd4de5efa9eafbeb8950b7c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "56138ffb3ff7119f2c642ede7eb9b08c7cdc0ab635073a2e15754c677124c818",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline points to Blue Owl fundraising growth alongside a share-price decline, bearing on deployment and liquidity conditions for a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:07:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX01DTDVIbVBEdHhSVGNYVG5LQ1VpZFlfT3VQMDNNNVV6Z1VhZ1BBei1EdEFQckZOY0tMS3lEbWh4M1hwYngyWmZlZk45QTJhN0pBdzhQdzQzTFJBLXNwNmlJblJYbHVockNhS2RHUTlFM0xuc0N4S3dDMlh6UzhVSFVsbmdxMmdISTZGUU1oUQ?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "a630d47a07d0",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T10:42:34+00:00",
+      "headline": {
+        "en": "Non-bank NAV lending margins widen despite fund finance pricing pressure",
+        "zh": "尽管基金金融定价承压，非银行NAV贷款利差扩大"
+      },
+      "summary": {
+        "en": "Non-bank NAV lending margins have widened even as pricing pressure persists in fund finance, according to a headline report.",
+        "zh": "据一则标题报道，尽管基金金融领域定价压力持续，非银行NAV贷款利差已扩大。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQenU1cTFZTHdUTnBHZldpdVZDV0FyVGs0bUxFdk5NV2ZtLVZkTVh6SnBVdW5QZ25fQ3kzbDFsMFpLTi1VeTl5clBmOXA0aWtHMUxQVVFZVF9BUlowYWsycjh2VHIzVmFPS0lQSjhBY1BCc3NFSmp1OUg4ZG5wd09LR2pMaTAtbHNKY2oxU2lvQXBCV1gyanMtN2N6QU0yeWtrVzFkR1B0VGJyYkJHejZTaHB5ejNIVDNxSDBrdVJ1Yw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Non-bank NAV lending margins widen despite fund finance pricing pressure",
+      "source_fingerprint": "5bfad6ea1da37c7907747eed04522c1e9147752f1fe9e22a530fbd5578da437d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b8e563abdfe4836256029791af297b9747135a6967c83a3e64b72317d294ef03",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "NAV lending margin widening signals pricing and return conditions in private credit and fund finance, a channel affecting tracked credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:07:15+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQenU1cTFZTHdUTnBHZldpdVZDV0FyVGs0bUxFdk5NV2ZtLVZkTVh6SnBVdW5QZ25fQ3kzbDFsMFpLTi1VeTl5clBmOXA0aWtHMUxQVVFZVF9BUlowYWsycjh2VHIzVmFPS0lQSjhBY1BCc3NFSmp1OUg4ZG5wd09LR2pMaTAtbHNKY2oxU2lvQXBCV1gyanMtN2N6QU0yeWtrVzFkR1B0VGJyYkJHejZTaHB5ejNIVDNxSDBrdVJ1Yw?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "903eb2df014a",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T10:33:58+00:00",
+      "headline": {
+        "en": "Corpay report: non-bank NAV lending margins widen to 794bp as bank margins narrow",
+        "zh": "Corpay报告：非银NAV贷款利差扩大至794个基点，银行利差收窄"
+      },
+      "summary": {
+        "en": "Corpay Private Markets' fifth Lender Book Report found average non-bank NAV lending margins widened from 756 basis points in February 2025 to 794 basis points in August 2026, while average bank NAV margins narrowed from 447 to 435 basis points. Alternative credit providers account for around 30 per cent of lenders tracked on Corpay's Alpha Match platform, up from roughly 25 per cent three years ago. Corpay said its data is weighted toward mid-market and complex NAV facilities and does not necessarily indicate rising non-bank NAV pricing across the whole market.",
+        "zh": "Corpay Private Markets第五份《Lender Book Report》显示，非银NAV贷款平均利差从2025年2月的756个基点扩大至2026年8月的794个基点，而银行NAV平均利差同期从447个基点收窄至435个基点。在Corpay Alpha Match平台追踪的贷款机构中，另类信贷机构占比约30%，三年前约为25%。Corpay表示其数据偏向中型及复杂的NAV融资，未必意味着整个市场的非银NAV定价上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "asset_based_finance"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/29/non-bank-nav-lending-margins-widen-despite-fund-finance-pricing-pressure/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Non-bank NAV lending margins widen despite fund finance pricing pressure",
+      "source_fingerprint": "d6f39a42e63634a3692477e79597f0481fd84127d21a5e0bcec7408735cae513",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 556,
+            "end": 622
+          },
+          "linkage": {
+            "start": 846,
+            "end": 919
+          }
+        },
+        "source_sha256": "1ff628a4b5becd2c83e4a78759d8851c7e914b92ad2222b40310cd6988d4de87",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "NAV facility pricing trends shape credit deployment and returns for private credit managers, a tracked sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-29T15:07:18+00:00",
+        "sha256": "1ff628a4b5becd2c83e4a78759d8851c7e914b92ad2222b40310cd6988d4de87",
+        "source_published_at": "2026-10-29T10:33:58+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/29/non-bank-nav-lending-margins-widen-despite-fund-finance-pricing-pressure/"
+      },
+      "source_published_at": "2026-10-29T10:33:58+00:00",
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "73860cdf2c65",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T10:22:40+00:00",
+      "headline": {
+        "en": "Bain Capital in talks to provide $500m financing to CPPIB-backed RMZ",
+        "zh": "贝恩资本洽谈向CPPIB支持的RMZ提供5亿美元融资"
+      },
+      "summary": {
+        "en": "Bain Capital is in talks to provide $500m in financing to RMZ, a company backed by CPPIB, according to a headline report. No terms, structure or timing were disclosed.",
+        "zh": "据一则标题报道，贝恩资本正洽谈向CPPIB支持的RMZ提供5亿美元融资。"
+      },
+      "gps": [
+        "bain_capital"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "APAC",
+      "source": {
+        "publisher": "Private Equity Wire",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdld4Y1RjVUVuRFIxTHd1TUFVdXF2ZDJ0S2NBT3lDaXl2NHhSRjE4ZGNxRzNyaGRpbGxiRmhxVXRZVTBYZkRLQTBRTTh0NXlsTF8tLXdTVHNBWExlX1M5blJFaWJ4NW5TV3Y1N3dLYjlVUDljZ2tLbEZaNjRjNHJpbzBtb3J5ZERoSzNpUUo5dDVtVFd6djljRHFITEdLWUdiTlFzbE9yVQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Bain Capital in talks to provide $500m financing to CPPIB-backed RMZ",
+      "source_fingerprint": "4e5e302a7c3b089870c179843c11a07af1f9337ae61d1f3316994094fe64be4c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e0401b7702677ae2c4687b17b29b743a770a912075f13982a21786196150b351",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Bain Capital Credit's potential $500m financing to RMZ is a new private credit deployment by a tracked manager in APAC real assets.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:07:21+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdld4Y1RjVUVuRFIxTHd1TUFVdXF2ZDJ0S2NBT3lDaXl2NHhSRjE4ZGNxRzNyaGRpbGxiRmhxVXRZVTBYZkRLQTBRTTh0NXlsTF8tLXdTVHNBWExlX1M5blJFaWJ4NW5TV3Y1N3dLYjlVUDljZ2tLbEZaNjRjNHJpbzBtb3J5ZERoSzNpUUo5dDVtVFd6djljRHFITEdLWUdiTlFzbE9yVQ?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "3a4e058a2494",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T10:18:02+00:00",
+      "headline": {
+        "en": "Private debt returns 1.88pc in Q2, lagging wider private markets",
+        "zh": "私人债务第二季度回报1.88%，落后于更广泛的私募市场"
+      },
+      "summary": {
+        "en": "State Street data shows private debt returned 1.88 per cent in the second quarter of 2026, below the 4.37 per cent overall return on the State Street Private Capital Index. Private debt's one-year return was 7.07 per cent versus 11.8 per cent for the index, and it trailed buyouts at 2.99 per cent and venture capital at 10.06 per cent for the quarter.",
+        "zh": "State Street数据显示，2026年第二季度私人债务回报为1.88%，低于State Street私募资本指数4.37%的整体回报。私人债务的一年期回报为7.07%，而该指数为11.8%；该季度私人债务也落后于并购策略的2.99%和风险投资的10.06%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/29/private-debt-returns-1-88pc-in-q2-lagging-wider-private-markets/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Private debt returns 1.88pc in Q2 lagging wider private markets",
+      "source_fingerprint": "3347038d6da1dcd0a40a9253e602225b4e0bd24e186dffd179a7c54be5a0fe7b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 116
+          },
+          "linkage": {
+            "start": 650,
+            "end": 731
+          }
+        },
+        "source_sha256": "423b06ca0df0565b6580227a3f099c1848cb469c0d470aab619cc943a61915ee",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Quarterly private debt performance data from State Street bears on return conditions for private credit strategies tracked by the team.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-29T15:07:24+00:00",
+        "sha256": "423b06ca0df0565b6580227a3f099c1848cb469c0d470aab619cc943a61915ee",
+        "source_published_at": "2026-10-29T10:18:02+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/29/private-debt-returns-1-88pc-in-q2-lagging-wider-private-markets/"
+      },
+      "source_published_at": "2026-10-29T10:18:02+00:00",
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "3c1f33268adb",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T10:06:57+00:00",
+      "headline": {
+        "en": "Ares raises $31 billion on private credit, real assets fundraising strength",
+        "zh": "Ares 凭借私人信贷和实物资产募资实力募集 310 亿美元"
+      },
+      "summary": {
+        "en": "Ares raised $31 billion, according to a headline citing strength in private credit and real assets fundraising.",
+        "zh": "据一则援引私人信贷和实物资产募资实力的标题报道，Ares 募集了 310 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORmZGZE9iUFB5N0JFVVpRSW50TkxCT2NpV09rQ2RSLWotVHcxOFJzaFBGSXo2bHEtTnNPZEZEU1BqMFlrNVdTeDhyOVJRMEtCVEFKeUJZOUVkRDdoQ0szRVE3NWVZbjl1X2RIZ3RBcWFPYWtmYVV0d0dkdFpkRjBhRG8zSm5xOWhPR2NXUHBfWE9hOEY2eEU3cld6V0s1TkZwR3RuZnlSMF9JLVBLd181Qk91Z0l6QlduS016YlRjT05wSGY1?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares raises $31 billion on private credit, real assets fundraising strength",
+      "source_fingerprint": "201bffd7000ed3aaaca2d7db385a580b8df110a60db43a09ac926e802c0c33e7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e2edef248477c01b65b56387f0f5ce413d87cc2085f434cf0cde099ab84741b4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Direct fundraising datapoint for a large private credit platform signals deployment capacity and competitive conditions for the strategy, though Ares is not a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:07:26+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORmZGZE9iUFB5N0JFVVpRSW50TkxCT2NpV09rQ2RSLWotVHcxOFJzaFBGSXo2bHEtTnNPZEZEU1BqMFlrNVdTeDhyOVJRMEtCVEFKeUJZOUVkRDdoQ0szRVE3NWVZbjl1X2RIZ3RBcWFPYWtmYVV0d0dkdFpkRjBhRG8zSm5xOWhPR2NXUHBfWE9hOEY2eEU3cld6V0s1TkZwR3RuZnlSMF9JLVBLd181Qk91Z0l6QlduS016YlRjT05wSGY1?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "49809f43c4ea",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T09:17:41+00:00",
+      "headline": {
+        "en": "KKR launches private credit secondaries push with $460m continuation vehicle",
+        "zh": "KKR以4.6亿美元接续基金启动私募信贷二级市场业务"
+      },
+      "summary": {
+        "en": "KKR has launched a private credit secondaries push with a $460m continuation vehicle, according to a headline report.",
+        "zh": "据一则标题报道，KKR以一支4.6亿美元的接续基金启动了私募信贷二级市场业务。所提供文本未包含更多细节。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "AltAssets Private Equity News",
+        "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYnBlcENTaXh2TjFsdVZVT1dSckRtbXloekR1US1vbjZ3TDZlUkdDQkhoX2txLU1yaEJxenlERlZINE5JOWpzS2F6SzA0QUxKWkY1bkdudVNnZ2dFQzhHY192ZlZJOHpiTGV0Ul9aS2NaRTR6ZWlmZGNieGVYSDg4M3Y0cUpYc1YzYjlkQU1COWg4Z3RHc3JNUFBpRHIyOVFQaXYwNDBPWlN2LWtsbWdLdWFCNjBfdUpyN0ZyclRsVXd2aTJRemZfUVdhOHI3bzZ4RzF0SGdwSTV4UGpkZ0ZtcmhFWW1xMG9tbFhBdDR4c1pIM2w1YTQxeVBxUjl6eTZoS21GZWIzOXgxZ1pLa0JPQkNMaEpUeEJsNzNnaTQycExOUVVh?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR launches private credit secondaries push with $460m continuation vehicle",
+      "source_fingerprint": "500f1762f9a3c1ee0d1479e52b42689bd6505e0b1d54ae2c2d2ab9bf0c4cf10c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "df92c66454690a51327b841f1949495d85876fcb5dd3ab55ff1f26142efc1351",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR's new private credit secondaries continuation vehicle signals fresh deployment and strategy expansion in private credit, relevant to gauging the manager's credit business.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T15:07:29+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYnBlcENTaXh2TjFsdVZVT1dSckRtbXloekR1US1vbjZ3TDZlUkdDQkhoX2txLU1yaEJxenlERlZINE5JOWpzS2F6SzA0QUxKWkY1bkdudVNnZ2dFQzhHY192ZlZJOHpiTGV0Ul9aS2NaRTR6ZWlmZGNieGVYSDg4M3Y0cUpYc1YzYjlkQU1COWg4Z3RHc3JNUFBpRHIyOVFQaXYwNDBPWlN2LWtsbWdLdWFCNjBfdUpyN0ZyclRsVXd2aTJRemZfUVdhOHI3bzZ4RzF0SGdwSTV4UGpkZ0ZtcmhFWW1xMG9tbFhBdDR4c1pIM2w1YTQxeVBxUjl6eTZoS21GZWIzOXgxZ1pLa0JPQkNMaEpUeEJsNzNnaTQycExOUVVh?oc=5"
+      },
+      "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
       "id": "c8f354babfdc",
       "date": "2026-10-29",
       "published_at": "2026-10-28T22:21:39+00:00",
