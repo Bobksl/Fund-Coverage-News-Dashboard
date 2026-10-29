@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-29",
+  "items": [
+    {
+      "id": "c8f354babfdc",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T22:21:39+00:00",
+      "headline": {
+        "en": "Trestles CLO III reset transaction receives Fitch ratings",
+        "zh": "Trestles CLO III 重置交易获得惠誉评级"
+      },
+      "summary": {
+        "en": "Fitch Ratings has assigned ratings to the Trestles CLO III reset transaction, according to a headline report.",
+        "zh": "据一则标题报道，惠誉评级已对 Trestles CLO III 重置交易授予评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMk9RVjEtcjQtN1lMcDJoTFl0VU1OSm9QYTQwNFd2ajdpZXJoaXVGVkg4M3lKMkYwWlRMa0cwMTNWQnQzTWlRcWZ5ckMwTnllWXc1cUdGc081RGwzSVZZVGUyQzNjQ3lPSHhNbGxyMUpmWmJKeHc5N25QODVUMVZCeTdUUkJuTUY2OEVNYnFJOXJSOWY0UVBEXw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Trestles CLO III reset transaction receives Fitch ratings",
+      "source_fingerprint": "05d37ac4dc765cac075c1c4a259f235fa44b3f1ea8d8527252e68f0834cb2de5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "182082fb1ba52a3948a3ae936976d38894f29cdb319416d44e31288782c56536",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A CLO reset rated by Fitch signals continued refinancing/deployment activity in the CLO sub-sector that tracked managers like CIFC operate in.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:14+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMk9RVjEtcjQtN1lMcDJoTFl0VU1OSm9QYTQwNFd2ajdpZXJoaXVGVkg4M3lKMkYwWlRMa0cwMTNWQnQzTWlRcWZ5ckMwTnllWXc1cUdGc081RGwzSVZZVGUyQzNjQ3lPSHhNbGxyMUpmWmJKeHc5N25QODVUMVZCeTdUUkJuTUY2OEVNYnFJOXJSOWY0UVBEXw?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
+      "id": "c5b279363a91",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T21:45:53+00:00",
+      "headline": {
+        "en": "KKR closes first private credit continuation vehicle at more than $460 million, AllianzGI leads",
+        "zh": "KKR首只私募信贷接续基金完成募集，规模超4.6亿美元，安联环球投资领投"
+      },
+      "summary": {
+        "en": "KKR closed its first private credit continuation vehicle at more than $460 million, with AllianzGI leading.",
+        "zh": "KKR首只私募信贷接续基金完成募集，规模超过4.6亿美元，由安联环球投资（AllianzGI）领投。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "HedgeCo.Net",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPNkFJc1AweWV5N3AwamIxTTlaWU9rS1ZJU0tXclNQVkJWZWJ5bUFYSWhBVmtSTFJQTGZ6REc2OEdJckN4eVpVWnZyaDRQbWFDMG5DcThXUWVZOXkzM194cGZYaUVQcnlxd081SkxZQUVBVHhTVExxcnpuNGQwTk5fLW9QTUNJVkFHc1VIQjR2NlNmODR0WXV4T3l1dy1yWldibGFWV2lMQ0gtZzV1Wm9oOXlGakpDNmIxbHZPOXgzWUhQbWg0VzZxN0JfeHVfbXljMjM1TlQ5N0dodw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR Closed Its First Private Credit Continuation Vehicle at More Than $460 Million, With AllianzGI Leading",
+      "source_fingerprint": "74c071f9d3193ce3f1837116025377aa0be515792c44610a035ad4d1d8d77400",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f95f6d09caf9cb3d4c7d7a5a628b0d4efd4c5aa99927cd0fee3b75a3cc487f51",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "KKR closed a private credit continuation vehicle, a new deployment/vehicle event for a tracked credit manager.",
+      "event_identity": {
+        "subject": "kkr",
+        "action": "closed",
+        "object": "first private credit continuation vehicle",
+        "period": "more than $460 million",
+        "numbers": [
+          "$460 Million"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPNkFJc1AweWV5N3AwamIxTTlaWU9rS1ZJU0tXclNQVkJWZWJ5bUFYSWhBVmtSTFJQTGZ6REc2OEdJckN4eVpVWnZyaDRQbWFDMG5DcThXUWVZOXkzM194cGZYaUVQcnlxd081SkxZQUVBVHhTVExxcnpuNGQwTk5fLW9QTUNJVkFHc1VIQjR2NlNmODR0WXV4T3l1dy1yWldibGFWV2lMQ0gtZzV1Wm9oOXlGakpDNmIxbHZPOXgzWUhQbWg0VzZxN0JfeHVfbXljMjM1TlQ5N0dodw?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
+      "id": "ecec6a311ecc",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T17:22:52+00:00",
+      "headline": {
+        "en": "Apollo minority stake in Mubadala Capital examined, including unfinished TWG stake",
+        "zh": "分析：Apollo对Mubadala Capital的少数股权，包括未完成的TWG股权"
+      },
+      "summary": {
+        "en": "An analysis piece examines the terms of Apollo's minority stake in Mubadala Capital and a TWG stake that never completed, and what it means for football's lenders.",
+        "zh": "一篇分析文章探讨了Apollo对Mubadala Capital少数股权的条款，以及一笔从未完成的TWG股权，并分析其对足球行业贷款方的影响。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "The Esk",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZmY5Y3MtbDJvUFpHRmUxT1BIRW9fMS0wdjhES3h6QUxaaGlvb1h3dHdTckY4aFpDMk9UUkFvcE9KQTJyVklOSHh5WHh3WEthYmJCVkE3bFU1YkN2NTZvNkFmb3RudDdld3E1MV9sLXVwVkNvWDh1NXZESmFzNzdfRnRDNW9peTB6RHNaVUdBSGpmY3VOZjNfMWhIbFhHemJWMmVLcmtSUlRoQW9rdUxz0gG0AUFVX3lxTE1QZDRpT1ZXb2VZcGtsY1ZjbnZnYjlhQXhHRkRHVU85dzFOVHhzbjdYcXUtVmtLMWltc0JqZy0xMnIxNmpjelFOSE8zQi1ITFFTWnhWYUFOdWNRVkwwVVlMSkI2OVVvUEVraFlWc1A4N2hsY1llUHByY2FmYzVpLXIyY2t6N3VTYk5zRlFWdlV6bU1Jb0pkYXNOcE12cnpqWmptTEppOTFwclBRVjFjQy14R0RaQg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "The Analysis Series: Apollo’s minority stake in Mubadala Capital – the terms, the TWG stake that never completed, and what it means for football’s lenders",
+      "source_fingerprint": "a4e89722509f33ceb77cb0969a3108f8c8c75ed3ef8f57acf353e858b98055b5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a415fee37148bc5fac431d2a64cfeecb5f6227973cb37268bbbe3fa79305b843",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Apollo's minority stake terms in Mubadala Capital touch a tracked manager's capital and credit expansion, so moderately relevant.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:21+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZmY5Y3MtbDJvUFpHRmUxT1BIRW9fMS0wdjhES3h6QUxaaGlvb1h3dHdTckY4aFpDMk9UUkFvcE9KQTJyVklOSHh5WHh3WEthYmJCVkE3bFU1YkN2NTZvNkFmb3RudDdld3E1MV9sLXVwVkNvWDh1NXZESmFzNzdfRnRDNW9peTB6RHNaVUdBSGpmY3VOZjNfMWhIbFhHemJWMmVLcmtSUlRoQW9rdUxz0gG0AUFVX3lxTE1QZDRpT1ZXb2VZcGtsY1ZjbnZnYjlhQXhHRkRHVU85dzFOVHhzbjdYcXUtVmtLMWltc0JqZy0xMnIxNmpjelFOSE8zQi1ITFFTWnhWYUFOdWNRVkwwVVlMSkI2OVVvUEVraFlWc1A4N2hsY1llUHByY2FmYzVpLXIyY2t6N3VTYk5zRlFWdlV6bU1Jb0pkYXNOcE12cnpqWmptTEppOTFwclBRVjFjQy14R0RaQg?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    }
+  ]
+}

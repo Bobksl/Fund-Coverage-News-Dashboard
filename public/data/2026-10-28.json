@@ -2,6 +2,216 @@
   "date": "2026-10-28",
   "items": [
     {
+      "id": "a2a7bf349fb8",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T15:39:08+00:00",
+      "headline": {
+        "en": "SEC Puts Private Credit, Complex Products and AI on 2027 Exam Radar",
+        "zh": "SEC将私募信贷、复杂产品与AI列入2027年检查重点"
+      },
+      "summary": {
+        "en": "The SEC has placed private credit, complex products and AI on its 2027 examination radar, according to a headline from connectmoney.com.",
+        "zh": "据connectmoney.com一则标题报道，美国证券交易委员会（SEC）已将私募信贷、复杂产品与人工智能列入2027年检查重点。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "https://www.connectmoney.com/",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPalFpdkFwOEFiTVowVFlzOS1qcW0wTGFZYldTbzhqVEdlZUNyQ3IyV3czNmtXTHg4ZTMzWHA1d1NCbWhDaWItRF9vZHdmTEU3Ykw4WEc3RzRrUzhxRGt3REpyRGNfM0dESGZxNmZ4a0JSdmIwQVRPUTF5czVfcmtBSVBwaDNiYnBycmk5dXFiNjloZlVJdEhNVGFocmoyWWxuLTdkVGU1TQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "SEC Puts Private Credit, Complex Products and AI on 2027 Exam Radar",
+      "source_fingerprint": "68e60f53dc8e53820314912dba597f5d34f731f5037f9c78524ba6f5fc237a68",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "763df11168070925ac4f3d75ea70f09bffab87f243c6c86c9e672032efbea43a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "SEC exam priorities targeting private credit signal heightened regulatory scrutiny for tracked credit managers and the private credit sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:27+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPalFpdkFwOEFiTVowVFlzOS1qcW0wTGFZYldTbzhqVEdlZUNyQ3IyV3czNmtXTHg4ZTMzWHA1d1NCbWhDaWItRF9vZHdmTEU3Ykw4WEc3RzRrUzhxRGt3REpyRGNfM0dESGZxNmZ4a0JSdmIwQVRPUTF5czVfcmtBSVBwaDNiYnBycmk5dXFiNjloZlVJdEhNVGFocmoyWWxuLTdkVGU1TQ?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
+      "id": "07a15c0eb16c",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T15:33:58+00:00",
+      "headline": {
+        "en": "Blue Owl earnings on deck as private credit rotation tests revenue",
+        "zh": "Blue Owl 财报将至，私募信贷轮动考验营收"
+      },
+      "summary": {
+        "en": "Blue Owl's upcoming earnings are previewed, with private credit rotation cited as a test for revenue.",
+        "zh": "Blue Owl 即将发布的财报受到关注，私募信贷轮动被视为对其营收的考验。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com Nigeria",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFFqM2c3aUZjRVRWMERMdmNDS2F5X2pJc1NLZm1Kek9QXy1WVEFIamdjNnQ2emdEUkVXZ1FRLWZQYWEwUjZldDc3ZmNIMnhvV3dKOFJDdHMyYmpiaUJDNTdib1p5bWpwRjBNa254NmxkdGlUN05PaU04MV9kS1lNVUlRRHZ4WHc3LWQ2ZmVNOUJwSWQzeDlHUHZ0ekZkRG1xdlVkZW1RUElTdVdPN3ozOXVvTHVqa1RobkNHVm9VMmFTSEdNTXc?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl earnings on deck as private credit rotation tests revenue",
+      "source_fingerprint": "7cffccc266c8fac091760062f4da5c43e6820bece37b274afee316c3df87fc3b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "29dfd02fde5a49f6ad2c688d050dd8c4fd0351100cd5d3611c2f7f1e64993033",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Preview of Blue Owl's earnings, a tracked manager, with revenue under pressure from private credit rotation.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "earnings on deck",
+        "object": "private credit rotation tests revenue",
+        "period": "private credit rotation",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:29+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFFqM2c3aUZjRVRWMERMdmNDS2F5X2pJc1NLZm1Kek9QXy1WVEFIamdjNnQ2emdEUkVXZ1FRLWZQYWEwUjZldDc3ZmNIMnhvV3dKOFJDdHMyYmpiaUJDNTdib1p5bWpwRjBNa254NmxkdGlUN05PaU04MV9kS1lNVUlRRHZ4WHc3LWQ2ZmVNOUJwSWQzeDlHUHZ0ekZkRG1xdlVkZW1RUElTdVdPN3ozOXVvTHVqa1RobkNHVm9VMmFTSEdNTXc?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
+      "id": "8b6c7c3ec75b",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T15:29:33+00:00",
+      "headline": {
+        "en": "Savanna, Deutsche Bank Seek Another 90-Day Delay to 521 Fifth Avenue Foreclosure Sale",
+        "zh": "Savanna与德意志银行寻求将521 Fifth Avenue止赎出售再推迟90天"
+      },
+      "summary": {
+        "en": "Savanna defaulted in 2024 on a $242 million CMBS loan from Deutsche Bank that backed its $381 million purchase of the 39-story 521 Fifth Avenue office building in Midtown Manhattan. Deutsche Bank, with the borrower's consent, has requested an additional 90-day extension of the foreclosure sale, after three prior extensions since April 2026, according to a KBRA credit alert. The property was pulled from the market in September 2026 after being initially marketed for $265 million, and a June 2026 appraisal valued it at $270 million.",
+        "zh": "Savanna于2024年就其用于以3.81亿美元收购曼哈顿中城39层521 Fifth Avenue办公楼的2.42亿美元CMBS贷款发生违约，该贷款由德意志银行提供。据KBRA的信用提示，德意志银行在借款人同意下申请将止赎出售再延长90天，此前自2026年4月以来已获批三次延期。该物业在最初以2.65亿美元挂牌后于2026年9月撤出市场，2026年6月的评估估值为2.70亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Commercial Real Estate Financing | Commercial Observer",
+        "url": "https://commercialobserver.com/2026/10/savanna-deutsche-bank-521-fifth-avenue-foreclosure-sale/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Savanna, Deutsche Bank Pushing Off 521 Fifth Avenue’s Foreclosure Sale",
+      "source_fingerprint": "193f135671fbdee7287ce82953ddd4e07613ac22ee61fdd43c5cbfb7b1cd152b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": true,
+        "evidence_refs": {
+          "severity": {
+            "start": 696,
+            "end": 761
+          },
+          "linkage": {
+            "start": 0,
+            "end": 55
+          },
+          "current_adverse": {
+            "start": 1238,
+            "end": 1280
+          }
+        },
+        "source_sha256": "15e33408c256afbf5767bbcc3a3101d037351f0fe2e2791d589d49b8a953cc6f",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Ongoing default and repeated foreclosure-sale extensions on a $242 million Manhattan office CMBS loan indicate continued CRE credit stress, with no tracked manager directly involved.",
+          "zh": "一笔2.42亿美元曼哈顿办公楼CMBS贷款持续违约并多次延长止赎出售期限，显示商业地产信贷压力仍在，但无受跟踪管理人直接参与。"
+        }
+      },
+      "relevance_reason": "A large Manhattan office CMBS default and repeated foreclosure-sale extensions signal weak CRE collateral values and workout delays relevant to real estate credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-29T05:17:32+00:00",
+        "sha256": "15e33408c256afbf5767bbcc3a3101d037351f0fe2e2791d589d49b8a953cc6f",
+        "source_published_at": "2026-10-28T11:29:33-04:00",
+        "final_url": "https://commercialobserver.com/2026/10/savanna-deutsche-bank-521-fifth-avenue-foreclosure-sale/"
+      },
+      "source_published_at": "2026-10-28T11:29:33-04:00",
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
+      "id": "1e4a7aeacf1a",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T15:24:06+00:00",
+      "headline": {
+        "en": "Blue Owl earnings on deck as private credit rotation tests revenue",
+        "zh": "Blue Owl即将发布财报，私募信贷轮动考验营收"
+      },
+      "summary": {
+        "en": "Blue Owl is due to report earnings, with the preview framing a rotation in private credit as a test for revenue.",
+        "zh": "Blue Owl即将发布财报，预览文章将私募信贷的轮动视为对营收的考验。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com Canada",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOLTZuMG1ZT20wLVpRdXdWVFBvbVhDSVRuQlUzVld3WUV4NzZOSXlNaDJmWmdkVC1KOVpndTgyalludWE5ZjZWeUpQMEhGNm85NXVLdEJBMmhLYjBFUWtlRS1fXzZINjdQSHJMbHpxU3JPbXdNMW1Zd2RiNUJwRENJdmZlTGZzNmNJemk4eGwtdWpKT2ktUDgxcE9LMHhrNDk4V204YzdvTTdZa05GdXp5TGpSMmdFT3k4V18wSENETm92MVZWN3c?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl earnings on deck as private credit rotation tests revenue",
+      "source_fingerprint": "7cffccc266c8fac091760062f4da5c43e6820bece37b274afee316c3df87fc3b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "29dfd02fde5a49f6ad2c688d050dd8c4fd0351100cd5d3611c2f7f1e64993033",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Earnings preview for Blue Owl, a tracked credit platform, as private credit rotation is flagged as a revenue test.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:36+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOLTZuMG1ZT20wLVpRdXdWVFBvbVhDSVRuQlUzVld3WUV4NzZOSXlNaDJmWmdkVC1KOVpndTgyalludWE5ZjZWeUpQMEhGNm85NXVLdEJBMmhLYjBFUWtlRS1fXzZINjdQSHJMbHpxU3JPbXdNMW1Zd2RiNUJwRENJdmZlTGZzNmNJemk4eGwtdWpKT2ktUDgxcE9LMHhrNDk4V204YzdvTTdZa05GdXp5TGpSMmdFT3k4V18wSENETm92MVZWN3c?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
       "id": "ed499ac6507d",
       "date": "2026-10-28",
       "published_at": "2026-10-28T13:47:26+00:00",
@@ -389,6 +599,49 @@
       "observed_at": "2026-10-28T14:57:33+00:00"
     },
     {
+      "id": "34c80720d31f",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T05:16:47+00:00",
+      "headline": {
+        "en": "Moody's: AI financing driving private credit growth as refinancing risks rise",
+        "zh": "穆迪：AI融资推动私人信贷增长，再融资风险上升"
+      },
+      "summary": {
+        "en": "Moody's said AI-related financing is driving growth in private credit while refinancing risks are rising, according to Reuters.",
+        "zh": "据路透社报道，穆迪表示与AI相关的融资正在推动私人信贷增长，同时再融资风险正在上升。所提供文本中未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNV3REcjVwVDc3RDRiLTFTa2lVazlwZFlSVWpYcDZsdXh6dm02OExFMXhyNFo4QlhVczZCaFJUeGp0RXo5T1RvRlhON2FiTEVua2VISnZZNkFCRi1oNzg5NzB0Y1hQM2F6VUlKUEluNWlBY2hUVUV1RHYtbEhRdS1POXVJNThnV1JwMnh3YmozSHFmcjA1VlVEalF3cjZPU0FVdGcwNmpQVi1PSU5IcXkxZHhWRTREYnJsVFduM2REdF9IeGVKRDR1cWp2RkQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AI financing driving private credit growth as refinancing risks rise, Moody’s says By Reuters",
+      "source_fingerprint": "9d15d1072263b60d112e39fa19b55eb983182110ff8482b71042139597b1f90f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f69c55316d0c4e62af960ca6146dcc9f5bb4356ea9898bea4439cefc6f122350",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Moody's view on AI-driven private credit growth and rising refinancing risk bears on private credit deployment and risk conditions for tracked managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:45+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNV3REcjVwVDc3RDRiLTFTa2lVazlwZFlSVWpYcDZsdXh6dm02OExFMXhyNFo4QlhVczZCaFJUeGp0RXo5T1RvRlhON2FiTEVua2VISnZZNkFCRi1oNzg5NzB0Y1hQM2F6VUlKUEluNWlBY2hUVUV1RHYtbEhRdS1POXVJNThnV1JwMnh3YmozSHFmcjA1VlVEalF3cjZPU0FVdGcwNmpQVi1PSU5IcXkxZHhWRTREYnJsVFduM2REdF9IeGVKRDR1cWp2RkQ?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
       "id": "7ccee36cce55",
       "date": "2026-10-28",
       "published_at": "2026-10-28T00:42:21+00:00",
@@ -701,6 +954,60 @@
         "final_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQzd3bmVxV0JzVlBTMjNSZmRjb285c3d0cURILUU2cGtuY0ZsZW5HUUc3V1JJc2tuMHhna243T3RNd0JYM25PZ2RiSDF4emlNQnBmYnVRY3p3U19KcjVsRTA1SC16dHdYLXdON3gxMUQ0YlJOYTZSQjVMdnJxQzFCSjdnTHFzdw?oc=5"
       },
       "observed_at": "2026-10-28T05:03:08+00:00"
+    },
+    {
+      "id": "9ec5351e4635",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T17:39:28+00:00",
+      "headline": {
+        "en": "KKR closes $460M private credit continuation vehicle, AllianzGI leads",
+        "zh": "KKR完成4.6亿美元私募信贷接续基金，AllianzGI领投"
+      },
+      "summary": {
+        "en": "KKR closed a $460M private credit continuation vehicle, with AllianzGI leading.",
+        "zh": "KKR完成了一支4.6亿美元的私募信贷接续基金，由AllianzGI领投。"
+      },
+      "gps": [
+        "kkr"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPM2QxX0ptZ29VM2V5SzVkWkRNMGV4dllWX2liLU5oNk01b3JSTjI3MlhLOENSNktkWUpCSnpoY25udUpYLU1reURYZTNBbzJhZXczY29Zd1B1U2tZRTktajQtMXRHSzdtWG53ZXBrbkJPWXc1WnVLcDBBQnU1RVVLUHNpVWg2R21RMU5hQUNCQktjQlNTdjRUUi05MllHdmYySzdZTVZYNHlwdERRVVVTYUUtRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "KKR closes on $460M private credit continuation vehicle, with AllianzGI leading",
+      "source_fingerprint": "509b7701207dc55c78921a606526008bd328672ac304f0ae1252a35272c3f0a9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4e86ad09f9545bc934e6558b4872ba50b0b3913fe9acc209bdf0bf4196658ccb",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $460M private credit continuation vehicle close involving tracked manager KKR Credit signals fundraising and liquidity activity.",
+      "event_identity": {
+        "subject": "kkr",
+        "action": "closes on",
+        "object": "private credit continuation vehicle",
+        "period": "$460m",
+        "numbers": [
+          "$460"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:48+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPM2QxX0ptZ29VM2V5SzVkWkRNMGV4dllWX2liLU5oNk01b3JSTjI3MlhLOENSNktkWUpCSnpoY25udUpYLU1reURYZTNBbzJhZXczY29Zd1B1U2tZRTktajQtMXRHSzdtWG53ZXBrbkJPWXc1WnVLcDBBQnU1RVVLUHNpVWg2R21RMU5hQUNCQktjQlNTdjRUUi05MllHdmYySzdZTVZYNHlwdERRVVVTYUUtRQ?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
     },
     {
       "id": "b4d721026147",

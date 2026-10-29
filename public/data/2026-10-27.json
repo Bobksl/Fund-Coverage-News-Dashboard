@@ -538,6 +538,58 @@
       "observed_at": "2026-10-27T14:12:53+00:00"
     },
     {
+      "id": "fe9e04ddc80f",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T10:08:28+00:00",
+      "headline": {
+        "en": "Partners Group raises $510M private credit feeder as first-half earnings soften",
+        "zh": "Partners Group 在半年盈利走软之际募集 5.1 亿美元私募信贷联接基金"
+      },
+      "summary": {
+        "en": "Partners Group raised $510M for a private credit feeder vehicle during a period of softer first-half earnings, according to a headline report.",
+        "zh": "据一则头条报道，Partners Group 在半年盈利走软之际为一支私募信贷联接基金募集了 5.1 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQS3I3dVY4bDQ0ODVmMHE0Z2FMbHIxZzJnZGtTQm5TYU5SVkx1NnhMVkgyM1lUeVBCV0NpdkN2b2VET1AzN2ZXUjJabkVyWWp3SC1PRk1mMXlXYTZ1eFhodzhpYk44SThTaVdFd3lQbmFmSW5vOU5OMHpyOU12aVZMSHM0cFVuNDJ2eWppUk9pVXZNUG9JMjhlUzNMLWVRRExVMVBVZU92Q3R1NGZJUlJFZXBR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Partners Group raises $510M private credit feeder as first-half earnings soften",
+      "source_fingerprint": "818d29ecb307324fdea97d59133a54a769715fe7cbf6b07fc0c5b90269e9929e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "bda1a39cddaedb5ee2a68bb9c8561ac2eff989bb38f509d3cd2b08d9c473415c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A new $510M private credit capital raise signals continued fundraising momentum in the direct lending sub-sector, a competitive and valuation-relevant data point for tracked private credit managers.",
+      "event_identity": {
+        "subject": "partners group",
+        "action": "raises",
+        "object": "private credit feeder",
+        "period": "$510m",
+        "numbers": [
+          "$510"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-29T05:17:50+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQS3I3dVY4bDQ0ODVmMHE0Z2FMbHIxZzJnZGtTQm5TYU5SVkx1NnhMVkgyM1lUeVBCV0NpdkN2b2VET1AzN2ZXUjJabkVyWWp3SC1PRk1mMXlXYTZ1eFhodzhpYk44SThTaVdFd3lQbmFmSW5vOU5OMHpyOU12aVZMSHM0cFVuNDJ2eWppUk9pVXZNUG9JMjhlUzNMLWVRRExVMVBVZU92Q3R1NGZJUlJFZXBR?oc=5"
+      },
+      "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
       "id": "375928b7f815",
       "date": "2026-10-27",
       "published_at": "2026-10-27T09:00:35+00:00",
