@@ -2,6 +2,49 @@
   "date": "2026-10-29",
   "items": [
     {
+      "id": "37b9f5fb2bff",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T15:36:00+00:00",
+      "headline": {
+        "en": "Blue Owl Capital tops Q3 2026 revenue estimates, earnings call transcript shows",
+        "zh": "财报电话会议记录显示，Blue Owl Capital第三季度2026年营收超出预期"
+      },
+      "summary": {
+        "en": "An earnings call transcript indicates Blue Owl Capital topped revenue estimates for the third quarter of 2026. No figures or further details were included in the supplied headline.",
+        "zh": "一份财报电话会议记录显示，Blue Owl Capital第三季度2026年营收超出预期。所提供标题中未包含具体数据或其他细节。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [],
+      "region": "US",
+      "source": {
+        "publisher": "Investing.com UK",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQR3AydzdGRkNZT0l6UXJ0bUk3UzczOXJiQUF3QnhsM0M1cDM3VEF6QXN0c0hfc0xLbC1lcFY2bFl3b1NLM294eUFCLTVhNTB3WGZRbXRhZS12dHJmMGI0RUlVbVFqRnlnTXRCNG9CWUVxaFFHZ2tmQ0RfaVpaTUdjdWQzM28tSXM0Yk5OMHVyTVZfS0h6OXR6aUhSYmdpeXBTSktpaFpxSnVjTFVLeXJXQlVKS0ZsZllIUDEtbElBWkNSMHpQRjZtTXpGLTlqUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Earnings call transcript: Blue Owl Capital tops Q3 2026 revenue estimates",
+      "source_fingerprint": "a5fe583d36fa5c03a11d91c773f2cdd07e02becaf3c2d753411126ddca5322a6",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "597faa9a5753a6e086fd6bd6cac1eba4a8705280559dfbac0fd50cff6bdd43c3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Quarterly earnings beat for a tracked credit platform manager bears on its franchise and fundraising/deployment capacity, though the headline gives no credit-specific figures.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:59:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQR3AydzdGRkNZT0l6UXJ0bUk3UzczOXJiQUF3QnhsM0M1cDM3VEF6QXN0c0hfc0xLbC1lcFY2bFl3b1NLM294eUFCLTVhNTB3WGZRbXRhZS12dHJmMGI0RUlVbVFqRnlnTXRCNG9CWUVxaFFHZ2tmQ0RfaVpaTUdjdWQzM28tSXM0Yk5OMHVyTVZfS0h6OXR6aUhSYmdpeXBTSktpaFpxSnVjTFVLeXJXQlVKS0ZsZllIUDEtbElBWkNSMHpQRjZtTXpGLTlqUQ?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
       "id": "7e35c46c60e2",
       "date": "2026-10-29",
       "published_at": "2026-10-29T15:16:02+00:00",
@@ -802,6 +845,49 @@
       "observed_at": "2026-10-29T15:03:45+00:00"
     },
     {
+      "id": "815f4250eac9",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T10:30:00+00:00",
+      "headline": {
+        "en": "Ares Management announces third quarter 2026 U.S. direct lending origination activity",
+        "zh": "Ares Management公布2026年第三季度美国直接贷款发放活动"
+      },
+      "summary": {
+        "en": "Ares Management announced its third quarter 2026 U.S. direct lending origination activity, according to a press release carried by Moomoo. Only the headline was available; no origination volumes or figures were disclosed.",
+        "zh": "据Moomoo转载的一份新闻稿，Ares Management公布了其2026年第三季度美国直接贷款发放活动。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNanJXNGpZSnEzM1lWQ1VCbFVhbWo0U05GaHZuUkNZXzB5S2hoYXl5Tjg4V2ZEWnpEUG1yODRGMmlSeVBmb1RvSWRDTEk5VDV1N2hwSTF0TXE2NmltUnVNRFZidzRPb3F0VHViYkVHTnAzSzhzdFJOS1F3R2hlZm5SUi0yU21vbGFsa2xEalNGZ0xLWkFwT0hKZVpVVnpFRTl1M091R0tKOTVidG5oZUZIX1B3?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Press Release: Ares Management Announces Third Quarter 2026 U.S. Direct Lending Origination Activity",
+      "source_fingerprint": "892ba3c959116b224ae528496acf5e81c781543ecd4700bd201a2a205eb9785c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "1e02f89d1715c23fbb30680fb8d189bda9989409ee80ae72c31ea31d567fcea2",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Ares' direct lending origination pace signals private credit deployment conditions, an environment relevant to tracked private credit managers, though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:59:13+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNanJXNGpZSnEzM1lWQ1VCbFVhbWo0U05GaHZuUkNZXzB5S2hoYXl5Tjg4V2ZEWnpEUG1yODRGMmlSeVBmb1RvSWRDTEk5VDV1N2hwSTF0TXE2NmltUnVNRFZidzRPb3F0VHViYkVHTnAzSzhzdFJOS1F3R2hlZm5SUi0yU21vbGFsa2xEalNGZ0xLWkFwT0hKZVpVVnpFRTl1M091R0tKOTVidG5oZUZIX1B3?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
       "id": "73860cdf2c65",
       "date": "2026-10-29",
       "published_at": "2026-10-29T10:22:40+00:00",
@@ -1183,6 +1269,49 @@
         "final_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZmY5Y3MtbDJvUFpHRmUxT1BIRW9fMS0wdjhES3h6QUxaaGlvb1h3dHdTckY4aFpDMk9UUkFvcE9KQTJyVklOSHh5WHh3WEthYmJCVkE3bFU1YkN2NTZvNkFmb3RudDdld3E1MV9sLXVwVkNvWDh1NXZESmFzNzdfRnRDNW9peTB6RHNaVUdBSGpmY3VOZjNfMWhIbFhHemJWMmVLcmtSUlRoQW9rdUxz0gG0AUFVX3lxTE1QZDRpT1ZXb2VZcGtsY1ZjbnZnYjlhQXhHRkRHVU85dzFOVHhzbjdYcXUtVmtLMWltc0JqZy0xMnIxNmpjelFOSE8zQi1ITFFTWnhWYUFOdWNRVkwwVVlMSkI2OVVvUEVraFlWc1A4N2hsY1llUHByY2FmYzVpLXIyY2t6N3VTYk5zRlFWdlV6bU1Jb0pkYXNOcE12cnpqWmptTEppOTFwclBRVjFjQy14R0RaQg?oc=5"
       },
       "observed_at": "2026-10-29T05:15:27+00:00"
+    },
+    {
+      "id": "1c35a0827bc2",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T16:20:00+00:00",
+      "headline": {
+        "en": "Ares earnings on deck as private credit fundraising slumps",
+        "zh": "Ares 财报即将公布，私募信贷募资低迷"
+      },
+      "summary": {
+        "en": "Investing.com reports that Ares earnings are scheduled as private credit fundraising slumps.",
+        "zh": "Investing.com 报道，在私募信贷募资低迷之际，Ares 财报即将公布。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Investing.com UK",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTFRRVkUxMWVYaXQwdDF3TUZJaGFoeDZEcTJuTjByV0NheVRTSHBXLUFxV3BzZTdiTXFOMDNqSldDZktsUEdFbk8xYS14YnVQX0h6RHZYdmRtOTBXS0FqWWVQNEVDSHowTi1mUGtjWE1BeHExYnBFT1hpRzctYjhCZUN2a0cweDBLbEpDMFd4bWUxQTRaWFU3RDVVZWNRNXBRejFXemlWcmtPaDc1MXVXcG1GLUFIbUtxem1n?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares earnings on deck as private credit fundraising slumps By Investing.com",
+      "source_fingerprint": "57075fa17520a4d9a5ae67dfe33b6be4d4d4fb252ecef694efaa47978731928e",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "70a42f97af219ad71c27749be9e687986deaa8ff26f9e1e649d243b96c25f276",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline flags slumping private credit fundraising, a deployment/fundraising signal for the private credit sub-sector even without a tracked manager named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:59:16+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTFRRVkUxMWVYaXQwdDF3TUZJaGFoeDZEcTJuTjByV0NheVRTSHBXLUFxV3BzZTdiTXFOMDNqSldDZktsUEdFbk8xYS14YnVQX0h6RHZYdmRtOTBXS0FqWWVQNEVDSHowTi1mUGtjWE1BeHExYnBFT1hpRzctYjhCZUN2a0cweDBLbEpDMFd4bWUxQTRaWFU3RDVVZWNRNXBRejFXemlWcmtPaDc1MXVXcG1GLUFIbUtxem1n?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
     }
   ]
 }

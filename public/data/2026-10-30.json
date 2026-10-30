@@ -2,6 +2,434 @@
   "date": "2026-10-30",
   "items": [
     {
+      "id": "bf8f1bb417ed",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T13:42:37+00:00",
+      "headline": {
+        "en": "Kroll and StepStone launch private credit PIK indicators",
+        "zh": "Kroll与StepStone推出私募信贷PIK指标"
+      },
+      "summary": {
+        "en": "Kroll and StepStone Group launched three payment-in-kind indicators within their private credit benchmarks, covering more than 28,000 direct lending instruments, 18,000 deals and 13,000 borrowers with data back to 2012. The indicators measure PIK as a share of interest income, the percentage of loans with an active PIK component and PIK's share of outstanding principal. The firms' data shows non-cash interest at 2.86 per cent of interest income on loans originated globally in the previous 12 months as of 10 October 2026, versus 6.67 per cent across outstanding loans at end-Q2, covering different cohorts and periods.",
+        "zh": "Kroll与StepStone Group在其私募信贷基准中推出三项实物支付（PIK）指标，覆盖逾2.8万份直接贷款工具、1.8万笔交易和1.3万名借款人，历史数据可追溯至2012年。这些指标衡量PIK占利息收入的比例、含活跃PIK成分贷款的笔数占比，以及PIK占未偿本金的比例。两家公司的数据显示，截至2026年10月10日，过去12个月全球新发放贷款的非现金利息占利息收入的2.86%，而截至第二季度末未偿贷款的这一比例为6.67%，但两组数据涵盖不同的贷款批次和报告期。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/30/kroll-and-stepstone-launch-private-credit-pik-indicators/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Kroll and StepStone launch private credit PIK indicators",
+      "source_fingerprint": "81536e0f59ba5e178e99b71d625e9915700efddc023c3fc0245a14e85dcf6d24",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 40,
+            "end": 82
+          },
+          "linkage": {
+            "start": 407,
+            "end": 429
+          }
+        },
+        "source_sha256": "7cc409589475f81bd99351ca34e9c58b2f8f3cb8277feede83fa9467cbdad59e",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "PIK transparency data on private credit interest quality bears on direct lending risk assessment across tracked sub-sector.",
+      "event_identity": {
+        "subject": "kroll and stepstone group",
+        "action": "launch",
+        "object": "three new payment-in-kind (pik) indicators",
+        "period": "as of 10 october 2026",
+        "numbers": [
+          "10",
+          "12",
+          "13,000",
+          "18,000",
+          "2.86",
+          "2012",
+          "2026",
+          "28,000",
+          "3",
+          "6.67"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-30T14:58:30+00:00",
+        "sha256": "7cc409589475f81bd99351ca34e9c58b2f8f3cb8277feede83fa9467cbdad59e",
+        "source_published_at": "2026-10-30T13:42:37+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/30/kroll-and-stepstone-launch-private-credit-pik-indicators/"
+      },
+      "source_published_at": "2026-10-30T13:42:37+00:00",
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
+      "id": "56bcc4212f14",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T13:38:12+00:00",
+      "headline": {
+        "en": "U.S. private credit defaults rise in Q3: Fitch",
+        "zh": "惠誉：美国私人信贷第三季度违约率上升"
+      },
+      "summary": {
+        "en": "Fitch reported that U.S. private credit defaults rose in the third quarter.",
+        "zh": "惠誉报告称，美国私人信贷第三季度违约率上升。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Investment Executive",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMVIxSmU5RXBzOXJ5NG9yMlZpdldGNlZHdGVWbVVZOXRrVUNCN2Y1VXMwbWVDcV9JR2tCT0s1czNqS2RCaTQ3SVpRV0NTUDBuNDZGcHNCenJjX3M3QUZOdzFpcjNmQnRnWEk3bkdkdmM4NHNLTGVvU0hPRklicnB6U3VGYVZORmhLMzJLaGNlTTViYkJpcFc4QzhB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "U.S. private credit defaults rise in Q3: Fitch",
+      "source_fingerprint": "3faa258f4f87bdf4603ad2536aa30c1efae5c131c35f277c2c2b7220e4b107b0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "afbdd9c8117841191b2eb38d4dce25445b384b43bb3da04834fb3bfa0e2487c8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Rising US private credit defaults as reported by Fitch bear directly on credit conditions and risk for tracked private credit managers, though no specific manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:58:33+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMVIxSmU5RXBzOXJ5NG9yMlZpdldGNlZHdGVWbVVZOXRrVUNCN2Y1VXMwbWVDcV9JR2tCT0s1czNqS2RCaTQ3SVpRV0NTUDBuNDZGcHNCenJjX3M3QUZOdzFpcjNmQnRnWEk3bkdkdmM4NHNLTGVvU0hPRklicnB6U3VGYVZORmhLMzJLaGNlTTViYkJpcFc4QzhB?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
+      "id": "64ac9fa95915",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T12:21:37+00:00",
+      "headline": {
+        "en": "Fitch assigns final ratings to Arini European CLO IV DAC refinancing notes",
+        "zh": "惠誉对Arini European CLO IV DAC再融资票据授予最终评级"
+      },
+      "summary": {
+        "en": "Fitch issued final ratings on refinancing notes for Arini European CLO IV DAC.",
+        "zh": "惠誉对Arini European CLO IV DAC的再融资票据发布最终评级。"
+      },
+      "gps": [],
+      "sectors": [
+        "clo"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMkZsTGh5X3U1ZS02R2ttNDZVTHhDaEszNzNZZndPOEFLZWdiR0gzU1o0a2NscEhDVHVqd3ZIOEVZNmRkWEgwQ2pkeXVvdm4zQVdFVERaWE95U0x6empwVkVodVBaNkxHTjhyeF9RblM1Z2dHc0dlU3dYVmhLOXpzUWtYUEZqOHJDLXRQa2w3NXU4dXhCTnN1eUUzSDFEZDQ3dWdr?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Arini European CLO IV DAC refinancing notes receive Fitch final ratings",
+      "source_fingerprint": "27d16f8e68e3d28dcd92c7511430d9bd5fee83857d38ec51e008fde4de315557",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "28c344bca886ced01b47154d72a3af3a8c753d67764b6fc03eaaf93b1ef3ff3e",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A CLO refinancing and final ratings action affects CLO sector conditions and refinancing environment, a tracked sub-sector channel even without a named manager.",
+      "event_identity": {
+        "subject": "arini european clo iv dac",
+        "action": "receive fitch final ratings",
+        "object": "refinancing notes",
+        "period": "refinancing",
+        "numbers": [],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:58:37+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMkZsTGh5X3U1ZS02R2ttNDZVTHhDaEszNzNZZndPOEFLZWdiR0gzU1o0a2NscEhDVHVqd3ZIOEVZNmRkWEgwQ2pkeXVvdm4zQVdFVERaWE95U0x6empwVkVodVBaNkxHTjhyeF9RblM1Z2dHc0dlU3dYVmhLOXpzUWtYUEZqOHJDLXRQa2w3NXU4dXhCTnN1eUUzSDFEZDQ3dWdr?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
+      "id": "f217c0f4de37",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T11:21:00+00:00",
+      "headline": {
+        "en": "Blue Owl posts record institutional quarter as 12-month raise hits $48.8bn",
+        "zh": "Blue Owl机构业务季度创纪录，12个月募资额达488亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl reported a record institutional quarter, with its 12-month fundraising total reaching $48.8bn.",
+        "zh": "Blue Owl公布机构业务季度创下纪录，其12个月募资总额达到488亿美元。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Alternatives Watch",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcWtMaktBamxhOGZJVjdMeGpiaFVCcHNLLVVobElHdmJSZENnM3Zhd0o2OUZqN3VaQ1RMNGhmQmVwLS1obnFjVU4wRzQwaUtfb0lMV1d5akxwN2RpbkRyM1ZhN2stWFlVY0psMGRYOV93eU5tdnlaVm1QYzIzTDJMUzU1ZFpGMUx2ZGM5dUNJdTEzQ2lhVmd1Z2JwQjB0b1NDRlE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl posts record institutional quarter as 12-month raise hits $48.8bn",
+      "source_fingerprint": "07df65eae8148a32f5a5c8404b7d87d1d1fa23f1214b38302e146494586164b9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "c4f1669c1dcafdae0664588dff8177916a7569e10705eb7ab1f057e00adcabfd",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A record institutional fundraising quarter at a tracked credit platform bears on deployment and fundraising conditions for its credit strategies.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "posts record institutional quarter",
+        "object": "12-month raise",
+        "period": "12-month",
+        "numbers": [
+          "$48.8bn",
+          "12"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:58:44+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcWtMaktBamxhOGZJVjdMeGpiaFVCcHNLLVVobElHdmJSZENnM3Zhd0o2OUZqN3VaQ1RMNGhmQmVwLS1obnFjVU4wRzQwaUtfb0lMV1d5akxwN2RpbkRyM1ZhN2stWFlVY0psMGRYOV93eU5tdnlaVm1QYzIzTDJMUzU1ZFpGMUx2ZGM5dUNJdTEzQ2lhVmd1Z2JwQjB0b1NDRlE?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
+      "id": "3c6b8eb86449",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T10:20:05+00:00",
+      "headline": {
+        "en": "Treasury says private credit plays vital role in UK economy despite risks",
+        "zh": "英国财政部称尽管存在风险，私募信贷在英国经济中仍发挥“关键作用”"
+      },
+      "summary": {
+        "en": "Lord Pitt-Watson, parliamentary secretary at the Treasury, told the Lords that private markets including private credit play a vital role in financing the real economy but bring new vulnerabilities around complexity, leverage, opacity and interconnectedness. He said HM Treasury continues to work closely with regulators. A total of 46 firms are participating in the Bank of England's first stress test of the sector, with findings due in early 2027, using a hypothetical five-year scenario of a four per cent UK economic contraction and interest rates rising to seven per cent.",
+        "zh": "英国财政部议会秘书Lord Pitt-Watson在上议院表示，包括私募信贷在内的私募市场在为实体经济提供融资方面发挥关键作用，但也带来复杂性、杠杆使用、不透明性以及与其他金融体系互联性等新的脆弱性。他表示英国财政部继续与监管机构密切合作。共有46家机构参与英国央行对该行业的首次压力测试，结果预计于2027年初公布；测试设定了英国经济收缩4%、利率升至7%的五年假设情景。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/30/treasury-says-private-credit-plays-vital-role-in-uk-economy-despite-risks/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Treasury says private credit plays ‘vital role’ in UK economy despite risks",
+      "source_fingerprint": "1e29d06abb4a7e1763fad96e61e62d122de4d87a98769493f4cd99d4cc7581d9",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 16,
+            "end": 34
+          },
+          "linkage": {
+            "start": 1058,
+            "end": 1115
+          }
+        },
+        "source_sha256": "df22f265af755834d15c86d8af11af482e193b9ee8023fc5c313c56f53074594",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": false,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "UK Treasury and Bank of England scrutiny, including a stress test with 46 participating firms, bears on the regulatory environment for private credit strategies.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-30T14:58:49+00:00",
+        "sha256": "df22f265af755834d15c86d8af11af482e193b9ee8023fc5c313c56f53074594",
+        "source_published_at": "2026-10-30T10:20:05+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/30/treasury-says-private-credit-plays-vital-role-in-uk-economy-despite-risks/"
+      },
+      "source_published_at": "2026-10-30T10:20:05+00:00",
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
+      "id": "3bc69b45c415",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T08:05:41+00:00",
+      "headline": {
+        "en": "Evercore ISI raises Blue Owl Capital price target to $12",
+        "zh": "Evercore ISI 将 Blue Owl Capital 目标价上调至 12 美元"
+      },
+      "summary": {
+        "en": "Evercore ISI raised its price target on Blue Owl Capital (OWL) to $12.",
+        "zh": "Evercore ISI 将 Blue Owl Capital（OWL）的目标价上调至 12 美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "StreetInsider",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVHFHaXRXOFpEdjY2bzZfa21LYVNwMGgwQXFZSlZaME53ZlJiYWFQYjRJMzA0aWpzbG9Cbzl2Zzg1VENUWGhyRWNuSDAtc2VESk9wYzk0dkZfU004VElTdmV5dmFodHZHU1NwWGdSNGlTRGV4LWZKVENXbzhldnY3eGFaRnBZVVgxcktVWU9PSnZfSmlnWEJmYzZxamNYNHRMNy0ybURieFpMazVKUGxpODJrZHhLSzZxdXluMEhxRQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital (OWL) PT Raised to $12 at Evercore ISI",
+      "source_fingerprint": "050eff067a187a70b6e86bd456dcb3e18d54420e080d3e39d23209dba2ef2f0d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "b7140b4739ef5d9747b7bc32202e63aa94aec3857d9c1bd0fcf77fc73a660d9c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "An analyst price-target change on Blue Owl, a tracked credit manager, is a valuation signal for its equity; credit relevance is indirect.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:58:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVHFHaXRXOFpEdjY2bzZfa21LYVNwMGgwQXFZSlZaME53ZlJiYWFQYjRJMzA0aWpzbG9Cbzl2Zzg1VENUWGhyRWNuSDAtc2VESk9wYzk0dkZfU004VElTdmV5dmFodHZHU1NwWGdSNGlTRGV4LWZKVENXbzhldnY3eGFaRnBZVVgxcktVWU9PSnZfSmlnWEJmYzZxamNYNHRMNy0ybURieFpMazVKUGxpODJrZHhLSzZxdXluMEhxRQ?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
+      "id": "9c3f7e171292",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T05:49:15+00:00",
+      "headline": {
+        "en": "Blackstone Mortgage Trust dividend cut considered for investors",
+        "zh": "Blackstone Mortgage Trust 股息下调引发投资者关注"
+      },
+      "summary": {
+        "en": "A Simply Wall St headline asks whether the dividend cut at Blackstone Mortgage Trust (BXMT) should prompt action from investors.",
+        "zh": "Simply Wall St 一则标题询问 Blackstone Mortgage Trust（BXMT）的股息下调是否应促使投资者采取行动。所提供文本未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "mortgage",
+        "real_estate"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Simply Wall St",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNSHdERDZOOEZaY2xFX3FfMlVhVXg2T1kyRmtNcmkzLWE1VEYyQ2Flb0NzWm1ERGtCMmJHQlBiOGJqZzg3NTQwU3ZBY295NWJsZkxvRU1VQzhCQmJJS3NpN283QkUzcGRZbUhaanVBaVdDTDUzZ2pIaDB5SmxZSFRNZkhKTWN4aWdlN0cyQ1NsTDBtTjBILXFDekVGYk1wSjI3OWZTOVZsN0xxbnNoZDNfaktPRjN3eDNBdTIxcWFLMy1nMXB0ZEdBQVZiTjlkMWRsNGVBMzE2OXpITTlQV0VWMDh5dUVsM1BFVkpNcWdIay3SAfABQVVfeXFMTUh3REQ2TjhGWmNsRV9xXzJVYVV4Nk9ZMkZrTXJpMy1hNVRGMkNhZW9Dc1ptRERrQjJiR0JQYjhiamc4NzU0MFN2QWNveTVibGZMb0VNVUM4QkJiSUtzaTdvN0JFM3BkWW1IWmp1QWlXQ0w1M2dqSGgweUpsWUhUTWZISk1jeGlnZTdHMkNTbEwwbU4wSC1xQ3pFRmJNcEoyNzlmUzlWbDdMcW5zaGQzX2pLT0Yzd3gzQXUyMXFhSzMtZzFwdGRHQUFWYk45ZDFkbDRlQTMxNjl6SE05UFdFVjA4eXVFbDNQRVZKTXFnSGst?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Should Dividend Cut Require Action From Blackstone Mortgage Trust (BXMT) Investors?",
+      "source_fingerprint": "247b8a4d5fe7fb6e5beba355ee2dfe335a9981262bb32c236a13c3ee6bf84991",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "34ca5607c3d0a067778ca59cae763a1588d145cd0dd2e42f029a9637cd224886",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A dividend cut at a listed commercial mortgage REIT signals stress in CRE/mortgage credit, relevant to tracked mortgage and real estate credit sub-sectors.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:58:59+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNSHdERDZOOEZaY2xFX3FfMlVhVXg2T1kyRmtNcmkzLWE1VEYyQ2Flb0NzWm1ERGtCMmJHQlBiOGJqZzg3NTQwU3ZBY295NWJsZkxvRU1VQzhCQmJJS3NpN283QkUzcGRZbUhaanVBaVdDTDUzZ2pIaDB5SmxZSFRNZkhKTWN4aWdlN0cyQ1NsTDBtTjBILXFDekVGYk1wSjI3OWZTOVZsN0xxbnNoZDNfaktPRjN3eDNBdTIxcWFLMy1nMXB0ZEdBQVZiTjlkMWRsNGVBMzE2OXpITTlQV0VWMDh5dUVsM1BFVkpNcWdIay3SAfABQVVfeXFMTUh3REQ2TjhGWmNsRV9xXzJVYVV4Nk9ZMkZrTXJpMy1hNVRGMkNhZW9Dc1ptRERrQjJiR0JQYjhiamc4NzU0MFN2QWNveTVibGZMb0VNVUM4QkJiSUtzaTdvN0JFM3BkWW1IWmp1QWlXQ0w1M2dqSGgweUpsWUhUTWZISk1jeGlnZTdHMkNTbEwwbU4wSC1xQ3pFRmJNcEoyNzlmUzlWbDdMcW5zaGQzX2pLT0Yzd3gzQXUyMXFhSzMtZzFwdGRHQUFWYk45ZDFkbDRlQTMxNjl6SE05UFdFVjA4eXVFbDNQRVZKTXFnSGst?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
+      "id": "1275912e67e5",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T04:56:33+00:00",
+      "headline": {
+        "en": "Fitch: U.S. private credit default rate remains elevated in Q3",
+        "zh": "惠誉：美国私募信贷违约率在第三季度仍处高位"
+      },
+      "summary": {
+        "en": "Fitch Ratings said the U.S. private credit default rate remained elevated in the third quarter, according to a report by ABF Journal.",
+        "zh": "据ABF Journal报道，惠誉评级（Fitch Ratings）表示，美国私募信贷违约率在第三季度仍处高位。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "ABF Journal",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSnJsVHhaX2o5OEVsb0JIbGdVM2VzWW1IdHowRGlJX3J3ODlRMTVNVUFfWEo0WmNOcXpLb01aSU4ybGZfRm9ROXl2TTRBbTJUNFBEZ3haaFFvQVVvYkk4cnY2elpGYXp4UjJyV3NDWjR4blZjdUVYd056VjlaWWZXSmVmSHZBN3oyc2tWRTZ6N2Ewc1NiSWU1eTFRME8?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fitch Ratings: U.S. Private Credit Default Rate Remains Elevated in Q3",
+      "source_fingerprint": "76429d39d1d3922e7f2559ffb220df4840dad57c364a06464dc06e8f48966898",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "007c90c628646b80d09bb0f20f9787ff600471bcff43e0712a786ee9e4600bb3",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A rating agency report on elevated private credit defaults bears on risk conditions for the tracked private credit sub-sector even without a named manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T14:59:02+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSnJsVHhaX2o5OEVsb0JIbGdVM2VzWW1IdHowRGlJX3J3ODlRMTVNVUFfWEo0WmNOcXpLb01aSU4ybGZfRm9ROXl2TTRBbTJUNFBEZ3haaFFvQVVvYkk4cnY2elpGYXp4UjJyV3NDWjR4blZjdUVYd056VjlaWWZXSmVmSHZBN3oyc2tWRTZ6N2Ewc1NiSWU1eTFRME8?oc=5"
+      },
+      "observed_at": "2026-10-30T14:55:59+00:00"
+    },
+    {
       "id": "0d30902ff372",
       "date": "2026-10-30",
       "published_at": "2026-10-30T02:46:39+00:00",
