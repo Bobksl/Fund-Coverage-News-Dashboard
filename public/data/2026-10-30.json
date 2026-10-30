@@ -1,0 +1,543 @@
+{
+  "date": "2026-10-30",
+  "items": [
+    {
+      "id": "0d30902ff372",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T02:46:39+00:00",
+      "headline": {
+        "en": "Blue Owl Capital Sees Earnings Strength, Growth Ahead",
+        "zh": "Blue Owl Capital 认为盈利强劲且增长前景向好"
+      },
+      "summary": {
+        "en": "Blue Owl Capital sees earnings strength and growth ahead, according to a TipRanks headline. The headline provides no figures or further detail.",
+        "zh": "据 TipRanks 一则标题，Blue Owl Capital 认为盈利强劲且增长前景向好。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWVpsNzVobGpVbkh0dVB2ejF4bzgxcWxURHlrbXJGMmFxM09PeWZaTUxCZ3puZ3VXX0JWdFpUei1VRkFyRGdlMXNxWHRBbmQ4VmJucTJxR3JnNTJqQm9RLVZ2czJLdkpGbDhiTEFESV8xQXk1QVdaR1BVR2JUNl9DZWlBdEMtbHBDalF4aVJkVmNBWkdncGplMFp6Q2ZLd0IxV0tIMngycw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital Sees Earnings Strength, Growth Ahead",
+      "source_fingerprint": "b5a8a373a6f4a1a3a5cd8dde0fdbbdf29a5e7025a0d92a17d09fd03e5308616b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "355b6259d62f595b88e8ae85620e8b2b3b3909620d0b4c421d6a12b24c49191f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline on Blue Owl earnings strength and growth outlook is a tracked-manager performance signal, though it carries no figures or new event detail.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:17:39+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWVpsNzVobGpVbkh0dVB2ejF4bzgxcWxURHlrbXJGMmFxM09PeWZaTUxCZ3puZ3VXX0JWdFpUei1VRkFyRGdlMXNxWHRBbmQ4VmJucTJxR3JnNTJqQm9RLVZ2czJLdkpGbDhiTEFESV8xQXk1QVdaR1BVR2JUNl9DZWlBdEMtbHBDalF4aVJkVmNBWkdncGplMFp6Q2ZLd0IxV0tIMngycw?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "70b28f6e412b",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T23:49:47+00:00",
+      "headline": {
+        "en": "Blue Owl Capital posts quarterly earnings, beats estimates by $0.01 EPS",
+        "zh": "Blue Owl Capital公布季度业绩，每股收益超预期0.01美元"
+      },
+      "summary": {
+        "en": "Blue Owl Capital (NYSE:OWL) reported quarterly earnings results that beat estimates by $0.01 EPS.",
+        "zh": "Blue Owl Capital（NYSE:OWL）公布季度业绩，每股收益超出预期0.01美元。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQnRIVjg5cDVqdUNTZGlzWVFBUDVPazhDNDdhVXZSd2NMUnFxbEFHSGVrUnFlSU1oQVI4V0RsMkd0Q1pNNVZSenhqX3IzY20tRFVXaHQzdzJFT2N0UEVQZGt4WGtmVTIxUUZFdlBZeU1lN3g3b25EZXVNS0ZsVDltNWRSb1FDYUNzcl9ab3VDaTJodUNNRUtpdzJuVFFfMHYxR0tKT29uR3VWdGRIWktIV1JaWnBZOTgtVHIySTBrQ2N3Z3NxaXJMaXRSQnRGdS1BUGtnRmN4cjROOFluV0l4U3FR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital (NYSE:OWL) Posts Quarterly Earnings Results, Beats Estimates By $0.01 EPS",
+      "source_fingerprint": "20810b27eee21f3584a2bc4468ddf7f27d6331a1f48093f456f228fdef6846eb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "691e3b4248b3ebb62c8104c3c3a5f2f7709449043e9cf74f9a5c5a6e5956c4a8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Quarterly earnings beat at tracked manager Blue Owl is a routine periodic disclosure with no new credit development, but confirms franchise performance.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:17:41+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQnRIVjg5cDVqdUNTZGlzWVFBUDVPazhDNDdhVXZSd2NMUnFxbEFHSGVrUnFlSU1oQVI4V0RsMkd0Q1pNNVZSenhqX3IzY20tRFVXaHQzdzJFT2N0UEVQZGt4WGtmVTIxUUZFdlBZeU1lN3g3b25EZXVNS0ZsVDltNWRSb1FDYUNzcl9ab3VDaTJodUNNRUtpdzJuVFFfMHYxR0tKT29uR3VWdGRIWktIV1JaWnBZOTgtVHIySTBrQ2N3Z3NxaXJMaXRSQnRGdS1BUGtnRmN4cjROOFluV0l4U3FR?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "cda3c5eaa4fb",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T21:35:58+00:00",
+      "headline": {
+        "en": "Blue Owl Capital Q3 2026 earnings call: assets under management reach $330 billion",
+        "zh": "Blue Owl Capital（OWL）2026年第三季度财报电话会议：管理资产规模达到3300亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl Capital's Q3 2026 earnings call reported assets under management reaching $330 billion, according to the headline.",
+        "zh": "据标题，Blue Owl Capital在2026年第三季度财报电话会议上报告管理资产规模达到3300亿美元。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12TnlNUmpaNEJlREVrZGdoQW1DR0MwX25wSXQ1SUEwY2xzQVBTQjVqekQ2T3I2WlhHUW1RQmpRWnF5ZjNiTWlnTFN6dXZ6VEo2TEt6UUJSQmhFTmFFSktIZjFvX2ZwNjQ5MTg4WVkxUC1xRm8tNkE?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Capital (OWL) Q3 2026 Earnings Call: Verwaltetes Vermögen erreicht 330 Milliarden US-Dollar",
+      "source_fingerprint": "762a2c4dfe992e506b62d5c1ee5a5e2d385556fb9416a73dbbd9920f324d7419",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "d15de240095f6197d065361c5a77d2b253e95a48ad7ba7ae311de87c5133bc57",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's assets under management level bears on the scale and deployment capacity of a tracked credit platform.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:17:49+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12TnlNUmpaNEJlREVrZGdoQW1DR0MwX25wSXQ1SUEwY2xzQVBTQjVqekQ2T3I2WlhHUW1RQmpRWnF5ZjNiTWlnTFN6dXZ6VEo2TEt6UUJSQmhFTmFFSktIZjFvX2ZwNjQ5MTg4WVkxUC1xRm8tNkE?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "53a093e18093",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T20:35:00+00:00",
+      "headline": {
+        "en": "Blue Owl Beats Fee Estimates as Redemptions Rise",
+        "zh": "Blue Owl费用收入超预期，赎回上升"
+      },
+      "summary": {
+        "en": "Blue Owl beat fee estimates while redemptions rose, according to the headline. No figures, vehicles or period were specified in the supplied text.",
+        "zh": "据标题，Blue Owl费用收入超预期，同时赎回上升。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Briefs Finance",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdEFmTmZYX1pNaU80OGZSN0FBSGRNdWsyak1fTG12TFBnaHpzVW9nei1xVVVFVHZCWTN4TE1MVEM2SHlUdUxnaGJ2dUVWLXNXYS1RcGJKdUFPV3lxRmdnYTRCenN1TmNzcms4aEJiN20tOUpKRDNiT01vUk1jS0pjbE1yNWJzT1hQME51R04zdHBhZw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Beats Fee Estimates as Redemptions Rise",
+      "source_fingerprint": "77035dc11d34c9172a3bec000f4d00f91521cd6c08aa75fdce0bcd96dd0027b1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "f538d5ce67095b02fbac98911c16cad8191b40602482ae761941dd82754c32cf",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline reports Blue Owl beat fee estimates while redemptions rose, a direct signal on the manager's earnings and vehicle liquidity.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:17:55+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdEFmTmZYX1pNaU80OGZSN0FBSGRNdWsyak1fTG12TFBnaHpzVW9nei1xVVVFVHZCWTN4TE1MVEM2SHlUdUxnaGJ2dUVWLXNXYS1RcGJKdUFPV3lxRmdnYTRCenN1TmNzcms4aEJiN20tOUpKRDNiT01vUk1jS0pjbE1yNWJzT1hQME51R04zdHBhZw?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "268ac81dc8e9",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T18:36:59+00:00",
+      "headline": {
+        "en": "U.S. Private Credit Defaults Hit Record 6.3% As Quiet Distress Grows",
+        "zh": "美国私募信贷违约率达创纪录的6.3%，隐性困境加剧"
+      },
+      "summary": {
+        "en": "U.S. private credit defaults reached a record 6.3%, according to Forbes, with the report citing growing quiet distress.",
+        "zh": "据《福布斯》报道，美国私募信贷违约率升至创纪录的6.3%，报道称隐性困境正在加剧。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPM2p3TzJYcjhhR3g0R21tX19LTWtUeVd2dzFueUFLazFaVzNCM2FQQjdNV2ZQM2pycmYweXllU2R3Ynh6MTVUNDV1VlVkOTE0Mm5HbUlFOWM1SXJ3Y1dDSExTcl9EbDF4NlFTbmtiQ3R1Nkc4V2VzUkxvdmNLeVZiY0V1dnhvWDk2LU5XOHRfSnJXRGF1NG5hbGgtNVZuSF9oQ1dMMTdjSmVvYmloclViYkFjV0pYNm44VGNUS05uMmx0U1BaZ3FMc0FR?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "U.S. Private Credit Defaults Hit Record 6.3% As Quiet Distress Grows",
+      "source_fingerprint": "e28e0a326b4f596427e914f85017689168ee7702ea62d9da1f27cbe6fd95a783",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e8af9e1b91a0b870276edb2263175cbb691cf699ecc8d77dca3ef067f4ed5d15",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A record private credit default rate signals rising credit stress in the direct lending sub-sector, affecting risk and return views on tracked private credit managers.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:04+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPM2p3TzJYcjhhR3g0R21tX19LTWtUeVd2dzFueUFLazFaVzNCM2FQQjdNV2ZQM2pycmYweXllU2R3Ynh6MTVUNDV1VlVkOTE0Mm5HbUlFOWM1SXJ3Y1dDSExTcl9EbDF4NlFTbmtiQ3R1Nkc4V2VzUkxvdmNLeVZiY0V1dnhvWDk2LU5XOHRfSnJXRGF1NG5hbGgtNVZuSF9oQ1dMMTdjSmVvYmloclViYkFjV0pYNm44VGNUS05uMmx0U1BaZ3FMc0FR?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "39df73b8b53c",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T18:35:30+00:00",
+      "headline": {
+        "en": "Ares heads for record fundraising year on private credit, real assets strength",
+        "zh": "Ares 凭借私募信贷和实物资产优势，有望创下融资纪录之年"
+      },
+      "summary": {
+        "en": "Ares is on track for a record fundraising year, driven by strength in private credit and real assets, according to the headline.",
+        "zh": "据标题报道，Ares 在私募信贷和实物资产的强劲表现推动下，有望创下融资纪录之年。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOREJlN2Z3am1XMHNiRC1hZ2tOQ1VxRG81VFlXOE1kcVAwVjNFS0E1ZDJ6RlJnV195UGtFeGROZVB6dUFFc3VWemhKcUlVekYtUi1kSzg5WnhxQURXTFJBOS1yZTVEV2x0NHFVTXFzZDRwNEs1cDFWY1dsbG9hdkw2M0FmV0pRTXhUT3lWRU41V1RwRUFGeGxySURzYXZGdmI1RWhKSVpUQU9wUDBTMmZnUnpRZm55dEtCQ1paa2hNSE9wQ19uZVVJV1JB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares heads for record fundraising year on private credit, real assets strength",
+      "source_fingerprint": "7c389d8a68ab2219213ddbed24b9b9f34fb5c3eae479b09e1e4403403a10535a",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a60b0387edd64a57d44695822a307ac8e8c50853e37d69d3b866fbfbb7b9f483",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline signals record fundraising momentum for a major private credit manager, a direct read on deployment and capital-formation conditions for the sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:07+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOREJlN2Z3am1XMHNiRC1hZ2tOQ1VxRG81VFlXOE1kcVAwVjNFS0E1ZDJ6RlJnV195UGtFeGROZVB6dUFFc3VWemhKcUlVekYtUi1kSzg5WnhxQURXTFJBOS1yZTVEV2x0NHFVTXFzZDRwNEs1cDFWY1dsbG9hdkw2M0FmV0pRTXhUT3lWRU41V1RwRUFGeGxySURzYXZGdmI1RWhKSVpUQU9wUDBTMmZnUnpRZm55dEtCQ1paa2hNSE9wQ19uZVVJV1JB?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "e6ce2e1a39c7",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T18:35:00+00:00",
+      "headline": {
+        "en": "Ares Raises $8B+ in First Close for Direct Lending",
+        "zh": "Ares 直接贷款基金首轮关账募资超 80 亿美元"
+      },
+      "summary": {
+        "en": "Ares raised more than $8 billion in a first close for a direct lending fund, according to a headline report.",
+        "zh": "据一则标题报道，Ares 旗下一只直接贷款基金首轮关账募资超过 80 亿美元。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Briefs Finance",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSTFwUV9UNUh3YjlWVGptYkl1UU5XZTZ0Tk5CbEdJWTI1LU9xQ1M0aVAzNk9OY05tQkJZZjhSQzRzUnZxN3JsRDNRUlVRZDY2MkpmbFcwMHdhSGI4OXlZWWsycC00WVkxWHJncThyZE4zNzRjZkliSzNZVjJGbTJRZUpZZkJfZVcyVExWczRpOHo3UQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares Raises $8B+ in First Close for Direct Lending",
+      "source_fingerprint": "8e7c5b82523313a840bc05b683fd6c11ad487055973ea3f885f033c1a3e178eb",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "ba5145a8ced6557fa8dd7f3e9681e5f7ca685e0424c6e09ada263ed00841c257",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A large first close for a direct-lending fund signals fundraising momentum in private credit, a tracked sub-sector, even though no tracked manager is named.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:09+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSTFwUV9UNUh3YjlWVGptYkl1UU5XZTZ0Tk5CbEdJWTI1LU9xQ1M0aVAzNk9OY05tQkJZZjhSQzRzUnZxN3JsRDNRUlVRZDY2MkpmbFcwMHdhSGI4OXlZWWsycC00WVkxWHJncThyZE4zNzRjZkliSzNZVjJGbTJRZUpZZkJfZVcyVExWczRpOHo3UQ?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "66506a72fd2e",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T18:33:52+00:00",
+      "headline": {
+        "en": "Blue Owl reports record money from big investors and 9.3% returns",
+        "zh": "Blue Owl 获大型投资者创纪录资金流入，回报率 9.3%"
+      },
+      "summary": {
+        "en": "Blue Owl is reported to have drawn record money from large investors and to be returning 9.3%. The source provides only a headline, so the scale of the inflows, the period covered and the strategy involved are not specified.",
+        "zh": "有报道称 Blue Owl 从大型投资者处获得创纪录资金，回报率为 9.3%。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWkNad2Z1eGcxYnljMEx3SWVwbmNsMjAwaVdqdVhRT2I4WnJXR25Qc1RpSU5Pc0hzZl92SjNiN1Fuc2tabG52ZzlhRFB0RmgySnI0MmZDVDVLVmRQbE9MUHAtZjRQMmhCXy04OXRSTWRnNjRvMmJ4ZUY3a2JXVXFXTWJGdm9mdGxScUFaR2JQLXZCNmxfblE1X1Axc1plMnphOFBsbkFGRTF4ekNJREtKUFYzZjZGUjE5S0laNnN2S0h3NG92SXdwYmprZGVQUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Is Having a Hoot — Record Money From Big Investors, 9.3% Returns",
+      "source_fingerprint": "b59cb7badea383b579e2c7ea89b5321a2dab3746d01113b9e7e7a11ca02db8f1",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "5fb38a11fc7d3a7315189e3f857ff3e421e577fc989807c21722993f6cb10d6e",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Headline-level report of record fundraising from large investors at a tracked credit platform, bearing on deployment and fundraising conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:12+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWkNad2Z1eGcxYnljMEx3SWVwbmNsMjAwaVdqdVhRT2I4WnJXR25Qc1RpSU5Pc0hzZl92SjNiN1Fuc2tabG52ZzlhRFB0RmgySnI0MmZDVDVLVmRQbE9MUHAtZjRQMmhCXy04OXRSTWRnNjRvMmJ4ZUY3a2JXVXFXTWJGdm9mdGxScUFaR2JQLXZCNmxfblE1X1Axc1plMnphOFBsbkFGRTF4ekNJREtKUFYzZjZGUjE5S0laNnN2S0h3NG92SXdwYmprZGVQUQ?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "8b796c3a4ff7",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T17:26:07+00:00",
+      "headline": {
+        "en": "Acore raises $1.1bn for real estate credit as wealth platform takes shape",
+        "zh": "Acore 为房地产信贷筹集 11 亿美元，财富平台初具雏形"
+      },
+      "summary": {
+        "en": "Acore raised $1.1bn for real estate credit while developing a wealth platform, according to Alternatives Watch. The article was supplied as a headline only, so further details were not available.",
+        "zh": "据 Alternatives Watch 报道，Acore 为房地产信贷筹集了 11 亿美元，同时正在打造财富平台。该文章仅提供标题，暂无更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternatives Watch",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdnRmNGpZNzlremdOTzNORkpIek90MUxrcEwtOUp0SHl2Q0kxMV9ZbFA4Nmt6ZzVIRlNvMlVpM2NHQmR4bWtpNUxqN1BOX2VDd253YV9oX0lRbV80Sll0QW5LRzdkM0JTREkwZW8xUkh6RklwTGtOMGYyc0JSVDFZMmt5NWZyb0FJeFdGNXRtU1Y1emFKTEhFXy1CdjdyOVBhWS1feTFB?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Acore raises $1.1bn for real estate credit as wealth platform takes shape",
+      "source_fingerprint": "f9f3dcb2c5b0a077c739a1bb3918c484b2bd163cbdaba7e7dbdfb5fabbfa8ee8",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "a54a476a356a125efe32072e71e1395854c5b0c65ef285858056bddd0c40cfda",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $1.1bn raise for real estate credit signals continued capital formation in property credit, a channel affecting tracked managers active in real estate and structured credit.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:18+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdnRmNGpZNzlremdOTzNORkpIek90MUxrcEwtOUp0SHl2Q0kxMV9ZbFA4Nmt6ZzVIRlNvMlVpM2NHQmR4bWtpNUxqN1BOX2VDd253YV9oX0lRbV80Sll0QW5LRzdkM0JTREkwZW8xUkh6RklwTGtOMGYyc0JSVDFZMmt5NWZyb0FJeFdGNXRtU1Y1emFKTEhFXy1CdjdyOVBhWS1feTFB?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "d02935acbe82",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T16:58:00+00:00",
+      "headline": {
+        "en": "Blue Owl raises $10.2 billion in third quarter on institutional demand",
+        "zh": "Blue Owl第三季度募资102亿美元，受机构需求推动"
+      },
+      "summary": {
+        "en": "Blue Owl raised $10.2 billion in the third quarter, according to Pensions & Investments. The headline attributes the total to strong institutional demand.",
+        "zh": "据Pensions & Investments报道，Blue Owl第三季度募资102亿美元。该标题将这一总额归因于强劲的机构需求。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "Global",
+      "source": {
+        "publisher": "Pensions & Investments",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb2QzY3FvWDB3aHM3NVJOcjZxaG1QZU9EZUNSVG9rNUc3RWwtZDgyZ1lWR3J0T0JKZ1p3U09STWl1OWptX3BjT1c3T1BNWUtnYWkxOGlNNlJpWWduNlBWWnBYLTk5RklnaVhEUERkWlpXQmtCMldiRV9QbFB0NzlicEphWlJvamNKMzNrWEJKNmVScUd0Vk1WMXZFdnA4dw?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl raises $10.2 billion in the third quarter, led by strong institutional demand",
+      "source_fingerprint": "0f9a4480168c769d3624087589692bc031f26f8000ad92e6a6b44edef0ca6bc7",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "16c29429781d6a580593840a08014c419abe9332abb38a277952f02c38c09382",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A quarterly fundraising total for Blue Owl indicates capital formation and deployment capacity across its credit platform.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "raises",
+        "object": "$10.2 billion",
+        "period": "third quarter",
+        "numbers": [
+          "$10.2 billion"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:20+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb2QzY3FvWDB3aHM3NVJOcjZxaG1QZU9EZUNSVG9rNUc3RWwtZDgyZ1lWR3J0T0JKZ1p3U09STWl1OWptX3BjT1c3T1BNWUtnYWkxOGlNNlJpWWduNlBWWnBYLTk5RklnaVhEUERkWlpXQmtCMldiRV9QbFB0NzlicEphWlJvamNKMzNrWEJKNmVScUd0Vk1WMXZFdnA4dw?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "8b00afd58f49",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T16:45:04+00:00",
+      "headline": {
+        "en": "Ares Credit Funds Close $6.3 Billion in Q3 Direct Lending Commitments",
+        "zh": "Ares Credit Funds 第三季度完成 63 亿美元直接贷款承诺"
+      },
+      "summary": {
+        "en": "Ares Credit Funds closed $6.3 billion in direct lending commitments in the third quarter, according to a headline report.",
+        "zh": "据一则标题报道，Ares Credit Funds 在第三季度完成了 63 亿美元的直接贷款承诺。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Securities.io",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa1pjaXV2TEVUZWY5WFkxNjY2bng1VWExWkZRMlJ0b3Iya1pzVFBtTVdjRmx1T0dJNU1idmFfMXBNb2VNcFJrckZWZ1A3bXg4X04zTTBralZVRjBSZjU4Umx2MkpEM2Vad0cwTE9vTnVvcjlkd3c1Ym03cjNjcFk3Z1hvb2hOUHdtUTU0YVhJc2pHeUlEQTNCX01UUQ?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Ares Credit Funds Close $6.3 Billion in Q3 Direct Lending Commitments",
+      "source_fingerprint": "b6ead82b734d51491883860107c2d14631050c8a56026435f5f6d9f82930488b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4dae15870b5b32ed23f91d9ac0488edba381104bcb84af4cc9460ec838668c4c",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Quarterly direct lending commitments at a major private credit platform signal deployment conditions for the tracked private credit sub-sector, though Ares is not a tracked manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:23+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa1pjaXV2TEVUZWY5WFkxNjY2bng1VWExWkZRMlJ0b3Iya1pzVFBtTVdjRmx1T0dJNU1idmFfMXBNb2VNcFJrckZWZ1A3bXg4X04zTTBralZVRjBSZjU4Umx2MkpEM2Vad0cwTE9vTnVvcjlkd3c1Ym03cjNjcFk3Z1hvb2hOUHdtUTU0YVhJc2pHeUlEQTNCX01UUQ?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "04c6eb10dae3",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T16:40:23+00:00",
+      "headline": {
+        "en": "Fitch Says U.S. Private Credit Default Rate Remains Elevated In 3Q26",
+        "zh": "惠誉称2026年第三季度美国私人信贷违约率仍处高位"
+      },
+      "summary": {
+        "en": "Fitch said the U.S. private credit default rate remained elevated in the third quarter of 2026.",
+        "zh": "惠誉表示，2026年第三季度美国私人信贷违约率仍处高位。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUkZReGdOd1JrZkpDUlhKbFpiWEpnNXQxUE1JWGVOWlJ3ekVuaXhTaUN0dkZiQVJraFRxZUFvbnRZV29mVlNCUTV1NnpOWnRMclZoYk9DQ1dJY3lJOHhCdGFKbEFTVzBUaE13Qko2emszQm0yX01TeDRMcFNyeEVNRUJuZFdSVWJwbUYxN2N3VnNKd09Gbm9LejdfWUF6eldaS3VxdjI4dGtZNlZMT09GQkxnTEhvLUVRS2V1UkJmazR6dTNPRklmcWVzbVBNaXZFUHJr?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Fitch Says U.S. Private Credit Default Rate Remains Elevated In 3Q26",
+      "source_fingerprint": "4a61edd1646e63e603694f1324e5f55ab1357f28ad82c76e80f799d12aecb10b",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "4c663dbad7f494f3878ca1887e9750a448ea7e1385ffc66a47cb3965dc14bfd8",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A rating agency statement on elevated U.S. private credit default rates bears on risk conditions for tracked private credit sub-sectors even without a named manager.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:25+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUkZReGdOd1JrZkpDUlhKbFpiWEpnNXQxUE1JWGVOWlJ3ekVuaXhTaUN0dkZiQVJraFRxZUFvbnRZV29mVlNCUTV1NnpOWnRMclZoYk9DQ1dJY3lJOHhCdGFKbEFTVzBUaE13Qko2emszQm0yX01TeDRMcFNyeEVNRUJuZFdSVWJwbUYxN2N3VnNKd09Gbm9LejdfWUF6eldaS3VxdjI4dGtZNlZMT09GQkxnTEhvLUVRS2V1UkJmazR6dTNPRklmcWVzbVBNaXZFUHJr?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    }
+  ]
+}

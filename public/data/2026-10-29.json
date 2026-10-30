@@ -2,6 +2,175 @@
   "date": "2026-10-29",
   "items": [
     {
+      "id": "7e35c46c60e2",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T15:16:02+00:00",
+      "headline": {
+        "en": "Blue Owl Fee-Related Earnings Rise 14% as AUM Reaches $329.9 Billion",
+        "zh": "Blue Owl费用相关收益增长14%，资产管理规模达3299亿美元"
+      },
+      "summary": {
+        "en": "Blue Owl reported fee-related earnings rose 14%, with assets under management reaching $329.9 billion, according to the headline.",
+        "zh": "据标题报道，Blue Owl的费用相关收益增长14%，资产管理规模达到3299亿美元。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Securities.io",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTEhlZngwekdOVHAxN2VFUGJEZldGWDB5c29tcGhFNjd3VDJXMXEtYjhZNVZlVHpsZnBoZ0owOWE0MDVrd2hEeHRIdWZLd3JHdnJUd0Y3aUVkOWo4N0h3S0lkMG54anRyZmFVSC1CX3M1aGtYNDZSMk1wWkNHN095Q3U3U0Mxc0pRa1h2U201eDF5WElJcW9YUA?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Fee-Related Earnings Rise 14% as AUM Reaches $329.9 Billion",
+      "source_fingerprint": "24468f751a97d9c8d000790e7bca897af05610b93a3633462bbea9e54afdeee0",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "2f2dac318b5f8c33c87cb06f0324688736eb87a0a16124fd020545fc0f27bec9",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl headline gives quarterly FRE growth and AUM, a scale and earnings data point for a tracked credit manager, though headline-only detail is thin.",
+      "event_identity": {
+        "subject": "blue owl",
+        "action": "fee-related earnings rise 14%",
+        "object": "aum",
+        "period": "$329.9 billion",
+        "numbers": [
+          "$329.9 Billion",
+          "14%"
+        ],
+        "version": "identity-v1"
+      },
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:29+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTEhlZngwekdOVHAxN2VFUGJEZldGWDB5c29tcGhFNjd3VDJXMXEtYjhZNVZlVHpsZnBoZ0owOWE0MDVrd2hEeHRIdWZLd3JHdnJUd0Y3aUVkOWo4N0h3S0lkMG54anRyZmFVSC1CX3M1aGtYNDZSMk1wWkNHN095Q3U3U0Mxc0pRa1h2U201eDF5WElJcW9YUA?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "1b9a8a154680",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T15:13:25+00:00",
+      "headline": {
+        "en": "US private credit default rate falls for second consecutive quarter",
+        "zh": "美国私募信贷违约率连续第二个季度下降"
+      },
+      "summary": {
+        "en": "The US private credit default rate declined for a second consecutive quarter, according to a headline report from Alternative Credit Investor. No figures, managers or specific data were included in the available text.",
+        "zh": "据Alternative Credit Investor的一则标题报道，美国私募信贷违约率连续第二个季度下降。现有文本未包含具体数据、管理机构或细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaDJYdjNQbkdNRndkVl9XVWJyclVHcjRBeTZjS0FpakJMNnF1VzVGY0tjbGk2anBlY2FIT0FhQ2d1NTBWZjNxVUNMUHgtUjhkRjdVNF9XdDFiQ0F2NS1XRnR0Q29yVFk5ZGpkX0JvMU5EeHJXVVhLSmpDbzNucHl0anlxZDJMUVgwMk5naEd4ZjNSODNERy04bS1Mbm5NZzhTaW9VTUd6b2k2Qm94NTRtSTNxRHMwNmdI?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "US private credit default rate falls for second consecutive quarter",
+      "source_fingerprint": "28a7c24d306c317cc8f5a8e5f89477aad5df3c8d10e5b7139f231691f1729a74",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "174aa6aba6a2e3762137ba00d8f9a771e3a284e313d093e1f4ec4c9aa9fde4f4",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "A falling private credit default rate signals improving credit conditions for tracked private-credit managers, though the headline gives no manager-specific detail.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:32+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaDJYdjNQbkdNRndkVl9XVWJyclVHcjRBeTZjS0FpakJMNnF1VzVGY0tjbGk2anBlY2FIT0FhQ2d1NTBWZjNxVUNMUHgtUjhkRjdVNF9XdDFiQ0F2NS1XRnR0Q29yVFk5ZGpkX0JvMU5EeHJXVVhLSmpDbzNucHl0anlxZDJMUVgwMk5naEd4ZjNSODNERy04bS1Mbm5NZzhTaW9VTUd6b2k2Qm94NTRtSTNxRHMwNmdI?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
+      "id": "7e8cc27a78f9",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T15:07:15+00:00",
+      "headline": {
+        "en": "US private credit default rate falls to 2.41% in Q3 2026, Proskauer index shows",
+        "zh": "Proskauer指数显示，美国私募信贷违约率在2026年第三季度降至2.41%"
+      },
+      "summary": {
+        "en": "Proskauer's Private Credit Default Index recorded a US default rate of 2.41 per cent in the third quarter of 2026, down from 2.51 per cent in the prior three months and the second consecutive quarterly decline. The index covered 746 senior-secured and unitranche loans representing $205.7bn in original principal amount. Proskauer warned trailing 12-month defaults rose and defaults among software and technology borrowers increased, with small-borrower defaults up from 1.9 per cent to 2.2 per cent.",
+        "zh": "Proskauer的私募信贷违约指数显示，2026年第三季度美国违约率为2.41%，低于前三个月的2.51%，为连续第二个季度下降。该指数覆盖746笔优先担保和unitranche贷款，原始本金总额为2057亿美元。Proskauer警告称，过去12个月违约率上升，软件和科技借款人的违约增加，小借款人违约率从1.9%升至2.2%。"
+      },
+      "gps": [],
+      "sectors": [
+        "private_credit",
+        "software"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Alternative Credit Investor",
+        "url": "https://alternativecreditinvestor.com/2026/10/29/us-private-credit-default-rate-falls-for-second-consecutive-quarter/"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "US private credit default rate falls for second consecutive quarter",
+      "source_fingerprint": "204fed4e008f3f6524770a0a5a2f9b5e3dc7de914aa3d48bb47b692dce5885a5",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": true,
+        "potential_urgent": false,
+        "evidence_refs": {
+          "severity": {
+            "start": 0,
+            "end": 74
+          },
+          "linkage": {
+            "start": 508,
+            "end": 558
+          },
+          "current_adverse": {
+            "start": 1728,
+            "end": 1768
+          }
+        },
+        "source_sha256": "a898d5771218720f45e07398beeb91cdde1e3502178824a31e8be41899514c31",
+        "failure": null,
+        "severity": "bounded",
+        "linkage": "sector",
+        "current_adverse": true,
+        "resolved": false,
+        "deadline_at": null,
+        "evidence_strength": "reported",
+        "routine": false,
+        "reason": {
+          "en": "Assessed severity: bounded; linkage: sector.",
+          "zh": "已评估严重程度：有限；关联程度：行业。"
+        }
+      },
+      "relevance_reason": "Private credit default data, including rising software/tech defaults and small-borrower stress, informs credit risk views across tracked direct-lending managers and the software sub-sector.",
+      "event_identity": null,
+      "evidence": {
+        "status": "ok",
+        "level": "excerpt",
+        "retrieved_at": "2026-10-30T05:18:37+00:00",
+        "sha256": "a898d5771218720f45e07398beeb91cdde1e3502178824a31e8be41899514c31",
+        "source_published_at": "2026-10-29T15:07:15+00:00",
+        "final_url": "https://alternativecreditinvestor.com/2026/10/29/us-private-credit-default-rate-falls-for-second-consecutive-quarter/"
+      },
+      "source_published_at": "2026-10-29T15:07:15+00:00",
+      "observed_at": "2026-10-30T05:15:07+00:00"
+    },
+    {
       "id": "f201f3e41669",
       "date": "2026-10-29",
       "published_at": "2026-10-29T14:53:45+00:00",
@@ -43,6 +212,50 @@
         "final_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTHBQTUtJajFvZFVlZTR0UzRUSkk4Ry00djlBVFRCWFhUbVNXUElSbDU5b3d5WWJlcUpiUHVDbmsteVlrekx4SzNKYlFPR3IxQlhhZmFtNGV3MDVNSXBkR1k2NkIzOERINVJXZGZKQWZPaHV1V3RGMVpVSG0taGZweXhGbkNrRkpWNmJwWWpzNnRzdGx6U3pUTFZIbUxQaGhOdWc5cEh6bERzZm44TEtodm9EVWtWVmF1RVZTRTVTNmRnZU85?oc=5"
       },
       "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "9604c8624c5b",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T14:38:56+00:00",
+      "headline": {
+        "en": "Peakhill Capital launches Everest, a $750 million CMHC-insured multifamily construction lending program",
+        "zh": "Peakhill Capital推出Everest，一个7.5亿美元的CMHC保险多户住宅建设贷款项目"
+      },
+      "summary": {
+        "en": "Peakhill Capital has launched Everest, a $750 million CMHC-insured multifamily construction lending program.",
+        "zh": "Peakhill Capital推出了Everest，一个7.5亿美元的CMHC保险多户住宅建设贷款项目。所提供标题中未包含更多细节。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "mortgage"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "RENX",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB1OGpkd29QMDVvUzFLdGpHUFYyYnRCdk9fSHQzOVY3U2wzWEpMRWlrdHd1Snpad1FzdVRfdzByZDl4dGVYRVQ5WVdMekY3Rmd5UDJlaGtCdGJDdjhoTWd3dTZmSXViUjBYZVNTb0NoQlVlN3hDZEtBNg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Peakhill Capital launches Everest, a $750 million CMHC-insured multifamily construction lending program",
+      "source_fingerprint": "dd69210c754e2cb0219951acb0a622b36ff5b73d6152cc70c9a4c9fdbc19d90c",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "520d6fbd8d55d8a107a30f7c34b7d166186d7681ee541291bc1404cba6194c4a",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "New $750 million CMHC-insured multifamily construction lending program expands commercial real estate credit capacity in Canada, a signal for real estate and mortgage credit conditions despite no tracked manager involvement.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:40+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB1OGpkd29QMDVvUzFLdGpHUFYyYnRCdk9fSHQzOVY3U2wzWEpMRWlrdHd1Snpad1FzdVRfdzByZDl4dGVYRVQ5WVdMekY3Rmd5UDJlaGtCdGJDdjhoTWd3dTZmSXViUjBYZVNTb0NoQlVlN3hDZEtBNg?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
     },
     {
       "id": "eb1e35e75901",
@@ -386,6 +599,51 @@
         "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVDgyMDFRdnVoY01WbW1nR01fOTZpd0w3a3BkUjFYcnB6NGNXbGljWDYxTEpCUF9GUjk4anlIVHhLWTlISndZUEYwMWQ4WDhtRXUwb0RrT0pQQXlRcDZZUTdoRDRfT3RNLVQwdnlxYi0weWJwZHlDYmplOW4zdnJqSC1BZ2l4VTlzdUhxWE9sV2VxdU8ySDBvWkwzR0c4WXRiX0phRjRteXJmdFFDaVQ3QkFZMkRxZw?oc=5"
       },
       "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "e382a7bc10bf",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T11:02:53+00:00",
+      "headline": {
+        "en": "Blue Owl Fees Beat Estimates Though Redemptions Weigh on Inflows",
+        "zh": "Blue Owl费用收入超预期，但赎回拖累资金流入"
+      },
+      "summary": {
+        "en": "Blue Owl's fees beat estimates, while redemptions weighed on inflows, according to the headline.",
+        "zh": "据标题报道，Blue Owl的费用收入超出预期，但赎回对资金流入构成压力。"
+      },
+      "gps": [
+        "blue_owl"
+      ],
+      "sectors": [
+        "private_credit"
+      ],
+      "region": "US",
+      "source": {
+        "publisher": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVzNHTUwwVFlMb1U4eWpsZ1hFUnA5RVAyUjVVZU11cXBWNi1kZ3ZBVnlWdE82cUNmbnhXMFhUMWJ2NzBTMnN4RnB3Zi11cHprcDhMUEJZYURucWc1elRtWUpPYi1TMkRMV2o0cGRtbUkzd3pJS05MelU4aDBER3hnY1Z1UF9ubXF0M1o5aS1fV2U3aDF0OGNSYjBzLXdlWElUcUxxMW5udWRDSTlnZlFnb3dhSWNjcmxQUUE3WFBjZEpoYzloLXJpZnBVUHNxS3NEa2toQg?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "Blue Owl Fees Beat Estimates Though Redemptions Weigh on Inflows",
+      "source_fingerprint": "b67a207cb75e47602865249384517c7593ecc8f9ceacfb36294f947fec7bc39f",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "41f97a95c8e563c365e67885bf70c38b436c896f5bf2c6516273267559cd1183",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "Blue Owl's fee results and redemption-driven outflow pressure bear directly on the tracked manager's earnings and fundraising conditions.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:43+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVzNHTUwwVFlMb1U4eWpsZ1hFUnA5RVAyUjVVZU11cXBWNi1kZ3ZBVnlWdE82cUNmbnhXMFhUMWJ2NzBTMnN4RnB3Zi11cHprcDhMUEJZYURucWc1elRtWUpPYi1TMkRMV2o0cGRtbUkzd3pJS05MelU4aDBER3hnY1Z1UF9ubXF0M1o5aS1fV2U3aDF0OGNSYjBzLXdlWElUcUxxMW5udWRDSTlnZlFnb3dhSWNjcmxQUUE3WFBjZEpoYzloLXJpZnBVUHNxS3NEa2toQg?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
     },
     {
       "id": "e788b52103cd",
@@ -741,6 +999,50 @@
         "final_url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNYnBlcENTaXh2TjFsdVZVT1dSckRtbXloekR1US1vbjZ3TDZlUkdDQkhoX2txLU1yaEJxenlERlZINE5JOWpzS2F6SzA0QUxKWkY1bkdudVNnZ2dFQzhHY192ZlZJOHpiTGV0Ul9aS2NaRTR6ZWlmZGNieGVYSDg4M3Y0cUpYc1YzYjlkQU1COWg4Z3RHc3JNUFBpRHIyOVFQaXYwNDBPWlN2LWtsbWdLdWFCNjBfdUpyN0ZyclRsVXd2aTJRemZfUVdhOHI3bzZ4RzF0SGdwSTV4UGpkZ0ZtcmhFWW1xMG9tbFhBdDR4c1pIM2w1YTQxeVBxUjl6eTZoS21GZWIzOXgxZ1pLa0JPQkNMaEpUeEJsNzNnaTQycExOUVVh?oc=5"
       },
       "observed_at": "2026-10-29T15:03:45+00:00"
+    },
+    {
+      "id": "cd94ccd13be8",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T00:08:34+00:00",
+      "headline": {
+        "en": "AEW warns on 'double-extended' loans despite falling European refinancing gap",
+        "zh": "AEW警告\"双重展期\"贷款，尽管欧洲再融资缺口下降"
+      },
+      "summary": {
+        "en": "AEW warned about \"double-extended\" loans even as the European refinancing gap narrows.",
+        "zh": "AEW警告存在\"双重展期\"贷款，尽管欧洲再融资缺口正在收窄。"
+      },
+      "gps": [],
+      "sectors": [
+        "real_estate",
+        "private_credit"
+      ],
+      "region": "Europe",
+      "source": {
+        "publisher": "PERE",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOM0NNQ3hUM3JfRGtPYnBjVy1WUExYSU1GTTlOMk1xeURYMjZBYzdsQXFTUktzemhrQ29Wc0o0WjhOWjQwRFlSUFlWeGdPS3JGb2JHV2dOOS0tN3R0QlYtNzcxeDV2bGVsRUdQbk1kOTM4Q1JRYVEya29xU2gwc1B2a1Z4T1BJNWFuZTJ4TG0xRHVRM004T3Z3eGFrR3FEUkdEOUNlTDlaS3BpWmkxNkV2NWlPUmZ5V3pLbmJUU19B?oc=5"
+      },
+      "review_status": "unreviewed",
+      "origin": "auto_fetch",
+      "source_headline": "AEW warns on ‘double-extended’ loans despite falling European refinancing gap",
+      "source_fingerprint": "009c7d1c8458fe07ef73bb39c2ae6c330e5416aca10147400d944243090b983d",
+      "assessment": {
+        "version": "priority-v1",
+        "assessable": false,
+        "potential_urgent": false,
+        "evidence_refs": {},
+        "source_sha256": "e2dd778888ce2bef7d8ce7f3f34ce635350cf3534e8d231e4ad35890aee5d87f",
+        "failure": "Missing or insufficient source evidence"
+      },
+      "relevance_reason": "AEW's warning on double-extended European real estate loans signals rising refinancing risk in a tracked sub-sector, affecting credit conditions for real estate and mortgage lenders.",
+      "event_identity": null,
+      "evidence": {
+        "status": "unresolved_aggregator",
+        "level": "headline_only",
+        "retrieved_at": "2026-10-30T05:18:51+00:00",
+        "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOM0NNQ3hUM3JfRGtPYnBjVy1WUExYSU1GTTlOMk1xeURYMjZBYzdsQXFTUktzemhrQ29Wc0o0WjhOWjQwRFlSUFlWeGdPS3JGb2JHV2dOOS0tN3R0QlYtNzcxeDV2bGVsRUdQbk1kOTM4Q1JRYVEya29xU2gwc1B2a1Z4T1BJNWFuZTJ4TG0xRHVRM004T3Z3eGFrR3FEUkdEOUNlTDlaS3BpWmkxNkV2NWlPUmZ5V3pLbmJUU19B?oc=5"
+      },
+      "observed_at": "2026-10-30T05:15:07+00:00"
     },
     {
       "id": "c8f354babfdc",
